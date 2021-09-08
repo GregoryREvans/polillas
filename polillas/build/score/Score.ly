@@ -9,8 +9,11 @@
 } %! LilyPondFile
 
 \score{
-	{
-        \include "01.ly"
-	}
+    <<
+        { \include "layout.ly" }
+    	{
+            \include "01.ly"
+    	}
+    >>
 %\midi{}
 }

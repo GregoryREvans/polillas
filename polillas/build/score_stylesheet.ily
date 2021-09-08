@@ -1,19 +1,11 @@
 \version "2.23.2"
 \language "english"
-% preferred style
-%{ #(set-default-paper-size "arch a") %}
-#(set-default-paper-size "11x17landscape")
-#(set-global-staff-size 14) % was 9
-% alt style 1
-%{ #(set-default-paper-size "17x11")
-#(set-global-staff-size 13) %}
-% alt style 2
-%{ #(set-default-paper-size "11x17")
-#(set-global-staff-size 13) %}
+#(set-default-paper-size "arch a")
+#(set-global-staff-size 9)
 
-%{ \include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
+\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
 \include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
-\include "../../lib.ily" %}
+\include "../../lib.ily"
 \include "evans.ily"
 
 \header {
@@ -25,21 +17,19 @@
             \fontsize #16
             \line {
                 \concat {
-                F
+                P
                 \hspace #1
-                E
+                O
                 \hspace #1
-                N
+                L
                 \hspace #1
-                C
+                I
                 \hspace #1
-                E
+                L
                 \hspace #1
-                R
+                L
                 \hspace #1
-				O
-                \hspace #1
-				W
+				A
                 \hspace #1
 				S
                 \hspace #1
@@ -49,12 +39,10 @@
             \override #'(font-name . "Bell MT Std Regular")
             \fontsize #1
             \line {
-                o r , \hspace #1.75
-                t r e e s \hspace #1.75
-                o n \hspace #1.75
-				a \hspace #1.75
-				b o r d e r i n g \hspace #1.75
-				c r e e k
+                o \hspace #1.75
+                e l \hspace #1.75
+                G r a n \hspace #1.75
+				V a c í o
             }
             " "
             \override #'(font-name . "Bell MT Std Italic")
