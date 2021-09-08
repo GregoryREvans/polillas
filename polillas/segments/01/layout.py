@@ -1,8 +1,9 @@
 import pathlib
+
 import abjad
 import evans
 
-time_signatures=[
+time_signatures = [
     abjad.TimeSignature((7, 8)),
     abjad.TimeSignature((3, 4)),
     abjad.TimeSignature((4, 6)),

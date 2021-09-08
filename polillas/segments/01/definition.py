@@ -1,12 +1,12 @@
 import pathlib
+
 import abjad
 import baca
 import evans
 from abjadext import rmakers
 
-
-time_signatures=[
-    abjad.TimeSignature((7, 8)), # try 14 16 !
+time_signatures = [
+    abjad.TimeSignature((7, 8)),  # try 14 16 !
     abjad.TimeSignature((3, 4)),
     abjad.TimeSignature((4, 6)),
     abjad.TimeSignature((5, 8)),
@@ -28,15 +28,15 @@ time_signatures=[
 
 def fuse_preprocessor(divisions):
     divisions = baca.Sequence(divisions)
-    divisions = divisions.partition_by_counts(
-        (2, 1), cyclic=True, overhang=True
-    )
+    divisions = divisions.partition_by_counts((2, 1), cyclic=True, overhang=True)
     return baca.Sequence(sum(_) for _ in divisions)
+
 
 def select_all_first_leaves(selections):
     run_ties = abjad.select(selections).runs().logical_ties(pitched=True)
     ties_first_leaves = abjad.Selection([_[0] for _ in run_ties])
     return ties_first_leaves
+
 
 def select_run_first_leaves(selections):
     runs = abjad.select(selections).runs()
@@ -44,7 +44,11 @@ def select_run_first_leaves(selections):
     first_leaves = abjad.Selection([abjad.select(tie).leaf(0) for tie in first_ties])
     return first_leaves
 
-pitch_handler = evans.PitchHandler(["c'", "cs'", "d'", "ds'", "e'", "d'''"], forget=False)
+
+pitch_handler = evans.PitchHandler(
+    ["c'", "cs'", "d'", "ds'", "e'", "d'''"], forget=False
+)
+
 
 class MAS:
     def __init__(
@@ -64,7 +68,7 @@ class MAS:
             left_text=fr'- \evans-text-spanner-left-text "{self.string}"',
             command=r"\evansStartTextSpanMaterialAnnotation",
             style="dashed-line-with-hook",
-            right_padding=-1
+            right_padding=-1,
         )
         abjad.tweak(start).staff_padding = self.staff_padding
         abjad.tweak(start).color = self.color
@@ -74,11 +78,13 @@ class MAS:
         abjad.attach(start, first_leaf, tag=abjad.Tag("ANNOTATION"), deactivate=False)
         abjad.attach(stop, last_leaf, tag=abjad.Tag("ANNOTATION"), deactivate=False)
 
+
 A = MAS(
     string="[A].",
     color="#darkred",
     staff_padding=5.5,
 )
+
 
 def A_color(selections):
     leaves = abjad.select(selections).leaves()
@@ -92,11 +98,13 @@ def A_color(selections):
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
 
+
 B = MAS(
     string="[B].",
     color="#darkgreen",
     staff_padding=5.5,
 )
+
 
 def B_color(selections):
     leaves = abjad.select(selections).leaves()
@@ -110,11 +118,13 @@ def B_color(selections):
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
 
+
 C = MAS(
     string="[C].",
     color="#darkblue",
     staff_padding=5.5,
 )
+
 
 def C_color(selections):
     leaves = abjad.select(selections).leaves()
@@ -122,11 +132,14 @@ def C_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)")
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)"
+    )
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
+
 
 D = MAS(
     string="[D].",
@@ -134,23 +147,28 @@ D = MAS(
     staff_padding=5.5,
 )
 
+
 def D_color(selections):
     leaves = abjad.select(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)")
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)"
+    )
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
+
 
 E = MAS(
     string="[E].",
     color="#darkmagenta",
     staff_padding=5.5,
 )
+
 
 def E_color(selections):
     leaves = abjad.select(selections).leaves()
@@ -164,11 +182,13 @@ def E_color(selections):
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
 
+
 F = MAS(
     string="[F].",
     color="#(rgb-color 0.961 0.961 0.406)",
     staff_padding=5.5,
 )
+
 
 def F_color(selections):
     leaves = abjad.select(selections).leaves()
@@ -176,11 +196,14 @@ def F_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)")
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)"
+    )
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
+
 
 rhythm_handler = evans.RhythmHandler(
     rmakers.stack(
@@ -197,7 +220,7 @@ rhythm_handler = evans.RhythmHandler(
                 "(1 (1 1 1 1 1))",
                 "(1 (1 1 (1 (1 1 1)) 1 1 1 1))",
                 "(1 (1 1 (2 ((2 (1 (1 (1 (1 (1 1)))) 1)) 1)) 1 1))",
-                "(1 (1 1 1 1 1 1 1))", #
+                "(1 (1 1 1 1 1 1 1))",  #
                 "(1 (1 1 1 1 1))",
                 "(1 (1 1 1 1 1 1 1))",
                 "(1 (1 1 1 1))",
@@ -245,7 +268,12 @@ maker = evans.SegmentMaker(
     fermata_measures=[1, 4, 10],
     commands=[
         evans.MusicCommand(
-            [("violin 1 voice", [0, 5, 6]), ("violin 2 voice", [0, 5, 6]), ("viola voice", [2, 5]), ("cello voice", [3, 6])],
+            [
+                ("violin 1 voice", [0, 5, 6]),
+                ("violin 2 voice", [0, 5, 6]),
+                ("viola voice", [2, 5]),
+                ("cello voice", [3, 6]),
+            ],
             rhythm_handler,
             pitch_handler,
             A,
@@ -317,17 +345,29 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"', literal=True, direction=abjad.Up),
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
+                literal=True,
+                direction=abjad.Up,
+            ),
             abjad.select().leaves().group_by_measure().get([1]).leaf(1),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"', literal=True, direction=abjad.Up),
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                literal=True,
+                direction=abjad.Up,
+            ),
             abjad.select().leaves().group_by_measure().get([4]).leaf(1),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"', literal=True, direction=abjad.Up),
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                literal=True,
+                direction=abjad.Up,
+            ),
             abjad.select().leaves().group_by_measure().get([10]).leaf(1),
         ),
         evans.call(

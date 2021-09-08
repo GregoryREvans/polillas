@@ -679,7 +679,6 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #darkgreen
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
@@ -699,7 +698,6 @@
                                     \evansStartTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \(
-                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -716,7 +714,6 @@
                                     c'8
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
@@ -725,7 +722,6 @@
                                     \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
-                                    ]
 
                                 }
 
@@ -755,18 +751,14 @@
                                 \times 2/3
                                 {
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     cs'8
                                     - \staccato
-                                    [
 
                                     d'8
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     ds'8
                                     - \staccato
-                                    ]
 
                                 }
 
@@ -797,7 +789,6 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     c'8
                                     \p
                                     - \staccato
@@ -815,7 +806,6 @@
                                     \evansStartTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \(
-                                    [
 
                                     cs'8
                                     - \staccato
@@ -832,14 +822,12 @@
                                     d'''8
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     c'8
                                     - \staccato
                                     %! ANNOTATION
                                     \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
-                                    ]
 
                                 }
 
@@ -1080,15 +1068,11 @@
                                             d'''4
                                             - \staccato
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             c'8
                                             - \staccato
-                                            [
 
-                                            \revert Staff.Stem.stemlet-length
                                             cs'8
                                             - \staccato
-                                            ]
 
                                             d'2
                                             - \staccato
