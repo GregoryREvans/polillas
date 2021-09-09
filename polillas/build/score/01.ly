@@ -173,7 +173,7 @@
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
                                             %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #darkred
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8
                                             \p
@@ -249,7 +249,7 @@
                                             % [violin 1 voice measure 6]
 
                                             %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #darkred
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             cs'1
                                             - \staccato
                                             %! MATERIAL_COLOR
@@ -383,7 +383,7 @@
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
                                             %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #darkred
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8
                                             \p
@@ -459,7 +459,7 @@
                                             % [violin 2 voice measure 6]
 
                                             %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #darkred
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             cs'1
                                             - \staccato
                                             %! MATERIAL_COLOR
@@ -548,7 +548,7 @@
                                             % [violin 2 voice measure 15]
 
                                             %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #darkred
+                                            \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                             d'''1
                                             \p
                                             - \staccato
@@ -617,7 +617,7 @@
                                 % [viola voice measure 3]
 
                                 %! MATERIAL_COLOR
-                                \color-span #-4 #4 #darkred
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 d'''4
                                 \p
                                 - \staccato
@@ -665,7 +665,7 @@
                                 % [viola voice measure 6]
 
                                 %! MATERIAL_COLOR
-                                \color-span #-4 #4 #darkred
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 e'2
                                 - \staccato
                                 %! MATERIAL_COLOR
@@ -699,7 +699,7 @@
                                     % [viola voice measure 8]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #darkgreen
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2
@@ -740,7 +740,7 @@
                                     % [viola voice measure 9]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     d'''4
                                     \p
                                     - \staccato
@@ -800,7 +800,7 @@
                                     % [viola voice measure 12]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'4
                                     \p
                                     - \staccato
@@ -837,7 +837,7 @@
                                     % [viola voice measure 13]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #darkmagenta
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                     cs'4
                                     \p
                                     - \staccato
@@ -945,7 +945,7 @@
                                     % [cello voice measure 4]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #darkred
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     cs'8
                                     \p
@@ -996,7 +996,7 @@
                                 % [cello voice measure 7]
 
                                 %! MATERIAL_COLOR
-                                \color-span #-4 #4 #darkred
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c'4
                                 - \staccato
                                 ~
@@ -1051,7 +1051,7 @@
                                     % [cello voice measure 9]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     d'2
                                     \p
                                     - \staccato
@@ -1123,7 +1123,7 @@
                                     % [cello voice measure 12]
 
                                     %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     c'2
                                     \p
                                     - \staccato

@@ -489,7 +489,7 @@ class MAS:
 
 A = MAS(
     string="[A].",
-    color="#darkred",
+    color="#(rgb-color 0.6 0.6 1)",
     staff_padding=5.5,
 )
 
@@ -500,7 +500,7 @@ def A_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #darkred")
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 0.6 0.6 1)")
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
@@ -509,7 +509,7 @@ def A_color(selections):
 
 B = MAS(
     string="[B].",
-    color="#darkgreen",
+    color="#(rgb-color 0.961 0.961 0.406)",
     staff_padding=5.5,
 )
 
@@ -520,7 +520,9 @@ def B_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #darkgreen")
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)"
+    )
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
@@ -529,7 +531,7 @@ def B_color(selections):
 
 C = MAS(
     string="[C].",
-    color="#darkblue",
+    color="#(rgb-color 0.2 1 0.592)",
     staff_padding=5.5,
 )
 
@@ -540,9 +542,7 @@ def C_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(
-        r"\color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)"
-    )
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 0.2 1 0.592)")
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
@@ -551,7 +551,7 @@ def C_color(selections):
 
 D = MAS(
     string="[D].",
-    color="#darkcyan",
+    color="#(rgb-color 1 0.2 0.2)",
     staff_padding=5.5,
 )
 
@@ -562,9 +562,7 @@ def D_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(
-        r"\color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)"
-    )
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 1 0.2 0.2)")
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
@@ -573,7 +571,7 @@ def D_color(selections):
 
 E = MAS(
     string="[E].",
-    color="#darkmagenta",
+    color="#(rgb-color 0.6 0.8 1)",
     staff_padding=5.5,
 )
 
@@ -584,7 +582,7 @@ def E_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
-    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #darkmagenta")
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 0.6 0.8 1)")
     for group in groups:
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
@@ -593,7 +591,7 @@ def E_color(selections):
 
 F = MAS(
     string="[F].",
-    color="#(rgb-color 0.961 0.961 0.406)",
+    color="#(rgb-color 1 0.6 0.2)",
     staff_padding=5.5,
 )
 
@@ -604,8 +602,28 @@ def F_color(selections):
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
     stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #(rgb-color 1 0.6 0.2)")
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)
+
+
+G = MAS(
+    string="[G].",
+    color="#(rgb-color 0.878 0.878 0.878)",
+    staff_padding=5.5,
+)
+
+
+def G_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
     literal = abjad.LilyPondLiteral(
-        r"\color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)"
+        r"\color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)"
     )
     for group in groups:
         abjad.attach(start, group[0], tag=tag)

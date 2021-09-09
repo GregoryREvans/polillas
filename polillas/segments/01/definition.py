@@ -87,7 +87,7 @@ maker = evans.SegmentMaker(
             [("violin 2 voice", [14, 15])],
             polillas.demo_rhythm_handler,
             polillas.demo_pitch_handler,
-            polillas.A_color,
+            polillas.G_color,
             abjad.Dynamic("p"),
             abjad.Articulation("staccato"),
             preprocessor=polillas.fuse_preprocessor,

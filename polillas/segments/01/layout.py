@@ -3,27 +3,9 @@ import pathlib
 import abjad
 import evans
 
-time_signatures = [
-    abjad.TimeSignature((7, 8)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((4, 6)),
-    abjad.TimeSignature((5, 8)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((5, 12)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((1, 4)),
-]
+import polillas
 
-reduced_signatures = evans.reduce_fermata_measures(time_signatures, [1, 4, 10])
+reduced_signatures = evans.reduce_fermata_measures(polillas.signatures_01, [1, 4, 10])
 
 signatures = evans.join_time_signature_lists([reduced_signatures])
 
@@ -33,10 +15,10 @@ breaks = evans.Breaks(
         evans.System(measures=7, lbsd=(120, "(19 20 20 20)"), x_offset=1),
     ),
     time_signatures=signatures,
-    default_spacing=(1, 16),
-    spacing=[
-        (10, (1, 37)),
-    ],
+    default_spacing=(1, 11),
+    # spacing=[
+    #     (10, (1, 37)),
+    # ],
     bar_number=10,
 )
 
