@@ -1,39 +1,6 @@
 import abjad
+import baca
 import evans
-
-
-class WarbleFingerings(evans.handlers.Handler):
-    def __init__(
-        self,
-        fingerings_list=None,
-        forget=False,
-        count=-1,
-        name="Warble Fingerings",
-    ):
-        self.fingerings_list = fingerings_list
-        self.forget = forget
-        self._count = count
-        self._cyc_fingerings = evans.CyclicList(
-            lst=fingerings_list, forget=self.forget, count=self._count
-        )
-        self.name = name
-
-    def __call__(self, selections):
-        for tie in abjad.select(selections).logical_ties(pitched=True):
-            first_leaf = abjad.select(tie).leaf(0)
-            symbol = self._cyc_fingerings(r=1)[0]
-            abjad.attach(symbol, first_leaf)
-
-    def name(self):
-        return self.name
-
-    def state(self):
-        return abjad.OrderedDict(
-            [
-                ("state", "No State Preservation Enabled!"),
-            ]
-        )
-
 
 # lily met
 
@@ -397,164 +364,6 @@ red_stop_repeat = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-grace_handler_03 = evans.OnBeatGraceHandler(
-    number_of_attacks=[
-        17,
-        11,
-        9,
-        11,
-        11,
-        17,
-        11,
-        9,
-    ],
-    durations=[
-        2,
-        1,
-        1,
-        1,
-        2,
-        1,
-        2,
-        1,
-        1,
-    ],
-    font_size=-4,
-    leaf_duration=None,
-    attack_number_forget=False,
-    durations_forget=False,
-    boolean_vector=[1],
-    vector_forget=False,
-    name="On Beat Grace Handler",
-)
-
-grace_handler_04 = evans.OnBeatGraceHandler(
-    number_of_attacks=[
-        12,
-        16,
-        12,
-        14,
-        4,
-        4,
-        4,
-        4,
-        4,
-        2,
-        8,
-        7,
-        8,
-        8,
-        4,
-        8,
-        8,
-        4,
-        8,
-    ],
-    durations=[
-        1,
-    ],
-    font_size=-4,
-    leaf_duration=(1, 35),
-    attack_number_forget=False,
-    durations_forget=False,
-    boolean_vector=[1],
-    vector_forget=False,
-    name="On Beat Grace Handler",
-)
-
-grace_handler_06 = evans.OnBeatGraceHandler(
-    number_of_attacks=[
-        8,
-        12,
-        7,
-        10,
-        4,
-        4,
-        4,
-        4,
-        3,
-        8,
-        4,
-        4,
-        3,
-    ],
-    durations=[
-        1,
-    ],
-    font_size=-4,
-    leaf_duration=(1, 35),
-    attack_number_forget=False,
-    durations_forget=False,
-    boolean_vector=[1],
-    vector_forget=False,
-    name="On Beat Grace Handler",
-)
-
-grace_handler_08 = evans.OnBeatGraceHandler(
-    number_of_attacks=[
-        24,  #
-        7,
-        17,
-        17,
-        16,  #
-        21,
-        25,  #
-        3,
-        26,
-        3,
-        11,
-        17,
-    ],
-    durations=[
-        1,
-        1,
-        1,
-        2,
-        1,
-        2,
-    ],
-    font_size=-4,
-    leaf_duration=(1, 35),
-    attack_number_forget=False,
-    durations_forget=False,
-    boolean_vector=[1],
-    vector_forget=False,
-    name="On Beat Grace Handler",
-)
-
-grace_handler_09 = evans.OnBeatGraceHandler(
-    number_of_attacks=[
-        16,
-        50,
-    ],
-    durations=[
-        1,
-    ],
-    font_size=-4,
-    leaf_duration=(1, 35),
-    attack_number_forget=False,
-    durations_forget=False,
-    boolean_vector=[1],
-    vector_forget=False,
-    name="On Beat Grace Handler",
-)
-
-grace_handler_10 = evans.OnBeatGraceHandler(
-    number_of_attacks=[
-        37,
-        29,
-    ],
-    durations=[
-        1,
-    ],
-    font_size=-4,
-    leaf_duration=(1, 35),
-    attack_number_forget=False,
-    durations_forget=False,
-    boolean_vector=[1],
-    vector_forget=False,
-    name="On Beat Grace Handler",
-)
 
 clef_whitespace = abjad.LilyPondLiteral(
     r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
@@ -627,3 +436,178 @@ start_scratch = abjad.StartTextSpan(
 abjad.tweak(start_scratch).staff_padding = 7
 
 stop_scratch = abjad.StopTextSpan(command=r"\stopTextSpanTwo")
+
+
+def fuse_preprocessor(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = divisions.partition_by_counts((2, 1), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def select_all_first_leaves(selections):
+    run_ties = abjad.select(selections).runs().logical_ties(pitched=True)
+    ties_first_leaves = abjad.Selection([_[0] for _ in run_ties])
+    return ties_first_leaves
+
+
+def select_run_first_leaves(selections):
+    runs = abjad.select(selections).runs()
+    first_ties = abjad.Selection([abjad.select(run).logical_tie(0) for run in runs])
+    first_leaves = abjad.Selection([abjad.select(tie).leaf(0) for tie in first_ties])
+    return first_leaves
+
+
+# ANNOTATIONS
+class MAS:
+    def __init__(
+        self,
+        string,
+        color,
+        staff_padding,
+    ):
+        self.string = string
+        self.color = color
+        self.staff_padding = staff_padding
+
+    def __call__(self, selections):
+        first_leaf = selections.leaf(0)
+        last_leaf = selections.leaves()[-1]
+        start = abjad.StartTextSpan(
+            left_text=fr'- \evans-text-spanner-left-text "{self.string}"',
+            command=r"\evansStartTextSpanMaterialAnnotation",
+            style="dashed-line-with-hook",
+            right_padding=-1,
+        )
+        abjad.tweak(start).staff_padding = self.staff_padding
+        abjad.tweak(start).color = self.color
+        stop = abjad.StopTextSpan(
+            command=r"\evansStopTextSpanMaterialAnnotation",
+        )
+        abjad.attach(start, first_leaf, tag=abjad.Tag("ANNOTATION"), deactivate=False)
+        abjad.attach(stop, last_leaf, tag=abjad.Tag("ANNOTATION"), deactivate=False)
+
+
+A = MAS(
+    string="[A].",
+    color="#darkred",
+    staff_padding=5.5,
+)
+
+
+def A_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #darkred")
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)
+
+
+B = MAS(
+    string="[B].",
+    color="#darkgreen",
+    staff_padding=5.5,
+)
+
+
+def B_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #darkgreen")
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)
+
+
+C = MAS(
+    string="[C].",
+    color="#darkblue",
+    staff_padding=5.5,
+)
+
+
+def C_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)"
+    )
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)
+
+
+D = MAS(
+    string="[D].",
+    color="#darkcyan",
+    staff_padding=5.5,
+)
+
+
+def D_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)"
+    )
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)
+
+
+E = MAS(
+    string="[E].",
+    color="#darkmagenta",
+    staff_padding=5.5,
+)
+
+
+def E_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(r"\color-span #-4 #4 #darkmagenta")
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)
+
+
+F = MAS(
+    string="[F].",
+    color="#(rgb-color 0.961 0.961 0.406)",
+    staff_padding=5.5,
+)
+
+
+def F_color(selections):
+    leaves = abjad.select(selections).leaves()
+    groups = leaves.group_by_contiguity()
+    tag = abjad.Tag("MATERIAL_COLOR")
+    start = abjad.StartPhrasingSlur()
+    stop = abjad.StopPhrasingSlur()
+    literal = abjad.LilyPondLiteral(
+        r"\color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)"
+    )
+    for group in groups:
+        abjad.attach(start, group[0], tag=tag)
+        abjad.attach(literal, group[0], tag=tag)
+        abjad.attach(stop, group[-1], tag=tag)

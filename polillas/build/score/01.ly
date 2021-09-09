@@ -8,9 +8,9 @@
                 % [Global Context measure 1]
 
                 %! scaling time signatures
-                \time 7/8
+                \time 3/4
                 \mark \markup \bold {  }
-                s1 * 7/8
+                s1 * 3/4
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -28,17 +28,15 @@
                 % [Global Context measure 3]
 
                 %! scaling time signatures
-                #(ly:expect-warning "strange time signature found")
-                %! scaling time signatures
-                \time 4/6
-                s1 * 2/3
+                \time 4/4
+                s1 * 1
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
 
                 %! scaling time signatures
-                \time 5/8
-                s1 * 5/8
+                \time 3/4
+                s1 * 3/4
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -57,32 +55,30 @@
                 % [Global Context measure 6]
 
                 %! scaling time signatures
-                \time 3/4
-                s1 * 3/4
+                \time 6/4
+                s1 * 3/2
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
 
                 %! scaling time signatures
-                \time 4/4
-                s1 * 1
+                \time 7/4
+                s1 * 7/4
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
 
                 %! scaling time signatures
-                #(ly:expect-warning "strange time signature found")
-                %! scaling time signatures
-                \time 5/12
-                s1 * 5/12
+                \time 7/4
+                s1 * 7/4
                 \bar ":|."
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
 
                 %! scaling time signatures
-                \time 3/4
-                s1 * 3/4
+                \time 4/4
+                s1 * 1
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
@@ -107,36 +103,36 @@
                 % [Global Context measure 12]
 
                 %! scaling time signatures
-                \time 3/4
-                s1 * 3/4
+                \time 5/4
+                s1 * 5/4
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 13]
 
                 %! scaling time signatures
-                \time 4/4
-                s1 * 1
+                \time 6/4
+                s1 * 3/2
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
-
-                %! scaling time signatures
-                \time 4/4
-                s1 * 1
-                %! COMMENT_MEASURE_NUMBERS
-                %! evans.SegmentMaker.comment_measure_numbers()
-                % [Global Context measure 15]
 
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
+                % [Global Context measure 15]
+
+                %! scaling time signatures
+                \time 6/4
+                s1 * 3/2
+                %! COMMENT_MEASURE_NUMBERS
+                %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
 
                 %! scaling time signatures
-                \time 4/4
-                s1 * 1
+                \time 3/4
+                s1 * 3/4
 
             }
 
@@ -160,70 +156,56 @@
 
                                     \context Voice = "violin 1 voice"
                                     {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 1]
 
-                                        %! applying staff names and clefs
-                                        \set Staff.shortInstrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #12 "vn. I" }
-                                        %! applying staff names and clefs
-                                        \set Staff.instrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #14 "Violin I" }
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #darkred
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        \p
-                                        - \staccato
-                                        ^ \boxed-markup Here 0.5
-                                        %! ANNOTATION
-                                        - \abjad-dashed-line-with-hook
-                                        %! ANNOTATION
-                                        - \evans-text-spanner-left-text "[A]."
-                                        %! ANNOTATION
-                                        - \tweak bound-details.right.padding -1
-                                        %! ANNOTATION
-                                        - \tweak color #darkred
-                                        %! ANNOTATION
-                                        - \tweak staff-padding 5.5
-                                        %! ANNOTATION
-                                        \evansStartTextSpanMaterialAnnotation
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        [
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 1]
 
-                                        cs'8
-                                        - \staccato
+                                            %! applying staff names and clefs
+                                            \set Staff.shortInstrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #12 "vn. I" }
+                                            %! applying staff names and clefs
+                                            \set Staff.instrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #14 "Violin I" }
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #darkred
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            \p
+                                            - \staccato
+                                            ^ \boxed-markup Here 0.5
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
 
-                                        \revert Staff.Stem.stemlet-length
-                                        d'8
-                                        - \staccato
-                                        ]
+                                            cs'8
+                                            - \staccato
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        ds'8
-                                        - \staccato
-                                        [
+                                            d'8
+                                            - \staccato
 
-                                        \revert Staff.Stem.stemlet-length
-                                        e'8
-                                        - \staccato
-                                        ]
+                                            ds'8
+                                            - \staccato
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'''8
-                                        - \staccato
-                                        [
+                                            e'8
+                                            - \staccato
 
-                                        \revert Staff.Stem.stemlet-length
-                                        c'8
-                                        - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        ]
+                                            d'''8
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            - \staccato
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
@@ -232,26 +214,24 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 1 voice measure 3]
 
-                                        \tweak edge-height #'(0.7 . 0)
-                                        \times 2/3
-                                        {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 1 voice measure 3]
+                                        %! applying invisibility
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 1/2
 
-                                            r1
-
-                                        }
+                                        R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 5/16
+                                        r1 * 3/8
 
-                                        R1 * 5/16
+                                        R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
@@ -262,7 +242,7 @@
                                         \stopStaff \startStaff
 
                                         \tweak text #tuplet-number::calc-fraction-text
-                                        \times 7/10
+                                        \times 13/20
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
@@ -270,50 +250,44 @@
 
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #darkred
-                                            cs'2
+                                            cs'1
                                             - \staccato
                                             %! MATERIAL_COLOR
                                             \(
 
-                                            d'2
+                                            d'1
                                             - \staccato
 
-                                            ds'2
+                                            ds'1
                                             - \staccato
 
-                                            e'2
+                                            e'1
                                             - \staccato
 
-                                            d'''2
+                                            d'''1
                                             - \staccato
-                                            %! ANNOTATION
-                                            \evansStopTextSpanMaterialAnnotation
                                             %! MATERIAL_COLOR
                                             \)
 
                                         }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 1 voice measure 8]
 
-                                        \tweak edge-height #'(0.7 . 0)
-                                        \times 2/3
-                                        {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 1 voice measure 8]
+                                        %! applying invisibility
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 7/8
 
-                                            r2
-
-                                            r8
-
-                                        }
+                                        R1 * 7/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        r1 * 1/2
 
-                                        R1 * 3/8
+                                        R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
@@ -337,30 +311,21 @@
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        r1 * 5/8
 
-                                        R1 * 3/8
+                                        R1 * 5/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        r1 * 3/4
 
-                                        R1 * 1/2
+                                        R1 * 3/4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
-
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 15]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
@@ -369,13 +334,22 @@
                                         R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 1 voice measure 15]
+
+                                        %! applying invisibility
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 3/4
+
+                                        R1 * 3/4
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        r1 * 3/8
 
-                                        R1 * 1/2
+                                        R1 * 3/8
                                         \bar "||"
 
                                     }
@@ -392,70 +366,56 @@
 
                                     \context Voice = "violin 2 voice"
                                     {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 1]
 
-                                        %! applying staff names and clefs
-                                        \set Staff.shortInstrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #12 "vn. II" }
-                                        %! applying staff names and clefs
-                                        \set Staff.instrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #14 "Violin II" }
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #darkred
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        \p
-                                        - \staccato
-                                        ^ \boxed-markup Here 0.5
-                                        %! ANNOTATION
-                                        - \abjad-dashed-line-with-hook
-                                        %! ANNOTATION
-                                        - \evans-text-spanner-left-text "[A]."
-                                        %! ANNOTATION
-                                        - \tweak bound-details.right.padding -1
-                                        %! ANNOTATION
-                                        - \tweak color #darkred
-                                        %! ANNOTATION
-                                        - \tweak staff-padding 5.5
-                                        %! ANNOTATION
-                                        \evansStartTextSpanMaterialAnnotation
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        [
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 1]
 
-                                        cs'8
-                                        - \staccato
+                                            %! applying staff names and clefs
+                                            \set Staff.shortInstrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #12 "vn. II" }
+                                            %! applying staff names and clefs
+                                            \set Staff.instrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #14 "Violin II" }
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #darkred
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c'8
+                                            \p
+                                            - \staccato
+                                            ^ \boxed-markup Here 0.5
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
 
-                                        \revert Staff.Stem.stemlet-length
-                                        d'8
-                                        - \staccato
-                                        ]
+                                            cs'8
+                                            - \staccato
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        ds'8
-                                        - \staccato
-                                        [
+                                            d'8
+                                            - \staccato
 
-                                        \revert Staff.Stem.stemlet-length
-                                        e'8
-                                        - \staccato
-                                        ]
+                                            ds'8
+                                            - \staccato
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'''8
-                                        - \staccato
-                                        [
+                                            e'8
+                                            - \staccato
 
-                                        \revert Staff.Stem.stemlet-length
-                                        c'8
-                                        - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        ]
+                                            d'''8
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            c'8
+                                            - \staccato
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
@@ -464,26 +424,24 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 3]
 
-                                        \tweak edge-height #'(0.7 . 0)
-                                        \times 2/3
-                                        {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 2 voice measure 3]
+                                        %! applying invisibility
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 1/2
 
-                                            r1
-
-                                        }
+                                        R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 5/16
+                                        r1 * 3/8
 
-                                        R1 * 5/16
+                                        R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
@@ -492,88 +450,51 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 6]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #darkred
-                                        cs'4
-                                        - \staccato
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        cs'8.
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        d'16
-                                        - \staccato
-                                        ~
-                                        ]
-
-                                        d'4
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 7]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        ds'8
-                                        - \staccato
-                                        ~
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        ds'4
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        ds'16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        e'8.
-                                        - \staccato
-                                        ~
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        e'4
-
-                                        \tweak edge-height #'(0.7 . 0)
-                                        \times 2/3
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 13/16
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 2 voice measure 8]
+                                            % [violin 2 voice measure 6]
 
-                                            r2
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #darkred
+                                            cs'1
+                                            - \staccato
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                            r8
+                                            d'1
+                                            - \staccato
+
+                                            ds'1
+                                            - \staccato
+
+                                            e'1
+                                            - \staccato
+                                            %! MATERIAL_COLOR
+                                            \)
 
                                         }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 8]
+
+                                        %! applying invisibility
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 7/8
+
+                                        R1 * 7/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        r1 * 1/2
 
-                                        R1 * 3/8
+                                        R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
@@ -597,89 +518,56 @@
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        r1 * 5/8
 
-                                        R1 * 3/8
+                                        R1 * 5/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 13]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        r1 * 3/4
 
-                                        R1 * 1/2
+                                        R1 * 3/4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
 
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        r1 * 3/8
 
-                                        R1 * 1/2
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 15]
+                                        R1 * 3/8
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #darkred
-                                        d'''4
-                                        \p
-                                        - \staccato
-                                        ~
-                                        %! ANNOTATION
-                                        - \abjad-dashed-line-with-hook
-                                        %! ANNOTATION
-                                        - \evans-text-spanner-left-text "[A]."
-                                        %! ANNOTATION
-                                        - \tweak bound-details.right.padding -1
-                                        %! ANNOTATION
-                                        - \tweak color #darkred
-                                        %! ANNOTATION
-                                        - \tweak staff-padding 5.5
-                                        %! ANNOTATION
-                                        \evansStartTextSpanMaterialAnnotation
-                                        %! MATERIAL_COLOR
-                                        \(
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 9/16
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 15]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'''8.
-                                        [
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #darkred
+                                            d'''1
+                                            \p
+                                            - \staccato
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        \revert Staff.Stem.stemlet-length
-                                        c'16
-                                        - \staccato
-                                        ~
-                                        ]
+                                            c'1
+                                            - \staccato
 
-                                        c'4
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 16]
+                                            cs'1
+                                            - \staccato
 
-                                        c'8
+                                            d'1
+                                            - \staccato
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            \bar "||"
 
-                                        cs'4
-                                        - \staccato
-                                        ~
-
-                                        cs'8.
-
-                                        d'16
-                                        - \staccato
-                                        ~
-
-                                        d'4
-                                        ~
-
-                                        d'8
-                                        %! ANNOTATION
-                                        \evansStopTextSpanMaterialAnnotation
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        \bar "||"
+                                        }
 
                                     }
 
@@ -713,9 +601,9 @@
                                 \markup { \hcenter-in #14 "Viola" }
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 7/16
+                                r1 * 3/8
 
-                                R1 * 7/16
+                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
@@ -724,64 +612,46 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 3]
 
-                                \tweak edge-height #'(0.7 . 0)
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #darkred
+                                d'''4
+                                \p
+                                - \staccato
+                                ^ \boxed-markup Here 0.5
+                                %! MATERIAL_COLOR
+                                \(
+
                                 \times 2/3
                                 {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [viola voice measure 3]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #darkred
-                                    d'''4
-                                    \p
+                                    c'4
                                     - \staccato
-                                    ^ \boxed-markup Here 0.5
-                                    %! ANNOTATION
-                                    - \abjad-dashed-line-with-hook
-                                    %! ANNOTATION
-                                    - \evans-text-spanner-left-text "[A]."
-                                    %! ANNOTATION
-                                    - \tweak bound-details.right.padding -1
-                                    %! ANNOTATION
-                                    - \tweak color #darkred
-                                    %! ANNOTATION
-                                    - \tweak staff-padding 5.5
-                                    %! ANNOTATION
-                                    \evansStartTextSpanMaterialAnnotation
-                                    %! MATERIAL_COLOR
-                                    \(
 
-                                    \times 2/3
-                                    {
-
-                                        c'4
-                                        - \staccato
-
-                                        cs'4
-                                        - \staccato
-
-                                        d'4
-                                        - \staccato
-
-                                    }
-
-                                    ds'4
+                                    cs'4
                                     - \staccato
-                                    %! MATERIAL_COLOR
-                                    \)
+
+                                    d'4
+                                    - \staccato
 
                                 }
+
+                                ds'4
+                                - \staccato
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 5/16
+                                r1 * 3/8
 
-                                R1 * 5/16
+                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
@@ -796,18 +666,19 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #darkred
-                                e'4
+                                e'2
                                 - \staccato
                                 %! MATERIAL_COLOR
                                 \(
 
                                 d'''4
                                 - \staccato
+                                ~
 
-                                c'4
+                                d'''4
+
+                                c'2
                                 - \staccato
-                                %! ANNOTATION
-                                \evansStopTextSpanMaterialAnnotation
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -816,12 +687,12 @@
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                r1 * 7/8
 
-                                R1 * 1/2
+                                R1 * 7/8
 
-                                \tweak edge-height #'(0.7 . 0)
-                                \times 2/3
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 7/10
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
@@ -829,118 +700,89 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #darkgreen
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c'2
                                     \p
                                     - \staccato
-                                    %! ANNOTATION
-                                    - \abjad-dashed-line-with-hook
-                                    %! ANNOTATION
-                                    - \evans-text-spanner-left-text "[B]."
-                                    %! ANNOTATION
-                                    - \tweak bound-details.right.padding -1
-                                    %! ANNOTATION
-                                    - \tweak color #darkgreen
-                                    %! ANNOTATION
-                                    - \tweak staff-padding 5.5
-                                    %! ANNOTATION
-                                    \evansStartTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \(
-                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c'2
                                     - \staccato
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c'2
                                     - \staccato
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c'2
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c'2
                                     - \staccato
-                                    %! ANNOTATION
-                                    \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
-                                    ]
 
                                 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 9]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)
-                                d'''4
-                                \p
-                                - \staccato
-                                %! ANNOTATION
-                                - \abjad-dashed-line-with-hook
-                                %! ANNOTATION
-                                - \evans-text-spanner-left-text "[C]."
-                                %! ANNOTATION
-                                - \tweak bound-details.right.padding -1
-                                %! ANNOTATION
-                                - \tweak color #darkblue
-                                %! ANNOTATION
-                                - \tweak staff-padding 5.5
-                                %! ANNOTATION
-                                \evansStartTextSpanMaterialAnnotation
-                                %! MATERIAL_COLOR
-                                \(
-
-                                c'4
-                                - \staccato
-
-                                \times 2/3
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/7
                                 {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 9]
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    cs'8
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.561 0.561 0.806)
+                                    d'''4
+                                    \p
                                     - \staccato
-                                    [
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                    d'8
+                                    c'4
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
-                                    ds'8
+                                    \times 2/3
+                                    {
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        cs'8
+                                        - \staccato
+                                        [
+
+                                        d'8
+                                        - \staccato
+
+                                        \revert Staff.Stem.stemlet-length
+                                        ds'8
+                                        - \staccato
+                                        ]
+
+                                    }
+
+                                    e'4
                                     - \staccato
-                                    ]
+
+                                    d'''4
+                                    - \staccato
+
+                                    c'4
+                                    - \staccato
+
+                                    cs'4
+                                    - \staccato
+                                    %! MATERIAL_COLOR
+                                    \)
 
                                 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 10]
-
-                                e'4
-                                - \staccato
-
-                                d'''4
-                                - \staccato
-
-                                c'4
-                                - \staccato
-
-                                cs'4
-                                - \staccato
-                                %! ANNOTATION
-                                \evansStopTextSpanMaterialAnnotation
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
@@ -951,7 +793,7 @@
                                 \stopStaff \startStaff
 
                                 \tweak text #tuplet-number::calc-fraction-text
-                                \times 6/7
+                                \times 5/7
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
@@ -959,53 +801,36 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.361 0.361 0.806)
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c'8
+                                    c'4
                                     \p
                                     - \staccato
-                                    %! ANNOTATION
-                                    - \abjad-dashed-line-with-hook
-                                    %! ANNOTATION
-                                    - \evans-text-spanner-left-text "[D]."
-                                    %! ANNOTATION
-                                    - \tweak bound-details.right.padding -1
-                                    %! ANNOTATION
-                                    - \tweak color #darkcyan
-                                    %! ANNOTATION
-                                    - \tweak staff-padding 5.5
-                                    %! ANNOTATION
-                                    \evansStartTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \(
-                                    [
 
-                                    cs'8
+                                    cs'4
                                     - \staccato
 
-                                    d'8
+                                    d'4
                                     - \staccato
 
-                                    ds'8
+                                    ds'4
                                     - \staccato
 
-                                    e'8
+                                    e'4
                                     - \staccato
 
-                                    d'''8
+                                    d'''4
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
-                                    c'8
+                                    c'4
                                     - \staccato
-                                    %! ANNOTATION
-                                    \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
-                                    ]
 
                                 }
 
-                                \times 4/5
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/5
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
@@ -1016,18 +841,6 @@
                                     cs'4
                                     \p
                                     - \staccato
-                                    %! ANNOTATION
-                                    - \abjad-dashed-line-with-hook
-                                    %! ANNOTATION
-                                    - \evans-text-spanner-left-text "[E]."
-                                    %! ANNOTATION
-                                    - \tweak bound-details.right.padding -1
-                                    %! ANNOTATION
-                                    - \tweak color #darkmagenta
-                                    %! ANNOTATION
-                                    - \tweak staff-padding 5.5
-                                    %! ANNOTATION
-                                    \evansStartTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -1042,8 +855,6 @@
 
                                     d'''4
                                     - \staccato
-                                    %! ANNOTATION
-                                    \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -1054,27 +865,27 @@
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                r1 * 3/8
 
-                                R1 * 1/2
+                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                r1 * 3/4
 
-                                R1 * 3/8
+                                R1 * 3/4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                r1 * 3/8
 
-                                R1 * 1/2
+                                R1 * 3/8
                                 \bar "||"
 
                             }
@@ -1105,9 +916,9 @@
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 7/16
+                                r1 * 3/8
 
-                                R1 * 7/16
+                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -1116,65 +927,53 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 3]
 
-                                \tweak edge-height #'(0.7 . 0)
-                                \times 2/3
+                                %! applying invisibility
+                                \once \override Rest.transparent = ##t
+                                r1 * 1/2
+
+                                R1 * 1/2
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/5
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 3]
+                                    % [cello voice measure 4]
 
-                                    r1
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #darkred
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    cs'8
+                                    \p
+                                    - \staccato
+                                    ^ \boxed-markup Here 0.5
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    d'8
+                                    - \staccato
+
+                                    ds'8
+                                    - \staccato
+
+                                    e'8
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-pitch-out-of-range-coloring
+                                    d'''8
+                                    - \staccato
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
 
                                 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 4]
-
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #darkred
-                                \override Staff.Stem.stemlet-length = 0.75
-                                cs'8
-                                \p
-                                - \staccato
-                                ^ \boxed-markup Here 0.5
-                                %! ANNOTATION
-                                - \abjad-dashed-line-with-hook
-                                %! ANNOTATION
-                                - \evans-text-spanner-left-text "[A]."
-                                %! ANNOTATION
-                                - \tweak bound-details.right.padding -1
-                                %! ANNOTATION
-                                - \tweak color #darkred
-                                %! ANNOTATION
-                                - \tweak staff-padding 5.5
-                                %! ANNOTATION
-                                \evansStartTextSpanMaterialAnnotation
-                                %! MATERIAL_COLOR
-                                \(
-                                [
-
-                                d'8
-                                - \staccato
-
-                                \revert Staff.Stem.stemlet-length
-                                ds'8
-                                - \staccato
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                e'8
-                                - \staccato
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-pitch-out-of-range-coloring
-                                d'''8
-                                - \staccato
-                                %! MATERIAL_COLOR
-                                \)
-                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
@@ -1189,9 +988,9 @@
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                r1 * 3/4
 
-                                R1 * 3/8
+                                R1 * 3/4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
@@ -1200,45 +999,52 @@
                                 \color-span #-4 #4 #darkred
                                 c'4
                                 - \staccato
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
 
-                                cs'4
-                                - \staccato
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8.
+                                [
 
-                                \times 2/3
+                                \revert Staff.Stem.stemlet-length
+                                cs'16
+                                - \staccato
+                                ~
+                                ]
+
+                                cs'4
+                                ~
+
+                                cs'8
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 7/12
                                 {
 
-                                    d'4
+                                    d'2
                                     - \staccato
 
-                                    ds'4
+                                    ds'2
                                     - \staccato
 
-                                    e'4
+                                    e'2
                                     - \staccato
-                                    %! ANNOTATION
-                                    \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
 
                                 }
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 8]
 
-                                \tweak edge-height #'(0.7 . 0)
+                                %! applying invisibility
+                                \once \override Rest.transparent = ##t
+                                r1 * 7/8
+
+                                R1 * 7/8
+
                                 \times 2/3
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 8]
-
-                                    r2
-
-                                    r8
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 7/12
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
@@ -1249,18 +1055,6 @@
                                     d'2
                                     \p
                                     - \staccato
-                                    %! ANNOTATION
-                                    - \abjad-dashed-line-with-hook
-                                    %! ANNOTATION
-                                    - \evans-text-spanner-left-text "[C]."
-                                    %! ANNOTATION
-                                    - \tweak bound-details.right.padding -1
-                                    %! ANNOTATION
-                                    - \tweak color #darkblue
-                                    %! ANNOTATION
-                                    - \tweak staff-padding 5.5
-                                    %! ANNOTATION
-                                    \evansStartTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -1308,8 +1102,6 @@
                                     \evans-pitch-out-of-range-coloring
                                     d'''2
                                     - \staccato
-                                    %! ANNOTATION
-                                    \evansStopTextSpanMaterialAnnotation
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -1322,89 +1114,96 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 12]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                c'4
-                                \p
-                                - \staccato
-                                %! ANNOTATION
-                                - \abjad-dashed-line-with-hook
-                                %! ANNOTATION
-                                - \evans-text-spanner-left-text "[F]."
-                                %! ANNOTATION
-                                - \tweak bound-details.right.padding -1
-                                %! ANNOTATION
-                                - \tweak color #(rgb-color 0.961 0.961 0.406)
-                                %! ANNOTATION
-                                - \tweak staff-padding 5.5
-                                %! ANNOTATION
-                                \evansStartTextSpanMaterialAnnotation
-                                %! MATERIAL_COLOR
-                                \(
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 11/14
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 12]
 
-                                cs'4
-                                - \staccato
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                    c'2
+                                    \p
+                                    - \staccato
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                d'4
-                                - \staccato
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 13]
+                                    cs'2
+                                    - \staccato
 
-                                ds'4
-                                - \staccato
+                                    d'2
+                                    - \staccato
 
-                                e'4
-                                - \staccato
+                                    ds'2
+                                    - \staccato
 
-                                %! PITCH
-                                \evans-pitch-out-of-range-coloring
-                                d'''4
-                                - \staccato
+                                    e'2
+                                    - \staccato
 
-                                c'4
-                                - \staccato
+                                    %! PITCH
+                                    \evans-pitch-out-of-range-coloring
+                                    d'''2
+                                    - \staccato
+
+                                    c'2
+                                    - \staccato
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
-                                cs'4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'8.
                                 - \staccato
+                                [
 
-                                d'4
+                                \revert Staff.Stem.stemlet-length
+                                d'16
                                 - \staccato
+                                ~
+                                ]
 
-                                ds'4
-                                - \staccato
+                                \override Staff.Stem.stemlet-length = 0.75
+                                d'8
+                                [
 
-                                e'4
+                                \revert Staff.Stem.stemlet-length
+                                ds'8
                                 - \staccato
-                                %! ANNOTATION
-                                \evansStopTextSpanMaterialAnnotation
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                ds'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                e'8.
+                                - \staccato
                                 %! MATERIAL_COLOR
                                 \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                r1 * 3/4
 
-                                R1 * 3/8
+                                R1 * 3/4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                r1 * 3/8
 
-                                R1 * 1/2
+                                R1 * 3/8
                                 \bar "||"
 
                             }
