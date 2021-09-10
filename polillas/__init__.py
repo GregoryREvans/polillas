@@ -14,6 +14,13 @@ from .lib import (
     G,
     G_color,
     fuse_preprocessor,
+    fuse_preprocessor_2_1,
+    fuse_preprocessor_3_1,
+    fuse_preprocessor_3_2,
+    fuse_quarters_preprocessor,
+    fuse_quarters_preprocessor_2_1,
+    fuse_quarters_preprocessor_3_1,
+    quarters_preprocessor,
     scordatura_handler,
     select_all_first_leaves,
     select_run_first_leaves,
@@ -21,7 +28,7 @@ from .lib import (
 )
 from .materials.instruments import instruments
 from .materials.pitch import demo_pitch_handler
-from .materials.rhythm import demo_rhythm_handler
+from .materials.rhythm import note_rhythm_handler, poly_rhythms, swiping_rhythms
 from .materials.score_structure import score
 from .materials.time_signatures import (
     all_signatures,
@@ -46,22 +53,32 @@ __all__ = [
     "E_color",
     "F",
     "F_color",
-    "fermata_measures_01",
     "G",
     "G_color",
     "all_signatures",
     "bounds_01",
     "demo_pitch_handler",
     "demo_rhythm_handler",
+    "fermata_measures_01",
     "fuse_preprocessor",
+    "fuse_preprocessor_2_1",
+    "fuse_preprocessor_3_1",
+    "fuse_preprocessor_3_2",
+    "fuse_quarters_preprocessor",
+    "fuse_quarters_preprocessor_2_1",
+    "fuse_quarters_preprocessor_3_1",
     "instruments",
     "meters_01",
     "pairs_01",
+    "quarters_preprocessor",
     "reduced_signatures_01",
-    "score",
     "scordatura_handler",
+    "score",
     "select_all_first_leaves",
     "select_run_first_leaves",
     "signatures_01",
     "zero_padding_glissando",
+    "note_rhythm_handler",
+    "poly_rhythms",
+    "swiping_rhythms",
 ]

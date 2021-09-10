@@ -70,38 +70,39 @@ note_rhythm_handler = evans.RhythmHandler(
 ## 01
 ##
 
-demo_rhythm_handler = evans.RhythmHandler(
-    rmakers.stack(
-        evans.RTMMaker(
-            [
-                "(1 (1 1 1 1 1 1 1))",
-                "(1 (1 1 1 1 1))",
-                "(1 (1 1 1 1 1 1 1))",
-                "(1 (1 1 1 1))",
-                "(1 (1 (2 (1 1 1)) 1))",
-                "(1 (1 1 1))",
-                "(1 (1 1 1 1 1))",
-                "(1 (1 1 (2 (1 1 1))))",
-                "(1 (1 1 1 1 1))",
-                "(1 (1 1 (1 (1 1 1)) 1 1 1 1))",
-                "(1 (1 1 (2 ((2 (1 (1 (1 (1 (1 1)))) 1)) 1)) 1 1))",
-                "(1 (1 1 1 1 1 1 1))",  #
-                "(1 (1 1 1 1 1))",
-                "(1 (1 1 1 1 1 1 1))",
-                "(1 (1 1 1 1))",
-                "(1 (1 1 1 1))",
-                "(1 (1 1 1))",
-                "(1 (1 1 1 1 1))",
-                "(1 (1 1 1 1))",
-                "(1 (1 1 1 1 1))",
-                "(1 (1 1 (1 (1 1 1)) 1 1 1 1))",
-                "(1 (1 1 (2 ((2 (1 (1 (1 (1 (1 1)))) 1)) 1)) 1 1))",
-            ],
+
+def swiping_rhythms(indices=[1, 3], period=8, denominator=16, extra_counts=[2]):
+    attack_selector = abjad.select().leaves().get(indices, period)
+    stack = rmakers.stack(
+        rmakers.talea(
+            [1],
+            denominator,
+            extra_counts=extra_counts,
         ),
+        rmakers.force_rest(abjad.select()),
+        rmakers.force_note(attack_selector),
         rmakers.trivialize(abjad.select().tuplets()),
         rmakers.rewrite_rest_filled(abjad.select().tuplets()),
         rmakers.rewrite_sustained(abjad.select().tuplets()),
         rmakers.extract_trivial(),
-    ),
-    forget=False,
-)
+    )
+    handler = evans.RhythmHandler(stack, forget=False)
+    return handler
+
+
+def poly_rhythms(indices=[1, 3], period=8, denominator=16, extra_counts=[2]):
+    attack_selector = abjad.select().leaves().get(indices, period)
+    stack = rmakers.stack(
+        rmakers.even_division(
+            denominator,
+            extra_counts=extra_counts,
+        ),
+        rmakers.force_rest(abjad.select()),
+        rmakers.force_note(attack_selector),
+        rmakers.trivialize(abjad.select().tuplets()),
+        rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+        rmakers.rewrite_sustained(abjad.select().tuplets()),
+        rmakers.extract_trivial(),
+    )
+    handler = evans.RhythmHandler(stack, forget=False)
+    return handler

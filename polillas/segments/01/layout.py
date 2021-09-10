@@ -12,7 +12,9 @@ breaks = evans.Breaks(
     time_signatures=polillas.reduced_signatures_01,
     default_spacing=(1, 20),
     spacing=[
-        (1, (1, 28)),
+        # (1, (1, 28)),
+        (8, (1, 15)),
+        (16, (1, 15)),
     ],
     bar_number=1,
 )

@@ -446,8 +446,60 @@ stop_scratch = abjad.StopTextSpan(command=r"\stopTextSpanTwo")
 
 def fuse_preprocessor(divisions):
     divisions = baca.Sequence(divisions)
+    return [divisions.sum()]
+
+
+def fuse_preprocessor_2_1(divisions):
+    divisions = baca.Sequence(divisions)
     divisions = divisions.partition_by_counts((2, 1), cyclic=True, overhang=True)
     return baca.Sequence(sum(_) for _ in divisions)
+
+
+def fuse_preprocessor_3_1(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = divisions.partition_by_counts((3, 1), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def fuse_preprocessor_3_2(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = divisions.partition_by_counts((3, 2), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def fuse_quarters_preprocessor(divisions):
+    duration = baca.Sequence(divisions).sum()
+    divisions = baca.Sequence(duration)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    divisions = divisions.flatten(depth=-1)
+    return divisions
+
+
+def fuse_quarters_preprocessor_2_1(divisions):
+    duration = baca.Sequence(divisions).sum()
+    divisions = baca.Sequence(duration)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    divisions = divisions.flatten(depth=-1)
+    divisions = divisions.partition_by_counts((2, 1), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def fuse_quarters_preprocessor_3_1(divisions):
+    duration = baca.Sequence(divisions).sum()
+    divisions = baca.Sequence(duration)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    divisions = divisions.flatten(depth=-1)
+    divisions = divisions.partition_by_counts((3, 1), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def quarters_preprocessor(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = baca.Sequence(
+        baca.Sequence(_).quarters(compound=(3, 2)) for _ in divisions
+    )
+    divisions = divisions.flatten(depth=-1)
+    return divisions
 
 
 def select_all_first_leaves(selections):
