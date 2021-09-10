@@ -38,3 +38,19 @@ signatures_01 = [abjad.TimeSignature(_) for _ in meters_01]
 signatures_01.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
 bounds_01 = abjad.math.cumulative_sums([_.duration for _ in signatures_01])
+
+fermata_measures_01 = [1, 4, 10]
+
+reduced_signatures_01 = evans.reduce_fermata_measures(
+    signatures_01, fermata_measures_01
+)
+
+##
+## total
+##
+
+all_signatures = evans.join_time_signature_lists(
+    [
+        reduced_signatures_01,
+    ]
+)

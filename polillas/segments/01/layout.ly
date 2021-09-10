@@ -1,7 +1,7 @@
 \context Score = "Score"
 \with
 {
-    currentBarNumber = 10
+    currentBarNumber = 1
 }
 <<
     \context TimeSignatureContext = "Global Context"
@@ -11,40 +11,54 @@
             \autoPageBreaksOff
             \evans-lbsd #20 #'(19 20 20 20)
             \evans-system-X-offset #1
-            \evans-new-spacing-section #1 #11
+            \evans-new-spacing-section #1 #28
             s1 * 3/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 1/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 1
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 3/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 1/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 3/2
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 7/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 7/4
-            \evans-new-spacing-section #1 #11
-            s1 * 1
             \break
             \evans-lbsd #120 #'(19 20 20 20)
             \evans-system-X-offset #1
-            \evans-new-spacing-section #1 #11
+            \evans-new-spacing-section #1 #20
             s1 * 1
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
+            s1 * 1
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 1/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 5/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 3/2
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 3/4
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 3/2
-            \evans-new-spacing-section #1 #11
+            \noBreak
+            \evans-new-spacing-section #1 #20
             s1 * 3/4
             \pageBreak
             \break

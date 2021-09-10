@@ -14,24 +14,26 @@ from .lib import (
     G,
     G_color,
     fuse_preprocessor,
+    scordatura_handler,
     select_all_first_leaves,
     select_run_first_leaves,
+    zero_padding_glissando,
 )
 from .materials.instruments import instruments
 from .materials.pitch import demo_pitch_handler
 from .materials.rhythm import demo_rhythm_handler
 from .materials.score_structure import score
-from .materials.time_signatures import bounds_01, meters_01, pairs_01, signatures_01
+from .materials.time_signatures import (
+    all_signatures,
+    bounds_01,
+    fermata_measures_01,
+    meters_01,
+    pairs_01,
+    reduced_signatures_01,
+    signatures_01,
+)
 
 __all__ = [
-    "pairs_01",
-    "meters_01",
-    "signatures_01",
-    "bounds_01",
-    "fuse_preprocessor",
-    "select_all_first_leaves",
-    "select_run_first_leaves",
-    "demo_pitch_handler",
     "A",
     "A_color",
     "B",
@@ -44,9 +46,22 @@ __all__ = [
     "E_color",
     "F",
     "F_color",
+    "fermata_measures_01",
     "G",
     "G_color",
+    "all_signatures",
+    "bounds_01",
+    "demo_pitch_handler",
     "demo_rhythm_handler",
+    "fuse_preprocessor",
     "instruments",
+    "meters_01",
+    "pairs_01",
+    "reduced_signatures_01",
     "score",
+    "scordatura_handler",
+    "select_all_first_leaves",
+    "select_run_first_leaves",
+    "signatures_01",
+    "zero_padding_glissando",
 ]

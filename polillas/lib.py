@@ -306,6 +306,12 @@ def toggle_tuplet_prolation(selection):
     tuplet.set_minimum_denominator(4)
 
 
+scordatura_handler = evans.ScordaturaHandler(
+    string_number="IV",
+    default_pitch="c,",
+    new_pitch="b,,",
+)
+
 start_repeat = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
