@@ -12,7 +12,7 @@ met_110 = abjad.MetronomeMark((1, 4), 110)
 
 met_100 = abjad.MetronomeMark((1, 4), 100)
 
-met_95 = abjad.MetronomeMark((1, 4), 95)
+met_90 = abjad.MetronomeMark((1, 4), 90)
 
 met_80 = abjad.MetronomeMark((1, 4), 80)
 
@@ -20,11 +20,7 @@ met_70 = abjad.MetronomeMark((1, 4), 70)
 
 met_66 = abjad.MetronomeMark((1, 4), 66)
 
-met_66_duplicate = abjad.MetronomeMark((1, 4), 66)
-
 met_60 = abjad.MetronomeMark((1, 4), 60)
-
-met_50 = abjad.MetronomeMark((1, 4), 50)
 
 met_40 = abjad.MetronomeMark((1, 4), 40)
 
@@ -45,6 +41,22 @@ mark_40 = abjad.LilyPondLiteral(
 )
 
 abjad.tweak(mark_40).padding = 6
+
+met_90_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 90)
+
+mark_90 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup \with-dimensions-from \null {",
+        r"  \override #'(font-size . 5.5)",
+        r"  \concat {",
+        f"      {str(met_90_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    format_slot="after",
+)
+
+abjad.tweak(mark_90).padding = 6
 
 met_100_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 100)
 
@@ -137,29 +149,6 @@ met_mod_100_66 = evans.metric_modulation(
 )
 
 abjad.tweak(met_mod_100_66).padding = 6
-
-met_mod_66_50 = evans.metric_modulation(
-    metronome_mark=((1, 4), 66.6),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Note("c'8.")),
-    modulated_beat=(abjad.Note("c'4")),
-    rounded=True,
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_66_50).padding = 6
-
-met_mod_50_100 = evans.metric_modulation(
-    metronome_mark=((1, 4), 50),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Note("c'2")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_50_100).padding = 6
 
 met_mod_100_120 = evans.metric_modulation(
     metronome_mark=((1, 4), 100),

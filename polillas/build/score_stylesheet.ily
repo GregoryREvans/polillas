@@ -218,7 +218,7 @@
             \override #'(font-name . "Bell MT Std")
             \concat {
                 \override #'(font-name . "Bell MT Std Italic")
-                Nagual
+                Polillas
                 \hspace #3
                 —
                 \hspace #3

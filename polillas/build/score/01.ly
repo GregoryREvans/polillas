@@ -7,10 +7,18 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
+                \tempo 4=90
                 %! scaling time signatures
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup \with-dimensions-from \null {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -319,61 +327,73 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                        a'8
+                                        r8
                                         %! MATERIAL_COLOR
                                         \(
 
+                                        a'8
+                                        \mf
+                                        - \accent
+
                                         r8
 
                                         a'8
+                                        - \accent
 
                                         r8
 
                                         a'8
-
-                                        r8
+                                        - \accent
 
                                         \times 2/3
                                         {
 
-                                            a'8
-
                                             r8
 
                                             a'8
+                                            - \accent
+
+                                            r8
 
                                         }
 
-                                        r8
-
                                         a'8
-
-                                        r8
-
-                                        a'8
+                                        - \accent
 
                                         r8
 
                                         a'8
+                                        - \accent
+
+                                        r8
+
+                                        a'8
+                                        - \accent
+
+                                        r8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
-                                        r8
-
                                         a'8
-
-                                        r8
-
-                                        a'8
+                                        - \accent
 
                                         r8
 
                                         a'8
+                                        - \accent
 
                                         r8
 
                                         a'8
+                                        - \accent
+
+                                        r8
+
+                                        a'8
+                                        - \accent
+
+                                        r8
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -657,11 +677,13 @@
 
                                         eqs''16
                                         \p
+                                        - \tenuto
                                         ^ \markup Spazzolato
 
                                         r8
 
                                         d''16
+                                        - \tenuto
 
                                         r8.
 
@@ -673,12 +695,14 @@
                                             r16
 
                                             dqf''16
+                                            - \tenuto
 
                                             r16
 
                                             r16
 
                                             d''16
+                                            - \tenuto
 
                                         }
 
@@ -696,12 +720,14 @@
                                             r16
 
                                             cs''16
+                                            - \tenuto
 
                                             r16
 
                                             r16
 
                                             fqs''16
+                                            - \tenuto
 
                                         }
 
@@ -711,12 +737,14 @@
                                         % [violin 2 voice measure 7]
 
                                         dqs''16
+                                        - \tenuto
 
                                         r16
 
                                         r16
 
                                         gqf''16
+                                        - \tenuto
 
                                         r4
 
@@ -726,12 +754,14 @@
                                             r16
 
                                             bqf''16
+                                            - \tenuto
 
                                             r16
 
                                             r16
 
                                             eqs''16
+                                            - \tenuto
 
                                             r16
 
@@ -749,12 +779,14 @@
                                             r16
 
                                             d''16
+                                            - \tenuto
 
                                             r16
 
                                             r16
 
                                             dqf''16
+                                            - \tenuto
 
                                             r16
 
@@ -772,12 +804,14 @@
                                             r16
 
                                             d''16
+                                            - \tenuto
 
                                         }
 
                                         r8
 
                                         cs''16
+                                        - \tenuto
 
                                         r16
                                         %! COMMENT_MEASURE_NUMBERS
@@ -790,12 +824,14 @@
                                         {
 
                                             fqs''16
+                                            - \tenuto
 
                                             r16
 
                                             r16
 
                                             dqs''16
+                                            - \tenuto
 
                                             r16
 
@@ -813,12 +849,14 @@
                                             r16
 
                                             gqf''16
+                                            - \tenuto
 
                                             r16
 
                                             r16
 
                                             bqf''16
+                                            - \tenuto
 
                                             r16
 
@@ -836,6 +874,7 @@
                                             r16
 
                                             eqs''16
+                                            - \tenuto
 
                                             r16
 
@@ -844,12 +883,14 @@
                                         r16
 
                                         d''16
+                                        - \tenuto
 
                                         r8
 
                                         r8.
 
                                         dqf''16
+                                        - \tenuto
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -861,15 +902,58 @@
 
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                            d'8
+                                            r8
                                             %! MATERIAL_COLOR
                                             \(
 
-                                            r8
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d'8
+                                            \mf
+                                            - \accent
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d'8
+                                            - \accent
+                                            ]
 
                                             r8
 
                                             d'8
+                                            - \accent
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            d'8
+                                            - \accent
+
+                                            r8
+
+                                            d'8
+                                            - \accent
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            d'8
+                                            - \accent
+
+                                            r8
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d'8
+                                            - \accent
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d'8
+                                            - \accent
+                                            ]
 
                                             r8
 
@@ -878,9 +962,15 @@
                                         \times 2/3
                                         {
 
-                                            r8
-
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d'8
+                                            - \accent
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d'8
+                                            - \accent
+                                            ]
 
                                             r8
 
@@ -889,43 +979,29 @@
                                         \times 4/5
                                         {
 
-                                            r8
-
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d'8
+                                            - \accent
+                                            [
 
-                                            r8
-
-                                            r8
-
+                                            \revert Staff.Stem.stemlet-length
                                             d'8
-
-                                        }
-
-                                        \times 2/3
-                                        {
+                                            - \accent
+                                            ]
 
                                             r8
 
-                                            r8
-
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d'8
+                                            - \accent
+                                            [
 
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                            r8
-
-                                            r8
-
+                                            \revert Staff.Stem.stemlet-length
                                             d'8
-
-                                            r8
-
-                                            r8
+                                            - \accent
                                             %! MATERIAL_COLOR
                                             \)
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -963,11 +1039,13 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             eqs''16
                                             \p
+                                            - \tenuto
                                             ^ \markup Spazzolato
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             d''16
+                                            - \tenuto
                                             ]
 
                                             r16
@@ -996,10 +1074,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqf''16
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             d''16
+                                            - \tenuto
                                             ]
 
                                             r16
@@ -1017,10 +1097,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             cs''16
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             fqs''16
+                                            - \tenuto
                                             ]
 
                                             r16
@@ -1051,10 +1133,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqs''16
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             gqf''16
+                                            - \tenuto
                                             ]
 
                                         }
@@ -1075,10 +1159,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             bqf''32
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             eqs''32
+                                            - \tenuto
                                             ]
 
                                             r32
@@ -1100,10 +1186,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d''16
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             dqf''16
+                                            - \tenuto
                                             ]
 
                                             r16
@@ -1131,10 +1219,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d''16
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             cs''16
+                                            - \tenuto
                                             ]
 
                                             r16
@@ -1155,10 +1245,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             fqs''16
+                                            - \tenuto
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             dqs''16
+                                            - \tenuto
                                             ]
 
                                             r16
@@ -1186,6 +1278,7 @@
                                             r32
 
                                             gqf''32
+                                            - \tenuto
 
                                         }
 
@@ -1193,6 +1286,7 @@
                                         {
 
                                             bqf''16
+                                            - \tenuto
 
                                             r16
 
@@ -1360,6 +1454,7 @@
 
                                     ef'16
                                     \p
+                                    - \tenuto
                                     ^ \markup Spazzolato
 
                                     r16
@@ -1367,6 +1462,7 @@
                                     r16
 
                                     cqs'16
+                                    - \tenuto
 
                                     r16
 
@@ -1381,6 +1477,7 @@
                                 r16
 
                                 f'16
+                                - \tenuto
 
                                 r8
 
@@ -1388,6 +1485,7 @@
                                 {
 
                                     g'16
+                                    - \tenuto
 
                                     r16
 
@@ -1400,12 +1498,14 @@
                                     r16
 
                                     eqs'16
+                                    - \tenuto
 
                                     r16
 
                                     r16
 
                                     af'16
+                                    - \tenuto
 
                                 }
 
@@ -1415,12 +1515,14 @@
                                 {
 
                                     a'16
+                                    - \tenuto
 
                                     r16
 
                                     r16
 
                                     ef'16
+                                    - \tenuto
 
                                     r16
 
@@ -1435,12 +1537,14 @@
                                 }
 
                                 cqs'16
+                                - \tenuto
 
                                 r16
 
                                 r16
 
                                 f'16
+                                - \tenuto
 
                                 \times 4/5
                                 {
@@ -1456,12 +1560,14 @@
                                     r16
 
                                     g'16
+                                    - \tenuto
 
                                     r16
 
                                     r16
 
                                     eqs'16
+                                    - \tenuto
 
                                     r16
 
@@ -1479,6 +1585,7 @@
                                     r16
 
                                     af'16
+                                    - \tenuto
 
                                 }
 
@@ -1490,6 +1597,7 @@
                                     r16
 
                                     a'16
+                                    - \tenuto
 
                                     r16
 
@@ -1502,6 +1610,7 @@
                                     r16
 
                                     ef'16
+                                    - \tenuto
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -1516,32 +1625,48 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                    c8
+                                    r8
                                     %! MATERIAL_COLOR
                                     \(
 
-                                    r8
-
-                                    r8
-
-                                    r8
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c8
+                                    \mf
+                                    - \accent
+                                    [
 
                                     c8
+                                    - \accent
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c8
+                                    - \accent
+                                    ]
 
                                     r8
 
-                                    r8
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c8
+                                    - \accent
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c8
+                                    - \accent
+                                    ]
 
                                 }
 
                                 \times 2/3
                                 {
 
+                                    c8
+                                    - \accent
+
                                     r8
 
                                     c8
-
-                                    r8
+                                    - \accent
 
                                 }
 
@@ -1552,25 +1677,54 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 10]
 
-                                    r8
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c8
+                                    - \accent
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c8
+                                    - \accent
+                                    ]
 
                                     r8
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c8
+                                    - \accent
+                                    [
 
                                     c8
+                                    - \accent
 
-                                    r8
-
-                                    r8
-
-                                    r8
-
+                                    \revert Staff.Stem.stemlet-length
                                     c8
+                                    - \accent
+                                    ]
+
+                                    r8
 
                                 }
 
-                                r4
-                                %! MATERIAL_COLOR
-                                \)
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c8
+                                    - \accent
+                                    [
+
+                                    c8
+                                    - \accent
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c8
+                                    - \accent
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
@@ -1604,27 +1758,37 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c4
+                                \mf
+                                - \accent
                                 %! MATERIAL_COLOR
                                 \(
 
                                 c4
+                                - \accent
 
                                 c4
+                                - \accent
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
                                 c4
+                                - \accent
 
                                 c4
+                                - \accent
 
                                 c4
+                                - \accent
 
                                 c4
+                                - \accent
 
                                 c4
+                                - \accent
 
                                 c4
+                                - \accent
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
