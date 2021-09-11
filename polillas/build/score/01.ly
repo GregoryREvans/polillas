@@ -169,8 +169,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/8
-                                        %! applying indicators
-                                        ^ \markup { 0 }
 
                                         R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -180,7 +178,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 1 }
                                         \stopStaff \startStaff
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -194,7 +191,6 @@
                                             \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             cs'4
                                             \sfp
-                                            ^ \markup { 2 }
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             %! abjad.glissando(7)
@@ -208,7 +204,6 @@
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
                                             d''2
-                                            ^ \markup { 3 }
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -218,7 +213,6 @@
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
                                             d'4.
-                                            ^ \markup { 4 }
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -229,7 +223,6 @@
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
                                             d''8
-                                            ^ \markup { 5 }
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -243,7 +236,6 @@
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
                                                 e'8
-                                                ^ \markup { 6 }
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -254,7 +246,6 @@
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
                                                 d''8
-                                                ^ \markup { 7 }
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -265,7 +256,6 @@
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
                                                 f'4
-                                                ^ \markup { 8 }
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -275,7 +265,6 @@
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
                                                 d''4
-                                                ^ \markup { 9 }
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -287,7 +276,6 @@
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
                                             g'4
-                                            ^ \markup { 10 }
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -295,7 +283,6 @@
 
                                             d''4
                                             \ff
-                                            ^ \markup { 11 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -307,7 +294,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 12 }
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -316,8 +302,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/4
-                                        %! applying indicators
-                                        ^ \markup { 13 }
 
                                         R1 * 3/4
                                         %! COMMENT_MEASURE_NUMBERS
@@ -327,8 +311,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 7/8
-                                        %! applying indicators
-                                        ^ \markup { 14 }
 
                                         R1 * 7/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -337,108 +319,61 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 15 }
+                                        a'8
                                         %! MATERIAL_COLOR
                                         \(
 
                                         r8
-                                        ^ \markup { 16 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 17 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 18 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 19 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 20 }
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 21 }
+                                            a'8
 
                                             r8
-                                            ^ \markup { 22 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 23 }
+                                            a'8
 
                                         }
 
                                         r8
-                                        ^ \markup { 24 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 25 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 26 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 27 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 28 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 29 }
+                                        a'8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
                                         r8
-                                        ^ \markup { 30 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 31 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 32 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 33 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 34 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 35 }
+                                        a'8
 
                                         r8
-                                        ^ \markup { 36 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 37 }
+                                        a'8
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -448,8 +383,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 1/2
-                                        %! applying indicators
-                                        ^ \markup { 38 }
 
                                         R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
@@ -459,7 +392,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 39 }
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -468,8 +400,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 5/8
-                                        %! applying indicators
-                                        ^ \markup { 40 }
 
                                         R1 * 5/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -479,8 +409,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/4
-                                        %! applying indicators
-                                        ^ \markup { 42 }
 
                                         R1 * 3/4
 
@@ -494,68 +422,47 @@
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             r32
-                                            ^ \markup { 43 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             r32
-                                            ^ \markup { 44 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'32
+                                            aqf''32
                                             \p
                                             ^ \markup Spazzolato
-                                            ^ \markup { 45 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'32
-                                            ^ \markup { 46 }
+                                            aqf''32
                                             ]
 
                                             r32
-                                            ^ \markup { 47 }
 
                                             r32
-                                            ^ \markup { 48 }
 
                                             r32
-                                            ^ \markup { 49 }
 
                                         }
 
                                         r4
-                                        ^ \markup { 50 }
 
                                         \times 4/5
                                         {
 
                                             r16
-                                            ^ \markup { 51 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 52 }
+                                            cqs''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 53 }
+                                            fqs''16
                                             ]
 
                                             r16
-                                            ^ \markup { 54 }
 
                                             r16
-                                            ^ \markup { 55 }
 
                                         }
 
@@ -566,80 +473,54 @@
                                             % [violin 1 voice measure 15]
 
                                             r16
-                                            ^ \markup { 56 }
 
                                             r16
-                                            ^ \markup { 57 }
 
                                             r16
-                                            ^ \markup { 58 }
 
                                             r16
-                                            ^ \markup { 59 }
 
                                             r16
-                                            ^ \markup { 60 }
 
                                             r16
-                                            ^ \markup { 61 }
 
                                             r16
-                                            ^ \markup { 62 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 63 }
+                                            cqs''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 64 }
+                                            bqs'16
                                             ]
 
                                         }
 
                                         r8
-                                        ^ \markup { 65 }
 
                                         r4
-                                        ^ \markup { 66 }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
                                         {
 
                                             r16
-                                            ^ \markup { 67 }
 
                                             r16
-                                            ^ \markup { 68 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 69 }
+                                            bf''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 70 }
+                                            c''16
                                             ]
 
                                             r16
-                                            ^ \markup { 71 }
 
                                             r16
-                                            ^ \markup { 72 }
 
                                             r16
-                                            ^ \markup { 73 }
 
                                         }
 
@@ -647,39 +528,26 @@
                                         {
 
                                             r16
-                                            ^ \markup { 74 }
 
                                             r16
-                                            ^ \markup { 75 }
 
                                             r16
-                                            ^ \markup { 76 }
 
                                             r16
-                                            ^ \markup { 77 }
 
                                             r16
-                                            ^ \markup { 78 }
 
                                             r16
-                                            ^ \markup { 79 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 80 }
+                                            dqs''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 81 }
+                                            c''16
                                             ]
 
                                             r16
-                                            ^ \markup { 82 }
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -687,38 +555,27 @@
                                         % [violin 1 voice measure 16]
 
                                         r4
-                                        ^ \markup { 83 }
 
                                         \times 4/5
                                         {
 
                                             r16
-                                            ^ \markup { 84 }
 
                                             r16
-                                            ^ \markup { 85 }
 
                                             r16
-                                            ^ \markup { 86 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 87 }
+                                            aqf''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 88 }
+                                            aqf''16
                                             ]
 
                                         }
 
                                         r4
-                                        ^ \markup { 89 }
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -752,8 +609,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/8
-                                        %! applying indicators
-                                        ^ \markup { 0 }
 
                                         R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -763,7 +618,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 1 }
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -772,8 +626,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 1/2
-                                        %! applying indicators
-                                        ^ \markup { 2 }
 
                                         R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
@@ -783,8 +635,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/8
-                                        %! applying indicators
-                                        ^ \markup { 3 }
 
                                         R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -794,222 +644,96 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 4 }
                                         \stopStaff \startStaff
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 6]
 
-                                        \times 8/9
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                        r16
+                                        %! MATERIAL_COLOR
+                                        \(
+
+                                        eqs''16
+                                        \p
+                                        ^ \markup Spazzolato
+
+                                        r8
+
+                                        d''16
+
+                                        r8.
+
+                                        \times 2/3
                                         {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 2 voice measure 6]
-
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                            r16
-                                            ^ \markup { 5 }
-                                            %! MATERIAL_COLOR
-                                            \(
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            \p
-                                            ^ \markup Spazzolato
-                                            ^ \markup { 6 }
 
                                             r16
-                                            ^ \markup { 7 }
 
                                             r16
-                                            ^ \markup { 8 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 9 }
+                                            dqf''16
 
                                             r16
-                                            ^ \markup { 10 }
 
                                             r16
-                                            ^ \markup { 11 }
 
-                                            r16
-                                            ^ \markup { 12 }
-
-                                            r16
-                                            ^ \markup { 13 }
+                                            d''16
 
                                         }
 
-                                        r16
-                                        ^ \markup { 14 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ^ \markup { 15 }
-
-                                        r8
-                                        ^ \markup { 16 }
-
-                                        \times 4/5
+                                        \times 8/9
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 17 }
+                                            r16
 
                                             r16
-                                            ^ \markup { 18 }
 
                                             r16
-                                            ^ \markup { 19 }
 
                                             r16
-                                            ^ \markup { 20 }
 
                                             r16
-                                            ^ \markup { 21 }
+
+                                            cs''16
 
                                             r16
-                                            ^ \markup { 22 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 23 }
 
                                             r16
-                                            ^ \markup { 24 }
 
-                                            r16
-                                            ^ \markup { 25 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 26 }
+                                            fqs''16
 
                                         }
 
                                         r4
-                                        ^ \markup { 27 }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 7]
 
-                                        \times 8/9
-                                        {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 2 voice measure 7]
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 28 }
-
-                                            r16
-                                            ^ \markup { 29 }
-
-                                            r16
-                                            ^ \markup { 30 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 31 }
-
-                                            r16
-                                            ^ \markup { 32 }
-
-                                            r16
-                                            ^ \markup { 33 }
-
-                                            r16
-                                            ^ \markup { 34 }
-
-                                            r16
-                                            ^ \markup { 35 }
-
-                                            r16
-                                            ^ \markup { 36 }
-
-                                        }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ^ \markup { 37 }
+                                        dqs''16
 
                                         r16
-                                        ^ \markup { 38 }
 
                                         r16
-                                        ^ \markup { 39 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ^ \markup { 40 }
+                                        gqf''16
 
-                                        \times 4/5
+                                        r4
+
+                                        \times 2/3
                                         {
 
                                             r16
-                                            ^ \markup { 41 }
+
+                                            bqf''16
 
                                             r16
-                                            ^ \markup { 42 }
 
                                             r16
-                                            ^ \markup { 43 }
+
+                                            eqs''16
 
                                             r16
-                                            ^ \markup { 44 }
-
-                                            r16
-                                            ^ \markup { 45 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 46 }
-
-                                            r16
-                                            ^ \markup { 47 }
-
-                                            r16
-                                            ^ \markup { 48 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 49 }
-
-                                            r16
-                                            ^ \markup { 50 }
-
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                            r16
-                                            ^ \markup { 51 }
-
-                                            r16
-                                            ^ \markup { 52 }
-
-                                            r16
-                                            ^ \markup { 53 }
-
-                                            r16
-                                            ^ \markup { 54 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 55 }
 
                                         }
 
@@ -1017,107 +741,65 @@
                                         {
 
                                             r16
-                                            ^ \markup { 56 }
 
                                             r16
-                                            ^ \markup { 57 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 58 }
 
                                             r16
-                                            ^ \markup { 59 }
 
                                             r16
-                                            ^ \markup { 60 }
+
+                                            d''16
 
                                             r16
-                                            ^ \markup { 61 }
 
                                             r16
-                                            ^ \markup { 62 }
+
+                                            dqf''16
 
                                             r16
-                                            ^ \markup { 63 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 64 }
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            d''16
 
                                         }
 
                                         r8
-                                        ^ \markup { 65 }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ^ \markup { 66 }
+                                        cs''16
 
                                         r16
-                                        ^ \markup { 67 }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 8]
 
-                                        \times 4/5
+                                        r4
+
+                                        \times 2/3
                                         {
 
-                                            r16
-                                            ^ \markup { 68 }
+                                            fqs''16
 
                                             r16
-                                            ^ \markup { 69 }
 
                                             r16
-                                            ^ \markup { 70 }
+
+                                            dqs''16
 
                                             r16
-                                            ^ \markup { 71 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 72 }
 
                                             r16
-                                            ^ \markup { 73 }
-
-                                            r16
-                                            ^ \markup { 74 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 75 }
-
-                                            r16
-                                            ^ \markup { 76 }
-
-                                            r16
-                                            ^ \markup { 77 }
-
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                            r16
-                                            ^ \markup { 78 }
-
-                                            r16
-                                            ^ \markup { 79 }
-
-                                            r16
-                                            ^ \markup { 80 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 81 }
-
-                                            r16
-                                            ^ \markup { 82 }
 
                                         }
 
@@ -1125,39 +807,51 @@
                                         {
 
                                             r16
-                                            ^ \markup { 83 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 84 }
 
                                             r16
-                                            ^ \markup { 85 }
 
                                             r16
-                                            ^ \markup { 86 }
+
+                                            gqf''16
 
                                             r16
-                                            ^ \markup { 87 }
 
                                             r16
-                                            ^ \markup { 88 }
+
+                                            bqf''16
 
                                             r16
-                                            ^ \markup { 89 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 90 }
 
                                             r16
-                                            ^ \markup { 91 }
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
+
+                                        \times 4/5
+                                        {
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            eqs''16
+
+                                            r16
+
+                                        }
+
+                                        r16
+
+                                        d''16
+
+                                        r8
+
+                                        r8.
+
+                                        dqf''16
+                                        %! MATERIAL_COLOR
+                                        \)
 
                                         \times 4/5
                                         {
@@ -1167,26 +861,17 @@
 
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 92 }
+                                            d'8
                                             %! MATERIAL_COLOR
                                             \(
 
                                             r8
-                                            ^ \markup { 93 }
 
                                             r8
-                                            ^ \markup { 94 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 95 }
+                                            d'8
 
                                             r8
-                                            ^ \markup { 96 }
 
                                         }
 
@@ -1194,15 +879,10 @@
                                         {
 
                                             r8
-                                            ^ \markup { 97 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 98 }
+                                            d'8
 
                                             r8
-                                            ^ \markup { 99 }
 
                                         }
 
@@ -1210,23 +890,14 @@
                                         {
 
                                             r8
-                                            ^ \markup { 100 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 101 }
+                                            d'8
 
                                             r8
-                                            ^ \markup { 102 }
 
                                             r8
-                                            ^ \markup { 103 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 104 }
+                                            d'8
 
                                         }
 
@@ -1234,15 +905,10 @@
                                         {
 
                                             r8
-                                            ^ \markup { 105 }
 
                                             r8
-                                            ^ \markup { 106 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 107 }
+                                            d'8
 
                                         }
 
@@ -1250,21 +916,14 @@
                                         {
 
                                             r8
-                                            ^ \markup { 108 }
 
                                             r8
-                                            ^ \markup { 109 }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            ^ \markup { 110 }
+                                            d'8
 
                                             r8
-                                            ^ \markup { 111 }
 
                                             r8
-                                            ^ \markup { 112 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -1276,7 +935,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 113 }
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1285,13 +943,10 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 5/8
-                                        %! applying indicators
-                                        ^ \markup { 114 }
 
                                         R1 * 5/8
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
+                                        \times 2/3
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
@@ -1300,37 +955,30 @@
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             r16
-                                            ^ \markup { 116 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             r16
-                                            ^ \markup { 117 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            eqs''16
                                             \p
                                             ^ \markup Spazzolato
-                                            ^ \markup { 118 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 119 }
+                                            d''16
                                             ]
 
                                             r16
-                                            ^ \markup { 120 }
 
                                             r16
-                                            ^ \markup { 121 }
 
                                             r16
-                                            ^ \markup { 122 }
+
+                                            r16
+
+                                            r16
 
                                         }
 
@@ -1339,191 +987,132 @@
                                         {
 
                                             r16
-                                            ^ \markup { 123 }
 
                                             r16
-                                            ^ \markup { 124 }
 
                                             r16
-                                            ^ \markup { 125 }
 
                                             r16
-                                            ^ \markup { 126 }
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            dqf''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d''16
+                                            ]
 
                                             r16
-                                            ^ \markup { 127 }
-
-                                            r16
-                                            ^ \markup { 128 }
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 129 }
 
                                         }
+
+                                        r4
+
+                                        r8
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 130 }
-
                                             r16
-                                            ^ \markup { 131 }
-
-                                            r16
-                                            ^ \markup { 132 }
-
-                                            r16
-                                            ^ \markup { 133 }
-
-                                            r16
-                                            ^ \markup { 134 }
-
-                                            r16
-                                            ^ \markup { 135 }
-
-                                            r16
-                                            ^ \markup { 136 }
-
-                                            r16
-                                            ^ \markup { 137 }
-
-                                            r16
-                                            ^ \markup { 138 }
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
-                                        {
-
-                                            r16
-                                            ^ \markup { 139 }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 140 }
+                                            cs''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 141 }
+                                            fqs''16
                                             ]
 
                                             r16
-                                            ^ \markup { 142 }
 
                                             r16
-                                            ^ \markup { 143 }
 
                                             r16
-                                            ^ \markup { 144 }
 
                                             r16
-                                            ^ \markup { 145 }
 
-                                        }
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 14]
+                                            r16
 
-                                        r4
-                                        ^ \markup { 146 }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'32
-                                            ^ \markup { 147 }
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'32
-                                            ^ \markup { 148 }
-                                            ]
-
-                                            r32
-                                            ^ \markup { 149 }
-
-                                            r32
-                                            ^ \markup { 150 }
-
-                                            r32
-                                            ^ \markup { 151 }
-
-                                            r32
-                                            ^ \markup { 152 }
-
-                                            r32
-                                            ^ \markup { 153 }
+                                            r16
 
                                         }
 
                                         \times 4/5
                                         {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 14]
 
                                             r16
-                                            ^ \markup { 154 }
 
                                             r16
-                                            ^ \markup { 155 }
 
                                             r16
-                                            ^ \markup { 156 }
 
-                                            r16
-                                            ^ \markup { 157 }
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            dqs''16
+                                            [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 158 }
+                                            \revert Staff.Stem.stemlet-length
+                                            gqf''16
+                                            ]
 
                                         }
+
+                                        r4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            bqf''32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            eqs''32
+                                            ]
+
+                                            r32
+
+                                        }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 15]
+
+                                        r4
+
+                                        r8
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
                                         {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 2 voice measure 15]
-
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 159 }
 
                                             r16
-                                            ^ \markup { 160 }
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            dqf''16
+                                            ]
 
                                             r16
-                                            ^ \markup { 161 }
 
                                             r16
-                                            ^ \markup { 162 }
 
                                             r16
-                                            ^ \markup { 163 }
 
                                             r16
-                                            ^ \markup { 164 }
-
-                                            r16
-                                            ^ \markup { 165 }
 
                                         }
 
@@ -1531,149 +1120,87 @@
                                         {
 
                                             r16
-                                            ^ \markup { 166 }
 
                                             r16
-                                            ^ \markup { 167 }
 
                                             r16
-                                            ^ \markup { 168 }
+
+                                            r16
+
+                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 169 }
+                                            d''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 170 }
+                                            cs''16
                                             ]
 
                                             r16
-                                            ^ \markup { 171 }
 
                                             r16
-                                            ^ \markup { 172 }
-
-                                            r16
-                                            ^ \markup { 173 }
-
-                                            r16
-                                            ^ \markup { 174 }
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
-                                        {
-
-                                            r16
-                                            ^ \markup { 175 }
-
-                                            r16
-                                            ^ \markup { 176 }
-
-                                            r16
-                                            ^ \markup { 177 }
-
-                                            r16
-                                            ^ \markup { 178 }
-
-                                            r16
-                                            ^ \markup { 179 }
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 180 }
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 181 }
-                                            ]
 
                                         }
 
                                         r8
-                                        ^ \markup { 182 }
 
                                         r4
-                                        ^ \markup { 183 }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \times 4/5
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 16]
 
-                                            r32
-                                            ^ \markup { 184 }
-
-                                            r32
-                                            ^ \markup { 185 }
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'32
-                                            ^ \markup { 186 }
+                                            fqs''16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'32
-                                            ^ \markup { 187 }
+                                            dqs''16
                                             ]
 
-                                            r32
-                                            ^ \markup { 188 }
+                                            r16
 
-                                            r32
-                                            ^ \markup { 189 }
+                                            r16
 
-                                            r32
-                                            ^ \markup { 190 }
+                                            r16
 
                                         }
 
-                                        r4
-                                        ^ \markup { 191 }
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            gqf''32
+
+                                        }
 
                                         \times 4/5
                                         {
 
-                                            r16
-                                            ^ \markup { 192 }
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 193 }
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            ^ \markup { 194 }
-                                            ]
+                                            bqf''16
 
                                             r16
-                                            ^ \markup { 195 }
 
                                             r16
-                                            ^ \markup { 196 }
+
+                                            r16
+
+                                            r16
                                             %! MATERIAL_COLOR
                                             \)
                                             \bar "||"
@@ -1715,8 +1242,6 @@
                                 %! applying indicators
                                 \clef "alto"
                                 r1 * 3/8
-                                %! applying indicators
-                                ^ \markup { 0 }
 
                                 R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1726,7 +1251,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 1 }
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1735,14 +1259,12 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 r2.
-                                ^ \markup { 2 }
                                 %! MATERIAL_COLOR
                                 \(
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 a16
                                 \sfp
-                                ^ \markup { 3 }
                                 - \tweak stencil #abjad-flared-hairpin
                                 \<
                                 %! abjad.glissando(7)
@@ -1755,7 +1277,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 g'16
-                                ^ \markup { 4 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1765,7 +1286,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 b16
-                                ^ \markup { 5 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1776,7 +1296,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 f'16
-                                ^ \markup { 6 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1791,7 +1310,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 c'8.
-                                ^ \markup { 7 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1801,7 +1319,6 @@
                                 \revert Staff.Stem.stemlet-length
                                 e'16
                                 \ff
-                                ^ \markup { 8 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1809,7 +1326,6 @@
                                 ]
 
                                 r2
-                                ^ \markup { 9 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1819,7 +1335,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 10 }
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1828,187 +1343,127 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/4
-                                %! applying indicators
-                                ^ \markup { 11 }
 
                                 R1 * 3/4
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 7]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 7]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                    r16
+                                    %! MATERIAL_COLOR
+                                    \(
+
+                                    ef'16
+                                    \p
+                                    ^ \markup Spazzolato
+
+                                    r16
+
+                                    r16
+
+                                    cqs'16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                }
+
                                 r16
-                                ^ \markup { 12 }
-                                %! MATERIAL_COLOR
-                                \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                \p
-                                ^ \markup Spazzolato
-                                ^ \markup { 13 }
+                                f'16
 
                                 r8
-                                ^ \markup { 14 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ^ \markup { 15 }
-
-                                r8.
-                                ^ \markup { 16 }
-
-                                \times 2/3
+                                \times 4/5
                                 {
 
-                                    r16
-                                    ^ \markup { 17 }
+                                    g'16
 
                                     r16
-                                    ^ \markup { 18 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 19 }
 
                                     r16
-                                    ^ \markup { 20 }
 
                                     r16
-                                    ^ \markup { 21 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 22 }
-
-                                }
-
-                                \times 8/9
-                                {
 
                                     r16
-                                    ^ \markup { 23 }
 
                                     r16
-                                    ^ \markup { 24 }
+
+                                    eqs'16
 
                                     r16
-                                    ^ \markup { 25 }
 
                                     r16
-                                    ^ \markup { 26 }
 
-                                    r16
-                                    ^ \markup { 27 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 28 }
-
-                                    r16
-                                    ^ \markup { 29 }
-
-                                    r16
-                                    ^ \markup { 30 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 31 }
+                                    af'16
 
                                 }
 
                                 r4
-                                ^ \markup { 32 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ^ \markup { 33 }
-
-                                r16
-                                ^ \markup { 34 }
-
-                                r16
-                                ^ \markup { 35 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ^ \markup { 36 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 8]
-
-                                r4
-                                ^ \markup { 37 }
-
-                                \times 2/3
-                                {
-
-                                    r16
-                                    ^ \markup { 38 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 39 }
-
-                                    r16
-                                    ^ \markup { 40 }
-
-                                    r16
-                                    ^ \markup { 41 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 42 }
-
-                                    r16
-                                    ^ \markup { 43 }
-
-                                }
 
                                 \times 8/9
                                 {
 
-                                    r16
-                                    ^ \markup { 44 }
+                                    a'16
 
                                     r16
-                                    ^ \markup { 45 }
 
                                     r16
-                                    ^ \markup { 46 }
+
+                                    ef'16
 
                                     r16
-                                    ^ \markup { 47 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 48 }
 
                                     r16
-                                    ^ \markup { 49 }
 
                                     r16
-                                    ^ \markup { 50 }
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 51 }
 
                                     r16
-                                    ^ \markup { 52 }
+
+                                    r16
+
+                                }
+
+                                cqs'16
+
+                                r16
+
+                                r16
+
+                                f'16
+
+                                \times 4/5
+                                {
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    g'16
+
+                                    r16
+
+                                    r16
+
+                                    eqs'16
+
+                                    r16
 
                                 }
 
@@ -2016,39 +1471,41 @@
                                 {
 
                                     r16
-                                    ^ \markup { 53 }
 
                                     r16
-                                    ^ \markup { 54 }
 
                                     r16
-                                    ^ \markup { 55 }
 
                                     r16
-                                    ^ \markup { 56 }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
-                                    ^ \markup { 57 }
+                                    af'16
 
                                 }
 
-                                r8
-                                ^ \markup { 58 }
+                                \times 8/9
+                                {
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ^ \markup { 59 }
+                                    r16
 
-                                r16
-                                ^ \markup { 60 }
+                                    r16
 
-                                r4
-                                ^ \markup { 61 }
-                                %! MATERIAL_COLOR
-                                \)
+                                    a'16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    ef'16
+                                    %! MATERIAL_COLOR
+                                    \)
+
+                                }
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
@@ -2059,32 +1516,21 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    ^ \markup { 62 }
+                                    c8
                                     %! MATERIAL_COLOR
                                     \(
 
                                     r8
-                                    ^ \markup { 63 }
 
                                     r8
-                                    ^ \markup { 64 }
 
                                     r8
-                                    ^ \markup { 65 }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    ^ \markup { 66 }
+                                    c8
 
                                     r8
-                                    ^ \markup { 67 }
 
                                     r8
-                                    ^ \markup { 68 }
 
                                 }
 
@@ -2092,15 +1538,10 @@
                                 {
 
                                     r8
-                                    ^ \markup { 69 }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    ^ \markup { 70 }
+                                    c8
 
                                     r8
-                                    ^ \markup { 71 }
 
                                 }
 
@@ -2112,34 +1553,22 @@
                                     % [viola voice measure 10]
 
                                     r8
-                                    ^ \markup { 72 }
 
                                     r8
-                                    ^ \markup { 73 }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    ^ \markup { 74 }
+                                    c8
 
                                     r8
-                                    ^ \markup { 75 }
 
                                     r8
-                                    ^ \markup { 76 }
 
                                     r8
-                                    ^ \markup { 77 }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    ^ \markup { 78 }
+                                    c8
 
                                 }
 
                                 r4
-                                ^ \markup { 79 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2149,7 +1578,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 80 }
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2158,8 +1586,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 5/8
-                                %! applying indicators
-                                ^ \markup { 81 }
 
                                 R1 * 5/8
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2169,8 +1595,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/4
-                                %! applying indicators
-                                ^ \markup { 83 }
 
                                 R1 * 3/4
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2179,55 +1603,28 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 84 }
+                                c4
                                 %! MATERIAL_COLOR
                                 \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 85 }
+                                c4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 86 }
+                                c4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 87 }
+                                c4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 88 }
+                                c4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 89 }
+                                c4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 90 }
+                                c4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 91 }
+                                c4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 92 }
+                                c4
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2237,8 +1634,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/8
-                                %! applying indicators
-                                ^ \markup { 93 }
 
                                 R1 * 3/8
                                 \bar "||"
@@ -2274,7 +1669,6 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 d,4
                                 \sfp
-                                ^ \markup { 0 }
                                 - \tweak stencil #abjad-flared-hairpin
                                 \<
                                 ~
@@ -2289,7 +1683,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 d,8
-                                ^ \markup { 1 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -2300,7 +1693,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 ef,16
-                                ^ \markup { 2 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -2311,7 +1703,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 c16
-                                ^ \markup { 3 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -2323,7 +1714,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 gf,16
-                                ^ \markup { 4 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -2334,7 +1724,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 af16
-                                ^ \markup { 5 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -2344,7 +1733,6 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 af16
-                                ^ \markup { 6 }
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -2353,7 +1741,6 @@
                                 \revert Staff.Stem.stemlet-length
                                 c,16
                                 \ff
-                                ^ \markup { 7 }
                                 %! MATERIAL_COLOR
                                 \)
                                 ]
@@ -2364,7 +1751,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 8 }
                                 \stopTextSpan
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2376,7 +1762,6 @@
                                 \tweak NoteHead.style #'harmonic
                                 as1
                                 \sfp
-                                ^ \markup { 9 }
                                 \<
                                 ~
                                 %! MATERIAL_COLOR
@@ -2384,7 +1769,7 @@
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { \upright "molto vibrato" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #2
+                                - \tweak staff-padding #2.5
                                 \startTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2393,7 +1778,6 @@
                                 \tweak NoteHead.style #'harmonic
                                 as2.
                                 \f
-                                ^ \markup { 10 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2403,7 +1787,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 11 }
                                 \stopTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2413,8 +1796,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/4
-                                %! applying indicators
-                                ^ \markup { 12 }
 
                                 R1 * 3/4
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2424,8 +1805,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 7/8
-                                %! applying indicators
-                                ^ \markup { 13 }
 
                                 R1 * 7/8
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2435,8 +1814,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 7/8
-                                %! applying indicators
-                                ^ \markup { 14 }
 
                                 R1 * 7/8
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2446,8 +1823,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 1/2
-                                %! applying indicators
-                                ^ \markup { 15 }
 
                                 R1 * 1/2
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2457,8 +1832,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 1/2
-                                %! applying indicators
-                                ^ \markup { 16 }
 
                                 R1 * 1/2
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2468,7 +1841,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 17 }
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2478,19 +1850,17 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \tweak NoteHead.style #'harmonic
                                 b2.
-                                ^ \markup { 18 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup \concat { \upright "molto vibrato" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #2
+                                - \tweak staff-padding #3
                                 \startTextSpanOne
 
                                 \tweak NoteHead.style #'harmonic
                                 b2
-                                ^ \markup { 19 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2498,24 +1868,21 @@
 
                                 \tweak NoteHead.style #'harmonic
                                 b2.
-                                ^ \markup { 20 }
                                 ~
 
                                 \tweak NoteHead.style #'harmonic
                                 b2.
-                                ^ \markup { 21 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
                                 \tweak NoteHead.style #'harmonic
                                 c'2.
-                                ^ \markup { 22 }
                                 \stopTextSpanOne
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { \upright "senza vibrato" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #2
+                                - \tweak staff-padding #3
                                 \startTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2523,7 +1890,6 @@
 
                                 \tweak NoteHead.style #'harmonic
                                 cs'1.
-                                ^ \markup { 23 }
                                 \stopTextSpanOne
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2532,12 +1898,10 @@
 
                                 \tweak NoteHead.style #'harmonic
                                 cs'2
-                                ^ \markup { 24 }
                                 ~
 
                                 \tweak NoteHead.style #'harmonic
                                 cs'4
-                                ^ \markup { 25 }
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"

@@ -86,7 +86,7 @@ maker = evans.SegmentMaker(
             evans.TextSpanHandler(
                 ['"molto vibrato"'],
                 span_one_style="dashed-line",
-                span_one_padding=2,
+                span_one_padding=2.5,
                 attach_span_one_to="left",
             ),
             preprocessor=polillas.fuse_preprocessor,
@@ -94,6 +94,37 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [
                 ("violin 2 voice", [5, 6, 7]),
+            ],
+            polillas.swiping_rhythms(
+                indices=[1, 4],
+                period=9,
+                denominator=16,
+                extra_counts=[0, 2, 1, 1],
+            ),
+            evans.PitchHandler(
+                [
+                    evans.JIPitch("b'", _, with_quarter_tones=True)
+                    for _ in [
+                        "11/8",
+                        "6/5",
+                        "8/7",
+                        "6/5",
+                        "28/25",
+                        "22/15",
+                        "64/53",
+                        "256/165",
+                        "88/45",
+                    ]
+                ]
+            ),
+            polillas.B_color,
+            abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
+            abjad.Dynamic("p"),
+            # abjad.Articulation("staccato"),
+            preprocessor=polillas.fuse_quarters_preprocessor_2_1,
+        ),
+        evans.MusicCommand(
+            [
                 ("viola voice", [6, 7]),
             ],
             polillas.swiping_rhythms(
@@ -102,7 +133,12 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[1, 0, 2, 1],
             ),
-            # polillas.demo_pitch_handler,
+            evans.PitchHandler(
+                [
+                    evans.JIPitch("b", _, with_quarter_tones=True)
+                    for _ in ["5/4", "12/11", "7/5", "8/5", "224/165", "128/75", "16/9"]
+                ]
+            ),
             polillas.B_color,
             abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
@@ -112,6 +148,37 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [
                 ("violin 1 voice", (13, 16)),
+            ],
+            polillas.swiping_rhythms(
+                indices=[2, 3],
+                period=11,
+                denominator=16,
+                extra_counts=[3, 1, 1],
+            ),
+            evans.PitchHandler(
+                [
+                    evans.JIPitch("b'", _, with_quarter_tones=True)
+                    for _ in [
+                        "7/4",
+                        "12/7",
+                        "11/10",
+                        "16/11",
+                        "11/10",
+                        "56/55",
+                        "28/15",
+                        "16/15",
+                        "64/53",
+                        "16/15",
+                    ]
+                ]
+            ),
+            polillas.B_color,
+            abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
+            abjad.Dynamic("p"),
+            preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.MusicCommand(
+            [
                 ("violin 2 voice", (12, 16)),
             ],
             polillas.swiping_rhythms(
@@ -119,6 +186,22 @@ maker = evans.SegmentMaker(
                 period=11,
                 denominator=16,
                 extra_counts=[3, 1, 1],
+            ),
+            evans.PitchHandler(
+                [
+                    evans.JIPitch("b'", _, with_quarter_tones=True)
+                    for _ in [
+                        "11/8",
+                        "6/5",
+                        "8/7",
+                        "6/5",
+                        "28/25",
+                        "22/15",
+                        "64/53",
+                        "256/165",
+                        "88/45",
+                    ]
+                ]
             ),
             polillas.B_color,
             abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
@@ -135,6 +218,7 @@ maker = evans.SegmentMaker(
                 denominator=[8],
                 extra_counts=[0, 1, 0, 0, 0, 0],
             ),
+            evans.PitchHandler(["a'"], forget=False),
             polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor_3_1,
         ),
@@ -148,6 +232,7 @@ maker = evans.SegmentMaker(
                 denominator=[8],
                 extra_counts=[1],
             ),
+            evans.PitchHandler(["d'"], forget=False),
             polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor_2_1,
         ),
@@ -161,6 +246,7 @@ maker = evans.SegmentMaker(
                 denominator=[8],
                 extra_counts=[1],
             ),
+            evans.PitchHandler(["c"], forget=False),
             polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor_3_1,
         ),
@@ -169,6 +255,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (13, 15)),
             ],
             polillas.note_rhythm_handler,
+            evans.PitchHandler(["c"], forget=False),
             polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor,
         ),
@@ -191,7 +278,7 @@ maker = evans.SegmentMaker(
             evans.TextSpanHandler(
                 ['"molto vibrato"', '"senza vibrato"'],
                 span_one_style="dashed-line",
-                span_one_padding=2,
+                span_one_padding=3,
                 attach_span_one_to="bounds",
                 forget=False,
             ),
@@ -239,26 +326,26 @@ maker = evans.SegmentMaker(
         #     abjad.BarLine(":|."),
         #     baca.selectors.leaf(9),
         # ),
-        evans.call(
-            "violin 1 voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "violin 2 voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "viola voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "cello voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
+        # evans.call(
+        #     "violin 1 voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "violin 2 voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "viola voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "cello voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,

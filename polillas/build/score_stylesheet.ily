@@ -123,7 +123,8 @@
 		\remove Mark_engraver
 		%{ \remove Bar_number_engraver %}
 		\accepts TimeSignatureContext
-		\override Accidental.X-extent = ##f % experimental
+		%{ \override Accidental.X-extent = ##f % experimental %}
+		\override Accidental.X-extent = #'(0 . 0)
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = 0.5
 		\override BarLine.X-extent = #'(0 . 0)
