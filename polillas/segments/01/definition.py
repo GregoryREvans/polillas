@@ -96,7 +96,10 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", [5, 6, 7]),
             ],
             polillas.swiping_rhythms(
-                indices=[1, 4], period=9, denominator=16, extra_counts=[0, 2, 1, 1]
+                indices=[1, 4, 10, 14],
+                period=18,
+                denominator=16,
+                extra_counts=[0, 2, 1, 1],
             ),
             evans.PitchHandler(
                 [
@@ -125,7 +128,10 @@ maker = evans.SegmentMaker(
                 ("viola voice", [6, 7]),
             ],
             polillas.swiping_rhythms(
-                indices=[1, 4], period=9, denominator=16, extra_counts=[1, 0, 2, 1]
+                indices=[1, 4, 10, 14],
+                period=18,
+                denominator=16,
+                extra_counts=[1, 0, 2, 1],
             ),
             evans.PitchHandler(
                 [
@@ -144,7 +150,10 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", (13, 16)),
             ],
             polillas.swiping_rhythms(
-                indices=[2, 3], period=11, denominator=16, extra_counts=[3, 1, 1]
+                indices=[2, 3, 8, 13, 14, 15, 19],
+                period=21,
+                denominator=16,
+                extra_counts=[3, 1, 1],
             ),
             evans.PitchHandler(
                 [

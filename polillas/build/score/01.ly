@@ -465,7 +465,20 @@
 
                                         }
 
-                                        r4
+                                        \times 4/5
+                                        {
+
+                                            r16
+
+                                            cqs''16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                        }
 
                                         \times 4/5
                                         {
@@ -473,14 +486,14 @@
                                             r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cqs''16
+                                            fqs''16
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
-                                            fqs''16
-                                            ]
+                                            cqs''16
 
-                                            r16
+                                            \revert Staff.Stem.stemlet-length
+                                            bqs'16
+                                            ]
 
                                             r16
 
@@ -496,9 +509,74 @@
 
                                             r16
 
+                                            bf''16
+
                                             r16
 
                                             r16
+
+                                            r16
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            c''16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            dqs''16
+                                            ]
+
+                                            r16
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            c''16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
+
+                                            r16
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            aqf''16
+                                            [
+
+                                            aqf''16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            cqs''16
+                                            ]
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            fqs''16
 
                                             r16
 
@@ -514,27 +592,23 @@
                                             bqs'16
                                             ]
 
+                                            r16
+
+                                            r16
+
+                                            r16
+
                                         }
 
-                                        r8
-
-                                        r4
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
+                                        \times 4/5
                                         {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 16]
 
                                             r16
 
-                                            r16
-
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             bf''16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c''16
-                                            ]
 
                                             r16
 
@@ -543,62 +617,48 @@
                                             r16
 
                                         }
-
-                                        \times 2/3
-                                        {
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            dqs''16
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            c''16
-                                            ]
-
-                                            r16
-
-                                        }
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 16]
-
-                                        r4
 
                                         \times 4/5
                                         {
 
                                             r16
 
-                                            r16
-
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            aqf''16
+                                            c''16
                                             [
 
+                                            dqs''16
+
                                             \revert Staff.Stem.stemlet-length
-                                            aqf''16
+                                            c''16
                                             ]
+
+                                            r16
 
                                         }
 
-                                        r4
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        \bar "||"
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            r32
+
+                                            r32
+
+                                            aqf''32
+
+                                            r32
+
+                                            r32
+
+                                            r32
+
+                                            aqf''32
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            \bar "||"
+
+                                        }
 
                                     }
 
@@ -701,15 +761,15 @@
 
                                             r16
 
-                                            d''16
-                                            - \tenuto
+                                            r16
 
                                         }
 
                                         \times 8/9
                                         {
 
-                                            r16
+                                            d''16
+                                            - \tenuto
 
                                             r16
 
@@ -739,14 +799,12 @@
                                         dqs''16
                                         - \tenuto
 
-                                        r16
-
-                                        r16
+                                        r8.
 
                                         gqf''16
                                         - \tenuto
 
-                                        r4
+                                        r8.
 
                                         \times 2/3
                                         {
@@ -785,10 +843,10 @@
 
                                             r16
 
+                                            r16
+
                                             dqf''16
                                             - \tenuto
-
-                                            r16
 
                                         }
 
@@ -830,10 +888,10 @@
 
                                             r16
 
+                                            r16
+
                                             dqs''16
                                             - \tenuto
-
-                                            r16
 
                                             r16
 
@@ -880,12 +938,12 @@
 
                                         }
 
-                                        r16
+                                        r8
 
                                         d''16
                                         - \tenuto
 
-                                        r8
+                                        r16
 
                                         r8.
 
@@ -1484,10 +1542,10 @@
                                 \times 4/5
                                 {
 
+                                    r16
+
                                     g'16
                                     - \tenuto
-
-                                    r16
 
                                     r16
 
@@ -1521,10 +1579,10 @@
 
                                     r16
 
+                                    r16
+
                                     ef'16
                                     - \tenuto
-
-                                    r16
 
                                     r16
 
@@ -1566,10 +1624,10 @@
 
                                     r16
 
+                                    r16
+
                                     eqs'16
                                     - \tenuto
-
-                                    r16
 
                                 }
 
