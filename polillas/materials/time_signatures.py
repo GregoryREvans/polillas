@@ -56,7 +56,7 @@ signatures_02 = [abjad.TimeSignature(_) for _ in meters_02]
 
 signatures_02.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_02 = [1]
+fermata_measures_02 = [5, 9, 18]
 
 reduced_signatures_02 = evans.reduce_fermata_measures(
     signatures_02, fermata_measures_02
@@ -141,5 +141,6 @@ reduced_signatures_06 = evans.reduce_fermata_measures(
 all_signatures = evans.join_time_signature_lists(
     [
         reduced_signatures_01,
+        reduced_signatures_02,
     ]
 )

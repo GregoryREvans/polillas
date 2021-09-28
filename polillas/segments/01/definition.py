@@ -402,7 +402,7 @@ maker = evans.SegmentMaker(
     time_signatures=polillas.signatures_01,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,  # FALSE
+    add_final_grand_pause=False,
     score_includes=[
         f"{pathlib.Path(abjad.__file__).parent.parent}/docs/source/_stylesheets/abjad.ily",
         f"{pathlib.Path(__file__).parent}/../../build/segment_stylesheet.ily",

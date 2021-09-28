@@ -147,15 +147,6 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                %! COMMENT_MEASURE_NUMBERS
-                %! evans.SegmentMaker.comment_measure_numbers()
-                % [Global Context measure 17]
-
-                %! applying ending skips
-                \once \override Score.TimeSignature.stencil = ##f
-                %! scaling time signatures
-                \time 1/4
-                s1 * 1/4
 
             }
 
@@ -743,23 +734,6 @@
                                             \bar "||"
 
                                         }
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 17]
-
-                                        %! applying ending skips
-                                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                                        %! applying ending skips
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/8
-
-                                        %! applying ending skips
-                                        \once \override MultiMeasureRest.transparent = ##t
-                                        R1 * 1/8
-                                        %! applying ending skips
-                                        ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                                        %! applying ending skips
-                                        \stopStaff \startStaff
 
                                     }
 
@@ -1452,23 +1426,6 @@
                                             \bar "||"
 
                                         }
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 17]
-
-                                        %! applying ending skips
-                                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                                        %! applying ending skips
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/8
-
-                                        %! applying ending skips
-                                        \once \override MultiMeasureRest.transparent = ##t
-                                        R1 * 1/8
-                                        %! applying ending skips
-                                        ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                                        %! applying ending skips
-                                        \stopStaff \startStaff
 
                                     }
 
@@ -1975,23 +1932,6 @@
 
                                 R1 * 3/8
                                 \bar "||"
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 17]
-
-                                %! applying ending skips
-                                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                                %! applying ending skips
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/8
-
-                                %! applying ending skips
-                                \once \override MultiMeasureRest.transparent = ##t
-                                R1 * 1/8
-                                %! applying ending skips
-                                ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                                %! applying ending skips
-                                \stopStaff \startStaff
 
                             }
 
@@ -2340,25 +2280,6 @@
                                 - \tweak staff-padding #3
                                 \startTextSpanOne
                                 \bar "||"
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 17]
-
-                                %! applying ending skips
-                                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                                %! applying ending skips
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/8
-                                \stopTextSpan
-                                \stopTextSpanOne
-
-                                %! applying ending skips
-                                \once \override MultiMeasureRest.transparent = ##t
-                                R1 * 1/8
-                                %! applying ending skips
-                                ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                                %! applying ending skips
-                                \stopStaff \startStaff
 
                             }
 
