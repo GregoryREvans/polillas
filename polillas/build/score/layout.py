@@ -11,8 +11,12 @@ breaks = evans.Breaks(
         evans.System(measures=5, lbsd=(270, "(19 20 20 20)"), x_offset=1),
     ),
     evans.Page(
-        evans.System(measures=12, lbsd=(10, "(19 20 20 20)"), x_offset=1),
-        evans.System(measures=6, lbsd=(120, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=12, lbsd=(20, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=13, lbsd=(130, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=7, lbsd=(240, "(19 20 20 20)"), x_offset=1),
+    ),
+    evans.Page(
+        evans.System(measures=11, lbsd=(20, "(19 20 20 20)"), x_offset=1),
     ),
     time_signatures=polillas.all_signatures,
     default_spacing=(1, 16),

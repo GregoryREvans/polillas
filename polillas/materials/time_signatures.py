@@ -24,7 +24,12 @@ _time_signatures = [abjad.TimeSignature((_, 16)) for _ in numerators]
 groups = evans.Sequence(_time_signatures)
 time_signature_series["C"] = groups  # -1 cycles
 
-# evans.Sequence([1, 2, 3]).permutations().flatten()
+# (A, B, C) X X
+# (A, C, B) X X-
+# (B, A, C) X
+# (B, C, A) X
+# (C, A, B) X
+# (C, B, A) X
 
 ##
 ## 01
@@ -66,7 +71,7 @@ reduced_signatures_02 = evans.reduce_fermata_measures(
 ## 03
 ##
 
-pairs_03 = evans.Sequence(time_signature_series["C"][0:16])
+pairs_03 = evans.Sequence(time_signature_series["C"][0:25])
 
 meters_03 = [abjad.Meter(_) for _ in pairs_03]
 
@@ -74,7 +79,7 @@ signatures_03 = [abjad.TimeSignature(_) for _ in meters_03]
 
 signatures_03.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_03 = [4]
+fermata_measures_03 = [3, 5, 11, 24]
 
 reduced_signatures_03 = evans.reduce_fermata_measures(
     signatures_03, fermata_measures_03
@@ -84,7 +89,7 @@ reduced_signatures_03 = evans.reduce_fermata_measures(
 ## 04
 ##
 
-pairs_04 = evans.Sequence(time_signature_series["A"][0:16])
+pairs_04 = evans.Sequence(time_signature_series["A"].rotate(-2)[0:16])
 
 meters_04 = [abjad.Meter(_) for _ in pairs_04]
 
@@ -102,7 +107,7 @@ reduced_signatures_04 = evans.reduce_fermata_measures(
 ## 05
 ##
 
-pairs_05 = evans.Sequence(time_signature_series["C"][0:16])
+pairs_05 = evans.Sequence(time_signature_series["C"].rotate(-1)[0:16])
 
 meters_05 = [abjad.Meter(_) for _ in pairs_05]
 
@@ -120,7 +125,7 @@ reduced_signatures_05 = evans.reduce_fermata_measures(
 ## 06
 ##
 
-pairs_06 = evans.Sequence(time_signature_series["B"][0:16])
+pairs_06 = evans.Sequence(time_signature_series["B"].rotate(-3)[0:16])
 
 meters_06 = [abjad.Meter(_) for _ in pairs_06]
 
@@ -135,6 +140,294 @@ reduced_signatures_06 = evans.reduce_fermata_measures(
 )
 
 ##
+## 07
+##
+
+pairs_07 = evans.Sequence(time_signature_series["B"].rotate(-6)[0:16])
+
+meters_07 = [abjad.Meter(_) for _ in pairs_07]
+
+signatures_07 = [abjad.TimeSignature(_) for _ in meters_07]
+
+signatures_07.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_07 = [1]
+
+reduced_signatures_07 = evans.reduce_fermata_measures(
+    signatures_07, fermata_measures_07
+)
+
+##
+## 08
+##
+
+pairs_08 = evans.Sequence(time_signature_series["A"].rotate(-4)[0:16])
+
+meters_08 = [abjad.Meter(_) for _ in pairs_08]
+
+signatures_08 = [abjad.TimeSignature(_) for _ in meters_08]
+
+signatures_08.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_08 = [1]
+
+reduced_signatures_08 = evans.reduce_fermata_measures(
+    signatures_08, fermata_measures_08
+)
+
+##
+## 09
+##
+
+pairs_09 = evans.Sequence(time_signature_series["C"].rotate(-2)[0:16])
+
+meters_09 = [abjad.Meter(_) for _ in pairs_09]
+
+signatures_09 = [abjad.TimeSignature(_) for _ in meters_09]
+
+signatures_09.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_09 = [1]
+
+reduced_signatures_09 = evans.reduce_fermata_measures(
+    signatures_09, fermata_measures_09
+)
+
+##
+## 10
+##
+
+pairs_10 = evans.Sequence(time_signature_series["B"].rotate(-9)[0:16])
+
+meters_10 = [abjad.Meter(_) for _ in pairs_10]
+
+signatures_10 = [abjad.TimeSignature(_) for _ in meters_10]
+
+signatures_10.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_10 = [1]
+
+reduced_signatures_10 = evans.reduce_fermata_measures(
+    signatures_10, fermata_measures_10
+)
+
+##
+## 11
+##
+
+pairs_11 = evans.Sequence(time_signature_series["C"].rotate(-3)[0:16])
+
+meters_11 = [abjad.Meter(_) for _ in pairs_11]
+
+signatures_11 = [abjad.TimeSignature(_) for _ in meters_11]
+
+signatures_11.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_11 = [1]
+
+reduced_signatures_11 = evans.reduce_fermata_measures(
+    signatures_11, fermata_measures_11
+)
+
+##
+## 12
+##
+
+pairs_12 = evans.Sequence(time_signature_series["A"].rotate(-6)[0:16])
+
+meters_12 = [abjad.Meter(_) for _ in pairs_12]
+
+signatures_12 = [abjad.TimeSignature(_) for _ in meters_12]
+
+signatures_12.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_12 = [1]
+
+reduced_signatures_12 = evans.reduce_fermata_measures(
+    signatures_12, fermata_measures_12
+)
+
+##
+## 13
+##
+
+pairs_13 = evans.Sequence(time_signature_series["C"].rotate(-4)[0:16])
+
+meters_13 = [abjad.Meter(_) for _ in pairs_13]
+
+signatures_13 = [abjad.TimeSignature(_) for _ in meters_13]
+
+signatures_13.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_13 = [1]
+
+reduced_signatures_13 = evans.reduce_fermata_measures(
+    signatures_13, fermata_measures_13
+)
+
+##
+## 14
+##
+
+pairs_14 = evans.Sequence(time_signature_series["A"].rotate(-8)[0:16])
+
+meters_14 = [abjad.Meter(_) for _ in pairs_14]
+
+signatures_14 = [abjad.TimeSignature(_) for _ in meters_14]
+
+signatures_14.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_14 = [1]
+
+reduced_signatures_14 = evans.reduce_fermata_measures(
+    signatures_14, fermata_measures_14
+)
+
+##
+## 15
+##
+
+pairs_15 = evans.Sequence(time_signature_series["B"].rotate(-12)[0:16])
+
+meters_15 = [abjad.Meter(_) for _ in pairs_15]
+
+signatures_15 = [abjad.TimeSignature(_) for _ in meters_15]
+
+signatures_15.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_15 = [1]
+
+reduced_signatures_15 = evans.reduce_fermata_measures(
+    signatures_15, fermata_measures_15
+)
+
+##
+## 16
+##
+
+pairs_16 = evans.Sequence(time_signature_series["C"].rotate(-5)[0:16])
+
+meters_16 = [abjad.Meter(_) for _ in pairs_16]
+
+signatures_16 = [abjad.TimeSignature(_) for _ in meters_16]
+
+signatures_16.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_16 = [1]
+
+reduced_signatures_16 = evans.reduce_fermata_measures(
+    signatures_16, fermata_measures_16
+)
+
+##
+## 17
+##
+
+pairs_17 = evans.Sequence(time_signature_series["B"].rotate(-15)[0:16])
+
+meters_17 = [abjad.Meter(_) for _ in pairs_17]
+
+signatures_17 = [abjad.TimeSignature(_) for _ in meters_17]
+
+signatures_17.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_17 = [1]
+
+reduced_signatures_17 = evans.reduce_fermata_measures(
+    signatures_17, fermata_measures_17
+)
+
+##
+## 18
+##
+
+pairs_18 = evans.Sequence(time_signature_series["A"].rotate(-10)[0:16])
+
+meters_18 = [abjad.Meter(_) for _ in pairs_18]
+
+signatures_18 = [abjad.TimeSignature(_) for _ in meters_18]
+
+signatures_18.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_18 = [1]
+
+reduced_signatures_18 = evans.reduce_fermata_measures(
+    signatures_18, fermata_measures_18
+)
+
+##
+## 19
+##
+
+pairs_19 = evans.Sequence(time_signature_series["A"].rotate(-12)[0:16])
+
+meters_19 = [abjad.Meter(_) for _ in pairs_19]
+
+signatures_19 = [abjad.TimeSignature(_) for _ in meters_19]
+
+signatures_19.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_19 = [1]
+
+reduced_signatures_19 = evans.reduce_fermata_measures(
+    signatures_19, fermata_measures_19
+)
+
+##
+## 20
+##
+
+pairs_20 = evans.Sequence(time_signature_series["B"].rotate(-18)[0:16])
+
+meters_20 = [abjad.Meter(_) for _ in pairs_20]
+
+signatures_20 = [abjad.TimeSignature(_) for _ in meters_20]
+
+signatures_20.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_20 = [1]
+
+reduced_signatures_20 = evans.reduce_fermata_measures(
+    signatures_20, fermata_measures_20
+)
+
+##
+## 21
+##
+
+pairs_21 = evans.Sequence(time_signature_series["C"].rotate(-6)[0:16])
+
+meters_21 = [abjad.Meter(_) for _ in pairs_21]
+
+signatures_21 = [abjad.TimeSignature(_) for _ in meters_21]
+
+signatures_21.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_21 = [1]
+
+reduced_signatures_21 = evans.reduce_fermata_measures(
+    signatures_21, fermata_measures_21
+)
+
+##
+## 22
+##
+
+pairs_22 = evans.Sequence(time_signature_series["A"].rotate(-14)[0:16])
+
+meters_22 = [abjad.Meter(_) for _ in pairs_22]
+
+signatures_22 = [abjad.TimeSignature(_) for _ in meters_22]
+
+signatures_22.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+fermata_measures_22 = [1]
+
+reduced_signatures_22 = evans.reduce_fermata_measures(
+    signatures_22, fermata_measures_22
+)
+
+##
 ## total
 ##
 
@@ -142,5 +435,6 @@ all_signatures = evans.join_time_signature_lists(
     [
         reduced_signatures_01,
         reduced_signatures_02,
+        reduced_signatures_03,
     ]
 )
