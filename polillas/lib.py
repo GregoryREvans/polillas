@@ -8,15 +8,11 @@ met_130 = abjad.MetronomeMark((1, 4), 130)
 
 met_120 = abjad.MetronomeMark((1, 4), 120)
 
-met_110 = abjad.MetronomeMark((1, 4), 110)
-
-met_100 = abjad.MetronomeMark((1, 4), 100)
+met_108 = abjad.MetronomeMark((1, 4), 108)
 
 met_90 = abjad.MetronomeMark((1, 4), 90)
 
-met_80 = abjad.MetronomeMark((1, 4), 80)
-
-met_70 = abjad.MetronomeMark((1, 4), 70)
+met_72 = abjad.MetronomeMark((1, 4), 72)
 
 met_66 = abjad.MetronomeMark((1, 4), 66)
 
@@ -42,6 +38,54 @@ mark_40 = abjad.LilyPondLiteral(
 
 abjad.tweak(mark_40).padding = 6
 
+met_60_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 60)
+
+mark_60 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \override #'(font-size . 5.5)",
+        r"  \concat {",
+        f"      {str(met_60_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    format_slot="after",
+)
+
+abjad.tweak(mark_60).padding = 6
+
+met_66_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 66)
+
+mark_66 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \override #'(font-size . 5.5)",
+        r"  \concat {",
+        f"      {str(met_66_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    format_slot="after",
+)
+
+abjad.tweak(mark_66).padding = 6
+
+met_72_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 72)
+
+mark_72 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \override #'(font-size . 5.5)",
+        r"  \concat {",
+        f"      {str(met_72_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    format_slot="after",
+)
+
+abjad.tweak(mark_72).padding = 6
+
 met_90_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 90)
 
 mark_90 = abjad.LilyPondLiteral(
@@ -58,219 +102,53 @@ mark_90 = abjad.LilyPondLiteral(
 
 abjad.tweak(mark_90).padding = 6
 
-met_100_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 100)
+met_108_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 108)
 
-mark_100 = abjad.LilyPondLiteral(
+mark_108 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
-        f"      {str(met_100_mark)[8:]}",
+        f"      {str(met_108_mark)[8:]}",
         r"  }",
         r"}",
     ],
     format_slot="after",
 )
 
-abjad.tweak(mark_100).padding = 6
+abjad.tweak(mark_108).padding = 6
 
-mark_100_cautionary = abjad.LilyPondLiteral(
+met_120_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 120)
+
+mark_120 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
-        r"  \override #'(font-size . 3)",
+        r"  \override #'(font-size . 5.5)",
         r"  \concat {",
-        r"      (",
-        f"      {str(met_100_mark)[8:]}",
-        r"      )",
+        f"      {str(met_120_mark)[8:]}",
         r"  }",
         r"}",
     ],
     format_slot="after",
 )
 
-abjad.tweak(mark_100_cautionary).padding = 6
+abjad.tweak(mark_120).padding = 6
 
-# met changes
+met_130_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 130)
 
-accel_40_100 = evans.TempoSpannerHandler(
-    tempo_list=[
-        (2, 0, 1, "40"),
-        (2, 0, 1, "100"),
+mark_130 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \override #'(font-size . 5.5)",
+        r"  \concat {",
+        f"      {str(met_130_mark)[8:]}",
+        r"  }",
+        r"}",
     ],
-    boolean_vector=[1],
-    padding=0.2,
-    staff_padding=0.2,
-    forget=False,
-    font_size=5.5,
+    format_slot="after",
 )
 
-accel_100_120 = evans.TempoSpannerHandler(
-    tempo_list=[
-        (2, 0, 1, "100"),
-        (2, 0, 1, "120"),
-    ],
-    boolean_vector=[1],
-    padding=0.2,
-    staff_padding=0.2,
-    forget=False,
-    font_size=5.5,
-)
-
-rit_130_60 = evans.TempoSpannerHandler(
-    tempo_list=[
-        (2, 0, 1, "130"),
-        (2, 0, 1, "60"),
-    ],
-    boolean_vector=[1],
-    padding=0.2,
-    staff_padding=0.2,
-    forget=False,
-    font_size=5.5,
-)
-
-met_mod_40_66 = evans.metric_modulation(
-    metronome_mark=((1, 4), 40),
-    left_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
-    right_note=(abjad.Note("c'4")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_40_66).padding = 6
-
-met_mod_100_66 = evans.metric_modulation(
-    metronome_mark=((1, 4), 100),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_100_66).padding = 6
-
-met_mod_100_120 = evans.metric_modulation(
-    metronome_mark=((1, 4), 100),
-    left_note=(abjad.Tuplet((5, 6), [abjad.Note("c'4")])),
-    right_note=(abjad.Note("c'4")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_100_120).padding = 6
-
-met_mod_120_60 = evans.metric_modulation(
-    metronome_mark=((1, 4), 120),
-    left_note=(abjad.Note("c'2")),
-    right_note=(abjad.Note("c'4")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-)
-
-abjad.tweak(met_mod_120_60).padding = 6
-
-met_mod_60_120 = evans.metric_modulation(
-    metronome_mark=((1, 4), 60),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Note("c'2")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_60_120).padding = 6
-
-met_mod_120_66 = evans.metric_modulation(
-    metronome_mark=((1, 4), 120),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((5, 9), [abjad.Note("c'4")])),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_120_66).padding = 6
-
-met_mod_66_40 = evans.metric_modulation(
-    metronome_mark=((1, 4), 66.6),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
-    modulated_beat=(abjad.Note("c'4")),
-    rounded=True,
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_66_40).padding = 6
-
-met_mod_66_100 = evans.metric_modulation(
-    metronome_mark=((1, 4), 66.6),
-    left_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
-    right_note=(abjad.Note("c'4")),
-    modulated_beat=(abjad.Note("c'4")),
-    rounded=True,
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_66_100).padding = 6
-
-met_mod_120_100 = evans.metric_modulation(
-    metronome_mark=((1, 4), 120),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((5, 6), [abjad.Note("c'4")])),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_120_100).padding = 6
-
-met_mod_100_80 = evans.metric_modulation(
-    metronome_mark=((1, 4), 100),
-    left_note=(abjad.Tuplet((5, 4), [abjad.Note("c'4")])),
-    right_note=(abjad.Note("c'4")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_100_80).padding = 6
-
-met_mod_80_130 = evans.metric_modulation(
-    metronome_mark=((1, 4), 80),
-    left_note=(abjad.Tuplet((8, 13), [abjad.Note("c'4")])),
-    right_note=(abjad.Note("c'4")),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_80_130).padding = 6
-
-met_mod_60_40 = evans.metric_modulation(
-    metronome_mark=((1, 4), 60),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_60_40).padding = 6
-
-met_mod_80_100 = evans.metric_modulation(
-    metronome_mark=((1, 4), 80),
-    left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((5, 4), [abjad.Note("c'4")])),
-    modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
-    leaf_scale=(0.8, 0.8),
-)
-
-abjad.tweak(met_mod_80_100).padding = 6
+abjad.tweak(mark_130).padding = 6
 
 
 def zero_padding_glissando(selections):
@@ -294,12 +172,6 @@ def toggle_tuplet_prolation(selection):
     tuplet.toggle_prolation()
     tuplet.set_minimum_denominator(4)
 
-
-scordatura_handler = evans.ScordaturaHandler(
-    string_number="IV",
-    default_pitch="c,",
-    new_pitch="b,,",
-)
 
 start_repeat = abjad.LilyPondLiteral(
     [
@@ -502,6 +374,15 @@ def select_run_first_leaves(selections):
     first_ties = abjad.Selection([abjad.select(run).logical_tie(0) for run in runs])
     first_leaves = abjad.Selection([abjad.select(tie).leaf(0) for tie in first_ties])
     return first_leaves
+
+
+# Scordatura
+
+scordatura = evans.ScordaturaHandler(
+    string_number="IV",
+    default_pitch="c,",
+    new_pitch="bf,,",
+)
 
 
 # ANNOTATIONS

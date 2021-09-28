@@ -48,7 +48,7 @@ reduced_signatures_01 = evans.reduce_fermata_measures(
 ## 02
 ##
 
-pairs_02 = evans.Sequence(time_signature_series["B"][0:16])
+pairs_02 = evans.Sequence(time_signature_series["B"][0:19])
 
 meters_02 = [abjad.Meter(_) for _ in pairs_02]
 

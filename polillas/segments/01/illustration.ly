@@ -22,16 +22,16 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=90
+                \tempo 4=120
                 %! scaling time signatures
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
                 \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup {
                   \override #'(font-size . 5.5)
                   \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
                   }
                 }
                 %! COMMENT_MEASURE_NUMBERS
@@ -76,9 +76,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
 
+                \tempo 4=60
                 %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -154,6 +162,15 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
+                %! COMMENT_MEASURE_NUMBERS
+                %! evans.SegmentMaker.comment_measure_numbers()
+                % [Global Context measure 17]
+
+                %! applying ending skips
+                \once \override Score.TimeSignature.stencil = ##f
+                %! scaling time signatures
+                \time 1/4
+                s1 * 1/4
 
             }
 
@@ -342,75 +359,142 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                        r8
+                                        a'4
+                                        \mf
+                                        ^ \markup Normale
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
 
-                                        a'8
-                                        \mf
-                                        - \accent
-
-                                        r8
-
-                                        a'8
-                                        - \accent
-
-                                        r8
-
-                                        a'8
-                                        - \accent
-
-                                        \times 2/3
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
                                         {
 
-                                            r8
-
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             a'8
+                                            [
+
+                                            a'16
                                             - \accent
 
-                                            r8
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            ~
+                                            ]
 
                                         }
 
-                                        a'8
-                                        - \accent
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                        r8
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a'8.
+                                            [
 
-                                        a'8
-                                        - \accent
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            - \accent
+                                            ]
 
-                                        r8
+                                        }
 
-                                        a'8
-                                        - \accent
+                                        a'4
+                                        ~
 
-                                        r8
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 9]
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                        a'8
-                                        - \accent
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a'8
+                                            [
 
-                                        r8
+                                            a'16
+                                            - \accent
 
-                                        a'8
-                                        - \accent
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            ~
+                                            ]
 
-                                        r8
+                                        }
 
-                                        a'8
-                                        - \accent
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                        r8
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a'8.
+                                            [
 
-                                        a'8
-                                        - \accent
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            - \accent
+                                            ]
 
-                                        r8
-                                        %! MATERIAL_COLOR
-                                        \)
+                                        }
+
+                                        a'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 9]
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a'8
+                                            [
+
+                                            a'16
+                                            - \accent
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            ~
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            - \accent
+                                            ]
+
+                                        }
+
+                                        a'4
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            a'8
+                                            [
+
+                                            a'16
+                                            - \accent
+
+                                            \revert Staff.Stem.stemlet-length
+                                            a'32
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
@@ -674,6 +758,23 @@
                                             \bar "||"
 
                                         }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 1 voice measure 17]
+
+                                        %! applying ending skips
+                                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                                        %! applying ending skips
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 1/8
+
+                                        %! applying ending skips
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        R1 * 1/8
+                                        %! applying ending skips
+                                        ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                                        %! applying ending skips
+                                        \stopStaff \startStaff
 
                                     }
 
@@ -966,69 +1067,47 @@
                                         - \tenuto
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 9]
 
-                                        \times 4/5
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                        d'4
+                                        \mf
+                                        ^ \markup Normale
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
+
+                                        \times 2/3
                                         {
-                                            %! COMMENT_MEASURE_NUMBERS
-                                            %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 2 voice measure 9]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                            r8
-                                            %! MATERIAL_COLOR
-                                            \(
+                                            d'4
+                                            ~
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d'8
-                                            \mf
-                                            - \accent
+                                            d'16
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            d'8
+                                            d'16
                                             - \accent
+                                            ~
                                             ]
-
-                                            r8
-
-                                            d'8
-                                            - \accent
 
                                         }
 
                                         \times 2/3
                                         {
 
-                                            d'8
-                                            - \accent
+                                            d'16
 
-                                            r8
+                                            d'4
+                                            ~
 
-                                            d'8
-                                            - \accent
-
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                            d'8
-                                            - \accent
-
-                                            r8
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d'8
-                                            - \accent
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d'8
-                                            - \accent
-                                            ]
-
-                                            r8
+                                            d'16
+                                            ~
 
                                         }
 
@@ -1037,46 +1116,61 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d'8
-                                            - \accent
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
-                                            d'8
+                                            d'16
                                             - \accent
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d'8.
+                                            ~
                                             ]
 
-                                            r8
-
                                         }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 10]
 
-                                        \times 4/5
+                                        d'4
+                                        ~
+
+                                        \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d'8
-                                            - \accent
                                             [
+
+                                            d'8
+                                            - \accent
 
                                             \revert Staff.Stem.stemlet-length
                                             d'8
-                                            - \accent
-                                            ]
-
-                                            r8
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d'8
-                                            - \accent
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            d'8
-                                            - \accent
-                                            %! MATERIAL_COLOR
-                                            \)
+                                            ~
                                             ]
 
                                         }
+
+                                        \times 2/3
+                                        {
+
+                                            d'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            d'16
+                                            - \accent
+                                            ]
+
+                                        }
+
+                                        d'4
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
@@ -1373,6 +1467,23 @@
                                             \bar "||"
 
                                         }
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 17]
+
+                                        %! applying ending skips
+                                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                                        %! applying ending skips
+                                        \once \override Rest.transparent = ##t
+                                        r1 * 1/8
+
+                                        %! applying ending skips
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        R1 * 1/8
+                                        %! applying ending skips
+                                        ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                                        %! applying ending skips
+                                        \stopStaff \startStaff
 
                                     }
 
@@ -1688,24 +1799,24 @@
                                     \)
 
                                 }
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 9]
 
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 6/7
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                c2
+                                \mf
+                                ^ \markup Normale
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
+
+                                \times 4/5
                                 {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [viola voice measure 9]
-
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                    r8
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c8
-                                    \mf
-                                    - \accent
+                                    c16
                                     [
 
                                     c8
@@ -1713,91 +1824,50 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     c8
-                                    - \accent
-                                    ]
-
-                                    r8
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c8
-                                    - \accent
-                                    [
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c8
-                                    - \accent
+                                    ~
                                     ]
 
                                 }
 
-                                \times 2/3
-                                {
+                                c4
 
-                                    c8
-                                    - \accent
-
-                                    r8
-
-                                    c8
-                                    - \accent
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 6/7
+                                \times 4/5
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 10]
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c8
-                                    - \accent
-                                    [
-
-                                    \revert Staff.Stem.stemlet-length
-                                    c8
-                                    - \accent
-                                    ]
-
-                                    r8
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    c8
-                                    - \accent
-                                    [
-
-                                    c8
+                                    c16
                                     - \accent
 
-                                    \revert Staff.Stem.stemlet-length
-                                    c8
-                                    - \accent
-                                    ]
-
-                                    r8
+                                    c4
+                                    ~
 
                                 }
 
-                                \times 2/3
+                                c4
+                                ~
+
+                                \times 4/5
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c8
-                                    - \accent
                                     [
 
                                     c8
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    c8
-                                    - \accent
-                                    %! MATERIAL_COLOR
-                                    \)
+                                    c16
+                                    ~
                                     ]
 
                                 }
+
+                                c4
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
@@ -1830,40 +1900,86 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                c4
+                                c2
                                 \mf
-                                - \accent
+                                ^ \markup Normale
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
 
-                                c4
-                                - \accent
+                                \times 4/5
+                                {
 
-                                c4
-                                - \accent
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c16
+                                    [
+
+                                    c8
+                                    - \accent
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c8
+                                    ~
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
                                 c4
-                                - \accent
+
+                                \times 4/5
+                                {
+
+                                    c16
+                                    - \accent
+
+                                    c4
+                                    ~
+
+                                }
 
                                 c4
-                                - \accent
+                                ~
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c8
+                                    [
+
+                                    c8
+                                    - \accent
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c16
+                                    ~
+                                    ]
+
+                                }
 
                                 c4
-                                - \accent
+                                ~
 
-                                c4
-                                - \accent
+                                \times 4/5
+                                {
 
-                                c4
-                                - \accent
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c16
+                                    [
 
-                                c4
-                                - \accent
-                                %! MATERIAL_COLOR
-                                \)
+                                    c16
+                                    - \accent
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c8.
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
@@ -1874,6 +1990,23 @@
 
                                 R1 * 3/8
                                 \bar "||"
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 17]
+
+                                %! applying ending skips
+                                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                                %! applying ending skips
+                                \once \override Rest.transparent = ##t
+                                r1 * 1/8
+
+                                %! applying ending skips
+                                \once \override MultiMeasureRest.transparent = ##t
+                                R1 * 1/8
+                                %! applying ending skips
+                                ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                                %! applying ending skips
+                                \stopStaff \startStaff
 
                             }
 
@@ -1904,7 +2037,7 @@
                                 \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                d,4
+                                ds,4
                                 \sfp
                                 - \tweak stencil #abjad-flared-hairpin
                                 \<
@@ -1919,7 +2052,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                d,8
+                                ds,8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1929,7 +2062,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                ef,16
+                                e,16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1939,7 +2072,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c16
+                                cs16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1950,7 +2083,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                gf,16
+                                g,16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1960,7 +2093,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                af16
+                                a16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1969,14 +2102,14 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                af16
+                                a16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \revert Staff.Stem.stemlet-length
-                                c,16
+                                cs,16
                                 \ff
                                 %! MATERIAL_COLOR
                                 \)
@@ -1997,7 +2130,7 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \tweak NoteHead.style #'harmonic
-                                as1
+                                e'1
                                 \sfp
                                 \<
                                 ~
@@ -2008,12 +2141,15 @@
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #2.5
                                 \startTextSpanOne
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
                                 \tweak NoteHead.style #'harmonic
-                                as2.
+                                e'2.
                                 \f
                                 %! MATERIAL_COLOR
                                 \)
@@ -2025,6 +2161,7 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopTextSpanOne
+                                \stopTextSpan
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2086,10 +2223,16 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \tweak NoteHead.style #'harmonic
-                                b2.
-                                ~
+                                c4
+                                \pp
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
+                                %! abjad.glissando(7)
+                                \glissando
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                \startTextSpan
                                 - \abjad-dashed-line-with-arrow
                                 - \tweak bound-details.left.text \markup \concat { \upright "molto vibrato" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
@@ -2097,51 +2240,140 @@
                                 \startTextSpanOne
 
                                 \tweak NoteHead.style #'harmonic
-                                b2
+                                g4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                c'4
                                 ~
+
+                                \tweak NoteHead.style #'harmonic
+                                c'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                e'4
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
                                 \tweak NoteHead.style #'harmonic
-                                b2.
+                                g'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                aqs'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                g'4
                                 ~
 
                                 \tweak NoteHead.style #'harmonic
-                                b2.
+                                g'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                e'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                c'4
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
                                 \tweak NoteHead.style #'harmonic
-                                c'2.
+                                g2
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                c4
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 15]
+
+                                \tweak NoteHead.style #'harmonic
+                                g4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                c'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                e'4
+                                ~
+
+                                \tweak NoteHead.style #'harmonic
+                                e'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                g'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                aqs'4
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 16]
+
+                                \tweak NoteHead.style #'harmonic
+                                g'2
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                e'4
+                                \f
+                                %! MATERIAL_COLOR
+                                \)
                                 \stopTextSpanOne
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { \upright "senza vibrato" \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #3
                                 \startTextSpanOne
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 15]
-
-                                \tweak NoteHead.style #'harmonic
-                                cs'1.
-                                \stopTextSpanOne
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 16]
-
-                                \tweak NoteHead.style #'harmonic
-                                cs'2
-                                ~
-
-                                \tweak NoteHead.style #'harmonic
-                                cs'4
-                                %! MATERIAL_COLOR
-                                \)
                                 \bar "||"
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 17]
+
+                                %! applying ending skips
+                                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
+                                %! applying ending skips
+                                \once \override Rest.transparent = ##t
+                                r1 * 1/8
+                                \stopTextSpan
+                                \stopTextSpanOne
+
+                                %! applying ending skips
+                                \once \override MultiMeasureRest.transparent = ##t
+                                R1 * 1/8
+                                %! applying ending skips
+                                ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                                %! applying ending skips
+                                \stopStaff \startStaff
 
                             }
 

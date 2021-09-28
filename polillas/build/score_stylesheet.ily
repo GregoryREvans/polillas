@@ -72,8 +72,8 @@
 	\context {
 		\name LayoutContext
 		\type Engraver_group
-		\consists Text_engraver
-		\consists Text_spanner_engraver
+		%{ \consists Text_engraver
+		\consists Text_spanner_engraver %}
 	}
 	\context {
         \name TimeSignatureContext

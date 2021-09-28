@@ -67,41 +67,65 @@ note_rhythm_handler = evans.RhythmHandler(
 )
 
 ##
-## 01
+## Motions
 ##
 
 
-def swiping_rhythms(indices=[1, 3], period=8, denominator=16, extra_counts=[2]):
-    attack_selector = abjad.select().leaves().get(indices, period)
-    stack = rmakers.stack(
-        rmakers.talea(
-            [1],
-            denominator,
-            extra_counts=extra_counts,
-        ),
-        rmakers.force_rest(abjad.select()),
-        rmakers.force_note(attack_selector),
-        rmakers.trivialize(abjad.select().tuplets()),
-        rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-        rmakers.rewrite_sustained(abjad.select().tuplets()),
-        rmakers.extract_trivial(),
-    )
-    handler = evans.RhythmHandler(stack, forget=False)
-    return handler
+def shadows(extra_counts=[2], stage=3):  # RTM
+    if stage == 3:
+        stack = rmakers.stack(
+            rmakers.talea(
+                [1, 1, 2, 1, 1, 1, 2],
+                4,
+                extra_counts=extra_counts,
+            ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, 5, 6, or 7.")
 
 
-def poly_rhythms(indices=[1, 3], period=8, denominator=16, extra_counts=[2]):
-    attack_selector = abjad.select().leaves().get(indices, period)
-    stack = rmakers.stack(
-        rmakers.even_division(
-            denominator,
-            extra_counts=extra_counts,
-        ),
-        rmakers.force_rest(attack_selector),
-        rmakers.trivialize(abjad.select().tuplets()),
-        rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-        rmakers.rewrite_sustained(abjad.select().tuplets()),
-        rmakers.extract_trivial(),
-    )
-    handler = evans.RhythmHandler(stack, forget=False)
-    return handler
+def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
+    if stage == 1:
+        attack_selector = abjad.select().leaves().get(indices, period)
+        stack = rmakers.stack(
+            rmakers.talea(
+                [1],
+                denominator,
+                extra_counts=extra_counts,
+            ),
+            rmakers.force_rest(abjad.select()),
+            rmakers.force_note(attack_selector),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
+
+
+def flames(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
+    if stage == 1:
+        stack = rmakers.stack(
+            rmakers.talea(
+                [11, 2, 7, 1],
+                denominator,
+                extra_counts=extra_counts,
+            ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")

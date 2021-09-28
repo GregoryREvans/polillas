@@ -40,7 +40,7 @@ maker = evans.SegmentMaker(
             abjad.StartHairpin("<|"),
             evans.Attachment(abjad.Dynamic("ff"), selector=baca.selectors.leaf(-1)),
             abjad.Clef("bass"),
-            polillas.scordatura_handler,
+            polillas.scordatura,
         ),
         evans.MusicCommand(
             [
@@ -77,7 +77,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", [2, 3]),
             ],
             evans.Skeleton(r"c'1 ~ c'2."),
-            evans.PitchHandler(["as"]),
+            evans.PitchHandler([evans.JIPitch("bf,,", 5, with_quarter_tones=True)]),
             polillas.A_color,
             abjad.Dynamic("sfp"),
             abjad.StartHairpin("<"),
@@ -91,15 +91,21 @@ maker = evans.SegmentMaker(
             ),
             preprocessor=polillas.fuse_preprocessor,
         ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura,
+            baca.selectors.run(1),
+        ),
         evans.MusicCommand(
             [
                 ("violin 2 voice", [5, 6, 7]),
             ],
-            polillas.swiping_rhythms(
+            polillas.wings(
                 indices=[1, 4, 10, 14],
                 period=18,
                 denominator=16,
                 extra_counts=[0, 2, 1, 1],
+                stage=1,
             ),
             evans.PitchHandler(
                 [
@@ -127,11 +133,12 @@ maker = evans.SegmentMaker(
             [
                 ("viola voice", [6, 7]),
             ],
-            polillas.swiping_rhythms(
+            polillas.wings(
                 indices=[1, 4, 10, 14],
                 period=18,
                 denominator=16,
                 extra_counts=[1, 0, 2, 1],
+                stage=1,
             ),
             evans.PitchHandler(
                 [
@@ -149,11 +156,12 @@ maker = evans.SegmentMaker(
             [
                 ("violin 1 voice", (13, 16)),
             ],
-            polillas.swiping_rhythms(
+            polillas.wings(
                 indices=[2, 3, 8, 13, 14, 15, 19],
                 period=21,
                 denominator=16,
                 extra_counts=[3, 1, 1],
+                stage=1,
             ),
             evans.PitchHandler(
                 [
@@ -181,8 +189,12 @@ maker = evans.SegmentMaker(
             [
                 ("violin 2 voice", (12, 16)),
             ],
-            polillas.swiping_rhythms(
-                indices=[2, 3], period=11, denominator=16, extra_counts=[3, 1, 1]
+            polillas.wings(
+                indices=[2, 3],
+                period=11,
+                denominator=16,
+                extra_counts=[3, 1, 1],
+                stage=1,
             ),
             evans.PitchHandler(
                 [
@@ -210,49 +222,55 @@ maker = evans.SegmentMaker(
             [
                 ("violin 1 voice", [7, 8]),
             ],
-            polillas.poly_rhythms(
-                indices=[0], period=2, denominator=[8], extra_counts=[0, 1, 0, 0, 0, 0]
-            ),
+            polillas.flames(denominator=16, extra_counts=[3], stage=1),
             evans.PitchHandler(["a'"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Articulation("accent"),
+            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            evans.ArticulationHandler(
+                ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
             polillas.C_color,
-            preprocessor=polillas.fuse_quarters_preprocessor_3_1,
+            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 2 voice", [8, 9]),
             ],
-            polillas.poly_rhythms(
-                indices=[0], period=3, denominator=[8], extra_counts=[1]
-            ),
+            polillas.flames(denominator=16, extra_counts=[2], stage=1),
             evans.PitchHandler(["d'"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Articulation("accent"),
+            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            evans.ArticulationHandler(
+                ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
             polillas.C_color,
-            preprocessor=polillas.fuse_quarters_preprocessor_2_1,
+            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("viola voice", [8, 9]),
             ],
-            polillas.poly_rhythms(
-                indices=[0], period=4, denominator=[8], extra_counts=[1]
-            ),
+            polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["c"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Articulation("accent"),
+            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            evans.ArticulationHandler(
+                ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
             polillas.C_color,
-            preprocessor=polillas.fuse_quarters_preprocessor_3_1,
+            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("viola voice", (13, 15)),
             ],
-            polillas.note_rhythm_handler,
+            polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["c"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Articulation("accent"),
+            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            evans.ArticulationHandler(
+                ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
             polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor,
         ),
@@ -260,15 +278,35 @@ maker = evans.SegmentMaker(
             [
                 ("cello voice", (11, 16)),
             ],
-            polillas.note_rhythm_handler,
-            evans.PitchHandler(["b", "c'", "cs'"]),
+            polillas.shadows(extra_counts=[0], stage=3),
+            evans.PitchHandler(
+                evans.Sequence(
+                    [
+                        evans.JIPitch("bf,,", _, with_quarter_tones=True)
+                        for _ in range(2, 8)
+                    ]
+                ).mirror(sequential_duplicates=False)
+            ),
+            abjad.Dynamic("pp"),
+            abjad.StartHairpin("<"),
+            evans.Attachment(abjad.Dynamic("f"), selector=baca.selectors.leaf(-1)),
             polillas.A_color,
             preprocessor=polillas.fuse_preprocessor_2_1,
         ),
         evans.call(
             "cello voice",
             evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
-            baca.selectors.leaves([_ + 18 for _ in range(8)]),
+            baca.selectors.run(-1),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.glissando,
+            baca.selectors.run(-1),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura,
+            baca.selectors.run(-1),
         ),
         evans.call(
             "cello voice",
@@ -279,7 +317,7 @@ maker = evans.SegmentMaker(
                 attach_span_one_to="bounds",
                 forget=False,
             ),
-            baca.selectors.leaves([18, 19, 20, 21, 22]),
+            baca.selectors.run(-1),
         ),
         evans.attach(
             "Global Context",
@@ -315,13 +353,23 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            polillas.mark_90,
+            polillas.mark_120,
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
-            polillas.met_90,
+            polillas.met_120,
             baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.mark_60,
+            baca.selectors.leaf(7),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.met_60,
+            baca.selectors.leaf(7),
         ),
         # evans.call(
         #     "Global Context",
@@ -354,7 +402,7 @@ maker = evans.SegmentMaker(
     time_signatures=polillas.signatures_01,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=False,
+    add_final_grand_pause=True,  # FALSE
     score_includes=[
         f"{pathlib.Path(abjad.__file__).parent.parent}/docs/source/_stylesheets/abjad.ily",
         f"{pathlib.Path(__file__).parent}/../../build/segment_stylesheet.ily",
