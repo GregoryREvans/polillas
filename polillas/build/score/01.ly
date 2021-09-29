@@ -843,6 +843,8 @@
                                         \times 8/9
                                         {
 
+                                            r16
+
                                             d''16
                                             - \tenuto
 
@@ -851,6 +853,19 @@
                                             r16
 
                                             r16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                        }
+
+                                        \times 4/5
+                                        {
 
                                             r16
 
@@ -865,117 +880,21 @@
                                             - \tenuto
 
                                         }
-
-                                        r4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
 
+                                        r4
+
+                                        r16
+
                                         dqs''16
                                         - \tenuto
 
-                                        r8.
-
-                                        gqf''16
-                                        - \tenuto
-
-                                        r8.
-
-                                        \times 2/3
-                                        {
-
-                                            r16
-
-                                            bqf''16
-                                            - \tenuto
-
-                                            r16
-
-                                            r16
-
-                                            eqs''16
-                                            - \tenuto
-
-                                            r16
-
-                                        }
-
-                                        \times 8/9
-                                        {
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            d''16
-                                            - \tenuto
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            dqf''16
-                                            - \tenuto
-
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            d''16
-                                            - \tenuto
-
-                                        }
-
                                         r8
 
-                                        cs''16
-                                        - \tenuto
-
-                                        r16
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 8]
-
-                                        r4
-
                                         \times 2/3
                                         {
-
-                                            fqs''16
-                                            - \tenuto
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            dqs''16
-                                            - \tenuto
-
-                                            r16
-
-                                        }
-
-                                        \times 8/9
-                                        {
-
-                                            r16
 
                                             r16
 
@@ -988,8 +907,72 @@
 
                                             r16
 
+                                            r16
+
+                                        }
+
+                                        \times 8/9
+                                        {
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
+                                            r16
+
                                             bqf''16
                                             - \tenuto
+
+                                            r16
+
+                                            r16
+
+                                            eqs''16
+                                            - \tenuto
+
+                                        }
+
+                                        r4
+
+                                        d''16
+                                        - \tenuto
+
+                                        r8.
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 8]
+
+                                        r16
+
+                                        dqf''16
+                                        - \tenuto
+
+                                        r8
+
+                                        r4
+
+                                        \times 8/9
+                                        {
+
+                                            d''16
+                                            - \tenuto
+
+                                            r16
+
+                                            r16
+
+                                            cs''16
+                                            - \tenuto
+
+                                            r16
+
+                                            r16
+
+                                            r16
 
                                             r16
 
@@ -1000,30 +983,25 @@
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            eqs''16
+                                            fqs''16
                                             - \tenuto
+
+                                            r16
+
+                                            r16
+
+                                            r16
 
                                             r16
 
                                         }
 
-                                        r8
-
-                                        d''16
+                                        dqs''16
                                         - \tenuto
-
-                                        r16
 
                                         r8.
 
-                                        dqf''16
-                                        - \tenuto
+                                        r4
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1612,6 +1590,8 @@
 
                                     r16
 
+                                    r16
+
                                     g'16
                                     - \tenuto
 
@@ -1623,6 +1603,19 @@
 
                                     r16
 
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    r16
+
                                     eqs'16
                                     - \tenuto
 
@@ -1631,6 +1624,64 @@
                                     r16
 
                                     af'16
+                                    - \tenuto
+
+                                }
+
+                                \times 8/9
+                                {
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    a'16
+                                    - \tenuto
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                }
+
+                                r16
+
+                                ef'16
+                                - \tenuto
+
+                                r8
+
+                                \times 4/5
+                                {
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    r16
+
+                                    cqs'16
+                                    - \tenuto
+
+                                    r16
+
+                                    r16
+
+                                    f'16
                                     - \tenuto
 
                                 }
@@ -1640,53 +1691,10 @@
                                 \times 8/9
                                 {
 
-                                    a'16
-                                    - \tenuto
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    ef'16
-                                    - \tenuto
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                }
-
-                                cqs'16
-                                - \tenuto
-
-                                r16
-
-                                r16
-
-                                f'16
-                                - \tenuto
-
-                                \times 4/5
-                                {
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
                                     g'16
                                     - \tenuto
+
+                                    r16
 
                                     r16
 
@@ -1697,46 +1705,11 @@
                                     eqs'16
                                     - \tenuto
 
-                                }
-
-                                \times 4/5
-                                {
-
                                     r16
 
                                     r16
 
                                     r16
-
-                                    r16
-
-                                    af'16
-                                    - \tenuto
-
-                                }
-
-                                \times 8/9
-                                {
-
-                                    r16
-
-                                    r16
-
-                                    a'16
-                                    - \tenuto
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    ef'16
-                                    - \tenuto
                                     %! MATERIAL_COLOR
                                     \)
 

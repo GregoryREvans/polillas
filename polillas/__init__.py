@@ -13,6 +13,7 @@ from .lib import (
     F_color,
     G,
     G_color,
+    chilled_stage_3_bowing,
     fuse_preprocessor,
     fuse_preprocessor_2_1,
     fuse_preprocessor_3_1,
@@ -44,7 +45,14 @@ from .lib import (
 )
 from .materials.instruments import instruments
 from .materials.pitch import demo_pitch_handler
-from .materials.rhythm import flames, note_rhythm_handler, shadows, wings
+from .materials.rhythm import (
+    chilled,
+    flames,
+    flight,
+    note_rhythm_handler,
+    shadows,
+    wings,
+)
 from .materials.score_structure import score
 from .materials.time_signatures import (
     all_signatures,
@@ -81,12 +89,15 @@ __all__ = [
     "G",
     "G_color",
     "all_signatures",
+    "chilled",
+    "chilled_stage_3_bowing",
     "demo_pitch_handler",
     "demo_rhythm_handler",
     "fermata_measures_01",
     "fermata_measures_02",
     "fermata_measures_03",
     "flames",
+    "flight",
     "fuse_preprocessor",
     "fuse_preprocessor_2_1",
     "fuse_preprocessor_3_1",

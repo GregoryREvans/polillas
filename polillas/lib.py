@@ -305,6 +305,9 @@ abjad.tweak(start_scratch).staff_padding = 7
 stop_scratch = abjad.StopTextSpan(command=r"\stopTextSpanTwo")
 
 
+# Preprocessors
+
+
 def fuse_preprocessor(divisions):
     divisions = baca.Sequence(divisions)
     return [divisions.sum()]
@@ -557,3 +560,13 @@ def G_color(selections):
         abjad.attach(start, group[0], tag=tag)
         abjad.attach(literal, group[0], tag=tag)
         abjad.attach(stop, group[-1], tag=tag)
+
+
+chilled_stage_3_bowing = evans.TextSpanHandler(
+    span_one_positions=["1/7", "4/7", "6/7", "7/7", "6/7", "5/7", "3/7", "2/7"],
+    span_one_style="solid-line",
+    span_one_padding=4.5,
+    attach_span_one_to="leaves",
+    forget=False,
+    hooks=False,
+)

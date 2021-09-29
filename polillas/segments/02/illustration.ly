@@ -222,80 +222,33 @@
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 0 }
+                                        c'2.
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 1 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 2 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 3 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 4 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 5 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 6 }
+                                        c'1
+                                        \startTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 7 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 8 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 9 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 10 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 11 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 12 }
+                                        c'2..
                                         %! MATERIAL_COLOR
                                         \)
+                                        \startTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
@@ -305,61 +258,88 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 13 }
+                                        \stopTrillSpan
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 14 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 15 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 16 }
+                                        c'4
                                         ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 17 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 18 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 19 }
+                                        c'2.
+                                        ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 20 }
+                                        \times 2/3
+                                        {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 21 }
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 22 }
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
@@ -367,7 +347,12 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 23 }
+                                        \stopTextSpanOne
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -378,51 +363,61 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 24 }
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 25 }
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 3/4
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 26 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 27 }
+                                        c'4.
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 28 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 29 }
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 30 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 31 }
+                                        c'2
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -432,7 +427,12 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 32 }
+                                        \stopTextSpanOne
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -443,82 +443,86 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 33 }
+                                        \stopTextSpanOne
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 34 }
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 35 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 36 }
+                                        c'4.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 37 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 38 }
+                                        c'4.
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 39 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 40 }
+                                        c'4
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 41 }
-                                        %! MATERIAL_COLOR
-                                        \(
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 42 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 43 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 44 }
-                                        %! MATERIAL_COLOR
-                                        \)
+                                        c'1
+                                        \p
+                                        ^ \markup Spazzolato
+                                        \stopTextSpanOne
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
@@ -528,36 +532,58 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 45 }
+                                        \stopTextSpanOne
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 46 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 47 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 48 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 49 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 50 }
+                                        c'4
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -568,68 +594,37 @@
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 51 }
+                                        c'2..
+                                        \p
+                                        ^ \markup Spazzolato
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 52 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 53 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 54 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 55 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 56 }
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 57 }
+                                        c'2.
+                                        \stopTextSpanOne
+                                        ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 58 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 59 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 60 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 61 }
+                                        c'2.
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -639,7 +634,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 62 }
                                         \bar "||"
                                         \stopStaff \startStaff
 
@@ -673,80 +667,33 @@
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 0 }
+                                        c'2.
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 1 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 2 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 3 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 4 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 5 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 6 }
+                                        c'1
+                                        \startTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 7 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 8 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 9 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 10 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 11 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 12 }
+                                        c'2..
                                         %! MATERIAL_COLOR
                                         \)
+                                        \startTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
@@ -756,61 +703,88 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 13 }
+                                        \stopTrillSpan
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 14 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 15 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 16 }
+                                        c'4
                                         ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 17 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 18 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 19 }
+                                        c'2.
+                                        ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 20 }
+                                        \times 2/3
+                                        {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 21 }
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 22 }
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
@@ -818,7 +792,12 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 23 }
+                                        \stopTextSpanOne
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 5 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -829,51 +808,61 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 24 }
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 25 }
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 3/4
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 26 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 27 }
+                                        c'4.
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 28 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 29 }
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 30 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 31 }
+                                        c'2
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -883,7 +872,12 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 32 }
+                                        \stopTextSpanOne
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 4 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -894,117 +888,153 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 33 }
+                                        \stopTextSpanOne
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 34 }
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 35 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 36 }
+                                        c'4.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 13]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 37 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 38 }
+                                        c'4.
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 14]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                        }
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 39 }
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 40 }
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 14]
+                                        \stopTextSpanOne
+                                        ~
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
+                                        ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 41 }
+                                        \times 2/3
+                                        {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 42 }
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 43 }
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 44 }
-                                        %! MATERIAL_COLOR
-                                        \)
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ^ \markup { 45 }
-                                        %! MATERIAL_COLOR
-                                        \(
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 46 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 47 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 48 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 49 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 50 }
-                                        %! MATERIAL_COLOR
-                                        \)
+                                        c'2..
+                                        \p
+                                        ^ \markup Spazzolato
+                                        \stopTextSpanOne
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
@@ -1014,36 +1044,58 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 51 }
+                                        \stopTextSpanOne
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 1.4
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            \stopTextSpanOne
+                                            ~
+                                            - \abjad-solid-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #4.5
+                                            \startTextSpanOne
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 52 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 53 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 54 }
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 55 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ^ \markup { 56 }
+                                        c'4
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1054,33 +1106,31 @@
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 57 }
+                                        c'2.
+                                        \p
+                                        ^ \markup Spazzolato
+                                        \stopTextSpanOne
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #4.5
+                                        \startTextSpanOne
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 58 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 59 }
+                                        \stopTextSpanOne
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 60 }
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ^ \markup { 61 }
+                                        c'2.
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1090,7 +1140,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 62 }
                                         \bar "||"
                                         \stopStaff \startStaff
 
@@ -1128,80 +1177,33 @@
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 0 }
+                                c'2.
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                \startTrillSpan
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 1 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 2 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 3 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 4 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 5 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 6 }
+                                c'1
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 7 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 8 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 9 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 10 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 11 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 12 }
+                                c'2..
                                 %! MATERIAL_COLOR
                                 \)
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
@@ -1211,61 +1213,88 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 13 }
+                                \stopTrillSpan
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 14 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 15 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 16 }
+                                c'4
                                 ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 17 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 18 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 19 }
+                                c'2.
+                                ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 20 }
+                                \times 2/3
+                                {
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 21 }
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 22 }
-                                %! MATERIAL_COLOR
-                                \)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
@@ -1273,7 +1302,12 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 23 }
+                                \stopTextSpanOne
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1284,51 +1318,61 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 24 }
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 25 }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 26 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 27 }
+                                c'4.
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 28 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 29 }
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 30 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 31 }
+                                c'2
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1338,7 +1382,12 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 32 }
+                                \stopTextSpanOne
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1349,144 +1398,197 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 33 }
+                                \stopTextSpanOne
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 34 }
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 35 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 36 }
+                                c'4.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 37 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 38 }
+                                c'4.
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 14]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 39 }
+                                [
 
+                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 40 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 14]
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
+                                ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 41 }
+                                \times 2/3
+                                {
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 42 }
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 43 }
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 44 }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
+                                c'8
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 45 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 46 }
+                                \stopTextSpanOne
                                 ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 47 }
+
+                                \times 2/3
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 48 }
                                 ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 49 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 50 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 51 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 52 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 53 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 54 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 55 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 56 }
+                                c'2..
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1497,33 +1599,31 @@
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 57 }
+                                c'2.
+                                \p
+                                ^ \markup Spazzolato
+                                \stopTextSpanOne
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 58 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 59 }
+                                \stopTextSpanOne
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 60 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 61 }
+                                c'2.
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1533,7 +1633,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 62 }
                                 \bar "||"
                                 \stopStaff \startStaff
 
@@ -1567,82 +1666,35 @@
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 0 }
+                                c'2.
                                 \stopTextSpan
                                 \stopTextSpanOne
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                \startTrillSpan
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 1 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 2 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 3 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 4 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 5 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 6 }
+                                c'1
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 7 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 8 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 9 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 10 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 11 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 12 }
+                                c'2..
                                 %! MATERIAL_COLOR
                                 \)
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
@@ -1652,61 +1704,88 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 13 }
+                                \stopTrillSpan
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 14 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 15 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 16 }
+                                c'4
                                 ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 17 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 18 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 19 }
+                                c'2.
+                                ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 20 }
+                                \times 2/3
+                                {
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 21 }
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 22 }
-                                %! MATERIAL_COLOR
-                                \)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
@@ -1714,7 +1793,12 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 23 }
+                                \stopTextSpanOne
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1725,51 +1809,61 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 24 }
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 25 }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 26 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 27 }
+                                c'4.
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 28 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 29 }
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 30 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 31 }
+                                c'2
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1779,7 +1873,12 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 32 }
+                                \stopTextSpanOne
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1790,76 +1889,138 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 33 }
+                                \stopTextSpanOne
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 34 }
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 35 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 36 }
+                                c'4.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 37 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 38 }
+                                c'4.
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 14]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    \stopTextSpanOne
+                                    ~
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
+
+                                }
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 39 }
+                                [
 
+                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 40 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 14]
+                                \stopTextSpanOne
+                                ~
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 1.4
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
+                                ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 41 }
+                                \times 2/3
+                                {
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 42 }
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 43 }
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    \stopTextSpanOne
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #4.5
+                                    \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 44 }
-                                %! MATERIAL_COLOR
-                                \)
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
@@ -1868,103 +2029,44 @@
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 45 }
+                                c'2..
+                                \p
+                                ^ \markup Spazzolato
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 46 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 47 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 48 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 49 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 50 }
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 2 7 } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #4.5
+                                \startTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ^ \markup { 51 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 52 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 53 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 54 }
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 55 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ^ \markup { 56 }
+                                c'2..
+                                \stopTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 57 }
+                                c'2.
+                                ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 58 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 59 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 60 }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ^ \markup { 61 }
+                                c'2.
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1974,7 +2076,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 62 }
                                 \bar "||"
                                 \stopStaff \startStaff
 

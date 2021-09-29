@@ -101,8 +101,8 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", [5, 6, 7]),
             ],
             polillas.wings(
-                indices=[1, 4, 10, 14],
-                period=18,
+                indices=[1, 4, 10, 15],
+                period=23,
                 denominator=16,
                 extra_counts=[0, 2, 1, 1],
                 stage=1,
@@ -134,8 +134,8 @@ maker = evans.SegmentMaker(
                 ("viola voice", [6, 7]),
             ],
             polillas.wings(
-                indices=[1, 4, 10, 14],
-                period=18,
+                indices=[1, 4, 10, 15],
+                period=23,
                 denominator=16,
                 extra_counts=[1, 0, 2, 1],
                 stage=1,
