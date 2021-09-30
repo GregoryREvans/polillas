@@ -159,7 +159,9 @@ def flight(stage=1):
 def chilled(stage=3, extra_counts=None):
     if stage == 3:
         stack = rmakers.stack(
-            rmakers.talea([3, 1, 12, 4, 2, 3], 8, extra_counts=extra_counts),
+            rmakers.talea(
+                [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
+            ),
             rmakers.trivialize(abjad.select().tuplets()),
             rmakers.rewrite_rest_filled(abjad.select().tuplets()),
             rmakers.rewrite_sustained(abjad.select().tuplets()),

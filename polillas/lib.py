@@ -562,11 +562,18 @@ def G_color(selections):
         abjad.attach(stop, group[-1], tag=tag)
 
 
-chilled_stage_3_bowing = evans.TextSpanHandler(
-    span_one_positions=["1/7", "4/7", "6/7", "7/7", "6/7", "5/7", "3/7", "2/7"],
-    span_one_style="solid-line",
-    span_one_padding=4.5,
-    attach_span_one_to="leaves",
-    forget=False,
-    hooks=False,
-)
+def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
+    series_dict = {
+        "A": evans.Sequence(
+            [(1, 7), (4, 7), (6, 7), (5, 7), (7, 7), (6, 7), (5, 7), (3, 7), (2, 7)]
+        ),
+        "B": evans.Sequence([(5, 5), (1, 5), (4, 5), (3, 5), (2, 5), (3, 5), (1, 5)]),
+    }
+    return baca.bcps(
+        series_dict[series].rotate(rotation),
+        abjad.tweak(staff_padding).staff_padding,
+        bow_change_tweaks=(
+            abjad.tweak(abjad.Left).self_alignment_X,
+            abjad.tweak(staff_padding + 2.5).staff_padding,
+        ),
+    )

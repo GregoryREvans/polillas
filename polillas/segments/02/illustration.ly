@@ -258,15 +258,31 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \downbow
                                         \stopTrillSpan
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #1 #7
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \times 2/3
                                         {
@@ -280,24 +296,51 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #4 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \upbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #6 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
                                             ]
 
                                         }
@@ -323,21 +366,53 @@
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'8.
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \downbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \abjad-solid-line-with-arrow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #5 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #7 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
                                             %! MATERIAL_COLOR
                                             \)
-                                            \stopTextSpanOne
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(1)
+                                            \bacaStopTextSpanBCP
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -347,12 +422,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        \stopTextSpanOne
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -363,14 +432,29 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \upbow
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #5 #7
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -379,23 +463,44 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #3 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #2 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #1 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -417,9 +522,16 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4..
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(1)
+                                        \bacaStopTextSpanBCP
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
@@ -427,12 +539,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        \stopTextSpanOne
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -443,15 +549,30 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \upbow
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #5 #5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \times 2/3
                                         {
@@ -465,24 +586,63 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \downbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #1 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \upbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #4 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #3 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
                                             ]
 
                                         }
@@ -503,11 +663,22 @@
                                         c'4.
                                         ~
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(1)
+                                        \bacaStopTextSpanBCP
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
@@ -515,14 +686,9 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'1
+                                        :32
                                         \p
-                                        ^ \markup Spazzolato
-                                        \stopTextSpanOne
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        ^ \markup XFB.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
@@ -532,15 +698,30 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \downbow
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #2 #5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \times 2/3
                                         {
@@ -554,24 +735,63 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \upbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #3 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \downbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #1 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #5 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
                                             ]
 
                                         }
@@ -581,11 +801,22 @@
                                         c'8
                                         ~
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(1)
+                                        \bacaStopTextSpanBCP
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
@@ -595,16 +826,11 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2..
+                                        :32
                                         \p
-                                        ^ \markup Spazzolato
-                                        \stopTextSpanOne
+                                        ^ \markup XFB.
                                         %! MATERIAL_COLOR
                                         \(
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
@@ -612,12 +838,13 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
-                                        \stopTextSpanOne
+                                        :32
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        :32
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
@@ -625,6 +852,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
+                                        :32
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -703,15 +931,31 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \upbow
                                         \stopTrillSpan
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #3 #7
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \times 2/3
                                         {
@@ -725,24 +969,51 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #2 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \downbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #1 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
                                             ]
 
                                         }
@@ -768,21 +1039,44 @@
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'8.
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \abjad-solid-line-with-arrow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #4 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #6 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
                                             %! MATERIAL_COLOR
                                             \)
-                                            \stopTextSpanOne
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(1)
+                                            \bacaStopTextSpanBCP
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -792,12 +1086,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        \stopTextSpanOne
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 5 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -808,14 +1096,29 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \downbow
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #5 #7
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -824,23 +1127,53 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \upbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #7 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #6 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #5 #7
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -862,9 +1195,16 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4..
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(1)
+                                        \bacaStopTextSpanBCP
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
@@ -872,12 +1212,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        \stopTextSpanOne
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 4 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -888,15 +1222,30 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(5)
+                                        - \upbow
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #3 #5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \times 2/3
                                         {
@@ -910,24 +1259,60 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \downbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #1 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \upbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #5 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
                                             ]
 
                                         }
@@ -966,13 +1351,31 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(8)
+                                            - \downbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #1 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                         }
 
@@ -991,33 +1394,74 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(7)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(7)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(7)
+                                        - \upbow
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(3)
+                                        \bacaStopTextSpanBCP
                                         ~
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #4 #5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
                                         ]
 
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'8.
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \abjad-solid-line-with-arrow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #3 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #2 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
                                             %! MATERIAL_COLOR
                                             \)
-                                            \stopTextSpanOne
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(1)
+                                            \bacaStopTextSpanBCP
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1027,14 +1471,9 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2..
+                                        :32
                                         \p
-                                        ^ \markup Spazzolato
-                                        \stopTextSpanOne
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        ^ \markup XFB.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
@@ -1044,15 +1483,30 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        \stopTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak self-alignment-X #left
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \tweak staff-padding 4.5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(6)
+                                        - \downbow
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 1.4
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \baca-bcp-spanner-left-text #1 #5
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        - \tweak staff-padding 2
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(2)
+                                        \bacaStartTextSpanBCP
 
                                         \times 2/3
                                         {
@@ -1066,24 +1520,54 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak self-alignment-X #left
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \tweak staff-padding 4.5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(7)
+                                            - \upbow
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #4 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            \stopTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(3)
+                                            \bacaStopTextSpanBCP
                                             ~
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                            - \tweak bound-details.right.padding 1.4
-                                            - \tweak staff-padding #4.5
-                                            \startTextSpanOne
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-left-text #3 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \baca-bcp-spanner-right-text #2 #5
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            - \tweak staff-padding 2
+                                            %! baca.bcps()
+                                            %! baca.BCPCommand._call(2)
+                                            \bacaStartTextSpanBCP
                                             ]
 
                                         }
@@ -1093,11 +1577,22 @@
                                         c'8
                                         ~
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.bcps()
+                                        %! baca.BCPCommand._call(1)
+                                        \bacaStopTextSpanBCP
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
@@ -1107,22 +1602,17 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
+                                        :32
                                         \p
-                                        ^ \markup Spazzolato
-                                        \stopTextSpanOne
+                                        ^ \markup XFB.
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
-                                        - \abjad-invisible-line
-                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
-                                        - \tweak bound-details.right.padding 3
-                                        - \tweak staff-padding #4.5
-                                        \startTextSpanOne
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        \stopTextSpanOne
+                                        :32
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1131,6 +1621,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
+                                        :32
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1213,15 +1704,31 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(5)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(5)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(5)
+                                - \upbow
                                 \stopTrillSpan
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #6 #7
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
@@ -1235,24 +1742,42 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #5 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #3 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
                                     ]
 
                                 }
@@ -1278,21 +1803,44 @@
                                 \times 2/3
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c'8.
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \abjad-solid-line-with-arrow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #2 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-right-text #1 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
                                     %! MATERIAL_COLOR
                                     \)
-                                    \stopTextSpanOne
-                                    - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(1)
+                                    \bacaStopTextSpanBCP
+                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1302,12 +1850,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                \stopTextSpanOne
-                                - \abjad-invisible-line
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 4 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1318,14 +1860,29 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \downbow
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #1 #7
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4
@@ -1334,23 +1891,53 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #4 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \upbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #6 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-right-text #5 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1372,9 +1959,16 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4..
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
                                 %! MATERIAL_COLOR
                                 \)
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(1)
+                                \bacaStopTextSpanBCP
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
@@ -1382,12 +1976,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                \stopTextSpanOne
-                                - \abjad-invisible-line
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 5 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1398,15 +1986,30 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(5)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(5)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(5)
+                                - \upbow
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #3 #5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
@@ -1420,24 +2023,60 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #2 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \upbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #3 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
                                     ]
 
                                 }
@@ -1476,13 +2115,31 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #1 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                 }
 
@@ -1501,13 +2158,31 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \upbow
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(3)
+                                \bacaStopTextSpanBCP
                                 ~
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #5 #5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
                                 ]
 
                                 \times 2/3
@@ -1520,13 +2195,31 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #1 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1540,13 +2233,31 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \upbow
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(3)
+                                \bacaStopTextSpanBCP
                                 ~
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #4 #5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -1558,23 +2269,53 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #3 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #2 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-right-text #3 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                 }
 
@@ -1588,9 +2329,30 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
                                 %! MATERIAL_COLOR
                                 \)
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(1)
+                                \bacaStopTextSpanBCP
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
@@ -1600,22 +2362,17 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                :32
                                 \p
-                                ^ \markup Spazzolato
-                                \stopTextSpanOne
+                                ^ \markup XFB.
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
-                                - \abjad-invisible-line
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 2 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                \stopTextSpanOne
+                                :32
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1624,6 +2381,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                :32
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1704,15 +2462,31 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \downbow
                                 \stopTrillSpan
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 1 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #5 #7
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
@@ -1726,24 +2500,51 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \upbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #7 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #6 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
                                     ]
 
                                 }
@@ -1769,21 +2570,44 @@
                                 \times 2/3
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c'8.
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \abjad-solid-line-with-arrow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #5 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-right-text #3 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
                                     %! MATERIAL_COLOR
                                     \)
-                                    \stopTextSpanOne
-                                    - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(1)
+                                    \bacaStopTextSpanBCP
+                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1793,12 +2617,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                \stopTextSpanOne
-                                - \abjad-invisible-line
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 6 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1809,14 +2627,29 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \downbow
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #4 #7
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4
@@ -1825,23 +2658,62 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \upbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #6 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 2 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #5 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-right-text #7 #7
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1863,9 +2735,16 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4..
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
                                 %! MATERIAL_COLOR
                                 \)
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(1)
+                                \bacaStopTextSpanBCP
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
@@ -1873,12 +2752,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                \stopTextSpanOne
-                                - \abjad-invisible-line
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 1 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1889,15 +2762,30 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(6)
+                                - \downbow
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 4 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #1 #5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
@@ -1911,24 +2799,51 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(7)
+                                    - \upbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-downbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #4 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 7 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #3 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
                                     ]
 
                                 }
@@ -1967,13 +2882,31 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    \stopTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
                                     ~
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 6 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #2 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
 
                                 }
 
@@ -1992,33 +2925,83 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                \stopTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \tweak self-alignment-X #left
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \tweak staff-padding 4.5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(7)
+                                - \upbow
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(3)
+                                \bacaStopTextSpanBCP
                                 ~
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 5 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \baca-bcp-spanner-left-text #3 #5
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                - \tweak staff-padding 2
+                                %! baca.bcps()
+                                %! baca.BCPCommand._call(2)
+                                \bacaStartTextSpanBCP
                                 ]
 
                                 \times 2/3
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c'8.
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak self-alignment-X #left
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \tweak staff-padding 4.5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(8)
+                                    - \downbow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(3)
+                                    \bacaStopTextSpanBCP
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \abjad-solid-line-with-arrow
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-left-text #1 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \baca-bcp-spanner-right-text #5 #5
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    - \tweak staff-padding 2
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(2)
+                                    \bacaStartTextSpanBCP
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
                                     %! MATERIAL_COLOR
                                     \)
-                                    \stopTextSpanOne
-                                    - \abjad-solid-line-with-arrow
-                                    - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \musicglyph \evans-upbow \vspace #0.2 \upright \fraction 3 7 } \hspace #0.5 }
-                                    - \tweak bound-details.right.padding 1.4
-                                    - \tweak staff-padding #4.5
-                                    \startTextSpanOne
+                                    %! baca.bcps()
+                                    %! baca.BCPCommand._call(1)
+                                    \bacaStopTextSpanBCP
+                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2030,16 +3013,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2..
+                                :32
                                 \p
-                                ^ \markup Spazzolato
-                                \stopTextSpanOne
+                                ^ \markup XFB.
                                 %! MATERIAL_COLOR
                                 \(
-                                - \abjad-invisible-line
-                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \vcenter \upright \fraction 2 7 } \hspace #0.5 }
-                                - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #4.5
-                                \startTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
@@ -2047,7 +3025,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2..
-                                \stopTextSpanOne
+                                :32
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
@@ -2055,11 +3033,13 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                :32
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
+                                :32
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
@@ -2067,6 +3047,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                :32
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
