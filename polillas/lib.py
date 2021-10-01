@@ -209,24 +209,11 @@ stop_repeat_before = abjad.LilyPondLiteral(
     format_slot="before",
 )
 
-red_start_repeat = abjad.LilyPondLiteral(
+middle_repeat = abjad.LilyPondLiteral(
     [
-        r"\once \override Score.BarLine.color = #red",
-        r"\once \override Score.SpanBar.color = #red",
-        r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
-        r"\once \override Score.BarLine.thick-thickness = #3",
-        r'\bar ".|:"',
-    ],
-    format_slot="after",
-)
-
-red_stop_repeat = abjad.LilyPondLiteral(
-    [
-        r"\once \override Score.BarLine.color = #red",
-        r"\once \override Score.SpanBar.color = #red",
         r"\once \override Score.BarLine.X-extent = #'(1 . 2)",
         r"\once \override Score.BarLine.thick-thickness = #3",
-        r'\bar ":|."',
+        r'\bar ":|.|:"',
     ],
     format_slot="after",
 )

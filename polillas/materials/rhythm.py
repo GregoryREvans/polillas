@@ -122,11 +122,25 @@ def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def flames(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
+def flames(indices=[1, 3], denominator=16, extra_counts=[2], stage=1):
     if stage == 1:
         stack = rmakers.stack(
             rmakers.talea(
                 [11, 2, 7, 1],
+                denominator,
+                extra_counts=extra_counts,
+            ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 2:
+        stack = rmakers.stack(
+            rmakers.talea(
+                [1, 3, 2, 5],
                 denominator,
                 extra_counts=extra_counts,
             ),
@@ -152,11 +166,41 @@ def flight(stage=1):
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
+    if stage == 2:
+        stack = rmakers.stack(
+            rmakers.talea([-1, 3, -1, 2, -1, 1], 8),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
 def chilled(stage=3, extra_counts=None):
+    if stage == 1:
+        stack = rmakers.stack(
+            rmakers.tuplet([(3, 1)]),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=True)
+        return handler
+    if stage == "1 cello":
+        stack = rmakers.stack(
+            rmakers.tuplet([(3, 1), (1,)]),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=True)
+        return handler
     if stage == 3:
         stack = rmakers.stack(
             rmakers.talea(
@@ -171,3 +215,18 @@ def chilled(stage=3, extra_counts=None):
         return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
+
+
+def knots(stage=1):
+    if stage == 1:
+        stack = rmakers.stack(
+            rmakers.talea([1], 8),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=True)
+        return handler
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, 5, 6, or 6.")

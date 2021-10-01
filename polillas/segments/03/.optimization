@@ -53,3 +53,243 @@ Segment runtime: 3 seconds
  Pre-handlers runtime: 0 seconds
  Handlers runtime: 0 seconds
  Post-handlers runtime: 3 seconds
+
+2021-09-30 18:14:09
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 0 seconds
+ Post-handlers runtime: 3 seconds
+
+2021-09-30 18:16:49
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 3 seconds
+
+2021-09-30 18:17:55
+Segment runtime: 6 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 4 seconds
+
+2021-09-30 18:19:35
+Segment runtime: 15 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 10 seconds
+ Post-handlers runtime: 5 seconds
+
+2021-09-30 18:25:10
+Segment runtime: 15 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 10 seconds
+ Post-handlers runtime: 5 seconds
+
+2021-09-30 18:29:29
+Segment runtime: 29 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 23 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:31:16
+Segment runtime: 31 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 25 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:32:58
+Segment runtime: 29 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 23 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:42:34
+Segment runtime: 29 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 23 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:44:34
+Segment runtime: 30 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 24 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:45:54
+Segment runtime: 31 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 25 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:47:44
+Segment runtime: 31 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 25 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:49:20
+Segment runtime: 32 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 25 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 18:50:52
+Segment runtime: 31 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 25 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:53:16
+Segment runtime: 31 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 25 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 18:56:39
+Segment runtime: 33 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 26 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 18:58:17
+Segment runtime: 33 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 26 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 18:59:15
+Segment runtime: 33 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 26 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:01:49
+Segment runtime: 32 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 26 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 19:02:53
+Segment runtime: 33 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 26 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:03:48
+Segment runtime: 34 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 27 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:13:32
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:15:50
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:19:15
+Segment runtime: 37 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 30 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:25:06
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 8 seconds
+
+2021-09-30 19:26:44
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:27:58
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:29:37
+Segment runtime: 34 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 6 seconds
+
+2021-09-30 19:31:23
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:38:50
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:42:18
+Segment runtime: 35 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 28 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:51:19
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:53:13
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:55:08
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:56:42
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 19:58:57
+Segment runtime: 37 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 30 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 20:02:37
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 20:05:01
+Segment runtime: 37 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 8 seconds
+
+2021-09-30 20:07:12
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
+
+2021-09-30 20:13:37
+Segment runtime: 36 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 29 seconds
+ Post-handlers runtime: 7 seconds
