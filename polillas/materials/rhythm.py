@@ -39,6 +39,13 @@ def select_periodic_ties_2_4_of_8(argument):
     return abjad.select(argument).logical_ties().get([2, 4], 8)
 
 
+def select_all_but_final_leaf(argument):
+    ties = abjad.select(argument).logical_ties()
+    final_leaves = abjad.select([_[-1] for _ in ties])
+    out = abjad.select(final_leaves).leaves().exclude([-1])
+    return out
+
+
 ##
 ##
 
@@ -71,7 +78,27 @@ note_rhythm_handler = evans.RhythmHandler(
 ##
 
 
-def shadows(extra_counts=[2], stage=3):  # RTM
+def shadows(extra_counts=[2], stage=3):
+    if stage == 1:
+        rtm_strings_1 = evans.helianthated_rtm(
+            beats=[[3], [1, 1], [2, 1]],
+            divisions=[[1], [1, 1, 1], [2, 1, 1]],
+        )
+        rtm_strings_2 = evans.helianthated_rtm(
+            beats=[[2], [1, 2], [3, 1]],
+            divisions=[[1, 1], [1, 1, 1], [1, 2]],
+        )
+        rtm_strings = rtm_strings_1 + rtm_strings_2
+        maker = evans.RTMMaker(rtm_strings)
+        stack = rmakers.stack(
+            maker,
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     if stage == 3:
         stack = rmakers.stack(
             rmakers.talea(
@@ -79,6 +106,17 @@ def shadows(extra_counts=[2], stage=3):  # RTM
                 4,
                 extra_counts=extra_counts,
             ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 4:
+        stack = rmakers.stack(
+            rmakers.note(),
+            rmakers.tie(select_all_but_final_leaf),
             rmakers.trivialize(abjad.select().tuplets()),
             rmakers.rewrite_rest_filled(abjad.select().tuplets()),
             rmakers.rewrite_sustained(abjad.select().tuplets()),
@@ -122,7 +160,7 @@ def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def flames(indices=[1, 3], denominator=16, extra_counts=[2], stage=1):
+def flames(denominator=16, extra_counts=[2], stage=1):
     if stage == 1:
         stack = rmakers.stack(
             rmakers.talea(
@@ -217,10 +255,35 @@ def chilled(stage=3, extra_counts=None):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def knots(stage=1):
+def knots(
+    stage=1,
+    extra_counts=None,
+    division_indices=[0],
+    leaf_indices=[0, 2, 3],
+    leaf_period=7,
+):
     if stage == 1:
         stack = rmakers.stack(
             rmakers.talea([1], 8),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=True)
+        return handler
+    if stage == 4:
+        attack_selector = abjad.select().leaves().get(leaf_indices, leaf_period)
+        division_selector = abjad.select().tuplets().get(division_indices)
+        stack = rmakers.stack(
+            rmakers.talea(
+                [1],
+                16,
+                extra_counts=extra_counts,
+            ),
+            rmakers.force_rest(abjad.select()),
+            rmakers.force_note(attack_selector),
+            rmakers.force_rest(division_selector),
             rmakers.trivialize(abjad.select().tuplets()),
             rmakers.rewrite_rest_filled(abjad.select().tuplets()),
             rmakers.rewrite_sustained(abjad.select().tuplets()),

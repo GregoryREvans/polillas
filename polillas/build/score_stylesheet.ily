@@ -122,6 +122,7 @@
 		\Score
 		\remove Metronome_mark_engraver
 		\remove Mark_engraver
+		\remove Volta_engraver
 		%{ \remove Bar_number_engraver %}
 		\accepts TimeSignatureContext
 		%{ \override Accidental.X-extent = ##f % experimental %}
@@ -190,6 +191,7 @@
 	}
 	\context {
 		\Staff
+		\consists Volta_engraver
 		\numericTimeSignature
 		\remove Time_signature_engraver
 		fontSize = #-1

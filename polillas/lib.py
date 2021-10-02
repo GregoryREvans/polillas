@@ -218,6 +218,20 @@ middle_repeat = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
+first_ending_on = abjad.LilyPondLiteral(
+    r"""\set Score.repeatCommands = #'((volta "1"))""",
+    format_slot="before",
+)
+
+second_ending_on = abjad.LilyPondLiteral(
+    r"""\set Score.repeatCommands = #'((volta "2"))""",
+    format_slot="before",
+)
+
+ending_off = abjad.LilyPondLiteral(
+    r"""\set Score.repeatCommands = #'((volta #f))""",
+    format_slot="before",
+)
 
 clef_whitespace = abjad.LilyPondLiteral(
     r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
@@ -333,6 +347,48 @@ def fuse_quarters_preprocessor_2_1(divisions):
     divisions = divisions.flatten(depth=-1)
     divisions = divisions.partition_by_counts((2, 1), cyclic=True, overhang=True)
     return baca.Sequence(sum(_) for _ in divisions)
+
+
+def quarters_preprocessor_2_1(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    temp = []
+    for measure in divisions:
+        partitions = measure.flatten(depth=-1).partition_by_counts(
+            (2, 1), cyclic=True, overhang=True
+        )
+        sums = baca.Sequence(sum(_) for _ in partitions)
+        temp.append(sums)
+    divisions = baca.Sequence(temp).flatten(depth=-1)
+    return divisions
+
+
+def quarters_preprocessor_2(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    temp = []
+    for measure in divisions:
+        partitions = measure.flatten(depth=-1).partition_by_counts(
+            (2,), cyclic=True, overhang=True
+        )
+        sums = baca.Sequence(sum(_) for _ in partitions)
+        temp.append(sums)
+    divisions = baca.Sequence(temp).flatten(depth=-1)
+    return divisions
+
+
+def quarters_preprocessor_3_1_2(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    temp = []
+    for measure in divisions:
+        partitions = measure.flatten(depth=-1).partition_by_counts(
+            (3, 1, 2), cyclic=True, overhang=True
+        )
+        sums = baca.Sequence(sum(_) for _ in partitions)
+        temp.append(sums)
+    divisions = baca.Sequence(temp).flatten(depth=-1)
+    return divisions
 
 
 def fuse_quarters_preprocessor_3_1(divisions):

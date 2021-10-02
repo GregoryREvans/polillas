@@ -312,7 +312,9 @@ maker = evans.SegmentMaker(
             polillas.note_rhythm_handler,
             evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch("percussion"))]),
             abjad.Markup(
-                r"\markup {behind bride, on wrapping}", literal=True, direction=abjad.Up
+                r"\markup {behind bridge, on wrapping}",
+                literal=True,
+                direction=abjad.Up,
             ),
             abjad.Dynamic("ff"),
             abjad.Clef("percussion"),
@@ -333,8 +335,23 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
+            polillas.first_ending_on,
+            baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Global Context",
             polillas.middle_repeat,
             baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.second_ending_on,
+            baca.selectors.leaf(10),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.ending_off,
+            baca.selectors.leaf(11),
         ),
         evans.attach(
             "Global Context",

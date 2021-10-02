@@ -94,6 +94,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
 
+                \set Score.repeatCommands = #'((volta "1"))
                 %! scaling time signatures
                 \time 13/16
                 s1 * 13/16
@@ -104,6 +105,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
 
+                \set Score.repeatCommands = #'((volta "2"))
                 %! scaling time signatures
                 \time 13/16
                 s1 * 13/16
@@ -111,6 +113,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
 
+                \set Score.repeatCommands = #'((volta #f))
                 %! scaling time signatures
                 \time 15/16
                 s1 * 15/16
