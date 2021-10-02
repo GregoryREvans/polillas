@@ -225,8 +225,18 @@ def flight(stage=1):  # D
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
+    if stage == 5:
+        stack = rmakers.stack(
+            rmakers.tuplet([(2, 1, 1)]),
+            # rmakers.trivialize(abjad.select().tuplets()),
+            # rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            # rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     else:
-        raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
 
 
 def chilled(stage=3, extra_counts=None):  # E

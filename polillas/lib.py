@@ -70,6 +70,17 @@ mark_66 = abjad.LilyPondLiteral(
 
 abjad.tweak(mark_66).padding = 6
 
+met_mod_40_66 = evans.metric_modulation(
+    metronome_mark=((1, 4), 40),
+    left_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
+    right_note=(abjad.Note("c'4")),
+    modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
+)
+
+abjad.tweak(met_mod_40_66).padding = 6
+
 met_72_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 72)
 
 mark_72 = abjad.LilyPondLiteral(

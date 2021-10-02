@@ -166,8 +166,8 @@ maker = evans.SegmentMaker(
             ],
             polillas.note_rhythm_handler,
             abjad.Articulation("trill"),
-            polillas.D_color,
         ),
+        evans.call("violin 1 voice", polillas.D_color, baca.selectors.leaves([84, 85])),
         evans.MusicCommand(
             [("violin 2 voice", (14, 18))],
             polillas.shadows(extra_counts=[0], stage=3),
@@ -198,6 +198,40 @@ maker = evans.SegmentMaker(
             ),
             abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
             polillas.G_color,
+        ),
+        evans.attach(
+            "violin 1 voice",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(81),
+        ),
+        evans.attach(
+            "violin 1 voice",
+            abjad.Clef("treble"),
+            baca.selectors.leaf(81),
+        ),
+        evans.attach(
+            "violin 1 voice",
+            polillas.clef_whitespace,
+            baca.selectors.leaf(81),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(95),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Clef("treble"),
+            baca.selectors.leaf(95),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            polillas.clef_whitespace,
+            baca.selectors.leaf(95),
         ),
         evans.call(
             "score",
@@ -246,31 +280,31 @@ maker = evans.SegmentMaker(
             polillas.met_40,
             baca.selectors.leaf(14),
         ),
-        evans.call(
-            "Global Context",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "violin 1 voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "violin 2 voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "viola voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "cello voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
+        # evans.call(
+        #     "Global Context",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "violin 1 voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "violin 2 voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "viola voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "cello voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
