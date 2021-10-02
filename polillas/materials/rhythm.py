@@ -323,8 +323,45 @@ def knots(  # F
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
-        raise Exception(f"No stage {stage}. Use 1, 2, 3, 5, 6, or 6.")
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, 5, or 6.")
 
 
-def lightning():  # G
-    pass
+def lightning(stage=1, denominators=[4], extra_counts=[0], indices=[0], period=1):  # G
+    if stage == 1:
+        attack_selector = abjad.select().leaves().get(indices, period)
+        stack = rmakers.stack(
+            rmakers.even_division(denominators, extra_counts=extra_counts),
+            rmakers.force_rest(abjad.select()),
+            rmakers.force_note(attack_selector),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 2:
+        stack = rmakers.stack(
+            rmakers.talea([2, 3], 8),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    else:
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
+
+
+def make_tied_notes():
+    stack = rmakers.stack(
+        rmakers.note(),
+        rmakers.tie(select_all_but_final_leaf),
+        rmakers.trivialize(abjad.select().tuplets()),
+        rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+        rmakers.rewrite_sustained(abjad.select().tuplets()),
+        rmakers.extract_trivial(),
+    )
+    handler = evans.RhythmHandler(stack, forget=False)
+    return handler
