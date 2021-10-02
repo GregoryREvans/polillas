@@ -78,7 +78,7 @@ note_rhythm_handler = evans.RhythmHandler(
 ##
 
 
-def shadows(extra_counts=[2], stage=3):
+def shadows(extra_counts=[2], stage=3):  # A
     if stage == 1:
         rtm_strings_1 = evans.helianthated_rtm(
             beats=[[3], [1, 1], [2, 1]],
@@ -128,7 +128,7 @@ def shadows(extra_counts=[2], stage=3):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, 5, 6, or 7.")
 
 
-def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
+def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):  # B
     if stage == 1:
         attack_selector = abjad.select().leaves().get(indices, period)
         stack = rmakers.stack(
@@ -156,11 +156,22 @@ def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
+    if stage == 3:
+        stack = rmakers.stack(
+            rmakers.note(),
+            rmakers.tie(select_all_but_final_leaf),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def flames(denominator=16, extra_counts=[2], stage=1):
+def flames(denominator=16, extra_counts=[2], stage=1):  # C
     if stage == 1:
         stack = rmakers.stack(
             rmakers.talea(
@@ -193,7 +204,7 @@ def flames(denominator=16, extra_counts=[2], stage=1):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def flight(stage=1):
+def flight(stage=1):  # D
     if stage == 1:
         stack = rmakers.stack(
             rmakers.note(),
@@ -218,7 +229,7 @@ def flight(stage=1):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def chilled(stage=3, extra_counts=None):
+def chilled(stage=3, extra_counts=None):  # E
     if stage == 1:
         stack = rmakers.stack(
             rmakers.tuplet([(3, 1)]),
@@ -255,12 +266,13 @@ def chilled(stage=3, extra_counts=None):
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def knots(
+def knots(  # F
     stage=1,
     extra_counts=None,
     division_indices=[0],
     leaf_indices=[0, 2, 3],
     leaf_period=7,
+    rotation=0,
 ):
     if stage == 1:
         stack = rmakers.stack(
@@ -291,5 +303,28 @@ def knots(
         )
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
+    if stage == 5:
+        durations = evans.Sequence([1, -1, 1, 1, -1]).rotate(rotation)
+        stack = rmakers.stack(
+            rmakers.talea(durations, 8, extra_counts=[0, 1, 0, 0, 1]),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 6:
+        stack = rmakers.stack(
+            rmakers.talea([1], 16, extra_counts=[1]),
+            rmakers.duration_bracket(),
+            rmakers.beam(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 5, 6, or 6.")
+
+
+def lightning():  # G
+    pass
