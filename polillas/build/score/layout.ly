@@ -447,9 +447,24 @@
             \noBreak
             \evans-new-spacing-section #1 #16
             s1 * 7/8
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 1
             \break
             \evans-lbsd #130 #'(19 20 20 20)
             \evans-system-X-offset #1
+            \evans-new-spacing-section #1 #16
+            s1 * 3/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 3/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 1/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 7/4
+            \noBreak
             \evans-new-spacing-section #1 #16
             s1 * 1
             \noBreak
@@ -457,7 +472,36 @@
             s1 * 3/4
             \noBreak
             \evans-new-spacing-section #1 #16
+            s1 * 1/6
+            \noBreak
+            \evans-new-spacing-section #1 #16
             s1 * 3/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 1
+            \break
+            \evans-lbsd #240 #'(19 20 20 20)
+            \evans-system-X-offset #1
+            \evans-new-spacing-section #1 #16
+            s1 * 1
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 1/6
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 5/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 3/2
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 7/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 7/4
+            \noBreak
+            \evans-new-spacing-section #1 #16
+            s1 * 1/6
             \noBreak
             \evans-new-spacing-section #1 #16
             s1 * 1/4

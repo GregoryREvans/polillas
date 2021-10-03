@@ -200,6 +200,41 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
+    if stage == 3:
+
+        def check_duration(argument):
+            if argument == abjad.NonreducedFraction(1, 6):
+                return True
+            else:
+                return False
+
+        stack_1 = rmakers.stack(
+            rmakers.talea(
+                [2, 6, 4, 10],
+                denominator,
+                extra_counts=extra_counts,
+            ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        stack_2 = rmakers.stack(
+            rmakers.note(),
+            # rmakers.trivialize(abjad.select().tuplets()),
+            # rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            # rmakers.extract_trivial(),
+        )
+        binding = rmakers.bind(
+            rmakers.assign(
+                stack_2,
+                abjad.DurationInequality("==", (1, 6)),
+                remember_state_across_gaps=True,
+            ),
+            rmakers.assign(stack_1),
+        )
+        return binding
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
