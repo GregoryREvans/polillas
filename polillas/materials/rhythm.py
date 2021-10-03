@@ -235,8 +235,21 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
             rmakers.assign(stack_1),
         )
         return binding
+    if stage == 5:
+        stack = rmakers.stack(
+            rmakers.accelerando(
+                [(1, 8), (1, 20), (1, 16)],
+                [(1, 8), (1, 23), (1, 16)],
+                [(1, 25), (1, 8), (1, 16)],
+            ),
+            rmakers.force_rest(select_periodic_ties_2_4_7_8_of_10),
+            rmakers.duration_bracket(),
+            rmakers.feather_beam(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     else:
-        raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
+        raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
 
 
 def flight(stage=1):  # D
@@ -306,6 +319,18 @@ def chilled(stage=3, extra_counts=None):  # E
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=True)
+        return handler
+    if stage == 4:
+        stack = rmakers.stack(
+            rmakers.talea(
+                [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
+            ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")

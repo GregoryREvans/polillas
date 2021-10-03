@@ -147,6 +147,8 @@
 
                                         \times 4/5
                                         {
+                                            \staff-line-count 5
+                                            \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 1]
@@ -159,6 +161,7 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
+                                            \clef "treble"
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             \override Staff.Stem.stemlet-length = 0.75
@@ -1036,6 +1039,8 @@
 
                                         \times 2/3
                                         {
+                                            \staff-line-count 5
+                                            \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 1]
@@ -1048,6 +1053,7 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
+                                            \clef "treble"
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             %! PITCH
@@ -1815,6 +1821,8 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
                                 {
+                                    \staff-line-count 5
+                                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 1]
@@ -1827,6 +1835,7 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
+                                    \clef "alto"
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
@@ -2969,6 +2978,8 @@
 
                             \context Voice = "cello voice"
                             {
+                                \staff-line-count 5
+                                \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 1]
@@ -2981,6 +2992,7 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
+                                \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 \override Staff.Stem.stemlet-length = 0.75

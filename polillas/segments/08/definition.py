@@ -30,6 +30,11 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[1],
             ),
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            abjad.Clef("treble"),
+            polillas.clef_whitespace,
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -91,6 +96,11 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[2],
             ),
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            abjad.Clef("treble"),
+            polillas.clef_whitespace,
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -152,6 +162,11 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[3],
             ),
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            abjad.Clef("alto"),
+            polillas.clef_whitespace,
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -213,6 +228,11 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[4],
             ),
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            abjad.Clef("bass"),
+            polillas.clef_whitespace,
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
