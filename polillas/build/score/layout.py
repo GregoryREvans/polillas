@@ -47,6 +47,13 @@ breaks = evans.Breaks(
     ),
     evans.Page(
         evans.System(measures=6, lbsd=(20, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=14, lbsd=(130, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=12, lbsd=(240, "(19 20 20 20)"), x_offset=1),
+    ),
+    evans.Page(
+        evans.System(measures=7, lbsd=(20, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=7, lbsd=(130, "(19 20 20 20)"), x_offset=1),
+        evans.System(measures=6, lbsd=(240, "(19 20 20 20)"), x_offset=1),
     ),
     time_signatures=polillas.all_signatures,
     default_spacing=(1, 16),
