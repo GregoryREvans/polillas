@@ -27,6 +27,11 @@ def select_alternate_divisions(argument):
     return [abjad.select(_).leaf(-1) for _ in result]
 
 
+def select_alternate_leaves(argument):
+    result = abjad.select(argument).logical_ties().get([1], 2)
+    return result
+
+
 def select_periodic_tuplets(argument):
     return abjad.select(argument).tuplets().get([0], 2)
 
@@ -128,7 +133,14 @@ def shadows(extra_counts=[2], stage=3):  # A
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, 5, 6, or 7.")
 
 
-def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1):  # B
+def wings(
+    indices=[1, 3],
+    period=8,
+    denominator=16,
+    extra_counts=[2],
+    rotation_index=1,
+    stage=1,
+):  # B
     if stage == 1:
         attack_selector = abjad.select().leaves().get(indices, period)
         stack = rmakers.stack(
@@ -164,6 +176,21 @@ def wings(indices=[1, 3], period=8, denominator=16, extra_counts=[2], stage=1): 
             rmakers.rewrite_rest_filled(abjad.select().tuplets()),
             rmakers.rewrite_sustained(abjad.select().tuplets()),
             rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 4:
+        nested_list = [1, [[1, [1, 1]], 1, [1, [1, 1]], [1, [1, 1]], 1]]
+        rtm = "(1 ((1 (2 3)) 3 (2 (2 1)) (2 (1 3)) 1))"
+        rotations: list = []
+        for i in range(len(evans.flatten(nested_list))):
+            new_rtm = evans.rotate_tree(rtm, i)
+            rotations.append(new_rtm)
+        final_rtm_list = evans.Sequence(rotations).rotate(rotation_index)
+        maker = evans.RTMMaker(final_rtm_list)
+        stack = rmakers.stack(
+            maker,
+            rmakers.force_rest(select_alternate_leaves),
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler

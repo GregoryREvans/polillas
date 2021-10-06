@@ -325,6 +325,18 @@ def fuse_preprocessor(divisions):
     return [divisions.sum()]
 
 
+def fuse_preprocessor_2(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = divisions.partition_by_counts((2,), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def fuse_preprocessor_3(divisions):
+    divisions = baca.Sequence(divisions)
+    divisions = divisions.partition_by_counts((3,), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
 def fuse_preprocessor_2_1(divisions):
     divisions = baca.Sequence(divisions)
     divisions = divisions.partition_by_counts((2, 1), cyclic=True, overhang=True)
@@ -647,3 +659,58 @@ def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
             abjad.tweak(staff_padding + 2.5).staff_padding,
         ),
     )
+
+
+def make_proportional_notation(selections):
+    for tuplet in abjad.select(selections).tuplets():
+        abjad.tweak(tuplet).tuplet_bracket.transparent = True
+        abjad.tweak(tuplet).tuplet_number.transparent = True
+
+    for rest in abjad.select(selections).leaves(pitched=False):
+        transparent_literal = abjad.LilyPondLiteral(
+            r"\once \override Rest.transparent = ##t", format_slot="before"
+        )
+        transparent_dots_literal = abjad.LilyPondLiteral(
+            r"\once \override Dots.transparent = ##t", format_slot="before"
+        )
+        abjad.attach(transparent_literal, rest)
+        abjad.attach(transparent_dots_literal, rest)
+
+    for note in abjad.select(selections).leaves(pitched=True):
+        abjad.attach(abjad.BendAfter(bend_amount=0), note)
+        style_literal = abjad.LilyPondLiteral(
+            r"\duration-line-style", format_slot="before"
+        )
+        abjad.attach(style_literal, note)
+
+
+def make_proportaional_global_context(selections):
+    leaves = abjad.select(selections).leaves()
+    leaves_count = len(leaves)
+    for i, leaf in enumerate(leaves):
+        if i != leaves_count:
+            bar_literal = abjad.LilyPondLiteral(
+                r"\once \override Score.BarLine.stencil = ##f", format_slot="before"
+            )
+            abjad.attach(bar_literal, leaf)
+            span_literal = abjad.LilyPondLiteral(
+                r"\once \override Score.SpanBar.stencil = ##f", format_slot="before"
+            )
+            abjad.attach(span_literal, leaf)
+        if i != 0:
+            hidden_literal = abjad.LilyPondLiteral(
+                r"\once \override Score.TimeSignature.stencil = ##f",
+                format_slot="before",
+            )
+            abjad.attach(hidden_literal, leaf)
+
+    first_leaf = abjad.select(selections).leaf(0)
+    x_literal = abjad.LilyPondLiteral(
+        r"\once \override Score.TimeSignature.stencil = #(blank-time-signature)",
+        format_slot="before",
+    )
+    abjad.attach(x_literal, first_leaf)
+
+
+def label_clock_time(selections):
+    abjad.Label(selections).with_start_offsets(clock_time=True)

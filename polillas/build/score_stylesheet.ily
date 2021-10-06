@@ -187,6 +187,7 @@
 	\context {
 		\Voice
 		\remove Forbid_line_break_engraver
+		%{ \consists Duration_line_engraver %}
 		\override Accidental.font-size = 1
 	}
 	\context {
