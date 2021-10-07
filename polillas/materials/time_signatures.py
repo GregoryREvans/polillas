@@ -313,7 +313,7 @@ reduced_signatures_15 = evans.reduce_fermata_measures(
 ## 16
 ##
 
-pairs_16 = evans.Sequence(time_signature_series["C"].rotate(-5)[0:16])
+pairs_16 = evans.Sequence(time_signature_series["C"].rotate(-5)[0:37])
 
 meters_16 = [abjad.Meter(_) for _ in pairs_16]
 
@@ -321,7 +321,7 @@ signatures_16 = [abjad.TimeSignature(_) for _ in meters_16]
 
 signatures_16.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_16 = [1]
+fermata_measures_16 = [36]
 
 reduced_signatures_16 = evans.reduce_fermata_measures(
     signatures_16, fermata_measures_16
@@ -456,5 +456,6 @@ all_signatures = evans.join_time_signature_lists(
         reduced_signatures_13,
         reduced_signatures_14,
         reduced_signatures_15,
+        reduced_signatures_16,
     ]
 )

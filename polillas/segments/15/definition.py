@@ -109,7 +109,7 @@ maker = evans.SegmentMaker(
         # ),
         evans.attach(
             "Global Context",
-            polillas.met_60,
+            polillas.met_40,
             baca.selectors.leaf(0),
         ),
         evans.call(
@@ -119,12 +119,12 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            polillas.mark_90,
+            polillas.mark_60,
             baca.selectors.leaf(16),
         ),
         evans.attach(
             "Global Context",
-            polillas.met_90,
+            polillas.met_60,
             baca.selectors.leaf(16),
         ),
         evans.call(

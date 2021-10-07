@@ -310,11 +310,34 @@ def flight(stage=1):  # D
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
+    if stage == 6:
+        stack_1 = rmakers.stack(
+            rmakers.tuplet([(7, 1)]),
+        )
+        stack_2 = rmakers.stack(
+            rmakers.tuplet([(3, 1)]),
+        )
+        stack_3 = rmakers.stack(
+            rmakers.tuplet([(3, 3, 3, 2, 1)]),
+            # rmakers.tie(select_all_but_final_leaf),
+            # rmakers.trivialize(abjad.select().tuplets()),
+            # rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            # rmakers.extract_trivial(),
+        )
+        binding = rmakers.bind(
+            rmakers.assign(stack_2, abjad.DurationInequality("==", (2, 4))),
+            rmakers.assign(stack_3, abjad.DurationInequality(">", (6, 4))),
+            rmakers.assign(stack_1),
+        )
+        return binding
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
 
 
-def chilled(stage=3, extra_counts=None):  # E
+def chilled(
+    stage=3, extra_counts=None, input_counts=None, reverse=False, rotation=0
+):  # E
     if stage == 1:
         stack = rmakers.stack(
             rmakers.tuplet([(3, 1)]),
@@ -335,6 +358,27 @@ def chilled(stage=3, extra_counts=None):  # E
         )
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
+    if stage == 2:
+        counts_ = [7, 4, 11, 8]
+        counts_ += [14, 8, 11, 8]
+        counts_ += [14, 8, 22, 16]
+        counts_ += [28, 16, 22, 16]
+        counts_ += [46, 32, 22, 16]
+        counts = evans.Sequence(counts_)
+        assert len(counts) == 20
+        assert sum(input_counts) == len(counts)
+        these_counts = counts.partition_by_counts(input_counts, overhang=abjad.Exact)
+        these_counts = [sum(_) for _ in these_counts]
+        if reverse is True:
+            these_counts = evans.Sequence(these_counts).reverse()
+        stack = rmakers.stack(
+            rmakers.talea(these_counts, 16, read_talea_once_only=True),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        return stack
     if stage == 3:
         stack = rmakers.stack(
             rmakers.talea(
@@ -352,6 +396,17 @@ def chilled(stage=3, extra_counts=None):  # E
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 5:
+        integers = evans.Sequence([7, 1, 9, 2]).rotate(rotation)
+        stack = rmakers.stack(
+            rmakers.talea(integers, 8),
             rmakers.trivialize(abjad.select().tuplets()),
             rmakers.rewrite_rest_filled(abjad.select().tuplets()),
             rmakers.rewrite_sustained(abjad.select().tuplets()),

@@ -7,7 +7,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=60
+                \tempo 4=40
                 \once \override Score.BarLine.stencil = ##f
                 \once \override Score.SpanBar.stencil = ##f
                 \once \override Score.TimeSignature.stencil = #(blank-time-signature)
@@ -26,7 +26,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'04'' }
+                ^ \markup { 0'06'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
@@ -37,7 +37,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'08'' }
+                ^ \markup { 0'12'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
@@ -48,7 +48,7 @@
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                ^ \markup { 0'12'' }
+                ^ \markup { 0'18'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -59,7 +59,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'16'' }
+                ^ \markup { 0'24'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
@@ -70,7 +70,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'20'' }
+                ^ \markup { 0'30'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -81,7 +81,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'24'' }
+                ^ \markup { 0'36'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
@@ -92,7 +92,7 @@
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup { 0'28'' }
+                ^ \markup { 0'42'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
@@ -103,7 +103,7 @@
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup { 0'31'' }
+                ^ \markup { 0'46'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
@@ -114,7 +114,7 @@
                 %! scaling time signatures
                 \time 5/8
                 s1 * 5/8
-                ^ \markup { 0'34'' }
+                ^ \markup { 0'51'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 11]
@@ -125,7 +125,7 @@
                 %! scaling time signatures
                 \time 4/8
                 s1 * 1/2
-                ^ \markup { 0'36'' }
+                ^ \markup { 0'54'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 12]
@@ -136,7 +136,7 @@
                 %! scaling time signatures
                 \time 3/8
                 s1 * 3/8
-                ^ \markup { 0'38'' }
+                ^ \markup { 0'57'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 13]
@@ -147,7 +147,7 @@
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                ^ \markup { 0'40'' }
+                ^ \markup { 1'00'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
@@ -158,7 +158,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'44'' }
+                ^ \markup { 1'06'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 15]
@@ -169,7 +169,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'48'' }
+                ^ \markup { 1'12'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
@@ -180,20 +180,20 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'52'' }
+                ^ \markup { 1'18'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
 
-                \tempo 4=90
+                \tempo 4=60
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
                 \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup {
                   \override #'(font-size . 5.5)
                   \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
                   }
                 }
                 %! COMMENT_MEASURE_NUMBERS

@@ -448,6 +448,15 @@ def quarters_preprocessor(divisions):
     return divisions
 
 
+def fuse_quarters_preprocessor_2_20(divisions):
+    duration = baca.Sequence(divisions).sum()
+    divisions = baca.Sequence(duration)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    divisions = divisions.flatten(depth=-1)
+    divisions = divisions.partition_by_counts((2, 20), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
 def select_all_first_leaves(selections):
     run_ties = abjad.select(selections).runs().logical_ties(pitched=True)
     ties_first_leaves = abjad.Selection([_[0] for _ in run_ties])
