@@ -372,6 +372,24 @@ def fuse_quarters_preprocessor_2_1(divisions):
     return baca.Sequence(sum(_) for _ in divisions)
 
 
+def fuse_quarters_preprocessor_1_2(divisions):
+    duration = baca.Sequence(divisions).sum()
+    divisions = baca.Sequence(duration)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    divisions = divisions.flatten(depth=-1)
+    divisions = divisions.partition_by_counts((1, 2), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
+def fuse_quarters_preprocessor_1_1_2(divisions):
+    duration = baca.Sequence(divisions).sum()
+    divisions = baca.Sequence(duration)
+    divisions = baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+    divisions = divisions.flatten(depth=-1)
+    divisions = divisions.partition_by_counts((1, 1, 2), cyclic=True, overhang=True)
+    return baca.Sequence(sum(_) for _ in divisions)
+
+
 def fuse_quarters_preprocessor_2_2_5(divisions):
     duration = baca.Sequence(divisions).sum()
     divisions = baca.Sequence(duration)

@@ -3748,7 +3748,7 @@
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 b2.
                                 \ff
-                                ^ \markup {behind bride, on wrapping}
+                                ^ \markup {behind bridge, on wrapping}
                                 %! MATERIAL_COLOR
                                 \(
                                 %! COMMENT_MEASURE_NUMBERS

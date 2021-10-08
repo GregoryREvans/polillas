@@ -331,7 +331,7 @@ reduced_signatures_16 = evans.reduce_fermata_measures(
 ## 17
 ##
 
-pairs_17 = evans.Sequence(time_signature_series["B"].rotate(-15)[0:16])
+pairs_17 = evans.Sequence(time_signature_series["B"].rotate(-15)[0:17])
 
 meters_17 = [abjad.Meter(_) for _ in pairs_17]
 
@@ -339,7 +339,7 @@ signatures_17 = [abjad.TimeSignature(_) for _ in meters_17]
 
 signatures_17.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_17 = [1]
+fermata_measures_17: list = []
 
 reduced_signatures_17 = evans.reduce_fermata_measures(
     signatures_17, fermata_measures_17
@@ -349,7 +349,7 @@ reduced_signatures_17 = evans.reduce_fermata_measures(
 ## 18
 ##
 
-pairs_18 = evans.Sequence(time_signature_series["A"].rotate(-10)[0:16])
+pairs_18 = evans.Sequence(time_signature_series["A"].rotate(-10)[0:19])
 
 meters_18 = [abjad.Meter(_) for _ in pairs_18]
 
@@ -357,7 +357,7 @@ signatures_18 = [abjad.TimeSignature(_) for _ in meters_18]
 
 signatures_18.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_18 = [1]
+fermata_measures_18 = [2, 4, 13, 18]
 
 reduced_signatures_18 = evans.reduce_fermata_measures(
     signatures_18, fermata_measures_18
@@ -367,7 +367,7 @@ reduced_signatures_18 = evans.reduce_fermata_measures(
 ## 19
 ##
 
-pairs_19 = evans.Sequence(time_signature_series["A"].rotate(-12)[0:16])
+pairs_19 = evans.Sequence(time_signature_series["A"].rotate(-12)[0:11])
 
 meters_19 = [abjad.Meter(_) for _ in pairs_19]
 
@@ -375,7 +375,7 @@ signatures_19 = [abjad.TimeSignature(_) for _ in meters_19]
 
 signatures_19.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_19 = [1]
+fermata_measures_19 = [10]
 
 reduced_signatures_19 = evans.reduce_fermata_measures(
     signatures_19, fermata_measures_19
@@ -457,5 +457,8 @@ all_signatures = evans.join_time_signature_lists(
         reduced_signatures_14,
         reduced_signatures_15,
         reduced_signatures_16,
+        reduced_signatures_17,
+        reduced_signatures_18,
+        reduced_signatures_19,
     ]
 )

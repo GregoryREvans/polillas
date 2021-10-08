@@ -167,31 +167,31 @@ maker = evans.SegmentMaker(
             polillas.met_108,
             baca.selectors.leaf(14),
         ),
-        evans.call(
-            "Global Context",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "violin 1 voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "violin 2 voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "viola voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
-        evans.call(
-            "cello voice",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
+        # evans.call(
+        #     "Global Context",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "violin 1 voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "violin 2 voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "viola voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        # evans.call(
+        #     "cello voice",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,

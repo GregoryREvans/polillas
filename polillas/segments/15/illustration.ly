@@ -320,14 +320,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'2
                                                 - \bendAfter #'0
-                                                ^ \markup { 0 }
                                                 %! MATERIAL_COLOR
                                                 \(
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r2
-                                                ^ \markup { 1 }
 
                                             }
 
@@ -338,7 +336,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'1
                                             - \bendAfter #'0
-                                            ^ \markup { 2 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -348,7 +345,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r2
-                                                ^ \markup { 3 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -357,14 +353,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'1
                                                 - \bendAfter #'0
-                                                ^ \markup { 4 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4.
-                                            ^ \markup { 5 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -373,12 +367,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             - \bendAfter #'0
-                                            ^ \markup { 6 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2
-                                            ^ \markup { 7 }
 
                                         }
 
@@ -403,12 +395,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 8 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 9 }
 
                                             }
 
@@ -419,7 +409,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2
                                             - \bendAfter #'0
-                                            ^ \markup { 10 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -429,7 +418,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 11 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -438,7 +426,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 12 }
 
                                             }
 
@@ -448,7 +435,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 13 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -457,14 +443,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 14 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2
-                                            ^ \markup { 15 }
 
                                         }
 
@@ -487,12 +471,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 16 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 17 }
 
                                             }
 
@@ -503,12 +485,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             - \bendAfter #'0
-                                            ^ \markup { 18 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r8
-                                            ^ \markup { 19 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -517,7 +497,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4.
                                             - \bendAfter #'0
-                                            ^ \markup { 20 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -527,7 +506,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 21 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -536,14 +514,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 22 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2.
-                                            ^ \markup { 23 }
 
                                         }
 
@@ -568,12 +544,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'2
                                                 - \bendAfter #'0
-                                                ^ \markup { 24 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 25 }
 
                                             }
 
@@ -584,12 +558,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2
                                             - \bendAfter #'0
-                                            ^ \markup { 26 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r8.
-                                            ^ \markup { 27 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -598,7 +570,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
                                             - \bendAfter #'0
-                                            ^ \markup { 28 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -608,7 +579,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 29 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -617,14 +587,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8.
                                                 - \bendAfter #'0
-                                                ^ \markup { 30 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2.
-                                            ^ \markup { 31 }
 
                                         }
 
@@ -649,12 +617,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 32 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r2
-                                                ^ \markup { 33 }
 
                                             }
 
@@ -665,7 +631,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             - \bendAfter #'0
-                                            ^ \markup { 34 }
 
                                             \scaleDurations #'(1 . 1)
                                             {
@@ -673,7 +638,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 35 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -682,7 +646,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 36 }
 
                                             }
 
@@ -692,7 +655,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 37 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -701,14 +663,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 38 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2
-                                            ^ \markup { 39 }
 
                                         }
 
@@ -733,12 +693,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 40 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r16
-                                                ^ \markup { 41 }
 
                                             }
 
@@ -749,7 +707,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4.
                                             - \bendAfter #'0
-                                            ^ \markup { 42 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -759,7 +716,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r16
-                                                ^ \markup { 43 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -768,7 +724,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 44 }
 
                                             }
 
@@ -781,7 +736,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8.
-                                                ^ \markup { 45 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -790,14 +744,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 46 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4
-                                            ^ \markup { 47 }
 
                                         }
 
@@ -817,12 +769,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             - \bendAfter #'0
-                                            ^ \markup { 48 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2.
-                                            ^ \markup { 49 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -831,7 +781,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2
                                             - \bendAfter #'0
-                                            ^ \markup { 50 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -841,7 +790,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 51 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -850,7 +798,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 52 }
 
                                             }
 
@@ -860,7 +807,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r2.
-                                                ^ \markup { 53 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -869,14 +815,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'2.
                                                 - \bendAfter #'0
-                                                ^ \markup { 54 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2
-                                            ^ \markup { 55 }
 
                                         }
 
@@ -896,12 +840,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8.
                                             - \bendAfter #'0
-                                            ^ \markup { 56 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r16
-                                            ^ \markup { 57 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -910,7 +852,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             - \bendAfter #'0
-                                            ^ \markup { 58 }
 
                                             \scaleDurations #'(1 . 1)
                                             {
@@ -918,7 +859,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 59 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -927,7 +867,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 60 }
 
                                             }
 
@@ -942,7 +881,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r2
-                                                ^ \markup { 61 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -951,14 +889,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 62 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2
-                                            ^ \markup { 63 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -972,7 +908,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 64 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -983,21 +918,18 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 65 }
                                             ~
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 66 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 67 }
                                             ~
                                             ]
 
@@ -1009,18 +941,15 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 68 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 69 }
                                             ~
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 70 }
                                             ~
 
                                         }
@@ -1032,19 +961,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 71 }
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 72 }
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            ^ \markup { 73 }
                                             ~
                                             ]
 
@@ -1056,7 +982,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 74 }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -1065,12 +990,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 75 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 76 }
                                             ~
 
                                         }
@@ -1086,20 +1009,17 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 77 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 78 }
                                             ]
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 79 }
                                             ~
 
                                         }
@@ -1108,31 +1028,26 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8...
-                                        ^ \markup { 80 }
                                         [
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'64
-                                        ^ \markup { 81 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 82 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'64
-                                        ^ \markup { 83 }
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'32.
-                                        ^ \markup { 84 }
                                         ~
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1142,7 +1057,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 85 }
 
                                         \times 2/3
                                         {
@@ -1150,18 +1064,15 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 86 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 87 }
                                             ~
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 88 }
                                             ~
 
                                         }
@@ -1169,7 +1080,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 89 }
                                         ~
 
                                         \times 2/3
@@ -1181,19 +1091,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 90 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 91 }
 
                                         }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 92 }
                                         ~
 
                                         \times 2/3
@@ -1206,20 +1113,17 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 93 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 94 }
                                             ]
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 95 }
                                             ~
 
                                         }
@@ -1227,7 +1131,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 96 }
                                         ~
 
                                         \times 2/3
@@ -1239,21 +1142,18 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 97 }
                                             ~
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 98 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 99 }
                                             ~
                                             ]
 
@@ -1265,18 +1165,15 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 100 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 101 }
                                             ~
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 102 }
                                             ~
 
                                         }
@@ -1291,19 +1188,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 103 }
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 104 }
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            ^ \markup { 105 }
                                             ~
                                             ]
 
@@ -1312,7 +1206,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 106 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1321,7 +1214,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 107 }
 
                                         \times 2/3
                                         {
@@ -1329,12 +1221,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 108 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 109 }
                                             ~
 
                                         }
@@ -1342,7 +1232,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 110 }
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -1391,14 +1280,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 0 }
                                                 %! MATERIAL_COLOR
                                                 \(
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 1 }
 
                                             }
 
@@ -1409,12 +1296,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             - \bendAfter #'0
-                                            ^ \markup { 2 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r8
-                                            ^ \markup { 3 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1423,7 +1308,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4.
                                             - \bendAfter #'0
-                                            ^ \markup { 4 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -1433,7 +1317,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 5 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1442,14 +1325,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 6 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2.
-                                            ^ \markup { 7 }
 
                                         }
 
@@ -1473,12 +1354,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'2
                                                 - \bendAfter #'0
-                                                ^ \markup { 8 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 9 }
 
                                             }
 
@@ -1489,12 +1368,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2
                                             - \bendAfter #'0
-                                            ^ \markup { 10 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r8.
-                                            ^ \markup { 11 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1503,7 +1380,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
                                             - \bendAfter #'0
-                                            ^ \markup { 12 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -1513,7 +1389,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 13 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1522,14 +1397,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8.
                                                 - \bendAfter #'0
-                                                ^ \markup { 14 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2.
-                                            ^ \markup { 15 }
 
                                         }
 
@@ -1549,12 +1422,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 16 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 17 }
 
                                             }
 
@@ -1565,7 +1436,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8.
                                             - \bendAfter #'0
-                                            ^ \markup { 18 }
 
                                             \tweak text #tuplet-number::calc-fraction-text
                                             \tweak TupletBracket.transparent ##t
@@ -1576,7 +1446,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r2
-                                                ^ \markup { 19 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1585,7 +1454,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'2
                                                 - \bendAfter #'0
-                                                ^ \markup { 20 }
 
                                             }
 
@@ -1595,7 +1463,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8.
-                                                ^ \markup { 21 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1604,14 +1471,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8.
                                                 - \bendAfter #'0
-                                                ^ \markup { 22 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4.
-                                            ^ \markup { 23 }
 
                                         }
 
@@ -1636,12 +1501,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 24 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 25 }
 
                                             }
 
@@ -1652,7 +1515,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2.
                                             - \bendAfter #'0
-                                            ^ \markup { 26 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -1662,7 +1524,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 27 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1671,7 +1532,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 28 }
 
                                             }
 
@@ -1684,7 +1544,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 29 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1693,14 +1552,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 30 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2
-                                            ^ \markup { 31 }
 
                                         }
 
@@ -1720,12 +1577,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             - \bendAfter #'0
-                                            ^ \markup { 32 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4.
-                                            ^ \markup { 33 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1734,7 +1589,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             - \bendAfter #'0
-                                            ^ \markup { 34 }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -1744,7 +1598,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 35 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1753,7 +1606,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8.
                                                 - \bendAfter #'0
-                                                ^ \markup { 36 }
 
                                             }
 
@@ -1763,7 +1615,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 37 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1772,14 +1623,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 38 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4
-                                            ^ \markup { 39 }
 
                                         }
 
@@ -1799,12 +1648,10 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16.
                                             - \bendAfter #'0
-                                            ^ \markup { 40 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r32
-                                            ^ \markup { 41 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1813,7 +1660,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             - \bendAfter #'0
-                                            ^ \markup { 42 }
 
                                             \scaleDurations #'(1 . 1)
                                             {
@@ -1821,7 +1667,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r8
-                                                ^ \markup { 43 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1830,7 +1675,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 44 }
 
                                             }
 
@@ -1842,7 +1686,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 45 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1851,14 +1694,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 46 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4
-                                            ^ \markup { 47 }
 
                                         }
 
@@ -1881,12 +1722,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 48 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 49 }
 
                                             }
 
@@ -1897,7 +1736,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2
                                             - \bendAfter #'0
-                                            ^ \markup { 50 }
 
                                             \tweak text #tuplet-number::calc-fraction-text
                                             \tweak TupletBracket.transparent ##t
@@ -1908,7 +1746,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 51 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1917,7 +1754,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4
                                                 - \bendAfter #'0
-                                                ^ \markup { 52 }
 
                                             }
 
@@ -1929,7 +1765,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 53 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -1938,14 +1773,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'2
                                                 - \bendAfter #'0
-                                                ^ \markup { 54 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r4
-                                            ^ \markup { 55 }
 
                                         }
 
@@ -1970,12 +1803,10 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 56 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 57 }
 
                                             }
 
@@ -1986,7 +1817,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'2.
                                             - \bendAfter #'0
-                                            ^ \markup { 58 }
 
                                             \scaleDurations #'(1 . 1)
                                             {
@@ -1994,7 +1824,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4.
-                                                ^ \markup { 59 }
                                                 %! COMMENT_MEASURE_NUMBERS
                                                 %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [violin 2 voice measure 16]
@@ -2006,7 +1835,6 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'4.
                                                 - \bendAfter #'0
-                                                ^ \markup { 60 }
 
                                             }
 
@@ -2018,7 +1846,6 @@
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
                                                 r4
-                                                ^ \markup { 61 }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -2027,14 +1854,12 @@
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
                                                 - \bendAfter #'0
-                                                ^ \markup { 62 }
 
                                             }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r2.
-                                            ^ \markup { 63 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -2048,7 +1873,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 64 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -2060,19 +1884,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 65 }
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 66 }
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 67 }
                                             ~
                                             ]
 
@@ -2081,7 +1902,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 68 }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
@@ -2093,12 +1913,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 69 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 70 }
                                             ~
 
                                         }
@@ -2110,21 +1928,18 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 71 }
                                             ~
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 72 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 73 }
                                             ]
 
                                         }
@@ -2135,7 +1950,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 74 }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
@@ -2144,12 +1958,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 75 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 76 }
                                             ~
 
                                         }
@@ -2160,7 +1972,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 77 }
 
                                         \times 4/5
                                         {
@@ -2169,14 +1980,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 78 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            ^ \markup { 79 }
                                             ~
                                             ]
 
@@ -2185,7 +1994,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 80 }
                                         ~
 
                                         \times 4/5
@@ -2198,19 +2006,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 81 }
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 82 }
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            ^ \markup { 83 }
                                             ~
                                             ]
 
@@ -2219,7 +2024,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 84 }
                                         ~
 
                                         \times 4/5
@@ -2232,14 +2036,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            ^ \markup { 85 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 86 }
                                             ]
 
                                         }
@@ -2247,7 +2049,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 87 }
                                         ~
 
                                         \times 4/5
@@ -2259,19 +2060,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 88 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 89 }
 
                                         }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 90 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -2280,7 +2078,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 91 }
                                         ~
 
                                         \times 2/3
@@ -2290,14 +2087,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 92 }
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 93 }
                                             ]
 
                                         }
@@ -2308,7 +2103,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 94 }
                                         ~
 
                                         \times 4/5
@@ -2318,19 +2112,16 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 95 }
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 96 }
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 97 }
                                             ~
                                             ]
 
@@ -2339,7 +2130,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 98 }
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -2394,14 +2184,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 0 }
                                         %! MATERIAL_COLOR
                                         \(
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8
-                                        ^ \markup { 1 }
 
                                     }
 
@@ -2412,7 +2200,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2.
                                     - \bendAfter #'0
-                                    ^ \markup { 2 }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -2422,7 +2209,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8
-                                        ^ \markup { 3 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2431,7 +2217,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 4 }
 
                                     }
 
@@ -2444,7 +2229,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4.
-                                        ^ \markup { 5 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2453,14 +2237,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 6 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r2
-                                    ^ \markup { 7 }
 
                                 }
 
@@ -2480,12 +2262,10 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4
                                     - \bendAfter #'0
-                                    ^ \markup { 8 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r2.
-                                    ^ \markup { 9 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2494,7 +2274,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2
                                     - \bendAfter #'0
-                                    ^ \markup { 10 }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -2507,7 +2286,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 11 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2516,7 +2294,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4.
                                         - \bendAfter #'0
-                                        ^ \markup { 12 }
 
                                     }
 
@@ -2526,7 +2303,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r2.
-                                        ^ \markup { 13 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2535,14 +2311,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2.
                                         - \bendAfter #'0
-                                        ^ \markup { 14 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r2
-                                    ^ \markup { 15 }
 
                                 }
 
@@ -2562,12 +2336,10 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4.
                                     - \bendAfter #'0
-                                    ^ \markup { 16 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
-                                    ^ \markup { 17 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2576,7 +2348,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2
                                     - \bendAfter #'0
-                                    ^ \markup { 18 }
 
                                     \scaleDurations #'(1 . 1)
                                     {
@@ -2584,7 +2355,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r2
-                                        ^ \markup { 19 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2593,7 +2363,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         - \bendAfter #'0
-                                        ^ \markup { 20 }
 
                                     }
 
@@ -2605,7 +2374,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r1
-                                        ^ \markup { 21 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2614,14 +2382,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         - \bendAfter #'0
-                                        ^ \markup { 22 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r1
-                                    ^ \markup { 23 }
 
                                 }
 
@@ -2644,12 +2410,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8.
                                         - \bendAfter #'0
-                                        ^ \markup { 24 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8.
-                                        ^ \markup { 25 }
 
                                     }
 
@@ -2660,7 +2424,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4
                                     - \bendAfter #'0
-                                    ^ \markup { 26 }
 
                                     \tweak text #tuplet-number::calc-fraction-text
                                     \tweak TupletBracket.transparent ##t
@@ -2671,7 +2434,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8.
-                                        ^ \markup { 27 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2680,7 +2442,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 28 }
 
                                     }
 
@@ -2692,7 +2453,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8
-                                        ^ \markup { 29 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2701,14 +2461,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 30 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
-                                    ^ \markup { 31 }
 
                                 }
 
@@ -2733,12 +2491,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 32 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 33 }
 
                                     }
 
@@ -2749,7 +2505,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2.
                                     - \bendAfter #'0
-                                    ^ \markup { 34 }
 
                                     \scaleDurations #'(1 . 1)
                                     {
@@ -2757,7 +2512,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4.
-                                        ^ \markup { 35 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2766,7 +2520,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4.
                                         - \bendAfter #'0
-                                        ^ \markup { 36 }
 
                                     }
 
@@ -2778,7 +2531,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 37 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2787,14 +2539,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 38 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r2.
-                                    ^ \markup { 39 }
 
                                 }
 
@@ -2819,12 +2569,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         - \bendAfter #'0
-                                        ^ \markup { 40 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r16.
-                                        ^ \markup { 41 }
 
                                     }
 
@@ -2835,7 +2583,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4.
                                     - \bendAfter #'0
-                                    ^ \markup { 42 }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -2845,7 +2592,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 43 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -2854,14 +2600,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 44 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r16
-                                    ^ \markup { 45 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2870,12 +2614,10 @@
                                     \evans-not-yet-pitched-coloring
                                     c'8.
                                     - \bendAfter #'0
-                                    ^ \markup { 46 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
-                                    ^ \markup { 47 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2889,19 +2631,16 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 48 }
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 49 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 50 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
@@ -2909,23 +2648,19 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 51 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 52 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 53 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 54 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
@@ -2933,18 +2668,15 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 55 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 56 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 57 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
@@ -2952,18 +2684,15 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 58 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 59 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 60 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2972,17 +2701,14 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 61 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 62 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 63 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2991,12 +2717,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 64 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 65 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 23]
@@ -3004,7 +2728,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 66 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 24]
@@ -3012,12 +2735,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 67 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 68 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3026,18 +2747,15 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 69 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 70 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 71 }
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
@@ -3083,14 +2801,12 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4.
                                     - \bendAfter #'0
-                                    ^ \markup { 0 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
-                                    ^ \markup { 1 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3099,7 +2815,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2
                                     - \bendAfter #'0
-                                    ^ \markup { 2 }
 
                                     \scaleDurations #'(1 . 1)
                                     {
@@ -3107,7 +2822,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r2
-                                        ^ \markup { 3 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
@@ -3119,7 +2833,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         - \bendAfter #'0
-                                        ^ \markup { 4 }
 
                                     }
 
@@ -3131,7 +2844,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r1
-                                        ^ \markup { 5 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3140,14 +2852,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         - \bendAfter #'0
-                                        ^ \markup { 6 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r1
-                                    ^ \markup { 7 }
 
                                 }
 
@@ -3170,12 +2880,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4.
                                         - \bendAfter #'0
-                                        ^ \markup { 8 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4.
-                                        ^ \markup { 9 }
 
                                     }
 
@@ -3186,7 +2894,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2
                                     - \bendAfter #'0
-                                    ^ \markup { 10 }
 
                                     \tweak text #tuplet-number::calc-fraction-text
                                     \tweak TupletBracket.transparent ##t
@@ -3197,7 +2904,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4.
-                                        ^ \markup { 11 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3206,7 +2912,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 12 }
 
                                     }
 
@@ -3218,7 +2923,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 13 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3227,14 +2931,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         - \bendAfter #'0
-                                        ^ \markup { 14 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r4
-                                    ^ \markup { 15 }
 
                                 }
 
@@ -3259,12 +2961,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 16 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 17 }
 
                                     }
 
@@ -3275,7 +2975,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2.
                                     - \bendAfter #'0
-                                    ^ \markup { 18 }
 
                                     \scaleDurations #'(1 . 1)
                                     {
@@ -3283,7 +2982,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4.
-                                        ^ \markup { 19 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3292,7 +2990,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4.
                                         - \bendAfter #'0
-                                        ^ \markup { 20 }
 
                                     }
 
@@ -3304,7 +3001,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4
-                                        ^ \markup { 21 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3313,14 +3009,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 22 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r2.
-                                    ^ \markup { 23 }
 
                                 }
 
@@ -3344,12 +3038,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 24 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8.
-                                        ^ \markup { 25 }
 
                                     }
 
@@ -3360,7 +3052,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2.
                                     - \bendAfter #'0
-                                    ^ \markup { 26 }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -3370,7 +3061,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r2
-                                        ^ \markup { 27 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3379,14 +3069,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 28 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
-                                    ^ \markup { 29 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3395,12 +3083,10 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4.
                                     - \bendAfter #'0
-                                    ^ \markup { 30 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r4
-                                    ^ \markup { 31 }
 
                                 }
 
@@ -3424,12 +3110,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 32 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r4.
-                                        ^ \markup { 33 }
 
                                     }
 
@@ -3440,7 +3124,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'1.
                                     - \bendAfter #'0
-                                    ^ \markup { 34 }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -3450,7 +3133,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r1
-                                        ^ \markup { 35 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3459,14 +3141,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         - \bendAfter #'0
-                                        ^ \markup { 36 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r4
-                                    ^ \markup { 37 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3475,12 +3155,10 @@
                                     \evans-not-yet-pitched-coloring
                                     c'2.
                                     - \bendAfter #'0
-                                    ^ \markup { 38 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r2
-                                    ^ \markup { 39 }
 
                                 }
 
@@ -3503,12 +3181,10 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         - \bendAfter #'0
-                                        ^ \markup { 40 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8
-                                        ^ \markup { 41 }
 
                                     }
 
@@ -3519,7 +3195,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4
                                     - \bendAfter #'0
-                                    ^ \markup { 42 }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -3529,7 +3204,6 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         r8
-                                        ^ \markup { 43 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3538,14 +3212,12 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         - \bendAfter #'0
-                                        ^ \markup { 44 }
 
                                     }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r16.
-                                    ^ \markup { 45 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3554,12 +3226,10 @@
                                     \evans-not-yet-pitched-coloring
                                     c'32
                                     - \bendAfter #'0
-                                    ^ \markup { 46 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
-                                    ^ \markup { 47 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -3573,7 +3243,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'1
-                                ^ \markup { 48 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -3584,7 +3253,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ^ \markup { 49 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3593,7 +3261,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ^ \markup { 50 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3602,13 +3269,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 51 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 52 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3617,7 +3282,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 53 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3626,7 +3290,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 54 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3635,7 +3298,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 55 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3644,7 +3306,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 56 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3653,13 +3314,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 57 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 58 }
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"

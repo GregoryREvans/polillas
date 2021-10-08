@@ -8,10 +8,6 @@ info = abjad.OrderedDict(
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Dots.transparent = ##t', format_slot='before', ),
-                abjad.Markup(
-                    contents=['111'],
-                    direction=Up,
-                    ),
                 ],
             ),
         (
@@ -21,10 +17,6 @@ info = abjad.OrderedDict(
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Dots.transparent = ##t', format_slot='before', ),
-                abjad.Markup(
-                    contents=['99'],
-                    direction=Up,
-                    ),
                 ],
             ),
         (
@@ -34,10 +26,6 @@ info = abjad.OrderedDict(
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Dots.transparent = ##t', format_slot='before', ),
-                abjad.Markup(
-                    contents=['72'],
-                    direction=Up,
-                    ),
                 ],
             ),
         (
@@ -47,10 +35,6 @@ info = abjad.OrderedDict(
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Dots.transparent = ##t', format_slot='before', ),
-                abjad.Markup(
-                    contents=['59'],
-                    direction=Up,
-                    ),
                 ],
             ),
         ]

@@ -342,14 +342,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 0 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 1 }
 
                                         }
 
@@ -360,12 +358,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'1..
-                                            ^ \markup { 2 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 3 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -377,25 +373,20 @@
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         r16
-                                        ^ \markup { 4 }
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 5 }
 
                                         r16
-                                        ^ \markup { 6 }
 
                                         r16
-                                        ^ \markup { 7 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 8 }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
@@ -405,27 +396,20 @@
                                             % [violin 1 voice measure 4]
 
                                             r16
-                                            ^ \markup { 9 }
 
                                             r16
-                                            ^ \markup { 10 }
 
                                             r16
-                                            ^ \markup { 11 }
 
                                             r16
-                                            ^ \markup { 12 }
 
                                             r16
-                                            ^ \markup { 13 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 14 }
 
                                             r16
-                                            ^ \markup { 15 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -442,14 +426,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 16 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 17 }
 
                                         }
 
@@ -463,12 +445,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2..
-                                            ^ \markup { 18 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 19 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -482,7 +462,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 20 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -493,33 +472,28 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 21 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 22 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 23 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 24 }
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 25 }
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -534,14 +508,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 26 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 27 }
 
                                         }
 
@@ -552,27 +524,22 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            ^ \markup { 28 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            ^ \markup { 29 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            ^ \markup { 30 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
-                                            ^ \markup { 31 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 32 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -586,19 +553,16 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 33 }
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 34 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 35 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -607,46 +571,39 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 36 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 37 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 38 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 39 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 40 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 41 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 42 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -656,27 +613,23 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 43 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 44 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 45 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 46 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -685,23 +638,19 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 47 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 48 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 49 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 50 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -710,55 +659,47 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 51 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 52 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 53 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 54 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 55 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 56 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 57 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 58 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -767,34 +708,29 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 59 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 60 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 61 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 62 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 63 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -803,21 +739,18 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 64 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 65 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 66 }
                                         ~
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
@@ -827,7 +760,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 67 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -836,13 +768,11 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 68 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 69 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -851,28 +781,24 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 70 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 71 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 72 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 73 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -884,7 +810,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
-                                        ^ \markup { 74 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -895,25 +820,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 75 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 76 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 77 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 78 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -922,25 +843,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 79 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 80 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 81 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 82 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -949,25 +866,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 83 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 84 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 85 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 86 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -976,7 +889,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2...
-                                        ^ \markup { 87 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -986,8 +898,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/8
-                                        %! applying indicators
-                                        ^ \markup { 88 }
 
                                         R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -999,7 +909,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 89 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1007,19 +916,16 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 90 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 91 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 92 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1028,7 +934,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2...
-                                        ^ \markup { 93 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1037,7 +942,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
-                                        ^ \markup { 94 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1049,7 +953,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 95 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1057,19 +960,16 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 96 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 97 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 98 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1079,26 +979,22 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 99 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 100 }
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 101 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 102 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1107,49 +1003,42 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 103 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 104 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 105 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 106 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 107 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 108 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 109 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1158,7 +1047,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 110 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1168,7 +1056,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 111 }
                                         \bar "||"
                                         \stopStaff \startStaff
 
@@ -1206,14 +1093,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 0 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 1 }
 
                                         }
 
@@ -1224,12 +1109,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'1..
-                                            ^ \markup { 2 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 3 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -1244,47 +1127,37 @@
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             r16
-                                            ^ \markup { 4 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 5 }
 
                                             r16
-                                            ^ \markup { 6 }
 
                                             r16
-                                            ^ \markup { 7 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup { 8 }
 
                                         }
 
                                         r16
-                                        ^ \markup { 9 }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
                                         r8.
-                                        ^ \markup { 10 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'32.
-                                        ^ \markup { 11 }
 
                                         r64
-                                        ^ \markup { 12 }
 
                                         r8
-                                        ^ \markup { 13 }
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -1299,14 +1172,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 14 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 15 }
 
                                         }
 
@@ -1320,12 +1191,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2..
-                                            ^ \markup { 16 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 17 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -1339,14 +1208,12 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 18 }
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 19 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1355,25 +1222,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 20 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 21 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 22 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 23 }
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -1388,14 +1251,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            ^ \markup { 24 }
                                             %! MATERIAL_COLOR
                                             \(
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            ^ \markup { 25 }
 
                                         }
 
@@ -1406,27 +1267,22 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            ^ \markup { 26 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            ^ \markup { 27 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            ^ \markup { 28 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
-                                            ^ \markup { 29 }
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            ^ \markup { 30 }
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -1440,14 +1296,12 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 31 }
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 32 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1456,46 +1310,39 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 33 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 34 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 35 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 36 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 37 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 38 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 39 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1505,27 +1352,23 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 40 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 41 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 42 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 43 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1534,18 +1377,15 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 44 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 45 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
-                                        ^ \markup { 46 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1554,55 +1394,47 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 47 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 48 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 49 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 50 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        ^ \markup { 51 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 52 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 53 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 54 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1611,7 +1443,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2..
-                                        ^ \markup { 55 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1620,21 +1451,18 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 56 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 57 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 58 }
                                         ~
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1644,7 +1472,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 59 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1653,13 +1480,11 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 60 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 61 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1668,28 +1493,24 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 62 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 63 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 64 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 65 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1701,7 +1522,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
-                                        ^ \markup { 66 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1712,25 +1532,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 67 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 68 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 69 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 70 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1739,25 +1555,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 71 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 72 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 73 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 74 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1766,25 +1578,21 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 75 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 76 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 77 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 78 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1793,7 +1601,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2...
-                                        ^ \markup { 79 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1803,8 +1610,6 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 3/8
-                                        %! applying indicators
-                                        ^ \markup { 80 }
 
                                         R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1816,7 +1621,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 81 }
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1824,19 +1628,16 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 82 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 83 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 84 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1845,7 +1646,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2...
-                                        ^ \markup { 85 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1854,7 +1654,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
-                                        ^ \markup { 86 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1867,7 +1666,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 87 }
                                         %! MATERIAL_COLOR
                                         \(
                                         [
@@ -1876,20 +1674,17 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 88 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 89 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 90 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1898,33 +1693,28 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
-                                        ^ \markup { 91 }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ^ \markup { 92 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 93 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 94 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 95 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1933,27 +1723,23 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 96 }
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 97 }
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 98 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 99 }
                                         ~
                                         ]
 
@@ -1961,21 +1747,18 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 100 }
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup { 101 }
                                         ~
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        ^ \markup { 102 }
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1984,7 +1767,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
-                                        ^ \markup { 103 }
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1994,7 +1776,6 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
-                                        ^ \markup { 104 }
                                         \bar "||"
                                         \stopStaff \startStaff
 
@@ -2036,14 +1817,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    ^ \markup { 0 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 1 }
 
                                 }
 
@@ -2054,12 +1833,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'1..
-                                    ^ \markup { 2 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    ^ \markup { 3 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2074,47 +1851,37 @@
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     r16
-                                    ^ \markup { 4 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup { 5 }
 
                                     r16
-                                    ^ \markup { 6 }
 
                                     r16
-                                    ^ \markup { 7 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup { 8 }
 
                                 }
 
                                 r16
-                                ^ \markup { 9 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
                                 r8.
-                                ^ \markup { 10 }
 
                                 r16
-                                ^ \markup { 11 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 12 }
 
                                 r16
-                                ^ \markup { 13 }
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -2129,14 +1896,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    ^ \markup { 14 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 15 }
 
                                 }
 
@@ -2150,12 +1915,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2..
-                                    ^ \markup { 16 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 17 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2167,8 +1930,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 1/4
-                                %! applying indicators
-                                ^ \markup { 18 }
 
                                 R1 * 1/4
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2180,7 +1941,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 19 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -2188,19 +1948,16 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 20 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 21 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 22 }
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -2215,14 +1972,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    ^ \markup { 23 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 24 }
 
                                 }
 
@@ -2233,27 +1988,22 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    ^ \markup { 25 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    ^ \markup { 26 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    ^ \markup { 27 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2
-                                    ^ \markup { 28 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    ^ \markup { 29 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2267,7 +2017,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 30 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -2275,18 +2024,15 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 31 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 32 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 33 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2295,46 +2041,39 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 34 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 35 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 36 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 37 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 38 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 39 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 40 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2344,27 +2083,23 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 41 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 42 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 43 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 44 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2373,12 +2108,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 45 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2..
-                                ^ \markup { 46 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2387,55 +2120,47 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 47 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 48 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 49 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 50 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 51 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 52 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 53 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 54 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2444,34 +2169,29 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 55 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 56 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 57 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 58 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 59 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2480,7 +2200,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 60 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2489,7 +2208,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 61 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2498,13 +2216,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 62 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 63 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2513,19 +2229,16 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 64 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 65 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 66 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2537,7 +2250,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ^ \markup { 67 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -2548,25 +2260,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 68 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 69 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 70 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 71 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2575,25 +2283,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 72 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 73 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 74 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 75 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2602,25 +2306,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 76 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 77 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 78 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 79 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2629,7 +2329,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2...
-                                ^ \markup { 80 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2641,7 +2340,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ^ \markup { 81 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -2652,25 +2350,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 82 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 83 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 84 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 85 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2680,8 +2374,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 15/32
-                                %! applying indicators
-                                ^ \markup { 86 }
 
                                 R1 * 15/32
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2691,8 +2383,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/8
-                                %! applying indicators
-                                ^ \markup { 87 }
 
                                 R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2702,8 +2392,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 13/32
-                                %! applying indicators
-                                ^ \markup { 88 }
 
                                 R1 * 13/32
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2715,7 +2403,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2..
-                                ^ \markup { 90 }
                                 %! MATERIAL_COLOR
                                 \(
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2725,12 +2412,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 91 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2..
-                                ^ \markup { 92 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2739,12 +2424,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 93 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 94 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2754,7 +2437,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 95 }
                                 \bar "||"
                                 \stopStaff \startStaff
 
@@ -2792,14 +2474,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    ^ \markup { 0 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 1 }
 
                                 }
 
@@ -2810,12 +2490,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'1..
-                                    ^ \markup { 2 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    ^ \markup { 3 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2830,33 +2508,26 @@
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     r16
-                                    ^ \markup { 4 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup { 5 }
 
                                     r16
-                                    ^ \markup { 6 }
 
                                     r16
-                                    ^ \markup { 7 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup { 8 }
 
                                     r16
-                                    ^ \markup { 9 }
 
                                 }
 
                                 r16
-                                ^ \markup { 10 }
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
@@ -2866,27 +2537,20 @@
                                     % [cello voice measure 4]
 
                                     r16
-                                    ^ \markup { 11 }
 
                                     r16
-                                    ^ \markup { 12 }
 
                                     r16
-                                    ^ \markup { 13 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup { 14 }
 
                                     r16
-                                    ^ \markup { 15 }
 
                                     r16
-                                    ^ \markup { 16 }
 
                                     r16
-                                    ^ \markup { 17 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2903,14 +2567,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    ^ \markup { 18 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 19 }
 
                                 }
 
@@ -2924,12 +2586,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2..
-                                    ^ \markup { 20 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 21 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -2941,8 +2601,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 1/4
-                                %! applying indicators
-                                ^ \markup { 22 }
 
                                 R1 * 1/4
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2955,7 +2613,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 23 }
                                 %! MATERIAL_COLOR
                                 \(
                                 [
@@ -2964,14 +2621,12 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 24 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 25 }
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -2986,14 +2641,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    ^ \markup { 26 }
                                     %! MATERIAL_COLOR
                                     \(
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    ^ \markup { 27 }
 
                                 }
 
@@ -3004,27 +2657,22 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    ^ \markup { 28 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    ^ \markup { 29 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    ^ \markup { 30 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2
-                                    ^ \markup { 31 }
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    ^ \markup { 32 }
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -3038,7 +2686,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 33 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -3046,19 +2693,16 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 34 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 35 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 36 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3067,46 +2711,39 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 37 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 38 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 39 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 40 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 41 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 42 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 43 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3116,27 +2753,23 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 44 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 45 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 46 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 47 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3145,18 +2778,15 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 48 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 49 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 50 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3165,34 +2795,29 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 51 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 52 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 53 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 54 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 55 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3201,7 +2826,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2..
-                                ^ \markup { 56 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3210,21 +2834,18 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 57 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 58 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 59 }
                                 ~
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3234,7 +2855,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 60 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3243,13 +2863,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 61 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 62 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3258,28 +2876,24 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 63 }
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 64 }
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 65 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 66 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3291,7 +2905,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ^ \markup { 67 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -3302,25 +2915,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 68 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 69 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-                                ^ \markup { 70 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 71 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3329,25 +2938,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 72 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 73 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 74 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 75 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3356,25 +2961,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 76 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 77 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 78 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 79 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3383,7 +2984,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2...
-                                ^ \markup { 80 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3395,7 +2995,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ^ \markup { 81 }
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -3406,25 +3005,21 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 82 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 83 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 84 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 85 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3434,8 +3029,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 15/32
-                                %! applying indicators
-                                ^ \markup { 86 }
 
                                 R1 * 15/32
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3445,8 +3038,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/8
-                                %! applying indicators
-                                ^ \markup { 87 }
 
                                 R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3456,8 +3047,6 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 13/32
-                                %! applying indicators
-                                ^ \markup { 88 }
 
                                 R1 * 13/32
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3470,7 +3059,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 90 }
                                 %! MATERIAL_COLOR
                                 \(
                                 [
@@ -3479,20 +3067,17 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup { 91 }
                                 ~
                                 ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
-                                ^ \markup { 92 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ^ \markup { 93 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3501,23 +3086,19 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 94 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 95 }
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                ^ \markup { 96 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
-                                ^ \markup { 97 }
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3526,7 +3107,6 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ^ \markup { 98 }
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3536,7 +3116,6 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
-                                ^ \markup { 99 }
                                 \bar "||"
                                 \stopStaff \startStaff
 
