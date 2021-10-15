@@ -318,7 +318,7 @@
                                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'2
+                                                c'!2
                                                 - \bendAfter #'0
                                                 %! MATERIAL_COLOR
                                                 \(
@@ -334,7 +334,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'1
+                                            c'!1
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -351,7 +351,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'1
+                                                c'!1
                                                 - \bendAfter #'0
 
                                             }
@@ -365,7 +365,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'8
+                                            c'!8
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -393,7 +393,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -407,7 +407,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2
+                                            c'!2
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -424,7 +424,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                             }
@@ -441,7 +441,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                             }
@@ -469,7 +469,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -483,7 +483,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'!4
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -495,7 +495,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            c'!4.
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -512,7 +512,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -542,7 +542,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'2
+                                                c'!2
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -556,7 +556,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2
+                                            c'!2
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -568,7 +568,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'16
+                                            c'!16
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -585,7 +585,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8.
+                                                c'!8.
                                                 - \bendAfter #'0
 
                                             }
@@ -615,7 +615,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -629,7 +629,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'!4
                                             - \bendAfter #'0
 
                                             \scaleDurations #'(1 . 1)
@@ -644,7 +644,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                             }
@@ -661,7 +661,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -691,7 +691,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -705,7 +705,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            c'!4.
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -722,7 +722,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                             }
@@ -742,7 +742,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                             }
@@ -767,7 +767,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'!4
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -779,7 +779,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2
+                                            c'!2
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -796,7 +796,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                             }
@@ -813,7 +813,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'2.
+                                                c'!2.
                                                 - \bendAfter #'0
 
                                             }
@@ -838,7 +838,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            c'!8.
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -850,7 +850,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'!4
                                             - \bendAfter #'0
 
                                             \scaleDurations #'(1 . 1)
@@ -865,7 +865,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -887,7 +887,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -1278,7 +1278,7 @@
                                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
                                                 %! MATERIAL_COLOR
                                                 \(
@@ -1294,7 +1294,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'!4
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -1306,7 +1306,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            c'!4.
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -1323,7 +1323,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -1352,7 +1352,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'2
+                                                c'!2
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -1366,7 +1366,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2
+                                            c'!2
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -1378,7 +1378,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'16
+                                            c'!16
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -1395,7 +1395,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8.
+                                                c'!8.
                                                 - \bendAfter #'0
 
                                             }
@@ -1420,7 +1420,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -1434,7 +1434,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            c'!8.
                                             - \bendAfter #'0
 
                                             \tweak text #tuplet-number::calc-fraction-text
@@ -1452,7 +1452,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'2
+                                                c'!2
                                                 - \bendAfter #'0
 
                                             }
@@ -1469,7 +1469,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8.
+                                                c'!8.
                                                 - \bendAfter #'0
 
                                             }
@@ -1499,7 +1499,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -1513,7 +1513,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2.
+                                            c'!2.
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -1530,7 +1530,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -1550,7 +1550,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -1575,7 +1575,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'8
+                                            c'!8
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -1587,7 +1587,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'4
+                                            c'!4
                                             - \bendAfter #'0
 
                                             \tweak TupletBracket.transparent ##t
@@ -1604,7 +1604,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8.
+                                                c'!8.
                                                 - \bendAfter #'0
 
                                             }
@@ -1621,7 +1621,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                             }
@@ -1646,7 +1646,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'16.
+                                            c'!16.
                                             - \bendAfter #'0
 
                                             \once \override Rest.transparent = ##t
@@ -1658,7 +1658,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'8
+                                            c'!8
                                             - \bendAfter #'0
 
                                             \scaleDurations #'(1 . 1)
@@ -1673,7 +1673,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                             }
@@ -1692,7 +1692,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                             }
@@ -1720,7 +1720,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -1734,7 +1734,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2
+                                            c'!2
                                             - \bendAfter #'0
 
                                             \tweak text #tuplet-number::calc-fraction-text
@@ -1752,7 +1752,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4
+                                                c'!4
                                                 - \bendAfter #'0
 
                                             }
@@ -1771,7 +1771,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'2
+                                                c'!2
                                                 - \bendAfter #'0
 
                                             }
@@ -1801,7 +1801,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                                 \once \override Rest.transparent = ##t
@@ -1815,7 +1815,7 @@
                                             \duration-line-style
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
-                                            c'2.
+                                            c'!2.
                                             - \bendAfter #'0
 
                                             \scaleDurations #'(1 . 1)
@@ -1833,7 +1833,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'4.
+                                                c'!4.
                                                 - \bendAfter #'0
 
                                             }
@@ -1852,7 +1852,7 @@
                                                 \duration-line-style
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
-                                                c'8
+                                                c'!8
                                                 - \bendAfter #'0
 
                                             }
@@ -2182,7 +2182,7 @@
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
                                         %! MATERIAL_COLOR
                                         \(
@@ -2198,7 +2198,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2.
+                                    c'!2.
                                     - \bendAfter #'0
 
                                     \tweak TupletBracket.transparent ##t
@@ -2215,7 +2215,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                     }
@@ -2235,7 +2235,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                     }
@@ -2260,7 +2260,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c'!4
                                     - \bendAfter #'0
 
                                     \once \override Rest.transparent = ##t
@@ -2272,7 +2272,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2
+                                    c'!2
                                     - \bendAfter #'0
 
                                     \tweak TupletBracket.transparent ##t
@@ -2292,7 +2292,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'!4.
                                         - \bendAfter #'0
 
                                     }
@@ -2309,7 +2309,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2.
+                                        c'!2.
                                         - \bendAfter #'0
 
                                     }
@@ -2334,7 +2334,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    c'!4.
                                     - \bendAfter #'0
 
                                     \once \override Rest.transparent = ##t
@@ -2346,7 +2346,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2
+                                    c'!2
                                     - \bendAfter #'0
 
                                     \scaleDurations #'(1 . 1)
@@ -2361,7 +2361,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'!2
                                         - \bendAfter #'0
 
                                     }
@@ -2380,7 +2380,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'!2
                                         - \bendAfter #'0
 
                                     }
@@ -2408,7 +2408,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'!8.
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -2422,7 +2422,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c'!4
                                     - \bendAfter #'0
 
                                     \tweak text #tuplet-number::calc-fraction-text
@@ -2440,7 +2440,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                     }
@@ -2459,7 +2459,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                     }
@@ -2489,7 +2489,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -2503,7 +2503,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2.
+                                    c'!2.
                                     - \bendAfter #'0
 
                                     \scaleDurations #'(1 . 1)
@@ -2518,7 +2518,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'!4.
                                         - \bendAfter #'0
 
                                     }
@@ -2537,7 +2537,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                     }
@@ -2567,7 +2567,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'!16
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -2581,7 +2581,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    c'!4.
                                     - \bendAfter #'0
 
                                     \tweak TupletBracket.transparent ##t
@@ -2598,7 +2598,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                     }
@@ -2612,7 +2612,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    c'!8.
                                     - \bendAfter #'0
 
                                     \once \override Rest.transparent = ##t
@@ -2799,7 +2799,7 @@
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    c'!4.
                                     - \bendAfter #'0
                                     %! MATERIAL_COLOR
                                     \(
@@ -2813,7 +2813,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2
+                                    c'!2
                                     - \bendAfter #'0
 
                                     \scaleDurations #'(1 . 1)
@@ -2831,7 +2831,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'!2
                                         - \bendAfter #'0
 
                                     }
@@ -2850,7 +2850,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'!2
                                         - \bendAfter #'0
 
                                     }
@@ -2878,7 +2878,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'!4.
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -2892,7 +2892,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2
+                                    c'!2
                                     - \bendAfter #'0
 
                                     \tweak text #tuplet-number::calc-fraction-text
@@ -2910,7 +2910,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                     }
@@ -2929,7 +2929,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'!2
                                         - \bendAfter #'0
 
                                     }
@@ -2959,7 +2959,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -2973,7 +2973,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2.
+                                    c'!2.
                                     - \bendAfter #'0
 
                                     \scaleDurations #'(1 . 1)
@@ -2988,7 +2988,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'!4.
                                         - \bendAfter #'0
 
                                     }
@@ -3007,7 +3007,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                     }
@@ -3036,7 +3036,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -3050,7 +3050,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2.
+                                    c'!2.
                                     - \bendAfter #'0
 
                                     \tweak TupletBracket.transparent ##t
@@ -3067,7 +3067,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                     }
@@ -3081,7 +3081,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    c'!4.
                                     - \bendAfter #'0
 
                                     \once \override Rest.transparent = ##t
@@ -3108,7 +3108,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -3122,7 +3122,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'1.
+                                    c'!1.
                                     - \bendAfter #'0
 
                                     \tweak TupletBracket.transparent ##t
@@ -3139,7 +3139,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'!2
                                         - \bendAfter #'0
 
                                     }
@@ -3153,7 +3153,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'2.
+                                    c'!2.
                                     - \bendAfter #'0
 
                                     \once \override Rest.transparent = ##t
@@ -3179,7 +3179,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'!8
                                         - \bendAfter #'0
 
                                         \once \override Rest.transparent = ##t
@@ -3193,7 +3193,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c'!4
                                     - \bendAfter #'0
 
                                     \tweak TupletBracket.transparent ##t
@@ -3210,7 +3210,7 @@
                                         \duration-line-style
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'!4
                                         - \bendAfter #'0
 
                                     }
@@ -3224,7 +3224,7 @@
                                     \duration-line-style
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c'!32
                                     - \bendAfter #'0
 
                                     \once \override Rest.transparent = ##t

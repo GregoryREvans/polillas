@@ -31,6 +31,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("violin 1 voice", (0, 16))],
             polillas.wings(stage=4, rotation_index=1),
+            polillas.force_accidental,
             polillas.B_color,
             preprocessor=polillas.fuse_preprocessor_2,
         ),
@@ -42,6 +43,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("violin 2 voice", (0, 16))],
             polillas.wings(stage=4, rotation_index=3),
+            polillas.force_accidental,
             polillas.B_color,
             preprocessor=polillas.fuse_preprocessor_2,
         ),
@@ -53,6 +55,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("viola voice", (0, 16))],
             polillas.wings(stage=4, rotation_index=6),
+            polillas.force_accidental,
             polillas.B_color,
             preprocessor=polillas.fuse_preprocessor_3,
         ),
@@ -64,6 +67,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", (0, 16))],
             polillas.wings(stage=4, rotation_index=8),
+            polillas.force_accidental,
             polillas.B_color,
             preprocessor=polillas.fuse_preprocessor_3,
         ),

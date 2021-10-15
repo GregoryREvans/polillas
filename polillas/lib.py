@@ -741,3 +741,18 @@ def make_proportaional_global_context(selections):
 
 def label_clock_time(selections):
     abjad.Label(selections).with_start_offsets(clock_time=True)
+
+
+def force_accidental(selections):
+    ties = abjad.select(selections).logical_ties(pitched=True)
+    for tie in ties:
+        first_leaf = tie[0]
+        if isinstance(first_leaf, abjad.Note):
+            first_leaf.note_head.is_forced = True
+        elif isinstance(first_leaf, abjad.Chord):
+            heads = first_leaf.note_heads
+            for head in heads:
+                head.is_forced = True
+        else:
+            ex = f"Object must be of type {type(abjad.Note())} or {type(abjad.Chord())}"
+            raise Exception(ex)
