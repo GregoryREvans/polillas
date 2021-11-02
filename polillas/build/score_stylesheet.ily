@@ -277,16 +277,3 @@
       )) %}
 
 }
-
-colophon = \markup {
-    \with-color #black
-    \override #'(baseline-skip . 4)
-    \right-column {
-        \line {
-            Cambridge, Mass. \hspace #0.75 – \hspace #0.75
-            Dallas, Tex. \hspace #0.75 – \hspace #0.75
-            Madison, Wisc.
-        }
-        \line { Oct. \hspace #0.75 – \hspace #0.75 Dec. 2015. }
-        }
-    }

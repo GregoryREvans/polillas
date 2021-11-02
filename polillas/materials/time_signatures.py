@@ -385,7 +385,7 @@ reduced_signatures_19 = evans.reduce_fermata_measures(
 ## 20
 ##
 
-pairs_20 = evans.Sequence(time_signature_series["B"].rotate(-18)[0:16])
+pairs_20 = evans.Sequence(time_signature_series["B"].rotate(-18)[0:21])
 
 meters_20 = [abjad.Meter(_) for _ in pairs_20]
 
@@ -393,7 +393,7 @@ signatures_20 = [abjad.TimeSignature(_) for _ in meters_20]
 
 signatures_20.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_20 = [1]
+fermata_measures_20: list = []
 
 reduced_signatures_20 = evans.reduce_fermata_measures(
     signatures_20, fermata_measures_20
@@ -403,7 +403,7 @@ reduced_signatures_20 = evans.reduce_fermata_measures(
 ## 21
 ##
 
-pairs_21 = evans.Sequence(time_signature_series["C"].rotate(-6)[0:16])
+pairs_21 = evans.Sequence(time_signature_series["C"].rotate(-6)[0:35])
 
 meters_21 = [abjad.Meter(_) for _ in pairs_21]
 
@@ -411,7 +411,7 @@ signatures_21 = [abjad.TimeSignature(_) for _ in meters_21]
 
 signatures_21.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_21 = [1]
+fermata_measures_21 = [15, 19, 28]
 
 reduced_signatures_21 = evans.reduce_fermata_measures(
     signatures_21, fermata_measures_21
@@ -421,7 +421,11 @@ reduced_signatures_21 = evans.reduce_fermata_measures(
 ## 22
 ##
 
-pairs_22 = evans.Sequence(time_signature_series["A"].rotate(-14)[0:16])
+pairs_22 = evans.Sequence(time_signature_series["A"].rotate(-14)[0:49])
+
+pairs_22 += pairs_22
+
+pairs_22 += pairs_22[0:7]
 
 meters_22 = [abjad.Meter(_) for _ in pairs_22]
 
@@ -429,7 +433,7 @@ signatures_22 = [abjad.TimeSignature(_) for _ in meters_22]
 
 signatures_22.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_22 = [1]
+fermata_measures_22 = [48]
 
 reduced_signatures_22 = evans.reduce_fermata_measures(
     signatures_22, fermata_measures_22
@@ -460,5 +464,8 @@ all_signatures = evans.join_time_signature_lists(
         reduced_signatures_17,
         reduced_signatures_18,
         reduced_signatures_19,
+        reduced_signatures_20,
+        reduced_signatures_21,
+        reduced_signatures_22,
     ]
 )

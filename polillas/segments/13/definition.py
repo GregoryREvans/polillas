@@ -106,26 +106,26 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score_without_splitting,
             abjad.select().components(abjad.Score),
         ),
-        evans.attach(
-            "violin 2 voice",
-            abjad.Clef("treble"),
-            baca.selectors.leaf(38),
-        ),
-        evans.attach(
-            "violin 2 voice",
-            polillas.clef_whitespace,
-            baca.selectors.leaf(38),
-        ),
-        evans.attach(
-            "viola voice",
-            abjad.Clef("alto"),
-            baca.selectors.leaf(129),
-        ),
-        evans.attach(
-            "viola voice",
-            polillas.clef_whitespace,
-            baca.selectors.leaf(129),
-        ),
+        # evans.attach(
+        #     "violin 2 voice",
+        #     abjad.Clef("treble"),
+        #     baca.selectors.leaf(38),
+        # ),
+        # evans.attach(
+        #     "violin 2 voice",
+        #     polillas.clef_whitespace,
+        #     baca.selectors.leaf(38),
+        # ),
+        # evans.attach(
+        #     "viola voice",
+        #     abjad.Clef("alto"),
+        #     baca.selectors.leaf(129),
+        # ),
+        # evans.attach(
+        #     "viola voice",
+        #     polillas.clef_whitespace,
+        #     baca.selectors.leaf(129),
+        # ),
         evans.attach(
             "Global Context",
             abjad.Markup(

@@ -1,4 +1,16 @@
-colophon = \markup
+colophon = \markup {
+    \with-color #black
+    \override #'(baseline-skip . 4)
+    \right-column {
+        \line {
+            Spring Valley, Oh. \hspace #0.75 – \hspace #0.75
+            Iowa City, Ia.
+        }
+        \line { July \hspace #0.75 – \hspace #0.75 November 2021. }
+        }
+    }
+
+%{ colophon = \markup
 {
     \override #'(font-name . "Bell MT Std")
     \with-color #white
@@ -19,7 +31,7 @@ colophon = \markup
             \hspace #0.75 June - July 2021
         }
     }
-}
+} %}
 
 normale-markup = \markup \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "normale"
 
