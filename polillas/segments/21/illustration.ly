@@ -22,10 +22,18 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
+                \tempo 4=90
                 %! scaling time signatures
                 \time 13/16
                 \mark \markup \bold {  }
                 s1 * 13/16
+                \tweak padding 6
+                ^ \markup \with-dimensions-from \null {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -103,9 +111,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 12]
 
+                \tempo 4=130
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 13]
@@ -179,9 +195,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 21]
 
+                \tempo 4=90
                 %! scaling time signatures
                 \time 6/16
                 s1 * 3/8
+                \tweak padding 6
+                ^ \markup \with-dimensions-from \null {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 22]
@@ -247,9 +271,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 30]
 
+                \tempo 4=60
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 31]
@@ -268,9 +300,22 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 33]
 
+                \tempo 4=66
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                      \hspace #1
+                      \upright [
+                      \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                      \hspace #0.5
+                      \upright ]
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 34]
@@ -325,6 +370,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
+                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -343,13 +389,42 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 2]
+
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 2]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \baca-circle-bowing
+                                            ~
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2..
+                                        c'8.
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4..
+                                        - \baca-circle-bowing
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -357,27 +432,89 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'1
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 4]
-
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \baca-circle-bowing
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \baca-circle-bowing
+                                        ~
+                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'2
                                         %! MATERIAL_COLOR
                                         \)
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 4]
+
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
@@ -387,6 +524,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -398,41 +536,96 @@
                                         \evans-not-yet-pitched-coloring
                                         c'2
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 7]
+
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 7]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+                                            ~
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 8]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 9]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 8]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mf
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            ]
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 9]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
@@ -442,6 +635,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -466,86 +660,149 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
                                         ~
+
+                                        \times 2/3
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            - \baca-circle-bowing
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'8.
+                                        - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 12]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 13]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 12]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 14]
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 15]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 13]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
-                                        \)
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 13/14
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 14]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 13/14
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 15]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
@@ -554,35 +811,88 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 17]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2..
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 18]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 17]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 19]
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            ]
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 18]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'2
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 19]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'2
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \ff
+                                            %! MATERIAL_COLOR
+                                            \)
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 20]
@@ -600,85 +910,156 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \)
                                         %! MATERIAL_COLOR
                                         \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 22]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 23]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 22]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 24]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 25]
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 23]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 26]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
-                                        \)
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 11/12
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 24]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 25]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 26]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 27]
@@ -688,34 +1069,49 @@
                                         r1 * 13/32
 
                                         R1 * 13/32
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 28]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 13/14
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 28]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \pp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \ff
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 29]
@@ -733,6 +1129,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
+                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -742,22 +1139,32 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            - \baca-circle-bowing
+
+                                        }
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \baca-circle-bowing
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -765,51 +1172,353 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2...
+                                        c'4..
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \baca-circle-bowing
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4.
+                                        - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 33]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/5
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 33]
+
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                            r32
+                                            %! MATERIAL_COLOR
+                                            \(
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            \ff
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                            r32
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 12/11
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                            r32
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                            r32
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                        }
+
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 34]
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                            r16
+
+                                        }
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 34]
+                                        c'16
+                                        - \staccato
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                        c'16
+                                        - \staccato
+
+                                        \times 4/5
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            r16
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        c'16
+                                        - \staccato
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 35]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2..
+                                        c'16
+                                        - \staccato
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+                                        ]
+
+                                        r16
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                            r16
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                        }
+
+                                        r16
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -828,48 +1537,73 @@
 
                                     \context Voice = "violin 2 voice"
                                     {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 1]
 
-                                        %! applying staff names and clefs
-                                        \set Staff.shortInstrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #12 "vn. II" }
-                                        %! applying staff names and clefs
-                                        \set Staff.instrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #14 "Violin II" }
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 1]
+
+                                            %! applying staff names and clefs
+                                            \set Staff.shortInstrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #12 "vn. II" }
+                                            %! applying staff names and clefs
+                                            \set Staff.instrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #14 "Violin II" }
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            - \baca-circle-bowing
+                                            %! MATERIAL_COLOR
+                                            \(
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+                                            ~
+
+                                        }
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'16
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'2
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2..
+                                        c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \baca-circle-bowing
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        - \baca-circle-bowing
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4..
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -877,27 +1611,81 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'1
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 4]
-
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'2
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
+
+                                        \times 2/3
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            - \baca-circle-bowing
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \baca-circle-bowing
+                                            ~
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         %! MATERIAL_COLOR
                                         \)
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 4]
+
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
@@ -907,6 +1695,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -916,8 +1705,23 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
-                                        ~
+                                        c'4
+
+                                        \times 2/3
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            - \baca-circle-bowing
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+                                            ~
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
@@ -932,27 +1736,72 @@
                                         c'8
                                         %! MATERIAL_COLOR
                                         \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 8]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 9]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 8]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mf
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            ]
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 9]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
@@ -961,20 +1810,26 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                        c'4
+                                        - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        \times 2/3
+                                        {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            - \baca-circle-bowing
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+                                            ~
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -986,86 +1841,154 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'2
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/5
+                                        {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
-                                        \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 12]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 13]
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \baca-circle-bowing
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 14]
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \baca-circle-bowing
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 12]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 15]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 13]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 13/14
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 14]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 13/14
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 15]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
@@ -1074,35 +1997,88 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 17]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2..
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 18]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 17]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 19]
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4..
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8..
+                                            ]
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 18]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'2
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 19]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'2
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \ff
+                                            %! MATERIAL_COLOR
+                                            \)
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 20]
@@ -1111,89 +2087,175 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 21]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 22]
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 21]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 23]
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 24]
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 22]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 25]
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 26]
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 23]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
-                                        \)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16.
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 11/12
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 24]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
+
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 25]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 26]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4.
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
+
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 27]
@@ -1203,6 +2265,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4..
+                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1221,28 +2284,42 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 28]
+
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 28]
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \baca-circle-bowing
+                                            ~
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                        c'8.
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4.
+                                        - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1253,40 +2330,80 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         \stopStaff \startStaff
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 30]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/5
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 30]
+
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8.
+                                            - \baca-circle-bowing
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+                                            ]
+
+                                        }
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2.
+                                        c'4.
+                                        - \baca-circle-bowing
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 31]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'8
+                                            - \baca-circle-bowing
+                                            ~
+                                            ]
+
+                                        }
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1294,51 +2411,368 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2...
+                                        c'4.
+                                        ~
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/5
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'4
+                                            ~
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \baca-circle-bowing
+                                            ~
+                                            ]
+
+                                        }
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
                                         %! MATERIAL_COLOR
                                         \)
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 33]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/5
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 33]
+
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                            r32
+                                            %! MATERIAL_COLOR
+                                            \(
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            \ff
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                            r32
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 12/11
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                            r32
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+                                            ]
+
+                                            r32
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'32
+                                            - \staccato
+
+                                        }
+
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 34]
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                            r16
+
+                                        }
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
-                                        %! MATERIAL_COLOR
-                                        \(
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 34]
+                                        c'16
+                                        - \staccato
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
-                                        ~
+                                        c'16
+                                        - \staccato
+
+                                        \times 4/5
+                                        {
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            r16
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                        }
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        c'16
+                                        - \staccato
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 35]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2..
+                                        c'16
+                                        - \staccato
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+                                        ]
+
+                                        r16
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
+
+                                        \times 4/5
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                            r16
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            [
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            - \staccato
+                                            ]
+
+                                        }
+
+                                        r16
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \staccato
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -1378,6 +2812,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
+                                - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -1402,7 +2837,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'8.
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                - \baca-circle-bowing
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1410,27 +2855,86 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1
-                                %! MATERIAL_COLOR
-                                \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 4]
-
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 c'8.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
+                                - \baca-circle-bowing
+                                ~
+
+                                \times 2/3
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    - \baca-circle-bowing
+                                    ~
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ~
+
+                                }
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
                                 %! MATERIAL_COLOR
                                 \)
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 4]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
@@ -1439,10 +2943,15 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
+                                c'8
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                - \baca-circle-bowing
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
@@ -1450,42 +2959,106 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
-
+                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                %! MATERIAL_COLOR
-                                \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 8]
+                                [
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'16
+                                - \baca-circle-bowing
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 9]
+                                ]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \)
+                                ]
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 8]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mf
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    ]
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 9]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
@@ -1495,6 +3068,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -1513,92 +3087,159 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 11]
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 11]
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+                                    ~
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
                                 %! MATERIAL_COLOR
                                 \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 12]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 13]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 12]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 14]
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 15]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 13]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 13/14
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 14]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 13/14
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 15]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
@@ -1607,35 +3248,88 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 17]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2..
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 18]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 17]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 19]
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
-                                %! MATERIAL_COLOR
-                                \)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    ]
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 18]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'2
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 19]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'2
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \ff
+                                    %! MATERIAL_COLOR
+                                    \)
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
@@ -1644,40 +3338,101 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 21]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 22]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 21]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 23]
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    ]
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 22]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 23]
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 24]
@@ -1687,6 +3442,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4..
+                                - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -1701,42 +3457,77 @@
                                 c'8
                                 %! MATERIAL_COLOR
                                 \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 25]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 26]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 25]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 26]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 27]
@@ -1746,34 +3537,49 @@
                                 r1 * 13/32
 
                                 R1 * 13/32
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 28]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 13/14
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 28]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \pp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \ff
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 29]
@@ -1790,32 +3596,33 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
+                                c'4
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                - \baca-circle-bowing
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
+                                - \baca-circle-bowing
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 31]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                c'2.
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1823,51 +3630,343 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2...
-                                %! MATERIAL_COLOR
-                                \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 33]
+                                c'8.
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
-                                ~
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 34]
+                                \)
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/5
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 33]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                    r32
+                                    %! MATERIAL_COLOR
+                                    \(
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    \ff
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r32
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 12/11
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r32
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r32
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                }
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 34]
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                    r16
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                c'16
+                                - \staccato
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                c'16
+                                - \staccato
+
+                                \times 4/5
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                c'16
+                                - \staccato
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 35]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'16
+                                - \staccato
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+                                ]
+
+                                r16
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                    r16
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                }
+
+                                r16
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
@@ -1902,24 +4001,25 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                c'2
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
+                                - \baca-circle-bowing
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                c'16
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'8.
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1929,33 +4029,106 @@
                                 \evans-not-yet-pitched-coloring
                                 c'2..
                                 ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 3]
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 3]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    - \baca-circle-bowing
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \baca-circle-bowing
+                                    ~
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1
-                                %! MATERIAL_COLOR
-                                \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 4]
-
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'2
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \baca-circle-bowing
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 4]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
@@ -1964,10 +4137,16 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
+                                c'8
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                - \baca-circle-bowing
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
@@ -1976,41 +4155,105 @@
                                 \evans-not-yet-pitched-coloring
                                 c'2
                                 ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 7]
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 7]
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+                                    ~
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 %! MATERIAL_COLOR
                                 \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 8]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 9]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 8]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2
-                                %! MATERIAL_COLOR
-                                \)
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mf
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    ]
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 9]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
@@ -2019,20 +4262,26 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                c'4
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                \times 2/3
+                                {
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    - \baca-circle-bowing
+                                    ~
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -2057,73 +4306,126 @@
                                 c'8
                                 %! MATERIAL_COLOR
                                 \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 12]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 13]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 12]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 14]
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 15]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 13]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 13/14
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 14]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 13/14
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 15]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
@@ -2132,35 +4434,88 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 17]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2..
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 18]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 17]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 19]
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4..
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
-                                %! MATERIAL_COLOR
-                                \)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8..
+                                    ]
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 18]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'2
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 19]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'2
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \ff
+                                    %! MATERIAL_COLOR
+                                    \)
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
@@ -2169,89 +4524,175 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 21]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 22]
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 21]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 23]
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 24]
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 22]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 25]
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 26]
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 23]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! MATERIAL_COLOR
-                                \)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16.
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 11/12
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 24]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 25]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 5/6
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 26]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4.
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 27]
@@ -2261,32 +4702,38 @@
                                 r1 * 13/32
 
                                 R1 * 13/32
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 28]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 28]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    - \baca-circle-bowing
+                                    %! MATERIAL_COLOR
+                                    \(
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+                                    ~
+
+                                }
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'16
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                c'2
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2306,31 +4753,52 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 31]
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 31]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+                                    ~
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'4
+                                    - \baca-circle-bowing
+                                    ~
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'16
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2338,51 +4806,386 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2...
+                                c'8...
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'64
+                                - \baca-circle-bowing
+                                ~
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'64
+                                [
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'32.
+                                - \baca-circle-bowing
+                                ~
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 %! MATERIAL_COLOR
                                 \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 33]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/5
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 33]
+
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                    r32
+                                    %! MATERIAL_COLOR
+                                    \(
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    \ff
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r32
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 12/11
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r32
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r32
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    - \staccato
+
+                                }
+
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 34]
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                    r16
+
+                                }
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
-                                %! MATERIAL_COLOR
-                                \(
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 34]
+                                c'16
+                                - \staccato
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
-                                ~
+                                c'16
+                                - \staccato
+
+                                \times 4/5
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                c'16
+                                - \staccato
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 35]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'16
+                                - \staccato
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+                                ]
+
+                                r16
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                    r16
+
+                                }
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    ]
+
+                                }
+
+                                r16
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \staccato
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"

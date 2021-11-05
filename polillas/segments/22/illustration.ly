@@ -22,10 +22,18 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
+                \tempo 4=60
                 %! scaling time signatures
                 \time 7/4
                 \mark \markup \bold {  }
                 s1 * 7/4
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -65,9 +73,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
 
+                \tempo 4=90
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup \with-dimensions-from \null {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
@@ -142,9 +158,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 18]
 
+                \tempo 4=72
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 19]
@@ -303,9 +327,16 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 41]
 
+                \tempo 4=56
                 %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
+                - \abjad-dashed-line-with-arrow
+                - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
+                - \tweak padding #4
+                - \tweak staff-padding #2
+                - \tweak font-size #6
+                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 42]
@@ -338,9 +369,17 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 46]
 
+                \tempo 4=40
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
+                \bacaStopTextSpanMM
+                - \abjad-invisible-line
+                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                - \tweak padding #4
+                - \tweak staff-padding #2
+                - \tweak font-size #6
+                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 47]
@@ -348,6 +387,7 @@
                 %! scaling time signatures
                 \time 5/4
                 s1 * 5/4
+                \bacaStopTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 48]
@@ -408,6 +448,15 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'1..
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \pp
+                                        - \baca-circle-bowing
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -418,14 +467,19 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'1
-                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'1
+                                        c'2
+                                        - \baca-circle-bowing
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        - \baca-circle-bowing
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -441,12 +495,17 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2.
-                                        ~
+                                        c'2
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        - \baca-circle-bowing
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2
+                                        - \baca-circle-bowing
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -455,6 +514,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'1.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -642,6 +705,30 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         \mf
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-arrow
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-right-text "1/4 on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.padding 0.5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpan
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -939,6 +1026,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \stopTextSpan
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -1146,6 +1237,30 @@
                                         c'4
                                         \mf
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-arrow
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "1/2 on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-right-text "on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.padding 0.5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpan
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -1360,6 +1475,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \stopTextSpan
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -1423,6 +1542,30 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         \mf
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-arrow
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "msp."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-right-text "on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.padding 0.5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpan
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -1684,6 +1827,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \stopTextSpan
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -1780,10 +1927,24 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'1..
-                                        ~
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \pp
+                                        - \baca-circle-bowing
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         %! MATERIAL_COLOR
                                         \(
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        - \baca-circle-bowing
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
@@ -1798,7 +1959,17 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'1
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        - \baca-circle-bowing
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        - \baca-circle-bowing
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1815,11 +1986,16 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
-                                        ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        - \baca-circle-bowing
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        - \baca-circle-bowing
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1828,6 +2004,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'1.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2021,6 +2201,30 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8
                                         \mf
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-arrow
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-right-text "1/4 on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.padding 0.5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpan
                                         %! MATERIAL_COLOR
                                         \(
                                         [
@@ -2326,6 +2530,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \stopTextSpan
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -2489,6 +2697,30 @@
                                         c'4
                                         \mf
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-arrow
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "1/2 on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-right-text "on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.padding 0.5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpan
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -2703,6 +2935,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \stopTextSpan
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -2766,6 +3002,30 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
                                         \mf
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-arrow
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "msp."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-right-text "on bridge"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.padding 0.5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpan
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -3027,6 +3287,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \stopTextSpan
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -3127,10 +3391,29 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1..
-                                ~
+                                c'2
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \pp
+                                - \baca-circle-bowing
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                - \baca-circle-bowing
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                - \baca-circle-bowing
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
@@ -3145,7 +3428,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1
+                                c'2.
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3153,7 +3441,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3167,14 +3460,48 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 6]
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 6/5
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 6]
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \baca-circle-bowing
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8.
+                                    - \baca-circle-bowing
+                                    ~
+                                    ]
+
+                                }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1.
+                                c'8
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3399,6 +3726,30 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 \mf
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-arrow
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-right-text "1/4 on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.padding 0.5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.stencil-align-dir-y #center
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpan
                                 %! MATERIAL_COLOR
                                 \(
                                 [
@@ -3695,6 +4046,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \stopTextSpan
                                 %! MATERIAL_COLOR
                                 \)
                                 ]
@@ -3831,6 +4186,30 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 \mf
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-arrow
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "1/2 on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-right-text "on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.padding 0.5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.stencil-align-dir-y #center
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpan
                                 %! MATERIAL_COLOR
                                 \(
                                 [
@@ -4053,6 +4432,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \stopTextSpan
                                 %! MATERIAL_COLOR
                                 \)
                                 ]
@@ -4116,6 +4499,30 @@
                                 \evans-not-yet-pitched-coloring
                                 c'4
                                 \mf
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-arrow
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "msp."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-right-text "on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.padding 0.5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.stencil-align-dir-y #center
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpan
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -4377,6 +4784,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \stopTextSpan
                                 %! MATERIAL_COLOR
                                 \)
                                 ]
@@ -4473,10 +4884,34 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1..
-                                ~
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \pp
+                                - \baca-circle-bowing
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                - \baca-circle-bowing
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                - \baca-circle-bowing
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -4491,8 +4926,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1
-                                ~
+                                c'2
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                - \baca-circle-bowing
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
@@ -4500,6 +4939,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -4507,13 +4947,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
-                                ~
+                                c'1
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
-                                ~
+                                c'4
+                                - \baca-circle-bowing
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
@@ -4521,6 +4960,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'1.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
+                                - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -4678,6 +5122,30 @@
                                 c'4
                                 \mf
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-arrow
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-right-text "1/4 on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.padding 0.5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.stencil-align-dir-y #center
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpan
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -4983,6 +5451,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \stopTextSpan
                                 %! MATERIAL_COLOR
                                 \)
                                 ]
@@ -5110,6 +5582,30 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 \mf
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-arrow
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "1/2 on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-right-text "on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.padding 0.5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.stencil-align-dir-y #center
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpan
                                 %! MATERIAL_COLOR
                                 \(
                                 [
@@ -5332,6 +5828,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \stopTextSpan
                                 %! MATERIAL_COLOR
                                 \)
                                 ]
@@ -5395,6 +5895,30 @@
                                 \evans-not-yet-pitched-coloring
                                 c'4
                                 \mf
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-arrow
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "msp."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-right-text "on bridge"
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.padding 0.5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak bound-details.right.stencil-align-dir-y #center
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpan
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -5656,6 +6180,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \stopTextSpan
                                 %! MATERIAL_COLOR
                                 \)
                                 ]

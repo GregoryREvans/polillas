@@ -67,7 +67,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", 4),
             ],
             polillas.wings(
-                indices=[1, 4, 10, 15],
+                indices=[1, 2, 3, 4, 10, 11, 12, 14, 15],
                 period=23,
                 denominator=16,
                 extra_counts=[0, 2, 1, 1, 0, 2, 1],
@@ -97,7 +97,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", 8),
             ],
             polillas.wings(
-                indices=[1, 4, 10, 15],
+                indices=[1, 2, 4, 5, 6, 7, 9, 10, 11, 14, 15],
                 period=23,
                 denominator=16,
                 extra_counts=[0, 2, 1, 1, 0, 2, 1],
@@ -118,7 +118,7 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("pp"),
             evans.ArticulationHandler(
                 [r"baca-circle-bowing"],
-                articulation_boolean_vector=[1, 0],
+                articulation_boolean_vector=[0, 1],
                 vector_forget=False,
             ),
             polillas.C_color,
@@ -132,7 +132,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", 11),
             ],
             polillas.wings(
-                indices=[1, 4, 10, 15],
+                indices=[0, 1, 2, 4, 5, 6, 8, 10, 13, 15],
                 period=23,
                 denominator=16,
                 extra_counts=[0, 2, 1, 1, 0, 2, 1],
@@ -277,6 +277,16 @@ maker = evans.SegmentMaker(
             "Global Context",
             polillas.stop_repeat,
             baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.mark_120,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.met_120,
+            baca.selectors.leaf(0),
         ),
         # evans.attach(
         #     "Global Context",

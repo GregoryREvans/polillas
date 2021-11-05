@@ -22,6 +22,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
+                \tempo 4=120
                 \once \override Score.BarLine.X-extent = #'(0.5 . 3)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
@@ -29,6 +30,13 @@
                 \time 6/8
                 \mark \markup \bold {  }
                 s1 * 3/4
+                \tweak padding 6
+                ^ \markup {
+                  \override #'(font-size . 5.5)
+                  \concat {
+                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                  }
+                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -434,12 +442,22 @@
                                         %! MATERIAL_COLOR
                                         \(
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         \mp
+                                        [
 
-                                        r8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ]
 
                                         \times 2/3
                                         {
@@ -463,17 +481,27 @@
                                         \times 4/5
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
+
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                         }
 
@@ -535,46 +563,74 @@
                                         %! MATERIAL_COLOR
                                         \(
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         \mp
+                                        [
 
-                                        r8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ]
+
+                                        r16
 
                                         \times 2/3
                                         {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                         }
 
                                         \times 4/5
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
                                             r16
 
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                         }
 
@@ -602,7 +658,6 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4.
                                         \pp
-                                        - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -620,12 +675,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \baca-circle-bowing
                                             ]
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
-                                            - \baca-circle-bowing
                                             ~
 
                                             %! PITCH
@@ -648,12 +703,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            - \baca-circle-bowing
                                             ]
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            - \baca-circle-bowing
                                             ~
 
                                         }
@@ -680,6 +735,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            - \baca-circle-bowing
                                             ]
 
                                         }
@@ -687,7 +743,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        - \baca-circle-bowing
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -697,13 +752,13 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'32
+                                            - \baca-circle-bowing
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            - \baca-circle-bowing
                                             ~
                                             ]
 
@@ -728,6 +783,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            - \baca-circle-bowing
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -739,31 +795,51 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        r16
-                                        %! MATERIAL_COLOR
-                                        \(
-
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         \mp
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
 
-                                        r8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ]
+
+                                        r16
 
                                         \times 2/3
                                         {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                             r16
 
@@ -780,7 +856,9 @@
 
                                             r16
 
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                             r16
 
@@ -1357,12 +1435,22 @@
                                         %! MATERIAL_COLOR
                                         \(
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         \mp
+                                        [
 
-                                        r8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ]
 
                                         \times 2/3
                                         {
@@ -1386,17 +1474,27 @@
                                         \times 4/5
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
+
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                         }
 
@@ -1451,46 +1549,74 @@
                                         %! MATERIAL_COLOR
                                         \(
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         \mp
+                                        [
 
-                                        r8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ]
+
+                                        r16
 
                                         \times 2/3
                                         {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                         }
 
                                         \times 4/5
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            [
+
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
                                             r16
 
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                         }
 
@@ -1514,7 +1640,6 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4..
                                             \pp
-                                            - \baca-circle-bowing
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -1522,13 +1647,13 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            - \baca-circle-bowing
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            - \baca-circle-bowing
                                             ~
                                             ]
 
@@ -1552,12 +1677,12 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \baca-circle-bowing
                                             ]
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
-                                            - \baca-circle-bowing
                                             ~
 
                                         }
@@ -1578,11 +1703,11 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'32
+                                            - \baca-circle-bowing
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            - \baca-circle-bowing
                                             ~
 
                                             \revert Staff.Stem.stemlet-length
@@ -1608,6 +1733,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'32
+                                            - \baca-circle-bowing
                                             ~
                                             ]
 
@@ -1627,7 +1753,6 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
-                                            - \baca-circle-bowing
                                             ~
                                             ]
 
@@ -1646,11 +1771,11 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'32
+                                            - \baca-circle-bowing
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
-                                            - \baca-circle-bowing
                                             ~
 
                                             \revert Staff.Stem.stemlet-length
@@ -1668,31 +1793,51 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        r16
-                                        %! MATERIAL_COLOR
-                                        \(
-
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         \mp
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
 
-                                        r8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ]
+
+                                        r16
 
                                         \times 2/3
                                         {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
+                                            \revert Staff.Stem.stemlet-length
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
+                                            ]
 
                                             r16
 
-                                            r16
-
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                             r16
 
@@ -1709,7 +1854,9 @@
 
                                             r16
 
-                                            r16
+                                            %! PITCH
+                                            \evans-not-yet-pitched-coloring
+                                            c'16
 
                                             r16
 
@@ -2038,18 +2185,26 @@
                                     %! MATERIAL_COLOR
                                     \(
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
-
-                                    r16
-
-                                    r16
+                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                     r16
 
@@ -2075,17 +2230,31 @@
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
+
+                                    r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
 
@@ -2139,54 +2308,88 @@
                                     %! MATERIAL_COLOR
                                     \(
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
+                                    [
 
-                                    r16
-
-                                    r16
-
+                                    \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    ]
 
                                     r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
+
+                                    r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+
+                                    r16
+
+                                    r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
 
@@ -2206,6 +2409,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4.
                                     \pp
+                                    - \baca-circle-bowing
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -2213,13 +2417,13 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    - \baca-circle-bowing
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -2236,13 +2440,13 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    - \baca-circle-bowing
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -2263,12 +2467,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    - \baca-circle-bowing
                                     [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \baca-circle-bowing
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
@@ -2293,12 +2497,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'32
-                                    - \baca-circle-bowing
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -2316,12 +2520,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    - \baca-circle-bowing
                                     [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \baca-circle-bowing
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
@@ -2342,16 +2546,47 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                    r16
-                                    %! MATERIAL_COLOR
-                                    \(
-
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                     r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
 
                                     r16
 
@@ -2360,6 +2595,10 @@
                                     c'16
 
                                     r16
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
 
                                 }
 
@@ -2370,24 +2609,9 @@
 
                                     r16
 
-                                    r16
-
-                                    r16
-
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r16
-
-                                    r16
-
-                                    r16
 
                                     r16
 
@@ -2747,18 +2971,26 @@
                                     %! MATERIAL_COLOR
                                     \(
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
-
-                                    r16
-
-                                    r16
+                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                     r16
 
@@ -2781,13 +3013,31 @@
 
                                 }
 
-                                r8
-
-                                r8
-
+                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ]
+
+                                r16
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ]
 
                                 r16
                                 %! MATERIAL_COLOR
@@ -2839,47 +3089,85 @@
                                     %! MATERIAL_COLOR
                                     \(
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
+                                    [
 
-                                    r16
-
-                                    r16
-
+                                    \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    ]
 
                                     r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
+
+                                    r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
-
-                                r8
-
-                                r8
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+
+                                r16
+
+                                r16
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ]
 
                                 r16
                                 %! MATERIAL_COLOR
@@ -2898,7 +3186,6 @@
                                     \evans-not-yet-pitched-coloring
                                     c'8
                                     \pp
-                                    - \baca-circle-bowing
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -2907,12 +3194,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    - \baca-circle-bowing
                                     ]
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
-                                    - \baca-circle-bowing
                                     ~
 
                                 }
@@ -2934,12 +3221,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \baca-circle-bowing
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -2962,12 +3249,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    - \baca-circle-bowing
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
-                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -2994,12 +3281,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    - \baca-circle-bowing
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
-                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -3018,12 +3305,12 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'32
+                                    - \baca-circle-bowing
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16.
-                                    - \baca-circle-bowing
                                     ~
                                     ]
 
@@ -3043,35 +3330,53 @@
 
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                    r16
-                                    %! MATERIAL_COLOR
-                                    \(
-
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
-
-                                    r16
-
-                                    r16
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
+
                                     r16
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
 
                                     r16
 
-                                    r16
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
 
                                     r16
 
@@ -3083,7 +3388,11 @@
 
                                 r8
 
-                                r8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+
+                                r16
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
