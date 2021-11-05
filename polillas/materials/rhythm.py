@@ -478,7 +478,9 @@ def knots(  # F
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, 5, or 6.")
 
 
-def lightning(stage=1, denominators=[4], extra_counts=[0], indices=[0], period=1):  # G
+def lightning(
+    stage=1, denominators=[4], extra_counts=[0], indices=[0], period=1, rotation=None
+):  # G
     if stage == 1:
         attack_selector = abjad.select().leaves().get(indices, period)
         stack = rmakers.stack(
@@ -495,6 +497,17 @@ def lightning(stage=1, denominators=[4], extra_counts=[0], indices=[0], period=1
     if stage == 2:
         stack = rmakers.stack(
             rmakers.talea([2, 3], 8),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
+    if stage == 3:
+        counts = evans.Sequence([3, 1, 1, 2]).rotate(rotation)
+        stack = rmakers.stack(
+            rmakers.talea(counts, 8),
             rmakers.trivialize(abjad.select().tuplets()),
             rmakers.rewrite_rest_filled(abjad.select().tuplets()),
             rmakers.rewrite_sustained(abjad.select().tuplets()),

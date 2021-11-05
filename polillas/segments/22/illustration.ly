@@ -403,434 +403,1340 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
-
-                                        R1 * 7/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1..
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak stencil #abjad-flared-hairpin
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
 
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
-
-                                        R1 * 7/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1..
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
 
-                                        R1 * 3/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        \mf
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 5/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 20]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 3/4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 21]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
 
-                                        R1 * 7/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 22]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
 
-                                        R1 * 7/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 23]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
 
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 24]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \ppp
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 25]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 26]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 5/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 27]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 3/4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 28]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 29]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 30]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \fff
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 31]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        \mf
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 5/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 32]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 33]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 34]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 3/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 35]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 36]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 37]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 38]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 39]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 40]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 41]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        \mf
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 42]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 43]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 44]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 45]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 46]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \mf
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak to-barline ##t
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak circled-tip ##t
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 47]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 48]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 49]
@@ -838,6 +1744,10 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \!
                                         \stopStaff \startStaff
 
                                     }
@@ -866,434 +1776,1310 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
-
-                                        R1 * 7/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1..
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak stencil #abjad-flared-hairpin
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
 
-                                        R1 * 3/4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
 
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
-
-                                        R1 * 7/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1..
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 13]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
 
-                                        R1 * 3/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        \mf
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
 
-                                        R1 * 3/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 5/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 20]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 3/4
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 21]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 22]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 23]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 24]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \ppp
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 25]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 26]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 5/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 27]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 28]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 29]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 30]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
 
-                                        R1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \fff
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 31]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        \mf
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 5/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 32]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 33]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 34]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 3/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 35]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 36]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 37]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 38]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-
-                                        R1 * 1/2
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 39]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 40]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 41]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        \mf
+                                        %! MATERIAL_COLOR
+                                        \(
 
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 42]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 43]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 7/8
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 44]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 45]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
 
-                                        R1 * 1/2
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
+                                        ]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 46]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \mf
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak to-barline ##t
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak circled-tip ##t
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
+                                        ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 47]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2.
+                                        ~
 
-                                        R1 * 5/8
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'2
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 48]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/4
-
-                                        R1 * 3/4
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'1.
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 49]
@@ -1301,6 +3087,10 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \!
                                         \stopStaff \startStaff
 
                                     }
@@ -1333,434 +3123,1313 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
-
-                                R1 * 7/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1..
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \f
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak stencil #abjad-flared-hairpin
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
 
-                                R1 * 3/4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
 
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
-
-                                R1 * 7/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1..
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
 
-                                R1 * 3/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \p
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                \mf
+                                %! MATERIAL_COLOR
+                                \(
+                                [
 
-                                R1 * 3/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 5/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
 
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 21]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 7/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 22]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 7/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 23]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 1/2
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 24]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \ppp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 25]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 26]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 27]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
 
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 28]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 29]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 30]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \fff
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 31]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                \mf
+                                %! MATERIAL_COLOR
+                                \(
+                                [
 
-                                R1 * 5/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 32]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 33]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 34]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 35]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 36]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 37]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 38]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 39]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 40]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 41]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                \mf
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 42]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 7/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 43]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 7/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 44]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 1/2
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 45]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 1/2
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 46]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mf
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak to-barline ##t
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak circled-tip ##t
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 47]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 48]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 49]
@@ -1768,6 +4437,10 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \!
                                 \stopStaff \startStaff
 
                             }
@@ -1796,434 +4469,1246 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
-
-                                R1 * 7/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1..
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \f
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak stencil #abjad-flared-hairpin
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
 
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
-
-                                R1 * 7/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1..
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
 
-                                R1 * 3/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \p
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                \mf
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 5/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 3/4
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 22]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 23]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 24]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \ppp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 25]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 26]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 27]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 28]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 29]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 30]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \fff
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 31]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                \mf
+                                %! MATERIAL_COLOR
+                                \(
+                                [
 
-                                R1 * 5/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 32]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 33]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 34]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
 
-                                R1 * 3/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 35]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
-                                R1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 36]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 37]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 38]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 39]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 40]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 41]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                \mf
+                                %! MATERIAL_COLOR
+                                \(
 
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 42]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 7/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 43]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 7/8
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 44]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 1/2
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 45]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
 
-                                R1 * 1/2
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                ~
+                                ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 46]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mf
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak to-barline ##t
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak circled-tip ##t
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
+                                ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 47]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2.
+                                ~
 
-                                R1 * 5/8
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'2
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 48]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/4
-
-                                R1 * 3/4
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'1.
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 49]
@@ -2231,6 +5716,10 @@
                                 \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \!
                                 _ \colophon
                                 \stopStaff \startStaff
 
