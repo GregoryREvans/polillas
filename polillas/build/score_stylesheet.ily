@@ -8,6 +8,7 @@
 \include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
 \include "../../lib.ily"
 \include "evans.ily"
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/ekmelos-ji-accidental-markups.ily"
 
 \header {
 	tagline = ##f
@@ -193,6 +194,7 @@
 	\context {
 		\Staff
 		\consists Volta_engraver
+		\consists Duration_line_engraver
 		\numericTimeSignature
 		\remove Time_signature_engraver
 		fontSize = #-1

@@ -704,7 +704,7 @@ def make_proportional_notation(selections):
         abjad.attach(transparent_dots_literal, rest)
 
     for note in abjad.select(selections).leaves(pitched=True):
-        abjad.attach(abjad.BendAfter(bend_amount=0), note)
+        abjad.attach(evans.DurationLine(), note)
         style_literal = abjad.LilyPondLiteral(
             r"\duration-line-style", format_slot="before"
         )
@@ -756,3 +756,8 @@ def force_accidental(selections):
         else:
             ex = f"Object must be of type {type(abjad.Note())} or {type(abjad.Chord())}"
             raise Exception(ex)
+
+
+def select_measures(index_list):
+    selector = abjad.select().group_by_measure().get(index_list)
+    return selector
