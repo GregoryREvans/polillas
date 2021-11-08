@@ -206,8 +206,17 @@
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             cs'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
                                             \sfp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
                                             - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
                                             \<
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -215,6 +224,22 @@
                                             \glissando
                                             %! MATERIAL_COLOR
                                             \(
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-markup \damp-markup
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanTwo
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
@@ -298,6 +323,9 @@
                                             \glissando
 
                                             d''4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
                                             \ff
                                             %! MATERIAL_COLOR
                                             \)
@@ -310,6 +338,10 @@
                                         \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanTwo
                                         \stopStaff \startStaff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -337,7 +369,7 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         a'4
                                         \mf
-                                        ^ \markup Normale
+                                        ^ \markup clt.
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -516,27 +548,21 @@
 
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                            r32
+                                            r16
                                             %! MATERIAL_COLOR
                                             \(
-
-                                            r32
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             aqf''32
                                             \p
-                                            ^ \markup Spazzolato
+                                            ^ \markup spazzolato
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             aqf''32
                                             ]
 
-                                            r32
-
-                                            r32
-
-                                            r32
+                                            r16.
 
                                         }
 
@@ -547,11 +573,7 @@
 
                                             cqs''16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -580,17 +602,11 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 15]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             bf''16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c''16
@@ -608,19 +624,11 @@
                                         \times 6/7
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             c''16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -640,11 +648,7 @@
                                             cqs''16
                                             ]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -653,11 +657,7 @@
 
                                             fqs''16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             cqs''16
@@ -667,11 +667,7 @@
                                             bqs'16
                                             ]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -685,11 +681,7 @@
 
                                             bf''16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -716,17 +708,11 @@
                                         \times 8/7
                                         {
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                             aqf''32
 
-                                            r32
-
-                                            r32
-
-                                            r32
+                                            r16.
 
                                             aqf''32
                                             %! MATERIAL_COLOR
@@ -813,7 +799,7 @@
                                         eqs''16
                                         \p
                                         - \tenuto
-                                        ^ \markup Spazzolato
+                                        ^ \markup spazzolato
 
                                         r8
 
@@ -825,18 +811,12 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             dqf''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -848,19 +828,7 @@
                                             d''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4..
 
                                         }
 
@@ -872,9 +840,7 @@
                                             cs''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             fqs''16
                                             - \tenuto
@@ -896,40 +862,26 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             gqf''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
                                         \times 8/9
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
                                             bqf''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             eqs''16
                                             - \tenuto
@@ -961,20 +913,12 @@
                                             d''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             cs''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -986,13 +930,7 @@
                                             fqs''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -1012,7 +950,7 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         d'4
                                         \mf
-                                        ^ \markup Normale
+                                        ^ \markup clt.
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1134,17 +1072,15 @@
 
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                            r16
+                                            r8
                                             %! MATERIAL_COLOR
                                             \(
-
-                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             eqs''16
                                             \p
                                             - \tenuto
-                                            ^ \markup Spazzolato
+                                            ^ \markup spazzolato
                                             [
 
                                             \revert Staff.Stem.stemlet-length
@@ -1152,13 +1088,7 @@
                                             - \tenuto
                                             ]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -1168,13 +1098,7 @@
                                         \times 6/7
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqf''16
@@ -1209,17 +1133,7 @@
                                             - \tenuto
                                             ]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4.
 
                                         }
 
@@ -1229,11 +1143,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 14]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqs''16
@@ -1253,13 +1163,7 @@
                                         \times 8/7
                                         {
 
-                                            r32
-
-                                            r32
-
-                                            r32
-
-                                            r32
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             bqf''32
@@ -1298,26 +1202,14 @@
                                             - \tenuto
                                             ]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -1331,9 +1223,7 @@
                                             - \tenuto
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -1357,11 +1247,7 @@
                                             - \tenuto
                                             ]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -1369,17 +1255,7 @@
                                         \times 8/7
                                         {
 
-                                            r32
-
-                                            r32
-
-                                            r32
-
-                                            r32
-
-                                            r32
-
-                                            r32
+                                            r8.
 
                                             gqf''32
                                             - \tenuto
@@ -1392,13 +1268,7 @@
                                             bqf''16
                                             - \tenuto
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
                                             %! MATERIAL_COLOR
                                             \)
                                             \bar "||"
@@ -1462,13 +1332,38 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 a16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
                                 \sfp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
                                 - \tweak stencil #abjad-flared-hairpin
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
                                 \<
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-markup \damp-markup
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanTwo
                                 [
 
                                 \tweak Accidental.stencil ##f
@@ -1516,7 +1411,14 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 e'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
                                 \ff
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanTwo
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1559,22 +1461,14 @@
                                     ef'16
                                     \p
                                     - \tenuto
-                                    ^ \markup Spazzolato
+                                    ^ \markup spazzolato
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     cqs'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -1588,26 +1482,12 @@
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     g'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4..
 
                                 }
 
@@ -1619,9 +1499,7 @@
                                     eqs'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     af'16
                                     - \tenuto
@@ -1631,24 +1509,14 @@
                                 \times 8/9
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
                                     a'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -1662,24 +1530,12 @@
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4.
 
                                     cqs'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     f'16
                                     - \tenuto
@@ -1694,22 +1550,12 @@
                                     g'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     eqs'16
                                     - \tenuto
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -1722,7 +1568,7 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c2
                                 \mf
-                                ^ \markup Normale
+                                ^ \markup clt.
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -1817,7 +1663,7 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c2
                                 \mf
-                                ^ \markup Normale
+                                ^ \markup clt.
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -1936,15 +1782,41 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 ds,4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
                                 \sfp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
                                 - \tweak stencil #abjad-flared-hairpin
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
                                 \<
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 8
                                 \startTextSpan
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-markup \damp-markup
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanTwo
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 \tweak Accidental.stencil ##f
@@ -2008,6 +1880,9 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 cs,16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
                                 \ff
                                 %! MATERIAL_COLOR
                                 \)
@@ -2020,6 +1895,10 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopTextSpan
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanTwo
                                 \stopStaff \startStaff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2029,18 +1908,25 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \tweak NoteHead.style #'harmonic
                                 e'1
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
                                 \sfp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
                                 \<
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
                                 - \abjad-dashed-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright "molto vibrato" \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright "molto vib." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #2.5
+                                - \tweak staff-padding #5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 8
                                 \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2048,6 +1934,9 @@
 
                                 \tweak NoteHead.style #'harmonic
                                 e'2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
                                 \f
                                 %! MATERIAL_COLOR
                                 \)
@@ -2130,11 +2019,12 @@
                                 \glissando
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 8
                                 \startTextSpan
                                 - \abjad-dashed-line-with-arrow
-                                - \tweak bound-details.left.text \markup \concat { \upright "molto vibrato" \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright "molto vib." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 1.4
-                                - \tweak staff-padding #3
+                                - \tweak staff-padding #5
                                 \startTextSpanOne
 
                                 \tweak NoteHead.style #'harmonic
@@ -2248,9 +2138,9 @@
                                 \)
                                 \stopTextSpanOne
                                 - \abjad-dashed-line-with-hook
-                                - \tweak bound-details.left.text \markup \concat { \upright "senza vibrato" \hspace #0.5 }
+                                - \tweak bound-details.left.text \markup \concat { \upright "non vib." \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
-                                - \tweak staff-padding #3
+                                - \tweak staff-padding #5
                                 \startTextSpanOne
                                 \bar "||"
 

@@ -223,6 +223,14 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -407,6 +415,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \p
                                             %! MATERIAL_COLOR
                                             \)
                                             %! baca.bcps()
@@ -432,6 +444,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
@@ -441,6 +457,14 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak stencil #constante-hairpin
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         %! MATERIAL_COLOR
                                         \(
                                         %! baca.bcps()
@@ -527,6 +551,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \!
                                         %! MATERIAL_COLOR
                                         \)
                                         %! baca.bcps()
@@ -549,6 +577,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \f
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
@@ -558,6 +587,7 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
+                                        \>
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -698,6 +728,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \mf
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \tweak self-alignment-X #left
@@ -707,6 +738,7 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
+                                        \>
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -896,6 +928,14 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'2.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1071,6 +1111,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \p
                                             %! MATERIAL_COLOR
                                             \)
                                             %! baca.bcps()
@@ -1096,6 +1140,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \tweak self-alignment-X #left
@@ -1105,6 +1153,14 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak stencil #constante-hairpin
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         %! MATERIAL_COLOR
                                         \(
                                         %! baca.bcps()
@@ -1200,6 +1256,10 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \!
                                         %! MATERIAL_COLOR
                                         \)
                                         %! baca.bcps()
@@ -1222,6 +1282,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \f
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
@@ -1231,6 +1292,7 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
+                                        \>
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1483,6 +1545,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \mf
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \tweak self-alignment-X #left
@@ -1492,6 +1555,7 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
+                                        \>
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1669,6 +1733,14 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \f
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -1835,6 +1907,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \p
                                     %! MATERIAL_COLOR
                                     \)
                                     %! baca.bcps()
@@ -1860,6 +1936,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \f
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \tweak self-alignment-X #left
@@ -1869,6 +1949,14 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak stencil #constante-hairpin
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
                                 %! baca.bcps()
@@ -1964,6 +2052,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \!
                                 %! MATERIAL_COLOR
                                 \)
                                 %! baca.bcps()
@@ -1986,6 +2078,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                \f
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
                                 - \tweak self-alignment-X #left
@@ -1995,6 +2088,7 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
                                 - \upbow
+                                \>
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
@@ -2425,6 +2519,14 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \f
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
                                 \stopTextSpan
                                 \stopTextSpanOne
                                 ~
@@ -2602,6 +2704,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \p
                                     %! MATERIAL_COLOR
                                     \)
                                     %! baca.bcps()
@@ -2627,6 +2733,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \f
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \tweak self-alignment-X #left
@@ -2636,6 +2746,14 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak stencil #constante-hairpin
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
                                 %! baca.bcps()
@@ -2740,6 +2858,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \!
                                 %! MATERIAL_COLOR
                                 \)
                                 %! baca.bcps()
@@ -2762,6 +2884,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                \f
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \tweak self-alignment-X #left
@@ -2771,6 +2894,7 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
+                                \>
                                 ~
                                 %! MATERIAL_COLOR
                                 \(

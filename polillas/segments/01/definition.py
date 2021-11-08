@@ -36,11 +36,19 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["cs,", "d,", "b,", "f,", "g", "b,,"]),
             polillas.zero_padding_glissando,
             polillas.A_color,
-            abjad.Dynamic("sfp"),
-            abjad.StartHairpin("<|"),
-            evans.Attachment(abjad.Dynamic("ff"), selector=baca.selectors.leaf(-1)),
+            baca.hairpin("sfp <| ff", selector=abjad.select().notes()),
             abjad.Clef("bass"),
             polillas.scordatura,
+        ),
+        evans.call(
+            "cello voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=2,
+                bookend=False,
+            ),
+            polillas.select_measures([0, 1]),
         ),
         evans.MusicCommand(
             [
@@ -54,10 +62,18 @@ maker = evans.SegmentMaker(
             ),
             polillas.zero_padding_glissando,
             polillas.A_color,
-            abjad.Dynamic("sfp"),
-            abjad.StartHairpin("<|"),
-            evans.Attachment(abjad.Dynamic("ff"), selector=abjad.select().leaf(-1)),
+            baca.hairpin("sfp <| ff", selector=abjad.select().notes()),
             preprocessor=polillas.fuse_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=2,
+                bookend=False,
+            ),
+            polillas.select_measures([2, 3, 4]),
         ),
         evans.MusicCommand(
             [
@@ -67,10 +83,19 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["a", "g'", "b", "f'", "c'", "e'"]),
             polillas.zero_padding_glissando,
             polillas.A_color,
-            abjad.Dynamic("sfp"),
-            abjad.StartHairpin("<|"),
-            evans.Attachment(abjad.Dynamic("ff"), selector=abjad.select().leaf(-2)),
+            baca.hairpin("sfp <| ff", selector=abjad.select().notes()),
             preprocessor=polillas.fuse_preprocessor,
+        ),
+        evans.call(
+            "viola voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=2,
+                bookend=False,
+                selector=abjad.select().notes(),
+            ),
+            polillas.select_measures([2, 3, 4]),
         ),
         evans.MusicCommand(
             [
@@ -79,14 +104,12 @@ maker = evans.SegmentMaker(
             evans.Skeleton(r"c'1 ~ c'2."),
             evans.PitchHandler([evans.JIPitch("bf,,", 5, with_quarter_tones=True)]),
             polillas.A_color,
-            abjad.Dynamic("sfp"),
-            abjad.StartHairpin("<"),
-            evans.Attachment(abjad.Dynamic("f"), selector=abjad.select().leaf(-1)),
+            baca.hairpin("sfp < f", selector=abjad.select().notes()),
             evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
             evans.TextSpanHandler(
-                ['"molto vibrato"'],
+                ['"molto vib."'],
                 span_one_style="dashed-line",
-                span_one_padding=2.5,
+                span_one_padding=5,
                 attach_span_one_to="left",
             ),
             preprocessor=polillas.fuse_preprocessor,
@@ -124,7 +147,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
             abjad.Articulation("tenuto"),
             preprocessor=polillas.fuse_quarters_preprocessor_2_1,
@@ -147,7 +170,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
             abjad.Articulation("tenuto"),
             preprocessor=polillas.fuse_quarters_preprocessor_2_1,
@@ -181,7 +204,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -213,7 +236,7 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup Spazzolato", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Articulation("tenuto"),
             abjad.Dynamic("p"),
             preprocessor=polillas.quarters_preprocessor,
@@ -225,7 +248,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[3], stage=1),
             evans.PitchHandler(["a'"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
@@ -239,7 +262,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[2], stage=1),
             evans.PitchHandler(["d'"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
@@ -253,7 +276,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["c"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
@@ -267,7 +290,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["c"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup Normale", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
@@ -311,9 +334,9 @@ maker = evans.SegmentMaker(
         evans.call(
             "cello voice",
             evans.TextSpanHandler(
-                ['"molto vibrato"', '"senza vibrato"'],
+                ['"molto vib."', '"non vib."'],
                 span_one_style="dashed-line",
-                span_one_padding=3,
+                span_one_padding=5,
                 attach_span_one_to="bounds",
                 forget=False,
             ),
@@ -416,6 +439,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
+    extra_rewrite=True,
     # mm_rests=False,
 )
 

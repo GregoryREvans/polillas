@@ -631,14 +631,14 @@
                                                 \duration-line-style
                                                 <
                                                     \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
                                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                                     df'!
+                                                    \tweak Accidental.stencil #ly:text-interface::print
+                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                    ef''!
                                                 >4
                                                 \-
-                                                ^ \markup \center-align \center-column { -19 D+31  }
+                                                ^ \markup \center-align \center-column { D+31 -19  }
 
                                                 \once \override Rest.transparent = ##t
                                                 \once \override Dots.transparent = ##t
@@ -651,14 +651,14 @@
                                             \duration-line-style
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                ef''!
-                                                \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                                 df'!
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                ef''!
                                             >4
                                             \-
-                                            ^ \markup \center-align \center-column { -19 D+31  }
+                                            ^ \markup \center-align \center-column { D+31 -19  }
 
                                             \scaleDurations #'(1 . 1)
                                             {
@@ -672,14 +672,14 @@
                                                 \duration-line-style
                                                 <
                                                     \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
                                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                                     df'!
+                                                    \tweak Accidental.stencil #ly:text-interface::print
+                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                    ef''!
                                                 >4.
                                                 \-
-                                                ^ \markup \center-align \center-column { -19 D+31  }
+                                                ^ \markup \center-align \center-column { D+31 -19  }
 
                                             }
 
@@ -695,14 +695,14 @@
                                                 \duration-line-style
                                                 <
                                                     \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
                                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                                     df'!
+                                                    \tweak Accidental.stencil #ly:text-interface::print
+                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                    ef''!
                                                 >4
                                                 \-
-                                                ^ \markup \center-align \center-column { -19 D+31  }
+                                                ^ \markup \center-align \center-column { D+31 -19  }
 
                                             }
 
@@ -831,14 +831,14 @@
                                             \duration-line-style
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                ef''!
-                                                \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
                                                 f'!
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                                ef''!
                                             >4
                                             \-
-                                            ^ \markup \center-align \center-column { -38 +12  }
+                                            ^ \markup \center-align \center-column { +12 -38  }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -849,14 +849,14 @@
                                             \duration-line-style
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                ef''!
-                                                \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
                                                 f'!
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                                ef''!
                                             >2
                                             \-
-                                            ^ \markup \center-align \center-column { -38 +12  }
+                                            ^ \markup \center-align \center-column { +12 -38  }
 
                                             \tweak TupletBracket.transparent ##t
                                             \tweak TupletNumber.transparent ##t
@@ -872,14 +872,14 @@
                                                 \duration-line-style
                                                 <
                                                     \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
                                                     \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
                                                     f'!
+                                                    \tweak Accidental.stencil #ly:text-interface::print
+                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                                    ef''!
                                                 >4.
                                                 \-
-                                                ^ \markup \center-align \center-column { -38 +12  }
+                                                ^ \markup \center-align \center-column { +12 -38  }
 
                                             }
 
@@ -895,14 +895,14 @@
                                                 \duration-line-style
                                                 <
                                                     \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
                                                     \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
                                                     f'!
+                                                    \tweak Accidental.stencil #ly:text-interface::print
+                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                                    ef''!
                                                 >2.
                                                 \-
-                                                ^ \markup \center-align \center-column { -38 +12  }
+                                                ^ \markup \center-align \center-column { +12 -38  }
 
                                             }
 
@@ -926,14 +926,14 @@
                                             \duration-line-style
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                ef''!
-                                                \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
                                                 f'!
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                                ef''!
                                             >8.
                                             \-
-                                            ^ \markup \center-align \center-column { -38 +12  }
+                                            ^ \markup \center-align \center-column { +12 -38  }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -3249,11 +3249,11 @@
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         d!
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        a!
                                     >2
                                     \-
-                                    ^ \markup \center-align \center-column { +14 +0  }
+                                    ^ \markup \center-align \center-column { +2 +0  }
 
                                     \tweak text #tuplet-number::calc-fraction-text
                                     \tweak TupletBracket.transparent ##t
@@ -3354,11 +3354,11 @@
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         d!
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        g!
+                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                        bf!
                                     >2.
                                     \-
-                                    ^ \markup \center-align \center-column { -2 +0  }
+                                    ^ \markup \center-align \center-column { +14 +0  }
 
                                     \scaleDurations #'(1 . 1)
                                     {
@@ -3456,11 +3456,11 @@
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         d!
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                        af!
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        g!
                                     >2.
                                     \-
-                                    ^ \markup \center-align \center-column { -17 +0  }
+                                    ^ \markup \center-align \center-column { -2 +0  }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -3528,11 +3528,16 @@
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
                                         \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                        af!8
+                                        <
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup { \abjad-natural  }
+                                            d!
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            af!
+                                        >8
                                         \-
-                                        ^ \markup \center-align { -17 }
+                                        ^ \markup \center-align \center-column { -17 +0  }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3604,10 +3609,10 @@
                                         \once \override Dots.transparent = ##t
                                         \duration-line-style
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        g!8
+                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                        af!8
                                         \-
-                                        ^ \markup \center-align { -2 }
+                                        ^ \markup \center-align { -17 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3682,10 +3687,10 @@
                                         \once \override Dots.transparent = ##t
                                         \duration-line-style
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
-                                        gf!4.
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        g!4.
                                         \-
-                                        ^ \markup \center-align { +27 }
+                                        ^ \markup \center-align { -2 }
 
                                         \once \override Rest.transparent = ##t
                                         \once \override Dots.transparent = ##t
@@ -3733,10 +3738,10 @@
                                         \once \override Dots.transparent = ##t
                                         \duration-line-style
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                        d!4.
+                                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
+                                        gf!4.
                                         \-
-                                        ^ \markup \center-align { C♯+47 }
+                                        ^ \markup \center-align { +27 }
 
                                     }
 
@@ -3776,16 +3781,11 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
-                                    <
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                        f!
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        af,!
-                                    >4
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
+                                    d!4
                                     \-
-                                    ^ \markup \center-align \center-column { +10 +43  }
+                                    ^ \markup \center-align { C♯+47 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3796,14 +3796,14 @@
                                     \duration-line-style
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                        f!
-                                        \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         af,!
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
+                                        f!
                                     >4.
                                     \-
-                                    ^ \markup \center-align \center-column { +10 +43  }
+                                    ^ \markup \center-align \center-column { +43 +10  }
 
                                     \tweak TupletBracket.transparent ##t
                                     \tweak TupletNumber.transparent ##t
@@ -3822,11 +3822,11 @@
                                             \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                             af,!
                                             \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            gf!
+                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
+                                            f!
                                         >4
                                         \-
-                                        ^ \markup \center-align \center-column { -21 +10  }
+                                        ^ \markup \center-align \center-column { +43 +10  }
 
                                     }
 

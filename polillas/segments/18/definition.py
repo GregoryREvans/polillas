@@ -341,6 +341,11 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
+            abjad.Markup(r"""\rehearsal-mark-markup "x7" 6 -1""", literal=True),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Global Context",
             polillas.mark_72,
             baca.selectors.leaf(0),
         ),
@@ -404,7 +409,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    # mm_rests=False,
+    extra_rewrite=False,
     # mm_rests=False,
 )
 

@@ -171,6 +171,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
+    extra_rewrite=False,
     # mm_rests=False,
 )
 

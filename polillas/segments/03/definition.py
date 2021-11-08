@@ -31,6 +31,8 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Markup(r"\markup {arco norm.}", literal=True, direction=abjad.Up),
+            baca.hairpin("mp < f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -42,6 +44,8 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Markup(r"\markup {arco norm.}", literal=True, direction=abjad.Up),
+            baca.hairpin("mp < f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -53,6 +57,8 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Markup(r"\markup {arco norm.}", literal=True, direction=abjad.Up),
+            baca.hairpin("mp < f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -61,6 +67,7 @@ maker = evans.SegmentMaker(
             polillas.knots(stage=1),
             abjad.Markup(r"\markup clb.", literal=True, direction=abjad.Up),
             abjad.Articulation("staccato"),
+            abjad.Dynamic("ff"),
             polillas.F_color,
             preprocessor=polillas.fuse_preprocessor,
         ),
@@ -72,9 +79,45 @@ maker = evans.SegmentMaker(
                 ("cello voice", 4),
             ],
             polillas.flight(stage=2),
-            abjad.trill_spanner,
+            evans.PitchHandler([[1, 2], [1, 3]], forget=False),
+            baca.hairpin("mf < f", selector=abjad.select().leaves(pitched=True)),
+            baca.text_spanner(
+                r"pont. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
+            baca.text_spanner(
+                r"1/2 scratch =|",
+                (abjad.tweak(7).staff_padding, 0),
+                lilypond_id=2,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
+            abjad.Markup(r"\markup arco", literal=True, direction=abjad.Up),
             polillas.D_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False, only_chords=False),
+            polillas.select_measures([4, 5]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False, only_chords=False),
+            polillas.select_measures([4, 5]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False, only_chords=False),
+            polillas.select_measures([4, 5]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False, only_chords=False),
+            polillas.select_measures([4, 5]),
         ),
         evans.MusicCommand(
             [("violin 1 voice", 6)],
@@ -82,6 +125,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -91,6 +135,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -100,6 +145,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -109,6 +155,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -120,6 +167,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("mf"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -131,6 +179,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("mf"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -142,6 +191,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("mf"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -153,6 +203,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("mf"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -208,6 +259,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -219,6 +271,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -230,6 +283,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            abjad.Dynamic("f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -241,6 +295,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[0, 1],
                 vector_forget=False,
             ),
+            abjad.Dynamic("f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -252,6 +307,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            baca.hairpin("f > p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -263,6 +319,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            baca.hairpin("f > p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -274,6 +331,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
+            baca.hairpin("f > p"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -284,10 +342,8 @@ maker = evans.SegmentMaker(
                 ("viola voice", (18, 23)),
             ],
             polillas.chilled(stage=1),
-            evans.Attachment(
-                abjad.Glissando(),
-                selector=baca.selectors.leaf(0),
-            ),
+            polillas.alternate_glissandi,
+            polillas.swell_dynamics,
             polillas.E_color,
         ),
         # evans.attach("violin 2 voice", abjad.Glissando(), baca.selectors.leaf(107)),
@@ -301,6 +357,8 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[0, 0, 1], vector_forget=False
             ),
+            polillas.cello_swell_dynamics,
+            polillas.cello_alternate_glissandi,
             polillas.E_color,
         ),
         # evans.attach("cello voice", abjad.Glissando(), baca.selectors.leaf(59)),
@@ -496,6 +554,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
+    extra_rewrite=False,
     # mm_rests=False,
 )
 

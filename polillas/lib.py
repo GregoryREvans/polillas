@@ -491,9 +491,7 @@ def select_run_first_leaves(selections):
 # Scordatura
 
 scordatura = evans.ScordaturaHandler(
-    string_number="IV",
-    default_pitch="c,",
-    new_pitch="bf,,",
+    string_number="IV", default_pitch="c,", new_pitch="bf,,", padding=8
 )
 
 
@@ -759,5 +757,65 @@ def force_accidental(selections):
 
 
 def select_measures(index_list):
-    selector = abjad.select().group_by_measure().get(index_list)
+    selector = abjad.select().leaves().group_by_measure().get(index_list)
     return selector
+
+
+hairpins = evans.CyclicList(["<", "<|", "<", "<", "<", "<", "<|", "<"], forget=False)
+
+
+def swell_dynamics(selections):
+    pairs = (
+        abjad.select(selections)
+        .logical_ties()
+        .partition_by_counts([2], cyclic=True, overhang=False)
+    )
+    for pair in pairs:
+        next_hairpin = hairpins(r=1)[0]
+        hairpin_string = "p " + next_hairpin + " f"
+        hairpin = baca.hairpin(hairpin_string)
+        hairpin(pair)
+
+
+_hairpins = evans.CyclicList(["<", "<|"], forget=False)
+
+
+def cello_swell_dynamics(selections):
+    pairs = (
+        abjad.select(selections)
+        .logical_ties()
+        .partition_by_counts([2, 1], cyclic=True, overhang=False)
+    )
+    for i, pair in enumerate(pairs):
+        if i % 2 != 0:
+            abjad.attach(abjad.Dynamic("mf"), abjad.select(pair).leaf(0))
+        else:
+            next_hairpin = _hairpins(r=1)[0]
+            hairpin_string = "p " + next_hairpin + " f"
+            hairpin = baca.hairpin(hairpin_string)
+            hairpin(pair)
+
+
+def alternate_glissandi(selections):
+    pairs = (
+        abjad.select(selections)
+        .logical_ties()
+        .partition_by_counts([2], cyclic=True, overhang=False)
+    )
+    for pair in pairs:
+        abjad.attach(abjad.Glissando(), pair[0][-1])
+
+
+def cello_alternate_glissandi(selections):
+    pairs = (
+        abjad.select(selections)
+        .logical_ties()
+        .partition_by_counts([2, 1], cyclic=True, overhang=False)
+    )
+    for i, pair in enumerate(pairs):
+        if i % 2 == 0:
+            abjad.attach(abjad.Glissando(), pair[0][-1])
+
+
+def trill_ties(selections):
+    abjad.trill_spanner(selections, selector=abjad.select().notes())
