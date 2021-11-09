@@ -713,6 +713,8 @@ def make_proportaional_global_context(selections):
     leaves = abjad.select(selections).leaves()
     leaves_count = len(leaves)
     for i, leaf in enumerate(leaves):
+        if i == 0:  # Experimental
+            continue
         if i != leaves_count:
             bar_literal = abjad.LilyPondLiteral(
                 r"\once \override Score.BarLine.stencil = ##f", format_slot="before"
@@ -819,3 +821,41 @@ def cello_alternate_glissandi(selections):
 
 def trill_ties(selections):
     abjad.trill_spanner(selections, selector=abjad.select().notes())
+
+
+start_bis_trill_one = abjad.LilyPondLiteral(
+    [
+        r"- \tweak bound-details.left.text \double-diamond-parenthesized-top-markup",
+        r"\startTrillSpan",
+    ],
+    format_slot="after",
+)
+
+start_bis_trill_two = abjad.LilyPondLiteral(
+    [
+        r"- \tweak bound-details.left.text \diamond-parenthesized-double-diamond-markup",
+        r"\startTrillSpan",
+    ],
+    format_slot="after",
+)
+
+stop_bis_trill = abjad.StopTrillSpan()
+
+
+multi_stac = evans.ArticulationHandler(
+    articulation_list=[
+        "tongue #2",
+        "tongue #2",
+        "tongue #3",
+        "tongue #2",
+        "tongue #2",
+        "tongue #2",
+        "tongue #3",
+        "tongue #2",
+        "tongue #3",
+        "tongue #3",
+    ],
+    articulation_boolean_vector=[1],
+    vector_forget=False,
+    forget=False,
+)

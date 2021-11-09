@@ -34,6 +34,9 @@
                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
                   }
                 }
+                \once \override Score.BarLine.X-extent = #'(0.5 . 3)
+                \once \override Score.BarLine.thick-thickness = #3
+                \bar ".|:"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -55,6 +58,9 @@
                 %! scaling time signatures
                 \time 4/4
                 s1 * 1
+                \once \override Score.BarLine.X-extent = #'(1 . 2)
+                \once \override Score.BarLine.thick-thickness = #3
+                \bar ":|."
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -276,12 +282,29 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \pp
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             %! MATERIAL_COLOR
                                             \(
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-markup \damp-markup
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanTwo
 
                                             \times 2/3
                                             {
@@ -498,6 +521,28 @@
 
                                         }
 
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'16.
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'8.
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -510,54 +555,6 @@
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'32
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'32
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        [
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'16.
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
@@ -856,6 +853,10 @@
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
                                             c'8
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanTwo
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -873,10 +874,20 @@
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
                                         c'2.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \pp
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
+                                        - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
+                                        \startTrillSpan
 
                                         \times 2/3
                                         {
@@ -960,7 +971,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
@@ -971,22 +981,40 @@
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        [
 
-                                        \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        c'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        ]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'4.
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'4.
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
@@ -997,68 +1025,6 @@
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'4
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'4
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
@@ -1354,8 +1320,13 @@
                                                 %! PITCH
                                                 \evans-not-yet-pitched-coloring
                                                 c'8
+                                                %! baca.hairpin()
+                                                %! baca.PiecewiseCommand._call(3)
+                                                %! SPANNER_STOP
+                                                \ff
                                                 %! MATERIAL_COLOR
                                                 \)
+                                                \stopTrillSpan
                                                 ]
 
                                             }
@@ -1402,9 +1373,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                         }
 
@@ -1445,7 +1414,9 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
-                                        r8
+                                        r16
+
+                                        r16
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
@@ -1486,9 +1457,7 @@
                                         \times 8/7
                                         {
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -1537,6 +1506,8 @@
                                         \glissando
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
+                                        \startTrillSpan
 
                                         \times 2/3
                                         {
@@ -1610,6 +1581,7 @@
                                         c'16
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1652,9 +1624,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -1685,9 +1655,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1726,9 +1694,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -1759,9 +1725,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                         }
 
@@ -1806,9 +1770,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -1841,7 +1803,9 @@
 
                                         }
 
-                                        r8
+                                        r16
+
+                                        r16
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
@@ -1884,9 +1848,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -1919,9 +1881,7 @@
 
                                         }
 
-                                        r4
-
-                                        r4
+                                        r2
 
                                         \times 4/5
                                         {
@@ -1955,9 +1915,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -2002,9 +1960,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -2072,7 +2028,9 @@
                                         c'16
                                         - \staccato
 
-                                        r2.
+                                        r2
+
+                                        r4
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -2088,13 +2046,25 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
                                             %! MATERIAL_COLOR
                                             \(
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2102,41 +2072,75 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak stencil #abjad-flared-hairpin
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
+                                        c'4.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ]
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -2149,10 +2153,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2160,12 +2177,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -2178,10 +2208,27 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2195,10 +2242,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2206,12 +2266,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -2224,10 +2297,27 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2241,10 +2331,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2252,12 +2355,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -2270,10 +2386,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -2281,12 +2410,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -2299,10 +2441,27 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
                                             %! MATERIAL_COLOR
                                             \)
                                             \bar "||"
@@ -2345,12 +2504,29 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            \pp
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             %! MATERIAL_COLOR
                                             \(
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-markup \damp-markup
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanTwo
                                             [
 
                                             %! PITCH
@@ -2542,66 +2718,40 @@
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'32
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'16
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        c'16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        c'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        [
 
-                                        \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        c'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
@@ -2615,17 +2765,6 @@
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'16
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -2925,6 +3064,10 @@
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
                                                 c'16
+                                                %! baca.text_spanner()
+                                                %! baca.PiecewiseCommand._call(4)
+                                                %! SPANNER_STOP
+                                                \stopTextSpanTwo
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2948,10 +3091,20 @@
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \pp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
+                                            - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
+                                            \startTrillSpan
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -3124,7 +3277,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
@@ -3135,90 +3287,13 @@
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'32
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8.
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'16
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'4
+                                        c'8..
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3229,7 +3304,18 @@
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        c'4..
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'4..
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3355,8 +3441,13 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \ff
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -3469,9 +3560,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -3550,9 +3639,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -3594,9 +3681,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -3672,7 +3757,9 @@
 
                                         }
 
-                                        r8
+                                        r16
+
+                                        r16
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
@@ -3716,7 +3803,6 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
@@ -3726,22 +3812,42 @@
                                         \glissando
                                         %! MATERIAL_COLOR
                                         \(
-                                        [
+                                        - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
+                                        \startTrillSpan
 
-                                        \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        c'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        ]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'4.
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        \tweak Accidental.stencil ##f
+                                        \tweak X-extent #'(0 . 0)
+                                        \tweak transparent ##t
+                                        c'4.
+                                        %! abjad.glissando(7)
+                                        - \abjad-zero-padding-glissando
+                                        %! abjad.glissando(7)
+                                        \glissando
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
@@ -3752,68 +3858,6 @@
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'4
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'4
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
@@ -3834,6 +3878,7 @@
                                         c'8
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -3876,9 +3921,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                         }
 
@@ -3918,9 +3961,7 @@
                                             - \staccato
                                             ]
 
-                                            r32
-
-                                            r32
+                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -3961,9 +4002,7 @@
 
                                         }
 
-                                        r4
-
-                                        r4
+                                        r2
 
                                         \times 2/3
                                         {
@@ -3973,9 +4012,7 @@
                                             c'16
                                             - \staccato
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -4006,9 +4043,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -4053,9 +4088,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
@@ -4135,9 +4168,7 @@
                                             - \staccato
                                             ]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -4157,13 +4188,25 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
-                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
                                             %! MATERIAL_COLOR
                                             \(
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4171,41 +4214,75 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
+                                        c'4.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak stencil #abjad-flared-hairpin
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ]
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -4218,10 +4295,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4229,12 +4319,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -4247,10 +4350,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4264,10 +4380,27 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4275,12 +4408,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -4293,10 +4439,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4310,10 +4469,27 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak stencil #abjad-flared-hairpin
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4321,12 +4497,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -4339,10 +4528,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
 
                                         }
 
@@ -4350,12 +4552,25 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
+                                        \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -4368,10 +4583,23 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \p
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
+                                            \glissando
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \f
                                             %! MATERIAL_COLOR
                                             \)
                                             \bar "||"
@@ -4418,12 +4646,29 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    \pp
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     %! MATERIAL_COLOR
                                     \(
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-markup \damp-markup
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanTwo
                                     [
 
                                     %! PITCH
@@ -4931,6 +5176,28 @@
 
                                 }
 
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
+                                c'16.
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
+                                c'8.
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
+
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -4944,17 +5211,6 @@
                                 \glissando
                                 [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'32
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -4962,43 +5218,10 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 c'8
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'32
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-                                [
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'16.
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'8
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanTwo
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5014,10 +5237,20 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \pp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -5363,8 +5596,13 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \ff
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
                                     ]
 
                                 }
@@ -5409,9 +5647,7 @@
                                     - \staccato
                                     ]
 
-                                    r32
-
-                                    r32
+                                    r16
 
                                 }
 
@@ -5452,7 +5688,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
-                                r8
+                                r16
+
+                                r16
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
@@ -5493,9 +5731,7 @@
                                 \times 8/7
                                 {
 
-                                    r32
-
-                                    r32
+                                    r16
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -5531,9 +5767,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -5578,9 +5812,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -5613,7 +5845,9 @@
 
                                 }
 
-                                r8
+                                r16
+
+                                r16
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
@@ -5652,6 +5886,8 @@
                                         \glissando
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
+                                        \startTrillSpan
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -5715,6 +5951,7 @@
                                     c'4
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -5745,9 +5982,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -5822,9 +6057,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -5866,56 +6099,47 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 c'1.
                                 \sfp
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! MATERIAL_COLOR
                                 \(
-                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
+                                b2.
+                                %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
+                                bf1
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2
+                                bf4
+                                %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1..
+                                a1..
+                                %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 21]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
+                                af1
+                                %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 22]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 c'2.
                                 %! MATERIAL_COLOR
                                 \)
@@ -5932,13 +6156,29 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
                                     %! MATERIAL_COLOR
                                     \(
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -5946,12 +6186,25 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                \glissando
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -5964,10 +6217,23 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -5981,10 +6247,27 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -5992,12 +6275,25 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                \glissando
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -6010,10 +6306,23 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -6021,12 +6330,25 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                \glissando
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -6039,10 +6361,23 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
                                     %! MATERIAL_COLOR
                                     \)
                                     \bar "||"
@@ -6084,60 +6419,29 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16.
+                                \pp
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 %! MATERIAL_COLOR
                                 \(
-                                [
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'32
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'16
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'16
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'8
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-markup \damp-markup
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanTwo
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -6146,12 +6450,34 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                c'16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 ]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
+                                c'8.
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
+                                c'8.
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
@@ -6165,17 +6491,6 @@
                                 %! abjad.glissando(7)
                                 \glissando
                                 [
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'16
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -6471,115 +6786,95 @@
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
                                         c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanTwo
                                         ]
 
                                     }
 
                                 }
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 5]
+
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                r2
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
                                 {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 5]
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'32
+                                    \fff
+                                    - \staccato
+
+                                    r32
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    \tweak Accidental.stencil ##f
-                                    \tweak X-extent #'(0 . 0)
-                                    \tweak transparent ##t
-                                    c'8
-                                    %! abjad.glissando(7)
-                                    - \abjad-zero-padding-glissando
-                                    %! abjad.glissando(7)
-                                    \glissando
+                                    c'32
+                                    - \staccato
                                     [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    \tweak Accidental.stencil ##f
-                                    \tweak X-extent #'(0 . 0)
-                                    \tweak transparent ##t
-                                    c'8
-                                    %! abjad.glissando(7)
-                                    - \abjad-zero-padding-glissando
-                                    %! abjad.glissando(7)
-                                    \glissando
-
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    \tweak Accidental.stencil ##f
-                                    \tweak X-extent #'(0 . 0)
-                                    \tweak transparent ##t
-                                    c'8
-                                    %! abjad.glissando(7)
-                                    - \abjad-zero-padding-glissando
-                                    %! abjad.glissando(7)
-                                    \glissando
-
-                                    \times 2/3
-                                    {
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'8
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        \tweak Accidental.stencil ##f
-                                        \tweak X-extent #'(0 . 0)
-                                        \tweak transparent ##t
-                                        c'4
-                                        %! abjad.glissando(7)
-                                        - \abjad-zero-padding-glissando
-                                        %! abjad.glissando(7)
-                                        \glissando
-
-                                    }
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    \tweak Accidental.stencil ##f
-                                    \tweak X-extent #'(0 . 0)
-                                    \tweak transparent ##t
-                                    c'8
-                                    %! abjad.glissando(7)
-                                    - \abjad-zero-padding-glissando
-                                    %! abjad.glissando(7)
-                                    \glissando
-                                    [
+                                    c'32
+                                    - \staccato
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    \tweak Accidental.stencil ##f
-                                    \tweak X-extent #'(0 . 0)
-                                    \tweak transparent ##t
-                                    c'8
-                                    %! abjad.glissando(7)
-                                    - \abjad-zero-padding-glissando
-                                    %! abjad.glissando(7)
-                                    \glissando
+                                    c'32
+                                    - \staccato
+                                    ]
+
+                                    r16
+
+                                }
+
+                                \times 4/5
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    [
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'16
+                                    - \staccato
+                                    %! MATERIAL_COLOR
+                                    \)
                                     ]
 
                                 }
@@ -6591,16 +6886,20 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 6]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
-                                    \tweak Accidental.stencil ##f
-                                    \tweak X-extent #'(0 . 0)
-                                    \tweak transparent ##t
                                     c'4.
+                                    \pp
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    - \tweak bound-details.left.text \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \times 2/3
                                     {
@@ -6692,6 +6991,14 @@
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \pp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -6811,7 +7118,6 @@
 
                                 }
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
@@ -6822,46 +7128,18 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'16
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                c'4.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                \tweak Accidental.stencil ##f
-                                \tweak X-extent #'(0 . 0)
-                                \tweak transparent ##t
-                                c'16
-                                %! abjad.glissando(7)
-                                - \abjad-zero-padding-glissando
-                                %! abjad.glissando(7)
-                                \glissando
-                                [
-
-                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
@@ -6872,13 +7150,17 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
-                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \mf
                                 %! MATERIAL_COLOR
                                 \)
+                                \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
@@ -6920,9 +7202,7 @@
                                     - \staccato
                                     ]
 
-                                    r32
-
-                                    r32
+                                    r16
 
                                 }
 
@@ -6958,9 +7238,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7003,9 +7281,7 @@
                                 \times 8/7
                                 {
 
-                                    r32
-
-                                    r32
+                                    r16
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7058,6 +7334,8 @@
                                     \glissando
                                     %! MATERIAL_COLOR
                                     \(
+                                    - \tweak bound-details.left.text \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \times 2/3
                                     {
@@ -7127,6 +7405,7 @@
                                     c'8
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
                                     ]
 
                                 }
@@ -7172,9 +7451,7 @@
                                     - \staccato
                                     ]
 
-                                    r32
-
-                                    r32
+                                    r16
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7261,9 +7538,7 @@
                                     c'16
                                     - \staccato
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7305,9 +7580,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -7333,6 +7606,8 @@
                                     %! MATERIAL_COLOR
                                     \(
                                     [
+                                    - \tweak bound-details.left.text \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -7404,6 +7679,7 @@
                                         c'4
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
 
                                     }
 
@@ -7427,9 +7703,7 @@
                                     \f
                                     - \staccato
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7460,9 +7734,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -7510,9 +7782,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7554,9 +7824,7 @@
                                     - \staccato
                                     ]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
@@ -7598,7 +7866,9 @@
                                 - \staccato
                                 ]
 
-                                r8
+                                r16
+
+                                r16
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
@@ -7666,12 +7936,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'1
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -7711,13 +7981,29 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
-                                    \mp
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
                                     %! MATERIAL_COLOR
                                     \(
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -7725,12 +8011,25 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                \glissando
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -7743,10 +8042,23 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -7760,10 +8072,27 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -7771,12 +8100,25 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                \glissando
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -7789,10 +8131,23 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
 
                                 }
 
@@ -7800,12 +8155,25 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                \glissando
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -7818,10 +8186,23 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \p
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \<
+                                    \glissando
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
                                     %! MATERIAL_COLOR
                                     \)
                                     \bar "||"

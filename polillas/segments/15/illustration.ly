@@ -22,7 +22,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=40
+                \tempo 4=20
                 \once \override Score.BarLine.stencil = ##f
                 \once \override Score.SpanBar.stencil = ##f
                 \once \override Score.TimeSignature.stencil = #(blank-time-signature)
@@ -41,7 +41,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'06'' }
+                ^ \markup { 0'13'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
@@ -52,7 +52,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'12'' }
+                ^ \markup { 0'25'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
@@ -63,7 +63,7 @@
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                ^ \markup { 0'18'' }
+                ^ \markup { 0'36'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -74,7 +74,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'24'' }
+                ^ \markup { 0'49'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
@@ -85,7 +85,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'30'' }
+                ^ \markup { 1'01'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -96,7 +96,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'36'' }
+                ^ \markup { 1'12'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
@@ -107,7 +107,7 @@
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup { 0'42'' }
+                ^ \markup { 1'24'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
@@ -118,7 +118,7 @@
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup { 0'46'' }
+                ^ \markup { 1'33'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
@@ -129,7 +129,7 @@
                 %! scaling time signatures
                 \time 5/8
                 s1 * 5/8
-                ^ \markup { 0'51'' }
+                ^ \markup { 1'42'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 11]
@@ -140,7 +140,7 @@
                 %! scaling time signatures
                 \time 4/8
                 s1 * 1/2
-                ^ \markup { 0'54'' }
+                ^ \markup { 1'49'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 12]
@@ -151,7 +151,7 @@
                 %! scaling time signatures
                 \time 3/8
                 s1 * 3/8
-                ^ \markup { 0'57'' }
+                ^ \markup { 1'55'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 13]
@@ -162,7 +162,7 @@
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                ^ \markup { 1'00'' }
+                ^ \markup { 2'00'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
@@ -173,7 +173,7 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 1'06'' }
+                ^ \markup { 2'13'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 15]
@@ -184,7 +184,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 1'12'' }
+                ^ \markup { 2'25'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
@@ -195,7 +195,7 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 1'18'' }
+                ^ \markup { 2'36'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -291,208 +291,120 @@
                                     \context Voice = "violin 1 voice"
                                     {
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \tweak TupletBracket.transparent ##t
-                                        \tweak TupletNumber.transparent ##t
-                                        \times 17/32
+                                        \scaleDurations #'(1 . 1)
                                         {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 1]
 
-                                            \scaleDurations #'(1 . 1)
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 1]
-
-                                                %! applying staff names and clefs
-                                                \set Staff.shortInstrumentName =
-                                                %! applying staff names and clefs
-                                                \markup { \hcenter-in #12 "vn. I" }
-                                                %! applying staff names and clefs
-                                                \set Staff.instrumentName =
-                                                %! applying staff names and clefs
-                                                \markup { \hcenter-in #14 "Violin I" }
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                %! MATERIAL_COLOR
-                                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-septimal-comma-down  }
-                                                c''!2
-                                                \-
-                                                ^ \markup \center-align { -31 }
-                                                %! MATERIAL_COLOR
-                                                \(
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r2
-
-                                            }
-
+                                            %! applying staff names and clefs
+                                            \set Staff.shortInstrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #12 "vn. I" }
+                                            %! applying staff names and clefs
+                                            \set Staff.instrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #14 "Violin I" }
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-down  }
                                             c''!1
                                             \-
                                             ^ \markup \center-align { -31 }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r2
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                                b'!1
-                                                \-
-                                                ^ \markup \center-align { +33 }
-
-                                            }
+                                            %! MATERIAL_COLOR
+                                            \(
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r4.
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 2]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                            b'!8
+                                            b'!1
                                             \-
                                             ^ \markup \center-align { +33 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2
+                                            r8
 
                                         }
 
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 8/11
+                                        \times 8/9
                                         {
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 6/5
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 3]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                                b'!4.
-                                                \-
-                                                ^ \markup \center-align { +33 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 3]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            ef'!2
+                                            ef'!2..
                                             \-
                                             ^ \markup \center-align { E-35 }
 
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                ef'!8
-                                                \-
-                                                ^ \markup \center-align { E-35 }
-
-                                            }
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                ef'!4.
-                                                \-
-                                                ^ \markup \center-align { E-35 }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2
+                                            r16..
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 4]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            ef'!1
+                                            \-
+                                            ^ \markup \center-align { E-35 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
+
+                                        }
+
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 3/4
+                                        \times 8/9
                                         {
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 5]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                ef'!4.
-                                                \-
-                                                ^ \markup \center-align { E-35 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 5]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                            a'!4
+                                            a'!1
                                             \-
                                             ^ \markup \center-align { A♭+49 }
 
@@ -500,151 +412,38 @@
                                             \once \override Dots.transparent = ##t
                                             r8
 
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            \duration-line-style
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                            a'!4.
-                                            \-
-                                            ^ \markup \center-align { A♭+49 }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                                a'!4
-                                                \-
-                                                ^ \markup \center-align { A♭+49 }
-
-                                            }
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            r2.
-
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 7/9
+                                        \times 8/9
                                         {
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 7]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                                a'!2
-                                                \-
-                                                ^ \markup \center-align { A♭+49 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 6]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            ef'!2
+                                            ef'!2..
                                             \-
                                             ^ \markup \center-align { E-35 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r8.
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            \duration-line-style
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            ef'!16
-                                            \-
-                                            ^ \markup \center-align { E-35 }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 4/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                ef'!8.
-                                                \-
-                                                ^ \markup \center-align { E-35 }
-
-                                            }
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            r2.
+                                            r16..
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 11/20
+                                        \times 8/9
                                         {
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 9]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    df'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >4
-                                                \-
-                                                ^ \markup \center-align \center-column { D+31 -19  }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r2
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 7]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -656,95 +455,51 @@
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                                 ef''!
-                                            >4
+                                            >1
                                             \-
                                             ^ \markup \center-align \center-column { D+31 -19  }
 
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    df'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >4.
-                                                \-
-                                                ^ \markup \center-align \center-column { D+31 -19  }
-
-                                            }
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    df'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >4
-                                                \-
-                                                ^ \markup \center-align \center-column { D+31 -19  }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2
+                                            r8
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 7/10
+                                        \times 2/3
                                         {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 8]
 
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 11]
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            <
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                df'!
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                ef''!
+                                            >1
+                                            \-
+                                            ^ \markup \center-align \center-column { D+31 -19  }
 
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    df'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >8
-                                                \-
-                                                ^ \markup \center-align \center-column { +12 -19  }
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
 
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r16
+                                        }
 
-                                            }
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 9]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -756,93 +511,52 @@
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                                 ef''!
-                                            >4.
+                                            >1
                                             \-
                                             ^ \markup \center-align \center-column { +12 -19  }
 
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r16
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    df'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >8
-                                                \-
-                                                ^ \markup \center-align \center-column { +12 -19  }
-
-                                            }
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 6/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                    df'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >8
-                                                \-
-                                                ^ \markup \center-align \center-column { +12 -19  }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r4
+                                            r8
 
                                         }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 17/32
+                                        \times 20/27
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 1 voice measure 13]
+                                            % [violin 1 voice measure 10]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                                f'!
+                                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                                df'!
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                                 ef''!
-                                            >4
+                                            >2.
                                             \-
-                                            ^ \markup \center-align \center-column { +12 -38  }
+                                            ^ \markup \center-align \center-column { +12 -19  }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2.
+                                            r16.
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 11]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -858,68 +572,19 @@
                                             \-
                                             ^ \markup \center-align \center-column { +12 -38  }
 
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 4/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                                    f'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >4.
-                                                \-
-                                                ^ \markup \center-align \center-column { +12 -38  }
-
-                                            }
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r2.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                <
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                                    f'!
-                                                    \tweak Accidental.stencil #ly:text-interface::print
-                                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                    ef''!
-                                                >2.
-                                                \-
-                                                ^ \markup \center-align \center-column { +12 -38  }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2
+                                            r16
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 7/8
+                                        \times 2/3
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [violin 1 voice measure 15]
+                                            % [violin 1 voice measure 12]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -931,7 +596,7 @@
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                                 ef''!
-                                            >8.
+                                            >2
                                             \-
                                             ^ \markup \center-align \center-column { +12 -38  }
 
@@ -939,59 +604,100 @@
                                             \once \override Dots.transparent = ##t
                                             r16
 
+                                        }
+
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 13]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            <
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
+                                                f'!
+                                                \tweak Accidental.stencil #ly:text-interface::print
+                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                                ef''!
+                                            >1
+                                            \-
+                                            ^ \markup \center-align \center-column { +12 -38  }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 14]
+
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                            ef''!4
+                                            ef''!1
                                             \-
                                             ^ \markup \center-align { +12 }
 
-                                            \scaleDurations #'(1 . 1)
-                                            {
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
 
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
+                                        }
 
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                ef''!4
-                                                \-
-                                                ^ \markup \center-align { +12 }
-
-                                            }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 1 voice measure 16]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r2
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                                ef''!4
-                                                \-
-                                                ^ \markup \center-align { +12 }
-
-                                            }
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 15]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                            ef''!2..
+                                            \-
+                                            ^ \markup \center-align { +12 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16..
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 1 voice measure 16]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                            ef''!2..
+                                            \-
+                                            ^ \markup \center-align { +12 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16..
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -1343,90 +1049,36 @@
                                     \context Voice = "violin 2 voice"
                                     {
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \tweak TupletBracket.transparent ##t
-                                        \tweak TupletNumber.transparent ##t
-                                        \times 17/20
+                                        \scaleDurations #'(1 . 1)
                                         {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 1]
 
-                                            \scaleDurations #'(1 . 1)
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 1]
-
-                                                %! applying staff names and clefs
-                                                \set Staff.shortInstrumentName =
-                                                %! applying staff names and clefs
-                                                \markup { \hcenter-in #12 "vn. II" }
-                                                %! applying staff names and clefs
-                                                \set Staff.instrumentName =
-                                                %! applying staff names and clefs
-                                                \markup { \hcenter-in #14 "Violin II" }
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                %! MATERIAL_COLOR
-                                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
-                                                g'!4.
-                                                \-
-                                                ^ \markup \center-align { A♭-49 }
-                                                %! MATERIAL_COLOR
-                                                \(
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                            }
-
+                                            %! applying staff names and clefs
+                                            \set Staff.shortInstrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #12 "vn. II" }
+                                            %! applying staff names and clefs
+                                            \set Staff.instrumentName =
+                                            %! applying staff names and clefs
+                                            \markup { \hcenter-in #14 "Violin II" }
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
-                                            g'!4
+                                            g'!1
                                             \-
                                             ^ \markup \center-align { A♭-49 }
+                                            %! MATERIAL_COLOR
+                                            \(
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r8
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            \duration-line-style
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
-                                            g'!4.
-                                            \-
-                                            ^ \markup \center-align { A♭-49 }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                                f'!4
-                                                \-
-                                                ^ \markup \center-align { +16 }
-
-                                            }
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            r2.
 
                                         }
 
@@ -1434,245 +1086,164 @@
                                         \tweak TupletNumber.transparent ##t
                                         \times 8/9
                                         {
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 3]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                                f'!2
-                                                \-
-                                                ^ \markup \center-align { +16 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 2]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                            f'!2
+                                            f'!1
                                             \-
                                             ^ \markup \center-align { +16 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r8.
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 3]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                            f'!16
+                                            f'!2..
                                             \-
                                             ^ \markup \center-align { +16 }
 
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 4/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                                f'!8.
-                                                \-
-                                                ^ \markup \center-align { +16 }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2.
+                                            r16..
 
                                         }
 
                                         \scaleDurations #'(1 . 1)
                                         {
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 5]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                                f'!8
-                                                \-
-                                                ^ \markup \center-align { +16 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 4]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                            e'!8.
+                                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
+                                            f'!1
                                             \-
-                                            ^ \markup \center-align { +31 }
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 9/16
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r2
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                                e'!2
-                                                \-
-                                                ^ \markup \center-align { +31 }
-
-                                            }
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                                e'!8.
-                                                \-
-                                                ^ \markup \center-align { +31 }
-
-                                            }
+                                            ^ \markup \center-align { +16 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r4.
+                                            r8
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 7/10
+                                        \times 8/9
                                         {
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 7]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                                e'!4
-                                                \-
-                                                ^ \markup \center-align { +31 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 5]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-up  }
-                                            e'!2.
+                                            e'!1
                                             \-
                                             ^ \markup \center-align { +31 }
 
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                                f'!4
-                                                \-
-                                                ^ \markup \center-align { +16 }
-
-                                            }
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 6/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
-                                                f'!4
-                                                \-
-                                                ^ \markup \center-align { +16 }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2
+                                            r8
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 11/16
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 6]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
+                                            f'!2..
+                                            \-
+                                            ^ \markup \center-align { +16 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16..
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 7]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
+                                            ff'!1
+                                            \-
+                                            ^ \markup \center-align { -4 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 2/3
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 8]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
+                                            ff'!1
+                                            \-
+                                            ^ \markup \center-align { -4 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 2/3
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
@@ -1682,169 +1253,48 @@
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
-                                            ff'!8
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            af'!1
                                             \-
-                                            ^ \markup \center-align { -4 }
+                                            ^ \markup \center-align { A-37 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r4.
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            \duration-line-style
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
-                                            ff'!4
-                                            \-
-                                            ^ \markup \center-align { -4 }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 4/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
-                                                ff'!8.
-                                                \-
-                                                ^ \markup \center-align { -4 }
-
-                                            }
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
-                                                ff'!4.
-                                                \-
-                                                ^ \markup \center-align { -4 }
-
-                                            }
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            r4
+                                            r8
 
                                         }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 7/8
+                                        \times 20/27
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 10]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            af'!2.
+                                            \-
+                                            ^ \markup \center-align { A-37 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16.
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
                                         {
                                             %! COMMENT_MEASURE_NUMBERS
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 11]
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            \duration-line-style
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            af'!16.
-                                            \-
-                                            ^ \markup \center-align { A-37 }
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            r32
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            \duration-line-style
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            af'!8
-                                            \-
-                                            ^ \markup \center-align { A-37 }
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r8
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                af'!8
-                                                \-
-                                                ^ \markup \center-align { A-37 }
-
-                                            }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                af'!8
-                                                \-
-                                                ^ \markup \center-align { A-37 }
-
-                                            }
-
-                                            \once \override Rest.transparent = ##t
-                                            \once \override Dots.transparent = ##t
-                                            r4
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \tweak TupletBracket.transparent ##t
-                                        \tweak TupletNumber.transparent ##t
-                                        \times 17/22
-                                        {
-
-                                            \scaleDurations #'(1 . 1)
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 13]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                                c''!4.
-                                                \-
-                                                ^ \markup \center-align { +45 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                            }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1855,135 +1305,122 @@
                                             \-
                                             ^ \markup \center-align { +45 }
 
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 6/5
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                bf'!4
-                                                \-
-                                                ^ \markup \center-align { -40 }
-
-                                            }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                bf'!2
-                                                \-
-                                                ^ \markup \center-align { -40 }
-
-                                            }
-
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r4
+                                            r16
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
                                         \tweak TupletBracket.transparent ##t
                                         \tweak TupletNumber.transparent ##t
-                                        \times 7/11
+                                        \times 2/3
                                         {
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 15]
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                bf'!8
-                                                \-
-                                                ^ \markup \center-align { -40 }
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                            }
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 12]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            bf'!2.
+                                            bf'!2
                                             \-
                                             ^ \markup \center-align { -40 }
 
-                                            \scaleDurations #'(1 . 1)
-                                            {
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16
 
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4.
-                                                %! COMMENT_MEASURE_NUMBERS
-                                                %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [violin 2 voice measure 16]
+                                        }
 
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                df'!4.
-                                                \-
-                                                ^ \markup \center-align { D-39 }
-
-                                            }
-
-                                            \tweak TupletBracket.transparent ##t
-                                            \tweak TupletNumber.transparent ##t
-                                            \times 2/3
-                                            {
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                r4
-
-                                                \once \override Rest.transparent = ##t
-                                                \once \override Dots.transparent = ##t
-                                                \duration-line-style
-                                                \tweak Accidental.stencil #ly:text-interface::print
-                                                \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                                df'!8
-                                                \-
-                                                ^ \markup \center-align { D-39 }
-
-                                            }
+                                        \scaleDurations #'(1 . 1)
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 13]
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
-                                            r2.
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            bf'!1
+                                            \-
+                                            ^ \markup \center-align { -40 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 14]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            bf'!1
+                                            \-
+                                            ^ \markup \center-align { -40 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r8
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 15]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            bf'!2..
+                                            \-
+                                            ^ \markup \center-align { -40 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16..
+
+                                        }
+
+                                        \tweak TupletBracket.transparent ##t
+                                        \tweak TupletNumber.transparent ##t
+                                        \times 8/9
+                                        {
+                                            %! COMMENT_MEASURE_NUMBERS
+                                            %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [violin 2 voice measure 16]
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            \duration-line-style
+                                            \tweak Accidental.stencil #ly:text-interface::print
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            df'!2..
+                                            \-
+                                            ^ \markup \center-align { D-39 }
+
+                                            \once \override Rest.transparent = ##t
+                                            \once \override Dots.transparent = ##t
+                                            r16..
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -2282,175 +1719,110 @@
                             \context Voice = "viola voice"
                             {
 
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \tweak TupletBracket.transparent ##t
-                                \tweak TupletNumber.transparent ##t
-                                \times 17/20
+                                \scaleDurations #'(1 . 1)
                                 {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 1]
 
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 1]
-
-                                        %! applying staff names and clefs
-                                        \set Staff.shortInstrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #12 "va." }
-                                        %! applying staff names and clefs
-                                        \set Staff.instrumentName =
-                                        %! applying staff names and clefs
-                                        \markup { \hcenter-in #14 "Viola" }
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \clef "alto"
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
-                                        fs!4
-                                        \-
-                                        ^ \markup \center-align { -14 }
-                                        %! MATERIAL_COLOR
-                                        \(
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8
-
-                                    }
-
+                                    %! applying staff names and clefs
+                                    \set Staff.shortInstrumentName =
+                                    %! applying staff names and clefs
+                                    \markup { \hcenter-in #12 "va." }
+                                    %! applying staff names and clefs
+                                    \set Staff.instrumentName =
+                                    %! applying staff names and clefs
+                                    \markup { \hcenter-in #14 "Viola" }
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \clef "alto"
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
-                                    fs!2.
+                                    fs!1
                                     \-
                                     ^ \markup \center-align { -14 }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
-                                        fs!4
-                                        \-
-                                        ^ \markup \center-align { -14 }
-
-                                    }
-
-                                    \tweak text #tuplet-number::calc-fraction-text
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 6/5
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                        e!4
-                                        \-
-                                        ^ \markup \center-align { -49 }
-
-                                    }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r2
-
-                                }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 3]
-
-                                \once \override Rest.transparent = ##t
-                                \once \override Dots.transparent = ##t
-                                \duration-line-style
-                                \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                e!8
-                                \-
-                                ^ \markup \center-align { -49 }
-
-                                \once \override Rest.transparent = ##t
-                                \once \override Dots.transparent = ##t
-                                r4.
-
-                                \once \override Rest.transparent = ##t
-                                \once \override Dots.transparent = ##t
-                                \duration-line-style
-                                \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                af!4
-                                \-
-                                ^ \markup \center-align { -17 }
-
-                                \tweak TupletBracket.transparent ##t
-                                \tweak TupletNumber.transparent ##t
-                                \times 4/5
-                                {
+                                    %! MATERIAL_COLOR
+                                    \(
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
 
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 2]
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
+                                    e!1
+                                    \-
+                                    ^ \markup \center-align { -49 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 3]
+
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!8.
+                                    af!2..
                                     \-
                                     ^ \markup \center-align { -17 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16..
 
                                 }
 
                                 \scaleDurations #'(1 . 1)
                                 {
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r4.
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 4]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!4.
+                                    af!1
                                     \-
                                     ^ \markup \center-align { -17 }
 
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
+
                                 }
 
-                                \once \override Rest.transparent = ##t
-                                \once \override Dots.transparent = ##t
-                                r4
-
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 15/16
+                                \times 8/9
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
@@ -2460,148 +1832,83 @@
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!8.
+                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                    bf!1
                                     \-
-                                    ^ \markup \center-align { -17 }
+                                    ^ \markup \center-align { +14 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r16
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!4
-                                    \-
-                                    ^ \markup \center-align { -17 }
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!4
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                    }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r2
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!4
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                    }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r2
+                                    r8
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 7/11
+                                \times 8/9
                                 {
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 7]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!4.
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 6]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                    bf!2
+                                    bf!2..
                                     \-
                                     ^ \markup \center-align { +14 }
 
-                                    \tweak text #tuplet-number::calc-fraction-text
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 6/5
-                                    {
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16..
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
+                                }
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!4
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                    }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!2
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                    }
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 7]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r4
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                    bf!1
+                                    \-
+                                    ^ \markup \center-align { +14 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 8]
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                    bf!1
+                                    \-
+                                    ^ \markup \center-align { +14 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
 
                                 }
 
@@ -2618,135 +1925,7 @@
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                    bf!16
-                                    \-
-                                    ^ \markup \center-align { +14 }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r8
-
-                                }
-
-                                \once \override Rest.transparent = ##t
-                                \once \override Dots.transparent = ##t
-                                \duration-line-style
-                                \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                bf!4.
-                                \-
-                                ^ \markup \center-align { +14 }
-
-                                \scaleDurations #'(1 . 1)
-                                {
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r8.
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                    bf!8.
-                                    \-
-                                    ^ \markup \center-align { +14 }
-
-                                }
-
-                                \tweak TupletBracket.transparent ##t
-                                \tweak TupletNumber.transparent ##t
-                                \times 2/3
-                                {
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r8
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                    bf!16
-                                    \-
-                                    ^ \markup \center-align { +14 }
-
-                                }
-
-                                \once \override Rest.transparent = ##t
-                                \once \override Dots.transparent = ##t
-                                r4.
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \tweak TupletBracket.transparent ##t
-                                \tweak TupletNumber.transparent ##t
-                                \times 7/9
-                                {
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 4/5
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 11]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!16
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r16.
-
-                                    }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                    bf!4.
-                                    \-
-                                    ^ \markup \center-align { +14 }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!8
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                    }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r16
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                    bf!8.
+                                    bf!1
                                     \-
                                     ^ \markup \center-align { +14 }
 
@@ -2759,31 +1938,11 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 17/18
+                                \times 20/27
                                 {
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 4/5
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 13]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                        bf!8
-                                        \-
-                                        ^ \markup \center-align { +14 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8.
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 10]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2794,120 +1953,145 @@
                                     \-
                                     ^ \markup \center-align { +14 }
 
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16.
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r2
+                                }
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                        af!4
-                                        \-
-                                        ^ \markup \center-align { G+29 }
-
-                                    }
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 11]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r8
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                    bf!2
+                                    \-
+                                    ^ \markup \center-align { +14 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 12]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!4.
+                                    af!2
                                     \-
                                     ^ \markup \center-align { G+29 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r4
+                                    r16
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 13]
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                    af!1
+                                    \-
+                                    ^ \markup \center-align { G+29 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
+
+                                }
+
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 7/8
+                                \times 8/9
                                 {
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 15]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                        af!4
-                                        \-
-                                        ^ \markup \center-align { G+29 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 14]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
-                                    cf'!2
+                                    cf'!1
                                     \-
                                     ^ \markup \center-align { +25 }
 
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [viola voice measure 16]
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
+                                }
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        c'!2
-                                        \-
-                                        ^ \markup \center-align { -4 }
-
-                                    }
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 15]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r8.
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
+                                    cf'!2..
+                                    \-
+                                    ^ \markup \center-align { +25 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16..
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [viola voice measure 16]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \abjad-natural  }
-                                    c'!16
+                                    c'!2..
                                     \-
                                     ^ \markup \center-align { -4 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r4
+                                    r16..
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -3102,10 +2286,7 @@
                             \context Voice = "cello voice"
                             {
 
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \tweak TupletBracket.transparent ##t
-                                \tweak TupletNumber.transparent ##t
-                                \times 17/32
+                                \scaleDurations #'(1 . 1)
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
@@ -3132,7 +2313,7 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         a!
-                                    >4.
+                                    >1
                                     \-
                                     ^ \markup \center-align \center-column { +2 +0  }
                                     %! MATERIAL_COLOR
@@ -3142,104 +2323,15 @@
                                     \once \override Dots.transparent = ##t
                                     r8
 
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    <
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        d!
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        a!
-                                    >2
-                                    \-
-                                    ^ \markup \center-align \center-column { +2 +0  }
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r2
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            a!
-                                        >2
-                                        \-
-                                        ^ \markup \center-align \center-column { +2 +0  }
-
-                                    }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r1
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            a!
-                                        >2
-                                        \-
-                                        ^ \markup \center-align \center-column { +2 +0  }
-
-                                    }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r1
-
                                 }
 
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 8/11
+                                \times 8/9
                                 {
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 3]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            a!
-                                        >4.
-                                        \-
-                                        ^ \markup \center-align \center-column { +2 +0  }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 2]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3251,100 +2343,23 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         a!
-                                    >2
+                                    >1
                                     \-
                                     ^ \markup \center-align \center-column { +2 +0  }
 
-                                    \tweak text #tuplet-number::calc-fraction-text
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 6/5
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                            bf!
-                                        >4
-                                        \-
-                                        ^ \markup \center-align \center-column { +14 +0  }
-
-                                    }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                            bf!
-                                        >2
-                                        \-
-                                        ^ \markup \center-align \center-column { +14 +0  }
-
-                                    }
-
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r4
+                                    r8
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 15/22
+                                \times 8/9
                                 {
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 5]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                            bf!
-                                        >8
-                                        \-
-                                        ^ \markup \center-align \center-column { +14 +0  }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 3]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3356,97 +2371,49 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         bf!
-                                    >2.
+                                    >2..
                                     \-
                                     ^ \markup \center-align \center-column { +14 +0  }
 
-                                    \scaleDurations #'(1 . 1)
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            g!
-                                        >4.
-                                        \-
-                                        ^ \markup \center-align \center-column { -2 +0  }
-
-                                    }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            g!
-                                        >8
-                                        \-
-                                        ^ \markup \center-align \center-column { -2 +0  }
-
-                                    }
-
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r2.
+                                    r16..
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 4]
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    <
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \abjad-natural  }
+                                        d!
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                        bf!
+                                    >1
+                                    \-
+                                    ^ \markup \center-align \center-column { +14 +0  }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
+
+                                }
+
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 7/9
+                                \times 8/9
                                 {
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 4/5
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 7]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            g!
-                                        >8
-                                        \-
-                                        ^ \markup \center-align \center-column { -2 +0  }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8.
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 5]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3458,38 +2425,23 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         g!
-                                    >2.
+                                    >1
                                     \-
                                     ^ \markup \center-align \center-column { -2 +0  }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r2
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            af!
-                                        >4
-                                        \-
-                                        ^ \markup \center-align \center-column { -17 +0  }
-
-                                    }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 6]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3501,202 +2453,116 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                         af!
-                                    >4.
+                                    >2..
                                     \-
                                     ^ \markup \center-align \center-column { -17 +0  }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r4
+                                    r16..
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 11/18
+                                \times 8/9
                                 {
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 4/5
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 9]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \abjad-natural  }
-                                            d!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            af!
-                                        >8
-                                        \-
-                                        ^ \markup \center-align \center-column { -17 +0  }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8.
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 7]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!2.
+                                    af!1
                                     \-
                                     ^ \markup \center-align { -17 }
-
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r2
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                        af!4
-                                        \-
-                                        ^ \markup \center-align { -17 }
-
-                                    }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
 
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 2/3
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 8]
+
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                    af!4.
+                                    af!1
                                     \-
                                     ^ \markup \center-align { -17 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r4
+                                    r8
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 7/8
+                                \times 2/3
                                 {
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 11]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                        af!8
-                                        \-
-                                        ^ \markup \center-align { -17 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 9]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \abjad-natural  }
-                                    g!4
+                                    g!1
                                     \-
                                     ^ \markup \center-align { -2 }
 
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8
+                                }
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        g!4
-                                        \-
-                                        ^ \markup \center-align { -2 }
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 20/27
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 10]
 
-                                    }
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \abjad-natural  }
+                                    g!2.
+                                    \-
+                                    ^ \markup \center-align { -2 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r16.
 
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    \duration-line-style
-                                    \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup { \abjad-natural  }
-                                    g!32
-                                    \-
-                                    ^ \markup \center-align { -2 }
-
-                                    \once \override Rest.transparent = ##t
-                                    \once \override Dots.transparent = ##t
-                                    r8
-
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 17/22
+                                \times 8/9
                                 {
-
-                                    \tweak text #tuplet-number::calc-fraction-text
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 6/5
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 13]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \abjad-natural  }
-                                        g!4.
-                                        \-
-                                        ^ \markup \center-align { -2 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 11]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3707,89 +2573,63 @@
                                     \-
                                     ^ \markup \center-align { +27 }
 
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
-                                        gf!8
-                                        \-
-                                        ^ \markup \center-align { +27 }
-
-                                    }
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
-                                        gf!4.
-                                        \-
-                                        ^ \markup \center-align { +27 }
-
-                                    }
-
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r2
+                                    r16
 
                                 }
 
-                                \tweak text #tuplet-number::calc-fraction-text
                                 \tweak TupletBracket.transparent ##t
                                 \tweak TupletNumber.transparent ##t
-                                \times 7/10
+                                \times 2/3
                                 {
-
-                                    \scaleDurations #'(1 . 1)
-                                    {
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 15]
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                        d!4.
-                                        \-
-                                        ^ \markup \center-align { C♯+47 }
-
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r4.
-
-                                    }
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 12]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
-                                    d!4
+                                    d!2
+                                    \-
+                                    ^ \markup \center-align { C♯+47 }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16
+
+                                }
+
+                                \scaleDurations #'(1 . 1)
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 13]
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    \tweak Accidental.stencil #ly:text-interface::print
+                                    \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
+                                    d!1
                                     \-
                                     ^ \markup \center-align { C♯+47 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r8
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 14]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -3801,38 +2641,69 @@
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
                                         f!
-                                    >4.
+                                    >1
                                     \-
                                     ^ \markup \center-align \center-column { +43 +10  }
 
-                                    \tweak TupletBracket.transparent ##t
-                                    \tweak TupletNumber.transparent ##t
-                                    \times 2/3
-                                    {
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r8
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        r8
+                                }
 
-                                        \once \override Rest.transparent = ##t
-                                        \once \override Dots.transparent = ##t
-                                        \duration-line-style
-                                        <
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
-                                            af,!
-                                            \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                            f!
-                                        >4
-                                        \-
-                                        ^ \markup \center-align \center-column { +43 +10  }
-
-                                    }
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 15]
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
-                                    r2.
+                                    \duration-line-style
+                                    <
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                        af,!
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
+                                        f!
+                                    >2..
+                                    \-
+                                    ^ \markup \center-align \center-column { +43 +10  }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16..
+
+                                }
+
+                                \tweak TupletBracket.transparent ##t
+                                \tweak TupletNumber.transparent ##t
+                                \times 8/9
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 16]
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    \duration-line-style
+                                    <
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
+                                        af,!
+                                        \tweak Accidental.stencil #ly:text-interface::print
+                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                        gf!
+                                    >2..
+                                    \-
+                                    ^ \markup \center-align \center-column { -21 +10  }
+
+                                    \once \override Rest.transparent = ##t
+                                    \once \override Dots.transparent = ##t
+                                    r16..
                                     %! MATERIAL_COLOR
                                     \)
 

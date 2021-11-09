@@ -31,6 +31,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (0, 7)),
             ],
             polillas.wings(stage=3),
+            baca.hairpin("sfp <| ff"),
             polillas.B_color,
         ),
         evans.MusicCommand(
@@ -41,8 +42,46 @@ maker = evans.SegmentMaker(
                 ("cello voice", (7, 9)),
             ],
             polillas.knots(stage=5),
+            polillas.multi_stac,
+            abjad.Dynamic("p"),
             polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            baca.text_spanner(
+                r"poco scratch => molto scratch",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            baca.text_spanner(
+                r"poco scratch => molto scratch",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "viola voice",
+            baca.text_spanner(
+                r"poco scratch => molto scratch",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "cello voice",
+            baca.text_spanner(
+                r"poco scratch => molto scratch",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6]),
         ),
         evans.MusicCommand(
             [
@@ -52,6 +91,8 @@ maker = evans.SegmentMaker(
                 ("cello voice", (10, 13)),
             ],
             polillas.knots(stage=5, rotation=3),
+            polillas.multi_stac,
+            baca.hairpin("mf > p"),
             polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -63,6 +104,8 @@ maker = evans.SegmentMaker(
                 ("cello voice", 14),
             ],
             polillas.knots(stage=5, rotation=6),
+            polillas.multi_stac,
+            abjad.Dynamic("f"),
             polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -81,7 +124,23 @@ maker = evans.SegmentMaker(
                 r"\once \override Beam #'stencil = #(grow-beam-var 6 1)",
                 format_slot="before",
             ),
+            abjad.Dynamic("p"),
             polillas.F_color,
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.start_repeat,
+            abjad.select().leaf(18),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(r"""\rehearsal-mark-markup "x6" 6 -1""", literal=True),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "Global Context",
+            polillas.stop_repeat,
+            abjad.select().leaf(19),
         ),
         evans.call(
             "score",
