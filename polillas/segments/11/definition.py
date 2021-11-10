@@ -54,6 +54,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 4", format_slot="absolute_before"
             ),
+            abjad.Dynamic("f"),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -80,8 +81,15 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
+            baca.hairpin("mp > p"),
+            abjad.glissando,
             polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
+            polillas.select_measures([7, 8, 9, 10]),
         ),
         evans.MusicCommand(
             [("cello voice", (7, 11))],
@@ -97,8 +105,15 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
+            baca.hairpin("mp > p"),
+            abjad.glissando,
             polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "cello voice",
+            evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
+            polillas.select_measures([7, 8, 9, 10]),
         ),
         evans.attach(
             "cello voice",
@@ -129,12 +144,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Clef("alto"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
+            polillas.multi_stac,
             polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 10)],
             polillas.knots(stage=5),
+            polillas.multi_stac,
             polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -147,6 +165,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(extra_counts=[0, 2, 0], stage=4),
             polillas.chilled_stage_3_bowing(series="B", rotation=0),
+            abjad.Dynamic("f"),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),

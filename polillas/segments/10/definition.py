@@ -30,6 +30,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
+            abjad.Dynamic("mf"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -40,6 +41,7 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
+            abjad.Dynamic("mf"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -50,6 +52,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(extra_counts=[0, 2, 0], stage=4),
             polillas.chilled_stage_3_bowing(series="A", rotation=0),
+            abjad.Dynamic("f"),
             polillas.E_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),

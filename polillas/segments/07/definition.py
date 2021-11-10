@@ -30,6 +30,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (0, 9)),
             ],
             polillas.flight(stage=5),
+            polillas.triple_swell,
             polillas.D_color,
         ),
         evans.MusicCommand(
@@ -52,6 +53,7 @@ maker = evans.SegmentMaker(
             abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.G_color,
         ),
         evans.MusicCommand(
@@ -66,6 +68,7 @@ maker = evans.SegmentMaker(
             abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.G_color,
         ),
         evans.MusicCommand(
@@ -74,6 +77,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=2),
             evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            abjad.Dynamic("p"),
             polillas.G_color,
         ),
         evans.MusicCommand(
@@ -88,7 +92,41 @@ maker = evans.SegmentMaker(
             abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.G_color,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.TextSpanHandler(
+                span_two_positions=["ord.", "scr.", "ord.", "flaut.", "scr.", "flaut."],
+                span_two_style="dashed-line",
+                span_two_padding=7,
+                attach_span_two_to="leaves",
+                forget=False,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.TextSpanHandler(
+                span_two_positions=["ord.", "scr.", "ord.", "flaut.", "scr.", "flaut."],
+                span_two_style="dashed-line",
+                span_two_padding=7,
+                attach_span_two_to="leaves",
+                forget=False,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.TextSpanHandler(
+                span_two_positions=["ord.", "scr.", "ord.", "flaut.", "scr.", "flaut."],
+                span_two_style="dashed-line",
+                span_two_padding=7,
+                attach_span_two_to="leaves",
+                forget=False,
+            ),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
         ),
         evans.attach(
             "Global Context",

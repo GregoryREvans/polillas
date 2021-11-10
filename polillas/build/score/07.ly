@@ -171,16 +171,72 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
+                                            \mp
+                                            \<
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                         }
 
@@ -193,17 +249,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -217,17 +330,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -242,17 +412,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -266,17 +493,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -291,16 +575,73 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -315,14 +656,71 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                         }
 
@@ -335,14 +733,71 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                         }
 
@@ -355,19 +810,76 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4..
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8..
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8..
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -381,52 +893,37 @@
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         c'4
+                                        \p
                                         ^ \markup {on bridge}
+                                        \stopTextSpanTwo
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \upright \vcenter flaut. } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #7
+                                        \startTextSpanTwo
 
-                                        c'8
-                                        ~
-
-                                        c'4
+                                        c'4.
+                                        \stopTextSpanTwo
 
                                         c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
-                                        c'4
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c'8
-                                        ~
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c'8
-                                        ~
-                                        ]
+                                        c'4.
 
                                         c'4
+
+                                        c'4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
                                         c'4
 
-                                        c'8
-                                        ~
-
-                                        c'4
+                                        c'4.
 
                                         c'8
                                         ~
@@ -436,10 +933,7 @@
 
                                         c'8
 
-                                        c'4
-                                        ~
-
-                                        c'8
+                                        c'4.
 
                                         c'4
                                         %! MATERIAL_COLOR
@@ -488,16 +982,72 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
+                                            \mp
+                                            \<
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                         }
 
@@ -510,17 +1060,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -534,17 +1141,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -559,17 +1223,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -583,17 +1304,74 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -608,16 +1386,73 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -632,14 +1467,71 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2.
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4.
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                         }
 
@@ -652,14 +1544,71 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'2
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                         }
 
@@ -672,19 +1621,76 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4..
+                                            \mp
+                                            \<
+                                            \stopTextSpanTwo
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-arrow
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "tast."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-right-text "pont."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.padding 0.5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
+                                            \startTrillSpan
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8..
+                                            \f
+                                            \>
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8..
+                                            \mp
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(3)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTextSpanTwo
+                                            - \abjad-dashed-line-with-arrow
+                                            - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                            - \tweak bound-details.right.padding 1.4
+                                            - \tweak staff-padding #7
+                                            \startTextSpanTwo
                                             ]
 
                                         }
@@ -698,52 +1704,37 @@
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         c'4
+                                        \p
                                         ^ \markup {on bridge}
+                                        \stopTextSpanTwo
                                         %! MATERIAL_COLOR
                                         \(
+                                        - \abjad-invisible-line
+                                        - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \upright \vcenter flaut. } \hspace #0.5 }
+                                        - \tweak bound-details.right.padding 3
+                                        - \tweak staff-padding #7
+                                        \startTextSpanTwo
 
-                                        c'8
-                                        ~
-
-                                        c'4
+                                        c'4.
+                                        \stopTextSpanTwo
 
                                         c'4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
-                                        c'4
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c'8
-                                        ~
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        c'8
-                                        ~
-                                        ]
+                                        c'4.
 
                                         c'4
+
+                                        c'4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
                                         c'4
 
-                                        c'8
-                                        ~
-
-                                        c'4
+                                        c'4.
 
                                         c'8
                                         ~
@@ -753,10 +1744,7 @@
 
                                         c'8
 
-                                        c'4
-                                        ~
-
-                                        c'8
+                                        c'4.
 
                                         c'4
                                         %! MATERIAL_COLOR
@@ -807,36 +1795,19 @@
                                 %! MATERIAL_COLOR
                                 \(
 
+                                c'4.
+
                                 c'4
-                                ~
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
                                 c'8
                                 ~
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ~
-                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
                                 c'4
 
-                                c'8
-                                ~
-
-                                c'8
+                                c'4
 
                                 c'4
                                 ~
@@ -855,10 +1826,7 @@
 
                                 c'4
 
-                                c'8
-                                ~
-
-                                c'4
+                                c'4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
@@ -910,51 +1878,29 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4
+                                \p
                                 %! MATERIAL_COLOR
                                 \(
 
-                                c'8
-                                ~
-
-                                c'4
+                                c'4.
 
                                 c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
-                                c'4
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ~
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ~
-                                ]
+                                c'4.
 
                                 c'4
+
+                                c'4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
                                 c'4
 
-                                c'8
-                                ~
-
-                                c'4
+                                c'4.
 
                                 c'8
                                 ~
@@ -964,10 +1910,7 @@
 
                                 c'8
 
-                                c'4
-                                ~
-
-                                c'8
+                                c'4.
 
                                 c'4
                                 %! MATERIAL_COLOR
@@ -1016,16 +1959,72 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2
+                                    \mp
+                                    \<
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                 }
 
@@ -1038,17 +2037,74 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     ]
 
                                 }
@@ -1062,17 +2118,74 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     ]
 
                                 }
@@ -1087,17 +2200,74 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     ]
 
                                 }
@@ -1111,17 +2281,74 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     ]
 
                                 }
@@ -1136,16 +2363,73 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     [
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16.
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16.
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     ]
 
                                 }
@@ -1160,14 +2444,71 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2.
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4.
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                 }
 
@@ -1180,14 +2521,71 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'2
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                 }
 
@@ -1200,19 +2598,76 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4..
+                                    \mp
+                                    \<
+                                    \stopTextSpanTwo
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-arrow
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "tast."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-right-text "pont."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.padding 0.5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak bound-details.right.stencil-align-dir-y #center
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
+                                    \startTrillSpan
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8..
+                                    \f
+                                    \>
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8..
+                                    \mp
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTextSpanTwo
+                                    - \abjad-dashed-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
+                                    - \tweak bound-details.right.padding 1.4
+                                    - \tweak staff-padding #7
+                                    \startTextSpanTwo
                                     ]
 
                                 }
@@ -1226,52 +2681,37 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4
+                                \p
                                 ^ \markup {on bridge}
+                                \stopTextSpanTwo
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-invisible-line
+                                - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \upright \vcenter flaut. } \hspace #0.5 }
+                                - \tweak bound-details.right.padding 3
+                                - \tweak staff-padding #7
+                                \startTextSpanTwo
 
-                                c'8
-                                ~
-
-                                c'4
+                                c'4.
+                                \stopTextSpanTwo
 
                                 c'4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                c'4
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ~
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                c'8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                c'8
-                                ~
-                                ]
+                                c'4.
 
                                 c'4
+
+                                c'4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
                                 c'4
 
-                                c'8
-                                ~
-
-                                c'4
+                                c'4.
 
                                 c'8
                                 ~
@@ -1281,10 +2721,7 @@
 
                                 c'8
 
-                                c'4
-                                ~
-
-                                c'8
+                                c'4.
 
                                 c'4
                                 %! MATERIAL_COLOR

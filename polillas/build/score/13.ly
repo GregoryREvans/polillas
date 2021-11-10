@@ -255,6 +255,15 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \mp
+                                        - \tongue #2
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -267,12 +276,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #3
                                             ]
 
                                             r8
@@ -282,16 +293,19 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         r8
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         \times 2/3
                                         {
@@ -304,6 +318,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #3
 
                                             r8
 
@@ -312,6 +327,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        - \tongue #2
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -323,43 +339,19 @@
                                         c'32.
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'64
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'64
+                                        c'16.
+                                        - \tongue #3
                                         ]
 
-                                        r32.
-
-                                        r32.
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'64
-                                        ~
-                                        [
+                                        r16.
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'64
-                                        ]
+                                        c'16.
+                                        - \tongue #3
 
                                         r32.
                                         %! COMMENT_MEASURE_NUMBERS
@@ -370,33 +362,29 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \tongue #2
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
                                         c'16
+                                        - \tongue #2
                                         ~
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-                                        ]
-
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
 
-                                        r16
-
-                                        r16
+                                        r8
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
+                                        - \tongue #3
                                         %! MATERIAL_COLOR
                                         \)
                                         \staff-line-count 5
@@ -409,25 +397,94 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \f
+                                        - \flageolet
                                         %! MATERIAL_COLOR
                                         \(
 
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (4)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+                                                - \flageolet
+                                                ~
+                                                %! COMMENT_MEASURE_NUMBERS
+                                                %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [violin 1 voice measure 6]
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        - \flageolet
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 6]
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'8
                                         ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
@@ -441,13 +498,87 @@
                                         \evans-not-yet-pitched-coloring
                                         c'16
 
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (5)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+                                                - \flageolet
+                                                ~
+                                                %! COMMENT_MEASURE_NUMBERS
+                                                %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [violin 1 voice measure 8]
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+                                        - \flageolet
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 8]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -455,27 +586,40 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8.
+                                        - \flageolet
+                                        ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
                                         ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        - \flageolet
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -492,6 +636,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            - \flageolet
                                             ~
                                             ]
 
@@ -504,13 +649,95 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (6)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        - \flageolet
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -520,67 +747,289 @@
                                         \evans-not-yet-pitched-coloring
                                         c'8.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        <<
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        [
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (4)}
+                                                [
 
-                                        \revert Staff.Stem.stemlet-length
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
+                                        - \flageolet
                                         ~
-                                        ]
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 12]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 13]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-                                        ]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4..
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (5)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+                                                - \flageolet
+                                                ~
+                                                %! COMMENT_MEASURE_NUMBERS
+                                                %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [violin 1 voice measure 12]
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        ~
+                                        ]
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 1 voice measure 13]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (6)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -592,15 +1041,89 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8.
+                                        - \flageolet
+                                        ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'16
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (4)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'8.
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -612,33 +1135,200 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'8.
+                                        - \flageolet
                                         ~
 
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ~
-                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8.
+                                        - \flageolet
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 16]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (5)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+                                                ~
+                                                %! COMMENT_MEASURE_NUMBERS
+                                                %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [violin 1 voice measure 16]
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (6)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 1 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -647,33 +1337,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        - \flageolet
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -684,17 +1348,56 @@
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'1
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \mp
+                                        - \trill
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2..
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -710,7 +1413,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -718,12 +1426,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -731,17 +1439,21 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -770,24 +1482,49 @@
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \ff
+                                        - \trill
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "poco pont."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanTwo
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -795,22 +1532,30 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanTwo
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -847,6 +1592,14 @@
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             r8
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_STOP
+                                            \mp
+                                            %! baca.hairpin()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \<
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -854,12 +1607,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             ]
 
                                         }
@@ -869,6 +1624,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         \times 2/3
                                         {
@@ -879,12 +1635,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #3
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             ]
 
                                         }
@@ -894,6 +1652,11 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
+                                        - \tongue #3
                                         %! MATERIAL_COLOR
                                         \)
                                         \staff-line-count 1
@@ -906,6 +1669,7 @@
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         c'4
+                                        \p
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -915,11 +1679,11 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
-                                        c'8.
+                                        c'4
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'8
+                                        c'16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -943,7 +1707,10 @@
 
                                         c'16
 
-                                        c'4
+                                        c'8.
+                                        ~
+
+                                        c'16
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
@@ -963,32 +1730,31 @@
 
                                         c'8
 
-                                        c'8.
+                                        c'8
                                         ~
 
-                                        c'16
+                                        c'8
 
-                                        c'4
+                                        c'8
+                                        ~
+
+                                        c'8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         c'8
-                                        [
 
-                                        \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        c'8
                                         ~
-                                        ]
+
+                                        c'8
+
+                                        c'8
+                                        ~
 
                                         c'8.
-
-                                        c'16
-                                        ~
-
-                                        c'4
                                         %! MATERIAL_COLOR
                                         \)
                                         \staff-line-count 5
@@ -1000,33 +1766,163 @@
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        \f
+                                        - \flageolet
+                                        ~
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 11]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        - \flageolet
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
+                                        <<
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+                                                %! COMMENT_MEASURE_NUMBERS
+                                                %! evans.SegmentMaker.comment_measure_numbers()
+                                                % [violin 2 voice measure 11]
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (4)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (6)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        - \flageolet
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1038,25 +1934,81 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
+                                        c'4
+                                        - \flageolet
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (5)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
                                         c'16
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        - \flageolet
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1064,54 +2016,85 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         c'4
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
                                         ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 14]
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8.
-                                        ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        <<
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8..
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (4)}
+                                                [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16.
-                                        ~
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 2 voice measure 15]
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'16
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8.
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
+                                        - \flageolet
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -1120,14 +2103,209 @@
                                         c'16
                                         ~
                                         ]
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 14]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'8
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (6)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'8
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16.
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16.
+                                        - \flageolet
+                                        ~
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 2 voice measure 15]
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (5)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+                                                - \flageolet
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                ~
+
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'8
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
@@ -1135,18 +2313,78 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        - \flageolet
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (4)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        - \flageolet
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        - \flageolet
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1156,17 +2394,151 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #right
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 drop (6)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+
+                                        <<
+
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (5)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        - \flageolet
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1176,22 +2548,76 @@
                                         \evans-not-yet-pitched-coloring
                                         c'4
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
-                                        ~
+                                        <<
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                            \context Voice = "On_Beat_Grace_Container"
+                                            {
+                                                %! abjad.on_beat_grace_container(1)
+                                                \set fontSize = #-4
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                \once \override Beam.grow-direction = #left
+                                                %! abjad.on_beat_grace_container(2)
+                                                \slash
+                                                %! abjad.on_beat_grace_container(3)
+                                                \voiceOne
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                <c'>32 * 4/3
+                                                ^ \markup { \hspace #1 throw (4)}
+                                                [
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+
+                                                \once \override NoteHead.no-ledgers = ##t
+                                                \once \override Accidental.transparent = ##t
+                                                \tweak transparent ##t
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'32 * 4/3
+                                                ]
+
+                                            }
+
+                                            \context Voice = "violin 2 voice"
+                                            {
+
+                                                %! abjad.on_beat_grace_container(4)
+                                                \voiceTwo
+                                                %! PITCH
+                                                \evans-not-yet-pitched-coloring
+                                                c'4
+                                                - \flageolet
+
+                                            }
+
+                                        >>
+                                        %! abjad.on_beat_grace_container(5)
+                                        \oneVoice
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        - \flageolet
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \flageolet
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1203,6 +2629,15 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \mp
+                                        - \trill
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \<
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1212,7 +2647,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1220,12 +2660,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1233,17 +2673,21 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'8.
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \f
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1272,24 +2716,49 @@
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \ff
+                                        - \trill
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "poco pont."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanTwo
                                         %! MATERIAL_COLOR
                                         \(
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1297,22 +2766,30 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanTwo
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -1350,12 +2827,21 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 \times 2/3
                                 {
@@ -1363,12 +2849,14 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                 }
 
@@ -1377,6 +2865,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 \times 2/3
                                 {
@@ -1384,12 +2873,14 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1400,21 +2891,14 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
+                                c'8
+                                - \tongue #2
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                - \tongue #3
                                 ~
-                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
@@ -1423,51 +2907,32 @@
                                 \evans-not-yet-pitched-coloring
                                 c'32.
 
-                                r64
+                                r16.
 
-                                r16
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16.
+                                - \tongue #2
 
-                                r64
+                                r16.
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'32.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'32.
-
-                                r64
-
-                                r16
-
-                                r64
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'32.
+                                - \tongue #3
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
-                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'8
+                                - \tongue #3
 
                                 r16
 
@@ -1479,12 +2944,18 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \f
+                                    - \tongue #2
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -1498,14 +2969,16 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
+                                \f
+                                - \flageolet
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1515,34 +2988,105 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 7]
-
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                - \flageolet
+                                ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'8
                                 ~
                                 ]
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 7]
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #left
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 throw (5)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8.
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                - \flageolet
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1554,17 +3098,28 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
+                                c'8.
+                                - \flageolet
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                ~
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                - \flageolet
                                 ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
@@ -1573,13 +3128,81 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #right
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 drop (4)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
+                                c'16
+                                - \flageolet
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1589,27 +3212,162 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                <<
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                [
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #right
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 drop (6)}
+                                        [
 
-                                \revert Staff.Stem.stemlet-length
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                    }
+
+                                >>
+
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #left
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 throw (5)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                - \flageolet
                                 ~
-                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
@@ -1620,11 +3378,23 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'16
+                                - \flageolet
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                - \flageolet
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1634,47 +3404,255 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #right
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 drop (4)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'16
+                                - \flageolet
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                [
 
-                                \revert Staff.Stem.stemlet-length
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #right
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 drop (6)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+
+                                    }
+
+                                >>
+
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #left
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 throw (5)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                - \flageolet
+                                ~
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ~
-                                ]
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1686,21 +3664,23 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
+                                c'8.
+                                - \flageolet
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'8.
+                                - \flageolet
                                 ~
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -1717,6 +3697,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8.
+                                    - \flageolet
                                     ~
                                     ]
 
@@ -1729,32 +3710,96 @@
                                 \evans-not-yet-pitched-coloring
                                 c'16
 
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #right
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 drop (4)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'8.
+                                - \flageolet
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 [
 
                                 \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                - \flageolet
                                 ~
                                 ]
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
@@ -1763,9 +3808,95 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8.
 
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #right
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 drop (6)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                - \flageolet
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
 
                                 %! PITCH
@@ -1775,15 +3906,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                - \flageolet
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1793,9 +3916,88 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8.
 
+                                <<
+
+                                    \context Voice = "On_Beat_Grace_Container"
+                                    {
+                                        %! abjad.on_beat_grace_container(1)
+                                        \set fontSize = #-4
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        \once \override Beam.grow-direction = #left
+                                        %! abjad.on_beat_grace_container(2)
+                                        \slash
+                                        %! abjad.on_beat_grace_container(3)
+                                        \voiceOne
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        <c'>32 * 4/3
+                                        ^ \markup { \hspace #1 throw (5)}
+                                        [
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+
+                                        \once \override NoteHead.no-ledgers = ##t
+                                        \once \override Accidental.transparent = ##t
+                                        \tweak transparent ##t
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'32 * 4/3
+                                        ]
+
+                                    }
+
+                                    \context Voice = "viola voice"
+                                    {
+
+                                        %! abjad.on_beat_grace_container(4)
+                                        \voiceTwo
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
+                                        - \flageolet
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+
+                                    }
+
+                                >>
+                                %! abjad.on_beat_grace_container(5)
+                                \oneVoice
+
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
+                                - \flageolet
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
 
                                 %! PITCH
@@ -1805,15 +4007,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4..
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                - \flageolet
                                 %! MATERIAL_COLOR
                                 \)
                                 \staff-line-count 1
@@ -1826,15 +4020,19 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4
+                                \p
                                 %! MATERIAL_COLOR
                                 \(
 
-                                c'8.
+                                c'4
                                 ~
 
-                                c'8.
+                                c'8
 
-                                c'4
+                                c'8
+                                ~
+
+                                c'8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
@@ -1854,7 +4052,10 @@
 
                                 c'8
 
-                                c'8.
+                                c'8
+                                ~
+
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1862,9 +4063,15 @@
 
                                 c'16
 
-                                c'4.
+                                c'8.
+                                ~
 
-                                c'4
+                                c'8.
+
+                                c'16
+                                ~
+
+                                c'8.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 23]
@@ -1893,24 +4100,49 @@
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \ff
+                                - \trill
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "poco pont."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanTwo
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1918,22 +4150,30 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanTwo
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
@@ -1967,18 +4207,28 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 r8
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
 
                                 \times 2/3
                                 {
@@ -1986,12 +4236,14 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                 }
 
@@ -2000,6 +4252,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 \times 2/3
                                 {
@@ -2010,12 +4263,14 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #3
 
                                 }
 
@@ -2029,10 +4284,12 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
 
                                 r16
 
@@ -2047,34 +4304,32 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    - \tongue #3
                                     ~
 
                                 }
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
-                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'8
+                                - \tongue #2
 
                                 r16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2085,14 +4340,16 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
+                                \f
+                                - \flageolet
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2108,7 +4365,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2116,17 +4378,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
                                 ~
 
                                 %! PITCH
@@ -2139,17 +4396,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2157,7 +4414,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2165,7 +4427,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2173,22 +4440,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2196,22 +4463,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2219,7 +4486,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2...
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2227,7 +4504,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2235,7 +4527,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2243,7 +4550,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'1
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2251,7 +4573,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2270,22 +4607,36 @@
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mp
+                                - \trill
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2293,17 +4644,21 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'8.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2332,24 +4687,49 @@
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \ff
+                                - \trill
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "poco pont."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanTwo
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2357,22 +4737,30 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \p
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanTwo
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"

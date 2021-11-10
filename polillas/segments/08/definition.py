@@ -35,6 +35,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Clef("treble"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -101,6 +102,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Clef("treble"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -167,6 +169,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Clef("alto"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -233,6 +236,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Clef("bass"),
             polillas.clef_whitespace,
+            abjad.Dynamic("p"),
             polillas.C_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -288,6 +292,106 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(63),
         ),
         evans.attach(
+            "violin 1 voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(26),
+        ),
+        evans.attach(
+            "violin 1 voice",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "violin 1 voice",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(47),
+        ),
+        evans.attach(
+            "violin 1 voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(48),
+        ),
+        evans.attach(
+            "violin 1 voice",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(92),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(24),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(25),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(44),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(45),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(88),
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(34),
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(59),
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(60),
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(117),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(70),
+        ),
+        evans.attach(
             "Global Context",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
@@ -311,11 +415,6 @@ maker = evans.SegmentMaker(
             polillas.met_90,
             baca.selectors.leaf(0),
         ),
-        # evans.call(
-        #     "Global Context",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
-        # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,

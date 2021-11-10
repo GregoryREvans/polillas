@@ -859,3 +859,32 @@ multi_stac = evans.ArticulationHandler(
     vector_forget=False,
     forget=False,
 )
+
+
+def triple_swell(selections):
+    triples = (
+        abjad.select(selections)
+        .logical_ties()
+        .partition_by_counts([3], cyclic=True, overhang=False)
+    )
+    for triple in triples:
+        abjad.attach(abjad.Dynamic("mp"), triple[0][0])
+        abjad.attach(abjad.StartHairpin("<"), triple[0][0])
+        abjad.attach(abjad.Dynamic("f"), triple[1][0])
+        abjad.attach(abjad.StartHairpin(">"), triple[1][0])
+        abjad.attach(abjad.Dynamic("mp"), triple[2][-1])
+        span = baca.text_spanner(
+            "tast. => pont.",
+            (abjad.tweak(5).staff_padding, 0),
+            lilypond_id=1,
+        )
+        span(triple)
+        abjad.trill_spanner(triple)
+
+
+bah = evans.BowAngleHandler([0, 45, 0, -45, 70, -70, 0, 25, -25, 0, 60])
+
+
+def angles(selections):
+    for run in abjad.select(selections).runs():
+        bah(run)

@@ -255,7 +255,19 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup Spazzolato
+                                        _ #(make-dynamic-script
+                                            (markup
+                                                #:whiteout
+                                                #:line (
+                                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                                    #:hspace -0.4
+                                                    #:dynamic "f"
+                                                    #:hspace -0.2
+                                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                                    )
+                                                )
+                                            )
+                                        ^ \markup twist
 
                                         r8
 
@@ -266,13 +278,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -285,13 +291,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -301,17 +301,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 2]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -332,13 +328,7 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -362,11 +352,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -387,13 +373,7 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -412,13 +392,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -444,32 +418,20 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -499,19 +461,13 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -521,11 +477,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 6]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -563,43 +515,27 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -627,13 +563,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -648,11 +578,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -662,11 +588,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 9]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -702,30 +624,20 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -749,13 +661,7 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -776,9 +682,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -822,17 +726,13 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -840,21 +740,13 @@
                                         \times 6/7
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -872,17 +764,13 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -899,13 +787,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -931,9 +813,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -946,13 +826,7 @@
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -979,28 +853,20 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1030,19 +896,13 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -1052,30 +912,20 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 16]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1105,13 +955,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -1124,22 +968,14 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1169,13 +1005,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -1188,30 +1018,20 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1254,17 +1074,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4.
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -1291,7 +1101,19 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup Spazzolato
+                                        _ #(make-dynamic-script
+                                            (markup
+                                                #:whiteout
+                                                #:line (
+                                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                                    #:hspace -0.4
+                                                    #:dynamic "f"
+                                                    #:hspace -0.2
+                                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                                    )
+                                                )
+                                            )
+                                        ^ \markup twist
 
                                         r8
 
@@ -1315,21 +1137,13 @@
                                         \times 6/7
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -1337,19 +1151,13 @@
                                         \times 6/7
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1367,6 +1175,9 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        \ff
+                                        - \tongue #2
+                                        ^ \markup crine
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -1379,12 +1190,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #3
                                             ]
 
                                             r8
@@ -1394,6 +1207,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         r8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1404,12 +1218,14 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #3
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #3
                                         ]
 
                                         \times 2/3
@@ -1420,6 +1236,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
 
                                             r8
 
@@ -1429,12 +1246,14 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #3
                                         ]
 
                                         \times 2/3
@@ -1445,6 +1264,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
 
                                             r8
 
@@ -1454,12 +1274,14 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
                                         [
 
                                         \revert Staff.Stem.stemlet-length
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
                                         %! MATERIAL_COLOR
                                         \)
                                         ]
@@ -1512,11 +1334,21 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
-                                            ^ \markup Spazzolato
+                                            _ #(make-dynamic-script
+                                                (markup
+                                                    #:whiteout
+                                                    #:line (
+                                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                                        #:hspace -0.4
+                                                        #:dynamic "f"
+                                                        #:hspace -0.2
+                                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                                        )
+                                                    )
+                                                )
+                                            ^ \markup twist
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1540,13 +1372,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 2]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1565,9 +1391,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1591,32 +1415,20 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 3]
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1627,17 +1439,13 @@
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -1652,30 +1460,20 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1697,11 +1495,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -1724,13 +1518,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -1740,17 +1528,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 5]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -1761,13 +1545,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -1791,13 +1569,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -1812,9 +1584,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1851,9 +1621,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1866,13 +1634,7 @@
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1896,13 +1658,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 9]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -1915,28 +1671,20 @@
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1962,13 +1710,7 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1987,11 +1729,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
@@ -2001,17 +1739,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 11]
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -2026,19 +1760,13 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
@@ -2049,13 +1777,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
@@ -2072,13 +1794,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -2131,13 +1847,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 13]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -2164,30 +1874,20 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -2225,43 +1925,27 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -2289,13 +1973,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -2310,22 +1988,14 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r8.
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -2361,30 +2031,20 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                         }
 
                                         \times 4/5
                                         {
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2408,13 +2068,7 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -2438,9 +2092,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -2461,13 +2113,7 @@
                                         \times 2/3
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -2484,13 +2130,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 19]
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -2512,13 +2152,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             r16
 
@@ -2548,6 +2182,9 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        \mf
+                                        - \tongue #2
+                                        ^ \markup crine
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -2560,12 +2197,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #3
                                             ]
 
                                             r8
@@ -2575,6 +2214,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         r8
                                         %! MATERIAL_COLOR
@@ -2592,7 +2232,19 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        ^ \markup Spazzolato
+                                        _ #(make-dynamic-script
+                                            (markup
+                                                #:whiteout
+                                                #:line (
+                                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                                    #:hspace -0.4
+                                                    #:dynamic "f"
+                                                    #:hspace -0.2
+                                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                                    )
+                                                )
+                                            )
+                                        ^ \markup twist
 
                                         r8
 
@@ -2627,21 +2279,13 @@
                                         \times 6/7
                                         {
 
-                                            r16
-
-                                            r16
-
-                                            r16
-
-                                            r16
+                                            r4
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
 
-                                            r16
-
-                                            r16
+                                            r8
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -2659,6 +2303,9 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        \ff
+                                        - \tongue #3
+                                        ^ \markup crine
 
                                         \times 2/3
                                         {
@@ -2669,12 +2316,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #3
                                             ]
 
                                         }
@@ -2684,6 +2333,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #3
 
                                         \times 2/3
                                         {
@@ -2697,12 +2347,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             [
 
                                             \revert Staff.Stem.stemlet-length
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
                                             ]
 
                                         }
@@ -2712,12 +2364,14 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #3
 
                                         r8
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #2
 
                                         \times 2/3
                                         {
@@ -2725,12 +2379,14 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
 
                                             r8
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            - \tongue #2
 
                                         }
 
@@ -2739,6 +2395,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'8
+                                        - \tongue #3
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2794,11 +2451,21 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup Spazzolato
+                                    _ #(make-dynamic-script
+                                        (markup
+                                            #:whiteout
+                                            #:line (
+                                                #:general-align Y -2 #:normal-text #:larger "“"
+                                                #:hspace -0.4
+                                                #:dynamic "f"
+                                                #:hspace -0.2
+                                                #:general-align Y -2 #:normal-text #:larger "”"
+                                                )
+                                            )
+                                        )
+                                    ^ \markup twist
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -2811,13 +2478,7 @@
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -2847,28 +2508,20 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -2898,49 +2551,33 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -2970,13 +2607,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -2989,22 +2620,14 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3034,13 +2657,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -3053,13 +2670,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -3069,17 +2680,13 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 6]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
@@ -3100,13 +2707,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -3130,11 +2731,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -3158,13 +2755,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3183,13 +2774,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3215,32 +2800,20 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3273,30 +2846,20 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 11]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3345,17 +2908,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4.
 
                                 }
 
@@ -3367,19 +2920,13 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -3409,9 +2956,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3424,13 +2969,7 @@
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3451,13 +2990,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -3473,28 +3006,20 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 14]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3517,13 +3042,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3542,28 +3061,20 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3581,19 +3092,13 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
@@ -3604,13 +3109,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -3626,11 +3125,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -3645,17 +3140,13 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3675,13 +3166,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -3706,6 +3191,9 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    \ff
+                                    - \tongue #2
+                                    ^ \markup crine
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -3714,6 +3202,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #3
 
                                 }
 
@@ -3722,10 +3211,12 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
 
                                 r8
 
@@ -3735,18 +3226,21 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                     r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #3
 
                                 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
 
                                 r8
                                 %! MATERIAL_COLOR
@@ -3764,7 +3258,19 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup Spazzolato
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:whiteout
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.4
+                                            #:dynamic "f"
+                                            #:hspace -0.2
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )
+                                ^ \markup twist
 
                                 r8
 
@@ -3788,21 +3294,13 @@
                                 \times 6/7
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -3810,19 +3308,13 @@
                                 \times 6/7
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3857,19 +3349,27 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
-                                    ^ \markup Spazzolato
+                                    _ #(make-dynamic-script
+                                        (markup
+                                            #:whiteout
+                                            #:line (
+                                                #:general-align Y -2 #:normal-text #:larger "“"
+                                                #:hspace -0.4
+                                                #:dynamic "f"
+                                                #:hspace -0.2
+                                                #:general-align Y -2 #:normal-text #:larger "”"
+                                                )
+                                            )
+                                        )
+                                    ^ \markup twist
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
@@ -3918,13 +3418,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -3937,11 +3431,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -3959,17 +3449,13 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -3986,13 +3472,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -4051,7 +3531,19 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup Spazzolato
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:whiteout
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.4
+                                            #:dynamic "f"
+                                            #:hspace -0.2
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )
+                                ^ \markup twist
 
                                 r8
 
@@ -4062,13 +3554,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -4081,13 +3567,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -4097,17 +3577,13 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 2]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
@@ -4128,13 +3604,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -4158,11 +3628,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -4183,13 +3649,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4208,13 +3668,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -4240,32 +3694,20 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4295,19 +3737,13 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -4317,11 +3753,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 6]
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4359,43 +3791,27 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4423,13 +3839,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -4444,11 +3854,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -4458,11 +3864,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4498,30 +3900,20 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
@@ -4545,13 +3937,7 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -4572,9 +3958,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4618,17 +4002,13 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
@@ -4636,21 +4016,13 @@
                                 \times 6/7
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -4668,17 +4040,13 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4695,13 +4063,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -4727,9 +4089,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4742,13 +4102,7 @@
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4775,28 +4129,20 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4826,19 +4172,13 @@
                                 \times 2/3
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -4848,30 +4188,20 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 16]
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4901,13 +4231,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
@@ -4920,22 +4244,14 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -4965,13 +4281,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                     r16
 
@@ -4984,30 +4294,20 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -5050,17 +4350,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r4.
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -5087,7 +4377,19 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                ^ \markup Spazzolato
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:whiteout
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.4
+                                            #:dynamic "f"
+                                            #:hspace -0.2
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )
+                                ^ \markup twist
 
                                 r8
 
@@ -5111,21 +4413,13 @@
                                 \times 6/7
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                 }
 
@@ -5133,19 +4427,13 @@
                                 \times 6/7
                                 {
 
-                                    r16
-
-                                    r16
-
-                                    r16
+                                    r8.
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
 
-                                    r16
-
-                                    r16
+                                    r8
 
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
@@ -5184,6 +4472,9 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    \ff
+                                    - \tongue #2
+                                    ^ \markup crine
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -5192,43 +4483,21 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
 
                                 }
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #3
 
                                 r8
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-
-                                r8
-
-                                \times 2/3
-                                {
-
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    [
-
-                                    \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    ]
-
-                                    r8
-
-                                }
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                - \tongue #2
 
                                 r8
 
@@ -5239,12 +4508,14 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #3
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #3
                                     ]
 
                                     r8
@@ -5254,6 +4525,35 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
+
+                                r8
+
+                                \times 2/3
+                                {
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \tongue #2
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    %! PITCH
+                                    \evans-not-yet-pitched-coloring
+                                    c'8
+                                    - \tongue #3
+                                    ]
+
+                                    r8
+
+                                }
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                - \tongue #2
 
                                 r8
                                 %! MATERIAL_COLOR

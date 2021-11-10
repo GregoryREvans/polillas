@@ -169,6 +169,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             :32
+                                            \p
                                             - \accent
                                             %! MATERIAL_COLOR
                                             \(
@@ -402,6 +403,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mf
                                             - \baca-circle-bowing
 
                                         }
@@ -417,6 +419,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             :32
+                                            \mp
                                             - \accent
                                             [
 
@@ -600,6 +603,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \f
                                             - \baca-circle-bowing
 
                                         }
@@ -615,6 +619,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             :32
+                                            \mf
                                             - \accent
                                             [
 
@@ -1007,6 +1012,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \ff
                                             - \baca-circle-bowing
                                             %! MATERIAL_COLOR
                                             \)
@@ -1060,6 +1066,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             :32
+                                            \p
                                             - \accent
                                             %! MATERIAL_COLOR
                                             \(
@@ -1256,6 +1263,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \mf
                                             - \baca-circle-bowing
 
                                         }
@@ -1270,6 +1278,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             :32
+                                            \mp
                                             - \accent
 
                                             %! PITCH
@@ -1426,6 +1435,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \f
                                             - \baca-circle-bowing
 
                                         }
@@ -1440,6 +1450,7 @@
                                             \evans-not-yet-pitched-coloring
                                             c'8
                                             :32
+                                            \mf
                                             - \accent
 
                                             %! PITCH
@@ -1784,6 +1795,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \ff
                                             - \baca-circle-bowing
                                             %! MATERIAL_COLOR
                                             \)
@@ -1843,6 +1855,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     :32
+                                    \p
                                     - \accent
                                     %! MATERIAL_COLOR
                                     \(
@@ -2151,6 +2164,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \mf
                                     - \baca-circle-bowing
 
                                 }
@@ -2167,6 +2181,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     :32
+                                    \mp
                                     - \accent
                                     [
 
@@ -2397,6 +2412,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \f
                                     - \baca-circle-bowing
 
                                 }
@@ -2413,6 +2429,7 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     :32
+                                    \mf
                                     - \accent
                                     [
 
@@ -2949,6 +2966,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \ff
                                     - \baca-circle-bowing
                                     %! MATERIAL_COLOR
                                     \)
@@ -3000,6 +3018,7 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 :32
+                                \p
                                 - \accent
                                 %! MATERIAL_COLOR
                                 \(
@@ -3026,7 +3045,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
                                 ~
 
@@ -3087,7 +3112,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3113,6 +3144,7 @@
                                 \evans-not-yet-pitched-coloring
                                 c'4
                                 :32
+                                - \baca-circle-bowing
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -3130,7 +3162,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    - \baca-circle-bowing
+                                    \mf
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3142,6 +3174,7 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 :32
+                                \mp
                                 - \accent
                                 [
 
@@ -3169,7 +3202,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
                                 ~
 
@@ -3218,6 +3257,7 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 :32
+                                - \baca-circle-bowing
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -3230,7 +3270,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
 
                                 \tweak edge-height #'(0.7 . 0)
@@ -3243,7 +3289,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    - \baca-circle-bowing
+                                    \f
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3255,6 +3301,7 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 :32
+                                \mf
                                 - \accent
                                 [
 
@@ -3279,7 +3326,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3340,7 +3393,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3375,7 +3434,13 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                :32
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 :32
                                 ~
 
@@ -3431,6 +3496,7 @@
                                 \evans-not-yet-pitched-coloring
                                 c'8
                                 :32
+                                - \baca-circle-bowing
                                 ~
                                 ]
 
@@ -3482,7 +3548,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
-                                    - \baca-circle-bowing
+                                    \ff
                                     %! MATERIAL_COLOR
                                     \)
 

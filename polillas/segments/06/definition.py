@@ -32,7 +32,10 @@ maker = evans.SegmentMaker(
                 extra_counts=[0, 2, 1, 1, 0],
                 stage=1,
             ),
-            abjad.Markup(r"\markup Spazzolato", literal=True, direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { spazzolato + clt. }", literal=True, direction=abjad.Up
+            ),
+            abjad.Dynamic("mp"),
             polillas.B_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -45,7 +48,10 @@ maker = evans.SegmentMaker(
                 extra_counts=[2, 1, 1, 0, 1],
                 stage=1,
             ),
-            abjad.Markup(r"\markup Spazzolato", literal=True, direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { spazzolato + clt. }", literal=True, direction=abjad.Up
+            ),
+            abjad.Dynamic("mp"),
             polillas.B_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -58,7 +64,10 @@ maker = evans.SegmentMaker(
                 extra_counts=[1, 1, 0, 0, 2],
                 stage=1,
             ),
-            abjad.Markup(r"\markup Spazzolato", literal=True, direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { spazzolato + clt. }", literal=True, direction=abjad.Up
+            ),
+            abjad.Dynamic("mp"),
             polillas.B_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
@@ -150,6 +159,7 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
+            baca.hairpin("ff > p", selector=abjad.select().notes()),
             polillas.G_color,
         ),
         evans.MusicCommand(
@@ -158,6 +168,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.note_rhythm_handler,
             abjad.Articulation("trill"),
+            abjad.Dynamic("mf"),
             polillas.D_color,
         ),
         evans.MusicCommand(
@@ -167,14 +178,16 @@ maker = evans.SegmentMaker(
             polillas.note_rhythm_handler,
             abjad.Articulation("trill"),
         ),
-        evans.call("violin 1 voice", polillas.D_color, baca.selectors.leaves([84, 85])),
+        evans.call("violin 1 voice", polillas.D_color, baca.selectors.leaves([66, 67])),
         evans.MusicCommand(
             [("violin 2 voice", (14, 18))],
             polillas.shadows(extra_counts=[0], stage=3),
+            evans.PitchHandler([1, 2, 3, 2], forget=False),
             evans.Callable(
                 abjad.glissando,
                 selector=abjad.select().logical_ties(),
             ),
+            abjad.Dynamic("mp"),
             polillas.A_color,
         ),
         evans.MusicCommand(
@@ -185,6 +198,7 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
             polillas.clef_whitespace,
+            abjad.Dynamic("mp"),
             polillas.A_color,
         ),
         evans.MusicCommand(
@@ -197,6 +211,7 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
+            abjad.Dynamic("p"),
             polillas.G_color,
         ),
         evans.attach(
@@ -204,34 +219,34 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
-            baca.selectors.leaf(81),
+            baca.selectors.leaf(63),
         ),
         evans.attach(
             "violin 1 voice",
             abjad.Clef("treble"),
-            baca.selectors.leaf(81),
+            baca.selectors.leaf(63),
         ),
         evans.attach(
             "violin 1 voice",
             polillas.clef_whitespace,
-            baca.selectors.leaf(81),
+            baca.selectors.leaf(63),
         ),
         evans.attach(
             "violin 2 voice",
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
-            baca.selectors.leaf(95),
+            baca.selectors.leaf(71),
         ),
         evans.attach(
             "violin 2 voice",
             abjad.Clef("treble"),
-            baca.selectors.leaf(95),
+            baca.selectors.leaf(71),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.clef_whitespace,
-            baca.selectors.leaf(95),
+            baca.selectors.leaf(71),
         ),
         evans.call(
             "score",
@@ -280,11 +295,6 @@ maker = evans.SegmentMaker(
             polillas.met_40,
             baca.selectors.leaf(14),
         ),
-        # evans.call(
-        #     "Global Context",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
-        # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,

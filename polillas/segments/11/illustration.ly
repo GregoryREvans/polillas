@@ -245,28 +245,45 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
+                                        \tweak NoteHead.style #'harmonic
                                         e'''4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \mp
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
+                                        %! abjad.glissando(7)
+                                        \glissando
                                         %! MATERIAL_COLOR
                                         \(
 
-                                        b'''16
-                                        ~
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''4
+                                        %! abjad.glissando(7)
+                                        \glissando
 
-                                        b'''8.
-
+                                        \tweak NoteHead.style #'harmonic
                                         e''''8.
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
-                                        e''''8.
+                                        \tweak NoteHead.style #'harmonic
+                                        e''''4
                                         ~
 
+                                        \tweak NoteHead.style #'harmonic
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        e''''8
+                                        e''''16
+                                        %! abjad.glissando(7)
+                                        \glissando
                                         [
 
+                                        \tweak NoteHead.style #'harmonic
                                         \revert Staff.Stem.stemlet-length
                                         b'''16
                                         ~
@@ -276,12 +293,19 @@
                                         \times 6/5
                                         {
 
+                                            \tweak NoteHead.style #'harmonic
                                             \override Staff.Stem.stemlet-length = 0.75
                                             b'''16.
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
                                             e'''8
+                                            %! abjad.glissando(7)
+                                            \glissando
 
+                                            \tweak NoteHead.style #'harmonic
                                             \revert Staff.Stem.stemlet-length
                                             b'''16.
                                             ~
@@ -292,28 +316,36 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
+                                        \tweak NoteHead.style #'harmonic
                                         b'''16
-                                        [
+                                        %! abjad.glissando(7)
+                                        \glissando
 
-                                        \revert Staff.Stem.stemlet-length
-                                        e''''8
+                                        \tweak NoteHead.style #'harmonic
+                                        e''''4
                                         ~
-                                        ]
 
-                                        e''''8.
+                                        \tweak NoteHead.style #'harmonic
+                                        e''''16
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/5
                                         {
 
+                                            \tweak NoteHead.style #'harmonic
                                             \override Staff.Stem.stemlet-length = 0.75
                                             e''''16.
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             [
 
+                                            \tweak NoteHead.style #'harmonic
                                             b'''8
+                                            %! abjad.glissando(7)
+                                            \glissando
 
+                                            \tweak NoteHead.style #'harmonic
                                             \revert Staff.Stem.stemlet-length
                                             e'''16.
                                             ~
@@ -324,11 +356,34 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
+                                        \tweak NoteHead.style #'harmonic
                                         e'''16
+                                        %! abjad.glissando(7)
+                                        \glissando
 
-                                        b'''2
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''8.
+                                        ~
 
-                                        e''''4
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''4
+                                        ~
+
+                                        \tweak NoteHead.style #'harmonic
+                                        b'''16
+                                        %! abjad.glissando(7)
+                                        \glissando
+
+                                        \tweak NoteHead.style #'harmonic
+                                        e''''8.
+                                        ~
+
+                                        \tweak NoteHead.style #'harmonic
+                                        e''''16
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -340,6 +395,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \f
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
@@ -437,12 +493,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -450,17 +506,28 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2...
+                                        c'4.
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4.
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
+                                        ~
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -476,7 +543,11 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'8
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(8)
                                         - \tweak self-alignment-X #left
@@ -505,11 +576,11 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'8
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'8
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
                                         - \tweak self-alignment-X #left
@@ -535,6 +606,11 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
@@ -545,7 +621,7 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'8
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(8)
                                         - \tweak self-alignment-X #left
@@ -558,6 +634,7 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
+                                        ~
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -570,6 +647,10 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
 
                                         \times 2/3
                                         {
@@ -825,10 +906,10 @@
 
                                         }
 
-                                        d'16
+                                        d'4
                                         ~
 
-                                        d'4
+                                        d'16
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -839,7 +920,8 @@
                                         \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        \f
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
@@ -867,17 +949,17 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -928,7 +1010,7 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
                                         - \tweak self-alignment-X #left
@@ -941,7 +1023,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
-                                        ~
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -958,10 +1039,6 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
@@ -978,6 +1055,11 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        ~
 
                                         \times 2/3
                                         {
@@ -1022,19 +1104,11 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
-                                        ~
+                                        c'8
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'8
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
                                         - \tweak self-alignment-X #left
@@ -1047,7 +1121,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
-                                        ~
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -1060,15 +1133,10 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(8)
                                         - \tweak self-alignment-X #left
@@ -1097,13 +1165,33 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2...
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
@@ -1183,6 +1271,7 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 g4
+                                \f
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -1207,7 +1296,10 @@
                                 %! MATERIAL_COLOR
                                 \(
 
-                                b4.
+                                b4
+                                ~
+
+                                b8
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1231,26 +1323,29 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                \p
+                                - \tongue #2
                                 %! MATERIAL_COLOR
                                 \(
 
-                                r16
-
-                                r16
+                                r8
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16.
+                                - \tongue #3
 
                                 r16.
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16.
+                                - \tongue #2
 
                                 r16.
                                 %! MATERIAL_COLOR
@@ -1273,12 +1368,11 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                - \tongue #2
                                 %! MATERIAL_COLOR
                                 \(
 
-                                r16
-
-                                r16
+                                r8
 
                                 \times 2/3
                                 {
@@ -1287,12 +1381,14 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #2
                                     [
 
                                     \revert Staff.Stem.stemlet-length
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    - \tongue #3
                                     ]
 
                                     r8
@@ -1301,20 +1397,15 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
+                                c'8
+                                - \tongue #2
+
+                                r8
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-
-                                r16
-
-                                r16
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                - \tongue #3
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1326,6 +1417,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                \f
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
                                 - \tweak self-alignment-X #left
@@ -1391,16 +1483,11 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
+                                c'8
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'8
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
                                 - \tweak self-alignment-X #left
@@ -1426,6 +1513,11 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
+                                ~
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4
@@ -1465,16 +1557,13 @@
 
                                 }
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-                                [
 
-                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'8
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(8)
                                 - \tweak self-alignment-X #left
@@ -1487,7 +1576,6 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                ~
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -1500,15 +1588,10 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
-                                ]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'8.
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
                                 - \tweak self-alignment-X #left
@@ -1534,13 +1617,33 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1552,7 +1655,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'8
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(8)
                                 - \tweak self-alignment-X #left
@@ -1578,6 +1681,11 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
 
                                 \times 2/3
                                 {
@@ -1729,6 +1837,7 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 g4
+                                \f
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -1759,60 +1868,118 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
+                                \tweak NoteHead.style #'harmonic
                                 bf,4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \>
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! MATERIAL_COLOR
                                 \(
 
-                                f16
-                                ~
+                                \tweak NoteHead.style #'harmonic
+                                f4
+                                %! abjad.glissando(7)
+                                \glissando
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
 
                                 \clef "bass"
-                                f8.
-
+                                \tweak NoteHead.style #'harmonic
                                 bf8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
-                                bf8.
+                                \tweak NoteHead.style #'harmonic
+                                bf4
                                 ~
 
-                                bf8
+                                \tweak NoteHead.style #'harmonic
+                                \override Staff.Stem.stemlet-length = 0.75
+                                bf16
+                                %! abjad.glissando(7)
+                                \glissando
+                                [
 
-                                d'4
+                                \tweak NoteHead.style #'harmonic
+                                \revert Staff.Stem.stemlet-length
+                                d'16
+                                ~
+                                ]
 
+                                \tweak NoteHead.style #'harmonic
+                                d'8.
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
                                 f'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
 
-                                \override Staff.Stem.stemlet-length = 0.75
+                                \tweak NoteHead.style #'harmonic
                                 f'16
-                                [
+                                %! abjad.glissando(7)
+                                \glissando
 
-                                \revert Staff.Stem.stemlet-length
-                                gqs'8
+                                \tweak NoteHead.style #'harmonic
+                                gqs'4
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                bf'16
                                 ~
-                                ]
 
-                                gqs'8
-
-                                bf'4..
+                                \tweak NoteHead.style #'harmonic
+                                bf'4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
+                                \tweak NoteHead.style #'harmonic
                                 bf'16
+                                %! abjad.glissando(7)
+                                \glissando
 
-                                c''4
+                                \tweak NoteHead.style #'harmonic
+                                c''8.
+                                ~
 
-                                d''4
+                                \tweak NoteHead.style #'harmonic
+                                c''16
+                                %! abjad.glissando(7)
+                                \glissando
 
-                                c''4
+                                \tweak NoteHead.style #'harmonic
+                                d''8.
+                                ~
+
+                                \tweak NoteHead.style #'harmonic
+                                d''16
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                \tweak NoteHead.style #'harmonic
+                                c''8.
+                                ~
+
+                                \tweak NoteHead.style #'harmonic
+                                c''16
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \p
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1821,10 +1988,10 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                \f
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
                                 - \tweak self-alignment-X #left
@@ -1848,12 +2015,10 @@
                                 \bacaStartTextSpanBCP
                                 %! MATERIAL_COLOR
                                 \(
-                                [
 
-                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'8
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(8)
                                 - \tweak self-alignment-X #left
@@ -1879,12 +2044,6 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
-                                ]
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
 
                                 \times 2/3
                                 {
@@ -1925,7 +2084,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'4
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
@@ -1945,7 +2104,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1953,7 +2112,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2...
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
                                 ~
 
                                 \times 2/3
@@ -1999,12 +2168,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                c'4
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring

@@ -14,6 +14,7 @@ from .lib import (
     G,
     G_color,
     alternate_glissandi,
+    angles,
     cello_alternate_glissandi,
     cello_swell_dynamics,
     chilled_stage_3_bowing,
@@ -74,6 +75,7 @@ from .lib import (
     stop_repeat,
     swell_dynamics,
     trill_ties,
+    triple_swell,
     zero_padding_glissando,
 )
 from .materials.instruments import instruments
@@ -176,9 +178,11 @@ __all__ = [
     "G",
     "G_color",
     "select_measures",
+    "angles",
     "all_signatures",
     "start_bis_trill_one",
     "start_bis_trill_two",
+    "triple_swell",
     "stop_bis_trill",
     "chilled",
     "multi_stac",
