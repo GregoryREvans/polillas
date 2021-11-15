@@ -23,8 +23,6 @@
                 % [Global Context measure 1]
 
                 \tempo 4=20
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
                 \once \override Score.TimeSignature.stencil = #(blank-time-signature)
                 %! scaling time signatures
                 \time 9/8
@@ -313,8 +311,10 @@
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-down  }
                                             c''!1
+                                            \ff
                                             \-
                                             ^ \markup \center-align { -31 }
+                                            ^ \markup crine
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -711,6 +711,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \p
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1071,8 +1072,10 @@
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
                                             g'!1
+                                            \ff
                                             \-
                                             ^ \markup \center-align { A♭-49 }
+                                            ^ \markup crine
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -1434,6 +1437,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \p
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
@@ -1742,8 +1746,10 @@
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                                     fs!1
+                                    \ff
                                     \-
                                     ^ \markup \center-align { -14 }
+                                    ^ \markup crine
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -2105,6 +2111,14 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \mp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -2267,6 +2281,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
@@ -2314,8 +2332,10 @@
                                         \tweak Accidental.text \markup { \abjad-natural  }
                                         a!
                                     >1
+                                    \ff
                                     \-
                                     ^ \markup \center-align \center-column { +2 +0  }
+                                    ^ \markup crine
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -2716,37 +2736,25 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
+                                c'1
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \sfp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2754,12 +2762,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2767,12 +2770,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c'2
                                 ~
 
                                 %! PITCH
@@ -2785,12 +2783,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c'2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2798,12 +2791,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2811,12 +2799,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c'2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2824,12 +2807,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2837,17 +2815,16 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c'2
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \f
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"

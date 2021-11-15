@@ -224,7 +224,22 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
                                             \mp
-                                            ^ \markup Spazzolato
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato clt."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -461,6 +476,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -706,7 +725,22 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             \p
-                                            ^ \markup {3/4 on bridge}
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "3/4 ob."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -792,6 +826,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -810,6 +848,22 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "msp."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             %! MATERIAL_COLOR
                                             \(
                                             [
@@ -1083,6 +1137,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             ]
 
                                             r8
@@ -1115,7 +1173,7 @@
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'1.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
@@ -1127,58 +1185,13 @@
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'1..
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1186,37 +1199,7 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'1..
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
@@ -1275,7 +1258,22 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
                                             \mp
-                                            ^ \markup Spazzolato
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato clt."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             [
 
                                             %! PITCH
@@ -1419,6 +1417,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'16
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -1673,7 +1675,22 @@
                                             \evans-not-yet-pitched-coloring
                                             c'4
                                             \p
-                                            ^ \markup {3/4 on bridge}
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "3/4 ob."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
 
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
@@ -1753,6 +1770,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
 
                                             r4
                                             %! MATERIAL_COLOR
@@ -1772,7 +1793,22 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
                                             \mp
-                                            ^ \markup Spazzolato
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato"
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -1880,6 +1916,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'32
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
 
                                             r8
                                             %! MATERIAL_COLOR
@@ -1908,7 +1948,22 @@
                                             \evans-not-yet-pitched-coloring
                                             c'16
                                             \mp
-                                            ^ \markup Spazzolato
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato"
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -2073,6 +2128,10 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'32
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             ]
 
                                             r32
@@ -2107,7 +2166,7 @@
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'1.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
@@ -2119,58 +2178,13 @@
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
-                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'1..
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -2178,37 +2192,7 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'1..
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
@@ -2264,7 +2248,22 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
-                                    ^ \markup Spazzolato
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "spazzolato clt."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -2411,6 +2410,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
 
                                     r8.
                                     %! MATERIAL_COLOR
@@ -2689,7 +2692,22 @@
                                     \evans-not-yet-pitched-coloring
                                     c'4
                                     \p
-                                    ^ \markup {3/4 on bridge}
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "3/4 ob."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -2767,6 +2785,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
 
                                     r2
                                     %! MATERIAL_COLOR
@@ -2792,7 +2814,22 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
-                                    ^ \markup Spazzolato
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "spazzolato"
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
 
                                     r8.
 
@@ -2848,6 +2885,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
 
                                     r16
                                     %! MATERIAL_COLOR
@@ -2876,6 +2917,22 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "msp."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -3006,6 +3063,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -3035,7 +3096,7 @@
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4.
+                                c'1.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -3047,58 +3108,13 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
-                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c'1..
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3106,37 +3122,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c'1..
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
@@ -3188,7 +3174,22 @@
                                     \evans-not-yet-pitched-coloring
                                     c'16
                                     \mp
-                                    ^ \markup Spazzolato
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "spazzolato clt."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -3386,6 +3387,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -3640,7 +3645,22 @@
                                 \evans-not-yet-pitched-coloring
                                 c'4
                                 \p
-                                ^ \markup {3/4 on bridge}
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "3/4 ob."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -3694,6 +3714,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
 
                                     r4
                                     %! MATERIAL_COLOR
@@ -3713,6 +3737,22 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'8
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "msp."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -4002,6 +4042,10 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'16
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
                                     ]
 
                                     r16
@@ -4027,7 +4071,22 @@
                                 \evans-not-yet-pitched-coloring
                                 c'4
                                 \pp
-                                ^ \markup {1/2 on bridge}
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "1/2 ob."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -4222,6 +4281,10 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS

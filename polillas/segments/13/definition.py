@@ -70,7 +70,7 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             abjad.Articulation("flageolet"),
             polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", (17, 23))],
@@ -95,7 +95,7 @@ maker = evans.SegmentMaker(
             abjad.Articulation("trill"),
             baca.hairpin("mp < f"),
             polillas.D_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -117,7 +117,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
             ),
             polillas.D_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "score",

@@ -115,6 +115,7 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
+                - \rehearsal-mark-markup "x5" 6 -1
                 \tweak padding 6
                 ^ \markup {
                   \override #'(font-size . 5.5)
@@ -271,7 +272,7 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 30]
 
-                \tempo 4=60
+                \tempo 4=40
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
@@ -279,7 +280,7 @@
                 ^ \markup {
                   \override #'(font-size . 5.5)
                   \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
                   }
                 }
                 %! COMMENT_MEASURE_NUMBERS
@@ -369,7 +370,8 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        \pp
                                         - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
@@ -377,17 +379,17 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
 
                                         \times 2/3
@@ -423,8 +425,18 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'16
                                         - \baca-circle-bowing
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -435,37 +447,29 @@
                                         c'4
                                         ~
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
-                                        [
 
-                                        \revert Staff.Stem.stemlet-length
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
+                                        - \baca-circle-bowing
+
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'16
                                         - \baca-circle-bowing
                                         ~
-                                        ]
 
-                                        \override Staff.Stem.stemlet-length = 0.75
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        - \baca-circle-bowing
+                                        c'4
                                         ~
-                                        ]
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -494,6 +498,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
                                             [
@@ -510,6 +515,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -524,6 +530,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        \pp
                                         - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
@@ -534,7 +541,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         ~
 
                                         \times 2/3
@@ -581,6 +593,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
                                             [
@@ -621,6 +634,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -634,7 +648,8 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
+                                        \ff
                                         - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
@@ -642,12 +657,7 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
-                                        ~
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
                                         ~
 
                                         %! PITCH
@@ -707,6 +717,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -798,6 +809,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -831,6 +843,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -889,6 +902,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \ff
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -910,6 +924,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        \pp
                                         - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \)
@@ -939,6 +954,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -1055,6 +1071,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -1090,6 +1107,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -1107,6 +1125,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \ff
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -1128,11 +1147,17 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2.
+                                        c'4.
+                                        \f
                                         - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4.
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 31]
@@ -1158,13 +1183,13 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'4
                                         - \baca-circle-bowing
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1172,12 +1197,7 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
-
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        - \baca-circle-bowing
+                                        c'4.
                                         ~
 
                                         %! PITCH
@@ -1186,8 +1206,18 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'8
                                         - \baca-circle-bowing
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
+                                        - \baca-circle-bowing
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8.
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -1557,6 +1587,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'4
+                                            \pp
                                             - \baca-circle-bowing
                                             %! MATERIAL_COLOR
                                             \(
@@ -1571,12 +1602,17 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1597,13 +1633,23 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'16
                                         - \baca-circle-bowing
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1611,7 +1657,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         ~
 
                                         \times 2/3
@@ -1665,6 +1716,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
                                             [
@@ -1681,6 +1733,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -1695,6 +1748,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4.
+                                        \pp
                                         - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
@@ -1728,12 +1782,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -1757,6 +1811,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
                                             [
@@ -1797,6 +1852,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -1811,6 +1867,7 @@
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
                                         c'4
+                                        \ff
                                         - \baca-circle-bowing
                                         %! MATERIAL_COLOR
                                         \(
@@ -1841,7 +1898,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'2
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -1893,6 +1955,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -1984,6 +2047,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -2017,6 +2081,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
 
@@ -2075,6 +2140,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \ff
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -2112,6 +2178,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
+                                            \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
                                             [
@@ -2251,6 +2318,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \f
+                                            \stopTrillSpan
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -2264,7 +2332,8 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4..
+                                        c'4
+                                        \pp
                                         - \baca-circle-bowing
                                         ~
                                         %! MATERIAL_COLOR
@@ -2272,17 +2341,17 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'8
+                                        c'16
                                         ~
 
                                         \times 2/3
@@ -2318,8 +2387,18 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        c'16
                                         - \baca-circle-bowing
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'4
+                                        ~
+
+                                        %! PITCH
+                                        \evans-not-yet-pitched-coloring
+                                        c'16
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2344,6 +2423,7 @@
                                             %! PITCH
                                             \evans-not-yet-pitched-coloring
                                             c'8.
+                                            \f
                                             - \baca-circle-bowing
                                             %! MATERIAL_COLOR
                                             \(
@@ -2398,12 +2478,12 @@
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'16
+                                        c'4
                                         ~
 
                                         %! PITCH
                                         \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -2811,7 +2891,8 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
+                                \pp
                                 - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
@@ -2819,17 +2900,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2841,13 +2922,28 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'16
                                 - \baca-circle-bowing
+                                ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'8
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 - \baca-circle-bowing
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2885,7 +2981,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -2914,6 +3015,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -2930,6 +3032,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -2944,6 +3047,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                \pp
                                 - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
@@ -2958,41 +3062,33 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
                                 - \baca-circle-bowing
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
-                                \override Staff.Stem.stemlet-length = 0.75
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
-                                [
 
-                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'8
                                 - \baca-circle-bowing
-                                ~
-                                ]
 
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                [
-
-                                \revert Staff.Stem.stemlet-length
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
                                 - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \)
-                                ]
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -3014,6 +3110,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -3054,6 +3151,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -3067,7 +3165,8 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
+                                \ff
                                 - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
@@ -3075,12 +3174,7 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                c'4
                                 ~
 
                                 %! PITCH
@@ -3117,7 +3211,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -3144,6 +3243,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -3235,6 +3335,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -3268,6 +3369,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -3326,6 +3428,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \ff
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -3363,6 +3466,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -3428,6 +3532,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -3441,7 +3546,8 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
+                                \pp
                                 - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
@@ -3449,12 +3555,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'8.
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -3481,6 +3587,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -3523,6 +3630,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -3558,6 +3666,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -3575,6 +3684,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \ff
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -3597,6 +3707,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                \f
                                 - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
@@ -3617,7 +3728,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -3634,8 +3755,18 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'8.
                                 - \baca-circle-bowing
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -4001,25 +4132,31 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                \pp
                                 - \baca-circle-bowing
+                                ~
                                 %! MATERIAL_COLOR
                                 \(
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'4
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
+                                - \baca-circle-bowing
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 - \baca-circle-bowing
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'16
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                - \baca-circle-bowing
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -4027,7 +4164,22 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2..
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8
                                 ~
 
                                 \times 2/3
@@ -4055,7 +4207,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
 
                                 \times 2/3
@@ -4108,6 +4265,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -4124,6 +4282,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -4138,6 +4297,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'8
+                                \pp
                                 - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
@@ -4153,7 +4313,12 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4
                                 ~
 
                                 \times 2/3
@@ -4209,6 +4374,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -4249,6 +4415,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -4263,6 +4430,7 @@
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
                                 c'4
+                                \ff
                                 - \baca-circle-bowing
                                 %! MATERIAL_COLOR
                                 \(
@@ -4293,17 +4461,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4..
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'8.
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -4330,6 +4498,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -4421,6 +4590,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -4454,6 +4624,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -4512,6 +4683,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \ff
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -4549,6 +4721,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \<
+                                    \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -4688,6 +4861,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \f
+                                    \stopTrillSpan
                                     %! MATERIAL_COLOR
                                     \)
                                     ]
@@ -4714,6 +4888,7 @@
                                     %! PITCH
                                     \evans-not-yet-pitched-coloring
                                     c'4
+                                    \pp
                                     - \baca-circle-bowing
                                     %! MATERIAL_COLOR
                                     \(
@@ -4728,12 +4903,17 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2
+                                c'4
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -4752,11 +4932,17 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'2.
+                                c'4.
+                                \f
                                 - \baca-circle-bowing
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
+                                ~
 
                                 \times 2/3
                                 {
@@ -4793,59 +4979,16 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'16
+                                c'4
                                 ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'4
+                                c'16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 32]
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8...
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'64
-                                - \baca-circle-bowing
-                                ~
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                ~
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'64
-                                [
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'32.
-                                - \baca-circle-bowing
-                                ~
-
-                                \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
-                                ]
-
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                ~
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
@@ -4854,7 +4997,27 @@
 
                                 %! PITCH
                                 \evans-not-yet-pitched-coloring
-                                c'8
+                                c'32.
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'16.
+                                - \baca-circle-bowing
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'32.
+                                - \baca-circle-bowing
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'4.
+                                ~
+
+                                %! PITCH
+                                \evans-not-yet-pitched-coloring
+                                c'8.
                                 %! MATERIAL_COLOR
                                 \)
 

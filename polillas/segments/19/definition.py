@@ -33,7 +33,7 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(),
             baca.hairpin("f |> p"),
             polillas.D_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -45,7 +45,7 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(),
             baca.hairpin("mp < ff"),
             polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -57,7 +57,7 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(),
             baca.hairpin("mp < ff"),
             polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "score",
@@ -72,6 +72,11 @@ maker = evans.SegmentMaker(
                 direction=abjad.Up,
             ),
             abjad.select().leaves().group_by_measure().get([10]).leaf(1),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(r"""\rehearsal-mark-markup "x4" 6 -1""", literal=True),
+            baca.selectors.leaf(3),
         ),
         evans.attach(
             "Global Context",

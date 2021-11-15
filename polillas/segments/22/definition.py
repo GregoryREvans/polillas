@@ -48,6 +48,12 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[1, 1, 3, 6, 3, 1, 3, 2]),
             baca.hairpin("f |> p"),
+            baca.text_spanner(
+                r"1/2 scratch =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -57,6 +63,12 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[2, 1, 2, 6, 1, 3, 3, 2]),
             baca.hairpin("f |> p"),
+            baca.text_spanner(
+                r"1/2 scratch =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -66,6 +78,12 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[1, 1, 1, 2, 6, 2, 1, 1, 3, 2]),
             baca.hairpin("f |> p"),
+            baca.text_spanner(
+                r"1/2 scratch =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -75,6 +93,12 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[2, 3, 6, 4, 3, 2]),
             baca.hairpin("f |> p"),
+            baca.text_spanner(
+                r"1/2 scratch =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -84,7 +108,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-1),
             abjad.Dynamic("mf"),
-            baca.text_spanner("on bridge => 1/4 on bridge"),
+            baca.text_spanner(
+                "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -94,7 +120,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-2),
             abjad.Dynamic("mf"),
-            baca.text_spanner("on bridge => 1/4 on bridge"),
+            baca.text_spanner(
+                "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -104,7 +132,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-3),
             abjad.Dynamic("mf"),
-            baca.text_spanner("on bridge => 1/4 on bridge"),
+            baca.text_spanner(
+                "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -114,7 +144,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-4),
             abjad.Dynamic("mf"),
-            baca.text_spanner("on bridge => 1/4 on bridge"),
+            baca.text_spanner(
+                "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -126,6 +158,11 @@ maker = evans.SegmentMaker(
                 stage=2, input_counts=[1, 1, 1, 1, 1, 2, 1, 3, 2, 2, 3, 2]
             ),
             baca.hairpin("ppp < fff"),
+            baca.text_spanner(
+                r"3/4 scratch => scratch moltiss",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -135,6 +172,11 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[2, 1, 1, 1, 6, 4, 2, 1, 2]),
             baca.hairpin("ppp < fff"),
+            baca.text_spanner(
+                r"3/4 scratch => scratch moltiss",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -144,6 +186,11 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[1, 4, 1, 5, 1, 3, 1, 2, 1, 1]),
             baca.hairpin("ppp < fff"),
+            baca.text_spanner(
+                r"3/4 scratch => scratch moltiss",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -153,6 +200,11 @@ maker = evans.SegmentMaker(
             ],
             polillas.chilled(stage=2, input_counts=[2, 3, 6, 4, 3, 2]),
             baca.hairpin("ppp < fff"),
+            baca.text_spanner(
+                r"3/4 scratch => scratch moltiss",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -162,7 +214,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-4),
             abjad.Dynamic("mf"),
-            baca.text_spanner("1/2 on bridge => on bridge"),
+            baca.text_spanner(
+                "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -172,7 +226,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-4),
             abjad.Dynamic("mf"),
-            baca.text_spanner("1/2 on bridge => on bridge"),
+            baca.text_spanner(
+                "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -182,7 +238,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-2),
             abjad.Dynamic("mf"),
-            baca.text_spanner("1/2 on bridge => on bridge"),
+            baca.text_spanner(
+                "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -192,7 +250,9 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-2),
             abjad.Dynamic("mf"),
-            baca.text_spanner("1/2 on bridge => on bridge"),
+            baca.text_spanner(
+                "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -204,9 +264,15 @@ maker = evans.SegmentMaker(
                 ("cello voice", (35, 40)),
             ],
             polillas.make_tied_notes(),
-            # baca.hairpin("f |> p"),
+            baca.hairpin("f > p"),
+            baca.text_spanner(
+                r"1/2 scratch =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.E_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -217,7 +283,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=3, rotation=-1),
             abjad.Dynamic("mf"),
-            baca.text_spanner("msp. => on bridge"),
+            baca.text_spanner("msp. => on bridge", (abjad.tweak(5).staff_padding, 0)),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -231,7 +297,7 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(),
             # baca.hairpin("mf >o niente"),
             polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
+            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -369,7 +435,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
+    extra_rewrite=True,
 )
 
 maker.build_segment()

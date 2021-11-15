@@ -32,8 +32,159 @@ maker = evans.SegmentMaker(
             ],
             polillas.shadows(stage=1),
             polillas.zero_padding_glissando,
+            abjad.Dynamic("ff"),
             polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.bis_trill,
+            polillas.select_measures([4]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([5]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.bis_trill,
+            polillas.select_measures([6]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([7, 8, 9, 10, 11]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.bis_trill,
+            polillas.select_measures([12]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([0, 1, 2]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.bis_trill,
+            polillas.select_measures([3]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([4]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.bis_trill,
+            polillas.select_measures([5]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([6, 7, 8, 9, 10, 11, 12]),
+        ),
+        evans.call(
+            "viola voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.bis_trill,
+            polillas.select_measures([4]),
+        ),
+        evans.call(
+            "viola voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([5, 6, 7, 8, 9, 10, 11, 12]),
+        ),
+        evans.call(
+            "cello voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([0]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.bis_trill,
+            polillas.select_measures([1]),
+        ),
+        evans.call(
+            "cello voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([2]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.bis_trill,
+            polillas.select_measures([3]),
+        ),
+        evans.call(
+            "cello voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([4, 5, 6, 7, 8, 9, 10, 11, 12]),
         ),
         evans.MusicCommand(
             [
@@ -43,6 +194,8 @@ maker = evans.SegmentMaker(
                 ("cello voice", 13),
             ],
             polillas.note_rhythm_handler,
+            abjad.Dynamic("mp"),
+            abjad.Markup(r"\markup clt.", literal=True, direction=abjad.Up),
             # polillas.B_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
@@ -55,8 +208,49 @@ maker = evans.SegmentMaker(
             ],
             polillas.shadows(stage=1),
             polillas.zero_padding_glissando,
+            abjad.Dynamic("ff"),
             polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([14]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([14]),
+        ),
+        evans.call(
+            "viola voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([14]),
+        ),
+        evans.call(
+            "cello voice",
+            baca.text_spanner(
+                r"\damp-markup =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
+            polillas.select_measures([14]),
         ),
         evans.MusicCommand(
             [
@@ -66,6 +260,8 @@ maker = evans.SegmentMaker(
                 ("cello voice", (15, 17)),
             ],
             polillas.make_tied_notes(),
+            abjad.Dynamic("mp"),
+            abjad.Markup(r"\markup clt.", literal=True, direction=abjad.Up),
             polillas.B_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
@@ -78,8 +274,29 @@ maker = evans.SegmentMaker(
             ],
             polillas.shadows(stage=1),
             polillas.zero_padding_glissando,
+            abjad.Dynamic("ff"),
             polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.bis_trill,
+            polillas.select_measures([17]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.bis_trill,
+            polillas.select_measures([17]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.bis_trill,
+            polillas.select_measures([17]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.bis_trill,
+            polillas.select_measures([17]),
         ),
         evans.MusicCommand(
             [
@@ -89,6 +306,8 @@ maker = evans.SegmentMaker(
                 ("cello voice", (18, 20)),
             ],
             polillas.make_tied_notes(),
+            abjad.Dynamic("mp"),
+            abjad.Markup(r"\markup clt.", literal=True, direction=abjad.Up),
             polillas.B_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),

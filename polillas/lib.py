@@ -888,3 +888,25 @@ bah = evans.BowAngleHandler([0, 45, 0, -45, 70, -70, 0, 25, -25, 0, 60])
 def angles(selections):
     for run in abjad.select(selections).runs():
         bah(run)
+
+
+def bis_trill(selections):
+    first_leaf = selections.leaf(0)
+    last_leaf = selections.leaf(-1)
+    abjad.attach(start_bis_trill_one, first_leaf)
+    abjad.attach(stop_bis_trill, last_leaf)
+
+
+def special_hairpin(selections):
+    leaves = selections.leaves()
+    abjad.attach(abjad.Dynamic("p"), leaves[0])
+    abjad.attach(abjad.StartHairpin("<|"), leaves[0])
+    abjad.attach(abjad.Dynamic("f"), leaves[1])
+    abjad.attach(abjad.Dynamic("p"), leaves[2])
+    abjad.attach(abjad.StartHairpin("<"), leaves[2])
+    abjad.attach(abjad.Dynamic("ff"), leaves[3])
+    abjad.attach(abjad.StartHairpin("--"), leaves[3])
+    abjad.attach(abjad.StartHairpin(">"), leaves[4])
+    abjad.attach(abjad.Dynamic("mf"), leaves[5])
+    abjad.attach(abjad.StartHairpin("<|"), leaves[5])
+    abjad.attach(abjad.Dynamic("f"), leaves[6])

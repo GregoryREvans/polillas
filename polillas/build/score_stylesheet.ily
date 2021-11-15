@@ -145,6 +145,8 @@
 		\override Clef.whiteout = 1
 		\override DynamicText.font-size = #-2
 		\override DynamicLineSpanner.staff-padding = 5 %was 4.5
+		\override DurationLine.breakable = ##t
+		\override DurationLine.thickness = 2.5
 		\override Glissando.breakable = ##t
 		\override Glissando.thickness = #3 %was 1.8
 		\override Hairpin.to-barline = ##f
