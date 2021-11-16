@@ -81,7 +81,14 @@ from .lib import (
     zero_padding_glissando,
 )
 from .materials.instruments import instruments
-from .materials.pitch import demo_pitch_handler
+from .materials.pitch import (
+    A_pitches,
+    B_pitches,
+    D_pitches,
+    E_pitches,
+    F_pitches,
+    demo_pitch_handler,
+)
 from .materials.rhythm import (
     chilled,
     flames,
@@ -167,16 +174,21 @@ from .materials.time_signatures import (
 __all__ = [
     "A",
     "A_color",
+    "A_pitches",
     "B",
     "B_color",
+    "B_pitches",
     "C",
     "C_color",
     "D",
     "D_color",
+    "D_pitches",
     "E",
     "E_color",
+    "E_pitches",
     "F",
     "F_color",
+    "F_pitches",
     "G",
     "G_color",
     "select_measures",
