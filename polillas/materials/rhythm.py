@@ -515,6 +515,16 @@ def lightning(
         )
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
+    if stage == 4:
+        stack = rmakers.stack(
+            rmakers.talea([3, 1, 1], 8),
+            rmakers.trivialize(abjad.select().tuplets()),
+            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.extract_trivial(),
+        )
+        handler = evans.RhythmHandler(stack, forget=False)
+        return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
 

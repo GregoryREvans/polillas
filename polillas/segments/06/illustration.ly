@@ -225,11 +225,24 @@
                                         %! MATERIAL_COLOR
                                         \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        gqs'16
                                         \mp
-                                        ^ \markup { spazzolato + clt. }
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "spazzolato + clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
 
                                         r16
 
@@ -238,9 +251,7 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            af'16
 
                                             r4
 
@@ -251,9 +262,7 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            g'16
 
                                             r8
 
@@ -267,9 +276,11 @@
 
                                             r4
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            bqs'16
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
 
                                         }
 
@@ -511,21 +522,15 @@
                                         % [violin 1 voice measure 16]
 
                                         \clef "treble"
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
+                                        \pitchedTrill
+                                        fs''2
                                         \mf
-                                        - \trill
                                         ~
-                                        %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan g''
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! MATERIAL_COLOR
+                                        fs''8
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -534,20 +539,19 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 1/2
+                                        %! applying indicators
+                                        \stopTrillSpan
 
                                         R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2..
-                                        - \trill
-                                        %! MATERIAL_COLOR
+                                        \pitchedTrill
+                                        d''2..
                                         \(
+                                        \startTrillSpan ef''
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
@@ -557,6 +561,8 @@
                                         r1 * 7/16
                                         %! applying indicators
                                         \)
+                                        %! applying indicators
+                                        \stopTrillSpan
 
                                         R1 * 7/16
                                         \bar "||"
@@ -596,17 +602,28 @@
                                             %! MATERIAL_COLOR
                                             \(
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            g'16
                                             \mp
-                                            ^ \markup { spazzolato + clt. }
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato + clt."
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
 
                                             r8
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            bqs'16
 
                                             r16
 
@@ -617,9 +634,7 @@
 
                                             r4
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
 
                                         }
 
@@ -634,18 +649,14 @@
 
                                         r16
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        cqs''16
 
                                         \times 4/5
                                         {
 
                                             r4
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            eqs''16
 
                                         }
 
@@ -657,9 +668,7 @@
 
                                             r8
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            bqf'16
 
                                             r8.
 
@@ -670,9 +679,11 @@
 
                                             r8
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            af'16
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             %! MATERIAL_COLOR
                                             \)
 
@@ -923,61 +934,61 @@
                                         \clef "treble"
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        cs'4
+                                        a''4
                                         \mp
                                         %! abjad.glissando(7)
                                         \glissando
                                         %! MATERIAL_COLOR
                                         \(
 
-                                        d'8
+                                        d'''8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
-                                        d'8
+                                        d'''8
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        ef'2
+                                        fs'''2
                                         %! abjad.glissando(7)
                                         \glissando
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
-                                        d'4
+                                        a'''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        cs'4
+                                        bqs'''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        d'4
+                                        d''''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        ef'4
+                                        e''''4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
 
-                                        ef'4
+                                        e''''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        d'4
+                                        d''''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        cs'4
+                                        bqs'''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        d'8
+                                        a'''8
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1030,25 +1041,34 @@
                                     %! MATERIAL_COLOR
                                     \(
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    aqf'16
                                     \mp
-                                    ^ \markup { spazzolato + clt. }
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "spazzolato + clt."
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
 
                                     r8
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    cqs''16
 
                                 }
 
                                 r4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                eqs''16
 
                                 r16
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1062,15 +1082,11 @@
 
                                     r16
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    bqf'16
 
                                     r8
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    af'16
 
                                     r16
 
@@ -1084,9 +1100,7 @@
 
                                     r16
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    gqs'16
 
                                     r8.
 
@@ -1097,9 +1111,11 @@
 
                                     r8
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    af'16
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
                                     %! MATERIAL_COLOR
                                     \)
 
@@ -1702,9 +1718,7 @@
                                 \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
+                                bf,,4.
                                 \mp
                                 ~
                                 %! MATERIAL_COLOR
@@ -1713,30 +1727,22 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2
+                                bf,,2
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,,8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
+                                bf,,1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2..
+                                bf,,2..
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS

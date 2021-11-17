@@ -183,8 +183,6 @@
                                             \markup { \hcenter-in #14 "Violin I" }
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             c'2
                                             \mp
                                             \<
@@ -219,27 +217,27 @@
                                             \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            cs'4
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            cqs'4
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -247,6 +245,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -261,9 +261,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 2]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            cs'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -296,6 +294,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -303,12 +303,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            d'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -317,9 +317,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            dqf'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -327,6 +325,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -342,9 +342,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 3]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            d'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -377,6 +375,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -384,12 +384,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            ef'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -398,9 +398,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            dqs'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -408,6 +406,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -424,9 +424,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 4]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            ef'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -459,6 +457,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -466,12 +466,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            e'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -480,9 +480,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            eqf'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -490,6 +488,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -505,9 +505,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 5]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            e'4
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -540,6 +538,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -547,12 +547,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            f'8
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -561,9 +561,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            eqs'8
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -571,6 +569,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -587,9 +587,7 @@
                                             % [violin 1 voice measure 6]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            f'8.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -622,6 +620,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -629,12 +629,12 @@
                                             \startTextSpanTwo
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16.
+                                            fs'16.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -642,9 +642,7 @@
                                             \startTextSpanTwo
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16.
+                                            fqs'16.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -652,6 +650,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -668,9 +668,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 7]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'2.
+                                            fs'2.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -703,27 +701,27 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            g'4.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            gqf'4.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -731,6 +729,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -745,9 +745,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 8]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'2
+                                            g'2
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -780,27 +778,27 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            af'4
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            gqs'4
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -808,6 +806,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -822,9 +822,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 9]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4..
+                                            af'4..
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -857,6 +855,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -864,12 +864,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8..
+                                            a'8..
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -878,9 +878,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8..
+                                            aqf'8..
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -907,7 +905,7 @@
                                         \clef "percussion"
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                        c'4
+                                        c'4.
                                         \p
                                         ^ \markup {on bridge}
                                         \stopTextSpanTwo
@@ -919,36 +917,65 @@
                                         - \tweak staff-padding #7
                                         \startTextSpanTwo
 
-                                        c'4.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
                                         \stopTextSpanTwo
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
 
                                         c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+
+                                        c'8
+
                                         c'4.
 
-                                        c'4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
 
-                                        c'4.
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        c'4
-
                                         c'4.
 
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        c'8
+
+                                        \revert Staff.Stem.stemlet-length
                                         c'8
                                         ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
+                                        c'4
+
                                         c'8
 
-                                        c'4.
+                                        c'8
 
                                         c'4
                                         %! MATERIAL_COLOR
@@ -994,8 +1021,6 @@
                                             \markup { \hcenter-in #14 "Violin II" }
                                             %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             c'2
                                             \mp
                                             \<
@@ -1030,27 +1055,27 @@
                                             \startTrillSpan
                                             %! MATERIAL_COLOR
                                             \(
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            cs'4
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            cqs'4
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1058,6 +1083,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1072,9 +1099,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 2]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            d'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1107,6 +1132,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1114,12 +1141,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            ef'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1128,9 +1155,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            dqs'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1138,6 +1163,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1153,9 +1180,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 3]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            e'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1188,6 +1213,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1195,12 +1222,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            f'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1209,9 +1236,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            eqs'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1219,6 +1244,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1235,9 +1262,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            fs'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1270,6 +1295,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1277,12 +1304,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            g'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1291,9 +1318,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            gqf'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1301,6 +1326,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1316,9 +1343,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 5]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            af'4
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1351,6 +1376,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1358,12 +1385,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1372,9 +1399,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1382,6 +1407,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1398,9 +1425,7 @@
                                             % [violin 2 voice measure 6]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            bf'8.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1433,6 +1458,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1440,12 +1467,12 @@
                                             \startTextSpanTwo
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16.
+                                            b'16.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1453,9 +1480,7 @@
                                             \startTextSpanTwo
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16.
+                                            bqf'16.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1463,6 +1488,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1479,9 +1506,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 7]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'2.
+                                            c''2.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1514,27 +1539,27 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            cs''4.
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            cqs''4.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1542,6 +1567,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1556,9 +1583,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 8]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'2
+                                            d''2
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1591,27 +1616,27 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ef''4
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            dqs''4
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1619,6 +1644,8 @@
                                             \stopTextSpanOne
                                             \stopTrillSpan
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1633,9 +1660,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 9]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4..
+                                            e''4..
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1668,6 +1693,8 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1675,12 +1702,12 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8..
+                                            f''8..
                                             \f
                                             \>
                                             \stopTextSpanTwo
+                                            %! abjad.glissando(7)
+                                            \glissando
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                             - \tweak bound-details.right.padding 1.4
@@ -1689,9 +1716,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8..
+                                            eqs''8..
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1718,7 +1743,7 @@
                                         \clef "percussion"
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                        c'4
+                                        c'4.
                                         \p
                                         ^ \markup {on bridge}
                                         \stopTextSpanTwo
@@ -1730,36 +1755,65 @@
                                         - \tweak staff-padding #7
                                         \startTextSpanTwo
 
-                                        c'4.
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
                                         \stopTextSpanTwo
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
 
                                         c'4
+                                        ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
+
+                                        c'8
+
                                         c'4.
 
-                                        c'4
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
 
-                                        c'4.
+                                        \revert Staff.Stem.stemlet-length
+                                        c'8
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
-                                        c'4
-
                                         c'4.
 
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        [
+
+                                        c'8
+
+                                        \revert Staff.Stem.stemlet-length
                                         c'8
                                         ~
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 13]
 
+                                        c'4
+
                                         c'8
 
-                                        c'4.
+                                        c'8
 
                                         c'4
                                         %! MATERIAL_COLOR
@@ -1806,50 +1860,65 @@
                                 \markup { \hcenter-in #14 "Viola" }
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                c'4
+                                c'4.
                                 %! MATERIAL_COLOR
                                 \(
 
-                                c'4.
-
-                                c'4
+                                c'8
 
                                 c'8
-                                ~
+
+                                c'4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
-                                c'4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
 
-                                c'4
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
 
-                                c'4
-                                ~
+                                c'4.
+
+                                c'8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
                                 c'8
 
-                                c'4
-
                                 c'4.
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
-                                c'4
-
                                 c'4.
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
-                                c'4
+                                c'4.
 
-                                c'4
-                                ~
+                                c'8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
@@ -1892,40 +1961,69 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                c'4
+                                c'4.
                                 \p
                                 %! MATERIAL_COLOR
                                 \(
 
-                                c'4.
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
 
                                 c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+
+                                c'8
+
                                 c'4.
 
-                                c'4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
 
-                                c'4.
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
-                                c'4
-
                                 c'4.
 
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                c'8
+
+                                \revert Staff.Stem.stemlet-length
                                 c'8
                                 ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
 
+                                c'4
+
                                 c'8
 
-                                c'4.
+                                c'8
 
                                 c'4
                                 %! MATERIAL_COLOR
@@ -1971,8 +2069,6 @@
                                     \markup { \hcenter-in #14 "Violoncello" }
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     c'2
                                     \mp
                                     \<
@@ -2007,27 +2103,27 @@
                                     \startTrillSpan
                                     %! MATERIAL_COLOR
                                     \(
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    b4
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    bqs4
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2035,6 +2131,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2049,9 +2147,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 2]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    a4.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2084,6 +2180,8 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2091,12 +2189,12 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    af8.
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2105,9 +2203,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    aqf8.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2115,6 +2211,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2130,9 +2228,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 3]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    fs4.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2165,6 +2261,8 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2172,12 +2270,12 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    f8.
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2186,9 +2284,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    fqs8.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2196,6 +2292,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2212,9 +2310,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 4]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    ef4.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2247,6 +2343,8 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2254,12 +2352,12 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    d8.
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2268,9 +2366,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    dqs8.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2278,6 +2374,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2293,9 +2391,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 5]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c4
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2328,6 +2424,8 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2335,12 +2433,12 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    b,8
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2349,9 +2447,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    bqs,8
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2359,6 +2455,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2375,9 +2473,7 @@
                                     % [cello voice measure 6]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    a,8.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2410,6 +2506,8 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2417,12 +2515,12 @@
                                     \startTextSpanTwo
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    af,16.
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2430,9 +2528,7 @@
                                     \startTextSpanTwo
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    aqf,16.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2440,6 +2536,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2456,9 +2554,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 7]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'2.
+                                    fs,2.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2491,27 +2587,27 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    f,4.
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4.
+                                    fqs,4.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2519,6 +2615,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2533,9 +2631,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 8]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'2
+                                    ef,2
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2568,27 +2664,27 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    d,4
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    dqs,4
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2596,6 +2692,8 @@
                                     \stopTextSpanOne
                                     \stopTrillSpan
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter flaut. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2610,9 +2708,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4..
+                                    c,4..
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2645,6 +2741,8 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2652,12 +2750,12 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8..
+                                    b,,8..
                                     \f
                                     \>
                                     \stopTextSpanTwo
+                                    %! abjad.glissando(7)
+                                    \glissando
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter scr. } \hspace #0.5 }
                                     - \tweak bound-details.right.padding 1.4
@@ -2666,9 +2764,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8..
+                                    bqs,,8..
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2695,7 +2791,7 @@
                                 \clef "percussion"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                c'4
+                                c'4.
                                 \p
                                 ^ \markup {on bridge}
                                 \stopTextSpanTwo
@@ -2707,36 +2803,65 @@
                                 - \tweak staff-padding #7
                                 \startTextSpanTwo
 
-                                c'4.
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
                                 \stopTextSpanTwo
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
 
                                 c'4
+                                ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
+
+                                c'8
+
                                 c'4.
 
-                                c'4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
 
-                                c'4.
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
-                                c'4
-
                                 c'4.
 
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                c'8
+
+                                \revert Staff.Stem.stemlet-length
                                 c'8
                                 ~
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
+                                c'4
+
                                 c'8
 
-                                c'4.
+                                c'8
 
                                 c'4
                                 %! MATERIAL_COLOR

@@ -132,30 +132,29 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                        a'4.
+                                        aqf'4.
                                         \mf
+                                        \stopTrillSpan
                                         ~
-                                        %! MATERIAL_COLOR
                                         \(
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'8
+                                            aqf'8
                                             - \accent
                                             ]
 
-                                            a'4
+                                            aqf'4
                                             ~
 
-                                            a'16
+                                            aqf'16
                                             ~
 
                                         }
@@ -164,15 +163,15 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            aqf'16
                                             - \accent
                                             ]
 
-                                            a'4.
+                                            aqf'4.
                                             ~
 
                                         }
@@ -185,32 +184,32 @@
                                             % [violin 1 voice measure 2]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             ~
                                             [
 
-                                            a'32
+                                            aqf'32
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            aqf'16
                                             - \accent
                                             ]
 
                                         }
 
-                                        a'4
+                                        aqf'4
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'32
+                                            aqf'32
                                             - \accent
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'8.
+                                            aqf'8.
                                             ~
                                             ]
 
@@ -221,14 +220,14 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             ~
                                             [
 
-                                            a'32
+                                            aqf'32
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            aqf'16
                                             - \accent
                                             ]
 
@@ -237,19 +236,19 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
-                                        a'4
+                                        aqf'4
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'32
+                                            aqf'32
                                             - \accent
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'8.
+                                            aqf'8.
                                             ~
                                             ]
 
@@ -260,20 +259,20 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             ~
                                             [
 
-                                            a'32
+                                            aqf'32
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            aqf'16
                                             - \accent
                                             ]
 
                                         }
 
-                                        a'8
+                                        aqf'8
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -284,20 +283,20 @@
                                             % [violin 1 voice measure 4]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             [
 
-                                            a'32
+                                            aqf'32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            aqf'16
                                             ~
                                             ]
 
                                         }
 
-                                        a'4
+                                        aqf'4
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -305,14 +304,14 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'16
+                                            aqf'16
                                             [
 
-                                            a'16
+                                            aqf'16
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16.
+                                            aqf'16.
                                             ~
                                             ]
 
@@ -323,14 +322,14 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'8
+                                            aqf'8
                                             [
 
-                                            a'32
+                                            aqf'32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            aqf'16
                                             ~
                                             ]
 
@@ -339,16 +338,15 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
-                                        a'4.
+                                        aqf'4.
 
                                         \times 2/3
                                         {
 
-                                            a'8
+                                            aqf'8
                                             - \accent
 
-                                            a'4..
-                                            %! MATERIAL_COLOR
+                                            aqf'4..
                                             \)
 
                                         }
@@ -437,348 +435,181 @@
                                         %! applying invisibility
                                         \once \override Rest.transparent = ##t
                                         r1 * 9/16
+                                        %! applying indicators
+                                        \stopTrillSpan
 
                                         R1 * 9/16
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         \f
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(6)
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(6)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(6)
                                         - \downbow
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #1 #7
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
                                         \(
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
+                                            ef'8
                                             \bacaStopTextSpanBCP
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #4 #7
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
+                                            e'8
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
                                             - \upbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #6 #7
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        e'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        e'4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        e'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        e'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        e'4
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
+                                        cs'8
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \downbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #5 #7
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        cs'4
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        cs'8
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
+                                        f'8
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \upbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #7 #7
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
                                         ]
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            f'8
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
+                                            e'4
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #6 #7
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        e'8
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
+                                        fs'8
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #5 #7
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        fs'4
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
+                                            g'8
                                             \bacaStopTextSpanBCP
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #3 #7
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
+                                            gqf'4
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #2 #7
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-right-text #1 #7
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        gqf'4
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        gqf'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        gqf'4
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        gqf'8.
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(1)
+                                        fs'16
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
                                         \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
@@ -858,27 +689,26 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                c4.
+                                cs4.
                                 \mf
+                                \stopTrillSpan
                                 ~
-                                %! MATERIAL_COLOR
                                 \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
                                 {
 
-                                    c4
+                                    cs4
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c8
+                                    cs8
                                     - \accent
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    c16
+                                    cs16
                                     ~
                                     ]
 
@@ -888,9 +718,9 @@
                                 \times 6/7
                                 {
 
-                                    c4.
+                                    cs4.
 
-                                    c16
+                                    cs16
                                     - \accent
 
                                 }
@@ -898,30 +728,30 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
-                                c4
+                                cs4
                                 ~
 
-                                c4
+                                cs4
                                 ~
 
                                 \times 4/5
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c16
+                                    cs16
                                     [
 
-                                    c8
+                                    cs8
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    c8
+                                    cs8
                                     ~
                                     ]
 
                                 }
 
-                                c4
+                                cs4
 
                                 \times 4/5
                                 {
@@ -929,35 +759,35 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 3]
 
-                                    c16
+                                    cs16
                                     - \accent
 
-                                    c4
+                                    cs4
                                     ~
 
                                 }
 
-                                c4
+                                cs4
                                 ~
 
                                 \times 4/5
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c8
+                                    cs8
                                     [
 
-                                    c8
+                                    cs8
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    c16
+                                    cs16
                                     ~
                                     ]
 
                                 }
 
-                                c8
+                                cs8
                                 ~
 
                                 \times 4/5
@@ -967,34 +797,34 @@
                                     % [viola voice measure 4]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c8.
+                                    cs8.
                                     [
 
-                                    c16
+                                    cs16
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    c16
+                                    cs16
                                     ~
                                     ]
 
                                 }
 
-                                c4
+                                cs4
                                 ~
 
-                                c4
+                                cs4
 
                                 \times 4/5
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c8
+                                    cs8
                                     - \accent
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    c8.
+                                    cs8.
                                     ~
                                     ]
 
@@ -1007,22 +837,21 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 5]
 
-                                    c4
+                                    cs4
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c16
+                                    cs16
                                     - \accent
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    c8
+                                    cs8
                                     ~
                                     ]
 
                                 }
 
-                                c4.
-                                %! MATERIAL_COLOR
+                                cs4.
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1143,125 +972,59 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 9/16
+                                %! applying indicators
+                                \stopTrillSpan
 
                                 R1 * 9/16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
-                                %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                af8
                                 \f
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(6)
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(6)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(6)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #1 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
-                                %! MATERIAL_COLOR
                                 \(
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
+                                g8
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #4 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                g4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
+                                a4
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #6 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                bf4
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #5 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
                                 \times 2/3
@@ -1270,295 +1033,136 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 3]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    bf8
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
+                                    aqs4
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \upbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
                                     ~
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #7 #7
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                aqs8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
+                                a8
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #6 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
+                                b4
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #5 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                b8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                b4
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                b4
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                b4
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                b4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
+                                bqs4
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #3 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    bqs4
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     c'8
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
                                     ~
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #2 #7
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 c'8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                cqs'8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #1 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                cqs'4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
+                                bf4
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #4 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
+                                af8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #6 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
                                 [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                fs16
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #5 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-right-text #7 #7
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(1)
+                                g16
                                 \bacaStopTextSpanBCP
-                                %! MATERIAL_COLOR
                                 \)
                                 ]
                                 \staff-line-count 4

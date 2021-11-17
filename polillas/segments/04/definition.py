@@ -335,7 +335,8 @@ maker = evans.SegmentMaker(
             ),
             polillas.F_pitches(stage=1, transposition=2, step=2),
             abjad.Articulation("staccato"),
-            abjad.Dynamic("f"),
+            # abjad.Dynamic("f"),
+            baca.hairpin("f > p"),
             polillas.F_color,
             preprocessor=polillas.quarters_preprocessor_2,
         ),
@@ -361,7 +362,8 @@ maker = evans.SegmentMaker(
             ),
             polillas.F_pitches(stage=1, transposition=3, step=2),
             abjad.Articulation("staccato"),
-            abjad.Dynamic("f"),
+            # abjad.Dynamic("f"),
+            baca.hairpin("f > p"),
             polillas.F_color,
             preprocessor=polillas.quarters_preprocessor_2,
         ),
@@ -470,9 +472,9 @@ maker = evans.SegmentMaker(
                 [
                     evans.JIPitch("d,", _, with_quarter_tones=True)
                     for _ in [
-                        "13/1",
+                        "11/1",
                         "15/1",
-                        "13/1",
+                        "11/1",
                         "15/1",
                         "12/1",
                         "16/1",
@@ -493,9 +495,9 @@ maker = evans.SegmentMaker(
                     evans.JIPitch("d,", _, with_quarter_tones=True)
                     for _ in [
                         "7/1",
-                        "11/1",
+                        "13/1",
                         "7/1",
-                        "11/1",
+                        "13/1",
                         "6/1",
                         "12/1",
                         "6/1",

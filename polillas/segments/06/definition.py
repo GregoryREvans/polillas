@@ -32,8 +32,13 @@ maker = evans.SegmentMaker(
                 extra_counts=[0, 2, 1, 1, 0],
                 stage=1,
             ),
-            abjad.Markup(
-                r"\markup { spazzolato + clt. }", literal=True, direction=abjad.Up
+            polillas.B_pitches(stage=1, transposition=-6, rotation=2),
+            baca.text_spanner(
+                r"spazzolato + clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
             polillas.B_color,
@@ -48,8 +53,13 @@ maker = evans.SegmentMaker(
                 extra_counts=[2, 1, 1, 0, 1],
                 stage=1,
             ),
-            abjad.Markup(
-                r"\markup { spazzolato + clt. }", literal=True, direction=abjad.Up
+            polillas.B_pitches(stage=1, transposition=-6, rotation=4),
+            baca.text_spanner(
+                r"spazzolato + clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
             polillas.B_color,
@@ -64,8 +74,13 @@ maker = evans.SegmentMaker(
                 extra_counts=[1, 1, 0, 0, 2],
                 stage=1,
             ),
-            abjad.Markup(
-                r"\markup { spazzolato + clt. }", literal=True, direction=abjad.Up
+            polillas.B_pitches(stage=1, transposition=-6, rotation=6),
+            baca.text_spanner(
+                r"spazzolato + clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
             polillas.B_color,
@@ -167,7 +182,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", 15),
             ],
             polillas.note_rhythm_handler,
-            abjad.Articulation("trill"),
+            polillas.D_pitches(stage=1, transposition=6, rotation=3, chord_vector=[1]),
             abjad.Dynamic("mf"),
             polillas.D_color,
         ),
@@ -176,13 +191,34 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", 17),
             ],
             polillas.note_rhythm_handler,
-            abjad.Articulation("trill"),
+            polillas.D_pitches(stage=1, transposition=6, rotation=6, chord_vector=[1]),
         ),
-        evans.call("violin 1 voice", polillas.D_color, baca.selectors.leaves([66, 67])),
+        evans.call(
+            "violin 1 voice",
+            polillas.D_color,
+            polillas.select_measures([17, 18]).leaves(),
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([15]).leaves(),
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([17, 18]).leaves(),
+        ),
         evans.MusicCommand(
             [("violin 2 voice", (14, 18))],
             polillas.shadows(extra_counts=[0], stage=3),
-            evans.PitchHandler([1, 2, 3, 2], forget=False),
+            evans.PitchHandler(
+                evans.Sequence(
+                    [
+                        evans.JIPitch("d'", _, with_quarter_tones=True)
+                        for _ in range(3, 10)
+                    ]
+                ).mirror(sequential_duplicates=False)
+            ),
             evans.Callable(
                 abjad.glissando,
                 selector=abjad.select().logical_ties(),
@@ -193,6 +229,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", (14, 18))],
             polillas.make_tied_notes(),
+            evans.PitchHandler(["bf,,"]),
             abjad.Clef("bass"),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -219,34 +256,34 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
-            baca.selectors.leaf(63),
+            polillas.select_measures([15]).leaf(0),
         ),
         evans.attach(
             "violin 1 voice",
             abjad.Clef("treble"),
-            baca.selectors.leaf(63),
+            polillas.select_measures([15]).leaf(0),
         ),
         evans.attach(
             "violin 1 voice",
             polillas.clef_whitespace,
-            baca.selectors.leaf(63),
+            polillas.select_measures([15]).leaf(0),
         ),
         evans.attach(
             "violin 2 voice",
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
-            baca.selectors.leaf(71),
+            polillas.select_measures([14]).leaf(0),
         ),
         evans.attach(
             "violin 2 voice",
             abjad.Clef("treble"),
-            baca.selectors.leaf(71),
+            polillas.select_measures([14]).leaf(0),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.clef_whitespace,
-            baca.selectors.leaf(71),
+            polillas.select_measures([14]).leaf(0),
         ),
         evans.call(
             "score",

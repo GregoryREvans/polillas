@@ -31,6 +31,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (0, 7)),
             ],
             polillas.wings(stage=3),
+            evans.PitchHandler(["cqf''", "gqs'", "fs", ["d", "a"]], forget=False),
             baca.hairpin("sfp <| ff"),
             polillas.B_color,
         ),
@@ -46,6 +47,11 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("p"),
             polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("treble"),
+            polillas.select_measures([7]).leaf(0),
         ),
         evans.call(
             "violin 1 voice",
@@ -109,6 +115,26 @@ maker = evans.SegmentMaker(
             polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
+        evans.call(
+            "violin 1 voice",
+            polillas.F_pitches(stage=1, transposition=14, step=2),
+            polillas.select_measures([7, 8, 9, 10, 11, 12, 13, 14, 15]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.F_pitches(stage=1, transposition=13, step=3),
+            polillas.select_measures([7, 8, 9, 10, 11, 12, 13, 14, 15]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.F_pitches(stage=1, transposition=12, step=4),
+            polillas.select_measures([7, 8, 9, 10, 11, 12, 13, 14, 15]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.F_pitches(stage=1, transposition=11, step=5),
+            polillas.select_measures([7, 8, 9, 10, 11, 12, 13, 14, 15]),
+        ),
         evans.MusicCommand(
             [
                 ("violin 1 voice", 16),
@@ -119,13 +145,43 @@ maker = evans.SegmentMaker(
             polillas.knots(stage=6),
             abjad.Articulation("staccato"),
             abjad.slur,
-            abjad.Markup(r"\markup gettato", literal=True, direction=abjad.Up),
             abjad.LilyPondLiteral(
                 r"\once \override Beam #'stencil = #(grow-beam-var 6 1)",
                 format_slot="before",
             ),
             abjad.Dynamic("p"),
+            baca.text_spanner(
+                r"st. => sp.",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+            ),
+            baca.text_spanner(
+                r"gett. =|",
+                (abjad.tweak(7).staff_padding, 0),
+                lilypond_id=2,
+                bookend=False,
+            ),
             polillas.F_color,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.PitchHandler(["fs''"]),
+            polillas.select_measures([16]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.PitchHandler(["g''"]),
+            polillas.select_measures([16]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.PitchHandler(["fqs''"]),
+            polillas.select_measures([16]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.PitchHandler(["gqf''"]),
+            polillas.select_measures([16]),
         ),
         evans.attach(
             "Global Context",

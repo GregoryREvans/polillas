@@ -314,7 +314,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_STOP
                                             \mp
-                                            ^ \markup {arco norm.}
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -420,7 +419,6 @@
                                         \pitchedTrill
                                         bf'8
                                         \mf
-                                        ^ \markup arco
                                         \<
                                         ~
                                         - \abjad-dashed-line-with-hook
@@ -1054,13 +1052,13 @@
                                             % [violin 1 voice measure 23]
 
                                             \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             \<
                                             \glissando
                                             \(
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
                                             \)
 
@@ -1121,7 +1119,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_STOP
                                             \mp
-                                            ^ \markup {arco norm.}
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1191,7 +1188,6 @@
                                         \pitchedTrill
                                         f'4
                                         \mf
-                                        ^ \markup arco
                                         \<
                                         - \abjad-dashed-line-with-hook
                                         - \baca-text-spanner-left-text "pont."
@@ -1602,14 +1598,14 @@
                                             % [violin 2 voice measure 22]
 
                                             \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             \glissando
                                             \(
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -1621,12 +1617,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 23]
 
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
                                             \)
 
@@ -1692,7 +1688,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_STOP
                                     \mp
-                                    ^ \markup {arco norm.}
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -1743,7 +1738,22 @@
                                 e8
                                 \ff
                                 - \staccato
-                                ^ \markup clb.
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clb."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -1755,6 +1765,10 @@
 
                                 eqf8
                                 - \staccato
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1778,7 +1792,6 @@
                                 \pitchedTrill
                                 a'8
                                 \mf
-                                ^ \markup arco
                                 \<
                                 ~
                                 - \abjad-dashed-line-with-hook
@@ -1868,8 +1881,8 @@
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c16
+                                    :32
                                     \mf
-                                    - \baca-circle-bowing
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -1878,13 +1891,14 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     c16
-                                    - \baca-circle-bowing
+                                    :32
                                     ~
                                     ]
 
                                 }
 
                                 c16
+                                :32
 
                                 c8.
                                 ~
@@ -1892,7 +1906,7 @@
                                 c8
 
                                 c16
-                                - \baca-circle-bowing
+                                :32
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c16
@@ -1915,7 +1929,7 @@
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c16
-                                    - \baca-circle-bowing
+                                    :32
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -1924,13 +1938,14 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     c16
-                                    - \baca-circle-bowing
+                                    :32
                                     ~
                                     ]
 
                                 }
 
                                 c16
+                                :32
 
                                 c8.
                                 ~
@@ -1938,7 +1953,7 @@
                                 c8
 
                                 c16
-                                - \baca-circle-bowing
+                                :32
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c16
@@ -1962,8 +1977,8 @@
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c16
+                                    :32
                                     \f
-                                    - \baca-circle-bowing
                                     %! MATERIAL_COLOR
                                     \(
                                     [
@@ -1971,7 +1986,7 @@
                                     c8.
 
                                     c8
-                                    - \baca-circle-bowing
+                                    :32
 
                                     \revert Staff.Stem.stemlet-length
                                     c16
@@ -1984,7 +1999,7 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c16
-                                - \baca-circle-bowing
+                                :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -1995,7 +2010,7 @@
                                 c8
 
                                 c16
-                                - \baca-circle-bowing
+                                :32
                                 ~
 
                                 \times 4/5
@@ -2005,6 +2020,7 @@
                                     % [viola voice measure 11]
 
                                     c16
+                                    :32
 
                                     c4
                                     ~
@@ -2019,7 +2035,7 @@
                                     [
 
                                     c16
-                                    - \baca-circle-bowing
+                                    :32
 
                                     \revert Staff.Stem.stemlet-length
                                     c8.
@@ -2028,7 +2044,7 @@
                                 }
 
                                 c8
-                                - \baca-circle-bowing
+                                :32
 
                                 c8
                                 ~
@@ -2386,7 +2402,22 @@
                                 e8
                                 \ff
                                 - \staccato
-                                ^ \markup clb.
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clb."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -2410,6 +2441,10 @@
 
                                 g8
                                 - \staccato
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2428,7 +2463,6 @@
                                 \pitchedTrill
                                 fs'8
                                 \mf
-                                ^ \markup arco
                                 \<
                                 - \abjad-dashed-line-with-hook
                                 - \baca-text-spanner-left-text "pont."

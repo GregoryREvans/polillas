@@ -31,8 +31,14 @@ maker = evans.SegmentMaker(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
             abjad.Dynamic("mf"),
+            abjad.StopTrillSpan(),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.PitchHandler(["aqf'"]),
+            polillas.select_measures([0, 1, 2, 3, 4]),
         ),
         evans.MusicCommand(
             [("viola voice", (0, 5))],
@@ -42,8 +48,24 @@ maker = evans.SegmentMaker(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
             abjad.Dynamic("mf"),
+            abjad.StopTrillSpan(),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "viola voice",
+            evans.PitchHandler(["cs"]),
+            polillas.select_measures([0, 1, 2, 3, 4]),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(0),
         ),
         evans.MusicCommand(
             [
@@ -55,6 +77,16 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             polillas.E_color,
             preprocessor=polillas.pure_quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.E_pitches(stage=1, transposition=2, rotation=0),
+            polillas.select_measures([1, 2, 3, 4, 5]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.E_pitches(stage=1, transposition=-7, rotation=4),
+            polillas.select_measures([1, 2, 3, 4, 5]),
         ),
         evans.MusicCommand(
             [("cello voice", 6)],

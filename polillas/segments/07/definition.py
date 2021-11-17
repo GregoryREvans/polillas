@@ -33,11 +33,41 @@ maker = evans.SegmentMaker(
             polillas.triple_swell,
             polillas.D_color,
         ),
+        evans.call(
+            "violin 1 voice",
+            polillas.D_pitches(stage=2, direction="up", intervals=[1]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.glissando,
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.D_pitches(stage=2, direction="up", intervals=[2]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.glissando,
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.D_pitches(stage=2, direction="down", intervals=[-3]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.glissando,
+            polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
+        ),
         evans.MusicCommand(
             [
                 ("viola voice", (0, 6)),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(stage=4),
             evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
             polillas.G_color,
         ),
@@ -45,7 +75,7 @@ maker = evans.SegmentMaker(
             [
                 ("violin 1 voice", (9, 13)),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(stage=4),
             evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
@@ -60,7 +90,7 @@ maker = evans.SegmentMaker(
             [
                 ("violin 2 voice", (9, 13)),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(stage=4),
             evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
@@ -75,7 +105,7 @@ maker = evans.SegmentMaker(
             [
                 ("viola voice", (9, 13)),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(stage=4),
             evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
             abjad.Dynamic("p"),
             polillas.G_color,
@@ -84,7 +114,7 @@ maker = evans.SegmentMaker(
             [
                 ("cello voice", (9, 13)),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(stage=4),
             evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"

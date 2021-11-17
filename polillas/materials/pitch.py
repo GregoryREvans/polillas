@@ -30,7 +30,7 @@ def B_pitches(stage=1, transposition=0, rotation=0):
         fundamental = abjad.NamedPitch("b'")
         interval = abjad.NamedInterval(transposition)
         fundamental += interval
-        l = [
+        ratio_list = [
             evans.JIPitch(str(fundamental), _, with_quarter_tones=True)
             for _ in [
                 "11/8",
@@ -44,12 +44,19 @@ def B_pitches(stage=1, transposition=0, rotation=0):
                 "88/45",
             ]
         ]
-        seq = evans.Sequence(l).rotate(rotation)
+        seq = evans.Sequence(ratio_list).rotate(rotation)
         handler = evans.PitchHandler([_ for _ in seq], forget=False)
         return handler
 
 
-def D_pitches(stage=1, transposition=0, rotation=0, chord_vector=[0, 1, 1, 0, 1]):
+def D_pitches(
+    stage=1,
+    transposition=0,
+    rotation=0,
+    chord_vector=[0, 1, 1, 0, 1],
+    direction="up",
+    intervals=[1],
+):
     if stage == 1:
         seq = (
             evans.PitchSegment([13, 14, 11, 13, 12, 14, 8, 9, 7, 9])
@@ -63,6 +70,14 @@ def D_pitches(stage=1, transposition=0, rotation=0, chord_vector=[0, 1, 1, 0, 1]
             chord_groups=[2],
         )
         return handler
+    if stage == 2:
+        if direction == "up":
+            seq = [0, 1, 0.5]
+            loop = baca.loop(seq, intervals)
+        else:
+            seq = [0, -1, -0.5]
+            loop = baca.loop(seq, intervals)
+        return loop
 
 
 def E_pitches(stage=1, transposition=0, rotation=0):

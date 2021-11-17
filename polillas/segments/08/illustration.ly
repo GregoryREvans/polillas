@@ -177,23 +177,17 @@
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
                                             \clef "treble"
-                                            %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             \p
                                             - \accent
-                                            %! MATERIAL_COLOR
                                             \(
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             ~
                                             ]
@@ -204,16 +198,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             - \accent
                                             ~
@@ -225,25 +215,19 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             ~
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
                                         ~
 
@@ -251,45 +235,33 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             ~
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             ~
 
@@ -298,23 +270,17 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
                                         ~
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             - \accent
                                             ~
@@ -324,14 +290,10 @@
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
                                             ~
 
@@ -341,16 +303,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             - \accent
                                             ~
@@ -364,22 +322,16 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 3]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
                                         ~
 
@@ -387,22 +339,16 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             ]
 
@@ -415,9 +361,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 4]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             \mf
                                             - \baca-circle-bowing
 
@@ -430,18 +374,14 @@
                                             % [violin 1 voice measure 5]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             \mp
                                             - \accent
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             ~
                                             ]
@@ -452,16 +392,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             - \accent
                                             ~
@@ -473,16 +409,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             ~
                                             ]
@@ -492,9 +424,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
                                         ~
 
@@ -502,45 +432,33 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             ~
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             ~
 
@@ -549,23 +467,17 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        a'4
                                         :32
                                         ~
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
                                             - \accent
                                             ~
@@ -575,14 +487,10 @@
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            a'16
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             :32
                                             ~
 
@@ -592,16 +500,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            a'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            a'8.
                                             :32
                                             - \accent
                                             ]
@@ -615,9 +519,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 8]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            a'4
                                             \f
                                             - \baca-circle-bowing
 
@@ -630,18 +532,14 @@
                                             % [violin 1 voice measure 9]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             \mf
                                             - \accent
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             ~
                                             ]
@@ -652,16 +550,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             - \accent
                                             ~
@@ -673,25 +567,19 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             ~
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
                                         ~
 
@@ -699,22 +587,16 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
                                             ~
                                             ]
@@ -724,45 +606,33 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
                                         ~
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
                                             - \accent
                                             ~
@@ -772,14 +642,10 @@
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             :32
                                             ~
 
@@ -789,16 +655,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             - \accent
                                             ~
@@ -812,22 +674,16 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 11]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
                                         ~
 
@@ -835,22 +691,16 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             ~
                                             ]
@@ -860,14 +710,10 @@
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
                                             - \accent
                                             ~
@@ -878,25 +724,19 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             ~
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
                                         ~
 
@@ -904,16 +744,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             - \accent
                                             ]
@@ -923,54 +759,40 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
                                         ~
 
                                         \times 4/5
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            aqf'16
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        aqf'4
                                         :32
 
                                         \times 4/5
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             - \accent
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             ~
                                             ]
@@ -981,16 +803,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             - \accent
                                             ~
@@ -1002,16 +820,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            aqf'8
                                             :32
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8.
+                                            aqf'8.
                                             :32
                                             ]
 
@@ -1024,12 +838,9 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 13]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            aqf'4
                                             \ff
                                             - \baca-circle-bowing
-                                            %! MATERIAL_COLOR
                                             \)
 
                                         }
@@ -1075,20 +886,14 @@
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
                                             \clef "treble"
-                                            %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             \p
                                             - \accent
-                                            %! MATERIAL_COLOR
                                             \(
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             ~
 
@@ -1097,66 +902,48 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
                                         ~
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
                                         ~
 
@@ -1167,22 +954,16 @@
                                             % [violin 2 voice measure 2]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             ~
                                             ]
@@ -1192,14 +973,10 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
                                             ~
@@ -1209,22 +986,16 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
 
                                         \times 2/3
@@ -1233,15 +1004,11 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 3]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             ~
 
@@ -1250,22 +1017,16 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
 
                                         \tweak edge-height #'(0.7 . 0)
@@ -1275,9 +1036,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             \mf
                                             - \baca-circle-bowing
 
@@ -1289,16 +1048,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 5]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             \mp
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             ~
 
@@ -1307,22 +1062,16 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
                                         ~
 
@@ -1332,44 +1081,32 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 6]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
                                         ~
 
@@ -1380,22 +1117,16 @@
                                             % [violin 2 voice measure 7]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             ~
                                             ]
@@ -1405,14 +1136,10 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
                                             - \accent
                                             ~
@@ -1422,22 +1149,16 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        d'4
                                         :32
 
                                         \tweak edge-height #'(0.7 . 0)
@@ -1447,9 +1168,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 8]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            d'4
                                             \f
                                             - \baca-circle-bowing
 
@@ -1461,16 +1180,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 9]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             \mf
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             ~
 
@@ -1479,44 +1194,32 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
                                         ~
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
 
                                         \times 2/3
@@ -1525,23 +1228,17 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 10]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
                                         ~
 
@@ -1549,22 +1246,16 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             ~
                                             ]
@@ -1574,14 +1265,10 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
                                             ~
@@ -1591,22 +1278,16 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
 
                                         \times 2/3
@@ -1615,15 +1296,11 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 11]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             ~
 
@@ -1632,66 +1309,48 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
                                         ~
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
                                         ~
 
@@ -1702,22 +1361,16 @@
                                             % [violin 2 voice measure 12]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             ~
                                             ]
@@ -1727,14 +1380,10 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
                                             ~
@@ -1744,36 +1393,26 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             ~
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
                                             - \accent
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             ~
 
@@ -1782,22 +1421,16 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            ds'8
                                             :32
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             :32
                                             - \accent
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ds'4
                                         :32
 
                                         \tweak edge-height #'(0.7 . 0)
@@ -1807,12 +1440,9 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 13]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
+                                            ds'4
                                             \ff
                                             - \baca-circle-bowing
-                                            %! MATERIAL_COLOR
                                             \)
 
                                         }
@@ -1863,29 +1493,21 @@
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
                                     \clef "alto"
-                                    %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     \p
                                     - \accent
-                                    %! MATERIAL_COLOR
                                     \(
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -1897,31 +1519,23 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -1930,22 +1544,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     ]
@@ -1957,31 +1565,23 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -1990,22 +1590,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     ~
                                     ]
@@ -2020,25 +1614,19 @@
                                     % [viola voice measure 2]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2047,22 +1635,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
@@ -2074,16 +1656,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     - \accent
                                     ~
@@ -2099,16 +1677,12 @@
                                     % [viola voice measure 3]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    c8.
                                     :32
                                     ~
                                     ]
@@ -2120,22 +1694,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2147,22 +1715,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
                                     ]
@@ -2176,9 +1738,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 4]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c4
                                     \mf
                                     - \baca-circle-bowing
 
@@ -2192,24 +1752,18 @@
                                     % [viola voice measure 5]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     \mp
                                     - \accent
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2221,31 +1775,23 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2257,22 +1803,16 @@
                                     % [viola voice measure 6]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     ]
@@ -2284,31 +1824,23 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2317,22 +1849,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     ~
                                     ]
@@ -2347,25 +1873,19 @@
                                     % [viola voice measure 7]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2374,22 +1894,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
@@ -2401,16 +1915,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     - \accent
                                     ]
@@ -2424,9 +1934,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 8]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c4
                                     \f
                                     - \baca-circle-bowing
 
@@ -2440,24 +1948,18 @@
                                     % [viola voice measure 9]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     \mf
                                     - \accent
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2469,31 +1971,23 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2502,22 +1996,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     ]
@@ -2529,22 +2017,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2554,9 +2036,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2565,22 +2045,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     ~
                                     ]
@@ -2592,25 +2066,19 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
                                 ~
 
@@ -2619,22 +2087,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
@@ -2646,16 +2108,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     - \accent
                                     ~
@@ -2671,16 +2129,12 @@
                                     % [viola voice measure 11]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    c8.
                                     :32
                                     ~
                                     ]
@@ -2692,22 +2146,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2719,22 +2167,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
                                     ~
@@ -2747,22 +2189,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2774,22 +2210,16 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
                                     ]
@@ -2801,16 +2231,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    c8.
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     - \accent
                                     ~
@@ -2823,16 +2249,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
                                     ]
@@ -2847,16 +2269,12 @@
                                     % [viola voice measure 12]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    c8.
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     - \accent
                                     ~
@@ -2869,16 +2287,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    c8.
                                     :32
                                     ]
 
@@ -2889,26 +2303,20 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16.
+                                    c16.
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -2916,23 +2324,17 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     - \accent
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     ~
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     ~
                                     ]
@@ -2944,31 +2346,23 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'32
+                                    c32
                                     :32
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     :32
                                     - \accent
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    c16
                                     :32
                                     ~
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                c4
                                 :32
 
                                 \tweak edge-height #'(0.7 . 0)
@@ -2978,12 +2372,9 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 13]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c4
                                     \ff
                                     - \baca-circle-bowing
-                                    %! MATERIAL_COLOR
                                     \)
 
                                 }
@@ -3026,68 +2417,48 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "bass"
-                                %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 \p
                                 - \accent
-                                %! MATERIAL_COLOR
                                 \(
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 - \accent
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 - \accent
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3095,75 +2466,54 @@
                                 % [cello voice measure 2]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 - \accent
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
-                                - \baca-circle-bowing
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 - \accent
 
@@ -3174,10 +2524,9 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 4]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    bf,4
                                     \mf
+                                    - \baca-circle-bowing
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3185,66 +2534,48 @@
                                 % [cello voice measure 5]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 \mp
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 - \accent
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 - \accent
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3252,46 +2583,33 @@
                                 % [cello voice measure 7]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 - \accent
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
-                                - \baca-circle-bowing
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                bf,4
                                 :32
 
                                 \tweak edge-height #'(0.7 . 0)
@@ -3301,10 +2619,9 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 8]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    bf,4
                                     \f
+                                    - \baca-circle-bowing
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3312,42 +2629,30 @@
                                 % [cello voice measure 9]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 \mf
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 - \accent
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3355,128 +2660,92 @@
                                 % [cello voice measure 10]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 - \accent
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 - \accent
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 - \accent
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 - \accent
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3484,72 +2753,51 @@
                                 % [cello voice measure 12]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 - \accent
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
-                                - \baca-circle-bowing
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                a,8
                                 :32
                                 ~
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                a,4
                                 :32
                                 - \accent
 
@@ -3560,11 +2808,9 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 13]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    a,4
                                     \ff
-                                    %! MATERIAL_COLOR
+                                    - \baca-circle-bowing
                                     \)
 
                                 }

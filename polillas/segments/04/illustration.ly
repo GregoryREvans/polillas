@@ -1378,6 +1378,14 @@
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -1386,7 +1394,6 @@
                                         {
 
                                             d'32
-                                            \f
                                             - \staccato
 
                                             r32
@@ -1703,6 +1710,10 @@
                                         r2
 
                                         r4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -1714,13 +1725,13 @@
                                             % [violin 1 voice measure 20]
 
                                             \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             \<
                                             \(
                                             \glissando
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1738,12 +1749,12 @@
                                         \f
                                         ]
 
-                                        <bqf'' cs'''>4.
+                                        <gqs'' cs'''>4.
                                         \p
                                         \<
                                         \glissando
 
-                                        <bqf'' cs'''>8
+                                        <gqs'' cs'''>8
                                         \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
@@ -1765,12 +1776,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 21]
 
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1794,13 +1805,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 22]
 
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             \glissando
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1823,14 +1834,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bqf'' cs'''>8.
+                                        <gqs'' cs'''>8.
                                         \p
                                         \<
                                         \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bqf'' cs'''>16
+                                        <gqs'' cs'''>16
                                         \f
                                         ]
 
@@ -1859,12 +1870,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 25]
 
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1888,12 +1899,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 26]
 
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1917,13 +1928,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 27]
 
-                                            <bqf'' cs'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             \glissando
 
-                                            <bqf'' cs'''>4
+                                            <gqs'' cs'''>4
                                             \f
                                             \)
                                             \bar "||"
@@ -3103,6 +3114,14 @@
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_STOP
+                                        \f
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \>
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -3111,7 +3130,6 @@
                                         {
 
                                             ef'32
-                                            \f
                                             - \staccato
 
                                             r32
@@ -3319,6 +3337,10 @@
                                         }
 
                                         r4
+                                        %! baca.hairpin()
+                                        %! baca.PiecewiseCommand._call(3)
+                                        %! SPANNER_STOP
+                                        \p
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -3330,13 +3352,13 @@
                                             % [violin 2 voice measure 20]
 
                                             \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             \(
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3353,13 +3375,13 @@
                                         \f
                                         ]
 
-                                        <bqs' gqs''>4.
+                                        <bqs' bqf''>4.
                                         \p
                                         - \tweak stencil #abjad-flared-hairpin
                                         \<
                                         \glissando
 
-                                        <bqs' gqs''>8
+                                        <bqs' bqf''>8
                                         \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
@@ -3381,12 +3403,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 21]
 
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3410,12 +3432,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 22]
 
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3439,14 +3461,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bqs' gqs''>8.
+                                        <bqs' bqf''>8.
                                         \p
                                         \<
                                         \glissando
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bqs' gqs''>16
+                                        <bqs' bqf''>16
                                         \f
                                         ]
 
@@ -3474,13 +3496,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 25]
 
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3504,12 +3526,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 26]
 
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3533,12 +3555,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 27]
 
-                                            <bqs' gqs''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             \glissando
 
-                                            <bqs' gqs''>4
+                                            <bqs' bqf''>4
                                             \f
                                             \)
                                             \bar "||"

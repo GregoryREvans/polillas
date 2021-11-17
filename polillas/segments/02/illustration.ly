@@ -651,7 +651,22 @@
                                         eqs''1
                                         :32
                                         \p
-                                        ^ \markup XFB.
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "XFB."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
@@ -669,6 +684,10 @@
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
                                         \>
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         ~
                                         \(
                                         %! baca.bcps()
@@ -774,9 +793,24 @@
                                         dqf''2..
                                         :32
                                         \p
-                                        ^ \markup XFB.
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "XFB."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
@@ -795,6 +829,10 @@
                                         :32
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
@@ -1362,7 +1400,22 @@
                                         cs'''2..
                                         :32
                                         \p
-                                        ^ \markup XFB.
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "XFB."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
@@ -1380,6 +1433,10 @@
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
                                         \>
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         ~
                                         \(
                                         %! baca.bcps()
@@ -1476,10 +1533,25 @@
                                         dqs''2.
                                         :32
                                         \p
-                                        ^ \markup XFB.
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "XFB."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
 
                                         dqs''4.
                                         :32
@@ -1492,6 +1564,10 @@
                                         :32
                                         %! MATERIAL_COLOR
                                         \)
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
@@ -2163,10 +2239,25 @@
                                 bqf'2.
                                 :32
                                 \p
-                                ^ \markup XFB.
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "XFB."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
 
                                 bqf'4.
                                 :32
@@ -2179,6 +2270,10 @@
                                 :32
                                 %! MATERIAL_COLOR
                                 \)
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
@@ -2761,9 +2856,24 @@
                                 eqs2..
                                 :32
                                 \p
-                                ^ \markup XFB.
                                 %! MATERIAL_COLOR
                                 \(
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "XFB."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
@@ -2788,6 +2898,10 @@
                                 :32
                                 %! MATERIAL_COLOR
                                 \)
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]

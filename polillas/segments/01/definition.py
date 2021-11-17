@@ -26,7 +26,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "viola voice",
             abjad.Clef("alto"),
-            baca.selectors.leaf(0),
+            polillas.select_measures([0]).leaf(0),
         ),
         evans.MusicCommand(
             [
@@ -147,9 +147,15 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
             abjad.Articulation("tenuto"),
+            baca.text_spanner(
+                r"spazzolato =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
             preprocessor=polillas.fuse_quarters_preprocessor_2_1,
         ),
         evans.MusicCommand(
@@ -170,9 +176,15 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
             abjad.Articulation("tenuto"),
+            baca.text_spanner(
+                r"spazzolato =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
             preprocessor=polillas.fuse_quarters_preprocessor_2_1,
         ),
         evans.MusicCommand(
@@ -204,8 +216,14 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Dynamic("p"),
+            baca.text_spanner(
+                r"spazzolato =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -236,9 +254,15 @@ maker = evans.SegmentMaker(
                 ]
             ),
             polillas.B_color,
-            abjad.Markup(r"\markup spazzolato", direction=abjad.Up, literal=True),
             abjad.Articulation("tenuto"),
             abjad.Dynamic("p"),
+            baca.text_spanner(
+                r"spazzolato =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -248,9 +272,15 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[3], stage=1),
             evans.PitchHandler(["a'"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
+            baca.text_spanner(
+                r"clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -262,9 +292,15 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[2], stage=1),
             evans.PitchHandler(["d'"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
+            baca.text_spanner(
+                r"clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -276,9 +312,15 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["c"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
+            baca.text_spanner(
+                r"clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -290,9 +332,15 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["c"], forget=False),
             abjad.Dynamic("mf"),
-            abjad.Markup(r"\markup clt.", direction=abjad.Up, literal=True),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
+            ),
+            baca.text_spanner(
+                r"clt. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
             ),
             polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor,

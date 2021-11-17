@@ -384,8 +384,23 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         a'4
                                         \mf
-                                        ^ \markup clt.
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -513,6 +528,10 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             a'32
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             %! MATERIAL_COLOR
                                             \)
                                             ]
@@ -570,7 +589,22 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             aqf''32
                                             \p
-                                            ^ \markup spazzolato
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato"
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             [
 
                                             \revert Staff.Stem.stemlet-length
@@ -732,6 +766,10 @@
                                             aqf''32
                                             %! MATERIAL_COLOR
                                             \)
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
                                             \bar "||"
 
                                         }
@@ -814,7 +852,22 @@
                                         eqs''16
                                         \p
                                         - \tenuto
-                                        ^ \markup spazzolato
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "spazzolato"
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
 
                                         r8
 
@@ -951,6 +1004,10 @@
 
                                         dqs''16
                                         - \tenuto
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
 
                                         r8.
 
@@ -965,8 +1022,23 @@
                                         \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         d'4
                                         \mf
-                                        ^ \markup clt.
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
 
@@ -1059,6 +1131,10 @@
                                         }
 
                                         d'4
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1095,7 +1171,22 @@
                                             eqs''16
                                             \p
                                             - \tenuto
-                                            ^ \markup spazzolato
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \abjad-dashed-line-with-hook
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \baca-text-spanner-left-text "spazzolato"
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            - \tweak staff-padding 5
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(2)
+                                            %! SPANNER_START
+                                            \startTextSpanOne
                                             [
 
                                             \revert Staff.Stem.stemlet-length
@@ -1282,6 +1373,10 @@
 
                                             bqf''16
                                             - \tenuto
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
 
                                             r4
                                             %! MATERIAL_COLOR
@@ -1476,7 +1571,22 @@
                                     ef'16
                                     \p
                                     - \tenuto
-                                    ^ \markup spazzolato
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \abjad-dashed-line-with-hook
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \baca-text-spanner-left-text "spazzolato"
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    - \tweak staff-padding 5
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \startTextSpanOne
 
                                     r8
 
@@ -1569,6 +1679,10 @@
 
                                     eqs'16
                                     - \tenuto
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
 
                                     r8.
                                     %! MATERIAL_COLOR
@@ -1583,8 +1697,23 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c2
                                 \mf
-                                ^ \markup clt.
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -1642,6 +1771,10 @@
                                 }
 
                                 c4
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1678,8 +1811,23 @@
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c2
                                 \mf
-                                ^ \markup clt.
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -1751,6 +1899,10 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     c8.
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
                                     %! MATERIAL_COLOR
                                     \)
                                     ]

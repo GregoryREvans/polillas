@@ -32,7 +32,6 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.Markup(r"\markup {arco norm.}", literal=True, direction=abjad.Up),
             baca.hairpin("mp < f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -46,7 +45,6 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.Markup(r"\markup {arco norm.}", literal=True, direction=abjad.Up),
             baca.hairpin("mp < f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -60,7 +58,6 @@ maker = evans.SegmentMaker(
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.Markup(r"\markup {arco norm.}", literal=True, direction=abjad.Up),
             baca.hairpin("mp < f"),
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -69,9 +66,15 @@ maker = evans.SegmentMaker(
             [("viola voice", 2), ("cello voice", (1, 3))],
             polillas.knots(stage=1),
             polillas.F_pitches(stage=1, transposition=-8, step=2),
-            abjad.Markup(r"\markup clb.", literal=True, direction=abjad.Up),
             abjad.Articulation("staccato"),
             abjad.Dynamic("ff"),
+            baca.text_spanner(
+                r"clb. =|",
+                (abjad.tweak(5).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+                selector=abjad.select().leaves(pitched=True),
+            ),
             polillas.F_color,
             preprocessor=polillas.fuse_preprocessor,
         ),
@@ -99,7 +102,6 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=abjad.select().leaves(pitched=True),
             ),
-            abjad.Markup(r"\markup arco", literal=True, direction=abjad.Up),
             polillas.D_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -198,7 +200,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
-                ["baca-circle-bowing"],
+                ["tremolo"],
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
@@ -248,7 +250,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
-                ["baca-circle-bowing"],
+                ["tremolo"],
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
@@ -298,7 +300,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
-                ["baca-circle-bowing"],
+                ["tremolo"],
                 articulation_boolean_vector=[1, 0],
                 vector_forget=False,
             ),
@@ -447,7 +449,7 @@ maker = evans.SegmentMaker(
                     evans.JIPitch("d,", _, with_quarter_tones=True)
                     for _ in [
                         "7/1",
-                        "11/1",
+                        "13/1",
                     ]
                 ],
                 forget=False,
@@ -462,7 +464,7 @@ maker = evans.SegmentMaker(
                 [
                     evans.JIPitch("d,", _, with_quarter_tones=True)
                     for _ in [
-                        "13/1",
+                        "11/1",
                         "15/1",
                     ]
                 ],
