@@ -6,6 +6,7 @@ info = abjad.OrderedDict(
             [
                 abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
+                StopTrillSpan(),
                 ],
             ),
         (
@@ -13,6 +14,7 @@ info = abjad.OrderedDict(
             [
                 abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
+                StopTrillSpan(),
                 ],
             ),
         (
@@ -20,6 +22,7 @@ info = abjad.OrderedDict(
             [
                 abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
+                StopTrillSpan(),
                 ],
             ),
         (
@@ -27,6 +30,7 @@ info = abjad.OrderedDict(
             [
                 abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
+                StopTrillSpan(),
                 ],
             ),
         ]

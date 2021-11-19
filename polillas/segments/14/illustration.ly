@@ -206,18 +206,15 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
-                                            %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4.
+                                            a'4.
                                             \ff
+                                            \stopTrillSpan
+                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -239,35 +236,29 @@
                                             {
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                bf'16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 [
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                b'16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                d''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -275,35 +266,29 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'16
+                                            b'16
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'32
+                                            a'32
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'32
+                                            bf'32
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -315,68 +300,56 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        a'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        bf'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4.
+                                        b'4.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4.
+                                        d''4.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        cs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        d''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -384,12 +357,10 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        cs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -403,36 +374,30 @@
                                             % [violin 1 voice measure 3]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            ef''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            cs''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -441,35 +406,29 @@
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        e''16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        cs''8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        b'16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -477,12 +436,10 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        c''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -492,23 +449,19 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        cs''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        c''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -518,36 +471,30 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            a'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            c''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            cs''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -559,23 +506,19 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            d''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            ef''2
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
@@ -594,12 +537,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 5]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'1
+                                            f''1
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -607,34 +548,28 @@
                                             - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                             \startTrillSpan
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            fs''2
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            a''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            c'''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -643,34 +578,28 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                ef'''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                f'''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                fs'''4
                                                 \stopTrillSpan
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
@@ -689,12 +618,10 @@
                                             % [violin 1 voice measure 6]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            g'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -717,23 +644,19 @@
                                             \startTextSpanOne
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            af'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            f'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -743,24 +666,20 @@
                                             {
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                d'''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 ]
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                cs'''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -769,12 +688,10 @@
                                             }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            d'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -782,12 +699,10 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            cs'''8
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
@@ -807,12 +722,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 7]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4.
+                                            b''4.
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -824,35 +737,29 @@
                                             {
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                c'''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 [
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                ef'''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                c'''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -860,35 +767,29 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'16
+                                            a''16
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'32
+                                            g''32
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'32
+                                            af''32
                                             \stopTrillSpan
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -902,12 +803,10 @@
                                         % [violin 1 voice measure 8]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        g''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -931,35 +830,29 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        fs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        a''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        fs''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -969,36 +862,30 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            f''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            ef''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1014,36 +901,30 @@
                                             % [violin 1 voice measure 9]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            cs''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            d''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            f''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1052,35 +933,29 @@
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        d''16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        f''8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        g''16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1088,12 +963,10 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        fs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1106,23 +979,19 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 10]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            f''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            e''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1132,36 +1001,30 @@
                                             {
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                g''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 [
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                bf''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                a''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -1173,23 +1036,19 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                af''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'2
+                                                g''2
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -1205,47 +1064,39 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 11]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            a''2
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            bf''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            cs'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1254,35 +1105,29 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                cs'''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                b''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                bf''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -1301,35 +1146,29 @@
                                             % [violin 1 voice measure 12]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            b''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            c'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            a''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1339,24 +1178,20 @@
                                             {
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                fs''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 ]
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                f''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -1365,12 +1200,10 @@
                                             }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1378,12 +1211,10 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            ef''8
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
@@ -1399,12 +1230,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2.
+                                        f''2.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1416,36 +1245,30 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            cs''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            bf'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1455,34 +1278,27 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        cs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        ef''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        %! MATERIAL_COLOR
+                                        d''16
                                         \)
                                         \stopTrillSpan
                                         ]
@@ -1490,11 +1306,24 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1.
+                                        cqs''1.
                                         \mp
-                                        ^ \markup clt.
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 7/10
@@ -1503,18 +1332,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 15]
 
-                                            %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'1.
+                                            a'1.
                                             \ff
+                                            %! baca.text_spanner()
+                                            %! baca.PiecewiseCommand._call(4)
+                                            %! SPANNER_STOP
+                                            \stopTextSpanOne
+                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1535,34 +1364,28 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                bf'4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                b'4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                d''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -1570,24 +1393,20 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            b'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            a'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1595,10 +1414,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! MATERIAL_COLOR
+                                            bf'8
                                             \)
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(4)
@@ -1613,21 +1429,36 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1..
+                                        c''1..
                                         \mp
-                                        ^ \markup clt.
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
+                                        c''1
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \)
 
@@ -1637,18 +1468,14 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 18]
 
-                                            %! MATERIAL_COLOR
                                             \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'2.
+                                            a'2.
                                             \ff
+                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
-                                            %! MATERIAL_COLOR
-                                            \(
                                             - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                             \startTrillSpan
 
@@ -1656,35 +1483,29 @@
                                             {
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                bf'8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 [
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                b'8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                d''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -1692,33 +1513,26 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            b'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'16
+                                            a'16
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
-                                            %! MATERIAL_COLOR
+                                            bf'16
                                             \)
                                             \stopTrillSpan
                                             ]
@@ -1730,26 +1544,39 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
+                                        c''2.
                                         \mp
-                                        ^ \markup clt.
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 20]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
+                                        c''1
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c''4
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -1780,19 +1607,16 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16.
+                                        d'16.
                                         \ff
+                                        \stopTrillSpan
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -1812,71 +1636,59 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        ef'16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        fs'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        ef'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        e'16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        d'16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        ef'16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1889,34 +1701,28 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 2]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            e'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            ef'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            fs'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1924,45 +1730,37 @@
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        a'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4.
+                                        bf'4.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        a'8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        af'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1976,24 +1774,20 @@
                                             % [violin 2 voice measure 3]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            fs'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            g'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2002,34 +1796,28 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                bf'16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                cs''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                e''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2041,24 +1829,20 @@
                                             {
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                d''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 ]
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                cs''4
                                                 %! baca.text_spanner()
                                                 %! baca.PiecewiseCommand._call(4)
                                                 %! SPANNER_STOP
@@ -2075,12 +1859,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2
+                                        c''2
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2088,24 +1870,20 @@
                                         - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                         \startTrillSpan
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        b'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        af'8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2113,12 +1891,10 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        f'8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2129,36 +1905,30 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            f'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            fs'8
                                             \stopTrillSpan
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -2171,12 +1941,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        af'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2198,23 +1966,19 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        g'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        e'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2223,23 +1987,19 @@
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            ef'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            fs'2
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2247,23 +2007,19 @@
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        e'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        ef'4
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -2279,12 +2035,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 6]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2.
+                                            d'2.
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2296,35 +2050,29 @@
                                             {
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                ef'8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 [
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                e'8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                g'8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2332,35 +2080,29 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            af'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'16
+                                            a'16
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'16
+                                            bf'16
                                             \stopTrillSpan
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -2374,12 +2116,10 @@
                                         % [violin 2 voice measure 7]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        c''16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2403,71 +2143,59 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16.
+                                        b'16.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        d''8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8.
+                                        f''8.
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        d''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        e''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        f''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -2483,34 +2211,28 @@
                                                 %! evans.SegmentMaker.comment_measure_numbers()
                                                 % [violin 2 voice measure 8]
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                e''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                f''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                d''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2518,45 +2240,37 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8.
+                                            f''8.
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4.
+                                            fs''4.
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8.
+                                            g''8.
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            fs''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2572,24 +2286,20 @@
                                             % [violin 2 voice measure 9]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            af''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            a''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2598,34 +2308,28 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                fs''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                a''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                c'''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2637,24 +2341,20 @@
                                             {
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                d'''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 ]
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                cs'''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2670,47 +2370,39 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 10]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            c'''2
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            b''4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            d'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            b''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2719,35 +2411,29 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                c'''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                b''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                c'''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2766,35 +2452,29 @@
                                             % [violin 2 voice measure 11]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            bf''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            b''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            d'''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2804,24 +2484,20 @@
                                             {
 
                                                 \revert Staff.Stem.stemlet-length
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'8
+                                                b''8
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 ]
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                af''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2830,12 +2506,10 @@
                                             }
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            fs''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2843,12 +2517,10 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            f''8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2864,12 +2536,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 12]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4.
+                                            fs''4.
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2879,35 +2549,29 @@
                                             {
 
                                                 \override Staff.Stem.stemlet-length = 0.75
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                g''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
                                                 [
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                e''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'16
+                                                cs''16
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
@@ -2915,35 +2579,29 @@
 
                                             }
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'16
+                                            c''16
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'32
+                                            cs''32
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'32
+                                            c''32
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2959,45 +2617,37 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 13]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            bf'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            a'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            c''2
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'2
+                                            a'2
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -3006,32 +2656,25 @@
                                             \times 2/3
                                             {
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                c''4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
                                                 \tweak Accidental.stencil ##f
                                                 \tweak X-extent #'(0 . 0)
                                                 \tweak transparent ##t
-                                                c'4
+                                                bf'4
                                                 %! abjad.glissando(7)
                                                 - \abjad-zero-padding-glissando
                                                 %! abjad.glissando(7)
                                                 \glissando
 
-                                                %! PITCH
-                                                \evans-not-yet-pitched-coloring
-                                                c'4
-                                                %! MATERIAL_COLOR
+                                                b'4
                                                 \)
                                                 %! baca.text_spanner()
                                                 %! baca.PiecewiseCommand._call(4)
@@ -3045,27 +2688,40 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1.
+                                        gs'1.
                                         \mp
-                                        ^ \markup clt.
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8..
+                                        d'8..
                                         \ff
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -3083,34 +2739,28 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8..
+                                        ef'8..
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4..
+                                        fs'4..
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4..
+                                        ef'4..
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3120,32 +2770,25 @@
                                         \times 7/12
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            e'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'4
+                                            d'4
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
-                                            %! MATERIAL_COLOR
+                                            ef'4
                                             \)
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(4)
@@ -3159,74 +2802,79 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1..
+                                        gs'1..
                                         \mp
-                                        ^ \markup clt.
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
+                                        gs'1
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        d'8
                                         \ff
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
                                         - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                         \startTrillSpan
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        ef'8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        fs'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        ef'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3236,34 +2884,27 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            e'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
                                             \tweak transparent ##t
-                                            c'8
+                                            d'8
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! MATERIAL_COLOR
+                                            ef'8
                                             \)
                                             \stopTrillSpan
                                             ]
@@ -3275,26 +2916,39 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2.
+                                        gqs'2.
                                         \mp
-                                        ^ \markup clt.
                                         ~
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \abjad-dashed-line-with-hook
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \baca-text-spanner-left-text "clt."
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        - \tweak staff-padding 5
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(2)
+                                        %! SPANNER_START
+                                        \startTextSpanOne
                                         %! MATERIAL_COLOR
                                         \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 20]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
+                                        gqs'1
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        gqs'4
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
                                         %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
@@ -3332,19 +2986,17 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
-                                    %! MATERIAL_COLOR
+                                    \clef "alto"
                                     \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    g8
                                     \ff
+                                    \stopTrillSpan
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -3363,24 +3015,20 @@
                                     \startTextSpanOne
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    a8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3389,35 +3037,29 @@
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                af16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8.
+                                a8.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                b16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -3425,12 +3067,10 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                bf8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -3444,23 +3084,19 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 2]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    a4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    bf4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3470,36 +3106,30 @@
                                     {
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        g8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        bf8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        a8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3511,23 +3141,19 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        bf4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2
+                                        a2
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3544,47 +3170,39 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 3]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    b4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    bf8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    cs'16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    bf16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3593,35 +3211,29 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        g16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        a16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        bf16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3639,34 +3251,28 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 4]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    b4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    bf4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    cs'4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3675,23 +3281,19 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        e'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2
+                                        ef'2
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3699,23 +3301,19 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    d'4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    ef'4
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(4)
                                     %! SPANNER_STOP
@@ -3734,12 +3332,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 5]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'1.
+                                    cs'1.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3750,34 +3346,28 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        d'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        f'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        af'4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3785,24 +3375,20 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    b'4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    a'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3810,12 +3396,10 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    bf'8
                                     \stopTrillSpan
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
@@ -3829,12 +3413,10 @@
                                 % [viola voice measure 6]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                a'8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -3858,35 +3440,29 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                bf'8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                cs''4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                bf'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -3896,36 +3472,30 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    a'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    a'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3941,36 +3511,30 @@
                                     % [viola voice measure 7]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    g'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -3979,35 +3543,29 @@
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                af'16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8.
+                                f'8.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                ef'16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -4015,12 +3573,10 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                e'8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -4033,23 +3589,19 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 8]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    f'4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    fs'4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4059,36 +3611,30 @@
                                     {
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        a'8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        c''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        cs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4100,23 +3646,19 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        d''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2
+                                        ef''2
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4133,47 +3675,39 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 9]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    cs''4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    d''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    f''16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    fs''16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4182,35 +3716,29 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        ef''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        cs''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        d''16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4229,35 +3757,29 @@
                                     % [viola voice measure 10]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    cs''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    c''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    ef''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4267,24 +3789,20 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        fs''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        f''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4293,12 +3811,10 @@
                                     }
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    e''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4306,12 +3822,10 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4326,12 +3840,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 11]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'2.
+                                    ef''2.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4341,35 +3853,29 @@
                                     {
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        e''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        g''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        e''8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4377,35 +3883,29 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    g''8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    f''16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    fs''16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4418,12 +3918,10 @@
                                 % [viola voice measure 12]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                f''16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -4431,71 +3929,59 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                fs''16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8.
+                                ef''8.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8.
+                                fs''8.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                f''16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                e''16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                ef''16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -4512,34 +3998,28 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 13]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        cs''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        d''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        f''4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4547,43 +4027,34 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8.
+                                    d''8.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4.
+                                    f''4.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8.
+                                    g''8.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
-                                    %! MATERIAL_COLOR
+                                    fs''4
                                     \)
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(4)
@@ -4595,11 +4066,24 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1.
+                                f1.
                                 \mp
-                                ^ \markup clt.
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/12
@@ -4611,18 +4095,18 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 15]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
+                                        g2
                                         \ff
+                                        %! baca.text_spanner()
+                                        %! baca.PiecewiseCommand._call(4)
+                                        %! SPANNER_STOP
+                                        \stopTextSpanOne
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -4640,23 +4124,19 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2
+                                        af2
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'2
+                                        a2
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4664,43 +4144,34 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4.
+                                    af4.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'2.
+                                    a2.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4.
+                                    b4.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'2
-                                    %! MATERIAL_COLOR
+                                    bf2
                                     \)
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(4)
@@ -4714,21 +4185,36 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1..
+                                fqs1..
                                 \mp
-                                ^ \markup clt.
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
+                                fqs1
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -4741,38 +4227,30 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 18]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        g4
                                         \ff
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
                                         - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                         \startTrillSpan
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        af4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        a4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4780,43 +4258,34 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8.
+                                    af8.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4.
+                                    a4.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8.
+                                    b8.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
-                                    %! MATERIAL_COLOR
+                                    bf4
                                     \)
                                     \stopTrillSpan
 
@@ -4827,26 +4296,39 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
+                                fs2.
                                 \mp
-                                ^ \markup clt.
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
+                                fs1
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                fs4
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
@@ -4881,19 +4363,17 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Violoncello" }
-                                    %! MATERIAL_COLOR
+                                    \clef "bass"
                                     \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    c8
                                     \ff
+                                    \stopTrillSpan
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -4912,12 +4392,10 @@
                                     \startTextSpanOne
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    cs8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4926,34 +4404,28 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        e16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        g16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        bf16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4965,8 +4437,6 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
@@ -4977,12 +4447,10 @@
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        cs'4
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -5003,8 +4471,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 2]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
@@ -5016,36 +4482,30 @@
                                     - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                     \startTrillSpan
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    b4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    b8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5054,31 +4514,25 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        bf8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        b8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
@@ -5102,12 +4556,10 @@
                                     % [cello voice measure 3]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    d'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5130,19 +4582,15 @@
                                     \startTextSpanOne
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    ef'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
@@ -5156,24 +4604,20 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        a8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        fs4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5182,12 +4626,10 @@
                                     }
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    e8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5195,12 +4637,10 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f8
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(4)
                                     %! SPANNER_STOP
@@ -5216,12 +4656,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'2.
+                                fs2.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5233,36 +4671,30 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    d8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    cs8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5272,36 +4704,30 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                d8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 [
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                cs16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                d16
                                 \stopTrillSpan
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -5312,12 +4738,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8..
+                                e8..
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5339,34 +4763,28 @@
                                 %! SPANNER_START
                                 \startTextSpanOne
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8..
+                                f8..
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4..
+                                d4..
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4..
+                                cs4..
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5376,34 +4794,28 @@
                                 \times 7/12
                                 {
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    e4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    d4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    cs4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5420,34 +4832,28 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        c4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        cs4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        d4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5455,45 +4861,37 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8.
+                                    f8.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4.
+                                    fs4.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8.
+                                    g8.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    af4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5509,24 +4907,20 @@
                                     % [cello voice measure 7]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    fs8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    g8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5535,34 +4929,28 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        e16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        cs16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'16
+                                        d16
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5574,24 +4962,20 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        c8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        cs4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5607,47 +4991,39 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 8]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'2
+                                    d2
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    cs4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    e8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    cs8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5656,35 +5032,29 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        d8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        ef8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        d8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5703,35 +5073,29 @@
                                     % [cello voice measure 9]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    e8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5741,24 +5105,20 @@
                                     {
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        f8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         ]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        af4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5767,12 +5127,10 @@
                                     }
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    bf8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5780,12 +5138,10 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    a8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5800,12 +5156,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'2.
+                                    bf2.
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5815,35 +5169,29 @@
                                     {
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        a8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        fs8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        a8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -5851,35 +5199,29 @@
 
                                     }
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    bf8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    b16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'16
+                                    bf16
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5892,12 +5234,10 @@
                                 % [cello voice measure 11]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                af8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5905,20 +5245,16 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                a8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
                                 ]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
@@ -5928,12 +5264,10 @@
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                ef'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5943,36 +5277,30 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    fs'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    g'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5988,36 +5316,30 @@
                                     % [cello voice measure 12]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    fs'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    d'8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -6026,19 +5348,15 @@
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                b16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
@@ -6049,12 +5367,10 @@
                                 \glissando
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16.
+                                cs'16.
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -6062,8 +5378,6 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
@@ -6077,23 +5391,19 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                bf4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                b4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -6103,36 +5413,30 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    af8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    f8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'8
+                                    d8
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -6144,21 +5448,16 @@
                                 \times 2/3
                                 {
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    e4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'2
-                                    %! MATERIAL_COLOR
+                                    f2
                                     \)
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(4)
@@ -6170,11 +5469,24 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1.
+                                <d a>1.
                                 \mp
-                                ^ \markup clt.
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/10
@@ -6183,18 +5495,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 15]
 
-                                    %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'2
+                                    c2
                                     \ff
+                                    %! baca.text_spanner()
+                                    %! baca.PiecewiseCommand._call(4)
+                                    %! SPANNER_STOP
+                                    \stopTextSpanOne
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -6212,12 +5524,10 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'2
+                                    cs2
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -6226,34 +5536,28 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        e4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        g4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'4
+                                        bf4
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -6264,8 +5568,6 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
@@ -6275,10 +5577,7 @@
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'1
-                                        %! MATERIAL_COLOR
+                                        cs'1
                                         \)
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
@@ -6294,21 +5593,36 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1..
+                                <d a>1..
                                 \mp
-                                ^ \markup clt.
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
+                                <d a>1
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -6318,27 +5632,21 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 18]
 
-                                    %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    c4
                                     \ff
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
-                                    %! MATERIAL_COLOR
-                                    \(
                                     - \tweak bound-details.left.text \double-diamond-parenthesized-top-markup
                                     \startTrillSpan
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
-                                    c'4
+                                    cs4
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -6348,36 +5656,30 @@
                                     {
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        e8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        g8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         \revert Staff.Stem.stemlet-length
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        c'8
+                                        bf8
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -6389,8 +5691,6 @@
                                     \times 2/3
                                     {
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
@@ -6400,10 +5700,7 @@
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'2
-                                        %! MATERIAL_COLOR
+                                        cs'2
                                         \)
                                         \stopTrillSpan
 
@@ -6416,26 +5713,39 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'2.
+                                <d a>2.
                                 \mp
-                                ^ \markup clt.
                                 ~
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \abjad-dashed-line-with-hook
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \baca-text-spanner-left-text "clt."
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                - \tweak staff-padding 5
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \startTextSpanOne
                                 %! MATERIAL_COLOR
                                 \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'1
+                                <d a>1
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                <d a>4
+                                %! baca.text_spanner()
+                                %! baca.PiecewiseCommand._call(4)
+                                %! SPANNER_STOP
+                                \stopTextSpanOne
                                 %! MATERIAL_COLOR
                                 \)
                                 \bar "||"

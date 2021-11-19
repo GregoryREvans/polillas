@@ -118,12 +118,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
-            baca.selectors.leaf(13),
+            polillas.select_measures([7]).leaf(0),
         ),
         evans.attach(
             "cello voice",
             polillas.clef_whitespace,
-            baca.selectors.leaf(13),
+            polillas.select_measures([7]).leaf(0),
         ),
         evans.MusicCommand(
             [("violin 2 voice", (8, 11))],
@@ -139,6 +139,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("viola voice", 8)],
             polillas.knots(stage=5),
+            polillas.F_pitches(stage=1, transposition=4, step=2),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
@@ -152,6 +153,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("viola voice", 10)],
             polillas.knots(stage=5),
+            polillas.F_pitches(stage=1, transposition=-2, step=2),
             polillas.multi_stac,
             polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -168,6 +170,26 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.E_pitches(stage=1, transposition=16, rotation=-5),
+            polillas.select_measures([11, 12, 13, 14]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.E_pitches(stage=1, transposition=5, rotation=-7),
+            polillas.select_measures([11, 12, 13, 14]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.E_pitches(stage=1, transposition=-7, rotation=-9),
+            polillas.select_measures([11, 12, 13, 14]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.E_pitches(stage=1, transposition=-19, rotation=-11),
+            polillas.select_measures([11, 12, 13, 14]),
         ),
         evans.call(
             "score",

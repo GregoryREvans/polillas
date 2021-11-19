@@ -36,6 +36,26 @@ maker = evans.SegmentMaker(
             polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
+        evans.call(
+            "violin 1 voice",
+            polillas.F_pitches(stage=1, transposition=9, step=3),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.F_pitches(stage=1, transposition=8, step=4),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.F_pitches(stage=1, transposition=7, step=5),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.F_pitches(stage=1, transposition=6, step=6),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
         evans.MusicCommand(
             [("violin 2 voice", (1, 9))],
             polillas.lightning(stage=2),
@@ -64,9 +84,59 @@ maker = evans.SegmentMaker(
             polillas.A_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
+        evans.call(
+            "violin 1 voice",
+            evans.PitchHandler(
+                ["d''''", "fs'''", "gs'''", "a'''", "g'''", "bf'''"], forget=False
+            ),
+            polillas.select_measures([4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.PitchHandler(
+                [
+                    "g'''",
+                    "af'''",
+                    "gqs'''",
+                    "f'''",
+                    "gs'''",
+                ],
+                forget=False,
+            ),
+            polillas.select_measures([9, 10, 11, 12, 13, 14, 15, 16, 17]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.PitchHandler(
+                ["g'''", "cs'''", "eqf'''", "ef'''", "fs'''", "ftqs'''", "aqs'''"],
+                forget=False,
+            ),
+            polillas.select_measures([4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            abjad.Clef("treble"),
+            polillas.select_measures([9]).leaf(0),
+        ),
+        evans.attach(
+            "violin 2 voice",
+            polillas.clef_whitespace,
+            polillas.select_measures([9]).leaf(0),
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Clef("treble"),
+            polillas.select_measures([4]).leaf(0),
+        ),
+        evans.attach(
+            "viola voice",
+            polillas.clef_whitespace,
+            polillas.select_measures([4]).leaf(0),
+        ),
         evans.MusicCommand(
             [("cello voice", (4, 19))],
             polillas.make_tied_notes(),
+            evans.PitchHandler(["bf,"]),
             abjad.Dynamic("f"),
             abjad.Articulation("flageolet"),
             polillas.A_color,
@@ -92,10 +162,39 @@ maker = evans.SegmentMaker(
                 ("cello voice", (19, 22)),
             ],
             polillas.make_tied_notes(),
-            abjad.Articulation("trill"),
             baca.hairpin("mp < f"),
             polillas.D_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.D_pitches(stage=1, transposition=6, rotation=3, chord_vector=[1]),
+            polillas.select_measures([16, 17, 18, 19, 20, 21]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([16, 17, 18, 19, 20, 21]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.D_pitches(stage=1, transposition=5, rotation=6, chord_vector=[1]),
+            polillas.select_measures([18, 19, 20, 21]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([18, 19, 20, 21]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.D_pitches(stage=1, transposition=7, rotation=9, chord_vector=[1]),
+            polillas.select_measures([19, 20, 21]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([19, 20, 21]),
         ),
         evans.MusicCommand(
             [
@@ -118,6 +217,46 @@ maker = evans.SegmentMaker(
             ),
             polillas.D_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.D_pitches(stage=1, transposition=6, rotation=3, chord_vector=[1]),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.D_pitches(stage=1, transposition=5, rotation=6, chord_vector=[1]),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.D_pitches(stage=1, transposition=7, rotation=9, chord_vector=[1]),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.D_pitches(stage=1, transposition=4, rotation=12, chord_vector=[1]),
+            polillas.select_measures([24, 25]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.TrillHandler(boolean_vector=[1], forget=False),
+            polillas.select_measures([24, 25]),
         ),
         evans.call(
             "score",

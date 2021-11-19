@@ -41,6 +41,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", 1),
             ],
             polillas.chilled(extra_counts=[0, 2, 0], stage=4),
+            polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=0),
             abjad.Dynamic("f"),
             polillas.E_color,
@@ -51,6 +52,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", 1),
             ],
             polillas.knots(stage=1),
+            polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
             polillas.F_color,
@@ -74,6 +76,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", 3),
             ],
             polillas.chilled(extra_counts=[0, 2, 0], stage=4),
+            polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=2),
             abjad.Dynamic("f"),
             polillas.E_color,
@@ -84,6 +87,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", 3),
             ],
             polillas.knots(stage=1),
+            polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
             polillas.F_color,
@@ -107,6 +111,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", 5),
             ],
             polillas.chilled(extra_counts=[0, 2, 0, 0, 2], stage=4),
+            polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=4),
             abjad.Dynamic("f"),
             polillas.E_color,
@@ -117,6 +122,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", 5),
             ],
             polillas.knots(stage=1),
+            polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mp"),
             abjad.Articulation("staccato"),
             polillas.F_color,
@@ -139,6 +145,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", (11, 17)),
             ],
             polillas.chilled(extra_counts=[0, 2, 0, 0, 2, 2], stage=4),
+            polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=6),
             abjad.Dynamic("f"),
             polillas.E_color,
@@ -149,6 +156,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (11, 17)),
             ],
             polillas.knots(stage=5, rotation=3),
+            polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
             polillas.F_color,
@@ -163,6 +171,110 @@ maker = evans.SegmentMaker(
             baca.hairpin("p < f"),
             polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.PitchHandler(
+                evans.Sequence(
+                    [
+                        evans.JIPitch("e''", _, with_quarter_tones=True)
+                        for _ in range(2, 8)
+                    ]
+                )
+                .mirror(sequential_duplicates=False)
+                .rotate(9)
+            ),
+            polillas.select_measures([0, 2, 4, 6, 7, 8, 9, 10]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.glissando,
+            polillas.select_measures([0]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.glissando,
+            polillas.select_measures([2]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.glissando,
+            polillas.select_measures([4]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.glissando,
+            polillas.select_measures([6, 7, 8, 9, 10]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.PitchHandler(
+                evans.Sequence(
+                    [
+                        evans.JIPitch("d'", _, with_quarter_tones=True)
+                        for _ in range(2, 8)
+                    ]
+                )
+                .mirror(sequential_duplicates=False)
+                .rotate(6)
+            ),
+            polillas.select_measures([0, 2, 4, 6, 7, 8, 9, 10]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.glissando,
+            polillas.select_measures([0]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.glissando,
+            polillas.select_measures([2]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.glissando,
+            polillas.select_measures([4]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.glissando,
+            polillas.select_measures([6, 7, 8, 9, 10]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.PitchHandler(
+                evans.Sequence(
+                    [
+                        evans.JIPitch("c", _, with_quarter_tones=True)
+                        for _ in range(2, 8)
+                    ]
+                )
+                .mirror(sequential_duplicates=False)
+                .rotate(4)
+            ),
+            abjad.select(),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.glissando,
+            abjad.select(),
+        ),
+        evans.call(
+            "cello voice",
+            evans.PitchHandler(
+                evans.Sequence(
+                    [
+                        evans.JIPitch("bf,,", _, with_quarter_tones=True)
+                        for _ in range(2, 8)
+                    ]
+                ).mirror(sequential_duplicates=False)
+            ),
+            abjad.select(),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.glissando,
+            abjad.select(),
         ),
         evans.call(
             "score",

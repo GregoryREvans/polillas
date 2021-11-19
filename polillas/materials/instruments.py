@@ -11,7 +11,7 @@ instrument_two_range = instrument_two.pitch_range
 instrument_two_range_lowest = abjad.NumberedPitch(instrument_two_range.start_pitch)
 instrument_two_range_highest = abjad.NumberedPitch(instrument_two_range.stop_pitch)
 
-instrument_three = abjad.Viola()
+instrument_three = abjad.Viola(pitch_range="[C3, +inf]")
 instrument_three_range = instrument_three.pitch_range
 instrument_three_range_lowest = abjad.NumberedPitch(instrument_three_range.start_pitch)
 instrument_three_range_highest = abjad.NumberedPitch(instrument_three_range.stop_pitch)

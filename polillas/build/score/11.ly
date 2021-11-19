@@ -375,344 +375,157 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        c''4
                                         \f
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(5)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(5)
                                         - \upbow
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #5 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
                                         \(
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            c''8
                                             [
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
+                                            cs''8
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \downbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #1 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
+                                            ef''8
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
                                             - \upbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #4 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
                                             ]
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        ef''4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        ef''16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        ef''4.
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4.
+                                        ef''4.
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        ef''8.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
+                                        d''4
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        d''8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
+                                        dqs''8
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \downbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #2 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        dqs''8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
+                                        e''8
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \upbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        e''8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        e''8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
+                                        f''8
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \downbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #1 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        f''4
 
                                         \times 2/3
                                         {
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
+                                            fs''8
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(7)
                                             - \upbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #5 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
+                                            ef''4
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \downbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #1 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-right-text #4 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        ef''8.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(1)
+                                        g''16
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
 
@@ -901,50 +714,26 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
-                                        %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        g'4
                                         \f
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(5)
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(5)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(5)
                                         - \upbow
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #5 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
                                         \(
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        g'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        g'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        g'16
                                         ~
 
                                         \tweak text #tuplet-number::calc-fraction-text
@@ -954,96 +743,42 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 13]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'16
+                                            g'16
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4..
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
+                                            fqs'4..
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \downbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #1 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
+                                        fqs'16
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
+                                        cs'4
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \upbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #4 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
+                                        d'16
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        d'8.
                                         ~
 
                                         \times 2/3
@@ -1052,139 +787,64 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 14]
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'8
+                                            d'8
 
-                                            %! PITCH
-                                            \evans-not-yet-pitched-coloring
-                                            c'4
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
+                                            e'4
                                             - \tweak self-alignment-X #left
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \tweak staff-padding 4.5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(8)
                                             - \downbow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(3)
                                             \bacaStopTextSpanBCP
                                             ~
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \abjad-solid-line-with-arrow
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \baca-bcp-spanner-left-text #2 #5
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             - \tweak staff-padding 2
-                                            %! baca.bcps()
-                                            %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
 
                                         }
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        e'8
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
+                                        ef'8
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(7)
                                         - \upbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
+                                        eqf'4
                                         - \tweak self-alignment-X #left
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \tweak staff-padding 4.5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(8)
                                         - \downbow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(3)
                                         \bacaStopTextSpanBCP
                                         ~
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-left-text #1 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \baca-bcp-spanner-right-text #5 #5
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         - \tweak staff-padding 2
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8
+                                        eqf'8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        eqf'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        eqf'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'4
+                                        eqf'4
                                         ~
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'8.
+                                        eqf'8.
 
-                                        %! PITCH
-                                        \evans-not-yet-pitched-coloring
-                                        c'16
-                                        %! baca.bcps()
-                                        %! baca.BCPCommand._call(1)
+                                        f'16
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
                                         \)
                                         \bar "||"
 
@@ -1305,9 +965,7 @@
                                 \clef "alto"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                e'8
                                 \p
                                 - \tongue #2
                                 %! MATERIAL_COLOR
@@ -1315,21 +973,15 @@
 
                                 r8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                f'8
                                 - \tongue #2
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16.
+                                e'16.
                                 - \tongue #3
 
                                 r16.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16.
+                                eqf'16.
                                 - \tongue #2
 
                                 r16.
@@ -1350,9 +1002,7 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                bf8
                                 - \tongue #2
                                 %! MATERIAL_COLOR
                                 \(
@@ -1363,16 +1013,12 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    b8
                                     - \tongue #2
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    bf8
                                     - \tongue #3
                                     ]
 
@@ -1380,15 +1026,11 @@
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                aqs8
                                 - \tongue #2
 
                                 r8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
                                 c'16
                                 - \tongue #3
                                 %! MATERIAL_COLOR
@@ -1397,111 +1039,51 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
-                                %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                af4
                                 \f
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(5)
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(5)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(5)
                                 - \upbow
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #5 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
-                                %! MATERIAL_COLOR
                                 \(
 
                                 \times 2/3
                                 {
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    af4
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
+                                    fs8
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
                                     - \downbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
                                     ~
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #1 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                fs8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
+                                g8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #4 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                g16
                                 ~
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -1511,242 +1093,111 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 13]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8.
+                                    g8.
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
+                                    fqs4
                                     \bacaStopTextSpanBCP
                                     ~
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #3 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'16
+                                    fqs16
                                     ~
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                fqs16
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                cs8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #2 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
+                                d8.
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #3 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                d8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                d4
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                d4
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                d4
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                d8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                d8
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                e8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #1 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                e4
                                 ~
 
                                 \times 2/3
                                 {
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    e8
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
+                                    ef4
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \upbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #5 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                eqf8.
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #1 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-right-text #4 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(1)
+                                f16
                                 \bacaStopTextSpanBCP
-                                %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
 
@@ -1847,10 +1298,12 @@
 
                                 R1 * 5/16
                                 \staff-line-count 5
+                                \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
+                                \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \tweak NoteHead.style #'harmonic
@@ -1872,9 +1325,7 @@
                                 f4
                                 %! abjad.glissando(7)
                                 \glissando
-                                \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
 
-                                \clef "bass"
                                 \tweak NoteHead.style #'harmonic
                                 bf8.
                                 ~
@@ -1971,143 +1422,67 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
-                                %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
+                                cqs8
                                 \f
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(5)
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(5)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(5)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #5 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
-                                %! MATERIAL_COLOR
                                 \(
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                bf,8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #1 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
+                                    bf,4
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
+                                    af,8
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \upbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #4 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
+                                fs,4
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #3 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
+                                fs,16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
+                                fs,4.
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4.
+                                fs,4.
                                 ~
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                fs,8.
                                 ~
 
                                 \times 2/3
@@ -2116,222 +1491,97 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 14]
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    fs,8
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'4
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
+                                    g,4
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
                                     - \downbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
                                     ~
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #2 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                g,4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
+                                fqs,4
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #3 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
+                                cs,8
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(8)
                                 - \downbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #1 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
+                                cs,4
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'4
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
+                                d,4
                                 - \tweak self-alignment-X #left
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \tweak staff-padding 4.5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(7)
                                 - \upbow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(3)
                                 \bacaStopTextSpanBCP
                                 ~
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \baca-bcp-spanner-left-text #5 #5
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 - \tweak staff-padding 2
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
 
                                 \times 2/3
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
+                                    d,8
                                     [
 
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
+                                    e,8
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(8)
                                     - \downbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #1 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
 
                                     \revert Staff.Stem.stemlet-length
-                                    %! PITCH
-                                    \evans-not-yet-pitched-coloring
-                                    c'8
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
+                                    ef,8
                                     - \tweak self-alignment-X #left
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \tweak staff-padding 4.5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(7)
                                     - \upbow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(3)
                                     \bacaStopTextSpanBCP
                                     ~
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \abjad-solid-line-with-arrow
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-left-text #4 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \baca-bcp-spanner-right-text #3 #5
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     - \tweak staff-padding 2
-                                    %! baca.bcps()
-                                    %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
                                     ]
 
                                 }
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'8.
+                                ef,8.
 
-                                %! PITCH
-                                \evans-not-yet-pitched-coloring
-                                c'16
-                                %! baca.bcps()
-                                %! baca.BCPCommand._call(1)
+                                eqf,16
                                 \bacaStopTextSpanBCP
-                                %! MATERIAL_COLOR
                                 \)
                                 \bar "||"
 

@@ -42,11 +42,32 @@ maker = evans.SegmentMaker(
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
+        evans.call(
+            "violin 1 voice",
+            evans.PitchHandler(["a'"]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.PitchHandler(["d'"]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.PitchHandler(["c"]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.PitchHandler(["bf,"]),
+            polillas.select_measures([0, 1, 2, 3, 4, 5]),
+        ),
         evans.MusicCommand(
             [
                 ("violin 1 voice", (6, 17)),
             ],
             polillas.chilled(stage=2, input_counts=[1, 1, 3, 6, 3, 1, 3, 2]),
+            polillas.E_pitches(stage=1, transposition=0, rotation=-1),
             baca.hairpin("f |> p"),
             baca.text_spanner(
                 r"1/2 scratch =|",
@@ -62,6 +83,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (6, 17)),
             ],
             polillas.chilled(stage=2, input_counts=[2, 1, 2, 6, 1, 3, 3, 2]),
+            polillas.E_pitches(stage=1, transposition=-1, rotation=-2),
             baca.hairpin("f |> p"),
             baca.text_spanner(
                 r"1/2 scratch =|",
@@ -77,6 +99,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (6, 17)),
             ],
             polillas.chilled(stage=2, input_counts=[1, 1, 1, 2, 6, 2, 1, 1, 3, 2]),
+            polillas.E_pitches(stage=1, transposition=-3, rotation=-4),
             baca.hairpin("f |> p"),
             baca.text_spanner(
                 r"1/2 scratch =|",
@@ -92,6 +115,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (6, 17)),
             ],
             polillas.chilled(stage=2, input_counts=[2, 3, 6, 4, 3, 2]),
+            polillas.E_pitches(stage=1, transposition=-5, rotation=-6),
             baca.hairpin("f |> p"),
             baca.text_spanner(
                 r"1/2 scratch =|",
@@ -107,6 +131,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", (17, 23)),
             ],
             polillas.lightning(stage=3, rotation=-1),
+            evans.PitchHandler(["e''"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -119,6 +144,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (17, 23)),
             ],
             polillas.lightning(stage=3, rotation=-2),
+            evans.PitchHandler(["d'"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -131,6 +157,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (17, 23)),
             ],
             polillas.lightning(stage=3, rotation=-3),
+            evans.PitchHandler(["c"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -143,6 +170,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (17, 23)),
             ],
             polillas.lightning(stage=3, rotation=-4),
+            evans.PitchHandler(["bf,,"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -157,6 +185,7 @@ maker = evans.SegmentMaker(
             polillas.chilled(
                 stage=2, input_counts=[1, 1, 1, 1, 1, 2, 1, 3, 2, 2, 3, 2]
             ),
+            polillas.E_pitches(stage=1, transposition=-1, rotation=0),
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
@@ -171,6 +200,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (23, 30)),
             ],
             polillas.chilled(stage=2, input_counts=[2, 1, 1, 1, 6, 4, 2, 1, 2]),
+            polillas.E_pitches(stage=1, transposition=-2, rotation=-1),
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
@@ -185,6 +215,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (23, 30)),
             ],
             polillas.chilled(stage=2, input_counts=[1, 4, 1, 5, 1, 3, 1, 2, 1, 1]),
+            polillas.E_pitches(stage=1, transposition=-3, rotation=-2),
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
@@ -199,6 +230,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (23, 30)),
             ],
             polillas.chilled(stage=2, input_counts=[2, 3, 6, 4, 3, 2]),
+            polillas.E_pitches(stage=1, transposition=-4, rotation=-3),
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
@@ -213,6 +245,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", (30, 35)),
             ],
             polillas.lightning(stage=3, rotation=-4),
+            evans.PitchHandler(["e''"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -225,6 +258,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (30, 35)),
             ],
             polillas.lightning(stage=3, rotation=-4),
+            evans.PitchHandler(["d'"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -237,6 +271,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (30, 35)),
             ],
             polillas.lightning(stage=3, rotation=-2),
+            evans.PitchHandler(["c"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -249,6 +284,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (30, 35)),
             ],
             polillas.lightning(stage=3, rotation=-2),
+            evans.PitchHandler(["bf,,"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -274,6 +310,26 @@ maker = evans.SegmentMaker(
             polillas.E_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
+        evans.call(
+            "violin 1 voice",
+            polillas.E_pitches(stage=1, transposition=-2, rotation=-3),
+            polillas.select_measures([35, 36, 37, 38, 39]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.E_pitches(stage=1, transposition=-5, rotation=-4),
+            polillas.select_measures([35, 36, 37, 38, 39]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.E_pitches(stage=1, transposition=-7, rotation=-6),
+            polillas.select_measures([35, 36, 37, 38, 39]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.E_pitches(stage=1, transposition=-9, rotation=-8),
+            polillas.select_measures([35, 36, 37, 38, 39]),
+        ),
         evans.MusicCommand(
             [
                 ("violin 1 voice", (40, 45)),
@@ -298,6 +354,26 @@ maker = evans.SegmentMaker(
             # baca.hairpin("mf >o niente"),
             polillas.G_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "violin 1 voice",
+            evans.PitchHandler(["eqs''"]),
+            polillas.select_measures([40, 41, 42, 43, 44, 45, 46, 47]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            evans.PitchHandler(["d'"]),
+            polillas.select_measures([40, 41, 42, 43, 44, 45, 46, 47]),
+        ),
+        evans.call(
+            "viola voice",
+            evans.PitchHandler(["b"]),
+            polillas.select_measures([40, 41, 42, 43, 44, 45, 46, 47]),
+        ),
+        evans.call(
+            "cello voice",
+            evans.PitchHandler(["bf,,"]),
+            polillas.select_measures([40, 41, 42, 43, 44, 45, 46, 47]),
         ),
         evans.call(
             "violin 1 voice",
