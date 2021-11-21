@@ -218,11 +218,7 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         r16
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         gqs'16
                                         \mp
@@ -284,8 +280,6 @@
                                         }
 
                                         r4
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \staff-line-count 4
                                         \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -293,13 +287,9 @@
                                         % [violin 1 voice measure 3]
 
                                         \clef "percussion"
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         b4.
                                         \ff
                                         ^ \markup {behind bridge, on wrapping}
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 9/10
@@ -339,16 +329,12 @@
                                             b4
 
                                             r2
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         b8
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -358,8 +344,6 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         r8
 
@@ -501,19 +485,13 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \p
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/16
-
-                                        R1 * 3/16
+                                        r4.
                                         \staff-line-count 5
                                         \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -521,49 +499,32 @@
                                         % [violin 1 voice measure 16]
 
                                         \clef "treble"
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         fs''2
                                         \mf
                                         ~
-                                        \(
                                         \startTrillSpan g''
 
                                         fs''8
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/2
-                                        %! applying indicators
+                                        r1
                                         \stopTrillSpan
-
-                                        R1 * 1/2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         d''2..
-                                        \(
                                         \startTrillSpan ef''
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/16
-                                        %! applying indicators
-                                        \)
-                                        %! applying indicators
+                                        r2..
                                         \stopTrillSpan
-
-                                        R1 * 7/16
                                         \bar "||"
 
                                     }
@@ -595,11 +556,7 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             r16
-                                            %! MATERIAL_COLOR
-                                            \(
 
                                             g'16
                                             \mp
@@ -683,8 +640,6 @@
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
                                             \stopTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
 
@@ -698,13 +653,9 @@
                                             % [violin 2 voice measure 4]
 
                                             \clef "percussion"
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                             d'4
                                             \ff
                                             ^ \markup {behind bridge, on wrapping}
-                                            %! MATERIAL_COLOR
-                                            \(
 
                                             r2
 
@@ -736,8 +687,6 @@
                                             g4
 
                                             r2
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
 
@@ -748,8 +697,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 7]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                             g8
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -759,8 +706,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \>
-                                            %! MATERIAL_COLOR
-                                            \(
 
                                             r2
 
@@ -920,8 +865,6 @@
                                             ]
 
                                             r4
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
                                         \staff-line-count 5
@@ -932,15 +875,11 @@
 
                                         \harmonicsOn
                                         \clef "treble"
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a''4
                                         \mp
                                         ^ \markup (III)
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         d'''8
                                         ~
@@ -990,18 +929,12 @@
                                         \glissando
 
                                         a'''8
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/16
-
-                                        R1 * 7/16
+                                        r2..
                                         \bar "||"
 
                                     }
@@ -1037,11 +970,7 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     aqf'16
                                     \mp
@@ -1118,8 +1047,6 @@
                                     %! baca.PiecewiseCommand._call(4)
                                     %! SPANNER_STOP
                                     \stopTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
                                 \staff-line-count 4
@@ -1129,13 +1056,9 @@
                                 % [viola voice measure 4]
 
                                 \clef "percussion"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 g8.
                                 \ff
                                 ^ \markup {behind bridge, on wrapping}
-                                %! MATERIAL_COLOR
-                                \(
 
                                 r8.
 
@@ -1171,13 +1094,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-                                %! applying indicators
-                                \)
-
-                                R1 * 7/16
+                                r2..
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/9
@@ -1186,8 +1103,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 7]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     g8
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -1197,8 +1112,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \>
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     r2
 
@@ -1347,8 +1260,6 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \p
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
                                 \staff-line-count 1
@@ -1356,13 +1267,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4
                                 \p
                                 ^ \markup {on bridge}
-                                %! MATERIAL_COLOR
-                                \(
 
                                 c'8
                                 ~
@@ -1409,8 +1316,6 @@
                                 c'4
 
                                 c'4.
-                                %! MATERIAL_COLOR
-                                \)
                                 \bar "||"
 
                             }
@@ -1446,13 +1351,9 @@
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Violoncello" }
                                     \clef "percussion"
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     b4
                                     \ff
                                     ^ \markup {behind bridge, on wrapping}
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     r4
 
@@ -1475,11 +1376,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/16
-
-                                R1 * 3/16
+                                r4.
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 9/14
@@ -1530,8 +1427,6 @@
                                     g4
 
                                     r2
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
 
@@ -1542,8 +1437,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 7]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     g8
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -1553,8 +1446,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \>
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     r2
 
@@ -1709,8 +1600,6 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \p
-                                %! MATERIAL_COLOR
-                                \)
                                 \staff-line-count 5
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1718,13 +1607,9 @@
                                 % [cello voice measure 15]
 
                                 \clef "bass"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c,4.
                                 \mp
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -1749,19 +1634,12 @@
                                 % [cello voice measure 18]
 
                                 c,2..
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-                                %! applying indicators
+                                r2..
                                 \stopTextSpan
-
-                                R1 * 7/16
                                 \bar "||"
 
                             }

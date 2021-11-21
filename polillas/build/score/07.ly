@@ -166,8 +166,6 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'2
                                             \mp
                                             \<
@@ -200,8 +198,6 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             - \abjad-dashed-line-with-arrow
@@ -870,8 +866,6 @@
                                             %! SPANNER_STOP
                                             \stopTextSpanOne
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             \stopTextSpanTwo
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
@@ -888,14 +882,10 @@
                                         % [violin 1 voice measure 10]
 
                                         \clef "percussion"
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         c'4.
                                         \p
                                         ^ \markup {on bridge}
                                         \stopTextSpanTwo
-                                        %! MATERIAL_COLOR
-                                        \(
                                         - \abjad-invisible-line
                                         - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \upright \vcenter flaut. } \hspace #0.5 }
                                         - \tweak bound-details.right.padding 3
@@ -963,8 +953,6 @@
                                         c'8
 
                                         c'4
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
@@ -1004,8 +992,6 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'2
                                             \mp
                                             \<
@@ -1038,8 +1024,6 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             - \abjad-dashed-line-with-arrow
@@ -1708,8 +1692,6 @@
                                             %! SPANNER_STOP
                                             \stopTextSpanOne
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             \stopTextSpanTwo
                                             - \abjad-dashed-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
@@ -1726,14 +1708,10 @@
                                         % [violin 2 voice measure 10]
 
                                         \clef "percussion"
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         c'4.
                                         \p
                                         ^ \markup {on bridge}
                                         \stopTextSpanTwo
-                                        %! MATERIAL_COLOR
-                                        \(
                                         - \abjad-invisible-line
                                         - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \upright \vcenter flaut. } \hspace #0.5 }
                                         - \tweak bound-details.right.padding 3
@@ -1801,8 +1779,6 @@
                                         c'8
 
                                         c'4
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
@@ -1843,11 +1819,7 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4.
-                                %! MATERIAL_COLOR
-                                \(
 
                                 c'8
 
@@ -1911,45 +1883,29 @@
                                 c'8
 
                                 c'4
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 9/16
+                                r1
 
-                                R1 * 9/16
+                                r8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/2
-
-                                R1 * 1/2
+                                r1
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 9]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-
-                                R1 * 7/16
+                                r2..
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4.
                                 \p
-                                %! MATERIAL_COLOR
-                                \(
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8
@@ -2011,8 +1967,6 @@
                                 c'8
 
                                 c'4
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
@@ -2052,8 +2006,6 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Violoncello" }
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'2
                                     \mp
                                     \<
@@ -2086,8 +2038,6 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     - \abjad-dashed-line-with-arrow
@@ -2756,8 +2706,6 @@
                                     %! SPANNER_STOP
                                     \stopTextSpanOne
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     \stopTextSpanTwo
                                     - \abjad-dashed-line-with-arrow
                                     - \tweak bound-details.left.text \markup \concat { \center-column { \upright \center-align \vcenter ord. } \hspace #0.5 }
@@ -2774,14 +2722,10 @@
                                 % [cello voice measure 10]
 
                                 \clef "percussion"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4.
                                 \p
                                 ^ \markup {on bridge}
                                 \stopTextSpanTwo
-                                %! MATERIAL_COLOR
-                                \(
                                 - \abjad-invisible-line
                                 - \tweak bound-details.left.text \markup \concat { \center-column { \center-align \upright \vcenter flaut. } \hspace #0.5 }
                                 - \tweak bound-details.right.padding 3
@@ -2849,8 +2793,6 @@
                                 c'8
 
                                 c'4
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]

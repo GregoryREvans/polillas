@@ -118,14 +118,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         ef'8
                                         \p
                                         - \tongue #2
                                         \stopTrillSpan
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         r8
 
@@ -143,36 +139,27 @@
                                             ]
 
                                             r8
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         bf'4
                                         \f
                                         ~
-                                        \(
                                         \startTrillSpan cs''
 
                                         bf'16
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         ef'8
                                         \p
                                         - \tongue #3
                                         \stopTrillSpan
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         r8
 
@@ -323,8 +310,6 @@
                                         \revert Staff.Stem.stemlet-length
                                         eqs'16
                                         - \tongue #3
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         \bar "||"
 
@@ -362,14 +347,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         e'8
                                         \p
                                         - \tongue #2
                                         \stopTrillSpan
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         r8
 
@@ -378,22 +359,17 @@
 
                                         e'8
                                         - \tongue #2
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         a'4
                                         \f
                                         ~
-                                        \(
                                         \startTrillSpan b'
 
                                         a'16
-                                        \)
 
                                         \times 2/3
                                         {
@@ -401,15 +377,11 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             e'8
                                             \p
                                             - \tongue #2
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             \revert Staff.Stem.stemlet-length
@@ -423,13 +395,10 @@
 
                                         e'8
                                         - \tongue #2
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         a'2
                                         \mf
@@ -448,7 +417,6 @@
                                         - \tweak bound-details.right.stencil-align-dir-y #center
                                         - \tweak staff-padding 7
                                         \startTextSpanTwo
-                                        \(
                                         \startTrillSpan b'
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -489,7 +457,6 @@
                                         \f
                                         \stopTextSpanOne
                                         \stopTextSpanTwo
-                                        \)
                                         \stopTrillSpan
                                         \startTrillSpan c''
                                         \bar "||"
@@ -535,12 +502,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 2]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     r8
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     b8
                                     \p
@@ -555,32 +518,23 @@
 
                                 b8
                                 - \tongue #3
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 a'4
                                 \f
                                 ~
-                                \(
                                 \startTrillSpan b'
 
                                 a'16
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
                                 \stopTrillSpan
-                                %! MATERIAL_COLOR
-                                \(
 
                                 b8
                                 \p
@@ -588,13 +542,10 @@
 
                                 c'8
                                 - \tongue #2
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 a'2
                                 \mf
@@ -613,7 +564,6 @@
                                 - \tweak bound-details.right.stencil-align-dir-y #center
                                 - \tweak staff-padding 7
                                 \startTextSpanTwo
-                                \(
                                 \startTrillSpan b'
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -654,7 +604,6 @@
                                 \f
                                 \stopTextSpanOne
                                 \stopTextSpanTwo
-                                \)
                                 \stopTrillSpan
                                 \startTrillSpan bf'
                                 \bar "||"
@@ -696,12 +645,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 2]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     r8
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     a8
                                     \p
@@ -716,32 +661,23 @@
 
                                 a8
                                 - \tongue #2
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 ef'4
                                 \f
                                 ~
-                                \(
                                 \startTrillSpan f'
 
                                 ef'16
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
                                 \stopTrillSpan
-                                %! MATERIAL_COLOR
-                                \(
 
                                 a8
                                 \p
@@ -789,8 +725,6 @@
                                 - \tongue #2
 
                                 r8
-                                %! MATERIAL_COLOR
-                                \)
 
                                 \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                     {
@@ -835,13 +769,11 @@
                                     % [cello voice measure 7]
 
                                     \once \override Beam.grow-direction = #right
-                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     bf,16 * 63/32
                                     \f
                                     - \baca-circle-bowing
                                     \>
-                                    \(
                                     [
 
                                     \revert Staff.Stem.stemlet-length
@@ -1023,7 +955,6 @@
                                     cqs16 * 121/64
                                     \p
                                     - \baca-circle-bowing
-                                    \)
                                     ]
                                     \bar "||"
 

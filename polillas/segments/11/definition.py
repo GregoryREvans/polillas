@@ -201,7 +201,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "cello voice",
             polillas.scordatura(staff_padding=8),
-            polillas.select_measures([7, 8, 9, 10]),
+            polillas.select_measures([7, 8, 9, 10, 11, 12, 13, 14]),
         ),
         evans.call(
             "score",

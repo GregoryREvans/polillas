@@ -202,7 +202,6 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         cs''2.
                                         %! baca.hairpin()
@@ -214,7 +213,6 @@
                                         %! SPANNER_START
                                         \>
                                         ~
-                                        \(
                                         \startTrillSpan d''
 
                                         cs''4.
@@ -232,14 +230,12 @@
 
                                         \pitchedTrill
                                         c''2..
-                                        \)
                                         \stopTrillSpan
                                         \startTrillSpan d''
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         c'4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
@@ -252,7 +248,6 @@
                                         - \downbow
                                         \stopTrillSpan
                                         ~
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -375,7 +370,6 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \p
-                                            \)
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(1)
                                             \bacaStopTextSpanBCP
@@ -394,7 +388,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         d'4.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -417,7 +410,6 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \<
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -494,7 +486,6 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \!
-                                        \)
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
@@ -510,7 +501,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         e'4
                                         \f
                                         %! baca.bcps()
@@ -524,7 +514,6 @@
                                         - \upbow
                                         \>
                                         ~
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -623,7 +612,6 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         g'16
-                                        \)
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
@@ -655,7 +643,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         d'4
                                         \mf
                                         %! baca.bcps()
@@ -673,7 +660,6 @@
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
                                         ~
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -763,7 +749,6 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         d'16
-                                        \)
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
@@ -772,13 +757,9 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         dqf''2..
                                         :32
                                         \p
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -811,8 +792,6 @@
 
                                         cs''2.
                                         :32
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -853,7 +832,6 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         af'2.
                                         %! baca.hairpin()
@@ -865,7 +843,6 @@
                                         %! SPANNER_START
                                         \>
                                         ~
-                                        \(
                                         \startTrillSpan a'
 
                                         af'4.
@@ -883,14 +860,12 @@
 
                                         \pitchedTrill
                                         cs''2..
-                                        \)
                                         \stopTrillSpan
                                         \startTrillSpan d''
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         ef'4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
@@ -903,7 +878,6 @@
                                         - \upbow
                                         \stopTrillSpan
                                         ~
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -1017,7 +991,6 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \p
-                                            \)
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(1)
                                             \bacaStopTextSpanBCP
@@ -1036,7 +1009,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         e'4.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1059,7 +1031,6 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \<
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -1145,7 +1116,6 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \!
-                                        \)
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
@@ -1161,7 +1131,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         gqs'4
                                         \f
                                         %! baca.bcps()
@@ -1175,7 +1144,6 @@
                                         - \upbow
                                         \>
                                         ~
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -1370,7 +1338,6 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             af16
-                                            \)
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(1)
                                             \bacaStopTextSpanBCP
@@ -1404,7 +1371,6 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         e'4
                                         \mf
                                         %! baca.bcps()
@@ -1422,7 +1388,6 @@
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
                                         ~
-                                        \(
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         - \abjad-solid-line-with-arrow
@@ -1503,7 +1468,6 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         e'16
-                                        \)
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
@@ -1512,14 +1476,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         dqs''2.
                                         :32
                                         \p
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -1546,8 +1506,6 @@
 
                                         dqs''2.
                                         :32
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -1592,7 +1550,6 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 b'2.
                                 %! baca.hairpin()
@@ -1604,7 +1561,6 @@
                                 %! SPANNER_START
                                 \>
                                 ~
-                                \(
                                 \startTrillSpan cs''
 
                                 b'4.
@@ -1622,14 +1578,12 @@
 
                                 \pitchedTrill
                                 af'2..
-                                \)
                                 \stopTrillSpan
                                 \startTrillSpan a'
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 aqf4
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
@@ -1642,7 +1596,6 @@
                                 - \upbow
                                 \stopTrillSpan
                                 ~
-                                \(
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -1747,7 +1700,6 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \p
-                                    \)
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(1)
                                     \bacaStopTextSpanBCP
@@ -1766,7 +1718,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 bqs4.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -1789,7 +1740,6 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \<
-                                \(
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -1875,7 +1825,6 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \!
-                                \)
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(1)
                                 \bacaStopTextSpanBCP
@@ -1891,7 +1840,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 fs4
                                 \f
                                 %! baca.bcps()
@@ -1905,7 +1853,6 @@
                                 - \upbow
                                 \>
                                 ~
-                                \(
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -2209,7 +2156,6 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 fs16
-                                \)
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(1)
                                 \bacaStopTextSpanBCP
@@ -2218,14 +2164,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 bqf'2.
                                 :32
                                 \p
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -2252,8 +2194,6 @@
 
                                 bqf'2.
                                 :32
-                                %! MATERIAL_COLOR
-                                \)
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
@@ -2295,7 +2235,6 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "tenor"
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 g'2.
                                 %! baca.hairpin()
@@ -2309,7 +2248,6 @@
                                 \stopTextSpan
                                 \stopTextSpanOne
                                 ~
-                                \(
                                 \startTrillSpan a'
 
                                 g'4.
@@ -2327,7 +2265,6 @@
 
                                 \pitchedTrill
                                 b'2..
-                                \)
                                 \stopTrillSpan
                                 \startTrillSpan cs''
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2335,7 +2272,6 @@
                                 % [cello voice measure 4]
 
                                 \clef "bass"
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 fs4
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
@@ -2348,7 +2284,6 @@
                                 - \downbow
                                 \stopTrillSpan
                                 ~
-                                \(
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -2462,7 +2397,6 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \p
-                                    \)
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(1)
                                     \bacaStopTextSpanBCP
@@ -2481,7 +2415,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 ef4.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2504,7 +2437,6 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \<
-                                \(
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -2599,7 +2531,6 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \!
-                                \)
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(1)
                                 \bacaStopTextSpanBCP
@@ -2615,7 +2546,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 af,4
                                 \f
                                 %! baca.bcps()
@@ -2629,7 +2559,6 @@
                                 - \downbow
                                 \>
                                 ~
-                                \(
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 - \abjad-solid-line-with-arrow
@@ -2824,7 +2753,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     cs16
-                                    \)
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(1)
                                     \bacaStopTextSpanBCP
@@ -2835,13 +2763,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 eqs2..
                                 :32
                                 \p
-                                %! MATERIAL_COLOR
-                                \(
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -2880,8 +2804,6 @@
 
                                 d2.
                                 :32
-                                %! MATERIAL_COLOR
-                                \)
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP

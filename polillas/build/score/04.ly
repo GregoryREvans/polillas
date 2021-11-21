@@ -261,10 +261,8 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
-                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             a'4.
                                             \pp
-                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1152,7 +1150,6 @@
                                                 %! baca.PiecewiseCommand._call(3)
                                                 %! SPANNER_STOP
                                                 \ff
-                                                \)
                                                 \stopTrillSpan
                                                 ]
 
@@ -1163,11 +1160,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -1275,8 +1268,6 @@
                                             \revert Staff.Stem.stemlet-length
                                             b32
                                             - \staccato
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1284,9 +1275,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a'2.
-                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1352,15 +1341,12 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         c''16
-                                        \)
                                         \stopTrillSpan
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1370,8 +1356,6 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 16/15
@@ -1698,8 +1682,6 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
-                                        %! MATERIAL_COLOR
-                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -1708,11 +1690,9 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 20]
 
-                                            \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                             <gqs'' cs'''>2.
                                             \p
                                             \<
-                                            \(
                                             \glissando
 
                                             <gqs'' cs'''>4
@@ -1920,7 +1900,6 @@
 
                                             <gqs'' cs'''>4
                                             \f
-                                            \)
                                             \bar "||"
 
                                         }
@@ -1955,11 +1934,9 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d'8
                                             \pp
-                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2760,7 +2737,6 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \ff
-                                            \)
                                             \stopTrillSpan
 
                                         }
@@ -2768,14 +2744,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a16
                                         \ff
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         bf16
@@ -3023,15 +2995,11 @@
                                         ]
 
                                         r16
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         d'8.
-                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3088,15 +3056,12 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         ef'8
-                                        \)
                                         \stopTrillSpan
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -3106,8 +3071,6 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -3325,8 +3288,6 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
-                                        %! MATERIAL_COLOR
-                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -3335,11 +3296,9 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 20]
 
-                                            \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                             <bqs' bqf''>2.
                                             \p
                                             \<
-                                            \(
                                             \glissando
 
                                             <bqs' bqf''>4
@@ -3546,7 +3505,6 @@
 
                                             <bqs' bqf''>4
                                             \f
-                                            \)
                                             \bar "||"
 
                                         }
@@ -3585,11 +3543,9 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
-                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     g8
                                     \pp
-                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4403,7 +4359,6 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \ff
-                                    \)
                                     \stopTrillSpan
                                     ]
 
@@ -4412,11 +4367,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -4601,8 +4552,6 @@
                                 \revert Staff.Stem.stemlet-length
                                 b16
                                 - \staccato
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -4615,9 +4564,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 14]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         g4
-                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4673,7 +4620,6 @@
                                     \glissando
 
                                     c'4
-                                    \)
                                     \stopTrillSpan
 
                                 }
@@ -4681,11 +4627,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 \times 4/5
                                 {
@@ -4782,22 +4724,16 @@
                                 ]
 
                                 r16
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
                                 \harmonicsOn
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c''1.
                                 \sfp
                                 ^ \markup (IV)
                                 %! abjad.glissando(7)
                                 \glissando
-                                %! MATERIAL_COLOR
-                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
@@ -4834,8 +4770,6 @@
                                 % [viola voice measure 22]
 
                                 d'''2.
-                                %! MATERIAL_COLOR
-                                \)
                                 \harmonicsOff
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -4845,12 +4779,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 23]
 
-                                    \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                     <fs' e''>2.
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \(
                                     \glissando
 
                                     <fs' e''>4
@@ -4960,7 +4892,6 @@
 
                                     <d' fs''>4
                                     \f
-                                    \)
                                     \bar "||"
 
                                 }
@@ -4994,11 +4925,9 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "bass"
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c16.
                                 \pp
-                                \(
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5310,7 +5239,6 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         d8
-                                        \)
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -5324,11 +5252,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -5377,8 +5301,6 @@
                                     \revert Staff.Stem.stemlet-length
                                     dqf16
                                     - \staccato
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -5390,10 +5312,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 6]
 
-                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     c4.
                                     \pp
-                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5618,17 +5538,12 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \mf
-                                \)
                                 \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -5731,8 +5646,6 @@
                                     \revert Staff.Stem.stemlet-length
                                     g32
                                     - \staccato
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -5744,9 +5657,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
 
-                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     c1.
-                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5808,7 +5719,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     ef8
-                                    \)
                                     \stopTrillSpan
                                     ]
 
@@ -5821,14 +5731,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 11]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     fs32
                                     \ff
                                     - \staccato
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     g32
@@ -5945,8 +5851,6 @@
                                     ]
 
                                     r8
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
 
@@ -5957,10 +5861,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 13]
 
-                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c8
-                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -6025,7 +5927,6 @@
                                         ]
 
                                         cs4
-                                        \)
                                         \stopTrillSpan
 
                                     }
@@ -6035,11 +5936,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 \times 8/11
                                 {
@@ -6198,19 +6095,13 @@
 
                                 fs'16
                                 - \staccato
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c,1.
                                 \sfp
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -6247,8 +6138,6 @@
                                 % [cello voice measure 22]
 
                                 c,2.
-                                %! MATERIAL_COLOR
-                                \)
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4
@@ -6257,13 +6146,11 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 23]
 
-                                    \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                     d2.
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
                                     \stopTextSpan
-                                    \(
                                     \glissando
 
                                     d4
@@ -6383,7 +6270,6 @@
 
                                     d'4
                                     \f
-                                    \)
                                     \bar "||"
 
                                 }

@@ -182,23 +182,18 @@
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         b'''4
                                         \p
                                         ^ \markup (I)
-                                        \(
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         e'''4
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         bf'4
                                         \f
                                         %! baca.bcps()
@@ -223,8 +218,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \times 2/3
                                         {
@@ -296,18 +289,14 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         b'''4
                                         \mp
-                                        \(
                                         %! abjad.glissando(7)
                                         \glissando
 
@@ -319,14 +308,11 @@
                                         ~
 
                                         af''''8
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         bf'4.
                                         \f
                                         %! baca.bcps()
@@ -350,8 +336,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -427,18 +411,14 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         b''''4
                                         \mf
-                                        \(
                                         %! abjad.glissando(7)
                                         \glissando
 
@@ -450,14 +430,11 @@
                                         ~
 
                                         b''''4
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         bf'4
                                         \f
                                         %! baca.bcps()
@@ -482,8 +459,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \times 2/3
                                         {
@@ -546,20 +521,16 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         af''''1
                                         \p
                                         \<
                                         ~
-                                        \(
 
                                         af''''8
                                         ~
@@ -587,14 +558,11 @@
 
                                         af''''2.
                                         \f
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         bf'4.
                                         \f
                                         %! baca.bcps()
@@ -618,8 +586,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -876,8 +842,6 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(1)
                                         \bacaStopTextSpanBCP
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         \bar "||"
 
@@ -908,28 +872,21 @@
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a'''4
                                         \p
                                         ^ \markup (III)
                                         ~
-                                        \(
 
                                         a'''4
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         af'8
                                         \mf
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         a'8
@@ -958,19 +915,15 @@
                                         \revert Staff.Stem.stemlet-length
                                         b'8
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         fs'''4
                                         \mp
                                         ~
-                                        \(
 
                                         fs'''4
                                         %! abjad.glissando(7)
@@ -981,20 +934,15 @@
                                         \glissando
 
                                         a''8
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         af'8
                                         \mf
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         a'8
@@ -1029,18 +977,14 @@
                                         \revert Staff.Stem.stemlet-length
                                         bqf'8
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         d''4
                                         \mf
-                                        \(
                                         %! abjad.glissando(7)
                                         \glissando
 
@@ -1053,20 +997,15 @@
                                         \glissando
 
                                         fs'''4
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         af'8
                                         \mp
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         a'8
@@ -1095,20 +1034,16 @@
                                         \revert Staff.Stem.stemlet-length
                                         b'8
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
 
                                         \harmonicsOn
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a'''1
                                         \p
                                         \<
                                         ~
-                                        \(
 
                                         a'''8
                                         ~
@@ -1136,19 +1071,14 @@
 
                                         a'''2.
                                         \f
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         af'8
                                         \mf
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         r8
 
@@ -1293,8 +1223,6 @@
                                         - \staccato
 
                                         r8
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \bar "||"
 
                                     }
@@ -1328,16 +1256,13 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g''4
                                 \p
                                 ^ \markup (IV)
-                                \(
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 aqs''4
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1345,20 +1270,14 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-
-                                R1 * 7/16
+                                r2..
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g''4
                                 \mp
-                                \(
                                 %! abjad.glissando(7)
                                 \glissando
 
@@ -1370,7 +1289,6 @@
                                 ~
 
                                 c''8
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1378,20 +1296,16 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 9/16
+                                r1
 
-                                R1 * 9/16
+                                r8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g'4
                                 \mf
-                                \(
                                 %! abjad.glissando(7)
                                 \glissando
 
@@ -1404,7 +1318,6 @@
                                 \glissando
 
                                 c''4
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1412,22 +1325,16 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-
-                                R1 * 7/16
+                                r2..
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 e''1
                                 \p
                                 \<
                                 ~
-                                \(
 
                                 e''8
                                 ~
@@ -1455,7 +1362,6 @@
 
                                 e''2.
                                 \f
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1464,12 +1370,10 @@
                                 % [viola voice measure 12]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g''2.
                                 \p
                                 \<
                                 ~
-                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
@@ -1506,7 +1410,6 @@
 
                                 g''1
                                 \f
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \bar "||"
@@ -1540,10 +1443,8 @@
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \harmonicsOn
                                 \clef "bass"
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c4
                                 \p
-                                \(
                                 %! abjad.glissando(7)
                                 \glissando
                                 - \abjad-dashed-line-with-hook
@@ -1552,7 +1453,6 @@
                                 \startTextSpan
 
                                 g4
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1560,22 +1460,15 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-                                %! applying indicators
+                                r2..
                                 \stopTextSpan
-
-                                R1 * 7/16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c'4
                                 \mp
-                                \(
                                 %! abjad.glissando(7)
                                 \glissando
                                 - \abjad-dashed-line-with-hook
@@ -1592,7 +1485,6 @@
                                 \glissando
 
                                 aqs'8
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1600,22 +1492,17 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 9/16
-                                %! applying indicators
+                                r1
                                 \stopTextSpan
 
-                                R1 * 9/16
+                                r8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g'4
                                 \mf
-                                \(
                                 %! abjad.glissando(7)
                                 \glissando
                                 - \abjad-dashed-line-with-hook
@@ -1632,7 +1519,6 @@
                                 \glissando
 
                                 g4
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1640,24 +1526,17 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/16
-                                %! applying indicators
+                                r2..
                                 \stopTextSpan
-
-                                R1 * 7/16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c1
                                 \p
                                 \<
                                 ~
-                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -1689,7 +1568,6 @@
 
                                 c2.
                                 \f
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \harmonicsOff
@@ -1698,12 +1576,10 @@
                                 % [cello voice measure 12]
 
                                 \harmonicsOn
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g2.
                                 \p
                                 \<
                                 ~
-                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
@@ -1740,7 +1616,6 @@
 
                                 g1
                                 \f
-                                \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \bar "||"

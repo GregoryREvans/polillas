@@ -176,13 +176,11 @@
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
                                             \clef "treble"
-                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             a'8
                                             :32
                                             \p
                                             - \accent
-                                            \(
                                             [
 
                                             \revert Staff.Stem.stemlet-length
@@ -840,7 +838,6 @@
                                             aqf'4
                                             \ff
                                             - \baca-circle-bowing
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -885,12 +882,10 @@
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
                                             \clef "treble"
-                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             d'8
                                             :32
                                             \p
                                             - \accent
-                                            \(
 
                                             d'4
                                             :32
@@ -1442,7 +1437,6 @@
                                             ds'4
                                             \ff
                                             - \baca-circle-bowing
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1492,13 +1486,11 @@
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
                                     \clef "alto"
-                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c16
                                     :32
                                     \p
                                     - \accent
-                                    \(
                                     [
 
                                     c8
@@ -2374,7 +2366,6 @@
                                     c4
                                     \ff
                                     - \baca-circle-bowing
-                                    \)
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2416,13 +2407,11 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "bass"
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 bf,8
                                 :32
                                 \p
                                 - \accent
-                                \(
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -2810,7 +2799,6 @@
                                     a,4
                                     \ff
                                     - \baca-circle-bowing
-                                    \)
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
