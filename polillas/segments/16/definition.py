@@ -64,6 +64,11 @@ maker = evans.SegmentMaker(
             preprocessor=polillas.fuse_quarters_preprocessor_2_20,
         ),
         evans.attach(
+            "cello voice",
+            abjad.StopTextSpan(command=r"\stopTextSpan"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
             "violin 1 voice",
             abjad.Dynamic("p"),
             polillas.select_measures([0]).leaf(0),
@@ -619,7 +624,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (28, 30)),
             ],
             polillas.make_tied_notes(),
-            evans.PitchHandler(["c''", "cs''", "af'", "b'"], forget=False),
+            evans.PitchHandler(["b'", "ctqs''", "aqf'", "bqs'"], forget=False),
             polillas.D_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
@@ -699,6 +704,181 @@ maker = evans.SegmentMaker(
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("treble"),
+            polillas.select_measures([0]).leaf(0),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("bass"),
+            polillas.select_measures([8]).leaf(0),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("treble"),
+            polillas.select_measures([9]).leaf(0),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0, 1]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([23, 24, 25, 26, 27]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([29, 30, 31]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0, 1]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([23, 24, 25, 26, 27]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            abjad.trill_spanner,
+            polillas.select_measures([29, 30, 31]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0, 1]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([23, 24, 25, 26, 27]),
+        ),
+        evans.call(
+            "viola voice",
+            abjad.trill_spanner,
+            polillas.select_measures([28, 29]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([0, 1]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([4, 5, 6]).leaves().get([2, 3]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([0, 1]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([9, 10, 11, 12]).leaves().get([2, 3, 4, 5, 6]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([23, 24, 25, 26, 27]),
+        ),
+        evans.call(
+            "cello voice",
+            abjad.trill_spanner,
+            polillas.select_measures([28, 29]),
+        ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
@@ -707,7 +887,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

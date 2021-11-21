@@ -12,8 +12,7 @@
                 \time 9/8
                 \mark \markup \bold {  }
                 s1 * 9/8
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -41,8 +40,8 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"108"
@@ -66,7 +65,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -99,7 +98,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 11]
@@ -167,7 +166,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
             }
 
@@ -247,7 +246,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
@@ -262,7 +261,7 @@
                                         - \baca-bcp-spanner-left-text #1 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -286,7 +285,7 @@
                                             - \baca-bcp-spanner-left-text #4 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -298,7 +297,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -314,7 +313,7 @@
                                             - \baca-bcp-spanner-left-text #6 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -347,7 +346,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -365,7 +364,7 @@
                                             - \baca-bcp-spanner-right-text #7 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -406,7 +405,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -427,7 +426,7 @@
                                         - \baca-bcp-spanner-left-text #5 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -448,7 +447,7 @@
                                             - \baca-bcp-spanner-left-text #3 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -469,7 +468,7 @@
                                             - \baca-bcp-spanner-right-text #1 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -519,7 +518,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -534,7 +533,7 @@
                                         - \baca-bcp-spanner-left-text #5 #5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -552,7 +551,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -567,7 +566,7 @@
                                             - \baca-bcp-spanner-left-text #1 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -579,7 +578,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -598,7 +597,7 @@
                                             - \baca-bcp-spanner-right-text #3 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -664,7 +663,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
@@ -683,7 +682,7 @@
                                         - \baca-bcp-spanner-left-text #2 #5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -701,7 +700,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -716,7 +715,7 @@
                                             - \baca-bcp-spanner-left-text #3 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -728,7 +727,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -747,7 +746,7 @@
                                             - \baca-bcp-spanner-right-text #5 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -898,7 +897,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -913,7 +912,7 @@
                                         - \baca-bcp-spanner-left-text #3 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -937,7 +936,7 @@
                                             - \baca-bcp-spanner-left-text #2 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -949,7 +948,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -965,7 +964,7 @@
                                             - \baca-bcp-spanner-left-text #1 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1007,7 +1006,7 @@
                                             - \baca-bcp-spanner-right-text #6 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1048,7 +1047,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
@@ -1069,7 +1068,7 @@
                                         - \baca-bcp-spanner-left-text #5 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -1084,7 +1083,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -1099,7 +1098,7 @@
                                             - \baca-bcp-spanner-left-text #7 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1120,7 +1119,7 @@
                                             - \baca-bcp-spanner-right-text #5 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1170,7 +1169,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -1185,7 +1184,7 @@
                                         - \baca-bcp-spanner-left-text #3 #5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -1203,7 +1202,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -1218,7 +1217,7 @@
                                             - \baca-bcp-spanner-left-text #1 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1230,7 +1229,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -1246,7 +1245,7 @@
                                             - \baca-bcp-spanner-left-text #5 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1283,7 +1282,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -1299,7 +1298,7 @@
                                             - \baca-bcp-spanner-left-text #1 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1320,7 +1319,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
                                         - \upbow
@@ -1336,7 +1335,7 @@
                                         - \baca-bcp-spanner-left-text #4 #5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -1364,7 +1363,7 @@
                                             - \baca-bcp-spanner-right-text #2 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1413,7 +1412,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 5.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
@@ -1432,7 +1431,7 @@
                                         - \baca-bcp-spanner-left-text #1 #5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 3
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -1450,7 +1449,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 5.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -1465,7 +1464,7 @@
                                             - \baca-bcp-spanner-left-text #4 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1487,7 +1486,7 @@
                                             - \baca-bcp-spanner-right-text #2 #5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 3
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -1637,7 +1636,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
                                 - \upbow
@@ -1652,7 +1651,7 @@
                                 - \baca-bcp-spanner-left-text #6 #7
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -1676,7 +1675,7 @@
                                     - \baca-bcp-spanner-left-text #5 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -1695,7 +1694,7 @@
                                     - \baca-bcp-spanner-left-text #3 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -1737,7 +1736,7 @@
                                     - \baca-bcp-spanner-right-text #1 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -1778,7 +1777,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
@@ -1799,7 +1798,7 @@
                                 - \baca-bcp-spanner-left-text #1 #7
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -1820,7 +1819,7 @@
                                     - \baca-bcp-spanner-left-text #4 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -1831,7 +1830,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
                                     - \upbow
@@ -1850,7 +1849,7 @@
                                     - \baca-bcp-spanner-right-text #5 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -1900,7 +1899,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(5)
                                 - \upbow
@@ -1915,7 +1914,7 @@
                                 - \baca-bcp-spanner-left-text #3 #5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -1933,7 +1932,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -1948,7 +1947,7 @@
                                     - \baca-bcp-spanner-left-text #2 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -1960,7 +1959,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
                                     - \upbow
@@ -1976,7 +1975,7 @@
                                     - \baca-bcp-spanner-left-text #3 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2013,7 +2012,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -2029,7 +2028,7 @@
                                     - \baca-bcp-spanner-left-text #1 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2050,7 +2049,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
                                 - \upbow
@@ -2066,7 +2065,7 @@
                                 - \baca-bcp-spanner-left-text #5 #5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -2083,7 +2082,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -2099,7 +2098,7 @@
                                     - \baca-bcp-spanner-left-text #1 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2117,7 +2116,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
                                 - \upbow
@@ -2133,7 +2132,7 @@
                                 - \baca-bcp-spanner-left-text #4 #5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -2155,7 +2154,7 @@
                                     - \baca-bcp-spanner-left-text #3 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2166,7 +2165,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -2185,7 +2184,7 @@
                                     - \baca-bcp-spanner-right-text #3 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2343,7 +2342,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
@@ -2358,7 +2357,7 @@
                                 - \baca-bcp-spanner-left-text #5 #7
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -2376,7 +2375,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
                                     - \upbow
@@ -2391,7 +2390,7 @@
                                     - \baca-bcp-spanner-left-text #7 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2410,7 +2409,7 @@
                                     - \baca-bcp-spanner-left-text #6 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2452,7 +2451,7 @@
                                     - \baca-bcp-spanner-right-text #3 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2493,7 +2492,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
@@ -2514,7 +2513,7 @@
                                 - \baca-bcp-spanner-left-text #4 #7
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 3
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -2529,7 +2528,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
                                     - \upbow
@@ -2544,7 +2543,7 @@
                                     - \baca-bcp-spanner-left-text #6 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2555,7 +2554,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -2574,7 +2573,7 @@
                                     - \baca-bcp-spanner-right-text #7 #7
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 3
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2624,7 +2623,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.0
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(6)
                                 - \downbow
@@ -2639,7 +2638,7 @@
                                 - \baca-bcp-spanner-left-text #1 #5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 2.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -2657,7 +2656,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.0
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(7)
                                     - \upbow
@@ -2672,7 +2671,7 @@
                                     - \baca-bcp-spanner-left-text #4 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 2.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2691,7 +2690,7 @@
                                     - \baca-bcp-spanner-left-text #3 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 2.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2728,7 +2727,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.0
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -2744,7 +2743,7 @@
                                     - \baca-bcp-spanner-left-text #2 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 2.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP
@@ -2765,7 +2764,7 @@
                                 - \tweak self-alignment-X #left
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 5.0
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(7)
                                 - \upbow
@@ -2781,7 +2780,7 @@
                                 - \baca-bcp-spanner-left-text #3 #5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 2.5
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
@@ -2800,7 +2799,7 @@
                                     - \tweak self-alignment-X #left
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 5.0
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(8)
                                     - \downbow
@@ -2818,7 +2817,7 @@
                                     - \baca-bcp-spanner-right-text #5 #5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 2.5
                                     %! baca.bcps()
                                     %! baca.BCPCommand._call(2)
                                     \bacaStartTextSpanBCP

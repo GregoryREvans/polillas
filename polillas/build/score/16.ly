@@ -12,8 +12,7 @@
                 \time 14/16
                 \mark \markup \bold {  }
                 s1 * 7/8
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -216,8 +215,8 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
@@ -283,7 +282,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
             }
 
@@ -331,9 +330,11 @@
                                             %! MATERIAL_COLOR
                                             \(
                                             \glissando
+                                            \startTrillSpan
 
                                             cs''8
                                             \f
+                                            \stopTrillSpan
 
                                         }
 
@@ -345,11 +346,13 @@
                                             \p
                                             \<
                                             \glissando
+                                            \startTrillSpan
 
                                             b'4
                                             \ff
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -425,9 +428,11 @@
                                             %! MATERIAL_COLOR
                                             \(
                                             \glissando
+                                            \startTrillSpan
 
                                             cs''8
                                             \f
+                                            \stopTrillSpan
 
                                         }
 
@@ -442,11 +447,13 @@
                                             \p
                                             \<
                                             \glissando
+                                            \startTrillSpan
 
                                             b'8
                                             \ff
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -513,9 +520,11 @@
                                             %! MATERIAL_COLOR
                                             \(
                                             \glissando
+                                            \startTrillSpan
 
                                             cs''8
                                             \f
+                                            \stopTrillSpan
 
                                         }
 
@@ -527,6 +536,7 @@
                                             \p
                                             \<
                                             \glissando
+                                            \startTrillSpan
 
                                             b'2.
                                             \ff
@@ -548,6 +558,7 @@
                                             \f
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -747,6 +758,7 @@
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 25]
@@ -785,6 +797,7 @@
                                         \p
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 29]
@@ -800,7 +813,7 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        c''2.
+                                        b'2.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
@@ -812,26 +825,28 @@
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan
 
-                                        c''16
+                                        b'16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 31]
 
-                                        c''2...
+                                        b'2...
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 32]
 
-                                        c''2.
+                                        b'2.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \f
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 33]
@@ -972,9 +987,11 @@
                                             %! MATERIAL_COLOR
                                             \(
                                             \glissando
+                                            \startTrillSpan
 
                                             af'8
                                             \f
+                                            \stopTrillSpan
 
                                         }
 
@@ -986,11 +1003,13 @@
                                             \p
                                             \<
                                             \glissando
+                                            \startTrillSpan
 
                                             g'4
                                             \ff
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
 
@@ -1073,9 +1092,11 @@
                                             %! MATERIAL_COLOR
                                             \(
                                             \glissando
+                                            \startTrillSpan
 
                                             af'8
                                             \f
+                                            \stopTrillSpan
 
                                         }
 
@@ -1090,11 +1111,13 @@
                                             \p
                                             \<
                                             \glissando
+                                            \startTrillSpan
 
                                             g'8
                                             \ff
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1162,9 +1185,11 @@
                                             %! MATERIAL_COLOR
                                             \(
                                             \glissando
+                                            \startTrillSpan
 
                                             af'8
                                             \f
+                                            \stopTrillSpan
 
                                         }
 
@@ -1176,6 +1201,7 @@
                                             \p
                                             \<
                                             \glissando
+                                            \startTrillSpan
 
                                             g'2.
                                             \ff
@@ -1197,6 +1223,7 @@
                                             \f
                                             %! MATERIAL_COLOR
                                             \)
+                                            \stopTrillSpan
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1386,6 +1413,7 @@
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 25]
@@ -1424,6 +1452,7 @@
                                         \p
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 29]
@@ -1439,7 +1468,7 @@
 
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                        cs''2.
+                                        ctqs''2.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
@@ -1451,26 +1480,28 @@
                                         ~
                                         %! MATERIAL_COLOR
                                         \(
+                                        \startTrillSpan
 
-                                        cs''16
+                                        ctqs''16
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 31]
 
-                                        cs''2...
+                                        ctqs''2...
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 32]
 
-                                        cs''2.
+                                        ctqs''2.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \f
                                         %! MATERIAL_COLOR
                                         \)
+                                        \stopTrillSpan
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 33]
@@ -1613,9 +1644,11 @@
                                     %! MATERIAL_COLOR
                                     \(
                                     \glissando
+                                    \startTrillSpan
 
                                     b'8
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -1627,11 +1660,13 @@
                                     \p
                                     \<
                                     \glissando
+                                    \startTrillSpan
 
                                     c''4
                                     \ff
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
 
@@ -1710,9 +1745,11 @@
                                     %! MATERIAL_COLOR
                                     \(
                                     \glissando
+                                    \startTrillSpan
 
                                     b'8
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -1727,11 +1764,13 @@
                                     \p
                                     \<
                                     \glissando
+                                    \startTrillSpan
 
                                     c''8
                                     \ff
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1797,9 +1836,11 @@
                                     %! MATERIAL_COLOR
                                     \(
                                     \glissando
+                                    \startTrillSpan
 
                                     b'8
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -1811,6 +1852,7 @@
                                     \p
                                     \<
                                     \glissando
+                                    \startTrillSpan
 
                                     c''2.
                                     \ff
@@ -1832,6 +1874,7 @@
                                     \f
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2019,6 +2062,7 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 25]
@@ -2057,13 +2101,14 @@
                                 \f
                                 %! MATERIAL_COLOR
                                 \)
+                                \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 29]
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                af'2.
+                                aqf'2.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -2075,20 +2120,22 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 30]
 
-                                af'2.
+                                aqf'2.
                                 ~
 
-                                af'16
+                                aqf'16
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \mp
                                 %! MATERIAL_COLOR
                                 \)
+                                \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 31]
@@ -2220,18 +2267,22 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Violoncello" }
+                                    \clef "treble"
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     g'4.
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
+                                    \stopTextSpan
                                     %! MATERIAL_COLOR
                                     \(
                                     \glissando
+                                    \startTrillSpan
 
                                     g'8
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -2243,11 +2294,13 @@
                                     \p
                                     \<
                                     \glissando
+                                    \startTrillSpan
 
                                     cs''4
                                     \ff
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
 
@@ -2328,9 +2381,11 @@
                                     %! MATERIAL_COLOR
                                     \(
                                     \glissando
+                                    \startTrillSpan
 
                                     g'8
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -2345,11 +2400,13 @@
                                     \p
                                     \<
                                     \glissando
+                                    \startTrillSpan
 
                                     cs''8
                                     \ff
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2365,6 +2422,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
+                                \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 cqs8
@@ -2408,6 +2466,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
 
+                                    \clef "treble"
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     g'4.
@@ -2417,9 +2476,11 @@
                                     %! MATERIAL_COLOR
                                     \(
                                     \glissando
+                                    \startTrillSpan
 
                                     g'8
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -2431,6 +2492,7 @@
                                     \p
                                     \<
                                     \glissando
+                                    \startTrillSpan
 
                                     cs''2.
                                     \ff
@@ -2452,6 +2514,7 @@
                                     \f
                                     %! MATERIAL_COLOR
                                     \)
+                                    \stopTrillSpan
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2637,6 +2700,7 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 25]
@@ -2675,13 +2739,14 @@
                                 \f
                                 %! MATERIAL_COLOR
                                 \)
+                                \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 29]
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
-                                b'2.
+                                bqs'2.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -2693,20 +2758,22 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                \startTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 30]
 
-                                b'2.
+                                bqs'2.
                                 ~
 
-                                b'16
+                                bqs'16
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \mp
                                 %! MATERIAL_COLOR
                                 \)
+                                \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 31]

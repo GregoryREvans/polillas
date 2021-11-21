@@ -35,6 +35,7 @@ info = abjad.OrderedDict(
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
                 abjad.LilyPondLiteral('\\once \\override Dots.transparent = ##t', format_slot='before', ),
+                StopTextSpan(command='\\stopTextSpan'),
                 ],
             ),
         ]

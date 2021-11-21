@@ -27,8 +27,7 @@
                 \time 5/16
                 \mark \markup \bold {  }
                 s1 * 5/16
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -59,7 +58,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -68,8 +67,8 @@
                 %! scaling time signatures
                 \time 11/16
                 s1 * 11/16
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
@@ -86,7 +85,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                 \once \override Score.BarLine.X-extent = #'(0.5 . 3)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
@@ -98,8 +97,8 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
@@ -150,7 +149,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 \once \override Score.BarLine.X-extent = #'(1 . 2)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ":|."
@@ -265,7 +264,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
 
             }
 
@@ -1790,7 +1789,7 @@
                                 \(
 
                                 \pitchedTrill
-                                a'8
+                                a8
                                 \mf
                                 \<
                                 ~
@@ -1802,19 +1801,19 @@
                                 - \baca-text-spanner-left-text "1/2 scratch"
                                 - \tweak staff-padding 7
                                 \startTextSpanTwo
-                                \startTrillSpan c''
+                                \startTrillSpan c'
 
-                                a'8
+                                a8
 
                                 r8
                                 \stopTrillSpan
 
                                 \pitchedTrill
-                                bf'8
+                                bf8
                                 \f
                                 \stopTextSpanOne
                                 \stopTextSpanTwo
-                                \startTrillSpan b'
+                                \startTrillSpan b
 
                                 r16
                                 %! MATERIAL_COLOR
@@ -2455,10 +2454,12 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 \stopStaff \startStaff
+                                \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
+                                \clef "treble"
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 fs'8
@@ -2501,10 +2502,12 @@
                                 R1 * 1/4
                                 \stopTrillSpan
                                 \stopStaff \startStaff
+                                \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
+                                \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 bf,8
@@ -2742,26 +2745,31 @@
 
                                     d4
                                     \f
+                                    \)
 
                                 }
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 23]
-
-                                a2...
-                                :32
-                                \mf
-                                \)
                                 \staff-line-count 4
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 24]
+                                % [cello voice measure 23]
 
                                 \clef "percussion"
-                                b2.
-                                \ff
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                a2...
+                                \pp
                                 ^ \markup {behind bridge, on wrapping}
+                                - \tweak stencil #abjad-flared-hairpin
+                                \<
+                                ~
+                                \(
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 24]
+
+                                a2.
+                                \ff
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 25]

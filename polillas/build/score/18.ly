@@ -12,8 +12,8 @@
                 \time 5/4
                 \mark \markup \bold {  }
                 s1 * 5/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
@@ -37,7 +37,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 \once \override Score.BarLine.X-extent = #'(0.5 . 3)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
@@ -50,8 +50,8 @@
                 \time 6/4
                 s1 * 3/2
                 - \rehearsal-mark-markup "x7" 6 -1
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
@@ -68,7 +68,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 \once \override Score.BarLine.X-extent = #'(1 . 2)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ":|."
@@ -139,7 +139,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 15]
@@ -179,7 +179,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
 
             }
 
@@ -229,7 +229,7 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "spazzolato clt."
+                                            - \baca-text-spanner-left-text "clt."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -930,7 +930,7 @@
                                         % [violin 1 voice measure 16]
 
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        e''1.
+                                        f''1.
                                         \p
                                         \<
                                         ~
@@ -939,13 +939,13 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
-                                        e''1..
+                                        f''1..
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
-                                        e''1..
+                                        f''1..
                                         \ff
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1005,7 +1005,7 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "spazzolato clt."
+                                            - \baca-text-spanner-left-text "clt."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1701,7 +1701,7 @@
                                         % [violin 2 voice measure 16]
 
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        d'1.
+                                        ds'1.
                                         \p
                                         \<
                                         ~
@@ -1710,13 +1710,13 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
-                                        d'1..
+                                        ds'1..
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 18]
 
-                                        d'1..
+                                        ds'1..
                                         \ff
                                         \)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1750,6 +1750,7 @@
 
                                 \times 4/5
                                 {
+                                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 1]
@@ -1762,6 +1763,7 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
+                                    \clef "treble"
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     aqs''16
@@ -1773,7 +1775,7 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "spazzolato clt."
+                                    - \baca-text-spanner-left-text "clt."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2098,10 +2100,12 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/8
                                 {
+                                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 6]
 
+                                    \clef "alto"
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     c'4
@@ -2200,6 +2204,7 @@
 
                                     r16
 
+                                    \clef "treble"
                                     cqs'''16
                                     \mp
                                     %! baca.text_spanner()
@@ -2209,7 +2214,7 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "spazzolato"
+                                    - \baca-text-spanner-left-text "clt."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2281,10 +2286,12 @@
 
                                 \times 8/13
                                 {
+                                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 12]
 
+                                    \clef "alto"
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     \override Staff.Stem.stemlet-length = 0.75
@@ -2423,7 +2430,7 @@
                                 % [viola voice measure 16]
 
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                c1.
+                                cs1.
                                 \p
                                 \<
                                 ~
@@ -2432,13 +2439,13 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
-                                c1..
+                                cs1..
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
 
-                                c1..
+                                cs1..
                                 \ff
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2486,6 +2493,7 @@
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     cqs'''16
                                     \mp
+                                    \stopTextSpan
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2493,7 +2501,7 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "spazzolato clt."
+                                    - \baca-text-spanner-left-text "clt."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START

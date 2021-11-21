@@ -27,8 +27,8 @@
                 \time 4/8
                 \mark \markup \bold {  }
                 s1 * 1/2
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
@@ -181,15 +181,18 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         b'''4
                                         \p
+                                        ^ \markup (I)
                                         \(
                                         %! abjad.glissando(7)
                                         \glissando
 
                                         e'''4
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
@@ -203,7 +206,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(6)
                                         - \downbow
@@ -216,7 +219,7 @@
                                         - \baca-bcp-spanner-left-text #1 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -242,7 +245,7 @@
                                             - \baca-bcp-spanner-left-text #4 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -254,7 +257,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -273,7 +276,7 @@
                                             - \baca-bcp-spanner-right-text #5 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -300,6 +303,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         b'''4
                                         \mp
@@ -311,15 +315,12 @@
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''4
                                         ~
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''8
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
@@ -333,7 +334,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -345,7 +346,7 @@
                                         - \baca-bcp-spanner-left-text #6 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -362,7 +363,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -377,7 +378,7 @@
                                             - \baca-bcp-spanner-left-text #5 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -388,7 +389,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -407,7 +408,7 @@
                                             - \baca-bcp-spanner-right-text #6 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -433,30 +434,24 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         b''''4
                                         \mf
                                         \(
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         dqf'''''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         b''''4
                                         ~
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         b''''4
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
@@ -470,7 +465,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -483,7 +478,7 @@
                                         - \baca-bcp-spanner-left-text #7 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -509,7 +504,7 @@
                                             - \baca-bcp-spanner-left-text #6 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -531,7 +526,7 @@
                                             - \baca-bcp-spanner-right-text #3 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -558,52 +553,42 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''1
                                         \p
                                         \<
                                         ~
                                         \(
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''8
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''1
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''2..
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''1
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
                                         af''''2.
                                         \f
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
@@ -617,7 +602,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(5)
                                         - \upbow
@@ -629,7 +614,7 @@
                                         - \baca-bcp-spanner-left-text #5 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -652,7 +637,7 @@
                                             - \baca-bcp-spanner-left-text #3 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -670,7 +655,7 @@
                                             - \baca-bcp-spanner-left-text #2 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -706,7 +691,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(8)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(8)
                                         - \downbow
@@ -722,7 +707,7 @@
                                         - \baca-bcp-spanner-left-text #1 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -746,7 +731,7 @@
                                         - \baca-bcp-spanner-left-text #4 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -762,7 +747,7 @@
                                         - \tweak self-alignment-X #left
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(7)
                                         - \upbow
@@ -778,7 +763,7 @@
                                         - \baca-bcp-spanner-left-text #6 #7
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
@@ -795,7 +780,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(8)
                                             - \downbow
@@ -810,7 +795,7 @@
                                             - \baca-bcp-spanner-left-text #5 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -827,7 +812,7 @@
                                             - \tweak self-alignment-X #left
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(7)
                                             - \upbow
@@ -842,7 +827,7 @@
                                             - \baca-bcp-spanner-left-text #7 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -863,7 +848,7 @@
                                             - \baca-bcp-spanner-right-text #5 #7
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             %! baca.bcps()
                                             %! baca.BCPCommand._call(2)
                                             \bacaStartTextSpanBCP
@@ -922,14 +907,17 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a'''4
                                         \p
+                                        ^ \markup (III)
                                         ~
                                         \(
 
                                         a'''4
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
@@ -977,6 +965,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         fs'''4
                                         \mp
@@ -993,6 +982,7 @@
 
                                         a''8
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
@@ -1046,6 +1036,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         d''4
                                         \mf
@@ -1063,6 +1054,7 @@
 
                                         fs'''4
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
@@ -1110,6 +1102,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
 
+                                        \harmonicsOn
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a'''1
                                         \p
@@ -1144,6 +1137,7 @@
                                         a'''2.
                                         \f
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
@@ -1333,9 +1327,11 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g''4
                                 \p
+                                ^ \markup (IV)
                                 \(
                                 %! abjad.glissando(7)
                                 \glissando
@@ -1344,6 +1340,7 @@
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
@@ -1357,6 +1354,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g''4
                                 \mp
@@ -1375,6 +1373,7 @@
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
@@ -1388,6 +1387,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g'4
                                 \mf
@@ -1407,6 +1407,7 @@
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
@@ -1420,6 +1421,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 e''1
                                 \p
@@ -1456,10 +1458,12 @@
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g''2.
                                 \p
@@ -1506,6 +1510,7 @@
                                 %! abjad.glissando(7)
                                 \glissando
                                 \bar "||"
+                                \harmonicsOff
 
                             }
 
@@ -1533,17 +1538,24 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
+                                \harmonicsOn
+                                \clef "bass"
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,4
+                                c4
                                 \p
                                 \(
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
 
-                                f4
+                                g4
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -1551,31 +1563,39 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 7/16
+                                %! applying indicators
+                                \stopTextSpan
 
                                 R1 * 7/16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf4
+                                c'4
                                 \mp
                                 \(
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
 
-                                d'4
+                                e'4
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                f'4
+                                g'4
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                gqs'8
+                                aqs'8
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
@@ -1583,31 +1603,39 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 9/16
+                                %! applying indicators
+                                \stopTextSpan
 
                                 R1 * 9/16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                f'4
+                                g'4
                                 \mf
                                 \(
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
 
-                                d'4
+                                e'4
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                bf4
+                                c'4
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                f4
+                                g4
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
@@ -1615,54 +1643,63 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 7/16
+                                %! applying indicators
+                                \stopTextSpan
 
                                 R1 * 7/16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,1
+                                c1
                                 \p
                                 \<
                                 ~
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
 
-                                bf,8
+                                c8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
-                                bf,1
+                                c1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
-                                bf,2..
+                                c2..
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
 
-                                bf,1
+                                c1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                bf,2.
+                                c2.
                                 \f
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
+                                \harmonicsOn
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                f2.
+                                g2.
                                 \p
                                 \<
                                 ~
@@ -1671,42 +1708,43 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                f2
+                                g2
                                 ~
 
-                                f8
+                                g8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
-                                f2
+                                g2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                f4.
+                                g4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                f1
+                                g1
                                 ~
 
-                                f8
+                                g8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                f1
+                                g1
                                 \f
                                 \)
                                 %! abjad.glissando(7)
                                 \glissando
                                 \bar "||"
+                                \harmonicsOff
 
                             }
 

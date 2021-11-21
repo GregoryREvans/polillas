@@ -35,7 +35,7 @@ maker = evans.SegmentMaker(
             polillas.B_pitches(stage=1, transposition=0, rotation=1),
             abjad.Dynamic("mp"),
             baca.text_spanner(
-                r"spazzolato clt. =|",
+                r"clt. =|",
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
@@ -56,7 +56,7 @@ maker = evans.SegmentMaker(
             polillas.B_pitches(stage=1, transposition=2, rotation=3),
             abjad.Dynamic("mp"),
             baca.text_spanner(
-                r"spazzolato clt. =|",
+                r"clt. =|",
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
@@ -75,9 +75,11 @@ maker = evans.SegmentMaker(
                 stage=1,
             ),
             polillas.B_pitches(stage=1, transposition=4, rotation=5),
+            abjad.Clef("treble"),
+            polillas.clef_whitespace,
             abjad.Dynamic("mp"),
             baca.text_spanner(
-                r"spazzolato clt. =|",
+                r"clt. =|",
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
@@ -100,7 +102,7 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("mp"),
             baca.text_spanner(
-                r"spazzolato clt. =|",
+                r"clt. =|",
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
@@ -108,6 +110,11 @@ maker = evans.SegmentMaker(
             ),
             polillas.B_color,
             preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.StopTextSpan(command=r"\stopTextSpan"),
+            baca.selectors.leaf(0),
         ),
         evans.MusicCommand(
             [("violin 1 voice", 3)],
@@ -221,6 +228,8 @@ maker = evans.SegmentMaker(
                 period=19,
             ),
             evans.PitchHandler(["c'"], forget=False),
+            abjad.Clef("alto"),
+            polillas.clef_whitespace,
             abjad.Dynamic("p"),
             baca.text_spanner(
                 r"3/4 ob. =|",
@@ -285,6 +294,8 @@ maker = evans.SegmentMaker(
                 period=10,
             ),
             evans.PitchHandler([["cs'", "gs'"]], forget=False),
+            abjad.Clef("alto"),
+            polillas.clef_whitespace,
             baca.text_spanner(
                 r"msp. =|",
                 (abjad.tweak(5).staff_padding, 0),
@@ -325,9 +336,10 @@ maker = evans.SegmentMaker(
                 stage=1,
             ),
             polillas.B_pitches(stage=1, transposition=8, rotation=9),
+            abjad.Clef("treble"),
             abjad.Dynamic("mp"),
             baca.text_spanner(
-                r"spazzolato =|",
+                r"clt. =|",
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
@@ -406,17 +418,17 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 1 voice",
-            evans.PitchHandler(["e''"]),
+            evans.PitchHandler(["f''"]),
             polillas.select_measures([15, 16, 17]),
         ),
         evans.call(
             "violin 2 voice",
-            evans.PitchHandler(["d'"]),
+            evans.PitchHandler(["ds'"]),
             polillas.select_measures([15, 16, 17]),
         ),
         evans.call(
             "viola voice",
-            evans.PitchHandler(["c"]),
+            evans.PitchHandler(["cs"]),
             polillas.select_measures([15, 16, 17]),
         ),
         evans.call(
@@ -427,7 +439,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -436,7 +448,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -445,7 +457,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -454,7 +466,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

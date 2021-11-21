@@ -33,13 +33,10 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(),
             evans.PitchHandler(["c''", "cs''", "af'", "b'"], forget=False),
             baca.hairpin("f |> p"),
+            abjad.trill_spanner,
+            abjad.Clef("treble"),
             polillas.D_color,
             # preprocessor=polillas.quarters_preprocessor,
-        ),
-        evans.attach(
-            "cello voice",
-            abjad.Clef("treble"),
-            baca.selectors.leaf(0),
         ),
         evans.MusicCommand(
             [
@@ -49,10 +46,21 @@ maker = evans.SegmentMaker(
                 ("cello voice", (3, 8)),
             ],
             polillas.make_tied_notes(),
-            evans.PitchHandler(["e''", "d'", "c", "bf,,"], forget=False),
-            baca.hairpin("mp < ff"),
+            evans.PitchHandler(["fs''", "e'", "d", "c,"], forget=False),
+            baca.hairpin("mp <| ff"),
+            baca.text_spanner(
+                r"molto vibrato =|",
+                (abjad.tweak(6).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.attach(
+            "viola voice",
+            abjad.Clef("alto"),
+            polillas.select_measures([3]).leaf(0),
         ),
         evans.attach(
             "cello voice",
@@ -68,9 +76,20 @@ maker = evans.SegmentMaker(
             ],
             polillas.make_tied_notes(),
             evans.PitchHandler(["eqs''", "dqf'", "cs", "bf,,"], forget=False),
-            baca.hairpin("mp < ff"),
+            baca.hairpin("sfp < ff"),
+            baca.text_spanner(
+                r"1/4 scratch =|",
+                (abjad.tweak(6).staff_padding, 0),
+                lilypond_id=1,
+                bookend=False,
+            ),
             polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
+        ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([3, 4, 5, 6, 7, 8, 9]),
         ),
         evans.call(
             "score",
@@ -80,7 +99,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

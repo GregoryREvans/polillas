@@ -12,8 +12,8 @@
                 \time 6/16
                 \mark \markup \bold {  }
                 s1 * 3/8
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"108"
@@ -442,8 +442,8 @@
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
                                         - \abjad-dashed-line-with-arrow
-                                        - \baca-text-spanner-left-text "tast."
-                                        - \baca-text-spanner-right-text "pont."
+                                        - \baca-text-spanner-left-text "st."
+                                        - \baca-text-spanner-right-text "sp."
                                         - \tweak bound-details.right.padding 0.5
                                         - \tweak bound-details.right.stencil-align-dir-y #center
                                         - \tweak staff-padding 7
@@ -607,8 +607,8 @@
                                 - \tweak staff-padding 5
                                 \startTextSpanOne
                                 - \abjad-dashed-line-with-arrow
-                                - \baca-text-spanner-left-text "tast."
-                                - \baca-text-spanner-right-text "pont."
+                                - \baca-text-spanner-left-text "st."
+                                - \baca-text-spanner-right-text "sp."
                                 - \tweak bound-details.right.padding 0.5
                                 - \tweak bound-details.right.stencil-align-dir-y #center
                                 - \tweak staff-padding 7

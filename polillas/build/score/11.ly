@@ -12,8 +12,8 @@
                 \time 5/16
                 \mark \markup \bold {  }
                 s1 * 5/16
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
@@ -30,7 +30,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
@@ -49,7 +49,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -68,7 +68,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -228,14 +228,15 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
+                                        \harmonicsOn
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                        \tweak NoteHead.style #'harmonic
                                         e'''4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \mp
+                                        ^ \markup (I)
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -245,30 +246,25 @@
                                         %! MATERIAL_COLOR
                                         \(
 
-                                        \tweak NoteHead.style #'harmonic
                                         b'''4
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        \tweak NoteHead.style #'harmonic
                                         e''''8.
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
-                                        \tweak NoteHead.style #'harmonic
                                         e''''4
                                         ~
 
-                                        \tweak NoteHead.style #'harmonic
                                         \override Staff.Stem.stemlet-length = 0.75
                                         e''''16
                                         %! abjad.glissando(7)
                                         \glissando
                                         [
 
-                                        \tweak NoteHead.style #'harmonic
                                         \revert Staff.Stem.stemlet-length
                                         b'''16
                                         ~
@@ -278,19 +274,16 @@
                                         \times 6/5
                                         {
 
-                                            \tweak NoteHead.style #'harmonic
                                             \override Staff.Stem.stemlet-length = 0.75
                                             b'''16.
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            \tweak NoteHead.style #'harmonic
                                             e'''8
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak NoteHead.style #'harmonic
                                             \revert Staff.Stem.stemlet-length
                                             b'''16.
                                             ~
@@ -301,16 +294,13 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
-                                        \tweak NoteHead.style #'harmonic
                                         b'''16
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        \tweak NoteHead.style #'harmonic
                                         e''''4
                                         ~
 
-                                        \tweak NoteHead.style #'harmonic
                                         e''''16
                                         ~
 
@@ -318,19 +308,16 @@
                                         \times 6/5
                                         {
 
-                                            \tweak NoteHead.style #'harmonic
                                             \override Staff.Stem.stemlet-length = 0.75
                                             e''''16.
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
-                                            \tweak NoteHead.style #'harmonic
                                             b'''8
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            \tweak NoteHead.style #'harmonic
                                             \revert Staff.Stem.stemlet-length
                                             e'''16.
                                             ~
@@ -341,29 +328,23 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 11]
 
-                                        \tweak NoteHead.style #'harmonic
                                         e'''16
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        \tweak NoteHead.style #'harmonic
                                         b'''8.
                                         ~
 
-                                        \tweak NoteHead.style #'harmonic
                                         b'''4
                                         ~
 
-                                        \tweak NoteHead.style #'harmonic
                                         b'''16
                                         %! abjad.glissando(7)
                                         \glissando
 
-                                        \tweak NoteHead.style #'harmonic
                                         e''''8.
                                         ~
 
-                                        \tweak NoteHead.style #'harmonic
                                         e''''16
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
@@ -371,6 +352,7 @@
                                         \p
                                         %! MATERIAL_COLOR
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
@@ -379,12 +361,12 @@
                                         c''4
                                         \f
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \upbow
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #5 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
                                         \(
 
@@ -397,24 +379,24 @@
 
                                             cs''8
                                             - \tweak self-alignment-X #left
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             - \downbow
                                             \bacaStopTextSpanBCP
                                             - \abjad-solid-line-with-arrow
                                             - \baca-bcp-spanner-left-text #1 #5
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             \bacaStartTextSpanBCP
 
                                             \revert Staff.Stem.stemlet-length
                                             ef''8
                                             - \tweak self-alignment-X #left
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             - \upbow
                                             \bacaStopTextSpanBCP
                                             ~
                                             - \abjad-solid-line-with-arrow
                                             - \baca-bcp-spanner-left-text #4 #5
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             \bacaStartTextSpanBCP
                                             ]
 
@@ -445,33 +427,33 @@
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         d''8
 
                                         dqs''8
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \downbow
                                         \bacaStopTextSpanBCP
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #2 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         dqs''8
 
                                         e''8
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \upbow
                                         \bacaStopTextSpanBCP
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         e''8
@@ -484,13 +466,13 @@
 
                                         f''8
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \downbow
                                         \bacaStopTextSpanBCP
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #1 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         f''4
@@ -500,24 +482,24 @@
 
                                             fs''8
                                             - \tweak self-alignment-X #left
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             - \upbow
                                             \bacaStopTextSpanBCP
                                             - \abjad-solid-line-with-arrow
                                             - \baca-bcp-spanner-left-text #5 #5
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             \bacaStartTextSpanBCP
 
                                             ef''4
                                             - \tweak self-alignment-X #left
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             - \downbow
                                             \bacaStopTextSpanBCP
                                             ~
                                             - \abjad-solid-line-with-arrow
                                             - \baca-bcp-spanner-left-text #1 #5
                                             - \baca-bcp-spanner-right-text #4 #5
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             \bacaStartTextSpanBCP
 
                                         }
@@ -718,12 +700,12 @@
                                         g'4
                                         \f
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \upbow
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #5 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
                                         \(
 
@@ -747,13 +729,13 @@
 
                                             fqs'4..
                                             - \tweak self-alignment-X #left
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             - \downbow
                                             \bacaStopTextSpanBCP
                                             ~
                                             - \abjad-solid-line-with-arrow
                                             - \baca-bcp-spanner-left-text #1 #5
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             \bacaStartTextSpanBCP
 
                                         }
@@ -762,12 +744,12 @@
 
                                         cs'4
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \upbow
                                         \bacaStopTextSpanBCP
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #4 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         d'16
@@ -775,7 +757,7 @@
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         d'8.
@@ -791,13 +773,13 @@
 
                                             e'4
                                             - \tweak self-alignment-X #left
-                                            - \tweak staff-padding 4.5
+                                            - \tweak staff-padding 6.5
                                             - \downbow
                                             \bacaStopTextSpanBCP
                                             ~
                                             - \abjad-solid-line-with-arrow
                                             - \baca-bcp-spanner-left-text #2 #5
-                                            - \tweak staff-padding 2
+                                            - \tweak staff-padding 4
                                             \bacaStartTextSpanBCP
 
                                         }
@@ -806,24 +788,24 @@
 
                                         ef'8
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \upbow
                                         \bacaStopTextSpanBCP
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #3 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         eqf'4
                                         - \tweak self-alignment-X #left
-                                        - \tweak staff-padding 4.5
+                                        - \tweak staff-padding 6.5
                                         - \downbow
                                         \bacaStopTextSpanBCP
                                         ~
                                         - \abjad-solid-line-with-arrow
                                         - \baca-bcp-spanner-left-text #1 #5
                                         - \baca-bcp-spanner-right-text #5 #5
-                                        - \tweak staff-padding 2
+                                        - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
 
                                         eqf'8
@@ -1043,12 +1025,12 @@
                                 af4
                                 \f
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \upbow
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #5 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
                                 \(
 
@@ -1059,13 +1041,13 @@
 
                                     fs8
                                     - \tweak self-alignment-X #left
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 6.5
                                     - \downbow
                                     \bacaStopTextSpanBCP
                                     ~
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #1 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
 
                                 }
@@ -1074,13 +1056,13 @@
 
                                 g8
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \upbow
                                 \bacaStopTextSpanBCP
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #4 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 g16
@@ -1100,7 +1082,7 @@
                                     ~
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #3 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
 
                                     fqs16
@@ -1112,23 +1094,23 @@
 
                                 cs8
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \downbow
                                 \bacaStopTextSpanBCP
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #2 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 d8.
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \upbow
                                 \bacaStopTextSpanBCP
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #3 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 d8.
@@ -1156,13 +1138,13 @@
 
                                 e8
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \downbow
                                 \bacaStopTextSpanBCP
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #1 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 e4
@@ -1175,25 +1157,25 @@
 
                                     ef4
                                     - \tweak self-alignment-X #left
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 6.5
                                     - \upbow
                                     \bacaStopTextSpanBCP
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #5 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
 
                                 }
 
                                 eqf8.
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \downbow
                                 \bacaStopTextSpanBCP
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #1 #5
                                 - \baca-bcp-spanner-right-text #4 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 f16
@@ -1303,11 +1285,11 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
+                                \harmonicsOn
                                 \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                \tweak NoteHead.style #'harmonic
-                                bf,4
+                                c4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -1320,104 +1302,91 @@
                                 \glissando
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 8
+                                \startTextSpan
 
-                                \tweak NoteHead.style #'harmonic
-                                f4
+                                g4
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \tweak NoteHead.style #'harmonic
-                                bf8.
+                                c'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
-                                \tweak NoteHead.style #'harmonic
-                                bf4
+                                c'4
                                 ~
 
-                                \tweak NoteHead.style #'harmonic
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf16
+                                c'16
                                 %! abjad.glissando(7)
                                 \glissando
                                 [
 
-                                \tweak NoteHead.style #'harmonic
                                 \revert Staff.Stem.stemlet-length
-                                d'16
+                                e'16
                                 ~
                                 ]
 
-                                \tweak NoteHead.style #'harmonic
-                                d'8.
+                                e'8.
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \tweak NoteHead.style #'harmonic
-                                f'8.
+                                g'8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
 
-                                \tweak NoteHead.style #'harmonic
-                                f'16
+                                g'16
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \tweak NoteHead.style #'harmonic
-                                gqs'4
+                                aqs'4
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \tweak NoteHead.style #'harmonic
-                                bf'16
+                                c''16
                                 ~
 
-                                \tweak NoteHead.style #'harmonic
-                                bf'4.
+                                c''4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                \tweak NoteHead.style #'harmonic
-                                bf'16
-                                %! abjad.glissando(7)
-                                \glissando
-
-                                \tweak NoteHead.style #'harmonic
-                                c''8.
-                                ~
-
-                                \tweak NoteHead.style #'harmonic
                                 c''16
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \tweak NoteHead.style #'harmonic
                                 d''8.
                                 ~
 
-                                \tweak NoteHead.style #'harmonic
                                 d''16
                                 %! abjad.glissando(7)
                                 \glissando
 
-                                \tweak NoteHead.style #'harmonic
-                                c''8.
+                                e''8.
                                 ~
 
-                                \tweak NoteHead.style #'harmonic
-                                c''16
+                                e''16
+                                %! abjad.glissando(7)
+                                \glissando
+
+                                d''8.
+                                ~
+
+                                d''16
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \p
                                 %! MATERIAL_COLOR
                                 \)
+                                \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
@@ -1426,23 +1395,24 @@
                                 cqs8
                                 \f
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \upbow
+                                \stopTextSpan
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #5 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
                                 \(
 
                                 bf,8
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \downbow
                                 \bacaStopTextSpanBCP
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #1 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 \times 2/3
@@ -1452,12 +1422,12 @@
 
                                     af,8
                                     - \tweak self-alignment-X #left
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 6.5
                                     - \upbow
                                     \bacaStopTextSpanBCP
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #4 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
 
                                 }
@@ -1467,7 +1437,7 @@
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #3 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 fs,16
@@ -1495,13 +1465,13 @@
 
                                     g,4
                                     - \tweak self-alignment-X #left
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 6.5
                                     - \downbow
                                     \bacaStopTextSpanBCP
                                     ~
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #2 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
 
                                 }
@@ -1510,23 +1480,23 @@
 
                                 fqs,4
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \upbow
                                 \bacaStopTextSpanBCP
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #3 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 cs,8
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \downbow
                                 \bacaStopTextSpanBCP
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #1 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1536,13 +1506,13 @@
 
                                 d,4
                                 - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
+                                - \tweak staff-padding 6.5
                                 - \upbow
                                 \bacaStopTextSpanBCP
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #5 #5
-                                - \tweak staff-padding 2
+                                - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
 
                                 \times 2/3
@@ -1554,25 +1524,25 @@
 
                                     e,8
                                     - \tweak self-alignment-X #left
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 6.5
                                     - \downbow
                                     \bacaStopTextSpanBCP
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #1 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
 
                                     \revert Staff.Stem.stemlet-length
                                     ef,8
                                     - \tweak self-alignment-X #left
-                                    - \tweak staff-padding 4.5
+                                    - \tweak staff-padding 6.5
                                     - \upbow
                                     \bacaStopTextSpanBCP
                                     ~
                                     - \abjad-solid-line-with-arrow
                                     - \baca-bcp-spanner-left-text #4 #5
                                     - \baca-bcp-spanner-right-text #3 #5
-                                    - \tweak staff-padding 2
+                                    - \tweak staff-padding 4
                                     \bacaStartTextSpanBCP
                                     ]
 

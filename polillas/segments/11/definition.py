@@ -82,14 +82,18 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
             baca.hairpin("mp > p"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                baca.selectors.leaf(0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                baca.selectors.leaf(-1),
+            ),
             abjad.glissando,
+            abjad.Markup(r"\markup (I)", literal=True, direction=abjad.Up),
             polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
-        ),
-        evans.call(
-            "violin 1 voice",
-            evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
-            polillas.select_measures([7, 8, 9, 10]),
         ),
         evans.MusicCommand(
             [("cello voice", (7, 11))],
@@ -106,14 +110,17 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
             baca.hairpin("mp > p"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                baca.selectors.leaf(0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                baca.selectors.leaf(-1),
+            ),
             abjad.glissando,
             polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
-        ),
-        evans.call(
-            "cello voice",
-            evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
-            polillas.select_measures([7, 8, 9, 10]),
         ),
         evans.attach(
             "cello voice",
@@ -166,7 +173,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (11, 15)),
             ],
             polillas.chilled(extra_counts=[0, 2, 0], stage=4),
-            polillas.chilled_stage_3_bowing(series="B", rotation=0),
+            polillas.chilled_stage_3_bowing(series="B", rotation=0, staff_padding=4),
             abjad.Dynamic("f"),
             polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
@@ -192,6 +199,11 @@ maker = evans.SegmentMaker(
             polillas.select_measures([11, 12, 13, 14]),
         ),
         evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=8),
+            polillas.select_measures([7, 8, 9, 10]),
+        ),
+        evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             abjad.select().components(abjad.Score),
@@ -199,7 +211,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -208,7 +220,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -217,7 +229,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

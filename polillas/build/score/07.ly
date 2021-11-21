@@ -12,9 +12,9 @@
                 \time 8/8
                 \mark \markup \bold {  }
                 s1 * 1
-                \tweak padding 6
                 ^ \markup {
                   \override #'(font-size . 5.5)
+                  \raise #6 \with-dimensions-from \null
                   \concat {
                       \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                       \hspace #1
@@ -88,8 +88,8 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
@@ -127,7 +127,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
             }
 
@@ -178,11 +178,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -257,11 +257,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -338,11 +338,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -420,11 +420,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -501,11 +501,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -583,11 +583,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -664,11 +664,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -741,11 +741,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -818,11 +818,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1016,11 +1016,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1095,11 +1095,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1176,11 +1176,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1258,11 +1258,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1339,11 +1339,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1421,11 +1421,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1502,11 +1502,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1579,11 +1579,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1656,11 +1656,11 @@
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-left-text "tast."
+                                            - \baca-text-spanner-left-text "T."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
-                                            - \baca-text-spanner-right-text "pont."
+                                            - \baca-text-spanner-right-text "P."
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -2064,11 +2064,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2143,11 +2143,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2224,11 +2224,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2306,11 +2306,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2387,11 +2387,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2469,11 +2469,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2539,7 +2539,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 7]
 
-                                    fs,2.
+                                    bf,2.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2550,11 +2550,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2580,7 +2580,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    f,4.
+                                    a,4.
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2592,7 +2592,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    fqs,4.
+                                    aqs,4.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2616,7 +2616,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 8]
 
-                                    ef,2
+                                    b,2
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2627,11 +2627,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2657,7 +2657,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    d,4
+                                    bf,4
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2669,7 +2669,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    dqs,4
+                                    bqf,4
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2693,7 +2693,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
-                                    c,4..
+                                    c4..
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2704,11 +2704,11 @@
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-left-text "tast."
+                                    - \baca-text-spanner-left-text "T."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
-                                    - \baca-text-spanner-right-text "pont."
+                                    - \baca-text-spanner-right-text "P."
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2735,7 +2735,7 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b,,8..
+                                    b,8..
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2749,7 +2749,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs,,8..
+                                    bqs,8..
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)

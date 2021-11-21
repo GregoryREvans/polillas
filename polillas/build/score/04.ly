@@ -12,14 +12,13 @@
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
                   }
                 }
-                \once \override Score.BarLine.X-extent = #'(0.5 . 3)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
                 %! COMMENT_MEASURE_NUMBERS
@@ -4789,11 +4788,12 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
-                                \tweak NoteHead.style #'harmonic
+                                \harmonicsOn
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c''1.
                                 \sfp
+                                ^ \markup (IV)
                                 %! abjad.glissando(7)
                                 \glissando
                                 %! MATERIAL_COLOR
@@ -4802,7 +4802,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
 
-                                \tweak NoteHead.style #'harmonic
                                 e''2.
                                 %! abjad.glissando(7)
                                 \glissando
@@ -4810,11 +4809,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
 
-                                \tweak NoteHead.style #'harmonic
                                 g''1
                                 ~
 
-                                \tweak NoteHead.style #'harmonic
                                 g''4
                                 %! abjad.glissando(7)
                                 \glissando
@@ -4822,7 +4819,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
 
-                                \tweak NoteHead.style #'harmonic
                                 aqs''1..
                                 %! abjad.glissando(7)
                                 \glissando
@@ -4830,7 +4826,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 21]
 
-                                \tweak NoteHead.style #'harmonic
                                 c'''1
                                 %! abjad.glissando(7)
                                 \glissando
@@ -4838,10 +4833,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 22]
 
-                                \tweak NoteHead.style #'harmonic
                                 d'''2.
                                 %! MATERIAL_COLOR
                                 \)
+                                \harmonicsOff
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4
@@ -6211,43 +6206,47 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,,1.
+                                c,1.
                                 \sfp
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                bf,,2.
+                                c,2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                bf,,1
+                                c,1
                                 ~
 
-                                bf,,4
+                                c,4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                bf,,1..
+                                c,1..
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]
 
-                                bf,,1
+                                c,1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 22]
 
-                                bf,,2.
+                                c,2.
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -6263,6 +6262,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
+                                    \stopTextSpan
                                     \(
                                     \glissando
 
@@ -6290,12 +6290,16 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 24]
 
-                                    d,2.
+                                    e,2.
                                     \p
                                     \<
                                     \glissando
+                                    - \abjad-dashed-line-with-hook
+                                    - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                    - \tweak staff-padding 4
+                                    \startTextSpan
 
-                                    d,4
+                                    e,4
                                     \f
 
                                 }
@@ -6311,6 +6315,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
+                                    \stopTextSpan
                                     \glissando
 
                                     d'4
@@ -6348,14 +6353,18 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                d,8.
+                                e,8.
                                 \p
                                 \<
                                 \glissando
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                d,16
+                                e,16
                                 \f
                                 ]
 
@@ -6369,6 +6378,7 @@
                                     d'2.
                                     \p
                                     \<
+                                    \stopTextSpan
                                     \glissando
 
                                     d'4

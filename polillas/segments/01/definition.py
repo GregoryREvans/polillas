@@ -38,7 +38,7 @@ maker = evans.SegmentMaker(
             polillas.A_color,
             baca.hairpin("sfp <| ff", selector=abjad.select().notes()),
             abjad.Clef("bass"),
-            polillas.scordatura,
+            polillas.scordatura(staff_padding=8),
         ),
         evans.call(
             "cello voice",
@@ -116,7 +116,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            polillas.scordatura,
+            polillas.scordatura(staff_padding=8),
             baca.selectors.run(1),
         ),
         evans.MusicCommand(
@@ -376,7 +376,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            polillas.scordatura,
+            polillas.scordatura(staff_padding=8),
             baca.selectors.run(-1),
         ),
         evans.call(
@@ -393,7 +393,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -402,7 +402,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -411,7 +411,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

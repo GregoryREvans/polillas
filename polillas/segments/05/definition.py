@@ -31,7 +31,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (0, 7)),
             ],
             polillas.wings(stage=3),
-            evans.PitchHandler(["cqf''", "gqs'", "fs", ["d", "a"]], forget=False),
+            evans.PitchHandler(["fqf'", "cqs'", "b", ["g,", "d"]], forget=False),
             baca.hairpin("sfp <| ff"),
             polillas.B_color,
         ),
@@ -195,7 +195,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            polillas.stop_repeat,
+            polillas.stop_repeat_default,
             abjad.select().leaf(19),
         ),
         evans.call(
@@ -226,7 +226,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -235,7 +235,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -244,7 +244,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -253,7 +253,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

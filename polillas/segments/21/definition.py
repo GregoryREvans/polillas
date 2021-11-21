@@ -43,6 +43,11 @@ maker = evans.SegmentMaker(
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("bass"),
+            baca.selectors.leaf(0),
+        ),
         evans.call(
             "violin 1 voice",
             evans.PitchHandler(["as'"]),
@@ -88,7 +93,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 2 voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[2]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-2]),
             polillas.select_measures([3]),
         ),
         evans.call(
@@ -98,7 +103,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "viola voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[4]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-4]),
             polillas.select_measures([3]),
         ),
         evans.call(
@@ -201,7 +206,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[5]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-5]),
             polillas.select_measures([7, 8]),
         ),
         evans.call(
@@ -264,7 +269,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 1 voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[1]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-1]),
             polillas.select_measures([11, 12, 13, 14]),
         ),
         evans.call(
@@ -274,7 +279,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 2 voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[2]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-2, -2, 1]),
             polillas.select_measures([11, 12, 13, 14]),
         ),
         evans.call(
@@ -294,7 +299,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[4]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-4]),
             polillas.select_measures([11, 12, 13, 14]),
         ),
         evans.call(
@@ -317,7 +322,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 1 voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[1]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-1]),
             polillas.select_measures([16, 17, 18]),
         ),
         evans.call(
@@ -327,7 +332,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 2 voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[2]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-2]),
             polillas.select_measures([16, 17, 18]),
         ),
         evans.call(
@@ -337,7 +342,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "viola voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[3]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-3]),
             polillas.select_measures([16, 17, 18]),
         ),
         evans.call(
@@ -422,7 +427,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[3]),
+            polillas.D_pitches(stage=2, direction="down", intervals=[-3]),
             polillas.select_measures([20, 21, 22, 23, 24, 25]),
         ),
         evans.call(
@@ -626,6 +631,7 @@ maker = evans.SegmentMaker(
                 leaf_period=13,
             ),
             polillas.F_pitches(stage=1, transposition=20, step=4),
+            abjad.Clef("treble"),
             abjad.Articulation("staccato"),
             abjad.Dynamic("p"),
             polillas.F_color,
@@ -667,7 +673,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -676,7 +682,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -685,7 +691,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

@@ -202,8 +202,8 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"60"
@@ -1299,10 +1299,10 @@
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
                                             \tweak Accidental.stencil #ly:text-interface::print
-                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
-                                            bf'!2..
+                                            \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                            df'!2..
                                             \-
-                                            ^ \markup \center-align { -40 }
+                                            ^ \markup \center-align { D-39 }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1900,10 +1900,10 @@
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \tweak Accidental.stencil #ly:text-interface::print
-                                    \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
-                                    cf'!2..
+                                    \tweak Accidental.text \markup { \abjad-natural  }
+                                    c'!2..
                                     \-
-                                    ^ \markup \center-align { +25 }
+                                    ^ \markup \center-align { -4 }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2493,11 +2493,11 @@
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                         af,!
                                         \tweak Accidental.stencil #ly:text-interface::print
-                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
-                                        f!
+                                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
+                                        gf!
                                     >2..
                                     \-
-                                    ^ \markup \center-align \center-column { +43 +10  }
+                                    ^ \markup \center-align \center-column { -21 +10  }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2540,7 +2540,7 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,,1
+                                c,1
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -2552,59 +2552,63 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                bf,,2.
+                                c,2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                bf,,2.
+                                c,2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                bf,,2
+                                c,2
                                 ~
 
-                                bf,,8
+                                c,8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]
 
-                                bf,,2
+                                c,2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 22]
 
-                                bf,,4.
+                                c,4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 23]
 
-                                bf,,2
+                                c,2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 24]
 
-                                bf,,4.
+                                c,4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 25]
 
-                                bf,,2
+                                c,2
                                 ~
 
-                                bf,,8
+                                c,8
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP

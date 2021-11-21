@@ -15,8 +15,8 @@
                 \time 6/8
                 \mark \markup \bold {  }
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
@@ -2669,31 +2669,35 @@
                                 \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,,2.
+                                c,2.
                                 \sfz
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
-                                bf,,4.
+                                c,4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
-                                bf,,4.
+                                c,4.
                                 ~
 
-                                bf,,4
+                                c,4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                bf,,2
+                                c,2
                                 %! MATERIAL_COLOR
                                 \)
 
@@ -2706,6 +2710,7 @@
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     r16
+                                    \stopTextSpan
                                     %! MATERIAL_COLOR
                                     \(
 
@@ -2767,7 +2772,7 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,,2..
+                                c,2..
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -2779,20 +2784,24 @@
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
-                                bf,,2.
+                                c,2.
                                 ~
 
-                                bf,,4.
+                                c,4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
-                                bf,,1
+                                c,1
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
@@ -2809,6 +2818,7 @@
                                     %! MATERIAL_COLOR
                                     \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     r16
+                                    \stopTextSpan
                                     %! MATERIAL_COLOR
                                     \(
 

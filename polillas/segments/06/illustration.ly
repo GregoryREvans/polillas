@@ -27,8 +27,7 @@
                 \time 5/8
                 \mark \markup \bold {  }
                 s1 * 5/8
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -149,8 +148,8 @@
                 %! scaling time signatures
                 \time 3/8
                 s1 * 3/8
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
@@ -931,11 +930,13 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
+                                        \harmonicsOn
                                         \clef "treble"
                                         %! MATERIAL_COLOR
                                         \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a''4
                                         \mp
+                                        ^ \markup (III)
                                         %! abjad.glissando(7)
                                         \glissando
                                         %! MATERIAL_COLOR
@@ -991,6 +992,7 @@
                                         a'''8
                                         %! MATERIAL_COLOR
                                         \)
+                                        \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
@@ -1718,31 +1720,35 @@
                                 \clef "bass"
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,,4.
+                                c,4.
                                 \mp
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                bf,,2
+                                c,2
                                 ~
 
-                                bf,,8
+                                c,8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                bf,,1
+                                c,1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                bf,,2..
+                                c,2..
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1752,6 +1758,8 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 7/16
+                                %! applying indicators
+                                \stopTextSpan
 
                                 R1 * 7/16
                                 \bar "||"

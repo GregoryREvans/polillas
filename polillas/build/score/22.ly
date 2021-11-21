@@ -12,8 +12,8 @@
                 \time 7/4
                 \mark \markup \bold {  }
                 s1 * 7/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"60"
@@ -62,8 +62,7 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -147,8 +146,8 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
@@ -391,7 +390,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
                 \bar "|."
 
             }
@@ -907,7 +906,7 @@
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
-                                        - \tweak staff-padding 5
+                                        - \tweak staff-padding 8
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -2034,7 +2033,7 @@
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
-                                        - \tweak staff-padding 5
+                                        - \tweak staff-padding 8
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -2329,9 +2328,7 @@
                                         % [violin 2 voice measure 36]
 
                                         \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
-                                        e2.
+                                        g2.
                                         \f
                                         \>
                                         ~
@@ -2344,38 +2341,28 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 37]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
-                                        e1
+                                        g1
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 38]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
-                                        e1
+                                        g1
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 39]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
-                                        e2.
+                                        g2.
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 40]
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
-                                        e2.
+                                        g2.
                                         ~
 
-                                        %! PITCH
-                                        \evans-pitch-out-of-range-coloring
-                                        e2
+                                        g2
                                         \p
                                         \stopTextSpanOne
                                         \)
@@ -2652,6 +2639,7 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
+                                \clef "alto"
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c2
                                 \pp
@@ -3183,7 +3171,7 @@
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
-                                - \tweak staff-padding 5
+                                - \tweak staff-padding 8
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -3772,6 +3760,7 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
+                                \clef "bass"
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 bf,4
                                 \pp
@@ -3961,7 +3950,7 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                bf,,4
+                                bf,4
                                 \mf
                                 ~
                                 %! baca.text_spanner()
@@ -3996,19 +3985,19 @@
                                 \(
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
@@ -4016,187 +4005,187 @@
                                 % [cello voice measure 19]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
 
-                                bf,,4
+                                bf,4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 22]
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 23]
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
@@ -4243,7 +4232,7 @@
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
-                                - \tweak staff-padding 5
+                                - \tweak staff-padding 8
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -4328,7 +4317,7 @@
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 \mf
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(2)
@@ -4363,151 +4352,151 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 32]
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 33]
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 34]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 35]
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
@@ -4563,7 +4552,7 @@
                                 % [cello voice measure 41]
 
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                bf,,4
+                                bf,4
                                 \mf
                                 - \abjad-dashed-line-with-arrow
                                 - \baca-text-spanner-left-text "msp."
@@ -4574,178 +4563,178 @@
                                 \startTextSpan
                                 \(
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 42]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 43]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 44]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
 
-                                bf,,4
+                                bf,4
 
-                                bf,,4
+                                bf,4
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 45]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 ~
                                 ]
 
-                                bf,,4
+                                bf,4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf,,8
+                                bf,8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                bf,,8
+                                bf,8
                                 \stopTextSpan
                                 \)
                                 ]
@@ -4754,7 +4743,7 @@
                                 % [cello voice measure 46]
 
                                 \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                bf,,2.
+                                bf,2.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
@@ -4777,16 +4766,16 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 47]
 
-                                bf,,2.
+                                bf,2.
                                 ~
 
-                                bf,,2
+                                bf,2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 48]
 
-                                bf,,1.
+                                bf,1.
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()

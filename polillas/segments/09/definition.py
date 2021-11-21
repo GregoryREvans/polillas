@@ -87,7 +87,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
             ),
             baca.text_spanner(
-                "tast. => pont.",
+                "st. => sp.",
                 (abjad.tweak(7).staff_padding, 0),
                 lilypond_id=2,
             ),

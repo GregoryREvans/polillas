@@ -55,7 +55,9 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            polillas.D_pitches(stage=2, direction="down", intervals=[-3]),
+            polillas.D_pitches(
+                stage=2, direction="down", intervals=[-3, -3, -3, -3, -3, 1, 1, 1]
+            ),
             polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
         ),
         evans.call(
@@ -161,7 +163,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

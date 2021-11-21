@@ -518,6 +518,16 @@ maker = evans.SegmentMaker(
             polillas.select_measures([18]).leaf(0),
         ),
         evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([0, 1, 2, 3]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([5, 6, 7]),
+        ),
+        evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             abjad.select().components(abjad.Score),

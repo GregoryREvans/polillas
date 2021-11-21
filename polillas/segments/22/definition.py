@@ -42,6 +42,16 @@ maker = evans.SegmentMaker(
             polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
+        evans.attach(
+            "viola voice",
+            abjad.Clef("alto"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("bass"),
+            baca.selectors.leaf(0),
+        ),
         evans.call(
             "violin 1 voice",
             evans.PitchHandler(["a'"]),
@@ -170,7 +180,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (17, 23)),
             ],
             polillas.lightning(stage=3, rotation=-4),
-            evans.PitchHandler(["bf,,"]),
+            evans.PitchHandler(["bf,"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -189,7 +199,7 @@ maker = evans.SegmentMaker(
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
-                (abjad.tweak(5).staff_padding, 0),
+                (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
             polillas.E_color,
@@ -204,7 +214,7 @@ maker = evans.SegmentMaker(
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
-                (abjad.tweak(5).staff_padding, 0),
+                (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
             polillas.E_color,
@@ -219,7 +229,7 @@ maker = evans.SegmentMaker(
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
-                (abjad.tweak(5).staff_padding, 0),
+                (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
             polillas.E_color,
@@ -234,7 +244,7 @@ maker = evans.SegmentMaker(
             baca.hairpin("ppp < fff"),
             baca.text_spanner(
                 r"3/4 scratch => scratch moltiss",
-                (abjad.tweak(5).staff_padding, 0),
+                (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
             polillas.E_color,
@@ -284,7 +294,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (30, 35)),
             ],
             polillas.lightning(stage=3, rotation=-2),
-            evans.PitchHandler(["bf,,"]),
+            evans.PitchHandler(["bf,"]),
             abjad.Dynamic("mf"),
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
@@ -317,7 +327,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 2 voice",
-            polillas.E_pitches(stage=1, transposition=-5, rotation=-4),
+            evans.PitchHandler(["g"]),
             polillas.select_measures([35, 36, 37, 38, 39]),
         ),
         evans.call(
@@ -372,7 +382,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "cello voice",
-            evans.PitchHandler(["bf,,"]),
+            evans.PitchHandler(["bf,"]),
             polillas.select_measures([40, 41, 42, 43, 44, 45, 46, 47]),
         ),
         evans.call(
@@ -413,7 +423,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

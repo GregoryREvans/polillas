@@ -27,6 +27,7 @@ met_40_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 40)
 mark_40 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_40_mark)[8:]}",
@@ -36,13 +37,14 @@ mark_40 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_40).padding = 6
+# abjad.tweak(mark_40).padding = 6
 
 met_60_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 60)
 
 mark_60 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_60_mark)[8:]}",
@@ -52,13 +54,14 @@ mark_60 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_60).padding = 6
+# abjad.tweak(mark_60).padding = 6
 
 met_66_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 66)
 
 mark_66 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #9 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_66_mark)[8:]}",
@@ -68,7 +71,7 @@ mark_66 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_66).padding = 6
+# abjad.tweak(mark_66).padding = 6
 
 met_mod_40_66 = evans.metric_modulation(
     metronome_mark=((1, 4), 40),
@@ -77,15 +80,17 @@ met_mod_40_66 = evans.metric_modulation(
     modulated_beat=(abjad.Note("c'4")),
     font_size=5.5,
     leaf_scale=(0.8, 0.8),
+    raise_value=6,
 )
 
-abjad.tweak(met_mod_40_66).padding = 6
+# abjad.tweak(met_mod_40_66).padding = 6
 
 met_72_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 72)
 
 mark_72 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_72_mark)[8:]}",
@@ -95,13 +100,13 @@ mark_72 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_72).padding = 6
+# abjad.tweak(mark_72).padding = 6
 
 met_90_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 90)
 
 mark_90 = abjad.LilyPondLiteral(
     [
-        r"^ \markup \with-dimensions-from \null {",
+        r"^ \markup \raise #6 \with-dimensions-from \null {",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_90_mark)[8:]}",
@@ -111,13 +116,14 @@ mark_90 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_90).padding = 6
+# abjad.tweak(mark_90).padding = 6
 
 met_108_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 108)
 
 mark_108 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_108_mark)[8:]}",
@@ -127,13 +133,14 @@ mark_108 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_108).padding = 6
+# abjad.tweak(mark_108).padding = 6
 
 met_120_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 120)
 
 mark_120 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_120_mark)[8:]}",
@@ -143,13 +150,14 @@ mark_120 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_120).padding = 6
+# abjad.tweak(mark_120).padding = 6
 
 met_130_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 130)
 
 mark_130 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
         r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_130_mark)[8:]}",
@@ -159,7 +167,7 @@ mark_130 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
-abjad.tweak(mark_130).padding = 6
+# abjad.tweak(mark_130).padding = 6
 
 
 def zero_padding_glissando(selections):
@@ -193,6 +201,14 @@ start_repeat = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
+start_repeat_default = abjad.LilyPondLiteral(
+    [
+        r"\once \override Score.BarLine.thick-thickness = #3",
+        r'\bar ".|:"',
+    ],
+    format_slot="after",
+)
+
 start_repeat_before = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
@@ -205,6 +221,14 @@ start_repeat_before = abjad.LilyPondLiteral(
 stop_repeat = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.X-extent = #'(1 . 2)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
+        r'\bar ":|."',
+    ],
+    format_slot="after",
+)
+
+stop_repeat_default = abjad.LilyPondLiteral(
+    [
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
@@ -490,9 +514,12 @@ def select_run_first_leaves(selections):
 
 # Scordatura
 
-scordatura = evans.ScordaturaHandler(
-    string_number="IV", default_pitch="c,", new_pitch="bf,,", padding=8
-)
+
+def scordatura(staff_padding=8):
+    handler = evans.ScordaturaHandler(
+        string_number="IV", default_pitch="c,", new_pitch="bf,,", padding=staff_padding
+    )
+    return handler
 
 
 # ANNOTATIONS
@@ -676,12 +703,13 @@ def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
         ),
         "B": evans.Sequence([(5, 5), (1, 5), (4, 5), (3, 5), (2, 5), (3, 5), (1, 5)]),
     }
+    bowing_padding = staff_padding + 2.5
     return baca.bcps(
         series_dict[series].rotate(rotation),
         abjad.tweak(staff_padding).staff_padding,
         bow_change_tweaks=(
             abjad.tweak(abjad.Left).self_alignment_X,
-            abjad.tweak(staff_padding + 2.5).staff_padding,
+            abjad.tweak(bowing_padding).staff_padding,
         ),
     )
 
@@ -874,7 +902,7 @@ def triple_swell(selections):
         abjad.attach(abjad.StartHairpin(">"), triple[1][0])
         abjad.attach(abjad.Dynamic("mp"), triple[2][-1])
         span = baca.text_spanner(
-            "tast. => pont.",
+            "T. => P.",
             (abjad.tweak(5).staff_padding, 0),
             lilypond_id=1,
         )

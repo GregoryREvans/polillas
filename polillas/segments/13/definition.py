@@ -207,7 +207,6 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
-            abjad.Articulation("trill"),
             baca.hairpin("ff > p"),
             baca.text_spanner(
                 r"poco pont. =|",
@@ -375,6 +374,18 @@ maker = evans.SegmentMaker(
             ),
             polillas.select_measures([4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
         ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures(
+                [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+            ),
+        ),
+        evans.attach(
+            "cello voice",
+            abjad.Clef("treble"),
+            polillas.select_measures([19]).leaf(0),
+        ),
         # evans.attach(
         #     "violin 2 voice",
         #     abjad.Clef("treble"),
@@ -398,7 +409,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
                 literal=True,
                 direction=abjad.Up,
             ),

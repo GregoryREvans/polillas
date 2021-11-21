@@ -223,6 +223,15 @@ maker = evans.SegmentMaker(
                 abjad.glissando,
                 selector=abjad.select().logical_ties(),
             ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                baca.selectors.leaf(0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                baca.selectors.leaf(-1),
+            ),
+            abjad.Markup(r"\markup (III)", literal=True, direction=abjad.Up),
             abjad.Dynamic("mp"),
             polillas.A_color,
         ),
@@ -284,6 +293,11 @@ maker = evans.SegmentMaker(
             "violin 2 voice",
             polillas.clef_whitespace,
             polillas.select_measures([14]).leaf(0),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([14, 15, 16, 17]),
         ),
         evans.call(
             "score",

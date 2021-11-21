@@ -12,8 +12,7 @@
                 \time 13/16
                 \mark \markup \bold {  }
                 s1 * 13/16
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -101,8 +100,8 @@
                 \time 12/16
                 s1 * 3/4
                 - \rehearsal-mark-markup "x5" 6 -1
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"130"
@@ -140,7 +139,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -173,7 +172,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                 \once \override Score.BarLine.X-extent = #'(1 . 2)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ":|."
@@ -185,8 +184,7 @@
                 %! scaling time signatures
                 \time 6/16
                 s1 * 3/8
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -252,7 +250,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 30]
@@ -261,8 +259,8 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
@@ -290,9 +288,9 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
                   \override #'(font-size . 5.5)
+                  \raise #6 \with-dimensions-from \null
                   \concat {
                       \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                       \hspace #1
@@ -656,18 +654,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 13]
 
-                                            cs'4.
+                                            b4.
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'8.
+                                            bf8.
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            bqf8.
                                             %! abjad.glissando(7)
                                             \glissando
                                             ]
@@ -681,18 +679,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 14]
 
-                                            d'4..
+                                            bf4..
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8..
+                                            a8..
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            dqf'8..
+                                            aqs8..
                                             %! abjad.glissando(7)
                                             \glissando
                                             ]
@@ -706,18 +704,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 15]
 
-                                            ef'4..
+                                            a4..
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d'8..
+                                            af8..
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            dqs'8..
+                                            aqf8..
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
@@ -780,15 +778,15 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 18]
 
-                                            cs'2
+                                            b2
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            c'4
+                                            bf4
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            cqs'4
+                                            bqf4
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -800,15 +798,15 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 19]
 
-                                            d'2
+                                            bf2
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            cs'4
+                                            a4
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            dqf'4
+                                            aqs4
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
@@ -1687,18 +1685,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 13]
 
-                                            d'4.
+                                            bf4.
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            a8.
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            dqf'8.
+                                            aqs8.
                                             %! abjad.glissando(7)
                                             \glissando
                                             ]
@@ -1712,18 +1710,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 14]
 
-                                            e'4..
+                                            af4..
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            ef'8..
+                                            g8..
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            eqf'8..
+                                            gqs8..
                                             %! abjad.glissando(7)
                                             \glissando
                                             ]
@@ -1737,18 +1735,18 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 15]
 
-                                            fs'4..
+                                            a4..
                                             %! abjad.glissando(7)
                                             \glissando
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            f'8..
+                                            af8..
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            fqs'8..
+                                            aqf8..
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
@@ -1811,15 +1809,15 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 18]
 
-                                            d'2
+                                            bf2
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            cs'4
+                                            a4
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            dqf'4
+                                            aqs4
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -1831,15 +1829,15 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 19]
 
-                                            e'2
+                                            af2
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            ef'4
+                                            g4
                                             %! abjad.glissando(7)
                                             \glissando
 
-                                            eqf'4
+                                            gqs4
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
@@ -2892,15 +2890,15 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 18]
 
-                                    ef'2
+                                    a2
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    d'4
+                                    af4
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    dqs'4
+                                    aqf4
                                     %! abjad.glissando(7)
                                     \glissando
 
@@ -2912,15 +2910,15 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 19]
 
-                                    fs'2
+                                    fs2
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    f'4
+                                    f4
                                     %! abjad.glissando(7)
                                     \glissando
 
-                                    fqs'4
+                                    fqs4
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
@@ -3226,6 +3224,7 @@
                                     %! MATERIAL_COLOR
                                     \(
 
+                                    \clef "treble"
                                     \override Staff.Stem.stemlet-length = 0.75
                                     af''16
                                     \p
@@ -3490,6 +3489,7 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
+                                \clef "bass"
                                 \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 b,4
                                 \pp
@@ -3701,18 +3701,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
-                                    f'4
+                                    g4
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    e'8
+                                    fs8
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    eqs'8
+                                    gqf8
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
@@ -3807,18 +3807,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 13]
 
-                                    e'4.
+                                    af4.
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    ef'8.
+                                    g8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    eqf'8.
+                                    gqs8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     ]
@@ -3832,18 +3832,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 14]
 
-                                    af'4..
+                                    e4..
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    g'8..
+                                    ef8..
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    gqs'8..
+                                    eqf8..
                                     %! abjad.glissando(7)
                                     \glissando
                                     ]
@@ -3857,18 +3857,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 15]
 
-                                    c''4..
+                                    c4..
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b'8..
+                                    b,8..
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs'8..
+                                    bqs,8..
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
@@ -4025,18 +4025,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 22]
 
-                                    ef'4
+                                    a4
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'8
+                                    af8
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    dqs'8
+                                    aqf8
                                     %! abjad.glissando(7)
                                     \glissando
                                     ]
@@ -4051,17 +4051,17 @@
                                     % [cello voice measure 23]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    fs'8.
+                                    fs8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
-                                    f'16.
+                                    f16.
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \revert Staff.Stem.stemlet-length
-                                    fqs'16.
+                                    fqs16.
                                     %! abjad.glissando(7)
                                     \glissando
                                     ]
@@ -4075,18 +4075,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 24]
 
-                                    a'4.
+                                    ef4.
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    af'8.
+                                    d8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    aqf'8.
+                                    dqs8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     ]
@@ -4099,18 +4099,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 25]
 
-                                    c''4.
+                                    c4.
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b'8.
+                                    b,8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs'8.
+                                    bqs,8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     ]
@@ -4124,18 +4124,18 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 26]
 
-                                    ef''4.
+                                    a,4.
                                     %! abjad.glissando(7)
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d''8.
+                                    af,8.
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    dqs''8.
+                                    aqf,8.
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP

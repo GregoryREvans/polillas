@@ -27,8 +27,8 @@
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"130"
@@ -2988,695 +2988,162 @@
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
-                                r16
+                                e2.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_STOP
+                                \sfp
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(2)
+                                %! SPANNER_START
+                                \<
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! MATERIAL_COLOR
                                 \(
-
-                                <g, d>16
-                                _ #(make-dynamic-script
-                                    (markup
-                                        #:whiteout
-                                        #:line (
-                                            #:general-align Y -2 #:normal-text #:larger "“"
-                                            #:hspace -0.4
-                                            #:dynamic "f"
-                                            #:hspace -0.2
-                                            #:general-align Y -2 #:normal-text #:larger "”"
-                                            )
-                                        )
-                                    )
                                 - \abjad-dashed-line-with-hook
-                                - \baca-text-spanner-left-text "twist"
-                                - \tweak staff-padding 5
-                                \startTextSpanOne
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 2]
 
-                                r8
+                                dtqs2.
+                                ~
 
-                                \times 2/3
-                                {
+                                dtqs2
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 3]
 
-                                    <g, d>16
-
-                                    r4
-
-                                    r16
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                \times 4/5
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 2]
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                r4
-
-                                <g, d>16
-
-                                r16
-
-                                r16
-
-                                <g, d>16
-
-                                \times 2/3
-                                {
-
-                                    r4
-
-                                    r16
-
-                                    <g, d>16
-
-                                }
-
-                                r4
-
-                                \times 4/5
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 3]
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r8.
-
-                                }
-
-                                r8.
-
-                                <g, d>16
-
-                                r8
-
-                                <g, d>16
-
-                                r16
-
-                                \times 2/3
-                                {
-
-                                    r4
-
-                                    <g, d>16
-
-                                    r16
-
-                                }
-
-                                r4
-
-                                \times 4/5
-                                {
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                r8
-
-                                <g, d>16
-
-                                r16
+                                ds1..
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
-                                r16
-
-                                <g, d>16
-
-                                r8
-
-                                \times 2/3
-                                {
-
-                                    r8.
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r4
-
-                                    <g, d>16
-
-                                }
-
-                                r4
+                                dqs1
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                r16
+                                d2.
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 6]
 
-                                <g, d>16
+                                cs1
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 7]
 
-                                r8
-
-                                <g, d>16
-
-                                r8.
-
-                                \times 2/3
-                                {
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8.
-
-                                }
-
-                                \times 4/5
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 6]
-
-                                    r8.
-
-                                    <g, d>16
-
-                                    r16
-
-                                }
-
-                                r4
-
-                                <g, d>16
-
-                                r16
-
-                                r16
-
-                                <g, d>16
-
-                                r4
-
-                                \times 2/3
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 7]
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r4
-
-                                    <g, d>16
-
-                                }
+                                bs,2.
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
-                                r8
+                                b,1
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 9]
 
-                                <g, d>16
+                                as,1
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 10]
 
-                                r16
-
-                                r4
-
-                                \times 2/3
-                                {
-
-                                    <g, d>16
-
-                                    r4
-
-                                    r16
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r8.
-
-                                }
-
-                                \times 4/5
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 9]
-
-                                    r8.
-
-                                    <g, d>16
-
-                                    r16
-
-                                }
-
-                                r16
-
-                                <g, d>16
-
-                                r8
-
-                                r8.
-
-                                <g, d>16
-
-                                r4
-
-                                \times 4/5
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 10]
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                <g, d>16
-
-                                r8.
+                                a,2.
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                r8
+                                gs,2.
+                                ~
 
-                                <g, d>16
-
-                                r16
-
-                                \times 2/3
-                                {
-
-                                    r4
-
-                                    r16
-
-                                    <g, d>16
-
-                                }
-
-                                r4
-
-                                \times 4/5
-                                {
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r8
-
-                                    <g, d>16
-
-                                }
-
-                                r4
+                                gs,2
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
-                                r16
-
-                                <g, d>16
-
-                                r8
-
-                                r8..
-
-                                <g, d>32
-                                ~
-
-                                <g, d>64
-
-                                r8...
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 6/7
-                                {
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 6/7
-                                {
-
-                                    r8.
-
-                                    <g, d>16
-
-                                    r8.
-
-                                }
+                                g,1.
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                r8.
+                                fs,1..
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 14]
 
-                                <g, d>16
-
-                                r4
-
-                                \times 2/3
-                                {
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                    <g, d>16
-
-                                }
-
-                                r4
-
-                                \times 4/5
-                                {
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                r8
-
-                                <g, d>16
-
-                                r16
-
-                                r4
-
-                                \times 2/3
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 14]
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r16
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r4
-
-                                    <g, d>16
-
-                                }
-
-                                r4
-
-                                r16
-
-                                <g, d>16
-
-                                r8
-
-                                r4
-
-                                \times 2/3
-                                {
-
-                                    <g, d>16
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r8.
-
-                                    <g, d>16
-
-                                    r16
-
-                                }
+                                es,1..
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                r4
+                                e,1
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 16]
 
-                                <g, d>16
+                                ds,1
+                                %! abjad.glissando(7)
+                                \glissando
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 17]
 
-                                r8.
-
-                                r8.
-
-                                <g, d>16
-
-                                \times 2/3
-                                {
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8.
-
-                                }
-
-                                \times 4/5
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 16]
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r4
-
-                                    <g, d>16
-
-                                }
-
-                                r4
-
-                                r8
-
-                                <g, d>16
-
-                                r16
-
-                                \times 2/3
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 17]
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r16
-
-                                    <g, d>16
-
-                                    r8.
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r8.
-
-                                    <g, d>16
-
-                                    r16
-
-                                }
+                                d,2.
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                r4
+                                cs,2.
+                                ~
 
-                                r16
-
-                                <g, d>16
-
-                                r8
-
-                                \times 2/3
-                                {
-
-                                    <g, d>16
-
-                                    r4
-
-                                    r16
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    <g, d>16
-
-                                    r4
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                    r8
-
-                                    <g, d>16
-
-                                    r8
-
-                                }
+                                cs,2
+                                %! abjad.glissando(7)
+                                \glissando
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                r4
-
-                                <g, d>16
-
-                                r16
-
-                                r16
-
-                                <g, d>16
-
-                                r4
-
-                                r32.
-
-                                <g, d>32.
-
-                                r32
-
-                                r8
-
-                                r8
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 6/7
-                                {
-
-                                    <g, d>16
-                                    \stopTextSpanOne
-
-                                    r4.
-                                    %! MATERIAL_COLOR
-                                    \)
-
-                                }
+                                c,1.
+                                %! baca.hairpin()
+                                %! baca.PiecewiseCommand._call(3)
+                                %! SPANNER_STOP
+                                \ff
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
@@ -3684,6 +3151,8 @@
                                 %! applying invisibility
                                 \once \override Rest.transparent = ##t
                                 r1 * 3/8
+                                %! applying indicators
+                                \stopTextSpan
 
                                 R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS

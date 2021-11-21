@@ -27,8 +27,7 @@
                 \time 16/16
                 \mark \markup \bold {  }
                 s1 * 1
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -215,7 +214,7 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 25]
@@ -1181,7 +1180,6 @@
                                         \pitchedTrill
                                         fs''2.
                                         \ff
-                                        - \trill
                                         \>
                                         ~
                                         - \abjad-dashed-line-with-hook
@@ -2138,7 +2136,6 @@
                                         \pitchedTrill
                                         cs''2.
                                         \ff
-                                        - \trill
                                         \>
                                         ~
                                         - \abjad-dashed-line-with-hook
@@ -3196,7 +3193,6 @@
                                 \pitchedTrill
                                 e''2.
                                 \ff
-                                - \trill
                                 \>
                                 ~
                                 - \abjad-dashed-line-with-hook
@@ -3355,121 +3351,127 @@
 
                                 %! MATERIAL_COLOR
                                 \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
-                                bf,4
+                                c4
                                 \f
                                 - \flageolet
                                 ~
                                 %! MATERIAL_COLOR
                                 \(
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                - \tweak staff-padding 4
+                                \startTextSpan
 
-                                bf,16
+                                c16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
-                                bf,4.
+                                c4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
-                                bf,2
+                                c2
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]
 
-                                bf,2
+                                c2
                                 ~
 
-                                bf,8
+                                c8
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
-                                bf,2
+                                c2
                                 ~
 
-                                bf,8.
+                                c8.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
 
-                                bf,2.
+                                c2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                bf,2.
+                                c2.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
-                                bf,2.
+                                c2.
                                 ~
 
-                                bf,16
+                                c16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                bf,2.
+                                c2.
                                 ~
 
-                                bf,16
+                                c16
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
-                                bf,2...
+                                c2...
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                bf,2..
+                                c2..
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                bf,1
+                                c1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                bf,1
+                                c1
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                bf,2..
+                                c2..
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                bf,4.
+                                c4.
                                 %! MATERIAL_COLOR
                                 \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
+                                \clef "treble"
                                 \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 e''2
                                 \mp
                                 \<
+                                \stopTextSpan
                                 ~
                                 \(
                                 \startTrillSpan af''
@@ -3520,7 +3522,6 @@
                                 \pitchedTrill
                                 ef''2.
                                 \ff
-                                - \trill
                                 \>
                                 ~
                                 - \abjad-dashed-line-with-hook

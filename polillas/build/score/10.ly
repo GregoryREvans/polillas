@@ -12,8 +12,7 @@
                 \time 9/8
                 \mark \markup \bold {  }
                 s1 * 9/8
-                \tweak padding 6
-                ^ \markup \with-dimensions-from \null {
+                ^ \markup \raise #6 \with-dimensions-from \null {
                   \override #'(font-size . 5.5)
                   \concat {
                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
@@ -58,15 +57,15 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
 
-                \tempo 4=120
+                \tempo 4=60
                 %! scaling time signatures
                 \time 5/8
                 s1 * 5/8
-                \tweak padding 6
                 ^ \markup {
+                  \raise #6 \with-dimensions-from \null
                   \override #'(font-size . 5.5)
                   \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
                   }
                 }
                 %! COMMENT_MEASURE_NUMBERS
@@ -853,29 +852,11 @@
 
                                 cs4.
                                 \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 6]
-
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 7]
-
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/16
-
-                                R1 * 5/16
                                 \staff-line-count 1
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 8]
+                                % [viola voice measure 6]
 
                                 \clef "percussion"
                                 %! MATERIAL_COLOR
@@ -883,28 +864,6 @@
                                 c'4
                                 \p
                                 ^ \markup {on bridge}
-                                %! MATERIAL_COLOR
-                                \(
-
-                                c'4
-                                %! MATERIAL_COLOR
-                                \)
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 9]
-
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/16
-
-                                R1 * 3/16
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [viola voice measure 10]
-
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
-                                c'4
                                 %! MATERIAL_COLOR
                                 \(
 
@@ -919,6 +878,55 @@
                                 c'8
                                 ~
                                 ]
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 7]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ~
+                                ]
+
+                                c'4
+
+                                c'8
+                                ~
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 8]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                c'8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                c'8
+                                ~
+                                ]
+
+                                c'4
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 9]
+
+                                c'4
+
+                                c'8
+                                ~
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [viola voice measure 10]
+
+                                c'4
+
+                                c'4
+
+                                c'4
+                                ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8
@@ -957,25 +965,125 @@
 
                             \context Voice = "cello voice"
                             {
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 1]
 
-                                %! applying staff names and clefs
-                                \set Staff.shortInstrumentName =
-                                %! applying staff names and clefs
-                                \markup { \hcenter-in #12 "vc." }
-                                %! applying staff names and clefs
-                                \set Staff.instrumentName =
-                                %! applying staff names and clefs
-                                \markup { \hcenter-in #14 "Violoncello" }
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 9/16
-                                %! applying indicators
-                                \stopTrillSpan
+                                \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                    {
+                                        \new Score
+                                        \with
+                                        {
+                                            \override SpacingSpanner.spacing-increment = 0.5
+                                            proportionalNotationDuration = ##f
+                                        }
+                                        <<
+                                            \new RhythmicStaff
+                                            \with
+                                            {
+                                                \remove Time_signature_engraver
+                                                \remove Staff_symbol_engraver
+                                                \override Stem.direction = #up
+                                                \override Stem.length = 5
+                                                \override TupletBracket.bracket-visibility = ##t
+                                                \override TupletBracket.direction = #up
+                                                \override TupletBracket.minimum-length = 4
+                                                \override TupletBracket.padding = 1.25
+                                                \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                                \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                                \override TupletNumber.font-size = 0
+                                                \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                                tupletFullLength = ##t
+                                            }
+                                            {
+                                                c'1
+                                                ~
+                                                c'8
+                                            }
+                                        >>
+                                        \layout
+                                        {
+                                            indent = 0
+                                            ragged-right = ##t
+                                        }
+                                    }
+                                \times 2/2
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 1]
 
-                                R1 * 9/16
+                                    %! applying staff names and clefs
+                                    \set Staff.shortInstrumentName =
+                                    %! applying staff names and clefs
+                                    \markup { \hcenter-in #12 "vc." }
+                                    %! applying staff names and clefs
+                                    \set Staff.instrumentName =
+                                    %! applying staff names and clefs
+                                    \markup { \hcenter-in #14 "Violoncello" }
+                                    \once \override Beam.grow-direction = #right
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c16 * 127/64
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_STOP
+                                    \f
+                                    - \baca-circle-bowing
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(2)
+                                    %! SPANNER_START
+                                    \>
+                                    \stopTrillSpan
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c16 * 31/16
+                                    - \baca-circle-bowing
+
+                                    r16 * 59/32
+
+                                    c16 * 109/64
+                                    - \baca-circle-bowing
+
+                                    r16 * 49/32
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c16 * 11/8
+                                    - \baca-circle-bowing
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c16 * 79/64
+                                    - \baca-circle-bowing
+
+                                    r16 * 17/8
+
+                                    \override Staff.Stem.stemlet-length = 0.75
+                                    c16 * 15/16
+                                    - \baca-circle-bowing
+
+                                    c16 * 7/8
+                                    - \baca-circle-bowing
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c16 * 27/32
+                                    - \baca-circle-bowing
+
+                                    r16 * 13/16
+
+                                    \revert Staff.Stem.stemlet-length
+                                    c16 * 51/64
+                                    %! baca.hairpin()
+                                    %! baca.PiecewiseCommand._call(3)
+                                    %! SPANNER_STOP
+                                    \p
+                                    - \baca-circle-bowing
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
+
+                                }
+                                \revert TupletNumber.text
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -1062,6 +1170,7 @@
                                 ~
                                 - \abjad-solid-line-with-arrow
                                 - \baca-bcp-spanner-left-text #5 #7
+                                - \baca-bcp-spanner-right-text #3 #7
                                 - \tweak staff-padding 2
                                 \bacaStartTextSpanBCP
 
@@ -1080,88 +1189,12 @@
                                 b4
                                 ~
 
-                                b4
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 5]
-
-                                bqs4
-                                \bacaStopTextSpanBCP
-                                ~
-                                - \abjad-solid-line-with-arrow
-                                - \baca-bcp-spanner-left-text #3 #7
-                                - \tweak staff-padding 2
-                                \bacaStartTextSpanBCP
-
-                                \times 2/3
-                                {
-
-                                    bqs4
-
-                                    c'8
-                                    \bacaStopTextSpanBCP
-                                    ~
-                                    - \abjad-solid-line-with-arrow
-                                    - \baca-bcp-spanner-left-text #2 #7
-                                    - \tweak staff-padding 2
-                                    \bacaStartTextSpanBCP
-
-                                }
-
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8
+                                b8.
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cqs'8
-                                - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
-                                - \downbow
-                                \bacaStopTextSpanBCP
-                                ~
-                                - \abjad-solid-line-with-arrow
-                                - \baca-bcp-spanner-left-text #1 #7
-                                - \tweak staff-padding 2
-                                \bacaStartTextSpanBCP
-                                ]
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 6]
-
-                                cqs'4
-
-                                bf4
-                                \bacaStopTextSpanBCP
-                                - \abjad-solid-line-with-arrow
-                                - \baca-bcp-spanner-left-text #4 #7
-                                - \tweak staff-padding 2
-                                \bacaStartTextSpanBCP
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                af8
-                                - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
-                                - \upbow
-                                \bacaStopTextSpanBCP
-                                - \abjad-solid-line-with-arrow
-                                - \baca-bcp-spanner-left-text #6 #7
-                                - \tweak staff-padding 2
-                                \bacaStartTextSpanBCP
-                                [
-
-                                fs16
-                                - \tweak self-alignment-X #left
-                                - \tweak staff-padding 4.5
-                                - \downbow
-                                \bacaStopTextSpanBCP
-                                - \abjad-solid-line-with-arrow
-                                - \baca-bcp-spanner-left-text #5 #7
-                                - \baca-bcp-spanner-right-text #7 #7
-                                - \tweak staff-padding 2
-                                \bacaStartTextSpanBCP
-
-                                \revert Staff.Stem.stemlet-length
-                                g16
+                                bqs16
                                 \bacaStopTextSpanBCP
                                 \)
                                 ]
@@ -1169,15 +1202,33 @@
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
-                                % [cello voice measure 7]
+                                % [cello voice measure 5]
 
                                 \clef "percussion"
-                                g2
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
+                                g2.
                                 \ff
                                 ^ \markup {behind bridge, on wrapping}
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 6]
+
+                                g2.
+                                ~
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! evans.SegmentMaker.comment_measure_numbers()
+                                % [cello voice measure 7]
+
+                                g2
+                                ~
 
                                 g8
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]

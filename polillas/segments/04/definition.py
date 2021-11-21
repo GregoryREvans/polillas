@@ -422,7 +422,15 @@ maker = evans.SegmentMaker(
                     ]
                 ).mirror(sequential_duplicates=False)
             ),
-            evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                baca.selectors.leaf(0),
+            ),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                baca.selectors.leaf(-1),
+            ),
+            abjad.Markup(r"\markup (IV)", literal=True, direction=abjad.Up),
             abjad.Dynamic("sfp"),
             abjad.glissando,
             polillas.A_color,
@@ -643,6 +651,21 @@ maker = evans.SegmentMaker(
             polillas.select_measures([12]).note(-1),
         ),
         evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([16, 17, 18, 19, 20, 21]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([23]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.scordatura(staff_padding=4),
+            polillas.select_measures([25]).leaves().get([2, 3]),
+        ),
+        evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             abjad.select().components(abjad.Score),
@@ -681,7 +704,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            polillas.start_repeat,
+            polillas.start_repeat_default,
             baca.selectors.leaf(0),
         ),
         evans.attach(

@@ -207,72 +207,72 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 1 voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=0),
+            polillas.chilled_stage_3_bowing(series="A", rotation=0, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([3, 4]),
         ),
         evans.call(
             "violin 1 voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=-3),
+            polillas.chilled_stage_3_bowing(series="A", rotation=-3, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([6, 7, 8]),
         ),
         evans.call(
             "violin 1 voice",
-            polillas.chilled_stage_3_bowing(series="B", rotation=0),
+            polillas.chilled_stage_3_bowing(series="B", rotation=0, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([10, 11, 12]),
         ),
         evans.call(
             "violin 1 voice",
-            polillas.chilled_stage_3_bowing(series="B", rotation=-3),
+            polillas.chilled_stage_3_bowing(series="B", rotation=-3, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([14]),
         ),
         evans.call(
             "violin 2 voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=-2),
+            polillas.chilled_stage_3_bowing(series="A", rotation=-2, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([3, 4]),
         ),
         evans.call(
             "violin 2 voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=-6),
+            polillas.chilled_stage_3_bowing(series="A", rotation=-6, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([6, 7, 8]),
         ),
         evans.call(
             "violin 2 voice",
-            polillas.chilled_stage_3_bowing(series="B", rotation=-2),
+            polillas.chilled_stage_3_bowing(series="B", rotation=-2, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([10, 11, 12, 13]),
         ),
         evans.call(
             "violin 2 voice",
-            polillas.chilled_stage_3_bowing(series="B", rotation=-6),
+            polillas.chilled_stage_3_bowing(series="B", rotation=-6, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([15]),
         ),
         evans.call(
             "viola voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=-4),
+            polillas.chilled_stage_3_bowing(series="A", rotation=-4, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([3, 4]),
         ),
         evans.call(
             "viola voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=-9),
+            polillas.chilled_stage_3_bowing(series="A", rotation=-9, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([6, 7, 8]),
         ),
         evans.call(
             "viola voice",
-            polillas.chilled_stage_3_bowing(series="B", rotation=-4),
+            polillas.chilled_stage_3_bowing(series="B", rotation=-4, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([10, 11, 12, 13, 14, 15]),
         ),
         evans.call(
             "cello voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=-6),
+            polillas.chilled_stage_3_bowing(series="A", rotation=-6, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([3, 4]),
         ),
         evans.call(
             "cello voice",
-            polillas.chilled_stage_3_bowing(series="A", rotation=1),
+            polillas.chilled_stage_3_bowing(series="A", rotation=1, staff_padding=3),
             abjad.select().leaves().group_by_measure().get([6, 7, 8]),
         ),
         evans.call(
             "cello voice",
-            polillas.chilled_stage_3_bowing(series="B", rotation=1),
+            polillas.chilled_stage_3_bowing(series="B", rotation=1, staff_padding=2.5),
             abjad.select().leaves().group_by_measure().get([10, 11, 12, 13]),
         ),
         evans.call(
@@ -404,7 +404,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -413,7 +413,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
@@ -422,7 +422,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 literal=True,
                 direction=abjad.Up,
             ),
