@@ -171,8 +171,8 @@ mark_130 = abjad.LilyPondLiteral(
 
 
 def zero_padding_glissando(selections):
-    for run in abjad.select(selections).runs():
-        leaves = abjad.select(run).leaves()
+    for run in abjad.Selection(selections).runs():
+        leaves = abjad.Selection(run).leaves()
         for leaf in leaves[1:-1]:
             abjad.tweak(leaf.note_head).Accidental.stencil = False
             abjad.tweak(leaf.note_head).transparent = True
@@ -306,7 +306,7 @@ bis_handler = evans.BisbigliandoHandler(
 )
 
 start_damp = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"\damp-markup", literal=True),
+    left_text=abjad.Markup(r"\damp-markup"),
     style="dashed-line-with-hook",
     command=r"\startTextSpanOne",
 )
@@ -316,22 +316,22 @@ stop_damp = abjad.StopTextSpan(command=r"\stopTextSpanOne")
 
 
 def fireworks(selections):
-    for run in abjad.select(selections).runs():
-        first_leaf = abjad.select(run).leaf(0)
-        last_leaf = abjad.select(run).leaf(-1)
+    for run in abjad.Selection(selections).runs():
+        first_leaf = abjad.Selection(run).leaf(0)
+        last_leaf = abjad.Selection(run).leaf(-1)
         abjad.attach(abjad.Dynamic("sfp"), first_leaf)
         abjad.attach(abjad.StartHairpin("<"), first_leaf)
         abjad.attach(abjad.Dynamic("fff", leak=True), last_leaf)
 
 
 def sforzandi(selections):
-    ties = abjad.select(selections).logical_ties(pitched=True)
+    ties = abjad.Selection(selections).logical_ties(pitched=True)
     for tie in ties:
         abjad.attach(abjad.Dynamic("sfz"), tie[0])
 
 
 start_scratch = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"poco \hspace #1 gridato", literal=True),
+    left_text=abjad.Markup(r"poco \hspace #1 gridato"),
     right_text=abjad.Markup("molto gridato"),
     style="solid-line-with-arrow",
     command=r"\startTextSpanTwo",
@@ -500,15 +500,19 @@ def fuse_quarters_preprocessor_2_20(divisions):
 
 
 def select_all_first_leaves(selections):
-    run_ties = abjad.select(selections).runs().logical_ties(pitched=True)
-    ties_first_leaves = abjad.Selection([_[0] for _ in run_ties])
+    run_ties = abjad.Selection(selections).runs().logical_ties(pitched=True)
+    ties_first_leaves = abjad.Selectionion([_[0] for _ in run_ties])
     return ties_first_leaves
 
 
 def select_run_first_leaves(selections):
-    runs = abjad.select(selections).runs()
-    first_ties = abjad.Selection([abjad.select(run).logical_tie(0) for run in runs])
-    first_leaves = abjad.Selection([abjad.select(tie).leaf(0) for tie in first_ties])
+    runs = abjad.Selection(selections).runs()
+    first_ties = abjad.Selectionion(
+        [abjad.Selection(run).logical_tie(0) for run in runs]
+    )
+    first_leaves = abjad.Selectionion(
+        [abjad.Selection(tie).leaf(0) for tie in first_ties]
+    )
     return first_leaves
 
 
@@ -560,7 +564,7 @@ A = MAS(
 
 
 def A_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -580,7 +584,7 @@ B = MAS(
 
 
 def B_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -602,7 +606,7 @@ C = MAS(
 
 
 def C_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -622,7 +626,7 @@ D = MAS(
 
 
 def D_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -642,7 +646,7 @@ E = MAS(
 
 
 def E_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -662,7 +666,7 @@ F = MAS(
 
 
 def F_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -682,7 +686,7 @@ G = MAS(
 
 
 def G_color(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     groups = leaves.group_by_contiguity()
     tag = abjad.Tag("MATERIAL_COLOR")
     start = abjad.StartPhrasingSlur()
@@ -715,11 +719,11 @@ def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
 
 
 def make_proportional_notation(selections):
-    for tuplet in abjad.select(selections).tuplets():
+    for tuplet in abjad.Selection(selections).tuplets():
         abjad.tweak(tuplet).tuplet_bracket.transparent = True
         abjad.tweak(tuplet).tuplet_number.transparent = True
 
-    for rest in abjad.select(selections).leaves(pitched=False):
+    for rest in abjad.Selection(selections).leaves(pitched=False):
         transparent_literal = abjad.LilyPondLiteral(
             r"\once \override Rest.transparent = ##t", format_slot="before"
         )
@@ -729,7 +733,7 @@ def make_proportional_notation(selections):
         abjad.attach(transparent_literal, rest)
         abjad.attach(transparent_dots_literal, rest)
 
-    for note in abjad.select(selections).leaves(pitched=True):
+    for note in abjad.Selection(selections).leaves(pitched=True):
         abjad.attach(evans.DurationLine(), note)
         style_literal = abjad.LilyPondLiteral(
             r"\duration-line-style", format_slot="before"
@@ -738,7 +742,7 @@ def make_proportional_notation(selections):
 
 
 def make_proportaional_global_context(selections):
-    leaves = abjad.select(selections).leaves()
+    leaves = abjad.Selection(selections).leaves()
     leaves_count = len(leaves)
     for i, leaf in enumerate(leaves):
         if i == 0:  # Experimental
@@ -759,7 +763,7 @@ def make_proportaional_global_context(selections):
             )
             abjad.attach(hidden_literal, leaf)
 
-    first_leaf = abjad.select(selections).leaf(0)
+    first_leaf = abjad.Selection(selections).leaf(0)
     x_literal = abjad.LilyPondLiteral(
         r"\once \override Score.TimeSignature.stencil = #(blank-time-signature)",
         format_slot="before",
@@ -772,7 +776,7 @@ def label_clock_time(selections):
 
 
 def force_accidental(selections):
-    ties = abjad.select(selections).logical_ties(pitched=True)
+    ties = abjad.Selection(selections).logical_ties(pitched=True)
     for tie in ties:
         first_leaf = tie[0]
         if isinstance(first_leaf, abjad.Note):
@@ -787,8 +791,7 @@ def force_accidental(selections):
 
 
 def select_measures(index_list):
-    selector = abjad.select().leaves().group_by_measure().get(index_list)
-    return selector
+    return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list)
 
 
 hairpins = evans.CyclicList(["<", "<|", "<", "<", "<", "<", "<|", "<"], forget=False)
@@ -796,7 +799,7 @@ hairpins = evans.CyclicList(["<", "<|", "<", "<", "<", "<", "<|", "<"], forget=F
 
 def swell_dynamics(selections):
     pairs = (
-        abjad.select(selections)
+        abjad.Selection(selections)
         .logical_ties()
         .partition_by_counts([2], cyclic=True, overhang=False)
     )
@@ -812,13 +815,13 @@ _hairpins = evans.CyclicList(["<", "<|"], forget=False)
 
 def cello_swell_dynamics(selections):
     pairs = (
-        abjad.select(selections)
+        abjad.Selection(selections)
         .logical_ties()
         .partition_by_counts([2, 1], cyclic=True, overhang=False)
     )
     for i, pair in enumerate(pairs):
         if i % 2 != 0:
-            abjad.attach(abjad.Dynamic("mf"), abjad.select(pair).leaf(0))
+            abjad.attach(abjad.Dynamic("mf"), abjad.Selection(pair).leaf(0))
         else:
             next_hairpin = _hairpins(r=1)[0]
             hairpin_string = "p " + next_hairpin + " f"
@@ -828,7 +831,7 @@ def cello_swell_dynamics(selections):
 
 def alternate_glissandi(selections):
     pairs = (
-        abjad.select(selections)
+        abjad.Selection(selections)
         .logical_ties()
         .partition_by_counts([2], cyclic=True, overhang=False)
     )
@@ -838,7 +841,7 @@ def alternate_glissandi(selections):
 
 def cello_alternate_glissandi(selections):
     pairs = (
-        abjad.select(selections)
+        abjad.Selection(selections)
         .logical_ties()
         .partition_by_counts([2, 1], cyclic=True, overhang=False)
     )
@@ -848,7 +851,7 @@ def cello_alternate_glissandi(selections):
 
 
 def trill_ties(selections):
-    abjad.trill_spanner(selections, selector=abjad.select().notes())
+    abjad.trill_spanner(selections, selector=lambda _: abjad.Selection(_).notes())
 
 
 start_bis_trill_one = abjad.LilyPondLiteral(
@@ -891,7 +894,7 @@ multi_stac = evans.ArticulationHandler(
 
 def triple_swell(selections):
     triples = (
-        abjad.select(selections)
+        abjad.Selection(selections)
         .logical_ties()
         .partition_by_counts([3], cyclic=True, overhang=False)
     )
@@ -914,7 +917,7 @@ bah = evans.BowAngleHandler([0, 45, 0, -45, 70, -70, 0, 25, -25, 0, 60])
 
 
 def angles(selections):
-    for run in abjad.select(selections).runs():
+    for run in abjad.Selection(selections).runs():
         bah(run)
 
 

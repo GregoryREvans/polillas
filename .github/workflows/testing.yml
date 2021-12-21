@@ -21,7 +21,6 @@ env:
   TSMAKERS: /tmp/tsmakers
   EVANS: /tmp/evans
   BACA: /tmp/baca
-  MYPYPATH: "/tmp/abjad:/tmp/abjad-ext-rmakers:/tmp/abjad-ext-microtones:/tmp/tsmakers:/tmp/evans:/tmp/baca:/tmp/ide"
 
 jobs:
   build:
@@ -75,7 +74,6 @@ jobs:
         git clone https://github.com/GregoryREvans/evans.git $EVANS
         pip install -e $EVANS
         echo "$EVANS/scr" >> $GITHUB_PATH
-        ln -s $EVANS/dotfiles/.mypy.ini ./mypy.ini
         ln -s $EVANS/dotfiles/test_segments.py ./$NAME/test.py
 
     - name: Install baca

@@ -46,17 +46,17 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "violin 1 voice",
-            abjad.Markup(r"\markup (I)", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup (I)", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "violin 2 voice",
-            abjad.Markup(r"\markup (III)", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup (III)", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "viola voice",
-            abjad.Markup(r"\markup (IV)", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup (IV)", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -312,12 +312,12 @@ maker = evans.SegmentMaker(
                 .mirror(sequential_duplicates=False)
                 .rotate(4)
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "viola voice",
             abjad.glissando,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "cello voice",
@@ -329,12 +329,12 @@ maker = evans.SegmentMaker(
                     ]
                 ).mirror(sequential_duplicates=False)
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "cello voice",
             abjad.glissando,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "cello voice",
@@ -359,7 +359,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -374,27 +374,27 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 2 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "viola voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "cello voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=polillas.score,

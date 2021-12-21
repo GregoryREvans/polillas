@@ -108,7 +108,6 @@ maker = evans.SegmentMaker(
             ),
             abjad.Markup(
                 r"\markup {behind bridge, on wrapping}",
-                literal=True,
                 direction=abjad.Up,
             ),
             abjad.Clef("percussion"),
@@ -124,7 +123,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
-            abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             abjad.Dynamic("p"),
             polillas.clef_whitespace,
@@ -148,7 +147,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "cello voice",
@@ -186,27 +185,27 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 2 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "viola voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "cello voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=polillas.score,

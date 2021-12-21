@@ -91,7 +91,7 @@ maker = evans.SegmentMaker(
                 baca.selectors.leaf(-1),
             ),
             abjad.glissando,
-            abjad.Markup(r"\markup (I)", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup (I)", direction=abjad.Up),
             polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -206,34 +206,31 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                literal=True,
                 direction=abjad.Up,
             ),
-            abjad.select().leaves().group_by_measure().get([1]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(1),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-                literal=True,
                 direction=abjad.Up,
             ),
-            abjad.select().leaves().group_by_measure().get([3]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([3]).leaf(1),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
-                literal=True,
                 direction=abjad.Up,
             ),
-            abjad.select().leaves().group_by_measure().get([5]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([5]).leaf(1),
         ),
         evans.attach(
             "Global Context",
@@ -248,27 +245,27 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 2 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "viola voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "cello voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=polillas.score,

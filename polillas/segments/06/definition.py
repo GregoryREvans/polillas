@@ -38,7 +38,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
-                selector=abjad.select().leaves(pitched=True),
+                selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
             polillas.B_color,
@@ -59,7 +59,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
-                selector=abjad.select().leaves(pitched=True),
+                selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
             polillas.B_color,
@@ -80,7 +80,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(5).staff_padding, 0),
                 lilypond_id=1,
                 bookend=False,
-                selector=abjad.select().leaves(pitched=True),
+                selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
             polillas.B_color,
@@ -109,7 +109,6 @@ maker = evans.SegmentMaker(
             ),
             abjad.Markup(
                 r"\markup {behind bridge, on wrapping}",
-                literal=True,
                 direction=abjad.Up,
             ),
             abjad.Dynamic("ff"),
@@ -174,7 +173,7 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            baca.hairpin("ff > p", selector=abjad.select().notes()),
+            baca.hairpin("ff > p", selector=lambda _: abjad.Selection(_).notes()),
             polillas.G_color,
         ),
         evans.MusicCommand(
@@ -221,7 +220,7 @@ maker = evans.SegmentMaker(
             ),
             evans.Callable(
                 abjad.glissando,
-                selector=abjad.select().logical_ties(),
+                selector=lambda _: abjad.Selection(_).logical_ties(),
             ),
             evans.Attachment(
                 abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
@@ -231,7 +230,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
                 baca.selectors.leaf(-1),
             ),
-            abjad.Markup(r"\markup (III)", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup (III)", direction=abjad.Up),
             abjad.Dynamic("mp"),
             polillas.A_color,
         ),
@@ -256,7 +255,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
-            abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Dynamic("p"),
             polillas.G_color,
         ),
@@ -302,7 +301,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -349,22 +348,22 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 2 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "viola voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "cello voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=polillas.score,

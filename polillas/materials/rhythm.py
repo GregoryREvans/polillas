@@ -8,46 +8,46 @@ from abjadext import rmakers
 
 
 def select_outer_ties(argument):
-    result = abjad.select(argument).logical_ties().get([0, -1])
+    result = abjad.Selection(argument).logical_ties().get([0, -1])
     return result
 
 
 def select_last_tie_leaf(argument):
-    result = abjad.select(argument).logical_ties()[:-1]
-    return [abjad.select(_).leaf(-1) for _ in result]
+    result = abjad.Selection(argument).logical_ties()[:-1]
+    return [abjad.Selection(_).leaf(-1) for _ in result]
 
 
 def select_across_divisions(argument):
-    result = abjad.select(argument).tuplets()[:-1]
-    return [abjad.select(_).leaf(-1) for _ in result]
+    result = abjad.Selection(argument).tuplets()[:-1]
+    return [abjad.Selection(_).leaf(-1) for _ in result]
 
 
 def select_alternate_divisions(argument):
-    result = abjad.select(argument).tuplets().get([0], 2)
-    return [abjad.select(_).leaf(-1) for _ in result]
+    result = abjad.Selection(argument).tuplets().get([0], 2)
+    return [abjad.Selection(_).leaf(-1) for _ in result]
 
 
 def select_alternate_leaves(argument):
-    result = abjad.select(argument).logical_ties().get([1], 2)
+    result = abjad.Selection(argument).logical_ties().get([1], 2)
     return result
 
 
 def select_periodic_tuplets(argument):
-    return abjad.select(argument).tuplets().get([0], 2)
+    return abjad.Selection(argument).tuplets().get([0], 2)
 
 
 def select_periodic_ties_2_4_7_8_of_10(argument):
-    return abjad.select(argument).logical_ties().get([2, 4, 7, 8], 10)
+    return abjad.Selection(argument).logical_ties().get([2, 4, 7, 8], 10)
 
 
 def select_periodic_ties_2_4_of_8(argument):
-    return abjad.select(argument).logical_ties().get([2, 4], 8)
+    return abjad.Selection(argument).logical_ties().get([2, 4], 8)
 
 
 def select_all_but_final_leaf(argument):
-    ties = abjad.select(argument).logical_ties()
-    final_leaves = abjad.select([_[-1] for _ in ties])
-    out = abjad.select(final_leaves).leaves().exclude([-1])
+    ties = abjad.Selection(argument).logical_ties()
+    final_leaves = abjad.Selection([_[-1] for _ in ties])
+    out = abjad.Selection(final_leaves).leaves().exclude([-1])
     return out
 
 
@@ -56,7 +56,7 @@ def select_all_but_final_leaf(argument):
 
 silence_maker = rmakers.stack(
     rmakers.NoteRhythmMaker(),
-    rmakers.force_rest(abjad.select().leaves(pitched=True)),
+    rmakers.force_rest(lambda _: abjad.Selection(_).leaves(pitched=True)),
 )
 
 silence_handler = evans.RhythmHandler(
@@ -97,9 +97,9 @@ def shadows(extra_counts=[2], stage=3):  # A
         maker = evans.RTMMaker(rtm_strings)
         stack = rmakers.stack(
             maker,
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -111,9 +111,9 @@ def shadows(extra_counts=[2], stage=3):  # A
                 4,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -122,9 +122,9 @@ def shadows(extra_counts=[2], stage=3):  # A
         stack = rmakers.stack(
             rmakers.note(),
             rmakers.tie(select_all_but_final_leaf),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -142,18 +142,21 @@ def wings(
     stage=1,
 ):  # B
     if stage == 1:
-        attack_selector = abjad.select().leaves().get(indices, period)
+
+        def attack_selector(selections):
+            return abjad.Selection(selections).leaves().get(indices, period)
+
         stack = rmakers.stack(
             rmakers.talea(
                 [1],
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.force_rest(abjad.select()),
+            rmakers.force_rest(lambda _: abjad.Selection(_)),
             rmakers.force_note(attack_selector),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -161,9 +164,9 @@ def wings(
     if stage == 2:
         stack = rmakers.stack(
             rmakers.note(),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -172,9 +175,9 @@ def wings(
         stack = rmakers.stack(
             rmakers.note(),
             rmakers.tie(select_all_but_final_leaf),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -206,9 +209,9 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -220,9 +223,9 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -241,16 +244,16 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         stack_2 = rmakers.stack(
             rmakers.note(),
-            # rmakers.trivialize(abjad.select().tuplets()),
-            # rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            # rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             # rmakers.extract_trivial(),
         )
         binding = rmakers.bind(
@@ -283,9 +286,9 @@ def flight(stage=1):  # D
     if stage == 1:
         stack = rmakers.stack(
             rmakers.note(),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -293,9 +296,9 @@ def flight(stage=1):  # D
     if stage == 2:
         stack = rmakers.stack(
             rmakers.talea([-1, 3, -1, 2, -1, 1], 8),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -303,9 +306,9 @@ def flight(stage=1):  # D
     if stage == 5:
         stack = rmakers.stack(
             rmakers.tuplet([(2, 1, 1)]),
-            # rmakers.trivialize(abjad.select().tuplets()),
-            # rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            # rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             # rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -320,9 +323,9 @@ def flight(stage=1):  # D
         stack_3 = rmakers.stack(
             rmakers.tuplet([(3, 3, 3, 2, 1)]),
             # rmakers.tie(select_all_but_final_leaf),
-            # rmakers.trivialize(abjad.select().tuplets()),
-            # rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            # rmakers.rewrite_sustained(abjad.select().tuplets()),
+            # rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             # rmakers.extract_trivial(),
         )
         binding = rmakers.bind(
@@ -341,9 +344,9 @@ def chilled(
     if stage == 1:
         stack = rmakers.stack(
             rmakers.tuplet([(3, 1)]),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=True)
@@ -351,9 +354,9 @@ def chilled(
     if stage == "1 cello":
         stack = rmakers.stack(
             rmakers.tuplet([(3, 1), (1,)]),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=True)
@@ -373,9 +376,9 @@ def chilled(
             these_counts = evans.Sequence(these_counts).reverse()
         stack = rmakers.stack(
             rmakers.talea(these_counts, 16, read_talea_once_only=True),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         return stack
@@ -384,9 +387,9 @@ def chilled(
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=True)
@@ -396,9 +399,9 @@ def chilled(
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -407,9 +410,9 @@ def chilled(
         integers = evans.Sequence([7, 1, 9, 2]).rotate(rotation)
         stack = rmakers.stack(
             rmakers.talea(integers, 8),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -429,28 +432,33 @@ def knots(  # F
     if stage == 1:
         stack = rmakers.stack(
             rmakers.talea([1], 8),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == 4:
-        attack_selector = abjad.select().leaves().get(leaf_indices, leaf_period)
-        division_selector = abjad.select().tuplets().get(division_indices)
+        attack_selector = (
+            lambda _: abjad.Selection(_).leaves().get(leaf_indices, leaf_period)
+        )
+
+        def division_selector(selections):
+            return abjad.Selection(selections).tuplets().get(division_indices)
+
         stack = rmakers.stack(
             rmakers.talea(
                 [1],
                 16,
                 extra_counts=extra_counts,
             ),
-            rmakers.force_rest(abjad.select()),
+            rmakers.force_rest(lambda _: abjad.Selection(_)),
             rmakers.force_note(attack_selector),
             rmakers.force_rest(division_selector),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=True)
@@ -459,9 +467,9 @@ def knots(  # F
         durations = evans.Sequence([1, -1, 1, 1, -1]).rotate(rotation)
         stack = rmakers.stack(
             rmakers.talea(durations, 8, extra_counts=[0, 1, 0, 0, 1]),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -482,14 +490,17 @@ def lightning(
     stage=1, denominators=[4], extra_counts=[0], indices=[0], period=1, rotation=None
 ):  # G
     if stage == 1:
-        attack_selector = abjad.select().leaves().get(indices, period)
+
+        def attack_selector(selections):
+            return abjad.Selection(selections).leaves().get(indices, period)
+
         stack = rmakers.stack(
             rmakers.even_division(denominators, extra_counts=extra_counts),
-            rmakers.force_rest(abjad.select()),
+            rmakers.force_rest(lambda _: abjad.Selection(_)),
             rmakers.force_note(attack_selector),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -497,9 +508,9 @@ def lightning(
     if stage == 2:
         stack = rmakers.stack(
             rmakers.talea([2, 3], 8),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -508,9 +519,9 @@ def lightning(
         counts = evans.Sequence([3, 1, 1, 2]).rotate(rotation)
         stack = rmakers.stack(
             rmakers.talea(counts, 8),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -518,9 +529,9 @@ def lightning(
     if stage == 4:
         stack = rmakers.stack(
             rmakers.talea([3, 1, 1], 8),
-            rmakers.trivialize(abjad.select().tuplets()),
-            rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-            rmakers.rewrite_sustained(abjad.select().tuplets()),
+            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
         )
         handler = evans.RhythmHandler(stack, forget=False)
@@ -533,9 +544,9 @@ def make_tied_notes():
     stack = rmakers.stack(
         rmakers.note(),
         rmakers.tie(select_all_but_final_leaf),
-        rmakers.trivialize(abjad.select().tuplets()),
-        rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-        rmakers.rewrite_sustained(abjad.select().tuplets()),
+        rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+        rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+        rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
         rmakers.extract_trivial(),
     )
     handler = evans.RhythmHandler(stack, forget=False)

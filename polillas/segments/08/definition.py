@@ -42,38 +42,44 @@ maker = evans.SegmentMaker(
         evans.call(
             "violin 1 voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "violin 1 voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "violin 1 voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.call(
             "violin 1 voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "violin 1 voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "violin 1 voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.attach(
             "violin 1 voice",
@@ -109,38 +115,44 @@ maker = evans.SegmentMaker(
         evans.call(
             "violin 2 voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "violin 2 voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "violin 2 voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.call(
             "violin 2 voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "violin 2 voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "violin 2 voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.attach(
             "violin 2 voice",
@@ -176,38 +188,44 @@ maker = evans.SegmentMaker(
         evans.call(
             "viola voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "viola voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "viola voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.call(
             "viola voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "viola voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "viola voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.attach(
             "viola voice",
@@ -243,38 +261,44 @@ maker = evans.SegmentMaker(
         evans.call(
             "cello voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "cello voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "cello voice",
             evans.ArticulationHandler(["tremolo"]),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.call(
             "cello voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([0, 1, 2]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([0, 1, 2]),
         ),
         evans.call(
             "cello voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([4, 5, 6]),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4, 5, 6]),
         ),
         evans.call(
             "cello voice",
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
-            abjad.select().leaves().group_by_measure().get([8, 9, 10, 11]),
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get([8, 9, 10, 11]),
         ),
         evans.attach(
             "cello voice",
@@ -430,15 +454,14 @@ maker = evans.SegmentMaker(
             "Global Context",
             abjad.Markup(
                 r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                literal=True,
                 direction=abjad.Up,
             ),
-            abjad.select().leaves().group_by_measure().get([13]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(1),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -453,22 +476,22 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 2 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "viola voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "cello voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=polillas.score,

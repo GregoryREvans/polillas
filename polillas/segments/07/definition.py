@@ -82,7 +82,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
-            abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -97,7 +97,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
-            abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -121,7 +121,7 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
-            abjad.Markup(r"\markup {on bridge}", literal=True, direction=abjad.Up),
+            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -164,15 +164,14 @@ maker = evans.SegmentMaker(
             "Global Context",
             abjad.Markup(
                 r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-                literal=True,
                 direction=abjad.Up,
             ),
-            abjad.select().leaves().group_by_measure().get([13]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(1),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -197,27 +196,27 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "violin 2 voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "viola voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
         # evans.call(
         #     "cello voice",
         #     evans.annotate_leaves,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=polillas.score,
