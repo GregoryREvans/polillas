@@ -1,7 +1,7 @@
 import abjad
 import evans
 
-time_signature_series = abjad.OrderedDict()
+time_signature_series = dict()
 
 numerators = evans.Sequence([[3, 4, 4], [3, 5, 6], [7]])
 groups = numerators.helianthate(-1, 1)
