@@ -515,6 +515,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
+    transparent_fermatas=False, # jack parts
     time_signatures=polillas.signatures_22,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,

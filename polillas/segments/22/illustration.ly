@@ -1515,14 +1515,12 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 49]
 
-                                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \!
-                                        \stopStaff \startStaff
 
                                     }
 
@@ -2612,14 +2610,12 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 49]
 
-                                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \!
-                                        \stopStaff \startStaff
 
                                     }
 
@@ -3737,14 +3733,12 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 49]
 
-                                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \!
-                                \stopStaff \startStaff
 
                             }
 
@@ -4793,7 +4787,6 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 49]
 
-                                \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 %! baca.hairpin()
@@ -4801,7 +4794,6 @@
                                 %! SPANNER_STOP
                                 \!
                                 _ \colophon
-                                \stopStaff \startStaff
 
                             }
 

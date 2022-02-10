@@ -1,3 +1,5 @@
+        \context Score = "Score"
+        <<
             \context TimeSignatureContext = "Global Context"
             {
                 %! COMMENT_MEASURE_NUMBERS

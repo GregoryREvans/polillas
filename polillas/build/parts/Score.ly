@@ -1,4 +1,4 @@
-\version "2.23.6" %2.23.2 or 2.22.1
+\version "2.22.1" %2.23.6
 \language "english" %! LilyPondFile
 
 \include "../parts_stylesheet.ily"                                      %! LilyPondFile
