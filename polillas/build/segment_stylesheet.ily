@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.23.6" %2.23.2 or 2.22.1
 \language "english"
 
 \include "score_stylesheet.ily"

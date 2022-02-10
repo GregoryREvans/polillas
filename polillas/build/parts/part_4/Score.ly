@@ -2,7 +2,7 @@
 \language "english" %! LilyPondFile
 
 \include "../../parts_stylesheet_enlarged.ily"                                      %! LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
 
 \header { %! LilyPondFile
     tagline = ##f

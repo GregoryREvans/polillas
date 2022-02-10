@@ -3,9 +3,9 @@
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
 %! abjad.LilyPondFile._get_formatted_includes()
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
 %! abjad.LilyPondFile._get_formatted_includes()
-\include "/Users/evansdsg2/Scores/polillas/polillas/segments/22/../../build/segment_stylesheet.ily"
+\include "/Users/gregoryevans/Scores/polillas/polillas/segments/22/../../build/segment_stylesheet.ily"
 
 %! abjad.LilyPondFile._get_formatted_blocks()
 \score

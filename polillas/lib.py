@@ -836,7 +836,8 @@ def alternate_glissandi(selections):
         .partition_by_counts([2], cyclic=True, overhang=False)
     )
     for pair in pairs:
-        abjad.attach(abjad.Glissando(), pair[0][-1])
+        # abjad.attach(abjad.Glissando(), pair[0][-1])
+        abjad.attach(abjad.Tie(), pair[0][-1])  # parts!
 
 
 def cello_alternate_glissandi(selections):
@@ -847,7 +848,8 @@ def cello_alternate_glissandi(selections):
     )
     for i, pair in enumerate(pairs):
         if i % 2 == 0:
-            abjad.attach(abjad.Glissando(), pair[0][-1])
+            # abjad.attach(abjad.Glissando(), pair[0][-1])
+            abjad.attach(abjad.Tie(), pair[0][-1])  # parts!
 
 
 def trill_ties(selections):
