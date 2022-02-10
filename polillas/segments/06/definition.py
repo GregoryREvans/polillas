@@ -251,7 +251,9 @@ maker = evans.SegmentMaker(
                 ("viola voice", (14, 19)),
             ],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
+            evans.PitchHandler(
+                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+            ),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),

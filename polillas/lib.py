@@ -542,7 +542,7 @@ class MAS:
         first_leaf = selections.leaf(0)
         last_leaf = selections.leaves()[-1]
         start = abjad.StartTextSpan(
-            left_text=fr'- \evans-text-spanner-left-text "{self.string}"',
+            left_text=rf'- \evans-text-spanner-left-text "{self.string}"',
             command=r"\evansStartTextSpanMaterialAnnotation",
             style="dashed-line-with-hook",
             right_padding=-1,
@@ -790,19 +790,58 @@ def force_accidental(selections):
             raise Exception(ex)
 
 
-def select_measures(index_list, leaf=None, leaves=None, logical_ties=None, note=None, notes=None):
+def select_measures(
+    index_list, leaf=None, leaves=None, logical_ties=None, note=None, notes=None
+):
     if leaf is not None:
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).leaf(leaf)
+        return (
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get(index_list)
+            .leaf(leaf)
+        )
     elif isinstance(leaves, list):
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).leaves().get(leaves)
+        return (
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get(index_list)
+            .leaves()
+            .get(leaves)
+        )
     elif leaves is True:
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).leaves()
+        return (
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get(index_list)
+            .leaves()
+        )
     elif logical_ties is True:
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).logical_ties()
+        return (
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get(index_list)
+            .logical_ties()
+        )
     elif note is not None:
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).note(note)
+        return (
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get(index_list)
+            .note(note)
+        )
     elif notes is True:
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).notes()
+        return (
+            lambda _: abjad.Selection(_)
+            .leaves()
+            .group_by_measure()
+            .get(index_list)
+            .notes()
+        )
     else:
         return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list)
 

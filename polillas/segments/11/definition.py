@@ -26,14 +26,18 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", 0)],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
+            evans.PitchHandler(
+                [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 2)],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]),
+            evans.PitchHandler(
+                [str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -63,7 +67,9 @@ maker = evans.SegmentMaker(
                 ("viola voice", 6),
             ],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
+            evans.PitchHandler(
+                [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
+            ),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),

@@ -423,7 +423,9 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", (22, 24))],
             polillas.make_tied_notes(),
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
+            evans.PitchHandler(
+                [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
+            ),
             abjad.Markup(
                 r"\markup {behind bridge, on wrapping}",
                 direction=abjad.Up,
