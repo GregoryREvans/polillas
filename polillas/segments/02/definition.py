@@ -64,7 +64,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.MusicCommand(
             [
@@ -287,22 +287,22 @@ maker = evans.SegmentMaker(
         evans.call(
             "violin 1 voice",
             evans.TrillHandler(boolean_vector=[1], forget=False),
-            polillas.select_measures([0, 1, 2]).logical_ties(),
+            polillas.select_measures([0, 1, 2], logical_ties=True),
         ),
         evans.call(
             "violin 2 voice",
             evans.TrillHandler(boolean_vector=[1], forget=False),
-            polillas.select_measures([0, 1, 2]).logical_ties(),
+            polillas.select_measures([0, 1, 2], logical_ties=True),
         ),
         evans.call(
             "viola voice",
             evans.TrillHandler(boolean_vector=[1], forget=False),
-            polillas.select_measures([0, 1, 2]).logical_ties(),
+            polillas.select_measures([0, 1, 2], logical_ties=True),
         ),
         evans.call(
             "cello voice",
             evans.TrillHandler(boolean_vector=[1], forget=False),
-            polillas.select_measures([0, 1, 2]).logical_ties(),
+            polillas.select_measures([0, 1, 2], logical_ties=True),
         ),
         evans.call(
             "violin 1 voice",
@@ -353,7 +353,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
-            polillas.select_measures([13, 14]).leaves().get([0, 1]),
+            polillas.select_measures([13, 14], leaves=[0, 1]),
         ),
         evans.call(
             "violin 1 voice",
@@ -375,7 +375,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
-            polillas.select_measures([14, 15]).leaves().get([0, 1]),
+            polillas.select_measures([14, 15], leaves=[0, 1]),
         ),
         evans.call(
             "violin 2 voice",

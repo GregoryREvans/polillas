@@ -26,14 +26,14 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", 0)],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 2)],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -45,10 +45,10 @@ maker = evans.SegmentMaker(
             polillas.lightning(stage=2),
             evans.PitchHandler(
                 [
-                    str(abjad.StaffPosition(-3).to_pitch("percussion")),
-                    str(abjad.StaffPosition(-1).to_pitch("percussion")),
-                    str(abjad.StaffPosition(1).to_pitch("percussion")),
-                    str(abjad.StaffPosition(-1).to_pitch("percussion")),
+                    str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion"))),
+                    str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion"))),
+                    str(abjad.StaffPosition(1).to_pitch(abjad.Clef("percussion"))),
+                    str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion"))),
                 ]
             ),
             abjad.LilyPondLiteral(
@@ -63,7 +63,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", 6),
             ],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
             polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
@@ -125,12 +125,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.attach(
             "cello voice",
             polillas.clef_whitespace,
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.MusicCommand(
             [("violin 2 voice", (8, 11))],

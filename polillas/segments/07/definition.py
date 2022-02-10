@@ -70,7 +70,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (0, 6)),
             ],
             polillas.lightning(stage=4),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             polillas.G_color,
         ),
         evans.MusicCommand(
@@ -78,7 +78,7 @@ maker = evans.SegmentMaker(
                 ("violin 1 voice", (9, 13)),
             ],
             polillas.lightning(stage=4),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
@@ -93,7 +93,7 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (9, 13)),
             ],
             polillas.lightning(stage=4),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
@@ -108,7 +108,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (9, 13)),
             ],
             polillas.lightning(stage=4),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.Dynamic("p"),
             polillas.G_color,
         ),
@@ -117,7 +117,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (9, 13)),
             ],
             polillas.lightning(stage=4),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),

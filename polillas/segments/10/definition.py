@@ -102,7 +102,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", (4, 7))],
             polillas.make_tied_notes(),
-            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 4", format_slot="absolute_before"
             ),
@@ -119,7 +119,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("viola voice", (5, 10))],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
@@ -133,14 +133,14 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", 8)],
             polillas.note_rhythm_handler,
-            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]),
             # polillas.G_color,
             # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 10)],
             polillas.note_rhythm_handler,
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
             # polillas.G_color,
             # preprocessor=polillas.pure_quarters_preprocessor,
         ),

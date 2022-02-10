@@ -138,12 +138,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("treble"),
-            polillas.select_measures([4]).leaf(0),
+            polillas.select_measures([4], leaf=0),
         ),
         evans.attach(
             "cello voice",
             polillas.clef_whitespace,
-            polillas.select_measures([4]).leaf(0),
+            polillas.select_measures([4], leaf=0),
         ),
         evans.MusicCommand(
             [("violin 1 voice", 6)],
@@ -192,12 +192,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
-            polillas.select_measures([6]).leaf(0),
+            polillas.select_measures([6], leaf=0),
         ),
         evans.attach(
             "cello voice",
             polillas.clef_whitespace,
-            polillas.select_measures([6]).leaf(0),
+            polillas.select_measures([6], leaf=0),
         ),
         evans.MusicCommand(
             [("violin 1 voice", 7)],
@@ -423,7 +423,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("cello voice", (22, 24))],
             polillas.make_tied_notes(),
-            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]),
             abjad.Markup(
                 r"\markup {behind bridge, on wrapping}",
                 direction=abjad.Up,

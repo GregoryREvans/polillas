@@ -84,17 +84,17 @@ maker = evans.SegmentMaker(
         evans.attach(
             "violin 1 voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.attach(
             "violin 1 voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.attach(
             "violin 1 voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([12]).leaf(0),
+            polillas.select_measures([12], leaf=0),
         ),
         evans.MusicCommand(
             [("violin 2 voice", (0, 13))],
@@ -157,17 +157,17 @@ maker = evans.SegmentMaker(
         evans.attach(
             "violin 2 voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.attach(
             "violin 2 voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.attach(
             "violin 2 voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([12]).leaf(0),
+            polillas.select_measures([12], leaf=0),
         ),
         evans.MusicCommand(
             [("viola voice", (0, 13))],
@@ -230,17 +230,17 @@ maker = evans.SegmentMaker(
         evans.attach(
             "viola voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.attach(
             "viola voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.attach(
             "viola voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([12]).leaf(0),
+            polillas.select_measures([12], leaf=0),
         ),
         evans.MusicCommand(
             [("cello voice", (0, 13))],
@@ -303,17 +303,17 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.attach(
             "cello voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.attach(
             "cello voice",
             abjad.Articulation("baca-circle-bowing"),
-            polillas.select_measures([12]).leaf(0),
+            polillas.select_measures([12], leaf=0),
         ),
         evans.attach(
             "violin 1 voice",

@@ -1,6 +1,3 @@
-        \context Score = "Score"
-        <<
-
             \context TimeSignatureContext = "Global Context"
             {
                 %! COMMENT_MEASURE_NUMBERS
@@ -291,12 +288,16 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-down  }
                                             c''!1
                                             \ff
                                             \-
                                             ^ \markup \center-align { -31 }
+                                            %! MATERIAL_COLOR
+                                            \(
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -678,15 +679,21 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r16..
+                                            %! MATERIAL_COLOR
+                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         aqs'4
                                         \p
                                         ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \times 2/3
                                         {
@@ -913,6 +920,8 @@
                                         }
 
                                         aqs'8
+                                        %! MATERIAL_COLOR
+                                        \)
                                         \bar "||"
 
                                     }
@@ -947,12 +956,16 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
                                             g'!1
                                             \ff
                                             \-
                                             ^ \markup \center-align { A♭-49 }
+                                            %! MATERIAL_COLOR
+                                            \(
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1299,15 +1312,21 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             r16..
+                                            %! MATERIAL_COLOR
+                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         dqf'4
                                         \p
                                         ~
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         dqf'4
                                         ~
@@ -1497,6 +1516,8 @@
                                         }
 
                                         dqf'8
+                                        %! MATERIAL_COLOR
+                                        \)
                                         \bar "||"
 
                                     }
@@ -1536,12 +1557,16 @@
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \clef "alto"
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                                     fs!1
                                     \ff
                                     \-
                                     ^ \markup \center-align { -14 }
+                                    %! MATERIAL_COLOR
+                                    \(
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1888,12 +1913,16 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r16..
+                                    %! MATERIAL_COLOR
+                                    \)
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 bf'4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -1905,6 +1934,8 @@
                                 \<
                                 %! abjad.glissando(7)
                                 \glissando
+                                %! MATERIAL_COLOR
+                                \(
 
                                 a'4
                                 %! abjad.glissando(7)
@@ -2043,6 +2074,8 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \f
+                                %! MATERIAL_COLOR
+                                \)
                                 \bar "||"
 
                             }
@@ -2078,6 +2111,8 @@
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
                                     \clef "bass"
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -2089,6 +2124,8 @@
                                     \ff
                                     \-
                                     ^ \markup \center-align \center-column { +2 +0  }
+                                    %! MATERIAL_COLOR
+                                    \(
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2475,12 +2512,16 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     r16..
+                                    %! MATERIAL_COLOR
+                                    \)
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c,1
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2491,6 +2532,8 @@
                                 %! SPANNER_START
                                 \<
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -2552,6 +2595,8 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \f
+                                %! MATERIAL_COLOR
+                                \)
                                 \bar "||"
 
                             }

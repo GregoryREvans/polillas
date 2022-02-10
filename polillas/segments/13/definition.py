@@ -59,7 +59,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("violin 2 voice", (1, 9))],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
@@ -116,22 +116,22 @@ maker = evans.SegmentMaker(
         evans.attach(
             "violin 2 voice",
             abjad.Clef("treble"),
-            polillas.select_measures([9]).leaf(0),
+            polillas.select_measures([9], leaf=0),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.clef_whitespace,
-            polillas.select_measures([9]).leaf(0),
+            polillas.select_measures([9], leaf=0),
         ),
         evans.attach(
             "viola voice",
             abjad.Clef("treble"),
-            polillas.select_measures([4]).leaf(0),
+            polillas.select_measures([4], leaf=0),
         ),
         evans.attach(
             "viola voice",
             polillas.clef_whitespace,
-            polillas.select_measures([4]).leaf(0),
+            polillas.select_measures([4], leaf=0),
         ),
         evans.MusicCommand(
             [("cello voice", (4, 19))],
@@ -145,7 +145,7 @@ maker = evans.SegmentMaker(
         evans.MusicCommand(
             [("viola voice", (17, 23))],
             polillas.lightning(stage=2),
-            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch("percussion"))]),
+            evans.PitchHandler([str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
@@ -384,7 +384,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("treble"),
-            polillas.select_measures([19]).leaf(0),
+            polillas.select_measures([19], leaf=0),
         ),
         # evans.attach(
         #     "violin 2 voice",

@@ -1,21 +1,18 @@
 %! abjad.LilyPondFile._get_format_pieces()
-\version "2.23.2"
+\version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/04/../../build/segment_stylesheet.ily"
-
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 \score
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 {
     <<
-      { \include "layout.ly" }
+
         \context Score = "Score"
         <<
-
+      { \include "layout.ly" }
             \context TimeSignatureContext = "Global Context"
             {
                 %! COMMENT_MEASURE_NUMBERS
@@ -276,8 +273,10 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             a'4.
                                             \pp
+                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -1165,6 +1164,7 @@
                                                 %! baca.PiecewiseCommand._call(3)
                                                 %! SPANNER_STOP
                                                 \ff
+                                                \)
                                                 \stopTrillSpan
                                                 ]
 
@@ -1175,32 +1175,36 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             af32
                                             \ff
                                             - \staccato
+                                            [
 
                                             r32
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             a32
                                             - \staccato
-                                            [
 
                                             af32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             gqs32
                                             - \staccato
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
@@ -1231,26 +1235,26 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
-                                        r16
-
-                                        r16
-
                                         \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
+                                        r16
+
                                         a16
                                         - \staccato
-                                        [
 
                                         \revert Staff.Stem.stemlet-length
                                         g16
                                         - \staccato
                                         ]
 
-                                        r16
-
                                         \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
                                         af16
                                         - \staccato
-                                        [
 
                                         b16
                                         - \staccato
@@ -1264,12 +1268,12 @@
                                         \times 8/7
                                         {
 
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
+                                            r16
+                                            [
+
                                             cs'32
                                             - \staccato
-                                            [
 
                                             cqs'32
                                             - \staccato
@@ -1277,12 +1281,14 @@
                                             b32
                                             - \staccato
 
-                                            bf32
+                                            af32
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            b32
+                                            a32
                                             - \staccato
+                                            %! MATERIAL_COLOR
+                                            \)
                                             ]
 
                                         }
@@ -1290,7 +1296,9 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         a'2.
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -1356,12 +1364,15 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         c''16
+                                        \)
                                         \stopTrillSpan
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1371,35 +1382,33 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 16/15
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d'32
                                             - \staccato
+                                            [
 
                                             r32
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             ef'32
                                             - \staccato
-                                            [
 
                                             d'32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             dqf'32
                                             - \staccato
-                                            ]
 
                                             r16
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             e'32
                                             - \staccato
-                                            [
 
                                             eqs'32
                                             - \staccato
@@ -1410,15 +1419,15 @@
                                             fs'32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             eqs'32
                                             - \staccato
-                                            ]
 
                                             r16
 
+                                            \revert Staff.Stem.stemlet-length
                                             ef'32
                                             - \staccato
+                                            ]
 
                                         }
 
@@ -1426,30 +1435,26 @@
                                         \times 8/7
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             cs'32
                                             - \staccato
+                                            [
 
                                             r32
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             d'32
                                             - \staccato
-                                            [
 
                                             f'32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             e'32
                                             - \staccato
-                                            ]
 
                                             r16
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             g'32
                                             - \staccato
-                                            [
 
                                             gqf'32
                                             - \staccato
@@ -1457,15 +1462,15 @@
                                             f'32
                                             - \staccato
 
-                                            e'32
+                                            d'32
+                                            - \staccato
+
+                                            ef'32
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            f'32
-                                            - \staccato
-                                            ]
-
                                             r16
+                                            ]
 
                                         }
 
@@ -1476,64 +1481,56 @@
                                             % [violin 1 voice measure 16]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            e'16
+                                            d'16
                                             - \staccato
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
-                                            eqf'16
+                                            dqf'16
                                             - \staccato
-                                            ]
 
                                             r16
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            fs'16
-                                            - \staccato
-                                            [
-
-                                            gqf'16
+                                            e'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            g'16
-                                            - \staccato
-                                            ]
-
-                                            r8
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            af'16
-                                            - \staccato
-                                            [
-
-                                            gqf'16
+                                            eqs'16
                                             - \staccato
 
                                             f'16
                                             - \staccato
 
+                                            r8
+
+                                            fs'16
+                                            - \staccato
+
+                                            eqs'16
+                                            - \staccato
+
                                             ef'16
                                             - \staccato
 
+                                            cs'16
+                                            - \staccato
+
                                             \revert Staff.Stem.stemlet-length
-                                            e'16
+                                            d'16
                                             - \staccato
                                             ]
 
                                         }
 
-                                        r16
-
-                                        r16
-
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        g'16
-                                        - \staccato
+                                        r16
                                         [
 
+                                        r16
+
+                                        f'16
+                                        - \staccato
+
                                         \revert Staff.Stem.stemlet-length
-                                        fs'16
+                                        e'16
                                         - \staccato
                                         ]
 
@@ -1543,39 +1540,35 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 17]
 
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'16
-                                            - \staccato
+                                            r16
                                             [
 
-                                            aqf'16
-                                            - \staccato
-
-                                            \revert Staff.Stem.stemlet-length
                                             g'16
                                             - \staccato
-                                            ]
+
+                                            gqf'16
+                                            - \staccato
+
+                                            f'16
+                                            - \staccato
 
                                             r8
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            fs'16
-                                            - \staccato
-                                            [
-
-                                            g'16
+                                            d'16
                                             - \staccato
 
-                                            fs'16
+                                            ef'16
                                             - \staccato
 
-                                            fqs'16
+                                            d'16
+                                            - \staccato
+
+                                            dqf'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            af'16
+                                            e'16
                                             - \staccato
                                             ]
 
@@ -1587,37 +1580,33 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            aqf'16
+                                            eqs'16
                                             - \staccato
                                             [
 
-                                            a'16
+                                            f'16
                                             - \staccato
 
-                                            bf'16
+                                            fs'16
                                             - \staccato
 
-                                            aqf'16
+                                            eqs'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            g'16
+                                            ef'16
                                             - \staccato
-                                            ]
 
                                             r8
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            f'16
+                                            cs'16
                                             - \staccato
-                                            [
+
+                                            d'16
+                                            - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            fs'16
-                                            - \staccato
-                                            ]
-
                                             r16
+                                            ]
 
                                         }
 
@@ -1628,33 +1617,29 @@
                                             % [violin 1 voice measure 18]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a'16
+                                            f'16
                                             - \staccato
                                             [
 
-                                            af'16
+                                            e'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            b'16
+                                            g'16
                                             - \staccato
-                                            ]
 
                                             r8
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            bqf'16
-                                            - \staccato
-                                            [
-
-                                            a'16
+                                            gqf'16
                                             - \staccato
 
-                                            af'16
+                                            f'16
+                                            - \staccato
+
+                                            d'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            ef'16
                                             - \staccato
                                             ]
 
@@ -1665,30 +1650,34 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
 
-                                        af'16
-                                        - \staccato
-
-                                        r16
-
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        gqs'16
+                                        d'16
                                         - \staccato
                                         [
 
+                                        r16
+
+                                        dqf'16
+                                        - \staccato
+
                                         \revert Staff.Stem.stemlet-length
-                                        bf'16
+                                        e'16
                                         - \staccato
                                         ]
 
-                                        bqf'16
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        eqs'16
                                         - \staccato
+                                        [
 
                                         r16
 
                                         r16
 
-                                        b'16
+                                        \revert Staff.Stem.stemlet-length
+                                        f'16
                                         - \staccato
+                                        ]
 
                                         r2
 
@@ -1697,6 +1686,8 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
+                                        %! MATERIAL_COLOR
+                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -1705,10 +1696,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 20]
 
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                             <gqs'' cs'''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            \(
+                                            ~
 
                                             <gqs'' cs'''>4
                                             \f
@@ -1716,31 +1709,31 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <a'' d'''>8.
+                                        <gqs'' cs'''>8.
                                         \p
                                         - \tweak stencil #abjad-flared-hairpin
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <a'' d'''>16
+                                        <gqs'' cs'''>16
                                         \f
                                         ]
 
-                                        <gqs'' cs'''>4.
+                                        <a'' d'''>4.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
 
-                                        <gqs'' cs'''>8
+                                        <a'' d'''>8
                                         \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         <a'' d'''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -1758,7 +1751,7 @@
                                             <gqs'' cs'''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
                                             <gqs'' cs'''>4
                                             \f
@@ -1766,14 +1759,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <a'' d'''>8.
+                                        <gqs'' cs'''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <a'' d'''>16
+                                        <gqs'' cs'''>16
                                         \f
                                         ]
 
@@ -1784,13 +1777,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 22]
 
-                                            <gqs'' cs'''>2.
+                                            <a'' d'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <gqs'' cs'''>4
+                                            <a'' d'''>4
                                             \f
 
                                         }
@@ -1805,7 +1798,7 @@
                                             <a'' d'''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
                                             <a'' d'''>4
                                             \f
@@ -1816,7 +1809,7 @@
                                         <gqs'' cs'''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -1831,13 +1824,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 24]
 
-                                            <a'' d'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <a'' d'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1849,12 +1842,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 25]
 
-                                            <gqs'' cs'''>2.
+                                            <a'' d'''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <gqs'' cs'''>4
+                                            <a'' d'''>4
                                             \f
 
                                         }
@@ -1863,7 +1856,7 @@
                                         <a'' d'''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -1881,7 +1874,7 @@
                                             <gqs'' cs'''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
                                             <gqs'' cs'''>4
                                             \f
@@ -1889,14 +1882,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <a'' d'''>8.
+                                        <gqs'' cs'''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <a'' d'''>16
+                                        <gqs'' cs'''>16
                                         \f
                                         ]
 
@@ -1907,14 +1900,15 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 27]
 
-                                            <gqs'' cs'''>2.
+                                            <a'' d'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <gqs'' cs'''>4
+                                            <a'' d'''>4
                                             \f
+                                            \)
                                             \bar "||"
 
                                         }
@@ -1949,9 +1943,11 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d'8
                                             \pp
+                                            \(
                                             %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
                                             %! abjad.glissando(7)
@@ -2752,6 +2748,7 @@
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
                                             \ff
+                                            \)
                                             \stopTrillSpan
 
                                         }
@@ -2759,10 +2756,14 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a16
                                         \ff
                                         - \staccato
+                                        %! MATERIAL_COLOR
+                                        \(
                                         [
 
                                         bf16
@@ -2776,15 +2777,19 @@
                                         - \staccato
                                         ]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         b16
                                         - \staccato
+                                        [
 
                                         r16
 
                                         r16
 
+                                        \revert Staff.Stem.stemlet-length
                                         bqs16
                                         - \staccato
+                                        ]
 
                                         r4
 
@@ -2792,12 +2797,12 @@
                                         \times 8/7
                                         {
 
-                                            r32
-
                                             \override Staff.Stem.stemlet-length = 0.75
+                                            r32
+                                            [
+
                                             c'32
                                             - \staccato
-                                            [
 
                                             cs'32
                                             - \staccato
@@ -2808,12 +2813,12 @@
                                             bf32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             af32
                                             - \staccato
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r32
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2830,40 +2835,40 @@
                                             - \staccato
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             c'16
                                             - \staccato
-                                            ]
 
                                             r8
 
+                                            \revert Staff.Stem.stemlet-length
                                             b16
                                             - \staccato
+                                            ]
 
                                         }
 
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d'16
                                             - \staccato
+                                            [
 
                                             r16
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             dqf'16
                                             - \staccato
-                                            [
 
                                             c'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            b16
+                                            a16
                                             - \staccato
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
@@ -2873,40 +2878,36 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 13]
 
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'16
-                                            - \staccato
+                                            r16
                                             [
+
+                                            bf16
+                                            - \staccato
+
+                                            a16
+                                            - \staccato
+
+                                            aqf16
+                                            - \staccato
 
                                             b16
                                             - \staccato
 
-                                            bqf16
+                                            bqs16
+                                            - \staccato
+
+                                            r8
+
+                                            c'16
                                             - \staccato
 
                                             cs'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            dqf'16
-                                            - \staccato
-                                            ]
-
-                                            r8
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            d'16
-                                            - \staccato
-                                            [
-
-                                            \revert Staff.Stem.stemlet-length
-                                            ef'16
-                                            - \staccato
-                                            ]
-
                                             r16
+                                            ]
 
                                         }
 
@@ -2914,19 +2915,19 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            dqf'16
+                                            bqs16
                                             - \staccato
                                             [
 
-                                            c'16
+                                            bf16
+                                            - \staccato
+
+                                            af16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            bf16
-                                            - \staccato
-                                            ]
-
                                             r8
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2934,87 +2935,95 @@
                                         % [violin 2 voice measure 14]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        b16
+                                        a16
                                         - \staccato
                                         [
 
-                                        d'16
+                                        c'16
                                         - \staccato
 
-                                        cs'16
+                                        b16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        e'16
+                                        d'16
                                         - \staccato
                                         ]
 
-                                        eqf'16
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        dqf'16
                                         - \staccato
+                                        [
 
                                         r16
 
                                         r16
 
-                                        d'16
+                                        \revert Staff.Stem.stemlet-length
+                                        c'16
                                         - \staccato
+                                        ]
 
                                         \times 4/5
                                         {
 
-                                            cs'16
-                                            - \staccato
-
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d'16
+                                            a16
                                             - \staccato
                                             [
 
-                                            cs'16
+                                            r16
+
+                                            bf16
+                                            - \staccato
+
+                                            a16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'16
+                                            aqf16
                                             - \staccato
                                             ]
 
                                         }
 
-                                        r16
-
-                                        r16
-
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        ef'16
-                                        - \staccato
+                                        r16
                                         [
 
+                                        r16
+
+                                        b16
+                                        - \staccato
+
                                         \revert Staff.Stem.stemlet-length
-                                        eqf'16
+                                        bqs16
                                         - \staccato
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        e'16
+                                        c'16
                                         - \staccato
                                         [
 
-                                        f'16
+                                        cs'16
+                                        - \staccato
+
+                                        bqs16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        eqf'16
-                                        - \staccato
-                                        ]
-
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         d'8.
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -3071,12 +3080,15 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         ef'8
+                                        \)
                                         \stopTrillSpan
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         r2
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -3086,30 +3098,32 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
                                         {
 
-                                            ef'32
-                                            - \staccato
-
-                                            r32
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            e'32
+                                            ef'32
                                             - \staccato
                                             [
 
+                                            r32
+
+                                            e'32
+                                            - \staccato
+
                                             ef'32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             dqs'32
                                             - \staccato
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
@@ -3134,39 +3148,31 @@
                                             g'32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             fqs'32
                                             - \staccato
-                                            ]
 
                                             r16
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             e'32
                                             - \staccato
-                                            [
 
-                                            \revert Staff.Stem.stemlet-length
                                             d'32
                                             - \staccato
-                                            ]
 
                                             r32
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             ef'32
                                             - \staccato
-                                            [
 
                                             fs'32
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
                                             f'32
                                             - \staccato
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r32
+                                            ]
 
                                         }
 
@@ -3175,39 +3181,35 @@
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             af'16
                                             - \staccato
+                                            [
 
                                             r8
 
-                                            \override Staff.Stem.stemlet-length = 0.75
                                             gqs'16
                                             - \staccato
-                                            [
 
                                             fs'16
                                             - \staccato
 
-                                            f'16
+                                            ef'16
                                             - \staccato
 
-                                            fs'16
+                                            e'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            f'16
+                                            ef'16
                                             - \staccato
-                                            ]
 
                                             r8
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            eqs'16
+                                            dqs'16
                                             - \staccato
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
-                                            g'16
+                                            f'16
                                             - \staccato
                                             ]
 
@@ -3219,39 +3221,35 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 18]
 
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            gqs'16
-                                            - \staccato
+                                            r16
                                             [
 
-                                            af'16
+                                            fqs'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            a'16
+                                            fs'16
                                             - \staccato
-                                            ]
+
+                                            g'16
+                                            - \staccato
 
                                             r8
 
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            gqs'16
-                                            - \staccato
-                                            [
-
-                                            fs'16
+                                            fqs'16
                                             - \staccato
 
                                             e'16
                                             - \staccato
 
-                                            f'16
+                                            d'16
+                                            - \staccato
+
+                                            ef'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            af'16
+                                            fs'16
                                             - \staccato
                                             ]
 
@@ -3267,34 +3265,30 @@
                                         \times 8/9
                                         {
 
-                                            r16
-
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            g'16
-                                            - \staccato
+                                            r16
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
-                                            bf'16
+                                            f'16
                                             - \staccato
-                                            ]
-
-                                            r16
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            aqs'16
-                                            - \staccato
-                                            [
 
                                             af'16
                                             - \staccato
 
-                                            \revert Staff.Stem.stemlet-length
-                                            g'16
-                                            - \staccato
-                                            ]
+                                            r16
 
+                                            gqs'16
+                                            - \staccato
+
+                                            fs'16
+                                            - \staccato
+
+                                            ef'16
+                                            - \staccato
+
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            ]
 
                                         }
 
@@ -3303,6 +3297,8 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
+                                        %! MATERIAL_COLOR
+                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -3311,10 +3307,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 20]
 
+                                            \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                             <bqs' bqf''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            \(
+                                            ~
 
                                             <bqs' bqf''>4
                                             \f
@@ -3322,31 +3320,31 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <a' a''>8.
+                                        <bqs' bqf''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <a' a''>16
+                                        <bqs' bqf''>16
                                         \f
                                         ]
 
-                                        <bqs' bqf''>4.
+                                        <a' a''>4.
                                         \p
                                         - \tweak stencil #abjad-flared-hairpin
                                         \<
-                                        \glissando
+                                        ~
 
-                                        <bqs' bqf''>8
+                                        <a' a''>8
                                         \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         <a' a''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -3364,7 +3362,7 @@
                                             <bqs' bqf''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
                                             <bqs' bqf''>4
                                             \f
@@ -3372,14 +3370,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <a' a''>8.
+                                        <bqs' bqf''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <a' a''>16
+                                        <bqs' bqf''>16
                                         \f
                                         ]
 
@@ -3390,12 +3388,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 22]
 
-                                            <bqs' bqf''>2.
+                                            <a' a''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <bqs' bqf''>4
+                                            <a' a''>4
                                             \f
 
                                         }
@@ -3411,7 +3409,7 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
                                             <a' a''>4
                                             \f
@@ -3422,7 +3420,7 @@
                                         <bqs' bqf''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -3437,12 +3435,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 24]
 
-                                            <a' a''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <a' a''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3454,13 +3452,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 25]
 
-                                            <bqs' bqf''>2.
+                                            <a' a''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <bqs' bqf''>4
+                                            <a' a''>4
                                             \f
 
                                         }
@@ -3469,7 +3467,7 @@
                                         <a' a''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -3487,7 +3485,7 @@
                                             <bqs' bqf''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
                                             <bqs' bqf''>4
                                             \f
@@ -3495,14 +3493,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <a' a''>8.
+                                        <bqs' bqf''>8.
                                         \p
                                         \<
-                                        \glissando
+                                        ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <a' a''>16
+                                        <bqs' bqf''>16
                                         \f
                                         ]
 
@@ -3513,13 +3511,14 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 27]
 
-                                            <bqs' bqf''>2.
+                                            <a' a''>2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
 
-                                            <bqs' bqf''>4
+                                            <a' a''>4
                                             \f
+                                            \)
                                             \bar "||"
 
                                         }
@@ -3558,9 +3557,11 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     g8
                                     \pp
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -4374,6 +4375,7 @@
                                     %! baca.PiecewiseCommand._call(3)
                                     %! SPANNER_STOP
                                     \ff
+                                    \)
                                     \stopTrillSpan
                                     ]
 
@@ -4382,32 +4384,36 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     g32
                                     \ff
                                     - \staccato
+                                    [
 
                                     r32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     af32
                                     - \staccato
-                                    [
 
                                     g32
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     gqf32
                                     - \staccato
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
@@ -4438,26 +4444,26 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
-                                r16
-
-                                r16
-
                                 \override Staff.Stem.stemlet-length = 0.75
+                                r16
+                                [
+
+                                r16
+
                                 af16
                                 - \staccato
-                                [
 
                                 \revert Staff.Stem.stemlet-length
                                 fs16
                                 - \staccato
                                 ]
 
-                                r16
-
                                 \override Staff.Stem.stemlet-length = 0.75
+                                r16
+                                [
+
                                 g16
                                 - \staccato
-                                [
 
                                 bf16
                                 - \staccato
@@ -4471,12 +4477,12 @@
                                 \times 8/7
                                 {
 
-                                    r16
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
                                     c'32
                                     - \staccato
-                                    [
 
                                     bqs32
                                     - \staccato
@@ -4484,11 +4490,11 @@
                                     bf32
                                     - \staccato
 
-                                    a32
+                                    g32
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    bf32
+                                    af32
                                     - \staccato
                                     ]
 
@@ -4497,22 +4503,22 @@
                                 \times 2/3
                                 {
 
-                                    r8
-
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    a16
-                                    - \staccato
+                                    r8
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
-                                    aqf16
+                                    g16
                                     - \staccato
-                                    ]
+
+                                    gqf16
+                                    - \staccato
 
                                     r16
 
-                                    b16
+                                    \revert Staff.Stem.stemlet-length
+                                    a16
                                     - \staccato
+                                    ]
 
                                 }
 
@@ -4523,50 +4529,48 @@
                                     % [viola voice measure 13]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    bqs16
+                                    aqs16
                                     - \staccato
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
-                                    c'16
+                                    bf16
                                     - \staccato
-                                    ]
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    cs'16
-                                    - \staccato
-                                    [
-
-                                    bqs16
+                                    b16
                                     - \staccato
 
-                                    bf16
+                                    aqs16
                                     - \staccato
 
                                     af16
                                     - \staccato
 
+                                    fs16
+                                    - \staccato
+
                                     \revert Staff.Stem.stemlet-length
-                                    a16
+                                    g16
                                     - \staccato
                                     ]
 
                                 }
 
-                                r16
-
-                                r16
-
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
-                                - \staccato
+                                r16
                                 [
 
-                                \revert Staff.Stem.stemlet-length
-                                b16
+                                r16
+
+                                bf16
                                 - \staccato
+
+                                \revert Staff.Stem.stemlet-length
+                                a16
+                                - \staccato
+                                %! MATERIAL_COLOR
+                                \)
                                 ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -4579,7 +4583,9 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [viola voice measure 14]
 
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         g4
+                                        \(
                                         %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                         %! abjad.glissando(7)
@@ -4635,6 +4641,7 @@
                                     \glissando
 
                                     c'4
+                                    \)
                                     \stopTrillSpan
 
                                 }
@@ -4642,7 +4649,11 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \times 4/5
                                 {
@@ -4653,17 +4664,13 @@
                                     - \staccato
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
                                     f'16
                                     - \staccato
-                                    ]
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     e'16
                                     - \staccato
-                                    [
 
                                     eqf'16
                                     - \staccato
@@ -4674,49 +4681,45 @@
                                     gqf'16
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     g'16
                                     - \staccato
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
                                     af'16
                                     - \staccato
-                                    [
 
-                                    \revert Staff.Stem.stemlet-length
                                     gqf'16
                                     - \staccato
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     f'16
                                     - \staccato
-                                    [
 
                                     ef'16
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     e'16
                                     - \staccato
-                                    ]
 
                                     r8
 
+                                    \revert Staff.Stem.stemlet-length
                                     g'16
                                     - \staccato
+                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -4733,22 +4736,28 @@
                                 a'16
                                 - \staccato
 
-                                \revert Staff.Stem.stemlet-length
                                 aqf'16
                                 - \staccato
-                                ]
 
+                                \revert Staff.Stem.stemlet-length
                                 r16
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
 
                                 \harmonicsOn
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c''1.
                                 \sfp
                                 ^ \markup (IV)
                                 %! abjad.glissando(7)
                                 \glissando
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
@@ -4785,6 +4794,8 @@
                                 % [viola voice measure 22]
 
                                 d'''2.
+                                %! MATERIAL_COLOR
+                                \)
                                 \harmonicsOff
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -4794,11 +4805,13 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 23]
 
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                     <fs' e''>2.
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    \(
+                                    ~
 
                                     <fs' e''>4
                                     \f
@@ -4806,14 +4819,14 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                <d' fs''>8.
+                                <fs' e''>8.
                                 \p
                                 \<
-                                \glissando
+                                ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                <d' fs''>16
+                                <fs' e''>16
                                 \f
                                 ]
 
@@ -4824,12 +4837,12 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 24]
 
-                                    <fs' e''>2.
+                                    <d' fs''>2.
                                     \p
                                     \<
-                                    \glissando
+                                    ~
 
-                                    <fs' e''>4
+                                    <d' fs''>4
                                     \f
 
                                 }
@@ -4845,7 +4858,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
 
                                     <d' fs''>4
                                     \f
@@ -4856,7 +4869,7 @@
                                 <fs' e''>8.
                                 \p
                                 \<
-                                \glissando
+                                ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -4871,25 +4884,25 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 26]
 
-                                    <d' fs''>2.
+                                    <fs' e''>2.
                                     \p
                                     \<
-                                    \glissando
+                                    ~
 
-                                    <d' fs''>4
+                                    <fs' e''>4
                                     \f
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                <fs' e''>8.
+                                <d' fs''>8.
                                 \p
                                 \<
-                                \glissando
+                                ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                <fs' e''>16
+                                <d' fs''>16
                                 \f
                                 ]
 
@@ -4903,10 +4916,11 @@
                                     <d' fs''>2.
                                     \p
                                     \<
-                                    \glissando
+                                    ~
 
                                     <d' fs''>4
                                     \f
+                                    \)
                                     \bar "||"
 
                                 }
@@ -4940,9 +4954,11 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "bass"
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c16.
                                 \pp
+                                \(
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -5254,6 +5270,7 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         d8
+                                        \)
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -5267,32 +5284,36 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     b,32
                                     \fff
                                     - \staccato
+                                    [
 
                                     r32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     c32
                                     - \staccato
-                                    [
 
                                     b,32
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     bqf,32
                                     - \staccato
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
@@ -5316,6 +5337,8 @@
                                     \revert Staff.Stem.stemlet-length
                                     dqf16
                                     - \staccato
+                                    %! MATERIAL_COLOR
+                                    \)
                                     ]
 
                                 }
@@ -5327,8 +5350,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 6]
 
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     c4.
                                     \pp
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5553,37 +5578,42 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \mf
+                                \)
                                 \stopTrillSpan
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 9]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     e32
                                     \fff
                                     - \staccato
+                                    [
 
                                     r32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     f32
                                     - \staccato
-                                    [
 
                                     e32
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     eqf32
                                     - \staccato
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
@@ -5604,17 +5634,13 @@
                                     af16
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     gqf16
                                     - \staccato
-                                    ]
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     f16
                                     - \staccato
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     ef16
@@ -5623,12 +5649,12 @@
 
                                 }
 
-                                r16
-
                                 \override Staff.Stem.stemlet-length = 0.75
+                                r16
+                                [
+
                                 e16
                                 - \staccato
-                                [
 
                                 g16
                                 - \staccato
@@ -5642,12 +5668,12 @@
                                 \times 8/7
                                 {
 
-                                    r16
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
                                     a32
                                     - \staccato
-                                    [
 
                                     aqf32
                                     - \staccato
@@ -5655,12 +5681,14 @@
                                     g32
                                     - \staccato
 
-                                    fs32
+                                    e32
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    g32
+                                    f32
                                     - \staccato
+                                    %! MATERIAL_COLOR
+                                    \)
                                     ]
 
                                 }
@@ -5672,7 +5700,9 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
 
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     c1.
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5734,6 +5764,7 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     ef8
+                                    \)
                                     \stopTrillSpan
                                     ]
 
@@ -5746,10 +5777,14 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 11]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     fs32
                                     \ff
                                     - \staccato
+                                    %! MATERIAL_COLOR
+                                    \(
                                     [
 
                                     g32
@@ -5761,51 +5796,43 @@
                                     fqs32
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     af32
                                     - \staccato
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     aqf32
                                     - \staccato
-                                    [
 
-                                    \revert Staff.Stem.stemlet-length
                                     a32
                                     - \staccato
-                                    ]
 
                                     r32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     bf32
                                     - \staccato
-                                    [
 
                                     aqf32
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     g32
                                     - \staccato
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r32
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
-                                    r16
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
                                     f16
                                     - \staccato
-                                    [
 
                                     fs16
                                     - \staccato
@@ -5830,22 +5857,22 @@
                                 \times 2/3
                                 {
 
-                                    b16
-                                    - \staccato
-
-                                    r8
-
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    bqf16
+                                    b16
                                     - \staccato
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
+                                    r8
+
+                                    bqf16
+                                    - \staccato
+
                                     a16
                                     - \staccato
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
@@ -5853,19 +5880,21 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    af16
+                                    fs16
                                     - \staccato
                                     [
 
-                                    a16
+                                    g16
+                                    - \staccato
+
+                                    fs16
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    af16
-                                    - \staccato
-                                    ]
-
                                     r8
+                                    %! MATERIAL_COLOR
+                                    \)
+                                    ]
 
                                 }
 
@@ -5876,8 +5905,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 13]
 
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c8
+                                    \(
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -5942,6 +5973,7 @@
                                         ]
 
                                         cs4
+                                        \)
                                         \stopTrillSpan
 
                                     }
@@ -5951,21 +5983,25 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r2
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \times 8/11
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     f'16
                                     \f
                                     - \staccato
+                                    [
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     fs'16
                                     - \staccato
-                                    [
 
                                     f'16
                                     - \staccato
@@ -5976,15 +6012,15 @@
                                     g'16
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     gqs'16
                                     - \staccato
-                                    ]
 
                                     r8
 
+                                    \revert Staff.Stem.stemlet-length
                                     af'16
                                     - \staccato
+                                    ]
 
                                 }
 
@@ -5996,12 +6032,12 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 15]
 
-                                    r16
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
                                     a'16
                                     - \staccato
-                                    [
 
                                     gqs'16
                                     - \staccato
@@ -6012,17 +6048,13 @@
                                     e'16
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     f'16
                                     - \staccato
-                                    ]
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     af'16
                                     - \staccato
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     g'16
@@ -6034,33 +6066,29 @@
                                 \times 8/9
                                 {
 
-                                    r16
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    [
+
                                     bf'16
                                     - \staccato
-                                    [
 
                                     aqs'16
                                     - \staccato
 
-                                    \revert Staff.Stem.stemlet-length
                                     af'16
                                     - \staccato
-                                    ]
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
-                                    g'16
+                                    f'16
                                     - \staccato
-                                    [
 
-                                    af'16
+                                    fs'16
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    g'16
+                                    f'16
                                     - \staccato
                                     ]
 
@@ -6072,51 +6100,61 @@
                                 % [cello voice measure 16]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                gqf'16
+                                eqs'16
                                 - \staccato
                                 [
 
-                                \revert Staff.Stem.stemlet-length
-                                a'16
+                                g'16
                                 - \staccato
+
+                                r16
+
+                                \revert Staff.Stem.stemlet-length
+                                r16
                                 ]
-
-                                r16
-
-                                r16
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                aqs'16
+                                gqs'16
                                 - \staccato
                                 [
-
-                                bf'16
-                                - \staccato
-
-                                b'16
-                                - \staccato
-
-                                \revert Staff.Stem.stemlet-length
-                                aqs'16
-                                - \staccato
-                                ]
 
                                 af'16
                                 - \staccato
 
-                                r16
+                                a'16
+                                - \staccato
 
-                                r16
+                                \revert Staff.Stem.stemlet-length
+                                gqs'16
+                                - \staccato
+                                ]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 fs'16
                                 - \staccato
+                                [
+
+                                r16
+
+                                r16
+
+                                \revert Staff.Stem.stemlet-length
+                                e'16
+                                - \staccato
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c,1.
                                 \sfp
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -6153,6 +6191,8 @@
                                 % [cello voice measure 22]
 
                                 c,2.
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4
@@ -6161,66 +6201,16 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 23]
 
+                                    \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                     d2.
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
                                     \stopTextSpan
-                                    \glissando
+                                    \(
+                                    ~
 
                                     d4
-                                    \f
-
-                                }
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                a8.
-                                \p
-                                \<
-                                \glissando
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                a16
-                                \f
-                                ]
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 24]
-
-                                    e,2.
-                                    \p
-                                    \<
-                                    \glissando
-                                    - \abjad-dashed-line-with-hook
-                                    - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
-                                    - \tweak staff-padding 4
-                                    \startTextSpan
-
-                                    e,4
-                                    \f
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 25]
-
-                                    d'2.
-                                    \p
-                                    - \tweak stencil #abjad-flared-hairpin
-                                    \<
-                                    \stopTextSpan
-                                    \glissando
-
-                                    d'4
                                     \f
 
                                 }
@@ -6229,7 +6219,7 @@
                                 d8.
                                 \p
                                 \<
-                                \glissando
+                                ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -6242,12 +6232,35 @@
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 26]
+                                    % [cello voice measure 24]
+
+                                    b2.
+                                    \p
+                                    \<
+                                    ~
+                                    - \abjad-dashed-line-with-hook
+                                    - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                    - \tweak staff-padding 4
+                                    \startTextSpan
+
+                                    b4
+                                    \f
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 25]
 
                                     a2.
                                     \p
+                                    - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    \stopTextSpan
+                                    ~
 
                                     a4
                                     \f
@@ -6255,10 +6268,39 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                e,8.
+                                d,8.
                                 \p
                                 \<
-                                \glissando
+                                ~
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                d,16
+                                \f
+                                ]
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 26]
+
+                                    d,2.
+                                    \p
+                                    \<
+                                    ~
+
+                                    d,4
+                                    \f
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                e'8.
+                                \p
+                                \<
+                                ~
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -6266,7 +6308,7 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                e,16
+                                e'16
                                 \f
                                 ]
 
@@ -6281,10 +6323,11 @@
                                     \p
                                     \<
                                     \stopTextSpan
-                                    \glissando
+                                    ~
 
                                     d'4
                                     \f
+                                    \)
                                     \bar "||"
 
                                 }
@@ -6301,5 +6344,5 @@
 
         >>
     >>
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 }

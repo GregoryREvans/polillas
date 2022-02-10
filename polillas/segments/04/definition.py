@@ -457,22 +457,22 @@ maker = evans.SegmentMaker(
         evans.call(
             "violin 1 voice",
             polillas.alternate_glissandi,
-            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26]).notes(),
+            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26], notes=True),
         ),
         evans.call(
             "violin 2 voice",
             polillas.alternate_glissandi,
-            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26]).notes(),
+            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26], notes=True),
         ),
         evans.call(
             "viola voice",
             polillas.alternate_glissandi,
-            polillas.select_measures([22, 23, 24, 25, 26]).notes(),
+            polillas.select_measures([22, 23, 24, 25, 26], notes=True),
         ),
         evans.call(
             "cello voice",
             polillas.alternate_glissandi,
-            polillas.select_measures([22, 23, 24, 25, 26]).notes(),
+            polillas.select_measures([22, 23, 24, 25, 26], notes=True),
         ),
         evans.call(
             "violin 1 voice",
@@ -563,92 +563,92 @@ maker = evans.SegmentMaker(
         evans.attach(
             "violin 1 voice",
             polillas.start_bis_trill_one,
-            polillas.select_measures([6]).note(0),
+            polillas.select_measures([6], note=0),
         ),
         evans.attach(
             "violin 1 voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([10]).note(-1),
+            polillas.select_measures([10], note=-1),
         ),
         evans.attach(
             "violin 1 voice",
             polillas.start_bis_trill_one,
-            polillas.select_measures([13]).note(0),
+            polillas.select_measures([13], note=0),
         ),
         evans.attach(
             "violin 1 voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([13]).note(-1),
+            polillas.select_measures([13], note=-1),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.start_bis_trill_one,
-            polillas.select_measures([6]).note(0),
+            polillas.select_measures([6], note=0),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([9]).note(-1),
+            polillas.select_measures([9], note=-1),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.start_bis_trill_one,
-            polillas.select_measures([14]).note(0),
+            polillas.select_measures([14], note=0),
         ),
         evans.attach(
             "violin 2 voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([14]).note(-1),
+            polillas.select_measures([14], note=-1),
         ),
         evans.attach(
             "viola voice",
             polillas.start_bis_trill_one,
-            polillas.select_measures([6]).note(0),
+            polillas.select_measures([6], note=0),
         ),
         evans.attach(
             "viola voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([9]).note(-1),
+            polillas.select_measures([9], note=-1),
         ),
         evans.attach(
             "viola voice",
             polillas.start_bis_trill_one,
-            polillas.select_measures([13]).note(0),
+            polillas.select_measures([13], note=0),
         ),
         evans.attach(
             "viola voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([13]).note(-1),
+            polillas.select_measures([13], note=-1),
         ),
         evans.attach(
             "cello voice",
             polillas.start_bis_trill_two,
-            polillas.select_measures([5]).note(0),
+            polillas.select_measures([5], note=0),
         ),
         evans.attach(
             "cello voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([7]).note(-1),
+            polillas.select_measures([7], note=-1),
         ),
         evans.attach(
             "cello voice",
             polillas.start_bis_trill_two,
-            polillas.select_measures([9]).note(0),
+            polillas.select_measures([9], note=0),
         ),
         evans.attach(
             "cello voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([9]).note(-1),
+            polillas.select_measures([9], note=-1),
         ),
         evans.attach(
             "cello voice",
             polillas.start_bis_trill_two,
-            polillas.select_measures([12]).note(0),
+            polillas.select_measures([12], note=0),
         ),
         evans.attach(
             "cello voice",
             polillas.stop_bis_trill,
-            polillas.select_measures([12]).note(-1),
+            polillas.select_measures([12], note=-1),
         ),
         evans.call(
             "cello voice",
@@ -663,7 +663,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "cello voice",
             polillas.scordatura(staff_padding=4),
-            polillas.select_measures([25]).leaves().get([2, 3]),
+            polillas.select_measures([25], leaves=[2, 3]),
         ),
         evans.call(
             "score",

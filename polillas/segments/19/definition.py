@@ -60,12 +60,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "viola voice",
             abjad.Clef("alto"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
-            polillas.select_measures([3]).leaf(0),
+            polillas.select_measures([3], leaf=0),
         ),
         evans.MusicCommand(
             [

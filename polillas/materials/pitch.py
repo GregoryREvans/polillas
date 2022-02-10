@@ -73,10 +73,10 @@ def D_pitches(
     if stage == 2:
         if direction == "up":
             seq = [0, 1, 0.5]
-            loop = baca.loop(seq, intervals)
+            loop = evans.loop(seq, intervals)
         else:
             seq = [0, -1, -0.5]
-            loop = baca.loop(seq, intervals)
+            loop = evans.loop(seq, intervals)
         return loop
 
 
@@ -126,5 +126,5 @@ def F_pitches(stage=1, transposition=0, step=2):
         seq = evans.PitchSegment(
             [0, 1, 0, -0.5, 2, 2.5, 3, 4, 2.5, 1, -1, 0, 3, 2, 5, 4.5, 3]
         ).transpose(transposition)
-        loop = baca.loop(seq, [step])
+        loop = evans.loop(seq, [step])
         return loop

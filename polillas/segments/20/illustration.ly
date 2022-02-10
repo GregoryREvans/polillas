@@ -1,21 +1,18 @@
 %! abjad.LilyPondFile._get_format_pieces()
-\version "2.23.2"
+\version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/20/../../build/segment_stylesheet.ily"
-
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 \score
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 {
     <<
-      { \include "layout.ly" }
+
         \context Score = "Score"
         <<
-
+      { \include "layout.ly" }
             \context TimeSignatureContext = "Global Context"
             {
                 %! COMMENT_MEASURE_NUMBERS
@@ -215,6 +212,8 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a'16
                                         %! baca.hairpin()
@@ -245,6 +244,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
                                         [
 
                                         \tweak Accidental.stencil ##f
@@ -416,20 +417,26 @@
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
-                                        r16
-
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
+
                                         eqs''16
                                         \mp
                                         - \abjad-dashed-line-with-hook
                                         - \baca-text-spanner-left-text "spazzolato"
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
-                                        [
 
                                         d''16
 
@@ -440,11 +447,15 @@
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d''16
+                                            [
 
                                             r4
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
@@ -457,29 +468,37 @@
 
                                             fqs''16
 
-                                            \revert Staff.Stem.stemlet-length
                                             dqs''16
-                                            ]
 
                                             r16
 
+                                            \revert Staff.Stem.stemlet-length
                                             gqf''16
+                                            ]
 
                                         }
 
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             bqf''16
                                             \stopTextSpanOne
+                                            [
 
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         e''2..
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -490,6 +509,8 @@
                                         %! SPANNER_START
                                         \>
                                         ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
@@ -508,26 +529,32 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 9]
 
-                                        r16
-
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
+
                                         eqs''16
                                         \mp
                                         - \abjad-dashed-line-with-hook
                                         - \baca-text-spanner-left-text "spazzolato"
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
-                                        [
+
+                                        d''16
 
                                         \revert Staff.Stem.stemlet-length
-                                        d''16
-                                        ]
-
                                         r16
+                                        ]
 
                                         \times 2/3
                                         {
@@ -540,13 +567,13 @@
 
                                             cs''16
 
-                                            \revert Staff.Stem.stemlet-length
                                             fqs''16
-                                            ]
 
                                             r16
 
+                                            \revert Staff.Stem.stemlet-length
                                             dqs''16
+                                            ]
 
                                         }
 
@@ -557,32 +584,40 @@
                                             gqf''16
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             bqf''16
-                                            ]
 
                                             r8
 
+                                            \revert Staff.Stem.stemlet-length
                                             eqs''16
+                                            ]
 
                                         }
 
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             d''16
                                             \stopTextSpanOne
+                                            [
 
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
+                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         a'4.
                                         \pp
                                         ~
+                                        \(
 
                                         \times 2/3
                                         {
@@ -674,6 +709,7 @@
                                             \revert Staff.Stem.stemlet-length
                                             a'16
                                             - \baca-circle-bowing
+                                            \)
                                             ]
 
                                         }
@@ -681,6 +717,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         eqs''16
                                         \mp
@@ -688,15 +725,16 @@
                                         - \baca-text-spanner-left-text "spazzolato"
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
+                                        \(
                                         [
 
                                         d''16
 
-                                        \revert Staff.Stem.stemlet-length
                                         dqf''16
-                                        ]
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        ]
 
                                         \times 2/3
                                         {
@@ -707,44 +745,56 @@
 
                                             cs''16
 
-                                            \revert Staff.Stem.stemlet-length
                                             fqs''16
-                                            ]
 
                                             r16
 
                                             dqs''16
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
                                         \times 4/5
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             gqf''16
+                                            [
 
                                             r8
 
                                             bqf''16
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             eqs''16
                                             \stopTextSpanOne
+                                            [
 
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         cs''4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -771,6 +821,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         cs''8.
@@ -799,11 +851,19 @@
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 14]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
 
                                         eqs''16
                                         \mp
@@ -816,15 +876,21 @@
 
                                         d''16
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        ]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r8.
+                                        [
 
                                         dqf''32.
 
                                         r64
 
+                                        \revert Staff.Stem.stemlet-length
                                         r8
+                                        ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
@@ -833,13 +899,17 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 15]
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             r16
+                                            [
 
                                             d''16
 
                                             r4
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
@@ -847,20 +917,27 @@
                                         \times 6/7
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             r8.
+                                            [
 
                                             cs''16
 
                                             r8
 
+                                            \revert Staff.Stem.stemlet-length
                                             fqs''16
                                             \stopTextSpanOne
+                                            \)
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         e''4.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -887,6 +964,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         e''16
@@ -911,11 +990,19 @@
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 18]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
 
                                         eqs''16
                                         \mp
@@ -929,11 +1016,17 @@
                                         d''16
                                         \stopTextSpanOne
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         c''2.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -973,6 +1066,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         c''4.
                                         ~
@@ -996,6 +1091,8 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         \bar "||"
 
                                     }
@@ -1024,6 +1121,8 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         d'8.
                                         %! baca.hairpin()
@@ -1058,6 +1157,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
                                         [
 
                                         \tweak Accidental.stencil ##f
@@ -1259,21 +1360,27 @@
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        r16
-
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
+
                                         cs''16
                                         \mp
                                         - \abjad-dashed-line-with-hook
                                         - \baca-text-spanner-left-text "spazzolato"
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
-                                        [
 
                                         cqs''16
 
@@ -1284,11 +1391,15 @@
                                         \times 2/3
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             c''16
+                                            [
 
                                             r4
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
@@ -1301,24 +1412,32 @@
 
                                             dqf''16
 
-                                            \revert Staff.Stem.stemlet-length
                                             fqs''16
-                                            ]
 
                                             r16
 
+                                            \revert Staff.Stem.stemlet-length
                                             aqs''16
+                                            ]
 
                                         }
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         eqf''16
                                         \stopTextSpanOne
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         d'2..
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1329,6 +1448,8 @@
                                         %! SPANNER_START
                                         \>
                                         ~
+                                        %! MATERIAL_COLOR
+                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
@@ -1347,26 +1468,32 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
-                                        r16
-
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
+
                                         cs''16
                                         \mp
                                         - \abjad-dashed-line-with-hook
                                         - \baca-text-spanner-left-text "spazzolato"
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
-                                        [
+
+                                        cqs''16
 
                                         \revert Staff.Stem.stemlet-length
-                                        cqs''16
-                                        ]
-
                                         r16
+                                        ]
 
                                         \times 2/3
                                         {
@@ -1379,13 +1506,13 @@
 
                                             eqs''16
 
-                                            \revert Staff.Stem.stemlet-length
                                             dqf''16
-                                            ]
 
                                             r16
 
+                                            \revert Staff.Stem.stemlet-length
                                             fqs''16
+                                            ]
 
                                         }
 
@@ -1396,20 +1523,26 @@
                                             aqs''16
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             eqf''16
-                                            ]
 
                                             r8
 
+                                            \revert Staff.Stem.stemlet-length
                                             cs''16
+                                            ]
 
                                         }
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         cqs''16
                                         \stopTextSpanOne
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
 
                                         \times 2/3
                                         {
@@ -1417,8 +1550,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 10]
 
+                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             d'4..
                                             \pp
+                                            \(
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqf'16
@@ -1523,6 +1658,7 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             dqf'32
+                                            \)
                                             ]
 
                                         }
@@ -1530,6 +1666,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         cs''16
                                         \mp
@@ -1537,15 +1674,16 @@
                                         - \baca-text-spanner-left-text "spazzolato"
                                         - \tweak staff-padding 5
                                         \startTextSpanOne
+                                        \(
                                         [
 
                                         cqs''16
 
-                                        \revert Staff.Stem.stemlet-length
                                         cs''16
-                                        ]
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        ]
 
                                         \times 2/3
                                         {
@@ -1556,39 +1694,51 @@
 
                                             eqs''16
 
-                                            \revert Staff.Stem.stemlet-length
                                             dqf''16
-                                            ]
 
                                             r16
 
                                             fqs''16
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
                                         \times 4/5
                                         {
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             aqs''16
+                                            [
 
                                             r8
 
                                             eqf''16
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         cs''16
                                         \stopTextSpanOne
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 13]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         bf'2
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1615,6 +1765,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         bf'8.
@@ -1634,11 +1786,19 @@
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r16
+                                        %! MATERIAL_COLOR
+                                        \(
+                                        [
 
                                         cs''16
                                         \mp
@@ -1651,15 +1811,21 @@
 
                                         cqs''16
 
+                                        \revert Staff.Stem.stemlet-length
                                         r16
+                                        ]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r8.
+                                        [
 
                                         cs''32.
 
                                         r64
 
+                                        \revert Staff.Stem.stemlet-length
                                         r8
+                                        ]
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/7
@@ -1668,26 +1834,38 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 15]
 
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             r16
+                                            [
 
                                             c''16
 
                                             r4
 
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r8.
+                                        [
 
                                         eqs''16
                                         \stopTextSpanOne
 
+                                        \revert Staff.Stem.stemlet-length
                                         r8
+                                        %! MATERIAL_COLOR
+                                        \)
+                                        ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         c''4.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1714,6 +1892,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         c''4
                                         ~
@@ -1732,6 +1912,8 @@
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
 
                                         \times 4/5
                                         {
@@ -1739,7 +1921,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 18]
 
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                            \override Staff.Stem.stemlet-length = 0.75
                                             r16
+                                            %! MATERIAL_COLOR
+                                            \(
+                                            [
 
                                             cs''16
                                             \mp
@@ -1750,16 +1938,22 @@
 
                                             r8
 
+                                            \revert Staff.Stem.stemlet-length
                                             cqs''16
                                             \stopTextSpanOne
+                                            ]
 
                                         }
 
                                         r8
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         cs''2.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -1799,6 +1993,8 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         cs''4.
                                         ~
@@ -1822,6 +2018,8 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \stopTextSpanOne
+                                        %! MATERIAL_COLOR
+                                        \)
                                         \bar "||"
 
                                     }
@@ -1854,14 +2052,22 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                r2.
+                                %! applying invisibility
+                                \once \override Rest.transparent = ##t
+                                r1 * 3/8
+
+                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c4.
                                 \sfz
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
@@ -1876,6 +2082,8 @@
                                 % [viola voice measure 4]
 
                                 c2
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \times 2/3
                                 {
@@ -1883,35 +2091,43 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 5]
 
-                                    r16
-
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
                                     gqf'16
                                     \mp
                                     - \abjad-dashed-line-with-hook
                                     - \baca-text-spanner-left-text "spazzolato"
                                     - \tweak staff-padding 5
                                     \startTextSpanOne
-                                    [
 
                                     g'16
 
                                     fs'16
 
-                                    \revert Staff.Stem.stemlet-length
                                     bqf'16
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r4
+                                    [
 
+                                    \revert Staff.Stem.stemlet-length
                                     gqs'16
+                                    ]
 
                                 }
 
@@ -1922,15 +2138,11 @@
                                     bqs'16
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
                                     eqf''16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     aqs'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     g'16
@@ -1940,10 +2152,14 @@
                                 }
 
                                 r8
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c2..
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -1954,6 +2170,8 @@
                                 %! SPANNER_START
                                 \>
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
@@ -1972,6 +2190,8 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \p
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \times 2/3
                                 {
@@ -1979,26 +2199,26 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 9]
 
-                                    r16
-
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r16
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
+
                                     gqf'16
                                     \mp
                                     - \abjad-dashed-line-with-hook
                                     - \baca-text-spanner-left-text "spazzolato"
                                     - \tweak staff-padding 5
                                     \startTextSpanOne
-                                    [
 
-                                    \revert Staff.Stem.stemlet-length
                                     g'16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     fs'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     bqf'16
@@ -2013,15 +2233,11 @@
                                     gqs'16
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
                                     bqs'16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     eqf''16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     aqs'16
@@ -2032,13 +2248,13 @@
                                 \times 4/5
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     g'16
+                                    [
 
                                     r8
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     gqf'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     g'16
@@ -2048,6 +2264,8 @@
                                 }
 
                                 r8
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \times 2/3
                                 {
@@ -2055,9 +2273,11 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 10]
 
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     c4.
                                     \pp
                                     - \baca-circle-bowing
+                                    \(
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c8
@@ -2146,6 +2366,7 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     c32
+                                    \)
                                     ]
 
                                 }
@@ -2156,6 +2377,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 12]
 
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     gqf'16
                                     \mp
@@ -2163,19 +2385,16 @@
                                     - \baca-text-spanner-left-text "spazzolato"
                                     - \tweak staff-padding 5
                                     \startTextSpanOne
+                                    \(
                                     [
 
                                     g'16
 
-                                    \revert Staff.Stem.stemlet-length
                                     fs'16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     bqf'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     gqs'16
@@ -2186,7 +2405,9 @@
                                 \times 4/5
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     bqs'16
+                                    [
 
                                     r16
 
@@ -2194,29 +2415,39 @@
 
                                     r16
 
+                                    \revert Staff.Stem.stemlet-length
                                     aqs'16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r8
+                                    [
 
                                     g'16
 
                                     r16
 
+                                    \revert Staff.Stem.stemlet-length
                                     gqf'16
                                     \stopTextSpanOne
+                                    ]
 
                                 }
 
                                 r8
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 d'4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2243,6 +2474,8 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 d'8.
@@ -2271,11 +2504,19 @@
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 14]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                \override Staff.Stem.stemlet-length = 0.75
                                 r32.
+                                %! MATERIAL_COLOR
+                                \(
+                                [
 
                                 gqf'32.
                                 \mp
@@ -2292,17 +2533,23 @@
 
                                 r64
 
+                                \revert Staff.Stem.stemlet-length
                                 r8
+                                ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r8
+                                    [
 
                                     fs'16
 
+                                    \revert Staff.Stem.stemlet-length
                                     r4
+                                    ]
 
                                 }
 
@@ -2313,13 +2560,19 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 15]
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     bqf'16
+                                    [
 
+                                    \revert Staff.Stem.stemlet-length
                                     r4.
+                                    ]
 
                                 }
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 r8
+                                [
 
                                 gqs'16
 
@@ -2327,12 +2580,17 @@
 
                                 r16
 
+                                \revert Staff.Stem.stemlet-length
                                 bqs'16
                                 \stopTextSpanOne
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 a4.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2359,6 +2617,8 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 a16
@@ -2383,11 +2643,19 @@
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 18]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                \override Staff.Stem.stemlet-length = 0.75
                                 r16
+                                %! MATERIAL_COLOR
+                                \(
+                                [
 
                                 gqf'16
                                 \mp
@@ -2401,11 +2669,17 @@
                                 g'16
                                 \stopTextSpanOne
 
+                                \revert Staff.Stem.stemlet-length
                                 r16
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 af'2.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2445,6 +2719,8 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                %! MATERIAL_COLOR
+                                \(
 
                                 af'4.
                                 ~
@@ -2468,6 +2744,8 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
+                                %! MATERIAL_COLOR
+                                \)
                                 \bar "||"
 
                             }
@@ -2497,9 +2775,13 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "bass"
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c,2.
                                 \sfz
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -2524,6 +2806,8 @@
                                 % [cello voice measure 4]
 
                                 c,2
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \times 2/3
                                 {
@@ -2531,36 +2815,44 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 5]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r16
                                     \stopTextSpan
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     c'16
                                     \mp
                                     - \abjad-dashed-line-with-hook
                                     - \baca-text-spanner-left-text "spazzolato"
                                     - \tweak staff-padding 5
                                     \startTextSpanOne
-                                    [
 
                                     b16
 
                                     eqf'16
 
-                                    \revert Staff.Stem.stemlet-length
                                     cqs'16
-                                    ]
 
+                                    \revert Staff.Stem.stemlet-length
                                     r16
+                                    ]
 
                                 }
 
                                 \times 4/5
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r4
+                                    [
 
+                                    \revert Staff.Stem.stemlet-length
                                     eqs'16
+                                    ]
 
                                 }
 
@@ -2572,22 +2864,26 @@
                                 dqs'16
                                 ]
 
-                                r16
-
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                r16
                                 [
 
-                                \revert Staff.Stem.stemlet-length
+                                c'16
+
                                 bqs16
                                 \stopTextSpanOne
-                                ]
 
+                                \revert Staff.Stem.stemlet-length
                                 r16
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c,2..
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2598,6 +2894,8 @@
                                 %! SPANNER_START
                                 \>
                                 ~
+                                %! MATERIAL_COLOR
+                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -2620,6 +2918,8 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \p
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \times 2/3
                                 {
@@ -2627,27 +2927,27 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r16
                                     \stopTextSpan
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     c'16
                                     \mp
                                     - \abjad-dashed-line-with-hook
                                     - \baca-text-spanner-left-text "spazzolato"
                                     - \tweak staff-padding 5
                                     \startTextSpanOne
-                                    [
 
-                                    \revert Staff.Stem.stemlet-length
                                     b16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     eqf'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     cqs'16
@@ -2662,15 +2962,11 @@
                                     eqs'16
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
                                     aqf'16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     dqs'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     c'16
@@ -2678,22 +2974,28 @@
 
                                 }
 
-                                bqs16
-
-                                r16
-
-                                r16
-
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                bqs16
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                b16
-                                \stopTextSpanOne
+                                r16
                                 ]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 r16
+                                [
+
+                                c'16
+
+                                b16
+                                \stopTextSpanOne
+
+                                \revert Staff.Stem.stemlet-length
+                                r16
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
 
                                 \times 2/3
                                 {
@@ -2701,9 +3003,11 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 10]
 
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     bf,8
                                     \pp
+                                    \(
                                     [
 
                                     \revert Staff.Stem.stemlet-length
@@ -2799,6 +3103,7 @@
                                 }
 
                                 bf,4
+                                \)
 
                                 \times 2/3
                                 {
@@ -2806,6 +3111,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 12]
 
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'16
                                     \mp
@@ -2813,19 +3119,16 @@
                                     - \baca-text-spanner-left-text "spazzolato"
                                     - \tweak staff-padding 5
                                     \startTextSpanOne
+                                    \(
                                     [
 
                                     b16
 
-                                    \revert Staff.Stem.stemlet-length
                                     eqf'16
-                                    ]
 
                                     r16
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     cqs'16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     eqs'16
@@ -2836,7 +3139,9 @@
                                 \times 4/5
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     aqf'16
+                                    [
 
                                     r16
 
@@ -2844,24 +3149,34 @@
 
                                     r16
 
+                                    \revert Staff.Stem.stemlet-length
                                     c'16
+                                    ]
 
                                 }
 
                                 r8
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 bqs16
+                                [
 
                                 r16
 
                                 c'16
                                 \stopTextSpanOne
 
+                                \revert Staff.Stem.stemlet-length
                                 r16
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 eqf2
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2888,6 +3203,8 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                %! MATERIAL_COLOR
+                                \(
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 eqf8.
@@ -2907,11 +3224,19 @@
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 14]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                \override Staff.Stem.stemlet-length = 0.75
                                 r32.
+                                %! MATERIAL_COLOR
+                                \(
+                                [
 
                                 c'32.
                                 \mp
@@ -2928,30 +3253,42 @@
 
                                 r64
 
+                                \revert Staff.Stem.stemlet-length
                                 r8
+                                ]
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
                                 {
 
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r8
+                                    [
 
                                     eqf'16
 
+                                    \revert Staff.Stem.stemlet-length
                                     r4
+                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 cqs'16
+                                [
 
                                 r16
 
+                                \revert Staff.Stem.stemlet-length
                                 r4
+                                ]
 
+                                \override Staff.Stem.stemlet-length = 0.75
                                 r8
+                                [
 
                                 r64
 
@@ -2964,11 +3301,17 @@
                                 aqf'32.
                                 \stopTextSpanOne
 
+                                \revert Staff.Stem.stemlet-length
                                 r32.
+                                %! MATERIAL_COLOR
+                                \)
+                                ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 aqs,4.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2995,6 +3338,8 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                %! MATERIAL_COLOR
+                                \(
 
                                 aqs,4
                                 ~
@@ -3013,6 +3358,8 @@
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \times 4/5
                                 {
@@ -3020,7 +3367,13 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 18]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r16
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
                                     c'16
                                     \mp
@@ -3031,17 +3384,23 @@
 
                                     r8
 
+                                    \revert Staff.Stem.stemlet-length
                                     b16
                                     \stopTextSpanOne
+                                    ]
 
                                 }
 
                                 r8
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
                                 \clef "treble"
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 b'2.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -3081,6 +3440,8 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                %! MATERIAL_COLOR
+                                \(
 
                                 b'4.
                                 ~
@@ -3104,6 +3465,8 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
+                                %! MATERIAL_COLOR
+                                \)
                                 \bar "||"
 
                             }
@@ -3118,5 +3481,5 @@
 
         >>
     >>
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 }

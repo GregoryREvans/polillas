@@ -1,21 +1,18 @@
 %! abjad.LilyPondFile._get_format_pieces()
-\version "2.23.2"
+\version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
-%! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/09/../../build/segment_stylesheet.ily"
-
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 \score
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 {
     <<
-      { \include "layout.ly" }
+
         \context Score = "Score"
         <<
-
+      { \include "layout.ly" }
             \context TimeSignatureContext = "Global Context"
             {
                 %! COMMENT_MEASURE_NUMBERS
@@ -133,10 +130,14 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         ef'8
                                         \p
                                         - \tongue #2
                                         \stopTrillSpan
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         r8
 
@@ -148,33 +149,42 @@
                                             - \tongue #2
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             ef'8
                                             - \tongue #3
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            %! MATERIAL_COLOR
+                                            \)
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
+                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         bf'4
                                         \f
                                         ~
+                                        \(
                                         \startTrillSpan cs''
 
                                         bf'16
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         ef'8
                                         \p
                                         - \tongue #3
                                         \stopTrillSpan
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         r8
 
@@ -205,12 +215,12 @@
                                             - \tongue #3
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             fqs'8
                                             - \tongue #2
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            ]
 
                                         }
 
@@ -244,87 +254,105 @@
                                             - \tongue #3
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             ef'16
                                             - \tongue #2
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r32
+                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
+                                        \override Staff.Stem.stemlet-length = 0.75
                                         r16
+                                        [
 
+                                        \revert Staff.Stem.stemlet-length
                                         fs'8
                                         - \tongue #2
+                                        ]
 
                                         r16
 
                                         \times 2/3
                                         {
-
-                                            r16
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            f'8
-                                            - \tongue #2
+                                            r16
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
-                                            af'8
-                                            - \tongue #3
-                                            ]
-
-                                            r16
-
-                                        }
-
-                                        r16
-
-                                        gqs'8
-                                        - \tongue #2
-
-                                        r16
-                                        %! COMMENT_MEASURE_NUMBERS
-                                        %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [violin 1 voice measure 9]
-
-                                        r16
-
-                                        fs'8
-                                        - \tongue #3
-
-                                        f'16
-                                        - \tongue #3
-                                        ~
-
-                                        \times 2/3
-                                        {
-
-                                            f'16
-
-                                            r8
-
-                                            fs'8
+                                            f'8
                                             - \tongue #2
 
+                                            af'8
+                                            - \tongue #3
+
+                                            \revert Staff.Stem.stemlet-length
                                             r16
+                                            ]
 
                                         }
 
                                         r16
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        f'8
+                                        gqs'8
                                         - \tongue #2
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        eqs'16
+                                        r16
+                                        ]
+                                        %! COMMENT_MEASURE_NUMBERS
+                                        %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [violin 1 voice measure 9]
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        r16
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        fs'8
                                         - \tongue #3
+                                        ]
+
+                                        ef'16
+                                        - \tongue #3
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            ef'16
+                                            [
+
+                                            r8
+
+                                            e'8
+                                            - \tongue #2
+
+                                            \revert Staff.Stem.stemlet-length
+                                            r16
+                                            ]
+
+                                        }
+
+                                        r16
+
+                                        \override Staff.Stem.stemlet-length = 0.75
+                                        ef'8
+                                        - \tongue #2
+                                        [
+
+                                        \revert Staff.Stem.stemlet-length
+                                        dqs'16
+                                        - \tongue #3
+                                        %! MATERIAL_COLOR
+                                        \)
                                         ]
                                         \bar "||"
 
@@ -362,10 +390,14 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
+                                        %! MATERIAL_COLOR
+                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         e'8
                                         \p
                                         - \tongue #2
                                         \stopTrillSpan
+                                        %! MATERIAL_COLOR
+                                        \(
 
                                         r8
 
@@ -374,17 +406,22 @@
 
                                         e'8
                                         - \tongue #2
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
+                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         a'4
                                         \f
                                         ~
+                                        \(
                                         \startTrillSpan b'
 
                                         a'16
+                                        \)
 
                                         \times 2/3
                                         {
@@ -392,28 +429,35 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
+                                            %! MATERIAL_COLOR
+                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             e'8
                                             \p
                                             - \tongue #2
                                             \stopTrillSpan
+                                            %! MATERIAL_COLOR
+                                            \(
                                             [
 
-                                            \revert Staff.Stem.stemlet-length
                                             f'8
                                             - \tongue #2
-                                            ]
 
+                                            \revert Staff.Stem.stemlet-length
                                             r8
+                                            ]
 
                                         }
 
                                         e'8
                                         - \tongue #2
+                                        %! MATERIAL_COLOR
+                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
+                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         a'2
                                         \mf
@@ -432,6 +476,7 @@
                                         - \tweak bound-details.right.stencil-align-dir-y #center
                                         - \tweak staff-padding 7
                                         \startTextSpanTwo
+                                        \(
                                         \startTrillSpan b'
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -472,6 +517,7 @@
                                         \f
                                         \stopTextSpanOne
                                         \stopTextSpanTwo
+                                        \)
                                         \stopTrillSpan
                                         \startTrillSpan c''
                                         \bar "||"
@@ -517,14 +563,22 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 2]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r8
                                     \stopTrillSpan
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
                                     b8
                                     \p
                                     - \tongue #3
 
+                                    \revert Staff.Stem.stemlet-length
                                     r8
+                                    ]
 
                                 }
 
@@ -533,23 +587,32 @@
 
                                 b8
                                 - \tongue #3
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
+                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 a'4
                                 \f
                                 ~
+                                \(
                                 \startTrillSpan b'
 
                                 a'16
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
                                 \stopTrillSpan
+                                %! MATERIAL_COLOR
+                                \(
 
                                 b8
                                 \p
@@ -557,10 +620,13 @@
 
                                 c'8
                                 - \tongue #2
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
+                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 a'2
                                 \mf
@@ -579,6 +645,7 @@
                                 - \tweak bound-details.right.stencil-align-dir-y #center
                                 - \tweak staff-padding 7
                                 \startTextSpanTwo
+                                \(
                                 \startTrillSpan b'
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -619,6 +686,7 @@
                                 \f
                                 \stopTextSpanOne
                                 \stopTextSpanTwo
+                                \)
                                 \stopTrillSpan
                                 \startTrillSpan bf'
                                 \bar "||"
@@ -660,14 +728,22 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 2]
 
+                                    %! MATERIAL_COLOR
+                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
+                                    \override Staff.Stem.stemlet-length = 0.75
                                     r8
                                     \stopTrillSpan
+                                    %! MATERIAL_COLOR
+                                    \(
+                                    [
 
                                     a8
                                     \p
                                     - \tongue #3
 
+                                    \revert Staff.Stem.stemlet-length
                                     r8
+                                    ]
 
                                 }
 
@@ -676,23 +752,32 @@
 
                                 a8
                                 - \tongue #2
+                                %! MATERIAL_COLOR
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
+                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 ef'4
                                 \f
                                 ~
+                                \(
                                 \startTrillSpan f'
 
                                 ef'16
+                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
+                                %! MATERIAL_COLOR
+                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
                                 \stopTrillSpan
+                                %! MATERIAL_COLOR
+                                \(
 
                                 a8
                                 \p
@@ -720,12 +805,12 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 6]
 
-                                    r8
-
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    r8
+                                    [
+
                                     b8
                                     - \tongue #3
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     bqs8
@@ -740,17 +825,19 @@
                                 - \tongue #2
 
                                 r8
+                                %! MATERIAL_COLOR
+                                \)
 
                                 \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                     {
-                                        \new Score
+                                        \context Score = "Score"
                                         \with
                                         {
                                             \override SpacingSpanner.spacing-increment = 0.5
                                             proportionalNotationDuration = ##f
                                         }
                                         <<
-                                            \new RhythmicStaff
+                                            \context RhythmicStaff = "Rhythmic_Staff"
                                             \with
                                             {
                                                 \remove Time_signature_engraver
@@ -784,14 +871,15 @@
                                     % [cello voice measure 7]
 
                                     \once \override Beam.grow-direction = #right
+                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     bf,16 * 63/32
                                     \f
                                     - \baca-circle-bowing
                                     \>
+                                    \(
                                     [
 
-                                    \revert Staff.Stem.stemlet-length
                                     bf,16 * 115/64
                                     - \baca-circle-bowing
 
@@ -812,14 +900,14 @@
 
                                 \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                     {
-                                        \new Score
+                                        \context Score = "Score"
                                         \with
                                         {
                                             \override SpacingSpanner.spacing-increment = 0.5
                                             proportionalNotationDuration = ##f
                                         }
                                         <<
-                                            \new RhythmicStaff
+                                            \context RhythmicStaff = "Rhythmic_Staff"
                                             \with
                                             {
                                                 \remove Time_signature_engraver
@@ -857,14 +945,12 @@
 
                                     r16 * 193/64
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     b,16 * 63/64
                                     - \baca-circle-bowing
 
                                     b,16 * 51/64
                                     - \baca-circle-bowing
 
-                                    \revert Staff.Stem.stemlet-length
                                     b,16 * 11/16
                                     - \baca-circle-bowing
 
@@ -877,14 +963,14 @@
 
                                 \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                     {
-                                        \new Score
+                                        \context Score = "Score"
                                         \with
                                         {
                                             \override SpacingSpanner.spacing-increment = 0.5
                                             proportionalNotationDuration = ##f
                                         }
                                         <<
-                                            \new RhythmicStaff
+                                            \context RhythmicStaff = "Rhythmic_Staff"
                                             \with
                                             {
                                                 \remove Time_signature_engraver
@@ -924,24 +1010,20 @@
 
                                     r16 * 39/64
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     cqs16 * 39/64
                                     - \baca-circle-bowing
 
-                                    \revert Staff.Stem.stemlet-length
                                     cqs16 * 5/8
                                     - \baca-circle-bowing
 
                                     r16 * 43/32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     cqs16 * 47/64
                                     - \baca-circle-bowing
 
                                     cqs16 * 51/64
                                     - \baca-circle-bowing
 
-                                    \revert Staff.Stem.stemlet-length
                                     cqs16 * 55/64
                                     - \baca-circle-bowing
 
@@ -952,17 +1034,14 @@
 
                                     r16 * 37/32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     cqs16 * 41/32
                                     - \baca-circle-bowing
 
-                                    \revert Staff.Stem.stemlet-length
                                     cqs16 * 91/64
                                     - \baca-circle-bowing
 
                                     r16 * 105/32
 
-                                    \override Staff.Stem.stemlet-length = 0.75
                                     cqs16 * 29/16
                                     - \baca-circle-bowing
 
@@ -970,6 +1049,7 @@
                                     cqs16 * 121/64
                                     \p
                                     - \baca-circle-bowing
+                                    \)
                                     ]
                                     \bar "||"
 
@@ -988,5 +1068,5 @@
 
         >>
     >>
-%! abjad.LilyPondFile._get_formatted_blocks()
+%! abjad.LilyPondFile._get_format_pieces()
 }

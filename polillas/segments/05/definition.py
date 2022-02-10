@@ -51,7 +51,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "cello voice",
             abjad.Clef("treble"),
-            polillas.select_measures([7]).leaf(0),
+            polillas.select_measures([7], leaf=0),
         ),
         evans.call(
             "violin 1 voice",

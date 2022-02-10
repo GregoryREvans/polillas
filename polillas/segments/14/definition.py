@@ -444,12 +444,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "viola voice",
             abjad.Clef("alto"),
-            polillas.select_measures([0]).leaf(0),
+            polillas.select_measures([0], leaf=0),
         ),
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
-            polillas.select_measures([0]).leaf(0),
+            polillas.select_measures([0], leaf=0),
         ),
         evans.call(
             "violin 1 voice",
@@ -459,7 +459,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.select_measures([13, 14]).leaves().get([0, 1]),
+            polillas.select_measures([13, 14], leaves=[0, 1]),
         ),
         evans.call(
             "violin 2 voice",
@@ -469,7 +469,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.select_measures([13, 14]).leaves().get([0, 1]),
+            polillas.select_measures([13, 14], leaves=[0, 1]),
         ),
         evans.call(
             "viola voice",
@@ -479,7 +479,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.select_measures([13, 14]).leaves().get([0, 1]),
+            polillas.select_measures([13, 14], leaves=[0, 1]),
         ),
         evans.call(
             "cello voice",
@@ -489,7 +489,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.select_measures([13, 14]).leaves().get([0, 1]),
+            polillas.select_measures([13, 14], leaves=[0, 1]),
         ),
         evans.call(
             "score",

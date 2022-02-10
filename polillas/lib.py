@@ -772,7 +772,7 @@ def make_proportaional_global_context(selections):
 
 
 def label_clock_time(selections):
-    abjad.Label(selections).with_start_offsets(clock_time=True)
+    abjad.label.with_start_offsets(selections, clock_time=True)
 
 
 def force_accidental(selections):
@@ -790,8 +790,21 @@ def force_accidental(selections):
             raise Exception(ex)
 
 
-def select_measures(index_list):
-    return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list)
+def select_measures(index_list, leaf=None, leaves=None, logical_ties=None, note=None, notes=None):
+    if leaf is not None:
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).leaf(leaf)
+    elif isinstance(leaves, list):
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).leaves().get(leaves)
+    elif leaves is True:
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).leaves()
+    elif logical_ties is True:
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).logical_ties()
+    elif note is not None:
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).note(note)
+    elif notes is True:
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list).notes()
+    else:
+        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list)
 
 
 hairpins = evans.CyclicList(["<", "<|", "<", "<", "<", "<", "<|", "<"], forget=False)
