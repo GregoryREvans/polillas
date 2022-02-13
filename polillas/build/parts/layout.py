@@ -194,10 +194,10 @@ breaks = evans.Breaks(
     ),
     evans.Page(
         evans.System(measures=9, lbsd=(10, "(21 30 30 30)"), x_offset=1),
-        evans.System(measures=14, lbsd=(114, "(21 30 30 30)"), x_offset=1),
+        evans.System(measures=13, lbsd=(114, "(21 30 30 30)"), x_offset=1),
     ),
     evans.Page(
-        evans.System(measures=10, lbsd=(10, "(21 30 30 30)"), x_offset=1),
+        evans.System(measures=11, lbsd=(10, "(21 30 30 30)"), x_offset=1),
         evans.System(measures=13, lbsd=(114, "(21 30 30 30)"), x_offset=1),
     ),
     evans.Page(

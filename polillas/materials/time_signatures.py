@@ -365,6 +365,12 @@ substitute_16 = [
     abjad.TimeSignature((1, 4)),  # ?
 ]
 
+alt_fermata_measures_16 = [33]
+
+alt_reduced_signatures_16 = evans.reduce_fermata_measures(
+    substitute_16, alt_fermata_measures_16
+)
+
 ##
 ## 17
 ##
@@ -526,7 +532,7 @@ alt_signatures = evans.join_time_signature_lists(
         reduced_signatures_13,
         reduced_signatures_14,
         reduced_signatures_15,
-        substitute_16,
+        alt_reduced_signatures_16,
         reduced_signatures_17,
         reduced_signatures_18,
         reduced_signatures_19,

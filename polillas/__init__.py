@@ -197,6 +197,7 @@ __all__ = [
     "G",
     "G_color",
     "all_signatures",
+    "alt_signatures",
     "alternate_glissandi",
     "angles",
     "bis_trill",
