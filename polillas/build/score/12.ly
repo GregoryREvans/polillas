@@ -230,12 +230,8 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         <a' e''>16
@@ -265,13 +261,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             r4
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -280,11 +274,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -325,13 +317,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             r16
 
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
-                                            ]
 
                                         }
 
@@ -378,13 +368,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             <a' e''>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -395,11 +383,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -446,11 +432,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
-                                            ]
 
                                         }
 
@@ -534,13 +518,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            [
 
                                             <a' e''>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -564,11 +546,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
-                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -592,13 +572,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             r4
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -663,11 +641,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -712,13 +688,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             r16
 
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
-                                            ]
 
                                         }
 
@@ -846,11 +820,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -893,11 +865,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
-                                            ]
 
                                         }
 
@@ -1006,11 +976,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
-                                            ]
 
                                         }
 
@@ -1034,13 +1002,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            [
 
                                             <a' e''>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -1094,13 +1060,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             r4
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -1109,11 +1073,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -1172,34 +1134,22 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <a' e''>16
                                             \stopTextSpanOne
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4.
-                                            %! MATERIAL_COLOR
-                                            \)
-                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 20]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        r2.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 21]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         <a' e''>16
@@ -1275,7 +1225,6 @@
                                             \revert Staff.Stem.stemlet-length
                                             <a' e''>16
                                             \stopTextSpanOne
-                                            \)
                                             ]
 
                                         }
@@ -1283,12 +1232,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 22]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         bqs8
                                         \pp
                                         - \tongue #2
-                                        \(
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -1384,17 +1331,12 @@
                                         \revert Staff.Stem.stemlet-length
                                         bqs8
                                         - \tongue #2
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 24]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
-
-                                        R1 * 7/8
+                                        r1..
                                         \bar "||"
 
                                     }
@@ -1426,12 +1368,8 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             <g d'>16
@@ -1480,13 +1418,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             <g d'>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -1542,11 +1478,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <g d'>16
-                                            ]
 
                                         }
 
@@ -1640,13 +1574,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            [
 
                                             <g d'>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -1673,11 +1605,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <g d'>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -1701,13 +1631,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <g d'>16
-                                            [
 
                                             r4
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -1776,11 +1704,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <g d'>16
-                                            ]
 
                                         }
 
@@ -1804,13 +1730,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             r16
 
                                             \revert Staff.Stem.stemlet-length
                                             <g d'>16
-                                            ]
 
                                         }
 
@@ -1864,13 +1788,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             <g d'>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -1937,11 +1859,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <g d'>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -1954,7 +1874,6 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            [
 
                                             <g d'>16
 
@@ -1962,7 +1881,6 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -2017,11 +1935,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <g d'>16
-                                            ]
 
                                         }
 
@@ -2099,13 +2015,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            [
 
                                             <g d'>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -2129,11 +2043,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             <g d'>16
-                                            ]
 
                                         }
 
@@ -2157,13 +2069,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <g d'>16
-                                            [
 
                                             r4
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -2225,11 +2135,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <g d'>16
-                                            [
 
                                             \revert Staff.Stem.stemlet-length
                                             r4
-                                            ]
 
                                         }
 
@@ -2274,13 +2182,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             r16
 
                                             \revert Staff.Stem.stemlet-length
                                             <g d'>16
-                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -2323,13 +2229,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             <g d'>16
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -2342,7 +2246,6 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             r16
 
@@ -2350,7 +2253,6 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -2360,7 +2262,6 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            [
 
                                             <g d'>16
 
@@ -2368,7 +2269,6 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
 
@@ -2390,18 +2290,14 @@
                                         ]
 
                                         r4
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 20]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         b8
                                         \p
                                         - \tongue #2
-                                        \(
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -2432,19 +2328,13 @@
 
                                         \revert Staff.Stem.stemlet-length
                                         r8
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 21]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         <g d'>16
@@ -2510,28 +2400,20 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            [
 
                                             <g d'>16
                                             \stopTextSpanOne
 
                                             \revert Staff.Stem.stemlet-length
                                             r8
-                                            %! MATERIAL_COLOR
-                                            \)
-                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 22]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r8
-                                        %! MATERIAL_COLOR
-                                        \(
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -2628,17 +2510,12 @@
                                         \revert Staff.Stem.stemlet-length
                                         b8
                                         - \tongue #3
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 24]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 7/8
-
-                                        R1 * 7/8
+                                        r1..
                                         \bar "||"
 
                                     }
@@ -2674,12 +2551,8 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     <c g>16
@@ -2715,11 +2588,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     <c g>16
-                                    ]
 
                                 }
 
@@ -2828,11 +2699,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     <c g>16
-                                    ]
 
                                 }
 
@@ -2856,13 +2725,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
-                                    [
 
                                     <c g>16
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -2916,13 +2783,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <c g>16
-                                    [
 
                                     r4
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    ]
 
                                 }
 
@@ -2931,11 +2796,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <c g>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -2976,13 +2839,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     r16
 
                                     \revert Staff.Stem.stemlet-length
                                     <c g>16
-                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3032,13 +2893,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     <c g>16
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    ]
 
                                 }
 
@@ -3049,11 +2908,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <c g>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3100,11 +2957,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     <c g>16
-                                    ]
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3203,11 +3058,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <c g>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4.
-                                    ]
 
                                 }
 
@@ -3274,11 +3127,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     <c g>16
-                                    ]
 
                                 }
 
@@ -3299,13 +3150,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     r16
 
                                     \revert Staff.Stem.stemlet-length
                                     <c g>16
-                                    ]
 
                                 }
 
@@ -3359,13 +3208,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     <c g>16
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    ]
 
                                 }
 
@@ -3432,11 +3279,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <c g>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -3495,11 +3340,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <c g>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -3512,8 +3355,6 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 r16
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
 
                                 \times 2/3
@@ -3522,12 +3363,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 18]
 
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     bqf8
                                     \pp
                                     - \tongue #2
-                                    \(
                                     [
 
                                     r8
@@ -3581,19 +3420,13 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 r8
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 r16
-                                %! MATERIAL_COLOR
-                                \(
                                 [
 
                                 <g d'>16
@@ -3669,7 +3502,6 @@
                                     \revert Staff.Stem.stemlet-length
                                     <g d'>16
                                     \stopTextSpanOne
-                                    \)
                                     ]
 
                                 }
@@ -3677,11 +3509,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                r2.
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
@@ -3690,12 +3518,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 21]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     <g d'>16
@@ -3769,11 +3593,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <g d'>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -3829,11 +3651,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <g d'>16
-                                    [
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -3846,18 +3666,12 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 r16
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 24]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 7/8
-
-                                R1 * 7/8
+                                r1..
                                 \bar "||"
 
                             }
@@ -3886,8 +3700,6 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 e2.
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -3899,8 +3711,6 @@
                                 \<
                                 %! abjad.glissando(7)
                                 \glissando
-                                %! MATERIAL_COLOR
-                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -4042,29 +3852,18 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \ff
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-                                %! applying indicators
+                                r2.
                                 \stopTextSpan
-
-                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 r16
-                                %! MATERIAL_COLOR
-                                \(
                                 [
 
                                 <g, d>16
@@ -4140,7 +3939,6 @@
                                     \revert Staff.Stem.stemlet-length
                                     <g, d>16
                                     \stopTextSpanOne
-                                    \)
                                     ]
 
                                 }
@@ -4148,20 +3946,14 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 22]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                r2.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 23]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                r1
 
-                                R1 * 5/8
+                                r4
 
                                 \times 2/3
                                 {
@@ -4169,12 +3961,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 24]
 
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     bf8
                                     \pp
                                     - \tongue #2
-                                    \(
                                     [
 
                                     r8
@@ -4254,8 +4044,6 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 r8
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
                                 \bar "||"
 

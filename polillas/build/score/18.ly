@@ -36,7 +36,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 \once \override Score.BarLine.X-extent = #'(0.5 . 3)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
@@ -67,7 +66,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 \once \override Score.BarLine.X-extent = #'(1 . 2)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ":|."
@@ -138,7 +136,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 15]
@@ -178,7 +175,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
 
             }
 
@@ -217,8 +213,6 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin I" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             d''16
                                             \mp
@@ -238,8 +232,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             r16
@@ -287,10 +279,10 @@
                                             dqf''16
 
                                             d''16
+                                            ]
 
                                             \revert Staff.Stem.stemlet-length
                                             r4.
-                                            ]
 
                                         }
 
@@ -412,8 +404,6 @@
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
                                             \stopTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -423,6 +413,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                         \times 2/3
                                         {
@@ -430,12 +421,8 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 4]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             c'''16
@@ -561,8 +548,6 @@
                                         \revert Staff.Stem.stemlet-length
                                         c'''16
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -570,6 +555,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 5/6
@@ -578,8 +564,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 6]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                             <af'' e'''>4
                                             \p
                                             %! baca.text_spanner()
@@ -598,8 +582,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \(
 
                                             <af'' e'''>4
 
@@ -659,8 +641,6 @@
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
                                             \stopTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
 
@@ -671,8 +651,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 9]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <e''' g'''>8
                                             %! baca.text_spanner()
@@ -691,8 +669,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             <e''' g'''>8
@@ -854,8 +830,6 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             r8
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -865,25 +839,22 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        r1
 
-                                        R1 * 5/8
+                                        r4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 16]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         f''1.
                                         \p
                                         \<
                                         ~
-                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
@@ -896,13 +867,13 @@
 
                                         f''1..
                                         \ff
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 19]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         \bar "||"
 
                                     }
@@ -934,15 +905,11 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
-                                            %! MATERIAL_COLOR
-                                            \(
-                                            [
 
                                             r16
+                                            [
 
                                             e''16
                                             \mp
@@ -1048,9 +1015,9 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4..
-                                            [
 
                                             e''16
+                                            [
 
                                             ef''16
 
@@ -1062,8 +1029,6 @@
                                             %! baca.PiecewiseCommand._call(4)
                                             %! SPANNER_STOP
                                             \stopTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1073,6 +1038,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -1081,14 +1047,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             cs'''32
                                             \ff
                                             - \staccato
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             d'''32
@@ -1215,8 +1177,6 @@
                                             \revert Staff.Stem.stemlet-length
                                             e'''16
                                             - \staccato
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1226,6 +1186,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 5/7
@@ -1234,11 +1195,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 6]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                             r2
-                                            %! MATERIAL_COLOR
-                                            \(
 
                                             <cs'' g''>4
                                             \p
@@ -1317,8 +1274,6 @@
                                             \stopTextSpanOne
 
                                             r4
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
 
@@ -1328,8 +1283,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 9]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqs'''16
                                             \mp
@@ -1349,8 +1302,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             r16
@@ -1387,13 +1338,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             eqf'''16
-                                            [
 
                                             r4
 
                                             \revert Staff.Stem.stemlet-length
                                             r16
-                                            ]
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1454,8 +1403,6 @@
 
                                             \revert Staff.Stem.stemlet-length
                                             r8
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1463,11 +1410,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 11]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-
-                                        R1 * 3/8
+                                        r2.
 
                                         \times 2/3
                                         {
@@ -1475,8 +1418,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 12]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             eqs'''16
                                             \mp
@@ -1496,8 +1437,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanOne
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             r16
@@ -1624,33 +1563,28 @@
                                         }
 
                                         r4
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 15]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/8
+                                        r1
 
-                                        R1 * 5/8
+                                        r4
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 16]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         ds'1.
                                         \p
                                         \<
                                         ~
-                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 17]
@@ -1663,13 +1597,13 @@
 
                                         ds'1..
                                         \ff
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         \bar "||"
 
                                     }
@@ -1707,8 +1641,6 @@
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Viola" }
                                     \clef "treble"
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     aqs''16
                                     \mp
@@ -1728,17 +1660,17 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \startTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     r16
 
                                     gqf''16
+                                    ]
 
                                     r4
 
                                     bqf''16
+                                    [
 
                                     dqs'''16
 
@@ -1762,10 +1694,10 @@
                                     fs''16
 
                                     f''16
+                                    ]
 
                                     \revert Staff.Stem.stemlet-length
                                     r4
-                                    ]
 
                                 }
 
@@ -1774,13 +1706,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     aqs''16
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    ]
 
                                 }
 
@@ -1792,11 +1722,11 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     gqf''16
-                                    [
 
                                     r4
 
                                     bqf''16
+                                    [
 
                                     dqs'''16
 
@@ -1820,12 +1750,12 @@
                                     fs''16
 
                                     f''16
+                                    ]
 
                                     r4
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    ]
 
                                 }
 
@@ -1848,8 +1778,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     r8.
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -1859,6 +1787,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -1867,14 +1796,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 4]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     d'''32
                                     \ff
                                     - \staccato
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     ef'''32
@@ -2020,8 +1945,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2031,6 +1954,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/8
@@ -2041,8 +1965,6 @@
                                     % [viola voice measure 6]
 
                                     \clef "alto"
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     c'4
                                     \p
                                     %! baca.text_spanner()
@@ -2061,8 +1983,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \startTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \(
 
                                     c'4
 
@@ -2120,8 +2040,6 @@
                                     \stopTextSpanOne
 
                                     r2
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
 
@@ -2131,12 +2049,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 9]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     r16
@@ -2212,8 +2126,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2221,11 +2133,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                r2.
 
                                 \times 8/13
                                 {
@@ -2235,8 +2143,6 @@
                                     % [viola voice measure 12]
 
                                     \clef "alto"
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <cs' gs'>8
                                     %! baca.text_spanner()
@@ -2255,8 +2161,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \startTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     <cs' gs'>8
@@ -2330,8 +2234,6 @@
                                     %! baca.PiecewiseCommand._call(4)
                                     %! SPANNER_STOP
                                     \stopTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2341,25 +2243,22 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/8
+                                r1
 
-                                R1 * 5/8
+                                r4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 cs1.
                                 \p
                                 \<
                                 ~
-                                \(
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 17]
@@ -2372,13 +2271,13 @@
 
                                 cs1..
                                 \ff
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 19]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \bar "||"
 
                             }
@@ -2412,8 +2311,6 @@
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Violoncello" }
                                     \clef "treble"
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.961 0.961 0.406)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     cqs'''16
                                     \mp
@@ -2434,8 +2331,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \startTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     r16
@@ -2542,12 +2437,12 @@
                                     bqs''16
 
                                     aqf''16
+                                    ]
 
                                     r4
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    ]
 
                                 }
 
@@ -2594,8 +2489,6 @@
                                     %! baca.PiecewiseCommand._call(4)
                                     %! SPANNER_STOP
                                     \stopTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2605,6 +2498,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/5
@@ -2613,14 +2507,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 4]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     ef'''32
                                     \ff
                                     - \staccato
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     e'''32
@@ -2753,8 +2643,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     r32
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2764,14 +2652,13 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
                                 \clef "bass"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 d4
                                 \p
                                 %! baca.text_spanner()
@@ -2790,8 +2677,6 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
-                                %! MATERIAL_COLOR
-                                \(
 
                                 d4
 
@@ -2833,8 +2718,6 @@
                                     \stopTextSpanOne
 
                                     r4
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
 
@@ -2844,8 +2727,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     <d c'>8
                                     %! baca.text_spanner()
@@ -2864,8 +2745,6 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \startTextSpanOne
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     <d c'>8
@@ -3035,8 +2914,6 @@
 
                                     \revert Staff.Stem.stemlet-length
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -3046,12 +2923,11 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 d4
                                 \pp
                                 %! baca.text_spanner()
@@ -3070,8 +2946,6 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
-                                %! MATERIAL_COLOR
-                                \(
 
                                 d4
                                 ~
@@ -3200,14 +3074,13 @@
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
                                 \stopTextSpanOne
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \bar "||"
 
                             }

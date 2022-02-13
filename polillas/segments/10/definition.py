@@ -33,7 +33,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mf"),
             abjad.StopTrillSpan(),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -50,7 +50,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mf"),
             abjad.StopTrillSpan(),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -61,7 +61,7 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["c"]),
             evans.ArticulationHandler(["baca-circle-bowing"]),
             baca.hairpin("f > p"),
-            polillas.C_color,
+            # polillas.C_color,
         ),
         evans.call(
             "viola voice",
@@ -86,7 +86,7 @@ maker = evans.SegmentMaker(
             polillas.chilled(extra_counts=[0, 2, 0], stage=4),
             polillas.chilled_stage_3_bowing(series="A", rotation=0),
             abjad.Dynamic("f"),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.call(
@@ -115,7 +115,7 @@ maker = evans.SegmentMaker(
             abjad.Clef("percussion"),
             abjad.Dynamic("ff"),
             polillas.clef_whitespace,
-            polillas.G_color,
+            # polillas.G_color,
             # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -131,7 +131,7 @@ maker = evans.SegmentMaker(
             abjad.Clef("percussion"),
             abjad.Dynamic("p"),
             polillas.clef_whitespace,
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -218,7 +218,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_10,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -237,7 +237,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

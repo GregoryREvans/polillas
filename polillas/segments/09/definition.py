@@ -46,7 +46,7 @@ maker = evans.SegmentMaker(
             polillas.knots(stage=5),
             polillas.multi_stac,
             abjad.Dynamic("p"),
-            polillas.F_color,
+            # polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -58,7 +58,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.note_rhythm_handler,
             abjad.Dynamic("f"),
-            polillas.D_color,
+            # polillas.D_color,
             # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -71,7 +71,7 @@ maker = evans.SegmentMaker(
             polillas.knots(stage=5),
             polillas.multi_stac,
             abjad.Dynamic("p"),
-            polillas.F_color,
+            # polillas.F_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -91,7 +91,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(7).staff_padding, 0),
                 lilypond_id=2,
             ),
-            polillas.D_color,
+            # polillas.D_color,
             # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -101,7 +101,7 @@ maker = evans.SegmentMaker(
             polillas.flames(stage=5),
             evans.ArticulationHandler(["baca-circle-bowing"]),
             baca.hairpin("f > p"),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor_2_2_5,
         ),
         evans.call(
@@ -313,7 +313,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_09,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -332,7 +332,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

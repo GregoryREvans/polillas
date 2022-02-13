@@ -151,7 +151,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -184,7 +183,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                 \once \override Score.BarLine.X-extent = #'(1 . 2)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ":|."
@@ -262,7 +260,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 30]
@@ -361,12 +358,10 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         atqs'4
                                         \pp
                                         - \baca-circle-bowing
                                         ~
-                                        \(
 
                                         atqs'4
                                         ~
@@ -429,7 +424,6 @@
                                         ~
 
                                         atqs'4
-                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 5/6
@@ -438,8 +432,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 4]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8.
                                             %! baca.hairpin()
@@ -455,8 +447,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
@@ -472,8 +462,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -481,14 +469,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         c'4.
                                         \pp
                                         - \baca-circle-bowing
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
@@ -514,8 +498,6 @@
                                         }
 
                                         c'16
-                                        %! MATERIAL_COLOR
-                                        \)
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -523,8 +505,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 8]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8.
                                             %! baca.hairpin()
@@ -536,8 +516,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
@@ -577,8 +555,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -586,12 +562,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 10]
 
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         atqs'4
                                         \ff
                                         - \baca-circle-bowing
                                         ~
-                                        \(
 
                                         atqs'4
                                         ~
@@ -617,7 +591,6 @@
 
                                         atqs'8.
                                         - \baca-circle-bowing
-                                        \)
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -625,8 +598,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 12]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'4.
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -641,8 +612,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -733,8 +702,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -744,6 +711,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -751,8 +719,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 17]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'4..
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -763,8 +729,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -822,8 +786,6 @@
                                             %! SPANNER_STOP
                                             \ff
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -832,16 +794,14 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 21]
 
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         b'4.
                                         \pp
                                         - \baca-circle-bowing
-                                        \)
-                                        \(
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -849,8 +809,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 22]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'4
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -865,8 +823,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -982,8 +938,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -991,11 +945,9 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 27]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 13/32
+                                        r2.
 
-                                        R1 * 13/32
+                                        r16
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 13/14
@@ -1004,8 +956,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 28]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'4..
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -1016,8 +966,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -1034,8 +982,6 @@
                                             %! SPANNER_STOP
                                             \ff
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1045,16 +991,15 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 30]
 
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         as'4.
                                         \f
                                         - \baca-circle-bowing
                                         ~
-                                        \(
 
                                         as'4.
                                         ~
@@ -1098,7 +1043,6 @@
                                         ~
 
                                         as'8.
-                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/5
@@ -1107,12 +1051,8 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 33]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r32
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             c'''32
@@ -1333,8 +1273,6 @@
                                         \revert Staff.Stem.stemlet-length
                                         b''16
                                         - \staccato
-                                        %! MATERIAL_COLOR
-                                        \)
                                         ]
                                         \bar "||"
 
@@ -1367,11 +1305,9 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             dqf'4
                                             \pp
                                             - \baca-circle-bowing
-                                            \(
 
                                             dqf'8
                                             - \baca-circle-bowing
@@ -1437,7 +1373,6 @@
                                         }
 
                                         dqf'4
-                                        \)
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 5/6
@@ -1446,8 +1381,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8.
                                             %! baca.hairpin()
@@ -1463,8 +1396,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
@@ -1480,8 +1411,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1489,12 +1418,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         dqf'4.
                                         \pp
                                         - \baca-circle-bowing
                                         ~
-                                        \(
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
@@ -1520,7 +1447,6 @@
                                         ~
 
                                         dqf'16
-                                        \)
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -1528,8 +1454,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 8]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8.
                                             %! baca.hairpin()
@@ -1541,8 +1465,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
@@ -1582,8 +1504,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1591,11 +1511,9 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 10]
 
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         cs'4
                                         \ff
                                         - \baca-circle-bowing
-                                        \(
 
                                         \times 2/3
                                         {
@@ -1635,7 +1553,6 @@
                                             \revert Staff.Stem.stemlet-length
                                             cs'32
                                             - \baca-circle-bowing
-                                            \)
                                             ]
 
                                         }
@@ -1646,8 +1563,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 12]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'4.
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -1662,8 +1577,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -1754,8 +1667,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -1765,6 +1676,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -1772,8 +1684,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 17]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             c'4..
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
@@ -1784,8 +1694,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
 
@@ -1843,8 +1751,6 @@
                                             %! SPANNER_STOP
                                             \ff
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
 
                                         }
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1853,6 +1759,7 @@
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -1860,8 +1767,6 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 21]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             c'8.
                                             %! baca.hairpin()
@@ -1877,8 +1782,6 @@
                                             %! SPANNER_START
                                             \<
                                             \startTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \(
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
@@ -2017,8 +1920,6 @@
                                             %! SPANNER_STOP
                                             \f
                                             \stopTrillSpan
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
 
                                         }
@@ -2026,14 +1927,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 27]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         c'4
                                         \pp
                                         - \baca-circle-bowing
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         c'4
                                         ~
@@ -2075,14 +1972,13 @@
                                         ~
 
                                         c'16
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 29]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 6/5
@@ -2091,12 +1987,10 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 30]
 
-                                            \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             dqf'8.
                                             \f
                                             - \baca-circle-bowing
-                                            \(
                                             [
 
                                             \revert Staff.Stem.stemlet-length
@@ -2166,7 +2060,6 @@
                                         }
 
                                         dqf'8.
-                                        \)
 
                                         \times 2/3
                                         {
@@ -2174,12 +2067,8 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 33]
 
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             bf''16
@@ -2414,8 +2303,6 @@
                                             \revert Staff.Stem.stemlet-length
                                             b''16
                                             - \staccato
-                                            %! MATERIAL_COLOR
-                                            \)
                                             ]
                                             \bar "||"
 
@@ -2451,12 +2338,10 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 cqs4
                                 \pp
                                 - \baca-circle-bowing
                                 ~
-                                \(
 
                                 cqs4
                                 ~
@@ -2515,7 +2400,6 @@
                                 ~
 
                                 cqs4
-                                \)
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/6
@@ -2524,8 +2408,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 4]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8.
                                     %! baca.hairpin()
@@ -2541,8 +2423,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
@@ -2558,8 +2438,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2567,11 +2445,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 cs8
                                 \pp
                                 - \baca-circle-bowing
-                                \(
 
                                 cs4
                                 - \baca-circle-bowing
@@ -2596,7 +2472,6 @@
 
                                 cs16
                                 - \baca-circle-bowing
-                                \)
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -2604,8 +2479,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 8]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8.
                                     %! baca.hairpin()
@@ -2617,8 +2490,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
@@ -2658,8 +2529,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2667,12 +2536,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 cs4
                                 \ff
                                 - \baca-circle-bowing
                                 ~
-                                \(
 
                                 cs4
                                 ~
@@ -2705,7 +2572,6 @@
                                 ~
 
                                 cs8.
-                                \)
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -2713,8 +2579,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 12]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'4.
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -2729,8 +2593,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
 
@@ -2821,8 +2683,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2832,6 +2692,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -2839,8 +2700,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 17]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'4..
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -2851,8 +2710,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
 
@@ -2910,8 +2767,6 @@
                                     %! SPANNER_STOP
                                     \ff
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2920,6 +2775,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -2927,8 +2783,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 21]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8.
                                     %! baca.hairpin()
@@ -2944,8 +2798,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
@@ -3010,8 +2862,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -3019,18 +2869,15 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 24]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 c4
                                 \pp
                                 - \baca-circle-bowing
                                 ~
-                                \(
 
                                 c4
                                 ~
 
                                 c8.
-                                \)
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -3038,8 +2885,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 25]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'4.
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -3054,8 +2899,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
 
@@ -3097,8 +2940,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -3106,11 +2947,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 27]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 13/32
+                                r2.
 
-                                R1 * 13/32
+                                r16
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 13/14
@@ -3119,12 +2958,10 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 28]
 
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     cqs4..
                                     \pp
                                     \<
                                     \startTrillSpan
-                                    \(
                                     \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
@@ -3136,7 +2973,6 @@
                                     cqs8..
                                     \ff
                                     \stopTrillSpan
-                                    \)
                                     ]
 
                                 }
@@ -3146,15 +2982,14 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 30]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 cqs4
                                 \f
                                 - \baca-circle-bowing
-                                \(
 
                                 cqs8
                                 - \baca-circle-bowing
@@ -3191,7 +3026,6 @@
                                 ~
 
                                 cqs8.
-                                \)
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
@@ -3200,12 +3034,8 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 33]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
-                                    %! MATERIAL_COLOR
-                                    \(
                                     [
 
                                     \clef "treble"
@@ -3432,8 +3262,6 @@
                                 \revert Staff.Stem.stemlet-length
                                 a''16
                                 - \staccato
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
                                 \bar "||"
 
@@ -3464,12 +3292,10 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 \clef "bass"
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 b,4
                                 \pp
                                 - \baca-circle-bowing
                                 ~
-                                \(
 
                                 b,4
 
@@ -3534,7 +3360,6 @@
                                     \revert Staff.Stem.stemlet-length
                                     b,16
                                     - \baca-circle-bowing
-                                    \)
                                     ]
 
                                 }
@@ -3546,8 +3371,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 4]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8.
                                     %! baca.hairpin()
@@ -3563,8 +3386,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
@@ -3580,8 +3401,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -3589,11 +3408,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 bqf,8
                                 \pp
                                 - \baca-circle-bowing
-                                \(
 
                                 bqf,4
                                 - \baca-circle-bowing
@@ -3630,7 +3447,6 @@
                                 }
 
                                 bqf,16
-                                \)
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -3638,8 +3454,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 8]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8.
                                     %! baca.hairpin()
@@ -3651,8 +3465,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
@@ -3692,8 +3504,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -3701,11 +3511,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 bqf,4
                                 \ff
                                 - \baca-circle-bowing
-                                \(
 
                                 \times 2/3
                                 {
@@ -3732,7 +3540,6 @@
                                 ~
 
                                 bqf,8.
-                                \)
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -3740,8 +3547,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 12]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'4.
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -3756,8 +3561,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
 
@@ -3848,8 +3651,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -3859,6 +3660,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -3866,8 +3668,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 17]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     c'4..
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
@@ -3878,8 +3678,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
 
@@ -3937,8 +3735,6 @@
                                     %! SPANNER_STOP
                                     \ff
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
 
                                 }
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3947,6 +3743,7 @@
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
 
                                 \scaleDurations #'(1 . 1)
                                 {
@@ -3954,8 +3751,6 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 21]
 
-                                    %! MATERIAL_COLOR
-                                    \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                     \override Staff.Stem.stemlet-length = 0.75
                                     c'8.
                                     %! baca.hairpin()
@@ -3971,8 +3766,6 @@
                                     %! SPANNER_START
                                     \<
                                     \startTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \(
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
@@ -4111,8 +3904,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     \stopTrillSpan
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -4120,11 +3911,9 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 27]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 13/32
+                                r2.
 
-                                R1 * 13/32
+                                r16
 
                                 \times 2/3
                                 {
@@ -4132,11 +3921,9 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 28]
 
-                                    \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                     b,4
                                     \pp
                                     - \baca-circle-bowing
-                                    \(
 
                                     b,8
                                     - \baca-circle-bowing
@@ -4151,23 +3938,21 @@
                                 ~
 
                                 b,16
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 29]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 30]
 
-                                \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                 b,4.
                                 \f
                                 - \baca-circle-bowing
                                 ~
-                                \(
 
                                 b,4.
                                 ~
@@ -4222,17 +4007,12 @@
                                 ~
 
                                 b,8.
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 33]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 \override Staff.Stem.stemlet-length = 0.75
                                 r32.
-                                %! MATERIAL_COLOR
-                                \(
                                 [
 
                                 \clef "treble"
@@ -4436,8 +4216,6 @@
                                 \revert Staff.Stem.stemlet-length
                                 af''16
                                 - \staccato
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
                                 \bar "||"
 

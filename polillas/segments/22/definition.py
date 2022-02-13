@@ -39,7 +39,7 @@ maker = evans.SegmentMaker(
                 articulation_boolean_vector=[1],
                 vector_forget=False,
             ),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
@@ -85,7 +85,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -101,7 +101,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -117,7 +117,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -133,7 +133,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -146,7 +146,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -159,7 +159,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -172,7 +172,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -185,7 +185,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "on bridge => 1/4 on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -202,7 +202,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -217,7 +217,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -232,7 +232,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -247,7 +247,7 @@ maker = evans.SegmentMaker(
                 (abjad.tweak(8).staff_padding, 0),
                 lilypond_id=1,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -260,7 +260,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -273,7 +273,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -286,7 +286,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -299,7 +299,7 @@ maker = evans.SegmentMaker(
             baca.text_spanner(
                 "1/2 on bridge => on bridge", (abjad.tweak(5).staff_padding, 0)
             ),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -317,7 +317,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -350,7 +350,7 @@ maker = evans.SegmentMaker(
             polillas.lightning(stage=3, rotation=-1),
             abjad.Dynamic("mf"),
             baca.text_spanner("msp. => on bridge", (abjad.tweak(5).staff_padding, 0)),
-            polillas.G_color,
+            # polillas.G_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -362,7 +362,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.make_tied_notes(),
             # baca.hairpin("mf >o niente"),
-            polillas.G_color,
+            # polillas.G_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -432,13 +432,45 @@ maker = evans.SegmentMaker(
             abjad.BarLine("|."),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(1),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
+        #         direction=abjad.Up,
+        #     ),
+        #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(1),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             abjad.Markup(
-                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
                 direction=abjad.Up,
             ),
-            lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
         ),
         evans.attach(
             "Global Context",
@@ -515,7 +547,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_22,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,

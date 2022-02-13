@@ -33,7 +33,7 @@ maker = evans.SegmentMaker(
             polillas.shadows(stage=1),
             abjad.Dynamic("ff"),
             abjad.StopTrillSpan(),
-            polillas.A_color,
+            # polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -248,7 +248,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.shadows(stage=1),
             abjad.Dynamic("ff"),
-            polillas.A_color,
+            # polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -347,7 +347,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.B_color,
+            # polillas.B_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -359,7 +359,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.shadows(stage=1),
             abjad.Dynamic("ff"),
-            polillas.A_color,
+            # polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -438,7 +438,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.B_color,
+            # polillas.B_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
@@ -534,7 +534,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_14,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -553,7 +553,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

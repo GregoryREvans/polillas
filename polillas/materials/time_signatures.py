@@ -327,6 +327,44 @@ reduced_signatures_16 = evans.reduce_fermata_measures(
     signatures_16, fermata_measures_16
 )
 
+substitute_16 = [
+    abjad.TimeSignature((4, 8)),
+    abjad.TimeSignature((11, 8)),
+    abjad.TimeSignature((5, 16)),
+    abjad.TimeSignature((3, 8)),
+    abjad.TimeSignature((4, 8)),
+    abjad.TimeSignature((11, 16)),
+    abjad.TimeSignature((4, 8)),
+    abjad.TimeSignature((5, 8)),
+    abjad.TimeSignature((4, 8)),
+    abjad.TimeSignature((5, 2)),
+    abjad.TimeSignature((13, 16)),
+    abjad.TimeSignature((15, 16)),
+    abjad.TimeSignature((7, 8)),
+    abjad.TimeSignature((4, 4)),
+    abjad.TimeSignature((4, 4)),
+    abjad.TimeSignature((7, 8)),
+    abjad.TimeSignature((3, 8)),
+    abjad.TimeSignature((4, 8)),
+    abjad.TimeSignature((5, 16)),
+    abjad.TimeSignature((11, 16)),
+    abjad.TimeSignature((6, 8)),
+    abjad.TimeSignature((5, 8)),
+    abjad.TimeSignature((13, 16)),
+    abjad.TimeSignature((13, 16)),
+    abjad.TimeSignature((15, 16)),
+    abjad.TimeSignature((6, 8)),
+    abjad.TimeSignature((13, 16)),
+    abjad.TimeSignature((15, 16)),
+    abjad.TimeSignature((6, 8)),
+    abjad.TimeSignature((13, 16)),
+    abjad.TimeSignature((7, 8)),
+    abjad.TimeSignature((4, 4)),
+    abjad.TimeSignature((4, 8)),
+    abjad.TimeSignature((1, 4)),
+    abjad.TimeSignature((1, 4)),  # ?
+]
+
 ##
 ## 17
 ##
@@ -461,6 +499,34 @@ all_signatures = evans.join_time_signature_lists(
         reduced_signatures_14,
         reduced_signatures_15,
         reduced_signatures_16,
+        reduced_signatures_17,
+        reduced_signatures_18,
+        reduced_signatures_19,
+        reduced_signatures_20,
+        reduced_signatures_21,
+        reduced_signatures_22,
+    ]
+)
+
+
+alt_signatures = evans.join_time_signature_lists(
+    [
+        reduced_signatures_01,
+        reduced_signatures_02,
+        reduced_signatures_03,
+        reduced_signatures_04,
+        reduced_signatures_05,
+        reduced_signatures_06,
+        reduced_signatures_07,
+        reduced_signatures_08,
+        reduced_signatures_09,
+        reduced_signatures_10,
+        reduced_signatures_11,
+        reduced_signatures_12,
+        reduced_signatures_13,
+        reduced_signatures_14,
+        reduced_signatures_15,
+        substitute_16,
         reduced_signatures_17,
         reduced_signatures_18,
         reduced_signatures_19,

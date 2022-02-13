@@ -995,3 +995,16 @@ def special_hairpin(selections):
     abjad.attach(abjad.Dynamic("mf"), leaves[5])
     abjad.attach(abjad.StartHairpin("<|"), leaves[5])
     abjad.attach(abjad.Dynamic("f"), leaves[6])
+
+
+def substitute_time_signatures(leaves, new_signatures):
+    out = []
+    for time_signature in new_signatures:
+        new_skip = abjad.Skip(1, multiplier=(time_signature))
+        abjad.attach(time_signature, new_skip, tag=abjad.Tag("scaling time signatures"))
+        out.append(new_skip)
+    abjad.mutate.replace(leaves, out)
+
+
+def replace_sigs(new_sigs):
+    return lambda _: substitute_time_signatures(_, new_sigs)

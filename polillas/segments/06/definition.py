@@ -41,7 +41,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
-            polillas.B_color,
+            # polillas.B_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -62,7 +62,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
-            polillas.B_color,
+            # polillas.B_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -83,7 +83,7 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             abjad.Dynamic("mp"),
-            polillas.B_color,
+            # polillas.B_color,
             preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -117,7 +117,7 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 4", format_slot="absolute_before"
             ),
             polillas.clef_whitespace,
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.MusicCommand(
             [
@@ -174,7 +174,7 @@ maker = evans.SegmentMaker(
                 forget=False,
             ),
             baca.hairpin("ff > p", selector=lambda _: abjad.Selection(_).notes()),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.MusicCommand(
             [
@@ -183,7 +183,7 @@ maker = evans.SegmentMaker(
             polillas.note_rhythm_handler,
             polillas.D_pitches(stage=1, transposition=6, rotation=3, chord_vector=[1]),
             abjad.Dynamic("mf"),
-            polillas.D_color,
+            # polillas.D_color,
         ),
         evans.MusicCommand(
             [
@@ -194,7 +194,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "violin 1 voice",
-            polillas.D_color,
+            # polillas.D_color,
             polillas.select_measures([17, 18], leaves=True),
         ),
         evans.call(
@@ -232,7 +232,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Markup(r"\markup (III)", direction=abjad.Up),
             abjad.Dynamic("mp"),
-            polillas.A_color,
+            # polillas.A_color,
         ),
         evans.MusicCommand(
             [("cello voice", (14, 18))],
@@ -244,7 +244,7 @@ maker = evans.SegmentMaker(
             ),
             polillas.clef_whitespace,
             abjad.Dynamic("mp"),
-            polillas.A_color,
+            # polillas.A_color,
         ),
         evans.MusicCommand(
             [
@@ -259,7 +259,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Dynamic("p"),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.attach(
             "violin 1 voice",
@@ -304,6 +304,331 @@ maker = evans.SegmentMaker(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(4),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(6),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(9),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(10),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(30),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(33),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(34),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(37),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(38),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(39),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(40),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(41),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(43),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(45),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(46),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(60),
+        ),
+        evans.detach(  # parts
+            "violin 1 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(61),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(5),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(6),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(12),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(13),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(31),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(34),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(38),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(40),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(54),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(55),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(69),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(70),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(27),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(29),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(31),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(39),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(41),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(47),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(49),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(66),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(67),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(72),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(74),
+        ),
+        evans.detach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(21),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(23),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(25),
+        ),
+        evans.detach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(28),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(30),
+        ),
+        evans.detach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(31),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(40),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(42),
+        ),
+        evans.detach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(45),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(46),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(47),
+        ),
+        evans.detach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(48),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(51),
+        ),
+        evans.detach(  # parts
+            "cello voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(52),
         ),
         evans.attach(
             "Global Context",
@@ -370,7 +695,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_06,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -389,7 +714,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

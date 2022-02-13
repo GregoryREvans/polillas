@@ -198,7 +198,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 25]
@@ -248,8 +247,6 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                         a'8
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -260,8 +257,6 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \<
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         r8
 
@@ -361,18 +356,14 @@
                                         %! SPANNER_STOP
                                         \f
                                         - \tongue #3
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \staff-line-count 5
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         d''''4
                                         \f
                                         - \flageolet
-                                        \(
 
                                         <<
 
@@ -1094,18 +1085,15 @@
 
                                         a'''16
                                         - \flageolet
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 17]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         fs''1
                                         \mp
                                         \<
                                         ~
-                                        \(
                                         \startTrillSpan g''
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1143,30 +1131,24 @@
 
                                         fs''8.
                                         \f
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 23]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-                                        %! applying indicators
+                                        r2.
                                         \stopTrillSpan
-
-                                        R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 24]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         \staff-line-count 5
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 25]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         fs''2.
                                         \ff
@@ -1176,7 +1158,6 @@
                                         - \baca-text-spanner-left-text "poco pont."
                                         - \tweak staff-padding 5
                                         \startTextSpanTwo
-                                        \(
                                         \startTrillSpan g''
 
                                         fs''16
@@ -1191,7 +1172,6 @@
                                         fs''16
                                         \p
                                         \stopTextSpanTwo
-                                        \)
                                         \bar "||"
 
                                     }
@@ -1223,8 +1203,6 @@
                                             \set Staff.instrumentName =
                                             %! applying staff names and clefs
                                             \markup { \hcenter-in #14 "Violin II" }
-                                            %! MATERIAL_COLOR
-                                            \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r8
                                             %! baca.hairpin()
@@ -1235,8 +1213,6 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \<
-                                            %! MATERIAL_COLOR
-                                            \(
                                             [
 
                                             af'8
@@ -1279,8 +1255,6 @@
                                         %! SPANNER_STOP
                                         \f
                                         - \tongue #3
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \staff-line-count 1
                                         \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1288,12 +1262,8 @@
                                         % [violin 2 voice measure 2]
 
                                         \clef "percussion"
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                         c'4
                                         \p
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         c'16
                                         ~
@@ -1377,8 +1347,6 @@
                                         ~
 
                                         c'8.
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \staff-line-count 5
                                         \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1386,12 +1354,10 @@
                                         % [violin 2 voice measure 10]
 
                                         \clef "treble"
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         g'''4
                                         \f
                                         - \flageolet
                                         ~
-                                        \(
 
                                         g'''4
 
@@ -2060,18 +2026,15 @@
 
                                         gs'''8
                                         - \flageolet
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 19]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         cs''4.
                                         \mp
                                         \<
                                         ~
-                                        \(
                                         \startTrillSpan d''
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -2097,30 +2060,24 @@
 
                                         cs''8.
                                         \f
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 23]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/8
-                                        %! applying indicators
+                                        r2.
                                         \stopTrillSpan
-
-                                        R1 * 3/8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 24]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         \staff-line-count 5
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 25]
 
-                                        \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                         \pitchedTrill
                                         cs''2.
                                         \ff
@@ -2130,7 +2087,6 @@
                                         - \baca-text-spanner-left-text "poco pont."
                                         - \tweak staff-padding 5
                                         \startTextSpanTwo
-                                        \(
                                         \startTrillSpan d''
 
                                         cs''16
@@ -2145,7 +2101,6 @@
                                         cs''16
                                         \p
                                         \stopTextSpanTwo
-                                        \)
                                         \bar "||"
 
                                     }
@@ -2178,8 +2133,6 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -2189,8 +2142,6 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \<
-                                %! MATERIAL_COLOR
-                                \(
 
                                 g'8
                                 - \tongue #3
@@ -2299,8 +2250,6 @@
                                     %! SPANNER_STOP
                                     \f
                                     - \tongue #2
-                                    %! MATERIAL_COLOR
-                                    \)
                                     ]
 
                                 }
@@ -2311,12 +2260,10 @@
                                 % [viola voice measure 5]
 
                                 \clef "treble"
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 g'''4
                                 \f
                                 - \flageolet
                                 ~
-                                \(
 
                                 g'''16
                                 ~
@@ -3110,7 +3057,6 @@
 
                                 cs'''16
                                 - \flageolet
-                                \)
                                 \staff-line-count 1
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3118,12 +3064,8 @@
                                 % [viola voice measure 18]
 
                                 \clef "percussion"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 c'4
                                 \p
-                                %! MATERIAL_COLOR
-                                \(
 
                                 c'4
                                 ~
@@ -3182,20 +3124,18 @@
                                 c'4
 
                                 c'8
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 24]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 \staff-line-count 5
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 25]
 
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 e''2.
                                 \ff
@@ -3205,7 +3145,6 @@
                                 - \baca-text-spanner-left-text "poco pont."
                                 - \tweak staff-padding 5
                                 \startTextSpanTwo
-                                \(
                                 \startTrillSpan af''
 
                                 e''16
@@ -3220,7 +3159,6 @@
                                 e''16
                                 \p
                                 \stopTextSpanTwo
-                                \)
                                 \bar "||"
 
                             }
@@ -3249,8 +3187,6 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 r8
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -3260,8 +3196,6 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \<
-                                %! MATERIAL_COLOR
-                                \(
 
                                 fs'8
                                 - \tongue #3
@@ -3369,20 +3303,14 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \f
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c4
                                 \f
                                 - \flageolet
                                 ~
-                                %! MATERIAL_COLOR
-                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
@@ -3485,21 +3413,17 @@
                                 % [cello voice measure 19]
 
                                 c4.
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
                                 \clef "treble"
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 e''2
                                 \mp
                                 \<
                                 \stopTextSpan
                                 ~
-                                \(
                                 \startTrillSpan af''
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3519,30 +3443,24 @@
 
                                 e''8.
                                 \f
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 23]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-                                %! applying indicators
+                                r2.
                                 \stopTrillSpan
-
-                                R1 * 3/8
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 24]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 \staff-line-count 5
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 25]
 
-                                \color-span #-4 #4 #(rgb-color 1 0.2 0.2)
                                 \pitchedTrill
                                 ef''2.
                                 \ff
@@ -3552,7 +3470,6 @@
                                 - \baca-text-spanner-left-text "poco pont."
                                 - \tweak staff-padding 5
                                 \startTextSpanTwo
-                                \(
                                 \startTrillSpan f''
 
                                 ef''16
@@ -3567,7 +3484,6 @@
                                 ef''16
                                 \p
                                 \stopTextSpanTwo
-                                \)
                                 \bar "||"
 
                             }

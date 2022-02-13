@@ -41,7 +41,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
                 baca.selectors.leaf(-1),
             ),
-            polillas.A_color,
+            # polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
@@ -72,7 +72,7 @@ maker = evans.SegmentMaker(
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=0, staff_padding=4),
             abjad.Dynamic("f"),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -83,7 +83,7 @@ maker = evans.SegmentMaker(
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
-            polillas.F_color,
+            # polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -104,7 +104,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
                 baca.selectors.leaf(-1),
             ),
-            polillas.A_color,
+            # polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -115,7 +115,7 @@ maker = evans.SegmentMaker(
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=2, staff_padding=4),
             abjad.Dynamic("f"),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -126,7 +126,7 @@ maker = evans.SegmentMaker(
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
-            polillas.F_color,
+            # polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -147,7 +147,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
                 baca.selectors.leaf(-1),
             ),
-            polillas.A_color,
+            # polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -158,7 +158,7 @@ maker = evans.SegmentMaker(
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=4, staff_padding=4),
             abjad.Dynamic("f"),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -169,7 +169,7 @@ maker = evans.SegmentMaker(
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mp"),
             abjad.Articulation("staccato"),
-            polillas.F_color,
+            # polillas.F_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -189,7 +189,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
                 baca.selectors.leaf(-1),
             ),
-            polillas.A_color,
+            # polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -200,7 +200,7 @@ maker = evans.SegmentMaker(
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=6, staff_padding=4),
             abjad.Dynamic("f"),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -211,7 +211,7 @@ maker = evans.SegmentMaker(
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
-            polillas.F_color,
+            # polillas.F_color,
             # preprocessor=polillas.fuse_quarters_preprocessor_2_1,
         ),
         evans.MusicCommand(
@@ -229,7 +229,7 @@ maker = evans.SegmentMaker(
                 abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
                 baca.selectors.leaf(-1),
             ),
-            polillas.A_color,
+            # polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -399,7 +399,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_17,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -418,7 +418,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

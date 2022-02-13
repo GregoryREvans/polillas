@@ -29,7 +29,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
@@ -48,7 +47,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -67,7 +65,6 @@
 
                 \once \override Rest.transparent = ##t
                 r1 * 1/8
-                ^ \markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -166,64 +163,53 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/32
+                                        r4
 
-                                        R1 * 5/32
+                                        r16
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 3]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/4
-
-                                        R1 * 1/4
+                                        r2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 4]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/16
-
-                                        R1 * 3/16
+                                        r4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 6]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 7]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/16
+                                        r2
 
-                                        R1 * 5/16
+                                        r8
                                         \staff-line-count 5
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 8]
 
                                         \harmonicsOn
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                         e'''4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
@@ -236,8 +222,6 @@
                                         \>
                                         %! abjad.glissando(7)
                                         \glissando
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         b'''4
                                         %! abjad.glissando(7)
@@ -343,14 +327,11 @@
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \p
-                                        %! MATERIAL_COLOR
-                                        \)
                                         \harmonicsOff
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 12]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         c''4
                                         \f
                                         - \tweak self-alignment-X #left
@@ -361,7 +342,6 @@
                                         - \baca-bcp-spanner-left-text #5 #5
                                         - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
-                                        \(
 
                                         \times 2/3
                                         {
@@ -501,7 +481,6 @@
 
                                         g''16
                                         \bacaStopTextSpanBCP
-                                        \)
                                         \bar "||"
 
                                     }
@@ -530,76 +509,61 @@
                                         \set Staff.instrumentName =
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/32
+                                        r4
 
-                                        R1 * 5/32
+                                        r16
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 3]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 1/4
-
-                                        R1 * 1/4
+                                        r2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 4]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 3/16
-
-                                        R1 * 3/16
+                                        r4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 6]
 
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
+                                        ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 7]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 5/16
+                                        r2
 
-                                        R1 * 5/16
+                                        r8
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 8]
 
-                                        %! applying invisibility
-                                        \once \override Rest.transparent = ##t
-                                        r1 * 11/32
+                                        r2
 
-                                        R1 * 11/32
+                                        r8.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 9]
 
-                                        %! MATERIAL_COLOR
-                                        \color-span #-4 #4 #(rgb-color 0.2 1 0.592)
                                         d'4.
                                         \mf
                                         ~
-                                        %! MATERIAL_COLOR
-                                        \(
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 3/4
@@ -677,13 +641,10 @@
                                         ~
 
                                         d'16
-                                        %! MATERIAL_COLOR
-                                        \)
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 12]
 
-                                        \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                         g'4
                                         \f
                                         - \tweak self-alignment-X #left
@@ -694,7 +655,6 @@
                                         - \baca-bcp-spanner-left-text #5 #5
                                         - \tweak staff-padding 4
                                         \bacaStartTextSpanBCP
-                                        \(
 
                                         g'4
                                         ~
@@ -814,7 +774,6 @@
 
                                         f'16
                                         \bacaStopTextSpanBCP
-                                        \)
                                         \bar "||"
 
                                     }
@@ -847,78 +806,61 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/32
+                                r4
 
-                                R1 * 5/32
+                                r16
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 3]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 1/4
-
-                                R1 * 1/4
+                                r2
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 4]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \staff-line-count 4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 g4
                                 \f
-                                %! MATERIAL_COLOR
-                                \(
 
                                 b8
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 6]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 7]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 b4
-                                %! MATERIAL_COLOR
-                                \(
 
                                 b4
                                 ~
 
                                 b8
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 8]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 11/32
+                                r2
 
-                                R1 * 11/32
+                                r8.
                                 \staff-line-count 5
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -926,13 +868,9 @@
                                 % [viola voice measure 9]
 
                                 \clef "alto"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 e'8
                                 \p
                                 - \tongue #2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 r8
 
@@ -955,28 +893,18 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 r16.
-                                %! MATERIAL_COLOR
-                                \)
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 10]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 3/8
-
-                                R1 * 3/8
+                                r2.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 11]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 1 0.6 0.2)
                                 bf8
                                 - \tongue #2
-                                %! MATERIAL_COLOR
-                                \(
 
                                 r8
 
@@ -1004,13 +932,10 @@
 
                                 c'16
                                 - \tongue #3
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 12]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 af4
                                 \f
                                 - \tweak self-alignment-X #left
@@ -1021,7 +946,6 @@
                                 - \baca-bcp-spanner-left-text #5 #5
                                 - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
-                                \(
 
                                 \times 2/3
                                 {
@@ -1169,7 +1093,6 @@
 
                                 f16
                                 \bacaStopTextSpanBCP
-                                \)
                                 \bar "||"
 
                             }
@@ -1198,70 +1121,53 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 b4
-                                %! MATERIAL_COLOR
-                                \(
 
                                 b16
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 3]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 g4
-                                %! MATERIAL_COLOR
-                                \(
 
                                 g4
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 4]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \staff-line-count 4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]
 
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.878 0.878 0.878)
                                 g4
                                 \f
-                                %! MATERIAL_COLOR
-                                \(
 
                                 b8
-                                %! MATERIAL_COLOR
-                                \)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 6]
 
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
+                                ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
-                                %! applying invisibility
-                                \once \override Rest.transparent = ##t
-                                r1 * 5/16
+                                r2
 
-                                R1 * 5/16
+                                r8
                                 \staff-line-count 5
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1270,8 +1176,6 @@
 
                                 \harmonicsOn
                                 \clef "bass"
-                                %! MATERIAL_COLOR
-                                \color-span #-4 #4 #(rgb-color 0.6 0.6 1)
                                 c4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
@@ -1283,8 +1187,6 @@
                                 \>
                                 %! abjad.glissando(7)
                                 \glissando
-                                %! MATERIAL_COLOR
-                                \(
                                 - \abjad-dashed-line-with-hook
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 8
@@ -1367,14 +1269,11 @@
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \p
-                                %! MATERIAL_COLOR
-                                \)
                                 \harmonicsOff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 12]
 
-                                \color-span #-4 #4 #(rgb-color 0.6 0.8 1)
                                 dqs8
                                 \f
                                 - \tweak self-alignment-X #left
@@ -1384,7 +1283,6 @@
                                 - \baca-bcp-spanner-left-text #5 #5
                                 - \tweak staff-padding 4
                                 \bacaStartTextSpanBCP
-                                \(
 
                                 c8
                                 - \tweak self-alignment-X #left
@@ -1534,7 +1432,6 @@
 
                                 fqs,16
                                 \bacaStopTextSpanBCP
-                                \)
                                 \bar "||"
 
                             }

@@ -63,6 +63,7 @@ from .lib import (
     quarters_preprocessor_2,
     quarters_preprocessor_2_1,
     quarters_preprocessor_3_1_2,
+    replace_sigs,
     scordatura,
     second_ending_on,
     select_all_first_leaves,
@@ -105,6 +106,7 @@ from .materials.rhythm import (
 from .materials.score_structure import score
 from .materials.time_signatures import (
     all_signatures,
+    alt_signatures,
     fermata_measures_01,
     fermata_measures_02,
     fermata_measures_03,
@@ -171,6 +173,7 @@ from .materials.time_signatures import (
     signatures_20,
     signatures_21,
     signatures_22,
+    substitute_16,
 )
 
 __all__ = [
@@ -336,6 +339,8 @@ __all__ = [
     "stop_bis_trill",
     "stop_repeat",
     "stop_repeat_default",
+    "substitute_16",
+    "replace_sigs",
     "swell_dynamics",
     "trill_ties",
     "triple_swell",

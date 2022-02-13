@@ -3,6 +3,7 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 import polillas
 
@@ -60,7 +61,7 @@ maker = evans.SegmentMaker(
                 abjad.Glissando(),
                 selector=baca.selectors.leaf(2),
             ),
-            polillas.D_color,
+            # polillas.D_color,
             preprocessor=polillas.fuse_quarters_preprocessor_2_20,
         ),
         evans.attach(
@@ -211,7 +212,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).notes(),
             ),
-            polillas.B_color,
+            # polillas.B_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -251,7 +252,7 @@ maker = evans.SegmentMaker(
                 abjad.Glissando(),
                 selector=baca.selectors.leaf(2),
             ),
-            polillas.D_color,
+            # polillas.D_color,
             preprocessor=polillas.fuse_quarters_preprocessor_2_20,
         ),
         evans.attach(
@@ -385,7 +386,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -399,7 +400,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -413,7 +414,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -427,7 +428,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -492,7 +493,7 @@ maker = evans.SegmentMaker(
                 abjad.Glissando(),
                 selector=baca.selectors.leaf(5),
             ),
-            polillas.D_color,
+            # polillas.D_color,
             preprocessor=polillas.fuse_quarters_preprocessor_2_20,
         ),
         evans.MusicCommand(
@@ -530,7 +531,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -547,7 +548,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -564,7 +565,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -581,7 +582,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -593,7 +594,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.make_tied_notes(),
             evans.PitchHandler(["c''", "cs''", "af'", "b'"], forget=False),
-            polillas.D_color,
+            # polillas.D_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -625,7 +626,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.make_tied_notes(),
             evans.PitchHandler(["b'", "ctqs''", "aqf'", "bqs'"], forget=False),
-            polillas.D_color,
+            # polillas.D_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -659,7 +660,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -673,7 +674,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -687,7 +688,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -701,7 +702,7 @@ maker = evans.SegmentMaker(
                 lilypond_id=1,
                 bookend=False,
             ),
-            polillas.E_color,
+            # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
@@ -879,18 +880,60 @@ maker = evans.SegmentMaker(
             abjad.trill_spanner,
             polillas.select_measures([28, 29]),
         ),
+        evans.call(  # parts
+            "Global Context",
+            polillas.replace_sigs(polillas.substitute_16),
+            baca.selectors.leaves(),
+        ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
         ),
-        evans.attach(
-            "Global Context",
+        evans.call(  # parts
+            "violin 1 voice",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([9, 10, 11, 12]),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+        #         direction=abjad.Up,
+        #     ),
+        #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([36]).leaf(1),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             abjad.Markup(
-                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 direction=abjad.Up,
             ),
-            lambda _: abjad.Selection(_).leaves().group_by_measure().get([36]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([33]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([33]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([33]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([33]).leaf(0),
         ),
         evans.attach(
             "Global Context",
@@ -902,15 +945,33 @@ maker = evans.SegmentMaker(
             polillas.met_90,
             baca.selectors.leaf(0),
         ),
-        evans.attach(
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_120,
+        #     baca.selectors.leaf(28),
+        # ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_120,
+        #     baca.selectors.leaf(28),
+        # ),
+        evans.attach(  # parts
             "Global Context",
             polillas.mark_120,
-            baca.selectors.leaf(28),
+            baca.selectors.leaf(25),
         ),
-        evans.attach(
+        evans.attach(  # parts
             "Global Context",
             polillas.met_120,
-            baca.selectors.leaf(28),
+            baca.selectors.leaf(25),
+        ),
+        evans.attach(  # parts
+            "Global Context",
+            abjad.LilyPondLiteral(
+                r"\once \override Score.TimeSignature.transparent = ##t",
+                format_slot="before",
+            ),
+            baca.selectors.leaf(33),
         ),
         # evans.call(
         #     "Global Context",
@@ -940,7 +1001,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_16,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -959,7 +1020,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

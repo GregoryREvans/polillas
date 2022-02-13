@@ -35,7 +35,7 @@ maker = evans.SegmentMaker(
             evans.Skeleton(r"c'4. c'16 c'16 c'16 c'8 c'16"),
             evans.PitchHandler(["cs,", "d,", "b,", "f,", "g", "b,,"]),
             polillas.zero_padding_glissando,
-            polillas.A_color,
+            # polillas.A_color,
             baca.hairpin("sfp <| ff", selector=lambda _: abjad.Selection(_).notes()),
             abjad.Clef("bass"),
             polillas.scordatura(staff_padding=8),
@@ -61,7 +61,7 @@ maker = evans.SegmentMaker(
                 ["cs'", "d''", "d'", "d''", "e'", "d''", "f'", "d''", "g'", "d''"]
             ),
             polillas.zero_padding_glissando,
-            polillas.A_color,
+            # polillas.A_color,
             baca.hairpin("sfp <| ff", selector=lambda _: abjad.Selection(_).notes()),
             preprocessor=polillas.fuse_preprocessor,
         ),
@@ -82,7 +82,7 @@ maker = evans.SegmentMaker(
             evans.Skeleton(r"r2. c'16 c'16 c'16 c'16 c'8. c'16 r2"),
             evans.PitchHandler(["a", "g'", "b", "f'", "c'", "e'"]),
             polillas.zero_padding_glissando,
-            polillas.A_color,
+            # polillas.A_color,
             baca.hairpin("sfp <| ff", selector=lambda _: abjad.Selection(_).notes()),
             preprocessor=polillas.fuse_preprocessor,
         ),
@@ -103,7 +103,7 @@ maker = evans.SegmentMaker(
             ],
             evans.Skeleton(r"c'1 ~ c'2."),
             evans.PitchHandler([evans.JIPitch("bf,,", 5, with_quarter_tones=True)]),
-            polillas.A_color,
+            # polillas.A_color,
             baca.hairpin("sfp < f", selector=lambda _: abjad.Selection(_).notes()),
             evans.NoteheadHandler(["harmonic"], head_boolean_vector=[1]),
             evans.TextSpanHandler(
@@ -146,7 +146,7 @@ maker = evans.SegmentMaker(
                     ]
                 ]
             ),
-            polillas.B_color,
+            # polillas.B_color,
             abjad.Dynamic("p"),
             abjad.Articulation("tenuto"),
             baca.text_spanner(
@@ -175,7 +175,7 @@ maker = evans.SegmentMaker(
                     for _ in ["5/4", "12/11", "7/5", "8/5", "224/165", "128/75", "16/9"]
                 ]
             ),
-            polillas.B_color,
+            # polillas.B_color,
             abjad.Dynamic("p"),
             abjad.Articulation("tenuto"),
             baca.text_spanner(
@@ -215,7 +215,7 @@ maker = evans.SegmentMaker(
                     ]
                 ]
             ),
-            polillas.B_color,
+            # polillas.B_color,
             abjad.Dynamic("p"),
             baca.text_spanner(
                 r"spazzolato =|",
@@ -253,7 +253,7 @@ maker = evans.SegmentMaker(
                     ]
                 ]
             ),
-            polillas.B_color,
+            # polillas.B_color,
             abjad.Articulation("tenuto"),
             abjad.Dynamic("p"),
             baca.text_spanner(
@@ -282,7 +282,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -302,7 +302,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -322,7 +322,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -342,7 +342,7 @@ maker = evans.SegmentMaker(
                 bookend=False,
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.fuse_quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -361,7 +361,7 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("pp"),
             abjad.StartHairpin("<"),
             evans.Attachment(abjad.Dynamic("f"), selector=baca.selectors.leaf(-1)),
-            polillas.A_color,
+            # polillas.A_color,
             preprocessor=polillas.fuse_preprocessor_2_1,
         ),
         evans.call(
@@ -390,34 +390,275 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.run(-1),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
+        #         direction=abjad.Up,
+        #     ),
+        #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(1),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             abjad.Markup(
-                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
                 direction=abjad.Up,
             ),
-            lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(0),
         ),
-        evans.attach(
-            "Global Context",
+        evans.attach(  # parts
+            "violin 2 voice",
             abjad.Markup(
-                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
                 direction=abjad.Up,
             ),
-            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(0),
         ),
-        evans.attach(
-            "Global Context",
+        evans.attach(  # parts
+            "viola voice",
             abjad.Markup(
-                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
                 direction=abjad.Up,
             ),
-            lambda _: abjad.Selection(_).leaves().group_by_measure().get([10]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([1]).leaf(0),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+        #         direction=abjad.Up,
+        #     ),
+        #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([4]).leaf(1),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([4]).leaf(0),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+        #         direction=abjad.Up,
+        #     ),
+        #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([10]).leaf(1),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([10]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([10]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([10]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([10]).leaf(0),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(14),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(15),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(28),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(41),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(44),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(45),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(72),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(74),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(75),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(76),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(83),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(84),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(97),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(98),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(99),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(100),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(111),
+        ),
+        evans.detach(  # parts
+            "violin 2 voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(112),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(15),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(16),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(21),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StopBeam(),
+            baca.selectors.leaf(22),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(29),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(34),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(35),
+        ),
+        evans.detach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(39),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.StartBeam(),
+            baca.selectors.leaf(41),
         ),
         evans.attach(
             "Global Context",
@@ -439,35 +680,35 @@ maker = evans.SegmentMaker(
             polillas.met_60,
             baca.selectors.leaf(7),
         ),
-        evans.call(
-            "Global Context",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "violin 1 voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "violin 2 voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "viola voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "cello voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
+        # evans.call(
+        #     "Global Context",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "violin 1 voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "violin 2 voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "viola voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "cello voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_01,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -486,7 +727,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=True,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

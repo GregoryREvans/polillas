@@ -407,3 +407,39 @@ Segment runtime: 6 seconds
  Pre-handlers runtime: 0 seconds
  Handlers runtime: 4 seconds
  Post-handlers runtime: 2 seconds
+
+2022-02-11 12:46:19
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 3 seconds
+ Post-handlers runtime: 1 second
+
+2022-02-11 12:47:43
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 3 seconds
+ Post-handlers runtime: 1 second
+
+2022-02-12 21:31:05
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 4 seconds
+ Post-handlers runtime: 1 second
+
+2022-02-12 21:32:37
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 3 seconds
+ Post-handlers runtime: 2 seconds
+
+2022-02-12 21:39:54
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 3 seconds
+ Post-handlers runtime: 2 seconds
+
+2022-02-12 21:41:19
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 4 seconds
+ Post-handlers runtime: 1 second

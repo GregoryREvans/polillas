@@ -77,7 +77,7 @@ maker = evans.SegmentMaker(
             ),
             polillas.force_accidental,
             abjad.Dynamic("ff"),
-            polillas.B_color,
+            # polillas.B_color,
             # preprocessor=polillas.fuse_preprocessor_2,
         ),
         evans.call(
@@ -132,7 +132,7 @@ maker = evans.SegmentMaker(
             ),
             polillas.force_accidental,
             abjad.Dynamic("ff"),
-            polillas.B_color,
+            # polillas.B_color,
             # preprocessor=polillas.fuse_preprocessor_2,
         ),
         evans.call(
@@ -188,7 +188,7 @@ maker = evans.SegmentMaker(
             polillas.force_accidental,
             abjad.Clef("alto"),
             abjad.Dynamic("ff"),
-            polillas.B_color,
+            # polillas.B_color,
             # preprocessor=polillas.fuse_preprocessor_2,
         ),
         evans.call(
@@ -244,7 +244,7 @@ maker = evans.SegmentMaker(
             polillas.force_accidental,
             abjad.Clef("bass"),
             abjad.Dynamic("ff"),
-            polillas.B_color,
+            # polillas.B_color,
             # preprocessor=polillas.fuse_preprocessor_2,
         ),
         evans.call(
@@ -257,7 +257,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[2], stage=1),
             evans.PitchHandler(["aqs'"]),
             abjad.Dynamic("p"),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -265,7 +265,7 @@ maker = evans.SegmentMaker(
             polillas.flames(denominator=16, extra_counts=[1], stage=1),
             evans.PitchHandler(["dqf'"]),
             abjad.Dynamic("p"),
-            polillas.C_color,
+            # polillas.C_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -276,7 +276,7 @@ maker = evans.SegmentMaker(
             ),
             abjad.glissando,
             baca.hairpin("mp < f"),
-            polillas.A_color,
+            # polillas.A_color,
             preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
@@ -284,7 +284,7 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(),
             evans.PitchHandler(["bf,,"]),
             baca.hairpin("sfp < f"),
-            polillas.A_color,
+            # polillas.A_color,
             # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
@@ -345,7 +345,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=False,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_15,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,

@@ -31,7 +31,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.flight(stage=5),
             polillas.triple_swell,
-            polillas.D_color,
+            # polillas.D_color,
         ),
         evans.call(
             "violin 1 voice",
@@ -73,7 +73,7 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(
                 [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
             ),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.MusicCommand(
             [
@@ -90,7 +90,7 @@ maker = evans.SegmentMaker(
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.MusicCommand(
             [
@@ -107,7 +107,7 @@ maker = evans.SegmentMaker(
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.MusicCommand(
             [
@@ -118,7 +118,7 @@ maker = evans.SegmentMaker(
                 [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
             ),
             abjad.Dynamic("p"),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.MusicCommand(
             [
@@ -135,7 +135,7 @@ maker = evans.SegmentMaker(
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
-            polillas.G_color,
+            # polillas.G_color,
         ),
         evans.call(
             "violin 1 voice",
@@ -170,13 +170,45 @@ maker = evans.SegmentMaker(
             ),
             polillas.select_measures([0, 1, 2, 3, 4, 5, 6, 7, 8]),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+        #         direction=abjad.Up,
+        #     ),
+        #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(1),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             abjad.Markup(
-                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
                 direction=abjad.Up,
             ),
-            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(1),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
+                direction=abjad.Up,
+            ),
+            lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
         ),
         evans.call(
             "score",
@@ -231,7 +263,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,
-    transparent_fermatas=False, # jack parts
+    transparent_fermatas=False,  # jack parts
     time_signatures=polillas.signatures_07,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -250,7 +282,7 @@ maker = evans.SegmentMaker(
     fermata="scripts.ufermata",
     with_layout=True,
     extra_rewrite=False,
-    # mm_rests=False,
+    mm_rests=False,
 )
 
 maker.build_segment()

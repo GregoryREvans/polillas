@@ -4,6 +4,8 @@ import evans
 
 import polillas
 
+raise Exception(len(polillas.alt_signatures))  # temp!
+
 breaks = evans.Breaks(
     evans.Page(
         evans.System(measures=6, lbsd=(50, "(21 29 29 29)"), x_offset=1),
@@ -117,7 +119,7 @@ breaks = evans.Breaks(
         evans.System(measures=7, lbsd=(10, "(21 30 30 30)"), x_offset=1),
         evans.System(measures=7, lbsd=(114, "(21 30 30 30)"), x_offset=1),
     ),
-    time_signatures=polillas.all_signatures,
+    time_signatures=polillas.alt_signatures,
     default_spacing=(1, 16),
     # spacing=[
     #     (10, (1, 37)),
