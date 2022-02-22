@@ -53,12 +53,20 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(0),
+            # ),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(2),
+            # ),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(0),
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(2),
             ),
             # polillas.D_color,
@@ -244,12 +252,20 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(0),
+            # ),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(2),
+            # ),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(0),
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(2),
             ),
             # polillas.D_color,
@@ -473,24 +489,44 @@ maker = evans.SegmentMaker(
                 forget=False,
             ),
             polillas.special_hairpin,
-            evans.Attachment(
-                abjad.Glissando(),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(0),
+            # ),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(2),
+            # ),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(3),
+            # ),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(4),
+            # ),
+            # evans.Attachment(
+            #     abjad.Glissando(),
+            #     selector=baca.selectors.leaf(5),
+            # ),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(0),
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(2),
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(3),
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(4),
             ),
-            evans.Attachment(
-                abjad.Glissando(),
+            evans.Attachment(  # parts
+                abjad.Tie(),
                 selector=baca.selectors.leaf(5),
             ),
             # polillas.D_color,
@@ -972,6 +1008,11 @@ maker = evans.SegmentMaker(
                 format_slot="before",
             ),
             baca.selectors.leaf(33),
+        ),
+        evans.call(  # parts
+            "score",
+            evans.global_to_voice,
+            lambda _: abjad.Selection(_),
         ),
         # evans.call(
         #     "Global Context",

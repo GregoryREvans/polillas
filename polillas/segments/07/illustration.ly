@@ -24,18 +24,6 @@
                 \time 8/8
                 \mark \markup \bold {  }
                 s1 * 1
-                ^ \markup {
-                  \override #'(font-size . 5.5)
-                  \raise #6 \with-dimensions-from \null
-                  \concat {
-                      \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
-                      \hspace #1
-                      \upright [
-                      \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
-                      \hspace #0.5
-                      \upright ]
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -100,13 +88,6 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 11]
@@ -132,12 +113,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
 
             }
@@ -216,6 +194,18 @@
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
+                                            ^ \markup {
+                                              \override #'(font-size . 5.5)
+                                              \raise #6 \with-dimensions-from \null
+                                              \concat {
+                                                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                                  \hspace #1
+                                                  \upright [
+                                                  \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                                  \hspace #0.5
+                                                  \upright ]
+                                              }
+                                            }
 
                                             cs'4
                                             \f
@@ -253,7 +243,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 2]
 
-                                            c'4.
+                                            cs'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -295,7 +285,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            d'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -309,7 +299,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            dqf'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -334,7 +324,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 3]
 
-                                            c'4.
+                                            d'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -376,7 +366,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            ef'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -390,7 +380,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            dqs'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -416,7 +406,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 4]
 
-                                            c'4.
+                                            ef'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -458,7 +448,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            e'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -472,7 +462,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            eqf'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -497,7 +487,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 5]
 
-                                            c'4
+                                            e'4
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -539,7 +529,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8
+                                            f'8
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -553,7 +543,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8
+                                            eqs'8
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -579,7 +569,7 @@
                                             % [violin 1 voice measure 6]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'8.
+                                            f'8.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -621,7 +611,7 @@
                                             \startTextSpanTwo
                                             [
 
-                                            cs'16.
+                                            fs'16.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -634,7 +624,7 @@
                                             \startTextSpanTwo
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'16.
+                                            fqs'16.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -660,7 +650,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 7]
 
-                                            c'2.
+                                            fs'2.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -701,7 +691,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cs'4.
+                                            g'4.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -713,7 +703,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cqs'4.
+                                            gqf'4.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -737,7 +727,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 8]
 
-                                            c'2
+                                            g'2
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -778,7 +768,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cs'4
+                                            af'4
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -790,7 +780,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cqs'4
+                                            gqs'4
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -814,7 +804,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 9]
 
-                                            c'4..
+                                            af'4..
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -856,7 +846,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8..
+                                            a'8..
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -870,7 +860,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8..
+                                            aqf'8..
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -902,6 +892,13 @@
                                         - \tweak bound-details.right.padding 3
                                         - \tweak staff-padding #7
                                         \startTextSpanTwo
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         c'8
@@ -969,6 +966,9 @@
                                         % [violin 1 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         \bar "||"
@@ -1041,6 +1041,18 @@
                                             - \tweak bound-details.right.padding 1.4
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
+                                            ^ \markup {
+                                              \override #'(font-size . 5.5)
+                                              \raise #6 \with-dimensions-from \null
+                                              \concat {
+                                                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                                  \hspace #1
+                                                  \upright [
+                                                  \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                                  \hspace #0.5
+                                                  \upright ]
+                                              }
+                                            }
 
                                             cs'4
                                             \f
@@ -1078,7 +1090,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 2]
 
-                                            c'4.
+                                            d'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1120,7 +1132,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            ef'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1134,7 +1146,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            dqs'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1159,7 +1171,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 3]
 
-                                            c'4.
+                                            e'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1201,7 +1213,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            f'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1215,7 +1227,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            eqs'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1241,7 +1253,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 4]
 
-                                            c'4.
+                                            fs'4.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1283,7 +1295,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8.
+                                            g'8.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1297,7 +1309,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8.
+                                            gqf'8.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1322,7 +1334,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 5]
 
-                                            c'4
+                                            af'4
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1364,7 +1376,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8
+                                            a'8
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1378,7 +1390,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8
+                                            aqf'8
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1404,7 +1416,7 @@
                                             % [violin 2 voice measure 6]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            c'8.
+                                            bf'8.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1446,7 +1458,7 @@
                                             \startTextSpanTwo
                                             [
 
-                                            cs'16.
+                                            b'16.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1459,7 +1471,7 @@
                                             \startTextSpanTwo
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'16.
+                                            bqf'16.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1485,7 +1497,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 7]
 
-                                            c'2.
+                                            c''2.
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1526,7 +1538,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cs'4.
+                                            cs''4.
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1538,7 +1550,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cqs'4.
+                                            cqs''4.
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1562,7 +1574,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 8]
 
-                                            c'2
+                                            d''2
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1603,7 +1615,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cs'4
+                                            ef''4
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1615,7 +1627,7 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
 
-                                            cqs'4
+                                            dqs''4
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1639,7 +1651,7 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 9]
 
-                                            c'4..
+                                            e''4..
                                             \mp
                                             \<
                                             \stopTextSpanTwo
@@ -1681,7 +1693,7 @@
                                             \startTextSpanTwo
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs'8..
+                                            f''8..
                                             \f
                                             \>
                                             \stopTextSpanTwo
@@ -1695,7 +1707,7 @@
                                             [
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'8..
+                                            eqs''8..
                                             \mp
                                             %! baca.text_spanner()
                                             %! baca.PiecewiseCommand._call(3)
@@ -1727,6 +1739,13 @@
                                         - \tweak bound-details.right.padding 3
                                         - \tweak staff-padding #7
                                         \startTextSpanTwo
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         c'8
@@ -1794,6 +1813,9 @@
                                         % [violin 2 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         \bar "||"
@@ -1829,6 +1851,18 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
                                 c'4.
+                                ^ \markup {
+                                  \override #'(font-size . 5.5)
+                                  \raise #6 \with-dimensions-from \null
+                                  \concat {
+                                      \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                      \hspace #1
+                                      \upright [
+                                      \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                      \hspace #0.5
+                                      \upright ]
+                                  }
+                                }
 
                                 c'8
 
@@ -1915,6 +1949,13 @@
 
                                 c'4.
                                 \p
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8
@@ -1981,6 +2022,9 @@
                                 % [viola voice measure 14]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 \bar "||"
@@ -2053,6 +2097,18 @@
                                     - \tweak bound-details.right.padding 1.4
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
+                                    ^ \markup {
+                                      \override #'(font-size . 5.5)
+                                      \raise #6 \with-dimensions-from \null
+                                      \concat {
+                                          \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                          \hspace #1
+                                          \upright [
+                                          \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                          \hspace #0.5
+                                          \upright ]
+                                      }
+                                    }
 
                                     b4
                                     \f
@@ -2090,7 +2146,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 2]
 
-                                    c'4.
+                                    a4.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2132,7 +2188,7 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b8.
+                                    af8.
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2146,7 +2202,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs8.
+                                    aqf8.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2171,7 +2227,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 3]
 
-                                    c'4.
+                                    fs4.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2213,7 +2269,7 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b8.
+                                    f8.
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2227,7 +2283,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs8.
+                                    fqs8.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2253,7 +2309,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 4]
 
-                                    c'4.
+                                    ef4.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2295,7 +2351,7 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b8.
+                                    d8.
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2309,7 +2365,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs8.
+                                    dqs8.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2334,7 +2390,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 5]
 
-                                    c'4
+                                    c4
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2376,7 +2432,7 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b8
+                                    b,8
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2390,7 +2446,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs8
+                                    bqs,8
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2416,7 +2472,7 @@
                                     % [cello voice measure 6]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    c'8.
+                                    a,8.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2458,7 +2514,7 @@
                                     \startTextSpanTwo
                                     [
 
-                                    b16.
+                                    af,16.
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2471,7 +2527,7 @@
                                     \startTextSpanTwo
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs16.
+                                    aqf,16.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2497,7 +2553,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 7]
 
-                                    c'2.
+                                    bf,2.
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2538,7 +2594,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    b4.
+                                    a,4.
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2550,7 +2606,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    bqs4.
+                                    aqs,4.
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2574,7 +2630,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 8]
 
-                                    c'2
+                                    b,2
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2615,7 +2671,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    b4
+                                    bf,4
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2627,7 +2683,7 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
 
-                                    bqs4
+                                    bqf,4
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2651,7 +2707,7 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 9]
 
-                                    c'4..
+                                    c4..
                                     \mp
                                     \<
                                     \stopTextSpanTwo
@@ -2693,7 +2749,7 @@
                                     \startTextSpanTwo
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    b8..
+                                    b,8..
                                     \f
                                     \>
                                     \stopTextSpanTwo
@@ -2707,7 +2763,7 @@
                                     [
 
                                     \revert Staff.Stem.stemlet-length
-                                    bqs8..
+                                    bqs,8..
                                     \mp
                                     %! baca.text_spanner()
                                     %! baca.PiecewiseCommand._call(3)
@@ -2739,6 +2795,13 @@
                                 - \tweak bound-details.right.padding 3
                                 - \tweak staff-padding #7
                                 \startTextSpanTwo
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8
@@ -2806,6 +2869,9 @@
                                 % [cello voice measure 14]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 \bar "||"

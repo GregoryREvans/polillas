@@ -11,23 +11,13 @@
                 \time 5/16
                 \mark \markup \bold {  }
                 s1 * 5/16
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -40,12 +30,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -58,12 +45,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -164,6 +148,13 @@
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin I" }
                                         r4
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                          }
+                                        }
 
                                         r16
                                         %! COMMENT_MEASURE_NUMBERS
@@ -171,6 +162,9 @@
                                         % [violin 1 voice measure 2]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -183,6 +177,9 @@
                                         % [violin 1 voice measure 4]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -195,6 +192,9 @@
                                         % [violin 1 voice measure 6]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -510,6 +510,13 @@
                                         %! applying staff names and clefs
                                         \markup { \hcenter-in #14 "Violin II" }
                                         r4
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                          }
+                                        }
 
                                         r16
                                         %! COMMENT_MEASURE_NUMBERS
@@ -517,6 +524,9 @@
                                         % [violin 2 voice measure 2]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -529,6 +539,9 @@
                                         % [violin 2 voice measure 4]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -541,6 +554,9 @@
                                         % [violin 2 voice measure 6]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -807,6 +823,13 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Viola" }
                                 r4
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                  }
+                                }
 
                                 r16
                                 %! COMMENT_MEASURE_NUMBERS
@@ -814,6 +837,9 @@
                                 % [viola voice measure 2]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -826,6 +852,9 @@
                                 % [viola voice measure 4]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \staff-line-count 4
@@ -842,6 +871,9 @@
                                 % [viola voice measure 6]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1122,6 +1154,13 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 b4
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                  }
+                                }
 
                                 b16
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1129,6 +1168,9 @@
                                 % [cello voice measure 2]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1143,6 +1185,9 @@
                                 % [cello voice measure 4]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \staff-line-count 4
@@ -1159,6 +1204,9 @@
                                 % [cello voice measure 6]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
                                 %! COMMENT_MEASURE_NUMBERS

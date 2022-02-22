@@ -11,13 +11,6 @@
                 \time 4/8
                 \mark \markup \bold {  }
                 s1 * 1/2
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -171,6 +164,13 @@
                                         ^ \markup (I)
                                         %! abjad.glissando(7)
                                         \glissando
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
 
                                         e'''4
                                         \harmonicsOff
@@ -860,6 +860,13 @@
                                         \p
                                         ^ \markup (III)
                                         ~
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
 
                                         a'''4
                                         \harmonicsOff
@@ -1188,12 +1195,12 @@
                                         % [violin 2 voice measure 17]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        af'8
+                                        c''8
                                         - \staccato
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        a'8
+                                        cs''8
                                         - \staccato
                                         ]
 
@@ -1202,7 +1209,7 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        af'8
+                                        c''8
                                         - \staccato
                                         ]
 
@@ -1211,12 +1218,12 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        gqs'8
+                                        bqs'8
                                         - \staccato
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        bf'8
+                                        d''8
                                         - \staccato
                                         [
 
@@ -1261,6 +1268,13 @@
                                 ^ \markup (IV)
                                 %! abjad.glissando(7)
                                 \glissando
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 aqs''4
                                 %! abjad.glissando(7)
@@ -1451,6 +1465,13 @@
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
                                 \startTextSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 g4
                                 %! abjad.glissando(7)

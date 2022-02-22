@@ -585,16 +585,41 @@ maker = evans.SegmentMaker(
             polillas.stop_repeat,
             baca.selectors.leaf(3),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_120,
+        #     baca.selectors.leaf(0),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             polillas.mark_120,
-            baca.selectors.leaf(0),
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_120,
-            baca.selectors.leaf(0),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_120,
+            polillas.select_measures([0], leaf=0),
         ),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_120,
+            polillas.select_measures([0], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.mark_120,
+            polillas.select_measures([0], leaf=0),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_120,
+        #     baca.selectors.leaf(0),
+        # ),
+        # evans.call( # parts
+        #     "score",
+        #     evans.global_to_voice,
+        #     lambda _: abjad.Selection(_),
+        # ),
         # evans.attach(
         #     "Global Context",
         #     polillas.mark_40,
@@ -620,26 +645,26 @@ maker = evans.SegmentMaker(
         #     evans.annotate_leaves,
         #     lambda _: abjad.Selection(_),
         # ),
-        evans.call(
-            "violin 1 voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "violin 2 voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "viola voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
-        evans.call(
-            "cello voice",
-            evans.annotate_leaves,
-            lambda _: abjad.Selection(_),
-        ),
+        # evans.call(
+        #     "violin 1 voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "violin 2 voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "viola voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
+        # evans.call(
+        #     "cello voice",
+        #     evans.annotate_leaves,
+        #     lambda _: abjad.Selection(_),
+        # ),
     ],
     score_template=polillas.score,
     transpose_from_sounding_pitch=True,

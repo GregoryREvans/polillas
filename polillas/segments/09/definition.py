@@ -275,16 +275,41 @@ maker = evans.SegmentMaker(
             evans.TrillHandler(boolean_vector=[1], forget=False, only_chords=True),
             lambda _: abjad.Selection(_),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_108,
+        #     baca.selectors.leaf(0),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             polillas.mark_108,
-            baca.selectors.leaf(0),
+            polillas.select_measures([1], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_108,
-            baca.selectors.leaf(0),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_108,
+            polillas.select_measures([1], leaf=0),
         ),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_108,
+            polillas.select_measures([1], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.mark_108,
+            polillas.select_measures([1], leaf=0),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_108,
+        #     baca.selectors.leaf(0),
+        # ),
+        # evans.call( # parts
+        #     "score",
+        #     evans.global_to_voice,
+        #     lambda _: abjad.Selection(_),
+        # ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,

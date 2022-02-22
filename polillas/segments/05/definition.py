@@ -188,12 +188,44 @@ maker = evans.SegmentMaker(
             polillas.start_repeat,
             lambda _: abjad.Selection(_).leaf(18),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(
+        #         r"""\rehearsal-mark-markup "x6" 6 -1""",
+        #     ),
+        #     baca.selectors.leaf(19),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             abjad.Markup(
-                r"""\rehearsal-mark-markup "x6" 6 -1""",
+                r"""\rehearsal-mark-markup "x6" 3 -1""",
+                direction=abjad.Up,
             ),
-            baca.selectors.leaf(19),
+            polillas.select_measures([16], leaf=0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(
+                r"""\rehearsal-mark-markup "x6" 3 -1""",
+                direction=abjad.Up,
+            ),
+            polillas.select_measures([16], leaf=0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(
+                r"""\rehearsal-mark-markup "x6" 3 -1""",
+                direction=abjad.Up,
+            ),
+            polillas.select_measures([16], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(
+                r"""\rehearsal-mark-markup "x6" 3 -1""",
+                direction=abjad.Up,
+            ),
+            polillas.select_measures([16], leaf=0),
         ),
         evans.attach(
             "Global Context",
@@ -205,26 +237,66 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_90,
+        #     baca.selectors.leaf(0),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             polillas.mark_90,
-            baca.selectors.leaf(0),
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_90,
-            baca.selectors.leaf(0),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_90,
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_90,
+            polillas.select_measures([0], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.mark_90,
+            polillas.select_measures([0], leaf=0),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_90,
+        #     baca.selectors.leaf(0),
+        # ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_108,
+        #     baca.selectors.leaf(7),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             polillas.mark_108,
-            baca.selectors.leaf(7),
+            polillas.select_measures([7], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_108,
-            baca.selectors.leaf(7),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_108,
+            polillas.select_measures([7], leaf=0),
         ),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_108,
+            polillas.select_measures([7], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.mark_108,
+            polillas.select_measures([7], leaf=0),
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_108,
+        #     baca.selectors.leaf(7),
+        # ),
         # evans.attach(
         #     "Global Context",
         #     abjad.Markup(
@@ -385,6 +457,11 @@ maker = evans.SegmentMaker(
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([17]).leaf(0),
         ),
+        # evans.call( # parts
+        #     "score",
+        #     evans.global_to_voice,
+        #     lambda _: abjad.Selection(_),
+        # ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,

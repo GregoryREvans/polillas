@@ -11,12 +11,6 @@
                 \time 4/8
                 \mark \markup \bold {  }
                 s1 * 1/2
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -200,13 +194,6 @@
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 27]
@@ -260,7 +247,6 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 34]
 
-                \once \override Score.TimeSignature.transparent = ##t
                 %! scaling time signatures
                 \time 1/4
                 s1 * 1/4
@@ -306,8 +292,14 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             cs''8
                                             \f
@@ -325,7 +317,7 @@
                                             b'1..
                                             \p
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             b'4
@@ -405,7 +397,7 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             cs''8
@@ -424,7 +416,7 @@
                                             b'2..
                                             \p
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             b'8
@@ -489,7 +481,7 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             cs''8
@@ -508,24 +500,24 @@
                                             b'2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             b'2.
                                             \ff
                                             - \tweak stencil #constante-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
                                             b'2.
                                             \>
-                                            \glissando
+                                            ~
 
                                             b'2
                                             \mf
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
                                             b'4
                                             \f
@@ -786,6 +778,13 @@
                                         % [violin 1 voice measure 26]
 
                                         r2.
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 27]
@@ -919,6 +918,7 @@
                                         % [violin 1 voice measure 34]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         \bar "||"
@@ -956,8 +956,14 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             af'8
                                             \f
@@ -975,7 +981,7 @@
                                             g'1..
                                             \p
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             g'4
@@ -1060,7 +1066,7 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             af'8
@@ -1079,7 +1085,7 @@
                                             g'2..
                                             \p
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             g'8
@@ -1145,7 +1151,7 @@
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             af'8
@@ -1164,24 +1170,24 @@
                                             g'2.
                                             \p
                                             \<
-                                            \glissando
+                                            ~
                                             \startTrillSpan
 
                                             g'2.
                                             \ff
                                             - \tweak stencil #constante-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
                                             g'2.
                                             \>
-                                            \glissando
+                                            ~
 
                                             g'2
                                             \mf
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
-                                            \glissando
+                                            ~
 
                                             g'4
                                             \f
@@ -1424,6 +1430,13 @@
                                         % [violin 2 voice measure 26]
 
                                         r2.
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 27]
@@ -1559,6 +1572,7 @@
                                         % [violin 2 voice measure 34]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         \bar "||"
@@ -1600,8 +1614,14 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     b'8
                                     \f
@@ -1619,7 +1639,7 @@
                                     c''1..
                                     \p
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     c''4
@@ -1700,7 +1720,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     b'8
@@ -1719,7 +1739,7 @@
                                     c''2..
                                     \p
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     c''8
@@ -1775,7 +1795,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     b'8
@@ -1794,24 +1814,24 @@
                                     c''2.
                                     \p
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     c''2.
                                     \ff
                                     - \tweak stencil #constante-hairpin
                                     \<
-                                    \glissando
+                                    ~
 
                                     c''2.
                                     \>
-                                    \glissando
+                                    ~
 
                                     c''2
                                     \mf
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
 
                                     c''4
                                     \f
@@ -2066,6 +2086,13 @@
                                 \>
                                 ~
                                 \startTrillSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 27]
@@ -2164,6 +2191,7 @@
                                 % [viola voice measure 34]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 \bar "||"
@@ -2203,8 +2231,14 @@
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
                                     \stopTextSpan
-                                    \glissando
+                                    ~
                                     \startTrillSpan
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     g'8
                                     \f
@@ -2222,7 +2256,7 @@
                                     cs''1..
                                     \p
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     cs''4
@@ -2305,7 +2339,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     g'8
@@ -2324,7 +2358,7 @@
                                     cs''2..
                                     \p
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     cs''8
@@ -2388,7 +2422,7 @@
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     g'8
@@ -2407,24 +2441,24 @@
                                     cs''2.
                                     \p
                                     \<
-                                    \glissando
+                                    ~
                                     \startTrillSpan
 
                                     cs''2.
                                     \ff
                                     - \tweak stencil #constante-hairpin
                                     \<
-                                    \glissando
+                                    ~
 
                                     cs''2.
                                     \>
-                                    \glissando
+                                    ~
 
                                     cs''2
                                     \mf
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \glissando
+                                    ~
 
                                     cs''4
                                     \f
@@ -2669,6 +2703,13 @@
                                 \>
                                 ~
                                 \startTrillSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 27]
@@ -2781,6 +2822,7 @@
                                 % [cello voice measure 34]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 \bar "||"

@@ -6,18 +6,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=40
                 %! scaling time signatures
                 \time 4/4
                 \mark \markup \bold {  }
                 s1 * 1
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -29,19 +21,12 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
 
-                \tempo 4=90
                 %! scaling time signatures
                 \time 5/4
                 s1 * 5/4
                 \once \override Score.BarLine.X-extent = #'(0.5 . 3)
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
@@ -49,7 +34,6 @@
                 %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
-                - \rehearsal-mark-markup "x4" 6 -1
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -157,6 +141,13 @@
                                         \>
                                         ~
                                         \startTrillSpan
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
@@ -185,6 +176,7 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \mp
+                                        ^ \rehearsal-mark-markup "x4" 3 -1
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -210,6 +202,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
@@ -338,6 +336,13 @@
                                         \>
                                         ~
                                         \startTrillSpan
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
@@ -366,6 +371,7 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \mp
+                                        ^ \rehearsal-mark-markup "x4" 3 -1
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -391,6 +397,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
@@ -523,6 +535,13 @@
                                 \>
                                 ~
                                 \startTrillSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
@@ -552,6 +571,7 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
                                 \mp
+                                ^ \rehearsal-mark-markup "x4" 3 -1
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -577,6 +597,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
@@ -705,6 +731,13 @@
                                 \>
                                 ~
                                 \startTrillSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -734,6 +767,7 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
                                 \mp
+                                ^ \rehearsal-mark-markup "x4" 3 -1
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -763,6 +797,12 @@
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
                                 \startTextSpan
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 5]

@@ -24,13 +24,6 @@
                 \time 7/4
                 \mark \markup \bold {  }
                 s1 * 7/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -74,12 +67,6 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
@@ -158,13 +145,6 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 19]
@@ -327,12 +307,6 @@
                 %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
-                - \abjad-dashed-line-with-arrow
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 42]
@@ -369,13 +343,6 @@
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                \bacaStopTextSpanMM
-                - \abjad-invisible-line
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 47]
@@ -383,7 +350,6 @@
                 %! scaling time signatures
                 \time 5/4
                 s1 * 5/4
-                \bacaStopTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 48]
@@ -395,14 +361,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 49]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
-                \bar "|."
 
             }
 
@@ -443,6 +405,13 @@
                                         - \baca-circle-bowing
                                         \<
                                         ~
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
@@ -516,6 +485,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         bqf8.
@@ -661,6 +636,13 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpan
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                          }
+                                        }
 
                                         e''4
                                         ~
@@ -1263,6 +1245,12 @@
                                         - \tweak bound-details.right.stencil-align-dir-y #center
                                         - \tweak staff-padding 5
                                         \startTextSpan
+                                        - \abjad-dashed-line-with-arrow
+                                        - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
+                                        - \tweak padding #4
+                                        - \tweak staff-padding #2
+                                        - \tweak font-size #6
+                                        \bacaStartTextSpanMM
 
                                         eqs''4
                                         ~
@@ -1460,12 +1448,20 @@
                                         %! SPANNER_START
                                         \>
                                         ~
+                                        \bacaStopTextSpanMM
+                                        - \abjad-invisible-line
+                                        - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                        - \tweak padding #4
+                                        - \tweak staff-padding #2
+                                        - \tweak font-size #6
+                                        \bacaStartTextSpanMM
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 47]
 
                                         eqs''2.
                                         ~
+                                        \bacaStopTextSpanMM
 
                                         eqs''2
                                         ~
@@ -1479,12 +1475,16 @@
                                         % [violin 1 voice measure 49]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \!
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
+                                        \bar "|."
 
                                     }
 
@@ -1516,6 +1516,13 @@
                                         \pp
                                         - \baca-circle-bowing
                                         \<
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                          }
+                                        }
 
                                         d'1.
                                         - \baca-circle-bowing
@@ -1596,6 +1603,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         a8.
@@ -1746,6 +1759,13 @@
                                         %! SPANNER_START
                                         \startTextSpan
                                         [
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                          }
+                                        }
 
                                         \revert Staff.Stem.stemlet-length
                                         d'8
@@ -2323,6 +2343,12 @@
                                         - \tweak bound-details.right.stencil-align-dir-y #center
                                         - \tweak staff-padding 5
                                         \startTextSpan
+                                        - \abjad-dashed-line-with-arrow
+                                        - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
+                                        - \tweak padding #4
+                                        - \tweak staff-padding #2
+                                        - \tweak font-size #6
+                                        \bacaStartTextSpanMM
 
                                         d'4
                                         ~
@@ -2520,12 +2546,20 @@
                                         %! SPANNER_START
                                         \>
                                         ~
+                                        \bacaStopTextSpanMM
+                                        - \abjad-invisible-line
+                                        - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                        - \tweak padding #4
+                                        - \tweak staff-padding #2
+                                        - \tweak font-size #6
+                                        \bacaStartTextSpanMM
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 47]
 
                                         d'2.
                                         ~
+                                        \bacaStopTextSpanMM
 
                                         d'2
                                         ~
@@ -2539,12 +2573,16 @@
                                         % [violin 2 voice measure 49]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
                                         \!
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
+                                        \bar "|."
 
                                     }
 
@@ -2581,6 +2619,13 @@
                                 \pp
                                 - \baca-circle-bowing
                                 \<
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                  }
+                                }
 
                                 c4
                                 - \baca-circle-bowing
@@ -2683,6 +2728,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs8.
@@ -2854,6 +2905,13 @@
                                 %! SPANNER_START
                                 \startTextSpan
                                 [
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                  }
+                                }
 
                                 \revert Staff.Stem.stemlet-length
                                 c8
@@ -3411,6 +3469,12 @@
                                 - \tweak bound-details.right.stencil-align-dir-y #center
                                 - \tweak staff-padding 5
                                 \startTextSpan
+                                - \abjad-dashed-line-with-arrow
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
 
                                 b4
                                 ~
@@ -3608,12 +3672,20 @@
                                 %! SPANNER_START
                                 \>
                                 ~
+                                \bacaStopTextSpanMM
+                                - \abjad-invisible-line
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 47]
 
                                 b2.
                                 ~
+                                \bacaStopTextSpanMM
 
                                 b2
                                 ~
@@ -3627,12 +3699,16 @@
                                 % [viola voice measure 49]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
                                 \!
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
+                                \bar "|."
 
                             }
 
@@ -3665,6 +3741,13 @@
                                 \pp
                                 - \baca-circle-bowing
                                 \<
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                  }
+                                }
 
                                 bf,4
                                 - \baca-circle-bowing
@@ -3745,6 +3828,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 gqs8.
@@ -3870,6 +3959,13 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                  }
+                                }
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 bf,8
@@ -4430,6 +4526,12 @@
                                 - \tweak bound-details.right.stencil-align-dir-y #center
                                 - \tweak staff-padding 5
                                 \startTextSpan
+                                - \abjad-dashed-line-with-arrow
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
 
                                 bf,4
                                 ~
@@ -4627,12 +4729,20 @@
                                 %! SPANNER_START
                                 \>
                                 ~
+                                \bacaStopTextSpanMM
+                                - \abjad-invisible-line
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 47]
 
                                 bf,2.
                                 ~
+                                \bacaStopTextSpanMM
 
                                 bf,2
                                 ~
@@ -4646,6 +4756,9 @@
                                 % [cello voice measure 49]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
@@ -4653,6 +4766,7 @@
                                 \!
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"
                                 _ \colophon
+                                \bar "|."
 
                             }
 

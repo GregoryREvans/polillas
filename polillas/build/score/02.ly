@@ -11,12 +11,6 @@
                 \time 9/8
                 \mark \markup \bold {  }
                 s1 * 9/8
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -39,13 +33,6 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -57,12 +44,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -89,12 +73,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -156,12 +137,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 19]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
 
             }
@@ -210,6 +188,12 @@
                                         \>
                                         ~
                                         \startTrillSpan d''
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         cs''4.
                                         %! COMMENT_MEASURE_NUMBERS
@@ -256,6 +240,13 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         \times 2/3
                                         {
@@ -377,6 +368,9 @@
                                         % [violin 1 voice measure 6]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -489,6 +483,9 @@
                                         % [violin 1 voice measure 10]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -795,6 +792,9 @@
                                         % [violin 1 voice measure 19]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         \bar "||"
@@ -837,6 +837,12 @@
                                         \>
                                         ~
                                         \startTrillSpan a'
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         af'4.
                                         %! COMMENT_MEASURE_NUMBERS
@@ -883,6 +889,13 @@
                                         %! baca.bcps()
                                         %! baca.BCPCommand._call(2)
                                         \bacaStartTextSpanBCP
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         \times 2/3
                                         {
@@ -995,6 +1008,9 @@
                                         % [violin 2 voice measure 6]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1116,6 +1132,9 @@
                                         % [violin 2 voice measure 10]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1506,6 +1525,9 @@
                                         % [violin 2 voice measure 19]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                         \bar "||"
@@ -1552,6 +1574,12 @@
                                 \>
                                 ~
                                 \startTrillSpan cs''
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 b'4.
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1598,6 +1626,13 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                  }
+                                }
 
                                 \times 2/3
                                 {
@@ -1701,6 +1736,9 @@
                                 % [viola voice measure 6]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1822,6 +1860,9 @@
                                 % [viola voice measure 10]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2191,6 +2232,9 @@
                                 % [viola voice measure 19]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 \bar "||"
@@ -2236,6 +2280,12 @@
                                 \stopTextSpanOne
                                 ~
                                 \startTrillSpan a'
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 g'4.
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2283,6 +2333,13 @@
                                 %! baca.bcps()
                                 %! baca.BCPCommand._call(2)
                                 \bacaStartTextSpanBCP
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                  }
+                                }
 
                                 \times 2/3
                                 {
@@ -2395,6 +2452,9 @@
                                 % [cello voice measure 6]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2525,6 +2585,9 @@
                                 % [cello voice measure 10]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2798,6 +2861,9 @@
                                 % [cello voice measure 19]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"
                                 \bar "||"

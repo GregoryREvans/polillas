@@ -344,6 +344,11 @@ maker = evans.SegmentMaker(
             polillas.met_72,
             baca.selectors.leaf(0),
         ),
+        evans.call(  # parts
+            "score",
+            evans.global_to_voice,
+            lambda _: abjad.Selection(_),
+        ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,

@@ -6,18 +6,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=108
                 %! scaling time signatures
                 \time 6/16
                 \mark \markup \bold {  }
                 s1 * 3/8
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -121,6 +113,13 @@
                                         \p
                                         - \tongue #2
                                         \stopTrillSpan
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         r8
 
@@ -293,7 +292,7 @@
                                         - \tongue #3
                                         ]
 
-                                        ef'16
+                                        f'16
                                         - \tongue #3
                                         ~
 
@@ -301,12 +300,12 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            ef'16
+                                            f'16
                                             [
 
                                             r8
 
-                                            e'8
+                                            fs'8
                                             - \tongue #2
 
                                             \revert Staff.Stem.stemlet-length
@@ -318,12 +317,12 @@
                                         r16
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        ef'8
+                                        f'8
                                         - \tongue #2
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        dqs'16
+                                        eqs'16
                                         - \tongue #3
                                         ]
                                         \bar "||"
@@ -366,6 +365,13 @@
                                         \p
                                         - \tongue #2
                                         \stopTrillSpan
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         r8
 
@@ -521,6 +527,13 @@
                                     r8
                                     \stopTrillSpan
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                      }
+                                    }
 
                                     b8
                                     \p
@@ -668,6 +681,13 @@
                                     r8
                                     \stopTrillSpan
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                      }
+                                    }
 
                                     a8
                                     \p

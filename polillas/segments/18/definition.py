@@ -706,9 +706,17 @@ maker = evans.SegmentMaker(
             polillas.stop_repeat,
             baca.selectors.leaf(6),
         ),
-        evans.attach(
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(r"""\rehearsal-mark-markup "x7" 6 -1"""),
+        #     baca.selectors.leaf(4),
+        # ),
+        evans.attach(  # parts
             "Global Context",
-            abjad.Markup(r"""\rehearsal-mark-markup "x7" 6 -1"""),
+            abjad.Markup(
+                r"""\rehearsal-mark-markup "x7" 3 -1""",
+                direction=abjad.Up,
+            ),
             baca.selectors.leaf(4),
         ),
         evans.attach(
@@ -730,6 +738,11 @@ maker = evans.SegmentMaker(
             "Global Context",
             polillas.met_120,
             baca.selectors.leaf(4),
+        ),
+        evans.call(  # parts
+            "score",
+            evans.global_to_voice,
+            lambda _: abjad.Selection(_),
         ),
         # evans.call(
         #     "Global Context",

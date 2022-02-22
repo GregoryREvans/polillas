@@ -24,13 +24,6 @@
                 \time 5/4
                 \mark \markup \bold {  }
                 s1 * 5/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -42,16 +35,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
-                \once \override Score.BarLine.X-extent = #'(0.5 . 3)
-                \once \override Score.BarLine.thick-thickness = #3
-                \bar ".|:"
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
@@ -60,28 +47,14 @@
                 %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
-                - \rehearsal-mark-markup "x7" 6 -1
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
-                \once \override Score.BarLine.X-extent = #'(1 . 2)
-                \once \override Score.BarLine.thick-thickness = #3
-                \bar ":|."
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
@@ -142,12 +115,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -181,12 +151,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 19]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
 
             }
@@ -246,6 +213,13 @@
                                             %! SPANNER_START
                                             \startTextSpanOne
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                              }
+                                            }
 
                                             r16
 
@@ -425,8 +399,14 @@
                                         % [violin 1 voice measure 3]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                        \once \override Score.BarLine.X-extent = #'(0.5 . 3)
+                                        \once \override Score.BarLine.thick-thickness = #3
+                                        \bar ".|:"
 
                                         \times 2/3
                                         {
@@ -436,7 +416,15 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
+                                            ^ \rehearsal-mark-markup "x7" 3 -1
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                              }
+                                            }
 
                                             c'''16
                                             \ff
@@ -515,51 +503,51 @@
                                             ef'''32
                                             - \staccato
 
-                                            c'''32
+                                            e'''32
                                             - \staccato
 
-                                            cs'''32
-                                            - \staccato
-
-                                            c'''32
-                                            - \staccato
-
-                                            bqs''32
-                                            - \staccato
-
-                                            d'''32
-                                            - \staccato
-
-                                            r32
-
-                                            dqs'''32
-                                            - \staccato
-
-                                            ef'''32
+                                            f'''32
                                             - \staccato
 
                                             e'''32
                                             - \staccato
 
+                                            eqf'''32
+                                            - \staccato
+
+                                            fs'''32
+                                            - \staccato
+
+                                            r32
+
+                                            gqf'''32
+                                            - \staccato
+
+                                            g'''32
+                                            - \staccato
+
+                                            af'''32
+                                            - \staccato
+
                                             \revert Staff.Stem.stemlet-length
-                                            dqs'''32
+                                            gqf'''32
                                             - \staccato
                                             ]
 
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        cs'''16
+                                        f'''16
                                         - \staccato
                                         [
 
                                         r16
 
-                                        b''16
+                                        ef'''16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'''16
+                                        e'''16
                                         - \staccato
                                         ]
                                         %! COMMENT_MEASURE_NUMBERS
@@ -567,8 +555,14 @@
                                         % [violin 1 voice measure 5]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                        \once \override Score.BarLine.X-extent = #'(1 . 2)
+                                        \once \override Score.BarLine.thick-thickness = #3
+                                        \bar ":|."
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 5/6
@@ -851,6 +845,9 @@
                                         % [violin 1 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -885,6 +882,9 @@
                                         % [violin 1 voice measure 19]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         \bar "||"
@@ -920,6 +920,13 @@
                                             \markup { \hcenter-in #14 "Violin II" }
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                              }
+                                            }
 
                                             r16
                                             [
@@ -1050,8 +1057,14 @@
                                         % [violin 2 voice measure 3]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                        \once \override Score.BarLine.X-extent = #'(0.5 . 3)
+                                        \once \override Score.BarLine.thick-thickness = #3
+                                        \bar ".|:"
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -1064,7 +1077,15 @@
                                             cs'''32
                                             \ff
                                             - \staccato
+                                            ^ \rehearsal-mark-markup "x7" 3 -1
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                              }
+                                            }
 
                                             d'''32
                                             - \staccato
@@ -1138,17 +1159,17 @@
                                             - \staccato
                                             [
 
-                                            cs'''16
+                                            e'''16
                                             - \staccato
 
-                                            d'''16
+                                            f'''16
                                             - \staccato
 
-                                            cs'''16
+                                            e'''16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            cqs'''16
+                                            eqf'''16
                                             - \staccato
                                             ]
 
@@ -1158,37 +1179,37 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            ef'''16
+                                            fs'''16
                                             - \staccato
                                             [
 
                                             r16
 
-                                            eqf'''16
+                                            gqf'''16
                                             - \staccato
 
-                                            e'''16
+                                            g'''16
+                                            - \staccato
+
+                                            af'''16
+                                            - \staccato
+
+                                            gqf'''16
                                             - \staccato
 
                                             f'''16
                                             - \staccato
 
-                                            eqf'''16
-                                            - \staccato
-
-                                            d'''16
-                                            - \staccato
-
                                             r16
 
-                                            c'''16
+                                            ef'''16
                                             - \staccato
 
-                                            cs'''16
+                                            e'''16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            e'''16
+                                            g'''16
                                             - \staccato
                                             ]
 
@@ -1198,8 +1219,14 @@
                                         % [violin 2 voice measure 5]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                        \once \override Score.BarLine.X-extent = #'(1 . 2)
+                                        \once \override Score.BarLine.thick-thickness = #3
+                                        \bar ":|."
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 5/7
@@ -1581,6 +1608,9 @@
                                         % [violin 2 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         %! COMMENT_MEASURE_NUMBERS
@@ -1615,6 +1645,9 @@
                                         % [violin 2 voice measure 19]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                         \bar "||"
@@ -1674,6 +1707,13 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                      }
+                                    }
 
                                     r16
 
@@ -1799,8 +1839,14 @@
                                 % [viola voice measure 3]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                \once \override Score.BarLine.X-extent = #'(0.5 . 3)
+                                \once \override Score.BarLine.thick-thickness = #3
+                                \bar ".|:"
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7
@@ -1813,7 +1859,15 @@
                                     d'''32
                                     \ff
                                     - \staccato
+                                    ^ \rehearsal-mark-markup "x7" 3 -1
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                      }
+                                    }
 
                                     ef'''32
                                     - \staccato
@@ -1888,22 +1942,22 @@
                                     f'''32
                                     - \staccato
 
-                                    d'''32
+                                    e'''32
                                     - \staccato
 
-                                    ef'''32
+                                    f'''32
                                     - \staccato
 
-                                    d'''32
+                                    e'''32
                                     - \staccato
 
-                                    dqf'''32
+                                    eqf'''32
                                     - \staccato
 
                                     r32
 
                                     \revert Staff.Stem.stemlet-length
-                                    e'''32
+                                    fs'''32
                                     - \staccato
                                     ]
 
@@ -1914,26 +1968,26 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    eqs'''32
+                                    gqf'''32
                                     - \staccato
                                     [
 
-                                    f'''32
+                                    g'''32
                                     - \staccato
 
-                                    fs'''32
+                                    af'''32
                                     - \staccato
 
-                                    eqs'''32
+                                    gqf'''32
                                     - \staccato
 
                                     r32
 
-                                    ef'''32
+                                    f'''32
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    cs'''32
+                                    ef'''32
                                     - \staccato
                                     ]
 
@@ -1943,17 +1997,17 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    d'''16
+                                    e'''16
                                     - \staccato
                                     [
 
-                                    f'''16
-                                    - \staccato
-
-                                    e'''16
-                                    - \staccato
-
                                     g'''16
+                                    - \staccato
+
+                                    fs'''16
+                                    - \staccato
+
+                                    a'''16
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
@@ -1966,8 +2020,14 @@
                                 % [viola voice measure 5]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                \once \override Score.BarLine.X-extent = #'(1 . 2)
+                                \once \override Score.BarLine.thick-thickness = #3
+                                \bar ":|."
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 5/8
@@ -2255,6 +2315,9 @@
                                 % [viola voice measure 14]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -2289,6 +2352,9 @@
                                 % [viola voice measure 19]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \bar "||"
@@ -2345,6 +2411,13 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                      }
+                                    }
 
                                     r16
 
@@ -2510,8 +2583,14 @@
                                 % [cello voice measure 3]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                \once \override Score.BarLine.X-extent = #'(0.5 . 3)
+                                \once \override Score.BarLine.thick-thickness = #3
+                                \bar ".|:"
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/5
@@ -2524,7 +2603,15 @@
                                     ef'''32
                                     \ff
                                     - \staccato
+                                    ^ \rehearsal-mark-markup "x7" 3 -1
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                      }
+                                    }
 
                                     e'''32
                                     - \staccato
@@ -2598,25 +2685,25 @@
                                     fs'''32
                                     - \staccato
 
-                                    ef'''32
-                                    - \staccato
-
                                     e'''32
-                                    - \staccato
-
-                                    ef'''32
-                                    - \staccato
-
-                                    r32
-
-                                    dqs'''32
                                     - \staccato
 
                                     f'''32
                                     - \staccato
 
+                                    e'''32
+                                    - \staccato
+
+                                    r32
+
+                                    eqf'''32
+                                    - \staccato
+
+                                    fs'''32
+                                    - \staccato
+
                                     \revert Staff.Stem.stemlet-length
-                                    fqs'''32
+                                    gqf'''32
                                     - \staccato
                                     ]
 
@@ -2627,31 +2714,31 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    fs'''32
+                                    g'''32
                                     - \staccato
                                     [
 
-                                    g'''32
+                                    af'''32
                                     - \staccato
 
                                     r32
 
-                                    fqs'''32
+                                    gqf'''32
                                     - \staccato
 
-                                    e'''32
-                                    - \staccato
-
-                                    d'''32
+                                    f'''32
                                     - \staccato
 
                                     ef'''32
                                     - \staccato
 
-                                    fs'''32
+                                    e'''32
                                     - \staccato
 
-                                    f'''32
+                                    g'''32
+                                    - \staccato
+
+                                    fs'''32
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
@@ -2664,8 +2751,14 @@
                                 % [cello voice measure 5]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
+                                \once \override Score.BarLine.X-extent = #'(1 . 2)
+                                \once \override Score.BarLine.thick-thickness = #3
+                                \bar ":|."
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2935,6 +3028,9 @@
                                 % [cello voice measure 14]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3092,6 +3188,9 @@
                                 % [cello voice measure 19]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"
                                 \bar "||"

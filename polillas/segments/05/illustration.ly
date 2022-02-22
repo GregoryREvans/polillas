@@ -19,17 +19,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=90
                 %! scaling time signatures
                 \time 8/16
                 \mark \markup \bold {  }
                 s1 * 1/2
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -76,17 +69,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
 
-                \tempo 4=108
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
@@ -165,7 +150,6 @@
                 %! scaling time signatures
                 \time 8/16
                 s1 * 1/2
-                - \rehearsal-mark-markup "x6" 6 -1
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ":|."
                 %! COMMENT_MEASURE_NUMBERS
@@ -256,6 +240,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
@@ -315,6 +305,13 @@
                                         d''8
                                         \p
                                         - \tongue #2
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         r8
 
@@ -459,10 +456,10 @@
                                             r16
                                             [
 
-                                            d''8
+                                            e''8
                                             - \tongue #2
 
-                                            ef''8
+                                            f''8
                                             - \tongue #3
 
                                             \revert Staff.Stem.stemlet-length
@@ -476,7 +473,7 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        d''16
+                                        e''16
                                         - \tongue #2
                                         ~
                                         ]
@@ -484,11 +481,11 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 13]
 
-                                        d''16
+                                        e''16
 
                                         r8
 
-                                        dqf''16
+                                        eqf''16
                                         - \tongue #3
                                         ~
 
@@ -496,35 +493,7 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            dqf''16
-                                            [
-
-                                            e''8
-                                            - \tongue #3
-
-                                            r8
-
-                                            \revert Staff.Stem.stemlet-length
-                                            eqs''16
-                                            - \tongue #2
-                                            ~
-                                            ]
-
-                                        }
-
-                                        eqs''16
-
-                                        r8
-
-                                        f''16
-                                        - \tongue #2
-                                        ~
-
-                                        \times 2/3
-                                        {
-
-                                            \override Staff.Stem.stemlet-length = 0.75
-                                            f''16
+                                            eqf''16
                                             [
 
                                             fs''8
@@ -533,7 +502,35 @@
                                             r8
 
                                             \revert Staff.Stem.stemlet-length
-                                            eqs''16
+                                            gqf''16
+                                            - \tongue #2
+                                            ~
+                                            ]
+
+                                        }
+
+                                        gqf''16
+
+                                        r8
+
+                                        g''16
+                                        - \tongue #2
+                                        ~
+
+                                        \times 2/3
+                                        {
+
+                                            \override Staff.Stem.stemlet-length = 0.75
+                                            g''16
+                                            [
+
+                                            af''8
+                                            - \tongue #3
+
+                                            r8
+
+                                            \revert Staff.Stem.stemlet-length
+                                            gqf''16
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(3)
                                             %! SPANNER_STOP
@@ -553,7 +550,7 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 15]
 
-                                        ef''8
+                                        f''8
                                         \f
                                         - \tongue #2
 
@@ -563,11 +560,11 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs''8
+                                            ef''8
                                             - \tongue #2
                                             [
 
-                                            d''8
+                                            e''8
                                             - \tongue #2
 
                                             \revert Staff.Stem.stemlet-length
@@ -576,12 +573,12 @@
 
                                         }
 
-                                        f''8
+                                        g''8
                                         - \tongue #3
 
                                         r8
 
-                                        e''8
+                                        fs''8
                                         - \tongue #2
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -638,6 +635,7 @@
                                             fs''16
                                             \p
                                             - \staccato
+                                            ^ \rehearsal-mark-markup "x6" 3 -1
                                             (
                                             - \abjad-dashed-line-with-arrow
                                             - \baca-text-spanner-left-text "st."
@@ -760,6 +758,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \startTextSpanOne
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
@@ -817,6 +821,13 @@
                                         % [violin 2 voice measure 8]
 
                                         r8
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         cs''8
                                         \p
@@ -958,15 +969,15 @@
 
                                         r16
 
-                                        cs''8
+                                        e''8
                                         - \tongue #3
 
-                                        d''16
+                                        f''16
                                         - \tongue #2
                                         ~
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        d''16
+                                        f''16
                                         [
 
                                         \revert Staff.Stem.stemlet-length
@@ -978,7 +989,7 @@
 
                                         r16
 
-                                        cs''8
+                                        e''8
                                         - \tongue #2
 
                                         r16
@@ -990,10 +1001,10 @@
                                             r16
                                             [
 
-                                            cqs''8
+                                            eqf''8
                                             - \tongue #2
 
-                                            ef''8
+                                            fs''8
                                             - \tongue #3
 
                                             \revert Staff.Stem.stemlet-length
@@ -1004,17 +1015,17 @@
 
                                         r16
 
-                                        eqf''8
+                                        gqf''8
                                         - \tongue #2
 
                                         r16
 
                                         r16
 
-                                        e''8
+                                        g''8
                                         - \tongue #3
 
-                                        f''16
+                                        af''16
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(3)
                                         %! SPANNER_STOP
@@ -1035,7 +1046,7 @@
                                             % [violin 2 voice measure 15]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            eqf''8
+                                            gqf''8
                                             \f
                                             - \tongue #3
                                             [
@@ -1043,7 +1054,7 @@
                                             r8
 
                                             \revert Staff.Stem.stemlet-length
-                                            d''8
+                                            f''8
                                             - \tongue #3
                                             ]
 
@@ -1051,21 +1062,21 @@
 
                                         r8
 
-                                        c''8
+                                        ef''8
                                         - \tongue #2
 
                                         \times 2/3
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            cs''8
+                                            e''8
                                             - \tongue #2
                                             [
 
                                             r8
 
                                             \revert Staff.Stem.stemlet-length
-                                            e''8
+                                            g''8
                                             - \tongue #3
                                             ]
 
@@ -1127,6 +1138,7 @@
                                             g''16
                                             \p
                                             - \staccato
+                                            ^ \rehearsal-mark-markup "x6" 3 -1
                                             (
                                             - \abjad-dashed-line-with-arrow
                                             - \baca-text-spanner-left-text "st."
@@ -1253,6 +1265,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
@@ -1317,6 +1335,13 @@
                                     \p
                                     - \tongue #3
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                      }
+                                    }
 
                                     r8
 
@@ -1469,27 +1494,27 @@
 
                                     r8
 
-                                    c''8
+                                    e''8
                                     - \tongue #2
 
                                     \revert Staff.Stem.stemlet-length
-                                    cs''16
+                                    f''16
                                     - \tongue #3
                                     ~
                                     ]
 
                                 }
 
-                                cs''16
+                                f''16
 
                                 r8
 
-                                c''16
+                                e''16
                                 - \tongue #3
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16
+                                e''16
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -1501,18 +1526,18 @@
 
                                 r16
 
-                                bqs'8
+                                eqf''8
                                 - \tongue #2
 
-                                d''16
+                                fs''16
                                 - \tongue #2
                                 ~
 
-                                d''16
+                                fs''16
 
                                 r8
 
-                                dqs''16
+                                gqf''16
                                 - \tongue #3
                                 ~
 
@@ -1520,27 +1545,27 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    dqs''16
+                                    gqf''16
                                     [
 
                                     r8
 
-                                    ef''8
+                                    g''8
                                     - \tongue #2
 
                                     \revert Staff.Stem.stemlet-length
-                                    e''16
+                                    af''16
                                     - \tongue #2
                                     ~
                                     ]
 
                                 }
 
-                                e''16
+                                af''16
 
                                 r8
 
-                                dqs''16
+                                gqf''16
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP
@@ -1557,11 +1582,11 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 15]
 
-                                cs''8
+                                f''8
                                 \f
                                 - \tongue #2
 
-                                b'8
+                                ef''8
                                 - \tongue #2
 
                                 \times 2/3
@@ -1571,7 +1596,7 @@
                                     r8
                                     [
 
-                                    c''8
+                                    e''8
                                     - \tongue #2
 
                                     \revert Staff.Stem.stemlet-length
@@ -1580,10 +1605,10 @@
 
                                 }
 
-                                ef''8
+                                g''8
                                 - \tongue #3
 
-                                d''8
+                                fs''8
                                 - \tongue #2
 
                                 r8
@@ -1642,6 +1667,7 @@
                                     fqs''16
                                     \p
                                     - \staccato
+                                    ^ \rehearsal-mark-markup "x6" 3 -1
                                     (
                                     - \abjad-dashed-line-with-arrow
                                     - \baca-text-spanner-left-text "st."
@@ -1764,6 +1790,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \startTextSpanOne
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -1827,6 +1859,13 @@
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r8
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                      }
+                                    }
 
                                     b'8
                                     \p
@@ -1981,7 +2020,7 @@
 
                                     r8
 
-                                    b'8
+                                    e''8
                                     - \tongue #2
 
                                     \revert Staff.Stem.stemlet-length
@@ -1992,15 +2031,15 @@
 
                                 r16
 
-                                c''8
+                                f''8
                                 - \tongue #2
 
-                                b'16
+                                e''16
                                 - \tongue #3
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                b'16
+                                e''16
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -2017,22 +2056,22 @@
                                     r16
                                     [
 
-                                    bqf'8
+                                    eqf''8
                                     - \tongue #2
 
                                     r8
 
                                     \revert Staff.Stem.stemlet-length
-                                    cs''16
+                                    fs''16
                                     - \tongue #3
                                     ~
                                     ]
 
                                 }
 
-                                cs''16
+                                fs''16
 
-                                dqf''8
+                                gqf''8
                                 - \tongue #3
 
                                 r16
@@ -2044,22 +2083,22 @@
                                     r16
                                     [
 
-                                    d''8
+                                    g''8
                                     - \tongue #2
 
                                     r8
 
                                     \revert Staff.Stem.stemlet-length
-                                    ef''16
+                                    af''16
                                     - \tongue #2
                                     ~
                                     ]
 
                                 }
 
-                                ef''16
+                                af''16
 
-                                dqf''8
+                                gqf''8
                                 - \tongue #3
 
                                 r16
@@ -2078,16 +2117,16 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 15]
 
-                                c''8
+                                f''8
                                 \f
                                 - \tongue #3
 
                                 r8
 
-                                bf'8
+                                ef''8
                                 - \tongue #3
 
-                                b'8
+                                e''8
                                 - \tongue #2
 
                                 \times 2/3
@@ -2097,7 +2136,7 @@
                                     r8
                                     [
 
-                                    d''8
+                                    g''8
                                     - \tongue #2
 
                                     \revert Staff.Stem.stemlet-length
@@ -2106,7 +2145,7 @@
 
                                 }
 
-                                cs''8
+                                fs''8
                                 - \tongue #3
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2163,6 +2202,7 @@
                                     gqf''16
                                     \p
                                     - \staccato
+                                    ^ \rehearsal-mark-markup "x6" 3 -1
                                     (
                                     - \abjad-dashed-line-with-arrow
                                     - \baca-text-spanner-left-text "st."

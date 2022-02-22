@@ -19,18 +19,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=120
                 %! scaling time signatures
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
-                  }
-                }
                 \once \override Score.BarLine.thick-thickness = #3
                 \bar ".|:"
                 %! COMMENT_MEASURE_NUMBERS
@@ -138,16 +130,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
 
-                \tempo 4=96
                 %! scaling time signatures
                 \time 3/4
                 s1 * 3/4
-                - \abjad-dashed-line-with-arrow
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -173,17 +158,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 20]
 
-                \tempo 4=72
                 %! scaling time signatures
                 \time 7/4
                 s1 * 7/4
-                \bacaStopTextSpanMM
-                - \abjad-invisible-line
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 21]
@@ -191,7 +168,6 @@
                 %! scaling time signatures
                 \time 4/4
                 s1 * 1
-                \bacaStopTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 22]
@@ -295,6 +271,13 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanTwo
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                              }
+                                            }
 
                                             \times 2/3
                                             {
@@ -1274,11 +1257,11 @@
                                             b32
                                             - \staccato
 
-                                            af32
+                                            bf32
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            a32
+                                            b32
                                             - \staccato
                                             ]
 
@@ -1446,10 +1429,10 @@
                                             f'32
                                             - \staccato
 
-                                            d'32
+                                            e'32
                                             - \staccato
 
-                                            ef'32
+                                            f'32
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
@@ -1465,40 +1448,48 @@
                                             % [violin 1 voice measure 16]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            d'16
+                                            e'16
                                             - \staccato
+                                            ^ \markup accel.
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                              }
+                                            }
 
-                                            dqf'16
+                                            eqf'16
                                             - \staccato
 
                                             r16
 
-                                            e'16
+                                            fs'16
                                             - \staccato
 
-                                            eqs'16
+                                            gqf'16
+                                            - \staccato
+
+                                            g'16
+                                            - \staccato
+
+                                            r8
+
+                                            af'16
+                                            - \staccato
+
+                                            gqf'16
                                             - \staccato
 
                                             f'16
                                             - \staccato
 
-                                            r8
-
-                                            fs'16
-                                            - \staccato
-
-                                            eqs'16
-                                            - \staccato
-
                                             ef'16
                                             - \staccato
 
-                                            cs'16
-                                            - \staccato
-
                                             \revert Staff.Stem.stemlet-length
-                                            d'16
+                                            e'16
                                             - \staccato
                                             ]
 
@@ -1510,11 +1501,11 @@
 
                                         r16
 
-                                        f'16
+                                        g'16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        e'16
+                                        fs'16
                                         - \staccato
                                         ]
 
@@ -1528,31 +1519,31 @@
                                             r16
                                             [
 
+                                            a'16
+                                            - \staccato
+
+                                            aqf'16
+                                            - \staccato
+
                                             g'16
-                                            - \staccato
-
-                                            gqf'16
-                                            - \staccato
-
-                                            f'16
                                             - \staccato
 
                                             r8
 
-                                            d'16
+                                            fs'16
                                             - \staccato
 
-                                            ef'16
+                                            g'16
                                             - \staccato
 
-                                            d'16
+                                            fs'16
                                             - \staccato
 
-                                            dqf'16
+                                            fqs'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            e'16
+                                            af'16
                                             - \staccato
                                             ]
 
@@ -1564,28 +1555,28 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            eqs'16
+                                            aqf'16
                                             - \staccato
                                             [
+
+                                            a'16
+                                            - \staccato
+
+                                            bf'16
+                                            - \staccato
+
+                                            aqf'16
+                                            - \staccato
+
+                                            g'16
+                                            - \staccato
+
+                                            r8
 
                                             f'16
                                             - \staccato
 
                                             fs'16
-                                            - \staccato
-
-                                            eqs'16
-                                            - \staccato
-
-                                            ef'16
-                                            - \staccato
-
-                                            r8
-
-                                            cs'16
-                                            - \staccato
-
-                                            d'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
@@ -1601,29 +1592,29 @@
                                             % [violin 1 voice measure 18]
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            f'16
+                                            a'16
                                             - \staccato
                                             [
 
-                                            e'16
+                                            af'16
                                             - \staccato
 
-                                            g'16
+                                            b'16
                                             - \staccato
 
                                             r8
 
-                                            gqf'16
+                                            bqf'16
                                             - \staccato
 
-                                            f'16
+                                            a'16
                                             - \staccato
 
-                                            d'16
+                                            af'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            ef'16
+                                            a'16
                                             - \staccato
                                             ]
 
@@ -1635,22 +1626,22 @@
                                         % [violin 1 voice measure 19]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        d'16
+                                        af'16
                                         - \staccato
                                         [
 
                                         r16
 
-                                        dqf'16
+                                        gqs'16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        e'16
+                                        bf'16
                                         - \staccato
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        eqs'16
+                                        bqf'16
                                         - \staccato
                                         [
 
@@ -1659,7 +1650,7 @@
                                         r16
 
                                         \revert Staff.Stem.stemlet-length
-                                        f'16
+                                        b'16
                                         - \staccato
                                         ]
 
@@ -1682,6 +1673,13 @@
                                             \p
                                             \<
                                             ~
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                              }
+                                            }
 
                                             <gqs'' cs'''>4
                                             \f
@@ -1946,6 +1944,13 @@
                                             %! SPANNER_START
                                             \startTextSpanTwo
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                              }
+                                            }
 
                                             \tweak Accidental.stencil ##f
                                             \tweak X-extent #'(0 . 0)
@@ -2835,7 +2840,7 @@
                                             c'16
                                             - \staccato
 
-                                            a16
+                                            b16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
@@ -2854,27 +2859,27 @@
                                             r16
                                             [
 
-                                            bf16
-                                            - \staccato
-
-                                            a16
-                                            - \staccato
-
-                                            aqf16
+                                            c'16
                                             - \staccato
 
                                             b16
                                             - \staccato
 
-                                            bqs16
+                                            bqf16
+                                            - \staccato
+
+                                            cs'16
+                                            - \staccato
+
+                                            dqf'16
                                             - \staccato
 
                                             r8
 
-                                            c'16
+                                            d'16
                                             - \staccato
 
-                                            cs'16
+                                            ef'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
@@ -2887,14 +2892,14 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            bqs16
+                                            dqf'16
                                             - \staccato
                                             [
 
-                                            bf16
+                                            c'16
                                             - \staccato
 
-                                            af16
+                                            bf16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
@@ -2907,23 +2912,23 @@
                                         % [violin 2 voice measure 14]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        a16
+                                        b16
                                         - \staccato
                                         [
 
-                                        c'16
+                                        d'16
                                         - \staccato
 
-                                        b16
+                                        cs'16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        d'16
+                                        e'16
                                         - \staccato
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        dqf'16
+                                        eqf'16
                                         - \staccato
                                         [
 
@@ -2932,7 +2937,7 @@
                                         r16
 
                                         \revert Staff.Stem.stemlet-length
-                                        c'16
+                                        d'16
                                         - \staccato
                                         ]
 
@@ -2940,20 +2945,20 @@
                                         {
 
                                             \override Staff.Stem.stemlet-length = 0.75
-                                            a16
+                                            cs'16
                                             - \staccato
                                             [
 
                                             r16
 
-                                            bf16
+                                            d'16
                                             - \staccato
 
-                                            a16
+                                            cs'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            aqf16
+                                            cqs'16
                                             - \staccato
                                             ]
 
@@ -2965,23 +2970,23 @@
 
                                         r16
 
-                                        b16
+                                        ef'16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
-                                        bqs16
+                                        eqf'16
                                         - \staccato
                                         ]
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        c'16
+                                        e'16
                                         - \staccato
                                         [
 
-                                        cs'16
+                                        f'16
                                         - \staccato
 
-                                        bqs16
+                                        eqf'16
                                         - \staccato
 
                                         \revert Staff.Stem.stemlet-length
@@ -3059,10 +3064,18 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \f
+                                        ^ \markup accel.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                          }
+                                        }
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -3157,22 +3170,22 @@
                                             fs'16
                                             - \staccato
 
-                                            ef'16
+                                            f'16
                                             - \staccato
 
-                                            e'16
+                                            fs'16
                                             - \staccato
 
-                                            ef'16
+                                            f'16
                                             - \staccato
 
                                             r8
 
-                                            dqs'16
+                                            eqs'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            f'16
+                                            g'16
                                             - \staccato
                                             ]
 
@@ -3188,31 +3201,31 @@
                                             r16
                                             [
 
-                                            fqs'16
+                                            gqs'16
                                             - \staccato
 
-                                            fs'16
+                                            af'16
                                             - \staccato
 
-                                            g'16
+                                            a'16
                                             - \staccato
 
                                             r8
 
-                                            fqs'16
+                                            gqs'16
+                                            - \staccato
+
+                                            fs'16
                                             - \staccato
 
                                             e'16
                                             - \staccato
 
-                                            d'16
-                                            - \staccato
-
-                                            ef'16
+                                            f'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
-                                            fs'16
+                                            af'16
                                             - \staccato
                                             ]
 
@@ -3232,21 +3245,21 @@
                                             r16
                                             [
 
-                                            f'16
+                                            g'16
+                                            - \staccato
+
+                                            bf'16
+                                            - \staccato
+
+                                            r16
+
+                                            aqs'16
                                             - \staccato
 
                                             af'16
                                             - \staccato
 
-                                            r16
-
-                                            gqs'16
-                                            - \staccato
-
-                                            fs'16
-                                            - \staccato
-
-                                            ef'16
+                                            g'16
                                             - \staccato
 
                                             \revert Staff.Stem.stemlet-length
@@ -3272,6 +3285,13 @@
                                             \p
                                             \<
                                             ~
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                              }
+                                            }
 
                                             <bqs' bqf''>4
                                             \f
@@ -3539,6 +3559,13 @@
                                     %! SPANNER_START
                                     \startTextSpanTwo
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                      }
+                                    }
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -4441,11 +4468,11 @@
                                     bf32
                                     - \staccato
 
-                                    g32
+                                    a32
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    af32
+                                    bf32
                                     - \staccato
                                     ]
 
@@ -4458,16 +4485,16 @@
                                     r8
                                     [
 
-                                    g16
+                                    a16
                                     - \staccato
 
-                                    gqf16
+                                    aqf16
                                     - \staccato
 
                                     r16
 
                                     \revert Staff.Stem.stemlet-length
-                                    a16
+                                    b16
                                     - \staccato
                                     ]
 
@@ -4480,29 +4507,29 @@
                                     % [viola voice measure 13]
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    aqs16
+                                    bqs16
                                     - \staccato
                                     [
 
-                                    bf16
+                                    c'16
                                     - \staccato
 
                                     r8
 
-                                    b16
+                                    cs'16
                                     - \staccato
 
-                                    aqs16
+                                    bqs16
+                                    - \staccato
+
+                                    bf16
                                     - \staccato
 
                                     af16
                                     - \staccato
 
-                                    fs16
-                                    - \staccato
-
                                     \revert Staff.Stem.stemlet-length
-                                    g16
+                                    a16
                                     - \staccato
                                     ]
 
@@ -4514,11 +4541,11 @@
 
                                 r16
 
-                                bf16
+                                c'16
                                 - \staccato
 
                                 \revert Staff.Stem.stemlet-length
-                                a16
+                                b16
                                 - \staccato
                                 ]
 
@@ -4669,6 +4696,14 @@
                                 % [viola voice measure 16]
 
                                 r2
+                                ^ \markup accel.
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                  }
+                                }
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs'16
@@ -4718,6 +4753,13 @@
                                 aqs''1..
                                 %! abjad.glissando(7)
                                 \glissando
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 21]
@@ -4909,6 +4951,13 @@
                                 %! SPANNER_START
                                 \startTextSpanTwo
                                 [
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                  }
+                                }
 
                                 \revert Staff.Stem.stemlet-length
                                 \tweak Accidental.stencil ##f
@@ -5596,11 +5645,11 @@
                                     g32
                                     - \staccato
 
-                                    e32
+                                    fs32
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    f32
+                                    g32
                                     - \staccato
                                     ]
 
@@ -5786,14 +5835,14 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
-                                    fs16
+                                    af16
                                     - \staccato
                                     [
 
-                                    g16
+                                    a16
                                     - \staccato
 
-                                    fs16
+                                    af16
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
@@ -5978,14 +6027,14 @@
 
                                     r8
 
-                                    f'16
+                                    g'16
                                     - \staccato
 
-                                    fs'16
+                                    af'16
                                     - \staccato
 
                                     \revert Staff.Stem.stemlet-length
-                                    f'16
+                                    g'16
                                     - \staccato
                                     ]
 
@@ -5997,37 +6046,45 @@
                                 % [cello voice measure 16]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                eqs'16
+                                gqf'16
                                 - \staccato
+                                ^ \markup accel.
                                 [
-
-                                g'16
-                                - \staccato
-
-                                r16
-
-                                \revert Staff.Stem.stemlet-length
-                                r16
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                gqs'16
-                                - \staccato
-                                [
-
-                                af'16
-                                - \staccato
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                  }
+                                }
 
                                 a'16
                                 - \staccato
 
+                                r16
+
                                 \revert Staff.Stem.stemlet-length
-                                gqs'16
+                                r16
+                                ]
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                aqs'16
+                                - \staccato
+                                [
+
+                                bf'16
+                                - \staccato
+
+                                b'16
+                                - \staccato
+
+                                \revert Staff.Stem.stemlet-length
+                                aqs'16
                                 - \staccato
                                 ]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'16
+                                af'16
                                 - \staccato
                                 [
 
@@ -6036,7 +6093,7 @@
                                 r16
 
                                 \revert Staff.Stem.stemlet-length
-                                e'16
+                                fs'16
                                 - \staccato
                                 ]
                                 %! COMMENT_MEASURE_NUMBERS
@@ -6071,6 +6128,13 @@
 
                                 c,1..
                                 ~
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 21]

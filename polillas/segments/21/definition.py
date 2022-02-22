@@ -790,9 +790,17 @@ maker = evans.SegmentMaker(
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([28]).leaf(0),
         ),
-        evans.attach(
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.Markup(r"""\rehearsal-mark-markup "x5" 6 -1"""),
+        #     baca.selectors.leaf(11),
+        # ),
+        evans.attach(  # parts
             "Global Context",
-            abjad.Markup(r"""\rehearsal-mark-markup "x5" 6 -1"""),
+            abjad.Markup(
+                r"""\rehearsal-mark-markup "x5" 3 -1""",
+                direction=abjad.Up,
+            ),
             baca.selectors.leaf(11),
         ),
         evans.attach(
@@ -845,6 +853,11 @@ maker = evans.SegmentMaker(
             polillas.met_66,
             baca.selectors.leaf(35),
         ),
+        # evans.call( # parts
+        #     "score",
+        #     evans.global_to_voice,
+        #     lambda _: abjad.Selection(_),
+        # ),
         # evans.call(
         #     "violin 1 voice",
         #     evans.annotate_leaves,

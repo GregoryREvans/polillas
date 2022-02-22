@@ -24,13 +24,6 @@
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"120"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -226,6 +219,13 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \startTextSpanOne
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                              }
+                                            }
 
                                             \times 2/3
                                             {
@@ -1608,6 +1608,13 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
                                         [
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                          }
+                                        }
 
                                         \revert Staff.Stem.stemlet-length
                                         \tweak Accidental.stencil ##f
@@ -2967,6 +2974,13 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                      }
+                                    }
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -4323,6 +4337,13 @@
                                     %! SPANNER_START
                                     \startTextSpanOne
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                                      }
+                                    }
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)

@@ -19,17 +19,10 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 1]
 
-                \tempo 4=90
                 %! scaling time signatures
                 \time 16/16
                 \mark \markup \bold {  }
                 s1 * 1
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -83,16 +76,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
 
-                \tempo 4=99
                 %! scaling time signatures
                 \time 11/16
                 s1 * 11/16
-                - \abjad-dashed-line-with-arrow
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
@@ -132,17 +118,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 15]
 
-                \tempo 4=108
                 %! scaling time signatures
                 \time 14/16
                 s1 * 7/8
-                \bacaStopTextSpanMM
-                - \abjad-invisible-line
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "108"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
@@ -150,7 +128,6 @@
                 %! scaling time signatures
                 \time 16/16
                 s1 * 1
-                \bacaStopTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -270,6 +247,12 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \<
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         r8
 
@@ -540,7 +523,14 @@
                                         % [violin 1 voice measure 9]
 
                                         d''''4
+                                        ^ \markup accel.
                                         ~
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         d''''8.
 
@@ -942,6 +932,13 @@
                                         % [violin 1 voice measure 15]
 
                                         gs'''16
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         a'''8.
                                         - \flageolet
@@ -1227,6 +1224,12 @@
                                             %! SPANNER_START
                                             \<
                                             [
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             af'8
                                             - \tongue #2
@@ -1350,6 +1353,13 @@
                                         % [violin 2 voice measure 9]
 
                                         c'8
+                                        ^ \markup accel.
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         c'8
                                         ~
@@ -1721,6 +1731,13 @@
                                         % [violin 2 voice measure 15]
 
                                         gqs'''8
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                          }
+                                        }
 
                                         f'''8
                                         - \flageolet
@@ -2155,6 +2172,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \<
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 g'8
                                 - \tongue #3
@@ -2391,6 +2414,13 @@
                                 % [viola voice measure 9]
 
                                 ftqs'''8.
+                                ^ \markup accel.
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 <<
 
@@ -2841,6 +2871,13 @@
                                 % [viola voice measure 15]
 
                                 aqs'''16
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                  }
+                                }
 
                                 <<
 
@@ -3209,6 +3246,12 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
                                 \<
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 fs'8
                                 - \tongue #3
@@ -3357,7 +3400,14 @@
                                 % [cello voice measure 9]
 
                                 c2
+                                ^ \markup accel.
                                 ~
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 c8.
                                 ~
@@ -3403,6 +3453,13 @@
 
                                 c2..
                                 ~
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"108"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]

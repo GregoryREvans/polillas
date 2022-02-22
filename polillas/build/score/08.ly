@@ -11,12 +11,6 @@
                 \time 7/4
                 \mark \markup \bold {  }
                 s1 * 7/4
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -111,12 +105,9 @@
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
 
-                \once \override Score.TimeSignature.transparent = ##t
-                \once \override MultiMeasureRest.transparent = ##t
                 \time 1/4
                 s1 * 1/8
 
-                \once \override Rest.transparent = ##t
                 r1 * 1/8
 
             }
@@ -165,6 +156,12 @@
                                             \p
                                             - \accent
                                             [
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             \revert Staff.Stem.stemlet-length
                                             a'8.
@@ -828,6 +825,9 @@
                                         % [violin 1 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         \bar "||"
@@ -868,6 +868,12 @@
                                             :32
                                             \p
                                             - \accent
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             d'4
                                             :32
@@ -1426,6 +1432,9 @@
                                         % [violin 2 voice measure 14]
 
                                         \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Score.TimeSignature.transparent = ##t
+                                        \once \override MultiMeasureRest.transparent = ##t
+                                        \once \override Rest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                         \bar "||"
@@ -1473,6 +1482,12 @@
                                     \p
                                     - \accent
                                     [
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     c8
                                     :32
@@ -2354,6 +2369,9 @@
                                 % [viola voice measure 14]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 \bar "||"
@@ -2393,6 +2411,12 @@
                                 \p
                                 - \accent
                                 [
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 \revert Staff.Stem.stemlet-length
                                 bf,8
@@ -2786,6 +2810,9 @@
                                 % [cello voice measure 14]
 
                                 \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Score.TimeSignature.transparent = ##t
+                                \once \override MultiMeasureRest.transparent = ##t
+                                \once \override Rest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"
                                 \bar "||"

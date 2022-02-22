@@ -11,13 +11,6 @@
                 \time 3/4
                 \mark \markup \bold {  }
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"130"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -75,12 +68,6 @@
                 %! scaling time signatures
                 \time 4/4
                 s1 * 1
-                - \abjad-dashed-line-with-arrow
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
@@ -124,13 +111,6 @@
                 %! scaling time signatures
                 \time 4/4
                 s1 * 1
-                \bacaStopTextSpanMM
-                - \abjad-invisible-line
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
@@ -138,7 +118,6 @@
                 %! scaling time signatures
                 \time 4/4
                 s1 * 1
-                \bacaStopTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -233,6 +212,13 @@
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
                                         [
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                          }
+                                        }
 
                                         <a' e''>16
                                         _ #(make-dynamic-script
@@ -604,6 +590,12 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r8.
                                             [
+                                            - \abjad-dashed-line-with-arrow
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             <a' e''>16
 
@@ -921,6 +913,13 @@
                                         % [violin 1 voice measure 15]
 
                                         r4
+                                        \bacaStopTextSpanMM
+                                        - \abjad-invisible-line
+                                        - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                        - \tweak padding #4
+                                        - \tweak staff-padding #2
+                                        - \tweak font-size #6
+                                        \bacaStartTextSpanMM
 
                                         \override Staff.Stem.stemlet-length = 0.75
                                         <a' e''>16
@@ -962,6 +961,7 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r8
                                             [
+                                            \bacaStopTextSpanMM
 
                                             <a' e''>16
 
@@ -1371,6 +1371,13 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                              }
+                                            }
 
                                             <g d'>16
                                             _ #(make-dynamic-script
@@ -1730,6 +1737,12 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r4
+                                            - \abjad-dashed-line-with-arrow
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             r16
 
@@ -2069,6 +2082,13 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             <g d'>16
+                                            \bacaStopTextSpanMM
+                                            - \abjad-invisible-line
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             r4
 
@@ -2123,6 +2143,7 @@
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r8.
                                         [
+                                        \bacaStopTextSpanMM
 
                                         \revert Staff.Stem.stemlet-length
                                         <g d'>16
@@ -2554,6 +2575,13 @@
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
                                     [
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                      }
+                                    }
 
                                     <c g>16
                                     _ #(make-dynamic-script
@@ -2920,6 +2948,12 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 r8
                                 [
+                                - \abjad-dashed-line-with-arrow
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
 
                                 <c g>16
 
@@ -3250,6 +3284,13 @@
                                 % [viola voice measure 15]
 
                                 r4
+                                \bacaStopTextSpanMM
+                                - \abjad-invisible-line
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 <c g>16
@@ -3294,6 +3335,7 @@
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
                                     [
+                                    \bacaStopTextSpanMM
 
                                     <c g>16
 
@@ -3715,6 +3757,13 @@
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
                                 \startTextSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -3774,6 +3823,12 @@
                                 as,1
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \abjad-dashed-line-with-arrow
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 10]
@@ -3819,6 +3874,13 @@
                                 e,1
                                 %! abjad.glissando(7)
                                 \glissando
+                                \bacaStopTextSpanMM
+                                - \abjad-invisible-line
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
@@ -3826,6 +3888,7 @@
                                 ds,1
                                 %! abjad.glissando(7)
                                 \glissando
+                                \bacaStopTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]

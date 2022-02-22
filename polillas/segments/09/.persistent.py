@@ -1,23 +1,61 @@
 import abjad
-info = dict(
-    {
-        'Voice 1': [
-            abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
-            abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
-            ],
-        'Voice 2': [
-            abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
-            abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
-            StopTrillSpan(leak=None),
-            ],
-        'Voice 3': [
-            abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
-            abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
-            StopTrillSpan(leak=None),
-            ],
-        'Voice 4': [
-            abjad.LilyPondLiteral('\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff', format_slot='before', ),
-            abjad.LilyPondLiteral('\\once \\override Rest.transparent = ##t', format_slot='before', ),
-            ],
-        }
-    )
+info = {
+    "Voice 1": [
+        LilyPondLiteral(
+            argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+        LilyPondLiteral(
+            argument="\\once \\override Rest.transparent = ##t",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+    ],
+    "Voice 2": [
+        LilyPondLiteral(
+            argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+        LilyPondLiteral(
+            argument="\\once \\override Rest.transparent = ##t",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+        StopTrillSpan(leak=None),
+    ],
+    "Voice 3": [
+        LilyPondLiteral(
+            argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+        LilyPondLiteral(
+            argument="\\once \\override Rest.transparent = ##t",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+        StopTrillSpan(leak=None),
+    ],
+    "Voice 4": [
+        LilyPondLiteral(
+            argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+        LilyPondLiteral(
+            argument="\\once \\override Rest.transparent = ##t",
+            format_slot="before",
+            directed=None,
+            tweaks=None,
+        ),
+    ],
+}

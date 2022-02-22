@@ -7,177 +7,115 @@
                 % [Global Context measure 1]
 
                 \tempo 4=20
-                \once \override Score.TimeSignature.stencil = #(blank-time-signature)
                 %! scaling time signatures
                 \time 9/8
                 \mark \markup \bold {  }
                 s1 * 9/8
-                ^ \markup { 0'00'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'13'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 3]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 0'25'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 4]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                ^ \markup { 0'36'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 0'49'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 6]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 1'01'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 1'12'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup { 1'24'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 9]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 6/8
                 s1 * 3/4
-                ^ \markup { 1'33'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 10]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 5/8
                 s1 * 5/8
-                ^ \markup { 1'42'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 11]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 4/8
                 s1 * 1/2
-                ^ \markup { 1'49'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 12]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 3/8
                 s1 * 3/8
-                ^ \markup { 1'55'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 13]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                ^ \markup { 2'00'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 14]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup { 2'13'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 15]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 2'25'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
 
-                \once \override Score.BarLine.stencil = ##f
-                \once \override Score.SpanBar.stencil = ##f
-                \once \override Score.TimeSignature.stencil = ##f
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                ^ \markup { 2'36'' }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 17]
@@ -186,13 +124,6 @@
                 %! scaling time signatures
                 \time 8/8
                 s1 * 1
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 18]
@@ -290,12 +221,14 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.TimeSignature.stencil = #(blank-time-signature)
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-down  }
                                             c''!1
                                             \ff
                                             \-
                                             ^ \markup \center-align { -31 }
+                                            ^ \markup { 0'00'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -314,11 +247,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-up  }
                                             b'!1
                                             \-
                                             ^ \markup \center-align { +33 }
+                                            ^ \markup { 0'13'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -337,11 +274,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             ef'!2..
                                             \-
                                             ^ \markup \center-align { E-35 }
+                                            ^ \markup { 0'25'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -358,11 +299,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             ef'!1
                                             \-
                                             ^ \markup \center-align { E-35 }
+                                            ^ \markup { 0'36'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -381,11 +326,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                             a'!1
                                             \-
                                             ^ \markup \center-align { A♭+49 }
+                                            ^ \markup { 0'49'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -404,11 +353,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             ef'!2..
                                             \-
                                             ^ \markup \center-align { E-35 }
+                                            ^ \markup { 1'01'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -427,6 +380,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
@@ -437,6 +393,7 @@
                                             >1
                                             \-
                                             ^ \markup \center-align \center-column { D+31 -19  }
+                                            ^ \markup { 1'12'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -455,6 +412,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
@@ -465,6 +425,7 @@
                                             >1
                                             \-
                                             ^ \markup \center-align \center-column { D+31 -19  }
+                                            ^ \markup { 1'24'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -483,6 +444,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
@@ -493,6 +457,7 @@
                                             >1
                                             \-
                                             ^ \markup \center-align \center-column { +12 -19  }
+                                            ^ \markup { 1'33'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -512,6 +477,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
@@ -522,6 +490,7 @@
                                             >2.
                                             \-
                                             ^ \markup \center-align \center-column { +12 -19  }
+                                            ^ \markup { 1'42'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -540,6 +509,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
@@ -550,6 +522,7 @@
                                             >2
                                             \-
                                             ^ \markup \center-align \center-column { +12 -38  }
+                                            ^ \markup { 1'49'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -568,6 +541,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
@@ -578,6 +554,7 @@
                                             >2
                                             \-
                                             ^ \markup \center-align \center-column { +12 -38  }
+                                            ^ \markup { 1'55'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -594,6 +571,9 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             <
                                                 \tweak Accidental.stencil #ly:text-interface::print
                                                 \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \natural-one-syntonic-comma-up  }
@@ -604,6 +584,7 @@
                                             >1
                                             \-
                                             ^ \markup \center-align \center-column { +12 -38  }
+                                            ^ \markup { 2'00'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -622,11 +603,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                             ef''!1
                                             \-
                                             ^ \markup \center-align { +12 }
+                                            ^ \markup { 2'13'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -645,11 +630,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                             ef''!2..
                                             \-
                                             ^ \markup \center-align { +12 }
+                                            ^ \markup { 2'25'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -668,11 +657,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                             ef''!2..
                                             \-
                                             ^ \markup \center-align { +12 }
+                                            ^ \markup { 2'36'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -686,6 +679,13 @@
                                         aqs'4
                                         \p
                                         ~
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                          }
+                                        }
 
                                         \times 2/3
                                         {
@@ -946,12 +946,14 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.TimeSignature.stencil = #(blank-time-signature)
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-up  }
                                             g'!1
                                             \ff
                                             \-
                                             ^ \markup \center-align { A♭-49 }
+                                            ^ \markup { 0'00'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -970,11 +972,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
                                             f'!1
                                             \-
                                             ^ \markup \center-align { +16 }
+                                            ^ \markup { 0'13'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -993,11 +999,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
                                             f'!2..
                                             \-
                                             ^ \markup \center-align { +16 }
+                                            ^ \markup { 0'25'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1014,11 +1024,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
                                             f'!1
                                             \-
                                             ^ \markup \center-align { +16 }
+                                            ^ \markup { 0'36'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1037,11 +1051,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \one-septimal-comma-up  }
                                             e'!1
                                             \-
                                             ^ \markup \center-align { +31 }
+                                            ^ \markup { 0'49'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1060,11 +1078,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup { \natural-one-syntonic-comma-up  }
                                             f'!2..
                                             \-
                                             ^ \markup \center-align { +16 }
+                                            ^ \markup { 1'01'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1083,11 +1105,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
                                             ff'!1
                                             \-
                                             ^ \markup \center-align { -4 }
+                                            ^ \markup { 1'12'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1106,11 +1132,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-two-syntonic-comma-up  }
                                             ff'!1
                                             \-
                                             ^ \markup \center-align { -4 }
+                                            ^ \markup { 1'24'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1129,11 +1159,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             af'!1
                                             \-
                                             ^ \markup \center-align { A-37 }
+                                            ^ \markup { 1'33'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1153,11 +1187,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             af'!2.
                                             \-
                                             ^ \markup \center-align { A-37 }
+                                            ^ \markup { 1'42'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1176,11 +1214,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
                                             c''!2
                                             \-
                                             ^ \markup \center-align { +45 }
+                                            ^ \markup { 1'49'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1199,11 +1241,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             bf'!2
                                             \-
                                             ^ \markup \center-align { -40 }
+                                            ^ \markup { 1'55'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1220,11 +1266,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             bf'!1
                                             \-
                                             ^ \markup \center-align { -40 }
+                                            ^ \markup { 2'00'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1243,11 +1293,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             bf'!1
                                             \-
                                             ^ \markup \center-align { -40 }
+                                            ^ \markup { 2'13'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1266,11 +1320,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             df'!2..
                                             \-
                                             ^ \markup \center-align { D-39 }
+                                            ^ \markup { 2'25'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1289,11 +1347,15 @@
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
                                             \duration-line-style
+                                            \once \override Score.BarLine.stencil = ##f
+                                            \once \override Score.SpanBar.stencil = ##f
+                                            \once \override Score.TimeSignature.stencil = ##f
                                             \tweak Accidental.stencil #ly:text-interface::print
                                             \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-up \hspace #0.125 \flat-one-syntonic-comma-up  }
                                             df'!2..
                                             \-
                                             ^ \markup \center-align { D-39 }
+                                            ^ \markup { 2'36'' }
 
                                             \once \override Rest.transparent = ##t
                                             \once \override Dots.transparent = ##t
@@ -1307,6 +1369,13 @@
                                         dqf'4
                                         \p
                                         ~
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                          }
+                                        }
 
                                         dqf'4
                                         ~
@@ -1534,6 +1603,7 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.TimeSignature.stencil = #(blank-time-signature)
                                     \clef "alto"
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
@@ -1541,6 +1611,7 @@
                                     \ff
                                     \-
                                     ^ \markup \center-align { -14 }
+                                    ^ \markup { 0'00'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1559,11 +1630,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                     e!1
                                     \-
                                     ^ \markup \center-align { -49 }
+                                    ^ \markup { 0'13'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1582,11 +1657,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                     af!2..
                                     \-
                                     ^ \markup \center-align { -17 }
+                                    ^ \markup { 0'25'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1603,11 +1682,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                     af!1
                                     \-
                                     ^ \markup \center-align { -17 }
+                                    ^ \markup { 0'36'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1626,11 +1709,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!1
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 0'49'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1649,11 +1736,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!2..
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 1'01'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1672,11 +1763,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!1
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 1'12'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1695,11 +1790,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!1
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 1'24'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1718,11 +1817,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!1
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 1'33'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1742,11 +1845,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!2.
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 1'42'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1765,11 +1872,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                                     bf!2
                                     \-
                                     ^ \markup \center-align { +14 }
+                                    ^ \markup { 1'49'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1788,11 +1899,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                     af!2
                                     \-
                                     ^ \markup \center-align { G+29 }
+                                    ^ \markup { 1'55'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1809,11 +1924,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-undecimal-quarter-tone-down \hspace #0.125 \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                     af!1
                                     \-
                                     ^ \markup \center-align { G+29 }
+                                    ^ \markup { 2'00'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1832,11 +1951,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                                     cf'!1
                                     \-
                                     ^ \markup \center-align { +25 }
+                                    ^ \markup { 2'13'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1855,11 +1978,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \abjad-natural  }
                                     c'!2..
                                     \-
                                     ^ \markup \center-align { -4 }
+                                    ^ \markup { 2'25'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1878,11 +2005,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \abjad-natural  }
                                     c'!2..
                                     \-
                                     ^ \markup \center-align { -4 }
+                                    ^ \markup { 2'36'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -1904,6 +2035,13 @@
                                 \<
                                 %! abjad.glissando(7)
                                 \glissando
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                  }
+                                }
 
                                 a'4
                                 %! abjad.glissando(7)
@@ -2076,6 +2214,7 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.TimeSignature.stencil = #(blank-time-signature)
                                     \clef "bass"
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2088,6 +2227,7 @@
                                     \ff
                                     \-
                                     ^ \markup \center-align \center-column { +2 +0  }
+                                    ^ \markup { 0'00'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2106,6 +2246,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -2116,6 +2259,7 @@
                                     >1
                                     \-
                                     ^ \markup \center-align \center-column { +2 +0  }
+                                    ^ \markup { 0'13'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2134,6 +2278,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -2144,6 +2291,7 @@
                                     >2..
                                     \-
                                     ^ \markup \center-align \center-column { +14 +0  }
+                                    ^ \markup { 0'25'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2160,6 +2308,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -2170,6 +2321,7 @@
                                     >1
                                     \-
                                     ^ \markup \center-align \center-column { +14 +0  }
+                                    ^ \markup { 0'36'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2188,6 +2340,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -2198,6 +2353,7 @@
                                     >1
                                     \-
                                     ^ \markup \center-align \center-column { -2 +0  }
+                                    ^ \markup { 0'49'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2216,6 +2372,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \abjad-natural  }
@@ -2226,6 +2385,7 @@
                                     >2..
                                     \-
                                     ^ \markup \center-align \center-column { -17 +0  }
+                                    ^ \markup { 1'01'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2244,11 +2404,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                     af!1
                                     \-
                                     ^ \markup \center-align { -17 }
+                                    ^ \markup { 1'12'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2267,11 +2431,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \flat-one-syntonic-comma-up  }
                                     af!1
                                     \-
                                     ^ \markup \center-align { -17 }
+                                    ^ \markup { 1'24'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2290,11 +2458,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \abjad-natural  }
                                     g!1
                                     \-
                                     ^ \markup \center-align { -2 }
+                                    ^ \markup { 1'33'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2314,11 +2486,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \abjad-natural  }
                                     g!2.
                                     \-
                                     ^ \markup \center-align { -2 }
+                                    ^ \markup { 1'42'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2337,11 +2513,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                                     gf!2
                                     \-
                                     ^ \markup \center-align { +27 }
+                                    ^ \markup { 1'49'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2360,11 +2540,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                     d!2
                                     \-
                                     ^ \markup \center-align { C♯+47 }
+                                    ^ \markup { 1'55'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2381,11 +2565,15 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     \tweak Accidental.stencil #ly:text-interface::print
                                     \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                     d!1
                                     \-
                                     ^ \markup \center-align { C♯+47 }
+                                    ^ \markup { 2'00'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2404,6 +2592,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
@@ -2414,6 +2605,7 @@
                                     >1
                                     \-
                                     ^ \markup \center-align \center-column { +43 +10  }
+                                    ^ \markup { 2'13'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2432,6 +2624,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
@@ -2442,6 +2637,7 @@
                                     >2..
                                     \-
                                     ^ \markup \center-align \center-column { -21 +10  }
+                                    ^ \markup { 2'25'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2460,6 +2656,9 @@
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
                                     \duration-line-style
+                                    \once \override Score.BarLine.stencil = ##f
+                                    \once \override Score.SpanBar.stencil = ##f
+                                    \once \override Score.TimeSignature.stencil = ##f
                                     <
                                         \tweak Accidental.stencil #ly:text-interface::print
                                         \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
@@ -2470,6 +2669,7 @@
                                     >2..
                                     \-
                                     ^ \markup \center-align \center-column { -21 +10  }
+                                    ^ \markup { 2'36'' }
 
                                     \once \override Rest.transparent = ##t
                                     \once \override Dots.transparent = ##t
@@ -2494,6 +2694,13 @@
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
                                 \startTextSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]

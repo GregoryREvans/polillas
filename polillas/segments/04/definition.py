@@ -670,38 +670,102 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_120,
+        #     baca.selectors.leaf(0),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
             polillas.mark_120,
-            baca.selectors.leaf(0),
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_120,
-            baca.selectors.leaf(0),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_120,
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.call(
-            "Global Context",
-            evans.TempoSpannerHandler(
-                tempo_list=[(2, 0, 1, "120"), (2, 0, 1, "72")],
-                boolean_vector=[1],
-                padding=4,
-                staff_padding=2,
-                forget=False,
-                font_size=6,
-            ),
-            baca.selectors.leaves([15, 16, 17, 18, 19]),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_120,
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            abjad.MetronomeMark((1, 4), 96),
-            baca.selectors.leaf(15),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.mark_120,
+            polillas.select_measures([0], leaf=0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_72,
-            baca.selectors.leaf(19),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_120,
+        #     baca.selectors.leaf(0),
+        # ),
+        # evans.call(
+        #     "Global Context",
+        #     evans.TempoSpannerHandler(
+        #         tempo_list=[(2, 0, 1, "120"), (2, 0, 1, "72")],
+        #         boolean_vector=[1],
+        #         padding=4,
+        #         staff_padding=2,
+        #         forget=False,
+        #         font_size=6,
+        #     ),
+        #     baca.selectors.leaves([15, 16, 17, 18, 19]),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice", polillas.mark_120, polillas.select_measures([15], leaf=0)
         ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            polillas.select_measures([15], leaf=0),
+        ),
+        evans.attach(  # parts
+            "violin 1 voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
+        ),
+        evans.attach(  # parts
+            "violin 2 voice", polillas.mark_120, polillas.select_measures([15], leaf=0)
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            polillas.select_measures([15], leaf=0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
+        ),
+        evans.attach(  # parts
+            "viola voice", polillas.mark_120, polillas.select_measures([15], leaf=0)
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            polillas.select_measures([15], leaf=0),
+        ),
+        evans.attach(  # parts
+            "viola voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
+        ),
+        evans.attach(  # parts
+            "cello voice", polillas.mark_120, polillas.select_measures([15], leaf=0)
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            polillas.select_measures([15], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
+        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.MetronomeMark((1, 4), 96),
+        #     baca.selectors.leaf(15),
+        # ),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_72,
+        #     baca.selectors.leaf(19),
+        # ),
         evans.attach(
             "Global Context",
             polillas.start_repeat_default,
@@ -712,6 +776,11 @@ maker = evans.SegmentMaker(
             polillas.stop_repeat,
             baca.selectors.leaf(3),
         ),
+        # evans.call( # parts
+        #     "score",
+        #     evans.global_to_voice,
+        #     lambda _: abjad.Selection(_),
+        # ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_leaves,

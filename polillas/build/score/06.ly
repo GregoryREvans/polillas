@@ -11,12 +11,6 @@
                 \time 5/8
                 \mark \markup \bold {  }
                 s1 * 5/8
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -39,12 +33,6 @@
                 %! scaling time signatures
                 \time 9/8
                 s1 * 9/8
-                - \abjad-dashed-line-with-arrow
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 5]
@@ -60,13 +48,6 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                \bacaStopTextSpanMM
-                - \abjad-invisible-line
-                - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
-                - \tweak padding #4
-                - \tweak staff-padding #2
-                - \tweak font-size #6
-                \bacaStartTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 7]
@@ -74,7 +55,6 @@
                 %! scaling time signatures
                 \time 7/8
                 s1 * 7/8
-                \bacaStopTextSpanMM
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
@@ -132,13 +112,6 @@
                 %! scaling time signatures
                 \time 3/8
                 s1 * 3/8
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 16]
@@ -205,6 +178,12 @@
                                         \override Staff.Stem.stemlet-length = 0.75
                                         r16
                                         [
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         gqs'16
                                         \mp
@@ -295,6 +274,12 @@
                                             % [violin 1 voice measure 4]
 
                                             r2
+                                            - \abjad-dashed-line-with-arrow
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             g4
 
@@ -321,6 +306,13 @@
                                             % [violin 1 voice measure 6]
 
                                             r2
+                                            \bacaStopTextSpanMM
+                                            - \abjad-invisible-line
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             b4
 
@@ -342,6 +334,7 @@
                                         %! SPANNER_START
                                         \>
                                         [
+                                        \bacaStopTextSpanMM
 
                                         r8
 
@@ -508,6 +501,13 @@
                                         % [violin 1 voice measure 15]
 
                                         r4.
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
                                         \staff-line-count 5
                                         \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                         %! COMMENT_MEASURE_NUMBERS
@@ -575,6 +575,12 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
                                             [
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 5.5)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             g'16
                                             \mp
@@ -692,6 +698,12 @@
                                             d'4
                                             \ff
                                             ^ \markup {behind bridge, on wrapping}
+                                            - \abjad-dashed-line-with-arrow
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             r2
 
@@ -721,6 +733,13 @@
                                             % [violin 2 voice measure 6]
 
                                             g4
+                                            \bacaStopTextSpanMM
+                                            - \abjad-invisible-line
+                                            - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                            - \tweak padding #4
+                                            - \tweak staff-padding #2
+                                            - \tweak font-size #6
+                                            \bacaStartTextSpanMM
 
                                             r2
 
@@ -743,6 +762,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
                                             \>
+                                            \bacaStopTextSpanMM
 
                                             r2
 
@@ -936,6 +956,13 @@
                                         ^ \markup (III)
                                         %! abjad.glissando(7)
                                         \glissando
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
 
                                         d'''8
                                         ~
@@ -1029,6 +1056,12 @@
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
                                     [
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     aqf'16
                                     \mp
@@ -1137,6 +1170,12 @@
                                 \ff
                                 ^ \markup {behind bridge, on wrapping}
                                 [
+                                - \abjad-dashed-line-with-arrow
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
 
                                 \revert Staff.Stem.stemlet-length
                                 r8.
@@ -1183,6 +1222,13 @@
                                 % [viola voice measure 6]
 
                                 r2..
+                                \bacaStopTextSpanMM
+                                - \abjad-invisible-line
+                                - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                - \tweak padding #4
+                                - \tweak staff-padding #2
+                                - \tweak font-size #6
+                                \bacaStartTextSpanMM
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/9
@@ -1201,6 +1247,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \>
+                                    \bacaStopTextSpanMM
 
                                     r2
 
@@ -1382,6 +1429,13 @@
                                 c'4
                                 \p
                                 ^ \markup {on bridge}
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 c'8
                                 ~
@@ -1466,6 +1520,12 @@
                                     b4
                                     \ff
                                     ^ \markup {behind bridge, on wrapping}
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     r4
 
@@ -1498,6 +1558,12 @@
                                     % [cello voice measure 4]
 
                                     r4
+                                    - \abjad-dashed-line-with-arrow
+                                    - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
+                                    - \tweak padding #4
+                                    - \tweak staff-padding #2
+                                    - \tweak font-size #6
+                                    \bacaStartTextSpanMM
 
                                     f'4
 
@@ -1535,6 +1601,13 @@
                                     % [cello voice measure 6]
 
                                     r2
+                                    \bacaStopTextSpanMM
+                                    - \abjad-invisible-line
+                                    - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
+                                    - \tweak padding #4
+                                    - \tweak staff-padding #2
+                                    - \tweak font-size #6
+                                    \bacaStartTextSpanMM
 
                                     g4
 
@@ -1559,6 +1632,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
                                     \>
+                                    \bacaStopTextSpanMM
 
                                     r2
 
@@ -1744,6 +1818,13 @@
                                 - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
                                 - \tweak staff-padding 4
                                 \startTextSpan
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]

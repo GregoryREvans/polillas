@@ -11,12 +11,6 @@
                 \time 9/8
                 \mark \markup \bold {  }
                 s1 * 9/8
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -60,13 +54,6 @@
                 %! scaling time signatures
                 \time 5/8
                 s1 * 5/8
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 8]
@@ -134,6 +121,12 @@
                                         \mf
                                         \stopTrillSpan
                                         ~
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         \times 2/3
                                         {
@@ -355,6 +348,13 @@
                                         % [violin 1 voice measure 7]
 
                                         r2
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                          }
+                                        }
 
                                         r8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -409,6 +409,12 @@
                                         \markup { \hcenter-in #14 "Violin II" }
                                         r1
                                         \stopTrillSpan
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         r8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -586,6 +592,13 @@
                                         % [violin 2 voice measure 7]
 
                                         r2
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 5.5)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                          }
+                                        }
 
                                         r8
                                         %! COMMENT_MEASURE_NUMBERS
@@ -646,6 +659,12 @@
                                 \mf
                                 \stopTrillSpan
                                 ~
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7
@@ -832,6 +851,13 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8
                                 [
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                  }
+                                }
 
                                 \revert Staff.Stem.stemlet-length
                                 c'8
@@ -973,6 +999,12 @@
                                     \>
                                     \stopTrillSpan
                                     [
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 5.5)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     c16 * 31/16
                                     - \baca-circle-bowing
@@ -1148,6 +1180,13 @@
 
                                 g2
                                 ~
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 5.5)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"60"
+                                  }
+                                }
 
                                 g8
                                 %! COMMENT_MEASURE_NUMBERS
