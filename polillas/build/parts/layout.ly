@@ -50,7 +50,7 @@
             s1 * 5/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/2
@@ -67,7 +67,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 9/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -106,7 +106,7 @@
             s1 * 5/8
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -141,7 +141,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 11/16
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/4
@@ -165,7 +165,7 @@
             s1 * 1/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -197,7 +197,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 13/16
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 15/16
@@ -224,7 +224,7 @@
             s1 * 1
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -238,7 +238,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 7/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/4
@@ -250,7 +250,7 @@
             s1 * 1
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -261,7 +261,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/2
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -276,7 +276,7 @@
             s1 * 5/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/4
@@ -302,7 +302,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/2
@@ -332,7 +332,7 @@
             s1 * 13/16
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/4
@@ -364,7 +364,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 5/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/2
@@ -394,7 +394,7 @@
             s1 * 3/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 5/8
@@ -423,7 +423,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 7/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -453,7 +453,7 @@
             s1 * 7/8
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/8
@@ -488,7 +488,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -515,7 +515,7 @@
             s1 * 1/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/8
@@ -544,7 +544,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 9/8
@@ -568,7 +568,7 @@
             s1 * 5/8
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/2
@@ -600,7 +600,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 5/8
@@ -627,7 +627,7 @@
             s1 * 7/8
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -647,7 +647,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -668,7 +668,7 @@
             s1 * 5/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/2
@@ -688,7 +688,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 5/4
@@ -712,7 +712,7 @@
             s1 * 7/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -738,7 +738,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 5/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 11/16
@@ -759,7 +759,7 @@
             s1 * 15/16
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/8
@@ -788,7 +788,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/4
@@ -815,7 +815,7 @@
             s1 * 7/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -844,7 +844,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/2
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/4
@@ -886,7 +886,7 @@
             s1 * 1
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -921,7 +921,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -963,7 +963,7 @@
             s1 * 11/16
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/2
@@ -989,7 +989,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -1022,7 +1022,7 @@
             s1 * 13/16
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 15/16
@@ -1045,7 +1045,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 7/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -1072,7 +1072,7 @@
             s1 * 1
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/8
@@ -1098,7 +1098,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 5/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/2
@@ -1122,7 +1122,7 @@
             s1 * 1/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/2
@@ -1139,7 +1139,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -1163,7 +1163,7 @@
             s1 * 5/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/2
@@ -1186,7 +1186,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 5/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/2
@@ -1210,7 +1210,7 @@
             s1 * 1
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1/4
@@ -1236,7 +1236,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 9/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -1254,7 +1254,7 @@
             s1 * 7/8
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -1280,7 +1280,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/8
@@ -1316,7 +1316,7 @@
             s1 * 5/8
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 11/16
@@ -1348,7 +1348,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/8
@@ -1384,7 +1384,7 @@
             s1 * 13/16
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 15/16
@@ -1398,7 +1398,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 7/8
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 7/4
@@ -1422,7 +1422,7 @@
             s1 * 3/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/2
@@ -1454,7 +1454,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 1
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -1487,7 +1487,7 @@
             s1 * 3/2
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 3/4
@@ -1516,7 +1516,7 @@
             \evans-new-spacing-section #35 #384
             s1 * 3/4
             \break
-            \evans-lbsd #111 #'(17 30 30 30)
+            \evans-lbsd #108 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1
@@ -1540,7 +1540,7 @@
             s1 * 7/4
             \pageBreak
             \break
-            \evans-lbsd #13 #'(17 30 30 30)
+            \evans-lbsd #12 #'(17 32 32 32)
             \evans-system-X-offset #1
             \evans-new-spacing-section #1 #16
             s1 * 1

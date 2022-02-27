@@ -2,8 +2,8 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
-\include "/Users/gregoryevans/Scores/polillas/polillas/segments/01/../../build/segment_stylesheet.ily"
+\include "abjad.ily"
+\include "../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
 %! abjad.LilyPondFile._get_format_pieces()
