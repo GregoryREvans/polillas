@@ -349,27 +349,39 @@ def fuse_preprocessor(divisions):
 
 
 def fuse_preprocessor_2(divisions):
-    divisions = baca.sequence.partition_by_counts(divisions, (2,), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (2,), cyclic=True, overhang=True
+    )
     return evans.Sequence(sum(_) for _ in divisions)
 
 
 def fuse_preprocessor_3(divisions):
-    divisions = baca.sequence.partition_by_counts(divisions, (3,), cyclic=True, overhang=True)
-    return evans.Sequence(sum(_) for _ in divisions) # remove baca.Sequence class with baca.sequence module
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (3,), cyclic=True, overhang=True
+    )
+    return evans.Sequence(
+        sum(_) for _ in divisions
+    )  # remove baca.Sequence class with baca.sequence module
 
 
 def fuse_preprocessor_2_1(divisions):
-    divisions = baca.sequence.partition_by_counts(divisions, (2, 1), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (2, 1), cyclic=True, overhang=True
+    )
     return evans.Sequence(sum(_) for _ in divisions)
 
 
 def fuse_preprocessor_3_1(divisions):
-    divisions = baca.sequence.partition_by_counts(divisions, (3, 1), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (3, 1), cyclic=True, overhang=True
+    )
     return evans.Sequence(sum(_) for _ in divisions)
 
 
 def fuse_preprocessor_3_2(divisions):
-    divisions = baca.sequence.partition_by_counts(divisions, (3, 2), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (3, 2), cyclic=True, overhang=True
+    )
     return evans.Sequence(sum(_) for _ in divisions)
 
 
@@ -386,7 +398,9 @@ def fuse_quarters_preprocessor_2_1(divisions):
     divisions = [duration]
     divisions = [baca.sequence.quarters(_) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
-    divisions = baca.sequence.partition_by_counts(divisions, (2, 1), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (2, 1), cyclic=True, overhang=True
+    )
     return [sum(_) for _ in divisions]
 
 
@@ -395,7 +409,9 @@ def fuse_quarters_preprocessor_1_2(divisions):
     divisions = [duration]
     divisions = [baca.sequence.quarters(_) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
-    divisions = baca.sequence.partition_by_counts(divisions, (1, 2), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (1, 2), cyclic=True, overhang=True
+    )
     return [sum(_) for _ in divisions]
 
 
@@ -404,7 +420,9 @@ def fuse_quarters_preprocessor_1_1_2(divisions):
     divisions = [duration]
     divisions = [baca.sequence.quarters(_) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
-    divisions = baca.sequence.partition_by_counts(divisions, (1, 1, 2), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (1, 1, 2), cyclic=True, overhang=True
+    )
     return [sum(_) for _ in divisions]
 
 
@@ -413,7 +431,9 @@ def fuse_quarters_preprocessor_2_2_5(divisions):
     divisions = [duration]
     divisions = [baca.sequence.quarters(_) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
-    divisions = baca.sequence.partition_by_counts(divisions, (2, 2, 5), cyclic=False, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (2, 2, 5), cyclic=False, overhang=True
+    )
     return [sum(_) for _ in divisions]
 
 
@@ -479,14 +499,14 @@ def fuse_quarters_preprocessor_3_1(divisions):
     divisions = [duration]
     divisions = [baca.sequence.quarters(_) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
-    divisions = baca.sequence.partition_by_counts(divisions, (3, 1), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (3, 1), cyclic=True, overhang=True
+    )
     return [sum(_) for _ in divisions]
 
 
 def quarters_preprocessor(divisions):
-    divisions = [
-        baca.sequence.quarters(_, compound=(3, 2)) for _ in divisions
-    ]
+    divisions = [baca.sequence.quarters(_, compound=(3, 2)) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
     return divisions
 
@@ -496,7 +516,9 @@ def fuse_quarters_preprocessor_2_20(divisions):
     divisions = [duration]
     divisions = [baca.sequence.quarters(_) for _ in divisions]
     divisions = baca.sequence.flatten(divisions, depth=-1)
-    divisions = baca.sequence.partition_by_counts(divisions, (2, 20), cyclic=True, overhang=True)
+    divisions = baca.sequence.partition_by_counts(
+        divisions, (2, 20), cyclic=True, overhang=True
+    )
     return [sum(_) for _ in divisions]
 
 
