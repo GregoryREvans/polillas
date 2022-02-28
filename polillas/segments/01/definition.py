@@ -719,8 +719,8 @@ maker = evans.SegmentMaker(
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[
-        f"abjad.ily",
-        f"../../build/segment_stylesheet.ily",
+        "abjad.ily",
+        "../../build/segment_stylesheet.ily",
     ],
     segment_name="01",
     current_directory=pathlib.Path(__file__).parent,
