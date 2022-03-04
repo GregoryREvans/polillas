@@ -31,6 +31,7 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[0, 2, 1, 1, 0],
                 stage=1,
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             polillas.B_pitches(stage=1, transposition=-6, rotation=2),
             baca.text_spanner(
@@ -42,7 +43,6 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mp"),
             # polillas.B_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 2 voice", (0, 3))],
@@ -52,6 +52,7 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[2, 1, 1, 0, 1],
                 stage=1,
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             polillas.B_pitches(stage=1, transposition=-6, rotation=4),
             baca.text_spanner(
@@ -63,7 +64,6 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mp"),
             # polillas.B_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", (0, 3))],
@@ -73,6 +73,7 @@ maker = evans.SegmentMaker(
                 denominator=16,
                 extra_counts=[1, 1, 0, 0, 2],
                 stage=1,
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             polillas.B_pitches(stage=1, transposition=-6, rotation=6),
             baca.text_spanner(
@@ -84,7 +85,6 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mp"),
             # polillas.B_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -236,7 +236,7 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", (14, 18))],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=True),
             evans.PitchHandler(["bf,,"]),
             abjad.Clef("bass"),
             abjad.LilyPondLiteral(
@@ -718,7 +718,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

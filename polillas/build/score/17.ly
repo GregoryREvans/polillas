@@ -511,12 +511,12 @@
                                         % [violin 1 voice measure 7]
 
                                         \harmonicsOn
-                                        af''''1
+                                        af''''2.
                                         \p
                                         \<
                                         ~
 
-                                        af''''8
+                                        af''''4.
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1031,12 +1031,12 @@
                                         % [violin 2 voice measure 7]
 
                                         \harmonicsOn
-                                        a'''1
+                                        a'''2.
                                         \p
                                         \<
                                         ~
 
-                                        a'''8
+                                        a'''4.
                                         ~
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
@@ -1345,12 +1345,12 @@
                                 % [viola voice measure 7]
 
                                 \harmonicsOn
-                                e''1
+                                e''2.
                                 \p
                                 \<
                                 ~
 
-                                e''8
+                                e''4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1392,10 +1392,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 13]
 
-                                g''2
+                                g''4.
                                 ~
 
-                                g''8
+                                g''4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1413,10 +1413,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 16]
 
-                                g''1
+                                g''2.
                                 ~
 
-                                g''8
+                                g''4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1554,7 +1554,7 @@
                                 % [cello voice measure 7]
 
                                 \harmonicsOn
-                                c1
+                                c2.
                                 \p
                                 \<
                                 ~
@@ -1563,7 +1563,7 @@
                                 - \tweak staff-padding 4
                                 \startTextSpan
 
-                                c8
+                                c4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1605,10 +1605,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 13]
 
-                                g2
+                                g4.
                                 ~
 
-                                g8
+                                g4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -1626,10 +1626,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                g1
+                                g2.
                                 ~
 
-                                g8
+                                g4.
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()

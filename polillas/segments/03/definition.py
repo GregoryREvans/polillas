@@ -27,44 +27,59 @@ maker = evans.SegmentMaker(
             [
                 ("violin 1 voice", (0, 3)),
             ],
-            polillas.flames(denominator=16, extra_counts=[3, 0, 0, 3], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[3, 0, 0, 3],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["a'"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             baca.hairpin("mp < f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 2 voice", (0, 3)),
             ],
-            polillas.flames(denominator=8, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["d'"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             baca.hairpin("mp < f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("viola voice", (0, 2)),
             ],
-            polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             baca.hairpin("mp < f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 2), ("cello voice", (1, 3))],
-            polillas.knots(stage=1),
+            polillas.knots(
+                stage=1,
+                preprocessor=polillas.fuse_preprocessor,
+            ),
             polillas.F_pitches(stage=1, transposition=-8, step=2),
             abjad.Articulation("staccato"),
             abjad.Dynamic("ff"),
@@ -76,7 +91,6 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             # polillas.F_color,
-            preprocessor=polillas.fuse_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -85,7 +99,10 @@ maker = evans.SegmentMaker(
                 ("viola voice", 4),
                 ("cello voice", 4),
             ],
-            polillas.flight(stage=2),
+            polillas.flight(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.D_pitches(stage=1, transposition=-2, rotation=3, chord_vector=[1]),
             baca.hairpin(
                 "mf < f", selector=lambda _: abjad.Selection(_).leaves(pitched=True)
@@ -105,7 +122,6 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.Selection(_).leaves(pitched=True),
             ),
             # polillas.D_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -147,47 +163,63 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", 6)],
-            polillas.flames(denominator=16, extra_counts=[3, 0, 0, 3], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[3, 0, 0, 3],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["a'"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 2 voice", 6)],
-            polillas.flames(denominator=8, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["d'"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 6)],
-            polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 6)],
-            polillas.flames(denominator=8, extra_counts=[0], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[0],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["bf,"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"], articulation_boolean_vector=[1, 0], vector_forget=False
             ),
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
             "cello voice",
@@ -201,7 +233,12 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 1 voice", 7)],
-            polillas.flames(denominator=16, extra_counts=[3, 0, 0, 3], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[3, 0, 0, 3],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["a'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -210,11 +247,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mf"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 2 voice", 7)],
-            polillas.flames(denominator=8, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["d'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -223,11 +264,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mf"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 7)],
-            polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"],
@@ -236,11 +281,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mf"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 7)],
-            polillas.flames(denominator=8, extra_counts=[0], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[0],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["bf,"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -249,11 +298,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("mf"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 1 voice", 8)],
-            polillas.flames(denominator=16, extra_counts=[3, 0, 0, 3], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[3, 0, 0, 3],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["a'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -261,11 +314,15 @@ maker = evans.SegmentMaker(
                 vector_forget=False,
             ),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 2 voice", 8)],
-            polillas.flames(denominator=8, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["d'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -273,11 +330,15 @@ maker = evans.SegmentMaker(
                 vector_forget=False,
             ),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 8)],
-            polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"],
@@ -285,11 +346,15 @@ maker = evans.SegmentMaker(
                 vector_forget=False,
             ),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 8)],
-            polillas.flames(denominator=8, extra_counts=[0], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[0],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["bf,"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -297,11 +362,15 @@ maker = evans.SegmentMaker(
                 vector_forget=False,
             ),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 1 voice", (9, 11))],
-            polillas.flames(denominator=16, extra_counts=[3, 0, 0, 3], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[3, 0, 0, 3],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["aqf'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -310,11 +379,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 2 voice", (9, 11))],
-            polillas.flames(denominator=8, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["ds'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -323,11 +396,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", (9, 11))],
-            polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["c"], forget=False),
             evans.ArticulationHandler(
                 ["tremolo"],
@@ -336,11 +413,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", (9, 11))],
-            polillas.flames(denominator=8, extra_counts=[0], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[0],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["bf,"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -349,11 +430,15 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("f"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 1 voice", (12, 22))],
-            polillas.flames(denominator=16, extra_counts=[3, 0, 0, 3], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[3, 0, 0, 3],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["af'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -362,11 +447,15 @@ maker = evans.SegmentMaker(
             ),
             baca.hairpin("f > p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 2 voice", (12, 21))],
-            polillas.flames(denominator=8, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=8,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["ds'"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -375,11 +464,15 @@ maker = evans.SegmentMaker(
             ),
             baca.hairpin("f > p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", (12, 18))],
-            polillas.flames(denominator=16, extra_counts=[1, 0, 0, 1], stage=2),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[1, 0, 0, 1],
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["cs"], forget=False),
             evans.ArticulationHandler(
                 ["baca-circle-bowing"],
@@ -388,7 +481,6 @@ maker = evans.SegmentMaker(
             ),
             baca.hairpin("f > p"),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -422,7 +514,7 @@ maker = evans.SegmentMaker(
         # evans.attach("cello voice", abjad.Glissando(), baca.selectors.leaf(72)),
         evans.MusicCommand(
             [("cello voice", (22, 24))],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=False),
             evans.PitchHandler(
                 [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
             ),
@@ -907,7 +999,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
+    extra_rewrite=False,  # should default to false but defaults to true
     mm_rests=False,
 )
 

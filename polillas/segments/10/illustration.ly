@@ -1191,7 +1191,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 7]
 
-                                g2
+                                g4.
                                 ~
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
@@ -1201,7 +1201,7 @@
                                   }
                                 }
 
-                                g8
+                                g4
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 8]

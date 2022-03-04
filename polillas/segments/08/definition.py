@@ -29,6 +29,7 @@ maker = evans.SegmentMaker(
                 stage=3,
                 denominator=16,
                 extra_counts=[1],
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -37,7 +38,6 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -102,6 +102,7 @@ maker = evans.SegmentMaker(
                 stage=3,
                 denominator=16,
                 extra_counts=[2],
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -110,7 +111,6 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.call(
             "violin 2 voice",
@@ -175,6 +175,7 @@ maker = evans.SegmentMaker(
                 stage=3,
                 denominator=16,
                 extra_counts=[3],
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -183,7 +184,6 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.call(
             "viola voice",
@@ -248,6 +248,7 @@ maker = evans.SegmentMaker(
                 stage=3,
                 denominator=16,
                 extra_counts=[4],
+                preprocessor=polillas.pure_quarters_preprocessor,
             ),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -256,7 +257,6 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
             # polillas.C_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.call(
             "cello voice",
@@ -551,7 +551,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

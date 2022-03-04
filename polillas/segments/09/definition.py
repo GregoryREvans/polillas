@@ -34,7 +34,6 @@ maker = evans.SegmentMaker(
             polillas.note_rhythm_handler,
             abjad.Dynamic("f"),
             # polillas.D_color,
-            # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -43,11 +42,13 @@ maker = evans.SegmentMaker(
                 ("viola voice", 1),
                 ("cello voice", 1),
             ],
-            polillas.knots(stage=5),
+            polillas.knots(
+                stage=5,
+                preprocessor=polillas.pure_quarters_preprocessor,
+            ),
             polillas.multi_stac,
             abjad.Dynamic("p"),
             # polillas.F_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -59,7 +60,6 @@ maker = evans.SegmentMaker(
             polillas.note_rhythm_handler,
             abjad.Dynamic("f"),
             # polillas.D_color,
-            # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -68,11 +68,13 @@ maker = evans.SegmentMaker(
                 ("viola voice", 3),
                 ("cello voice", (3, 6)),
             ],
-            polillas.knots(stage=5),
+            polillas.knots(
+                stage=5,
+                preprocessor=polillas.pure_quarters_preprocessor,
+            ),
             polillas.multi_stac,
             abjad.Dynamic("p"),
             # polillas.F_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -92,17 +94,18 @@ maker = evans.SegmentMaker(
                 lilypond_id=2,
             ),
             # polillas.D_color,
-            # preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("cello voice", (6, 9)),
             ],
-            polillas.flames(stage=5),
+            polillas.flames(
+                stage=5,
+                preprocessor=polillas.fuse_quarters_preprocessor_2_2_5,
+            ),
             evans.ArticulationHandler(["baca-circle-bowing"]),
             baca.hairpin("f > p"),
             # polillas.C_color,
-            preprocessor=polillas.fuse_quarters_preprocessor_2_2_5,
         ),
         evans.call(
             "score",
@@ -356,7 +359,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

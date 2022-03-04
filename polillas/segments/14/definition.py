@@ -34,7 +34,6 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("ff"),
             abjad.StopTrillSpan(),
             # polillas.A_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -237,7 +236,6 @@ maker = evans.SegmentMaker(
             evans.PitchHandler(["cqs''", "gs'", "f", ["d", "a"]], forget=False),
             abjad.Dynamic("mp"),
             # polillas.B_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -249,7 +247,6 @@ maker = evans.SegmentMaker(
             polillas.shadows(stage=1),
             abjad.Dynamic("ff"),
             # polillas.A_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -338,7 +335,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (15, 17)),
                 ("cello voice", (15, 17)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=True),
             evans.PitchHandler(["c''", "gs'", "fqs", ["d", "a"]], forget=False),
             abjad.Dynamic("mp"),
             baca.text_spanner(
@@ -348,7 +345,6 @@ maker = evans.SegmentMaker(
                 bookend=False,
             ),
             # polillas.B_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -360,7 +356,6 @@ maker = evans.SegmentMaker(
             polillas.shadows(stage=1),
             abjad.Dynamic("ff"),
             # polillas.A_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -429,7 +424,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (18, 20)),
                 ("cello voice", (18, 20)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=True),
             evans.PitchHandler(["c''", "gqs'", "fs", ["d", "a"]], forget=False),
             abjad.Dynamic("mp"),
             baca.text_spanner(
@@ -439,7 +434,6 @@ maker = evans.SegmentMaker(
                 bookend=False,
             ),
             # polillas.B_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
             "viola voice",
@@ -557,7 +551,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

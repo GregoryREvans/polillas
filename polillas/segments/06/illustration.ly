@@ -1842,10 +1842,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 16]
 
-                                c,2
+                                c,4.
                                 ~
 
-                                c,8
+                                c,4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()

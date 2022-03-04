@@ -628,10 +628,9 @@ maker = evans.SegmentMaker(
                 ("viola voice", (23, 28)),
                 ("cello voice", (23, 28)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=False),
             evans.PitchHandler(["c''", "cs''", "af'", "b'"], forget=False),
             # polillas.D_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -660,10 +659,9 @@ maker = evans.SegmentMaker(
                 ("viola voice", (28, 30)),
                 ("cello voice", (28, 30)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=False),
             evans.PitchHandler(["b'", "ctqs''", "aqf'", "bqs'"], forget=False),
             # polillas.D_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -1060,7 +1058,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

@@ -30,11 +30,13 @@ maker = evans.SegmentMaker(
                 ("viola voice", (0, 4)),
                 ("cello voice", (0, 4)),
             ],
-            polillas.knots(stage=5),
+            polillas.knots(
+                stage=5,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             baca.hairpin("mp < f"),
             polillas.multi_stac,
             # polillas.F_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -58,7 +60,10 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", (1, 9))],
-            polillas.lightning(stage=2),
+            polillas.lightning(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
             ),
@@ -69,7 +74,6 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
             # polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -77,14 +81,17 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (9, 18)),
                 ("viola voice", (4, 17)),
             ],
-            polillas.shadows(extra_counts=[0, 1, 1, 0, 2, 3, 0, 5, 0], stage=3),
+            polillas.shadows(
+                extra_counts=[0, 1, 1, 0, 2, 3, 0, 5, 0],
+                stage=3,
+                preprocessor=polillas.pure_quarters_preprocessor,
+            ),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
             abjad.Dynamic("f"),
             abjad.Articulation("flageolet"),
             # polillas.A_color,
-            preprocessor=polillas.pure_quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -137,16 +144,18 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("cello voice", (4, 19))],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=False),
             evans.PitchHandler(["bf,"]),
             abjad.Dynamic("f"),
             abjad.Articulation("flageolet"),
             # polillas.A_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", (17, 23))],
-            polillas.lightning(stage=2),
+            polillas.lightning(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
             ),
@@ -157,7 +166,6 @@ maker = evans.SegmentMaker(
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
             # polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -165,10 +173,9 @@ maker = evans.SegmentMaker(
                 ("violin 2 voice", (18, 22)),
                 ("cello voice", (19, 22)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=False),
             baca.hairpin("mp < f"),
             # polillas.D_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -207,7 +214,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (24, 26)),
                 ("cello voice", (24, 26)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=False),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
             ),
@@ -219,7 +226,6 @@ maker = evans.SegmentMaker(
                 bookend=False,
             ),
             # polillas.D_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -613,7 +619,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

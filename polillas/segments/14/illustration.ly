@@ -1547,10 +1547,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 20]
 
-                                        c''1
+                                        c''2.
                                         ~
 
-                                        c''4
+                                        c''2
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -2905,10 +2905,10 @@
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 20]
 
-                                        gqs'1
+                                        gqs'2.
                                         ~
 
-                                        gqs'4
+                                        gqs'2
                                         %! baca.text_spanner()
                                         %! baca.PiecewiseCommand._call(4)
                                         %! SPANNER_STOP
@@ -4271,10 +4271,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 20]
 
-                                fs1
+                                fs2.
                                 ~
 
-                                fs4
+                                fs2
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP
@@ -5674,10 +5674,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                <d a>1
+                                <d a>2.
                                 ~
 
-                                <d a>4
+                                <d a>2
                                 %! baca.text_spanner()
                                 %! baca.PiecewiseCommand._call(4)
                                 %! SPANNER_STOP

@@ -30,7 +30,10 @@ maker = evans.SegmentMaker(
                 ("viola voice", 0),
                 ("cello voice", 0),
             ],
-            polillas.shadows(stage=3),
+            polillas.shadows(
+                stage=3,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             abjad.Dynamic("p"),
             abjad.glissando,
             evans.Attachment(
@@ -42,7 +45,6 @@ maker = evans.SegmentMaker(
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
             "violin 1 voice",
@@ -68,23 +70,28 @@ maker = evans.SegmentMaker(
             [
                 ("violin 1 voice", 1),
             ],
-            polillas.chilled(extra_counts=[0, 2, 0], stage=4),
+            polillas.chilled(
+                extra_counts=[0, 2, 0],
+                stage=4,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=0, staff_padding=4),
             abjad.Dynamic("f"),
             # polillas.E_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 2 voice", 1),
             ],
-            polillas.knots(stage=1),
+            polillas.knots(
+                stage=1,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
             # polillas.F_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -93,7 +100,10 @@ maker = evans.SegmentMaker(
                 ("viola voice", 2),
                 ("cello voice", 2),
             ],
-            polillas.shadows(stage=3),
+            polillas.shadows(
+                stage=3,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             abjad.Dynamic("mp"),
             abjad.glissando,
             evans.Attachment(
@@ -105,29 +115,33 @@ maker = evans.SegmentMaker(
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 1 voice", 3),
             ],
-            polillas.chilled(extra_counts=[0, 2, 0], stage=4),
+            polillas.chilled(
+                extra_counts=[0, 2, 0],
+                stage=4,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=2, staff_padding=4),
             abjad.Dynamic("f"),
             # polillas.E_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 2 voice", 3),
             ],
-            polillas.knots(stage=1),
+            polillas.knots(
+                stage=1,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
             # polillas.F_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -136,7 +150,10 @@ maker = evans.SegmentMaker(
                 ("viola voice", 4),
                 ("cello voice", 4),
             ],
-            polillas.shadows(stage=3),
+            polillas.shadows(
+                stage=3,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             abjad.Dynamic("mf"),
             abjad.glissando,
             evans.Attachment(
@@ -148,29 +165,33 @@ maker = evans.SegmentMaker(
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 1 voice", 5),
             ],
-            polillas.chilled(extra_counts=[0, 2, 0, 0, 2], stage=4),
+            polillas.chilled(
+                extra_counts=[0, 2, 0, 0, 2],
+                stage=4,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=4, staff_padding=4),
             abjad.Dynamic("f"),
             # polillas.E_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 2 voice", 5),
             ],
-            polillas.knots(stage=1),
+            polillas.knots(
+                stage=1,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.F_pitches(stage=1, transposition=8, step=4),
             abjad.Dynamic("mp"),
             abjad.Articulation("staccato"),
             # polillas.F_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -179,7 +200,7 @@ maker = evans.SegmentMaker(
                 ("viola voice", (6, 11)),
                 ("cello voice", (6, 11)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=True),
             baca.hairpin("p < f"),
             evans.Attachment(
                 abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
@@ -190,18 +211,20 @@ maker = evans.SegmentMaker(
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("violin 1 voice", (11, 17)),
             ],
-            polillas.chilled(extra_counts=[0, 2, 0, 0, 2, 2], stage=4),
+            polillas.chilled(
+                extra_counts=[0, 2, 0, 0, 2, 2],
+                stage=4,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.E_pitches(stage=1, transposition=9, rotation=1),
             polillas.chilled_stage_3_bowing(series="A", rotation=6, staff_padding=4),
             abjad.Dynamic("f"),
             # polillas.E_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -212,14 +235,13 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mf"),
             abjad.Articulation("staccato"),
             # polillas.F_color,
-            # preprocessor=polillas.fuse_quarters_preprocessor_2_1,
         ),
         evans.MusicCommand(
             [
                 ("viola voice", (11, 17)),
                 ("cello voice", (11, 17)),
             ],
-            polillas.make_tied_notes(),
+            polillas.make_tied_notes(rewrite=True),
             baca.hairpin("p < f"),
             evans.Attachment(
                 abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
@@ -230,7 +252,6 @@ maker = evans.SegmentMaker(
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
-            # preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -422,7 +443,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

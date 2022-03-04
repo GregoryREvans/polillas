@@ -25,28 +25,35 @@ maker = evans.SegmentMaker(
     commands=[
         evans.MusicCommand(
             [("cello voice", 0)],
-            polillas.lightning(stage=2),
+            polillas.lightning(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
             ),
             # polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", 2)],
-            polillas.lightning(stage=2),
+            polillas.lightning(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 [str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]
             ),
             # polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("viola voice", 4),
                 ("cello voice", 4),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 [
                     str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion"))),
@@ -60,22 +67,27 @@ maker = evans.SegmentMaker(
             ),
             abjad.Dynamic("f"),
             # polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
                 ("viola voice", 6),
             ],
-            polillas.lightning(stage=2),
+            polillas.lightning(
+                stage=2,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
             ),
             # polillas.G_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("violin 1 voice", (7, 11))],
-            polillas.shadows(extra_counts=[0, 1, 0, 0, 1], stage=3),
+            polillas.shadows(
+                extra_counts=[0, 1, 0, 0, 1],
+                stage=3,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 evans.Sequence(
                     [
@@ -99,11 +111,14 @@ maker = evans.SegmentMaker(
             abjad.glissando,
             abjad.Markup(r"\markup (I)", direction=abjad.Up),
             # polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("cello voice", (7, 11))],
-            polillas.shadows(extra_counts=[0], stage=3),
+            polillas.shadows(
+                extra_counts=[0],
+                stage=3,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(
                 evans.Sequence(
                     [
@@ -126,7 +141,6 @@ maker = evans.SegmentMaker(
             ),
             abjad.glissando,
             # polillas.A_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.attach(
             "cello voice",
@@ -140,18 +154,25 @@ maker = evans.SegmentMaker(
         ),
         evans.MusicCommand(
             [("violin 2 voice", (8, 11))],
-            polillas.flames(denominator=16, extra_counts=[2], stage=1),
+            polillas.flames(
+                denominator=16,
+                extra_counts=[2],
+                stage=1,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             evans.PitchHandler(["d'"], forget=False),
             abjad.Dynamic("mf"),
             evans.ArticulationHandler(
                 ["accent"], articulation_boolean_vector=[0, 1], vector_forget=False
             ),
             # polillas.C_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 8)],
-            polillas.knots(stage=5),
+            polillas.knots(
+                stage=5,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.F_pitches(stage=1, transposition=4, step=2),
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -161,15 +182,16 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("p"),
             polillas.multi_stac,
             # polillas.F_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [("viola voice", 10)],
-            polillas.knots(stage=5),
+            polillas.knots(
+                stage=5,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.F_pitches(stage=1, transposition=-2, step=2),
             polillas.multi_stac,
             # polillas.F_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.MusicCommand(
             [
@@ -178,11 +200,14 @@ maker = evans.SegmentMaker(
                 ("viola voice", (11, 15)),
                 ("cello voice", (11, 15)),
             ],
-            polillas.chilled(extra_counts=[0, 2, 0], stage=4),
+            polillas.chilled(
+                extra_counts=[0, 2, 0],
+                stage=4,
+                preprocessor=polillas.quarters_preprocessor,
+            ),
             polillas.chilled_stage_3_bowing(series="B", rotation=0, staff_padding=4),
             abjad.Dynamic("f"),
             # polillas.E_color,
-            preprocessor=polillas.quarters_preprocessor,
         ),
         evans.call(
             "violin 1 voice",
@@ -395,7 +420,6 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     with_layout=True,
-    extra_rewrite=False,
     mm_rests=False,
 )
 

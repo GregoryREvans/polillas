@@ -3781,10 +3781,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
 
-                                dtqs2.
+                                dtqs1
                                 ~
 
-                                dtqs2
+                                dtqs4
                                 %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3853,10 +3853,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 11]
 
-                                gs,2.
+                                gs,1
                                 ~
 
-                                gs,2
+                                gs,4
                                 %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS
@@ -3913,10 +3913,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 18]
 
-                                cs,2.
+                                cs,1
                                 ~
 
-                                cs,2
+                                cs,4
                                 %! abjad.glissando(7)
                                 \glissando
                                 %! COMMENT_MEASURE_NUMBERS

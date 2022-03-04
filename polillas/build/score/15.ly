@@ -333,7 +333,7 @@
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                             a'!1
                                             \-
-                                            ^ \markup \center-align { A♭+49 }
+                                            ^ \markup \center-align { A\char ##x266D +49 }
                                             ^ \markup { 0'49'' }
 
                                             \once \override Rest.transparent = ##t
@@ -952,7 +952,7 @@
                                             g'!1
                                             \ff
                                             \-
-                                            ^ \markup \center-align { A♭-49 }
+                                            ^ \markup \center-align { A\char ##x266D -49 }
                                             ^ \markup { 0'00'' }
 
                                             \once \override Rest.transparent = ##t
@@ -2717,10 +2717,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 20]
 
-                                c,2
+                                c,4.
                                 ~
 
-                                c,8
+                                c,4
                                 ~
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2750,10 +2750,10 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 25]
 
-                                c,2
+                                c,4.
                                 ~
 
-                                c,8
+                                c,4
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(3)
                                 %! SPANNER_STOP

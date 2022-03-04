@@ -7,6 +7,12 @@ from abjadext import rmakers
 ##
 
 
+def select_untupleted_leaves(argument):
+    result = [_ for _ in argument if not isinstance(_, abjad.Tuplet)]
+    raise Exception(result)
+    return abjad.Selection(result)
+
+
 def select_outer_ties(argument):
     result = abjad.Selection(argument).logical_ties().get([0, -1])
     return result
@@ -83,7 +89,9 @@ note_rhythm_handler = evans.RhythmHandler(
 ##
 
 
-def shadows(extra_counts=[2], stage=3):  # A
+def shadows(
+    extra_counts=[2], stage=3, preprocessor=None, rewrite=False, rewrite_boundary=None
+):  # A
     if stage == 1:
         rtm_strings_1 = evans.helianthated_rtm(
             beats=[[3], [1, 1], [2, 1]],
@@ -95,17 +103,20 @@ def shadows(extra_counts=[2], stage=3):  # A
         )
         rtm_strings = rtm_strings_1 + rtm_strings_2
         maker = evans.RTMMaker(rtm_strings)
-        stack = rmakers.stack(
+        commands = [
             maker,
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 3:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [1, 1, 2, 1, 1, 1, 2],
                 4,
@@ -115,18 +126,24 @@ def shadows(extra_counts=[2], stage=3):  # A
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 4:
-        stack = rmakers.stack(
+        commands = [
             rmakers.note(),
             rmakers.tie(select_all_but_final_leaf),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
@@ -140,13 +157,16 @@ def wings(
     extra_counts=[2],
     rotation_index=1,
     stage=1,
+    preprocessor=None,
+    rewrite=False,
+    rewrite_boundary=None,
 ):  # B
     if stage == 1:
 
         def attack_selector(selections):
             return abjad.Selection(selections).leaves().get(indices, period)
 
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [1],
                 denominator,
@@ -158,28 +178,37 @@ def wings(
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 2:
-        stack = rmakers.stack(
+        commands = [
             rmakers.note(),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 3:
-        stack = rmakers.stack(
+        commands = [
             rmakers.note(),
             rmakers.tie(select_all_but_final_leaf),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 4:
@@ -191,19 +220,29 @@ def wings(
             rotations.append(new_rtm)
         final_rtm_list = evans.Sequence(rotations).rotate(rotation_index)
         maker = evans.RTMMaker(final_rtm_list)
-        stack = rmakers.stack(
+        commands = [
             maker,
             rmakers.force_rest(select_alternate_leaves),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, or 4.")
 
 
-def flames(denominator=16, extra_counts=[2], stage=1):  # C
+def flames(
+    denominator=16,
+    extra_counts=[2],
+    stage=1,
+    preprocessor=None,
+    rewrite=False,
+    rewrite_boundary=None,
+):  # C
     if stage == 1:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [11, 2, 7, 1],
                 denominator,
@@ -213,11 +252,14 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 2:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [1, 3, 2, 5],
                 denominator,
@@ -227,7 +269,10 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 3:
@@ -238,7 +283,7 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
             else:
                 return False
 
-        stack_1 = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [2, 6, 4, 10],
                 denominator,
@@ -248,25 +293,24 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack_1 = rmakers.stack(*commands, preprocessor=preprocessor)
         stack_2 = rmakers.stack(
             rmakers.note(),
-            # rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.extract_trivial(),
         )
         binding = rmakers.bind(
             rmakers.assign(
                 stack_2,
-                abjad.DurationInequality("==", (1, 6)),
+                lambda _: True if _ == abjad.Duration((1, 6)) else False,
                 remember_state_across_gaps=True,
             ),
             rmakers.assign(stack_1),
         )
         return binding
     if stage == 5:
-        stack = rmakers.stack(
+        commands = [
             rmakers.accelerando(
                 [(1, 8), (1, 20), (1, 16)],
                 [(1, 8), (1, 23), (1, 16)],
@@ -275,42 +319,50 @@ def flames(denominator=16, extra_counts=[2], stage=1):  # C
             rmakers.force_rest(select_periodic_ties_2_4_7_8_of_10),
             rmakers.duration_bracket(),
             rmakers.feather_beam(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
 
 
-def flight(stage=1):  # D
+def flight(stage=1, preprocessor=None, rewrite=False, rewrite_boundary=None):  # D
     if stage == 1:
-        stack = rmakers.stack(
+        commands = [
             rmakers.note(),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 2:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea([-1, 3, -1, 2, -1, 1], 8),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 5:
-        stack = rmakers.stack(
+        commands = [
             rmakers.tuplet([(2, 1, 1)]),
-            # rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 6:
@@ -322,15 +374,16 @@ def flight(stage=1):  # D
         )
         stack_3 = rmakers.stack(
             rmakers.tuplet([(3, 3, 3, 2, 1)]),
-            # rmakers.tie(select_all_but_final_leaf),
-            # rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.extract_trivial(),
         )
         binding = rmakers.bind(
-            rmakers.assign(stack_2, abjad.DurationInequality("==", (2, 4))),
-            rmakers.assign(stack_3, abjad.DurationInequality(">", (6, 4))),
+            rmakers.assign(
+                stack_2,
+                lambda _: True if _ == abjad.Duration((2, 4)) else False,
+            ),
+            rmakers.assign(
+                stack_3,
+                lambda _: True if _ > abjad.Duration((6, 4)) else False,
+            ),
             rmakers.assign(stack_1),
         )
         return binding
@@ -339,26 +392,39 @@ def flight(stage=1):  # D
 
 
 def chilled(
-    stage=3, extra_counts=None, input_counts=None, reverse=False, rotation=0
+    stage=3,
+    extra_counts=None,
+    input_counts=None,
+    reverse=False,
+    rotation=0,
+    preprocessor=None,
+    rewrite=False,
+    rewrite_boundary=None,
 ):  # E
     if stage == 1:
-        stack = rmakers.stack(
+        commands = [
             rmakers.tuplet([(3, 1)]),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == "1 cello":
-        stack = rmakers.stack(
+        commands = [
             rmakers.tuplet([(3, 1), (1,)]),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == 2:
@@ -374,16 +440,19 @@ def chilled(
         these_counts = [sum(_) for _ in these_counts]
         if reverse is True:
             these_counts = evans.Sequence(these_counts).reverse()
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(these_counts, 16, read_talea_once_only=True),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         return stack
     if stage == 3:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
@@ -391,11 +460,14 @@ def chilled(
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == 4:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
@@ -403,18 +475,24 @@ def chilled(
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 5:
         integers = evans.Sequence([7, 1, 9, 2]).rotate(rotation)
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(integers, 8),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
@@ -428,15 +506,21 @@ def knots(  # F
     leaf_indices=[0, 2, 3],
     leaf_period=7,
     rotation=0,
+    preprocessor=None,
+    rewrite=False,
+    rewrite_boundary=None,
 ):
     if stage == 1:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea([1], 8),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == 4:
@@ -447,7 +531,7 @@ def knots(  # F
         def division_selector(selections):
             return abjad.Selection(selections).tuplets().get(division_indices)
 
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(
                 [1],
                 16,
@@ -460,26 +544,35 @@ def knots(  # F
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == 5:
         durations = evans.Sequence([1, -1, 1, 1, -1]).rotate(rotation)
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(durations, 8, extra_counts=[0, 1, 0, 0, 1]),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 6:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea([1], 16, extra_counts=[1]),
             rmakers.duration_bracket(),
             rmakers.beam(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
@@ -487,14 +580,22 @@ def knots(  # F
 
 
 def lightning(
-    stage=1, denominators=[4], extra_counts=[0], indices=[0], period=1, rotation=None
+    stage=1,
+    denominators=[4],
+    extra_counts=[0],
+    indices=[0],
+    period=1,
+    rotation=None,
+    preprocessor=None,
+    rewrite=False,
+    rewrite_boundary=None,
 ):  # G
     if stage == 1:
 
         def attack_selector(selections):
             return abjad.Selection(selections).leaves().get(indices, period)
 
-        stack = rmakers.stack(
+        commands = [
             rmakers.even_division(denominators, extra_counts=extra_counts),
             rmakers.force_rest(lambda _: abjad.Selection(_)),
             rmakers.force_note(attack_selector),
@@ -502,52 +603,67 @@ def lightning(
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 2:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea([2, 3], 8),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 3:
         counts = evans.Sequence([3, 1, 1, 2]).rotate(rotation)
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea(counts, 8),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     if stage == 4:
-        stack = rmakers.stack(
+        commands = [
             rmakers.talea([3, 1, 1], 8),
             rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
             rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
             rmakers.extract_trivial(),
-        )
+        ]
+        if rewrite is True:
+            commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+        stack = rmakers.stack(*commands, preprocessor=preprocessor)
         handler = evans.RhythmHandler(stack, forget=False)
         return handler
     else:
         raise Exception(f"No stage {stage}. Use 1, 2, 3, 4, or 5.")
 
 
-def make_tied_notes():
-    stack = rmakers.stack(
+def make_tied_notes(preprocessor=None, rewrite=False, rewrite_boundary=None):
+    commands = [
         rmakers.note(),
         rmakers.tie(select_all_but_final_leaf),
         rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
         rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
         rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
         rmakers.extract_trivial(),
-    )
+    ]
+    if rewrite is True:
+        commands.append(evans.RewriteMeterCommand(boundary_depth=rewrite_boundary))
+    stack = rmakers.stack(*commands, preprocessor=preprocessor)
     handler = evans.RhythmHandler(stack, forget=False)
     return handler

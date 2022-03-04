@@ -4,13 +4,13 @@ info = {
         LilyPondLiteral(
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
     ],
@@ -18,13 +18,13 @@ info = {
         LilyPondLiteral(
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
     ],
@@ -32,13 +32,13 @@ info = {
         LilyPondLiteral(
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
     ],
@@ -46,13 +46,13 @@ info = {
         LilyPondLiteral(
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             format_slot="before",
-            directed=None,
+            directed=False,
             tweaks=None,
         ),
     ],

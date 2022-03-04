@@ -1239,36 +1239,18 @@
                                         - \tweak font-size #6
                                         \bacaStartTextSpanMM
 
-                                        eqs''4
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        eqs''8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        eqs''8
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        eqs''8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
                                         eqs''8
                                         ~
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        eqs''8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        eqs''8
-                                        ~
-                                        ]
 
                                         eqs''4
+
+                                        eqs''8
+
+                                        eqs''8
+
+                                        eqs''4
+
+                                        eqs''4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 42]
@@ -2337,36 +2319,18 @@
                                         - \tweak font-size #6
                                         \bacaStartTextSpanMM
 
-                                        d'4
-                                        ~
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        d'8
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
                                         d'8
                                         ~
-                                        ]
-
-                                        \override Staff.Stem.stemlet-length = 0.75
-                                        d'8
-                                        [
-
-                                        \revert Staff.Stem.stemlet-length
-                                        d'8
-                                        ~
-                                        ]
 
                                         d'4
+
+                                        d'8
+
+                                        d'8
+
+                                        d'4
+
+                                        d'4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 42]
@@ -3463,36 +3427,18 @@
                                 - \tweak font-size #6
                                 \bacaStartTextSpanMM
 
-                                b4
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                b8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                b8
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                b8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
                                 b8
                                 ~
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                b8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                b8
-                                ~
-                                ]
 
                                 b4
+
+                                b8
+
+                                b8
+
+                                b4
+
+                                b4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 42]
@@ -4520,36 +4466,18 @@
                                 - \tweak font-size #6
                                 \bacaStartTextSpanMM
 
-                                bf,4
-                                ~
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                bf,8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                bf,8
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                bf,8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
                                 bf,8
                                 ~
-                                ]
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                bf,8
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                bf,8
-                                ~
-                                ]
 
                                 bf,4
+
+                                bf,8
+
+                                bf,8
+
+                                bf,4
+
+                                bf,4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 42]
