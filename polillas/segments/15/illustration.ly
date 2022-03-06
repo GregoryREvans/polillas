@@ -346,7 +346,7 @@
                                             \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                             a'!1
                                             \-
-                                            ^ \markup \center-align { A\char ##x266D +49 }
+                                            ^ \markup \center-align { A\raise #0.5 { \hspace #-0.5 \teeny \flat}\hspace #-0.5 +49 }
                                             ^ \markup { 0'49'' }
 
                                             \once \override Rest.transparent = ##t
@@ -965,7 +965,7 @@
                                             g'!1
                                             \ff
                                             \-
-                                            ^ \markup \center-align { A\char ##x266D -49 }
+                                            ^ \markup \center-align { A\raise #0.5 { \hspace #-0.5 \teeny \flat}\hspace #-0.5 -49 }
                                             ^ \markup { 0'00'' }
 
                                             \once \override Rest.transparent = ##t
@@ -2560,7 +2560,7 @@
                                     \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                     d!2
                                     \-
-                                    ^ \markup \center-align { C♯+47 }
+                                    ^ \markup \center-align { C\raise #0.75 { \hspace #-0.5 \teeny \smaller \sharp}\hspace #-0.5 +47 }
                                     ^ \markup { 1'55'' }
 
                                     \once \override Rest.transparent = ##t
@@ -2585,7 +2585,7 @@
                                     \tweak Accidental.text \markup { \one-undecimal-quarter-tone-down  }
                                     d!1
                                     \-
-                                    ^ \markup \center-align { C♯+47 }
+                                    ^ \markup \center-align { C\raise #0.75 { \hspace #-0.5 \teeny \smaller \sharp}\hspace #-0.5 +47 }
                                     ^ \markup { 2'00'' }
 
                                     \once \override Rest.transparent = ##t
