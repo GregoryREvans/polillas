@@ -258,7 +258,7 @@
                                             \<
                                             [
                                             ^ \markup \raise #6 \with-dimensions-from \null {
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                               }
@@ -345,18 +345,18 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 5]
 
                                         r8
-                                        ^ \markup {
-                                          \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
-                                          \concat {
-                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                                          }
-                                        }
 
                                         \pitchedTrill
                                         bf'8
@@ -406,7 +406,7 @@
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                               }
@@ -680,7 +680,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             af'16.
@@ -775,7 +775,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             af'16
@@ -1044,7 +1044,7 @@
                                             %! SPANNER_START
                                             \<
                                             ^ \markup \raise #6 \with-dimensions-from \null {
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                               }
@@ -1101,6 +1101,13 @@
                                         \once \override MultiMeasureRest.transparent = ##t
                                         R1 * 1/4
                                         ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
+                                        ^ \markup {
+                                          \raise #7.5 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 5]
@@ -1118,13 +1125,6 @@
                                         - \tweak staff-padding 7
                                         \startTextSpanTwo
                                         \startTrillSpan g'
-                                        ^ \markup {
-                                          \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
-                                          \concat {
-                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                                          }
-                                        }
 
                                         r8
                                         \stopTrillSpan
@@ -1161,7 +1161,7 @@
                                             \p
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                               }
@@ -1362,7 +1362,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             \revert Staff.Stem.stemlet-length
@@ -1409,7 +1409,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             ds'8
@@ -1597,7 +1597,7 @@
                                     \<
                                     [
                                     ^ \markup \raise #6 \with-dimensions-from \null {
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                       }
@@ -1677,18 +1677,18 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 5]
 
                                 r8
-                                ^ \markup {
-                                  \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
-                                  \concat {
-                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                                  }
-                                }
 
                                 \pitchedTrill
                                 a8
@@ -1741,7 +1741,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                       }
@@ -2018,7 +2018,7 @@
                                     - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
                                     - \tweak padding #4
                                     - \tweak staff-padding #2
-                                    - \tweak font-size #6
+                                    - \tweak font-size #3
                                     \bacaStartTextSpanMM
 
                                 }
@@ -2099,7 +2099,7 @@
                                     - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
                                     - \tweak padding #4
                                     - \tweak staff-padding #2
-                                    - \tweak font-size #6
+                                    - \tweak font-size #3
                                     \bacaStartTextSpanMM
 
                                     cs4
@@ -2270,7 +2270,7 @@
                                 \markup { \hcenter-in #14 "Violoncello" }
                                 r4
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -2332,6 +2332,13 @@
                                 \once \override MultiMeasureRest.transparent = ##t
                                 R1 * 1/4
                                 ^ \markup \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"
+                                ^ \markup {
+                                  \raise #7.5 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
                                 \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2351,13 +2358,6 @@
                                 - \tweak staff-padding 7
                                 \startTextSpanTwo
                                 \startTrillSpan c''
-                                ^ \markup {
-                                  \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
-                                  \concat {
-                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                                  }
-                                }
 
                                 r8
                                 \stopTrillSpan
@@ -2394,7 +2394,7 @@
                                 \p
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                   }
@@ -2502,7 +2502,7 @@
                                 - \baca-metronome-mark-spanner-left-text 2 0 1 "72"
                                 - \tweak padding #4
                                 - \tweak staff-padding #2
-                                - \tweak font-size #6
+                                - \tweak font-size #3
                                 \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -2525,19 +2525,19 @@
                                 - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
                                 - \tweak padding #4
                                 - \tweak staff-padding #2
-                                - \tweak font-size #6
+                                - \tweak font-size #3
                                 \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 17]
 
-                                d4
+                                a4
                                 :32
                                 \mf
                                 ~
                                 \bacaStopTextSpanMM
 
-                                d16
+                                a16
                                 :32
 
                                 \tweak text #tuplet-number::calc-fraction-text
@@ -2547,13 +2547,13 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [cello voice measure 18]
 
-                                    a2.
+                                    d2.
                                     \p
                                     - \tweak stencil #abjad-flared-hairpin
                                     \<
                                     ~
 
-                                    a4
+                                    d4
                                     \f
 
                                 }
@@ -2561,7 +2561,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 19]
 
-                                d2.
+                                a2.
                                 :32
                                 \mf
 
@@ -2617,7 +2617,7 @@
                                 % [cello voice measure 23]
 
                                 \clef "percussion"
-                                d2...
+                                a2...
                                 \pp
                                 ^ \markup {behind bridge, on wrapping}
                                 - \tweak stencil #abjad-flared-hairpin
@@ -2627,7 +2627,7 @@
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 24]
 
-                                d2.
+                                a2.
                                 \ff
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()

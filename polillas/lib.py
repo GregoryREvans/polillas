@@ -28,13 +28,28 @@ mark_40 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #6 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_40_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
+)
+
+mark_40_tall = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \raise #7.5 \with-dimensions-from \null",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {str(met_40_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
 )
 
 # abjad.tweak(mark_40).padding = 6
@@ -45,13 +60,14 @@ mark_60 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #6 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_60_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
 )
 
 # abjad.tweak(mark_60).padding = 6
@@ -62,13 +78,28 @@ mark_66 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #9 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_66_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
+)
+
+mark_66_tall = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \raise #12 \with-dimensions-from \null",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {str(met_66_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
 )
 
 # abjad.tweak(mark_66).padding = 6
@@ -78,9 +109,21 @@ met_mod_40_66 = evans.metric_modulation(
     left_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
-    font_size=5.5,
+    # font_size=5.5, # score
+    font_size=3,  # parts
     leaf_scale=(0.8, 0.8),
     raise_value=6,
+)
+
+met_mod_40_66_tall = evans.metric_modulation(
+    metronome_mark=((1, 4), 40),
+    left_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
+    right_note=(abjad.Note("c'4")),
+    modulated_beat=(abjad.Note("c'4")),
+    # font_size=5.5, # score
+    font_size=3,  # parts
+    leaf_scale=(0.8, 0.8),
+    raise_value=9,
 )
 
 # abjad.tweak(met_mod_40_66).padding = 6
@@ -91,13 +134,14 @@ mark_72 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #6 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_72_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
 )
 
 # abjad.tweak(mark_72).padding = 6
@@ -107,13 +151,41 @@ met_90_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 90)
 mark_90 = abjad.LilyPondLiteral(
     [
         r"^ \markup \raise #6 \with-dimensions-from \null {",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_90_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
+)
+
+mark_90_tall = abjad.LilyPondLiteral(
+    [
+        r"^ \markup \raise #9 \with-dimensions-from \null {",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {str(met_90_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
+)
+
+mark_90_left = abjad.LilyPondLiteral(
+    [
+        r"^ \markup \raise #6 \with-dimensions-from \null {",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \halign #5",
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {str(met_90_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
 )
 
 # abjad.tweak(mark_90).padding = 6
@@ -124,13 +196,28 @@ mark_108 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #6 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_108_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
+)
+
+mark_108_tall = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \raise #9 \with-dimensions-from \null",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {str(met_108_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
 )
 
 # abjad.tweak(mark_108).padding = 6
@@ -141,13 +228,28 @@ mark_120 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #6 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_120_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
+)
+
+mark_120_tall = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \raise #9 \with-dimensions-from \null",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {str(met_120_mark)[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
 )
 
 # abjad.tweak(mark_120).padding = 6
@@ -158,13 +260,14 @@ mark_130 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
         r"  \raise #6 \with-dimensions-from \null",
-        r"  \override #'(font-size . 5.5)",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {str(met_130_mark)[8:]}",
         r"  }",
         r"}",
     ],
-    format_slot="after",
+    site="after",
 )
 
 # abjad.tweak(mark_130).padding = 6
@@ -198,7 +301,7 @@ start_repeat = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ".|:"',
     ],
-    format_slot="after",
+    site="after",
 )
 
 start_repeat_default = abjad.LilyPondLiteral(
@@ -206,7 +309,7 @@ start_repeat_default = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ".|:"',
     ],
-    format_slot="after",
+    site="after",
 )
 
 start_repeat_before = abjad.LilyPondLiteral(
@@ -215,7 +318,7 @@ start_repeat_before = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ".|:"',
     ],
-    format_slot="before",
+    site="before",
 )
 
 stop_repeat = abjad.LilyPondLiteral(
@@ -224,7 +327,7 @@ stop_repeat = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
-    format_slot="after",
+    site="after",
 )
 
 stop_repeat_default = abjad.LilyPondLiteral(
@@ -232,7 +335,7 @@ stop_repeat_default = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
-    format_slot="after",
+    site="after",
 )
 
 stop_repeat_before = abjad.LilyPondLiteral(
@@ -241,7 +344,7 @@ stop_repeat_before = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
-    format_slot="before",
+    site="before",
 )
 
 middle_repeat = abjad.LilyPondLiteral(
@@ -250,27 +353,27 @@ middle_repeat = abjad.LilyPondLiteral(
         r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|.|:"',
     ],
-    format_slot="after",
+    site="after",
 )
 
 first_ending_on = abjad.LilyPondLiteral(
     r"""\set Score.repeatCommands = #'((volta "1"))""",
-    format_slot="before",
+    site="before",
 )
 
 second_ending_on = abjad.LilyPondLiteral(
     r"""\set Score.repeatCommands = #'((volta "2"))""",
-    format_slot="before",
+    site="before",
 )
 
 ending_off = abjad.LilyPondLiteral(
     r"""\set Score.repeatCommands = #'((volta #f))""",
-    format_slot="before",
+    site="before",
 )
 
 clef_whitespace = abjad.LilyPondLiteral(
     r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
-    format_slot="absolute_before",
+    site="absolute_before",
 )
 
 tremolo_handler = evans.ArticulationHandler(
@@ -729,7 +832,7 @@ def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
         series_dict[series].rotate(rotation),
         abjad.tweak(staff_padding).staff_padding,
         bow_change_tweaks=(
-            abjad.tweak(abjad.Left).self_alignment_X,
+            abjad.tweak(abjad.LEFT).self_alignment_X,
             abjad.tweak(bowing_padding).staff_padding,
         ),
     )
@@ -742,19 +845,17 @@ def make_proportional_notation(selections):
 
     for rest in abjad.Selection(selections).leaves(pitched=False):
         transparent_literal = abjad.LilyPondLiteral(
-            r"\once \override Rest.transparent = ##t", format_slot="before"
+            r"\once \override Rest.transparent = ##t", site="before"
         )
         transparent_dots_literal = abjad.LilyPondLiteral(
-            r"\once \override Dots.transparent = ##t", format_slot="before"
+            r"\once \override Dots.transparent = ##t", site="before"
         )
         abjad.attach(transparent_literal, rest)
         abjad.attach(transparent_dots_literal, rest)
 
     for note in abjad.Selection(selections).leaves(pitched=True):
         abjad.attach(evans.DurationLine(), note)
-        style_literal = abjad.LilyPondLiteral(
-            r"\duration-line-style", format_slot="before"
-        )
+        style_literal = abjad.LilyPondLiteral(r"\duration-line-style", site="before")
         abjad.attach(style_literal, note)
 
 
@@ -766,24 +867,24 @@ def make_proportaional_global_context(selections):
             continue
         if i != leaves_count:
             bar_literal = abjad.LilyPondLiteral(
-                r"\once \override Score.BarLine.stencil = ##f", format_slot="before"
+                r"\once \override Score.BarLine.stencil = ##f", site="before"
             )
             abjad.attach(bar_literal, leaf)
             span_literal = abjad.LilyPondLiteral(
-                r"\once \override Score.SpanBar.stencil = ##f", format_slot="before"
+                r"\once \override Score.SpanBar.stencil = ##f", site="before"
             )
             abjad.attach(span_literal, leaf)
         if i != 0:
             hidden_literal = abjad.LilyPondLiteral(
                 r"\once \override Score.TimeSignature.stencil = ##f",
-                format_slot="before",
+                site="before",
             )
             abjad.attach(hidden_literal, leaf)
 
     first_leaf = abjad.Selection(selections).leaf(0)
     x_literal = abjad.LilyPondLiteral(
         r"\once \override Score.TimeSignature.stencil = #(blank-time-signature)",
-        format_slot="before",
+        site="before",
     )
     abjad.attach(x_literal, first_leaf)
 
@@ -930,7 +1031,7 @@ start_bis_trill_one = abjad.LilyPondLiteral(
         r"- \tweak bound-details.left.text \double-diamond-parenthesized-top-markup",
         r"\startTrillSpan",
     ],
-    format_slot="after",
+    site="after",
 )
 
 start_bis_trill_two = abjad.LilyPondLiteral(
@@ -938,7 +1039,7 @@ start_bis_trill_two = abjad.LilyPondLiteral(
         r"- \tweak bound-details.left.text \diamond-parenthesized-double-diamond-markup",
         r"\startTrillSpan",
     ],
-    format_slot="after",
+    site="after",
 )
 
 stop_bis_trill = abjad.StopTrillSpan()

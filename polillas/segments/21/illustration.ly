@@ -2,7 +2,7 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/abjad.ily"
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/21/../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
@@ -24,12 +24,6 @@
                 \time 13/16
                 \mark \markup \bold {  }
                 s1 * 13/16
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 2]
@@ -111,14 +105,6 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                ^ \rehearsal-mark-markup "x5" 3 -1
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"130"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 13]
@@ -194,12 +180,6 @@
                 %! scaling time signatures
                 \time 6/16
                 s1 * 3/8
-                ^ \markup \raise #6 \with-dimensions-from \null {
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 22]
@@ -268,13 +248,6 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                ^ \markup {
-                  \raise #6 \with-dimensions-from \null
-                  \override #'(font-size . 5.5)
-                  \concat {
-                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 31]
@@ -297,18 +270,6 @@
                 %! scaling time signatures
                 \time 12/16
                 s1 * 3/4
-                ^ \markup {
-                  \override #'(font-size . 5.5)
-                  \raise #6 \with-dimensions-from \null
-                  \concat {
-                      \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
-                      \hspace #1
-                      \upright [
-                      \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
-                      \hspace #0.5
-                      \upright ]
-                  }
-                }
                 %! COMMENT_MEASURE_NUMBERS
                 %! evans.SegmentMaker.comment_measure_numbers()
                 % [Global Context measure 34]
@@ -362,6 +323,12 @@
                                         \pp
                                         - \baca-circle-bowing
                                         ~
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 3)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         atqs'4
                                         ~
@@ -603,6 +570,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_STOP
                                             \mp
+                                            ^ \rehearsal-mark-markup "x3" 3 1.5
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -614,6 +582,13 @@
                                             \startTrillSpan
                                             %! abjad.glissando(7)
                                             \glissando
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 3)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                              }
+                                            }
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             b8.
@@ -802,6 +777,12 @@
                                         b'4.
                                         \pp
                                         - \baca-circle-bowing
+                                        ^ \markup \raise #6 \with-dimensions-from \null {
+                                          \override #'(font-size . 3)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                          }
+                                        }
 
                                         \scaleDurations #'(1 . 1)
                                         {
@@ -1000,6 +981,13 @@
                                         \f
                                         - \baca-circle-bowing
                                         ~
+                                        ^ \markup {
+                                          \raise #6 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
+                                          \concat {
+                                              \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                          }
+                                        }
 
                                         as'4.
                                         ~
@@ -1054,6 +1042,18 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r32
                                             [
+                                            ^ \markup {
+                                              \override #'(font-size . 3)
+                                              \raise #6 \with-dimensions-from \null
+                                              \concat {
+                                                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                                  \hspace #1
+                                                  \upright [
+                                                  \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                                  \hspace #0.5
+                                                  \upright ]
+                                              }
+                                            }
 
                                             c'''32
                                             \p
@@ -1308,6 +1308,12 @@
                                             dqf'4
                                             \pp
                                             - \baca-circle-bowing
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 3)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             dqf'8
                                             - \baca-circle-bowing
@@ -1568,6 +1574,7 @@
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_STOP
                                             \mp
+                                            ^ \rehearsal-mark-markup "x3" 3 1.5
                                             %! baca.hairpin()
                                             %! baca.PiecewiseCommand._call(2)
                                             %! SPANNER_START
@@ -1579,6 +1586,13 @@
                                             \startTrillSpan
                                             %! abjad.glissando(7)
                                             \glissando
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 3)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                              }
+                                            }
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             b8.
@@ -1785,6 +1799,12 @@
                                             %! abjad.glissando(7)
                                             \glissando
                                             [
+                                            ^ \markup \raise #6 \with-dimensions-from \null {
+                                              \override #'(font-size . 3)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                              }
+                                            }
 
                                             cs'16.
                                             %! abjad.glissando(7)
@@ -1992,6 +2012,13 @@
                                             \f
                                             - \baca-circle-bowing
                                             [
+                                            ^ \markup {
+                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 3)
+                                              \concat {
+                                                  \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                              }
+                                            }
 
                                             \revert Staff.Stem.stemlet-length
                                             dqf'8
@@ -2070,6 +2097,18 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
                                             [
+                                            ^ \markup {
+                                              \override #'(font-size . 3)
+                                              \raise #6 \with-dimensions-from \null
+                                              \concat {
+                                                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                                  \hspace #1
+                                                  \upright [
+                                                  \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                                  \hspace #0.5
+                                                  \upright ]
+                                              }
+                                            }
 
                                             bf''16
                                             \p
@@ -2342,6 +2381,12 @@
                                 \pp
                                 - \baca-circle-bowing
                                 ~
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 3)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 cqs4
                                 ~
@@ -2584,6 +2629,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_STOP
                                     \mp
+                                    ^ \rehearsal-mark-markup "x3" 3 1.5
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -2595,6 +2641,13 @@
                                     \startTrillSpan
                                     %! abjad.glissando(7)
                                     \glissando
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 3)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                      }
+                                    }
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     cs'8.
@@ -2801,6 +2854,12 @@
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 3)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     cs'16.
                                     %! abjad.glissando(7)
@@ -2990,6 +3049,13 @@
                                 cqs4
                                 \f
                                 - \baca-circle-bowing
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 cqs8
                                 - \baca-circle-bowing
@@ -3037,6 +3103,18 @@
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r16
                                     [
+                                    ^ \markup {
+                                      \override #'(font-size . 3)
+                                      \raise #6 \with-dimensions-from \null
+                                      \concat {
+                                          \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                          \hspace #1
+                                          \upright [
+                                          \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                          \hspace #0.5
+                                          \upright ]
+                                      }
+                                    }
 
                                     \clef "treble"
                                     af''16
@@ -3296,6 +3374,12 @@
                                 \pp
                                 - \baca-circle-bowing
                                 ~
+                                ^ \markup \raise #6 \with-dimensions-from \null {
+                                  \override #'(font-size . 3)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                  }
+                                }
 
                                 b,4
 
@@ -3552,6 +3636,7 @@
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_STOP
                                     \mp
+                                    ^ \rehearsal-mark-markup "x3" 3 1.5
                                     %! baca.hairpin()
                                     %! baca.PiecewiseCommand._call(2)
                                     %! SPANNER_START
@@ -3563,6 +3648,13 @@
                                     \startTrillSpan
                                     %! abjad.glissando(7)
                                     \glissando
+                                    ^ \markup {
+                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 3)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"130"
+                                      }
+                                    }
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     b8.
@@ -3769,6 +3861,12 @@
                                     %! abjad.glissando(7)
                                     \glissando
                                     [
+                                    ^ \markup \raise #6 \with-dimensions-from \null {
+                                      \override #'(font-size . 3)
+                                      \concat {
+                                          \abjad-metronome-mark-markup #2 #0 #1 #"90"
+                                      }
+                                    }
 
                                     b16.
                                     %! abjad.glissando(7)
@@ -3953,6 +4051,13 @@
                                 \f
                                 - \baca-circle-bowing
                                 ~
+                                ^ \markup {
+                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
+                                  \concat {
+                                      \abjad-metronome-mark-markup #2 #0 #1 #"40"
+                                  }
+                                }
 
                                 b,4.
                                 ~
@@ -4014,6 +4119,18 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 r32.
                                 [
+                                ^ \markup {
+                                  \override #'(font-size . 3)
+                                  \raise #6 \with-dimensions-from \null
+                                  \concat {
+                                      \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
+                                      \hspace #1
+                                      \upright [
+                                      \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
+                                      \hspace #0.5
+                                      \upright ]
+                                  }
+                                }
 
                                 \clef "treble"
                                 fs''32.

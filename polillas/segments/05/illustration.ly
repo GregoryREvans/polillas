@@ -2,7 +2,7 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/abjad.ily"
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/05/../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
@@ -241,7 +241,7 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -307,7 +307,7 @@
                                         - \tongue #2
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                           }
@@ -635,7 +635,7 @@
                                             fs''16
                                             \p
                                             - \staccato
-                                            ^ \rehearsal-mark-markup "x6" 3 -1
+                                            ^ \rehearsal-mark-markup "x6" 3 1.5
                                             (
                                             - \abjad-dashed-line-with-arrow
                                             - \baca-text-spanner-left-text "st."
@@ -759,7 +759,7 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -823,7 +823,7 @@
                                         r8
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                           }
@@ -1138,7 +1138,7 @@
                                             g''16
                                             \p
                                             - \staccato
-                                            ^ \rehearsal-mark-markup "x6" 3 -1
+                                            ^ \rehearsal-mark-markup "x6" 3 1.5
                                             (
                                             - \abjad-dashed-line-with-arrow
                                             - \baca-text-spanner-left-text "st."
@@ -1266,7 +1266,7 @@
                                 %! SPANNER_START
                                 \startTextSpanOne
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -1337,7 +1337,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                       }
@@ -1667,7 +1667,7 @@
                                     fqs''16
                                     \p
                                     - \staccato
-                                    ^ \rehearsal-mark-markup "x6" 3 -1
+                                    ^ \rehearsal-mark-markup "x6" 3 1.5
                                     (
                                     - \abjad-dashed-line-with-arrow
                                     - \baca-text-spanner-left-text "st."
@@ -1791,7 +1791,7 @@
                                 %! SPANNER_START
                                 \startTextSpanOne
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -1861,7 +1861,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                       }
@@ -2202,7 +2202,7 @@
                                     gqf''16
                                     \p
                                     - \staccato
-                                    ^ \rehearsal-mark-markup "x6" 3 -1
+                                    ^ \rehearsal-mark-markup "x6" 3 1.5
                                     (
                                     - \abjad-dashed-line-with-arrow
                                     - \baca-text-spanner-left-text "st."

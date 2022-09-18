@@ -169,9 +169,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "cello voice",
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -423,14 +421,17 @@ maker = evans.SegmentMaker(
                 ).mirror(sequential_duplicates=False)
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
-            abjad.Markup(r"\markup (IV)", direction=abjad.Up),
+            evans.Attachment(
+                abjad.Markup(r"\markup (IV)"),
+                direction=abjad.UP,
+            ),
             abjad.Dynamic("sfp"),
             abjad.glissando,
             # polillas.A_color,
@@ -453,26 +454,6 @@ maker = evans.SegmentMaker(
             polillas.swell_dynamics,
             # polillas.E_color,
             preprocessor=polillas.quarters_preprocessor_3_1_2,
-        ),
-        evans.call(
-            "violin 1 voice",
-            polillas.alternate_glissandi,
-            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26], notes=True),
-        ),
-        evans.call(
-            "violin 2 voice",
-            polillas.alternate_glissandi,
-            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26], notes=True),
-        ),
-        evans.call(
-            "viola voice",
-            polillas.alternate_glissandi,
-            polillas.select_measures([22, 23, 24, 25, 26], notes=True),
-        ),
-        evans.call(
-            "cello voice",
-            polillas.alternate_glissandi,
-            polillas.select_measures([22, 23, 24, 25, 26], notes=True),
         ),
         evans.call(
             "violin 1 voice",
@@ -558,6 +539,26 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
+            polillas.select_measures([22, 23, 24, 25, 26]),
+        ),
+        evans.call(
+            "violin 1 voice",
+            polillas.alternate_glissandi,
+            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26]),
+        ),
+        evans.call(
+            "violin 2 voice",
+            polillas.alternate_glissandi,
+            polillas.select_measures([19, 20, 21, 22, 23, 24, 25, 26]),
+        ),
+        evans.call(
+            "viola voice",
+            polillas.alternate_glissandi,
+            polillas.select_measures([22, 23, 24, 25, 26]),
+        ),
+        evans.call(
+            "cello voice",
+            polillas.alternate_glissandi,
             polillas.select_measures([22, 23, 24, 25, 26]),
         ),
         evans.attach(
@@ -717,8 +718,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "violin 1 voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup rit."),
             polillas.select_measures([15], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 1 voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
@@ -728,8 +730,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "violin 2 voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup rit."),
             polillas.select_measures([15], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 2 voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
@@ -739,8 +742,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "viola voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup rit."),
             polillas.select_measures([15], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "viola voice", polillas.mark_72, polillas.select_measures([19], leaf=0)
@@ -750,8 +754,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "cello voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup rit."),
             polillas.select_measures([15], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "cello voice", polillas.mark_72, polillas.select_measures([19], leaf=0)

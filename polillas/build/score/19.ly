@@ -143,7 +143,7 @@
                                         \startTrillSpan
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                           }
@@ -176,7 +176,7 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \mp
-                                        ^ \rehearsal-mark-markup "x4" 3 -1
+                                        ^ \rehearsal-mark-markup "x4" 3 1.5
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -203,7 +203,7 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -338,7 +338,7 @@
                                         \startTrillSpan
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                           }
@@ -371,7 +371,7 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \mp
-                                        ^ \rehearsal-mark-markup "x4" 3 -1
+                                        ^ \rehearsal-mark-markup "x4" 3 1.5
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
@@ -398,7 +398,7 @@
                                         %! SPANNER_START
                                         \startTextSpanOne
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -537,7 +537,7 @@
                                 \startTrillSpan
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                   }
@@ -571,7 +571,7 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
                                 \mp
-                                ^ \rehearsal-mark-markup "x4" 3 -1
+                                ^ \rehearsal-mark-markup "x4" 3 1.5
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -598,7 +598,7 @@
                                 %! SPANNER_START
                                 \startTextSpanOne
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -733,7 +733,7 @@
                                 \startTrillSpan
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                   }
@@ -767,7 +767,7 @@
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_STOP
                                 \mp
-                                ^ \rehearsal-mark-markup "x4" 3 -1
+                                ^ \rehearsal-mark-markup "x4" 3 1.5
                                 %! baca.hairpin()
                                 %! baca.PiecewiseCommand._call(2)
                                 %! SPANNER_START
@@ -798,7 +798,7 @@
                                 - \tweak staff-padding 4
                                 \startTextSpan
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }

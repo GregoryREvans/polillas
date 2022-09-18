@@ -188,14 +188,15 @@
                                         \>
                                         ~
                                         \startTrillSpan d''
+
+                                        cs''4.
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \halign #5
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
                                         }
-
-                                        cs''4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 1 voice measure 2]
@@ -242,7 +243,7 @@
                                         \bacaStartTextSpanBCP
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                           }
@@ -837,14 +838,15 @@
                                         \>
                                         ~
                                         \startTrillSpan a'
+
+                                        af'4.
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \halign #5
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
                                         }
-
-                                        af'4.
                                         %! COMMENT_MEASURE_NUMBERS
                                         %! evans.SegmentMaker.comment_measure_numbers()
                                         % [violin 2 voice measure 2]
@@ -891,7 +893,7 @@
                                         \bacaStartTextSpanBCP
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                           }
@@ -1574,14 +1576,15 @@
                                 \>
                                 ~
                                 \startTrillSpan cs''
+
+                                b'4.
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \halign #5
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
                                 }
-
-                                b'4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [viola voice measure 2]
@@ -1628,7 +1631,7 @@
                                 \bacaStartTextSpanBCP
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                   }
@@ -2280,14 +2283,15 @@
                                 \stopTextSpanOne
                                 ~
                                 \startTrillSpan a'
+
+                                g'4.
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \halign #5
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
                                 }
-
-                                g'4.
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
                                 % [cello voice measure 2]
@@ -2335,7 +2339,7 @@
                                 \bacaStartTextSpanBCP
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                   }

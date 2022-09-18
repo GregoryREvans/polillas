@@ -507,8 +507,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "cello voice",
-            abjad.Markup(r"\colophon", direction=abjad.Down),
+            abjad.Markup(r"\colophon"),
             baca.selectors.leaf(-3),
+            direction=abjad.DOWN,
         ),
         evans.attach(
             "Global Context",
@@ -519,41 +520,41 @@ maker = evans.SegmentMaker(
         #     "Global Context",
         #     abjad.Markup(
         #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-        #         direction=abjad.Up,
         #     ),
         #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(1),
+        #     direction=abjad.UP,
         # ),
         evans.attach(  # parts
             "violin 1 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 2 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "viola voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "cello voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([48]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(
             "Global Context",
@@ -598,7 +599,8 @@ maker = evans.SegmentMaker(
                 padding=4,
                 staff_padding=2,
                 forget=False,
-                font_size=6,
+                # font_size=6, # score
+                font_size=3,  # parts
             ),
             baca.selectors.leaves([40, 41, 42, 43, 44, 45]),
         ),

@@ -2,7 +2,7 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/abjad.ily"
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/10/../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
@@ -135,7 +135,7 @@
                                         \stopTrillSpan
                                         ~
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -363,7 +363,7 @@
                                         r2
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                           }
@@ -423,7 +423,7 @@
                                         r1
                                         \stopTrillSpan
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -607,7 +607,7 @@
                                         r2
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                           }
@@ -673,7 +673,7 @@
                                 \stopTrillSpan
                                 ~
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -866,7 +866,7 @@
                                 [
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                   }
@@ -1013,7 +1013,7 @@
                                     \stopTrillSpan
                                     [
                                     ^ \markup \raise #6 \with-dimensions-from \null {
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                       }
@@ -1195,7 +1195,7 @@
                                 ~
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                   }

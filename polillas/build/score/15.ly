@@ -681,7 +681,7 @@
                                         ~
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                           }
@@ -1371,7 +1371,7 @@
                                         ~
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                           }
@@ -2037,7 +2037,7 @@
                                 \glissando
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                   }
@@ -2696,7 +2696,7 @@
                                 \startTextSpan
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"60"
                                   }

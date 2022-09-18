@@ -208,7 +208,7 @@
                                             \startTextSpanOne
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                               }
@@ -1597,7 +1597,7 @@
                                         [
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                           }
@@ -2963,7 +2963,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                       }
@@ -4326,7 +4326,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                       }

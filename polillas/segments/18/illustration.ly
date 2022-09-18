@@ -2,7 +2,7 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/abjad.ily"
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/18/../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
@@ -215,7 +215,7 @@
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                               }
@@ -416,11 +416,11 @@
 
                                             \override Staff.Stem.stemlet-length = 0.75
                                             r16
-                                            ^ \rehearsal-mark-markup "x7" 3 -1
+                                            ^ \rehearsal-mark-markup "x7" 3 1.5
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                               }
@@ -922,7 +922,7 @@
                                             r4
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                               }
@@ -1077,11 +1077,11 @@
                                             cs'''32
                                             \ff
                                             - \staccato
-                                            ^ \rehearsal-mark-markup "x7" 3 -1
+                                            ^ \rehearsal-mark-markup "x7" 3 1.5
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                               }
@@ -1709,7 +1709,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                       }
@@ -1859,11 +1859,11 @@
                                     d'''32
                                     \ff
                                     - \staccato
-                                    ^ \rehearsal-mark-markup "x7" 3 -1
+                                    ^ \rehearsal-mark-markup "x7" 3 1.5
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                       }
@@ -2124,9 +2124,9 @@
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     r4
-                                    [
 
                                     r16
+                                    [
 
                                     \clef "treble"
                                     cqs'''16
@@ -2413,7 +2413,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                       }
@@ -2603,11 +2603,11 @@
                                     ef'''32
                                     \ff
                                     - \staccato
-                                    ^ \rehearsal-mark-markup "x7" 3 -1
+                                    ^ \rehearsal-mark-markup "x7" 3 1.5
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                       }

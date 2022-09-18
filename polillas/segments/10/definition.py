@@ -114,14 +114,12 @@ maker = evans.SegmentMaker(
             [("cello voice", (4, 7))],
             polillas.make_tied_notes(rewrite=True),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(-3)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 4", format_slot="absolute_before"
-            ),
-            abjad.Markup(
-                r"\markup {behind bridge, on wrapping}",
-                direction=abjad.Up,
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="absolute_before"),
+            evans.Attachment(
+                abjad.Markup(r"\markup {behind bridge, on wrapping}"),
+                direction=abjad.UP,
             ),
             abjad.Clef("percussion"),
             abjad.Dynamic("ff"),
@@ -135,12 +133,13 @@ maker = evans.SegmentMaker(
                 preprocessor=polillas.pure_quarters_preprocessor,
             ),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
+            evans.Attachment(
+                abjad.Markup(r"\markup {on bridge}"),
+                direction=abjad.UP,
             ),
-            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             abjad.Dynamic("p"),
             polillas.clef_whitespace,
@@ -150,7 +149,7 @@ maker = evans.SegmentMaker(
             [("cello voice", 8)],
             polillas.note_rhythm_handler,
             evans.PitchHandler(
-                [str(abjad.StaffPosition(-3).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(-3)))]
             ),
             # polillas.G_color,
         ),
@@ -158,7 +157,7 @@ maker = evans.SegmentMaker(
             [("cello voice", 10)],
             polillas.note_rhythm_handler,
             evans.PitchHandler(
-                [str(abjad.StaffPosition(-1).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(-1)))]
             ),
             # polillas.G_color,
         ),

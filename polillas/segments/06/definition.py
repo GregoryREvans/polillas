@@ -102,20 +102,18 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler(
                 [
-                    str(abjad.StaffPosition(_).to_pitch(abjad.Clef("percussion")))
+                    str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
                     for _ in [-1, -3, -1, 1, -1, 1, 3, -1, -3, -3]
                 ],
                 forget=False,
             ),
-            abjad.Markup(
-                r"\markup {behind bridge, on wrapping}",
-                direction=abjad.Up,
+            evans.Attachment(
+                abjad.Markup(r"\markup {behind bridge, on wrapping}"),
+                direction=abjad.UP,
             ),
             abjad.Dynamic("ff"),
             abjad.Clef("percussion"),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 4", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 4", site="absolute_before"),
             polillas.clef_whitespace,
             # polillas.G_color,
         ),
@@ -168,7 +166,7 @@ maker = evans.SegmentMaker(
             ),
             evans.PitchHandler(
                 [
-                    str(abjad.StaffPosition(_).to_pitch(abjad.Clef("percussion")))
+                    str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(_)))
                     for _ in [-1, -3, -1, 1, -1, 1, 3, -1, -3, -3]
                 ],
                 forget=False,
@@ -223,14 +221,17 @@ maker = evans.SegmentMaker(
                 selector=lambda _: abjad.Selection(_).logical_ties(),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
-            abjad.Markup(r"\markup (III)", direction=abjad.Up),
+            evans.Attachment(
+                abjad.Markup(r"\markup (III)"),
+                direction=abjad.UP,
+            ),
             abjad.Dynamic("mp"),
             # polillas.A_color,
         ),
@@ -239,9 +240,7 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(rewrite=True),
             evans.PitchHandler(["bf,,"]),
             abjad.Clef("bass"),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             polillas.clef_whitespace,
             abjad.Dynamic("mp"),
             # polillas.A_color,
@@ -252,20 +251,19 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=2),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
+            evans.Attachment(
+                abjad.Markup(r"\markup {on bridge}"),
+                direction=abjad.UP,
             ),
-            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Dynamic("p"),
             # polillas.G_color,
         ),
         evans.attach(
             "violin 1 voice",
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             polillas.select_measures([15], leaf=0),
         ),
         evans.attach(
@@ -280,9 +278,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "violin 2 voice",
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             polillas.select_measures([14], leaf=0),
         ),
         evans.attach(
@@ -648,7 +644,8 @@ maker = evans.SegmentMaker(
                 padding=4,
                 staff_padding=2,
                 forget=False,
-                font_size=6,
+                # font_size=6, # score
+                font_size=3,  # parts
             ),
             baca.selectors.leaves([3, 4, 5]),
         ),

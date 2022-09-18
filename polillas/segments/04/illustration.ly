@@ -2,7 +2,7 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/abjad.ily"
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/04/../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
@@ -273,7 +273,7 @@
                                             \startTextSpanTwo
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                               }
@@ -1450,11 +1450,11 @@
                                             \override Staff.Stem.stemlet-length = 0.75
                                             e'16
                                             - \staccato
-                                            ^ \markup accel.
+                                            ^ \markup rit.
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                               }
@@ -1675,7 +1675,7 @@
                                             ~
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                               }
@@ -1687,7 +1687,7 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <gqs'' cs'''>8.
+                                        <a'' d'''>8.
                                         \p
                                         - \tweak stencil #abjad-flared-hairpin
                                         \<
@@ -1695,16 +1695,16 @@
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <gqs'' cs'''>16
+                                        <a'' d'''>16
                                         \f
                                         ]
 
-                                        <a'' d'''>4.
+                                        <gqs'' cs'''>4.
                                         \p
                                         \<
                                         ~
 
-                                        <a'' d'''>8
+                                        <gqs'' cs'''>8
                                         \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
@@ -1737,14 +1737,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <gqs'' cs'''>8.
+                                        <a'' d'''>8.
                                         \p
                                         \<
                                         ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <gqs'' cs'''>16
+                                        <a'' d'''>16
                                         \f
                                         ]
 
@@ -1755,13 +1755,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 22]
 
-                                            <a'' d'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             ~
 
-                                            <a'' d'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1802,13 +1802,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 24]
 
-                                            <gqs'' cs'''>2.
+                                            <a'' d'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             ~
 
-                                            <gqs'' cs'''>4
+                                            <a'' d'''>4
                                             \f
 
                                         }
@@ -1820,12 +1820,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 25]
 
-                                            <a'' d'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             \<
                                             ~
 
-                                            <a'' d'''>4
+                                            <gqs'' cs'''>4
                                             \f
 
                                         }
@@ -1860,14 +1860,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <gqs'' cs'''>8.
+                                        <a'' d'''>8.
                                         \p
                                         \<
                                         ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <gqs'' cs'''>16
+                                        <a'' d'''>16
                                         \f
                                         ]
 
@@ -1878,13 +1878,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 1 voice measure 27]
 
-                                            <a'' d'''>2.
+                                            <gqs'' cs'''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             ~
 
-                                            <a'' d'''>4
+                                            <gqs'' cs'''>4
                                             \f
                                             \bar "||"
 
@@ -1946,7 +1946,7 @@
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                               }
@@ -3064,14 +3064,14 @@
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_STOP
                                         \f
-                                        ^ \markup accel.
+                                        ^ \markup rit.
                                         %! baca.hairpin()
                                         %! baca.PiecewiseCommand._call(2)
                                         %! SPANNER_START
                                         \>
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                           }
@@ -3287,7 +3287,7 @@
                                             ~
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                               }
@@ -3299,24 +3299,24 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bqs' bqf''>8.
+                                        <a' a''>8.
                                         \p
                                         \<
                                         ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bqs' bqf''>16
+                                        <a' a''>16
                                         \f
                                         ]
 
-                                        <a' a''>4.
+                                        <bqs' bqf''>4.
                                         \p
                                         - \tweak stencil #abjad-flared-hairpin
                                         \<
                                         ~
 
-                                        <a' a''>8
+                                        <bqs' bqf''>8
                                         \f
 
                                         \override Staff.Stem.stemlet-length = 0.75
@@ -3349,14 +3349,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bqs' bqf''>8.
+                                        <a' a''>8.
                                         \p
                                         \<
                                         ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bqs' bqf''>16
+                                        <a' a''>16
                                         \f
                                         ]
 
@@ -3367,12 +3367,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 22]
 
-                                            <a' a''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             ~
 
-                                            <a' a''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3414,12 +3414,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 24]
 
-                                            <bqs' bqf''>2.
+                                            <a' a''>2.
                                             \p
                                             \<
                                             ~
 
-                                            <bqs' bqf''>4
+                                            <a' a''>4
                                             \f
 
                                         }
@@ -3431,13 +3431,13 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 25]
 
-                                            <a' a''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             - \tweak stencil #abjad-flared-hairpin
                                             \<
                                             ~
 
-                                            <a' a''>4
+                                            <bqs' bqf''>4
                                             \f
 
                                         }
@@ -3472,14 +3472,14 @@
                                         }
 
                                         \override Staff.Stem.stemlet-length = 0.75
-                                        <bqs' bqf''>8.
+                                        <a' a''>8.
                                         \p
                                         \<
                                         ~
                                         [
 
                                         \revert Staff.Stem.stemlet-length
-                                        <bqs' bqf''>16
+                                        <a' a''>16
                                         \f
                                         ]
 
@@ -3490,12 +3490,12 @@
                                             %! evans.SegmentMaker.comment_measure_numbers()
                                             % [violin 2 voice measure 27]
 
-                                            <a' a''>2.
+                                            <bqs' bqf''>2.
                                             \p
                                             \<
                                             ~
 
-                                            <a' a''>4
+                                            <bqs' bqf''>4
                                             \f
                                             \bar "||"
 
@@ -3561,7 +3561,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                       }
@@ -4696,10 +4696,10 @@
                                 % [viola voice measure 16]
 
                                 r2
-                                ^ \markup accel.
+                                ^ \markup rit.
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                   }
@@ -4755,7 +4755,7 @@
                                 \glissando
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                   }
@@ -4793,14 +4793,14 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                <fs' e''>8.
+                                <d' fs''>8.
                                 \p
                                 \<
                                 ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                <fs' e''>16
+                                <d' fs''>16
                                 \f
                                 ]
 
@@ -4811,12 +4811,12 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 24]
 
-                                    <d' fs''>2.
+                                    <fs' e''>2.
                                     \p
                                     \<
                                     ~
 
-                                    <d' fs''>4
+                                    <fs' e''>4
                                     \f
 
                                 }
@@ -4858,25 +4858,25 @@
                                     %! evans.SegmentMaker.comment_measure_numbers()
                                     % [viola voice measure 26]
 
-                                    <fs' e''>2.
+                                    <d' fs''>2.
                                     \p
                                     \<
                                     ~
 
-                                    <fs' e''>4
+                                    <d' fs''>4
                                     \f
 
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                <d' fs''>8.
+                                <fs' e''>8.
                                 \p
                                 \<
                                 ~
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                <d' fs''>16
+                                <fs' e''>16
                                 \f
                                 ]
 
@@ -4953,7 +4953,7 @@
                                 [
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                   }
@@ -6048,11 +6048,11 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 gqf'16
                                 - \staccato
-                                ^ \markup accel.
+                                ^ \markup rit.
                                 [
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"120"
                                   }
@@ -6130,7 +6130,7 @@
                                 ~
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"72"
                                   }
@@ -6167,6 +6167,58 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                a8.
+                                \p
+                                \<
+                                ~
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                a16
+                                \f
+                                ]
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 24]
+
+                                    e,2.
+                                    \p
+                                    \<
+                                    ~
+                                    - \abjad-dashed-line-with-hook
+                                    - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
+                                    - \tweak staff-padding 4
+                                    \startTextSpan
+
+                                    e,4
+                                    \f
+
+                                }
+
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/4
+                                {
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [cello voice measure 25]
+
+                                    d'2.
+                                    \p
+                                    - \tweak stencil #abjad-flared-hairpin
+                                    \<
+                                    \stopTextSpan
+                                    ~
+
+                                    d'4
+                                    \f
+
+                                }
+
+                                \override Staff.Stem.stemlet-length = 0.75
                                 d8.
                                 \p
                                 \<
@@ -6183,34 +6235,11 @@
                                 {
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 24]
-
-                                    b2.
-                                    \p
-                                    \<
-                                    ~
-                                    - \abjad-dashed-line-with-hook
-                                    - \tweak bound-details.left.text \markup \concat { IV \hspace #0.5 }
-                                    - \tweak staff-padding 4
-                                    \startTextSpan
-
-                                    b4
-                                    \f
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 25]
+                                    % [cello voice measure 26]
 
                                     a2.
                                     \p
-                                    - \tweak stencil #abjad-flared-hairpin
                                     \<
-                                    \stopTextSpan
                                     ~
 
                                     a4
@@ -6219,36 +6248,7 @@
                                 }
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                d,8.
-                                \p
-                                \<
-                                ~
-                                [
-
-                                \revert Staff.Stem.stemlet-length
-                                d,16
-                                \f
-                                ]
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 3/4
-                                {
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [cello voice measure 26]
-
-                                    d,2.
-                                    \p
-                                    \<
-                                    ~
-
-                                    d,4
-                                    \f
-
-                                }
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                e'8.
+                                e,8.
                                 \p
                                 \<
                                 ~
@@ -6259,7 +6259,7 @@
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                e'16
+                                e,16
                                 \f
                                 ]
 

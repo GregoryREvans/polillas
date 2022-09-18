@@ -429,7 +429,8 @@ maker = evans.SegmentMaker(
                 padding=4,
                 staff_padding=2,
                 forget=False,
-                font_size=6,
+                # font_size=6, # score
+                font_size=3,  # parts
             ),
             baca.selectors.leaves([8, 9, 10, 11, 12, 13, 14]),
         ),

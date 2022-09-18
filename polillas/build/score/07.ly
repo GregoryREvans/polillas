@@ -182,8 +182,8 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
                                             ^ \markup {
-                                              \override #'(font-size . 5.5)
-                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 3)
+                                              \raise #9 \with-dimensions-from \null
                                               \concat {
                                                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                                                   \hspace #1
@@ -880,8 +880,8 @@
                                         - \tweak staff-padding #7
                                         \startTextSpanTwo
                                         ^ \markup {
-                                          \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \raise #7.5 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                           }
@@ -1029,8 +1029,8 @@
                                             - \tweak staff-padding #7
                                             \startTextSpanTwo
                                             ^ \markup {
-                                              \override #'(font-size . 5.5)
-                                              \raise #6 \with-dimensions-from \null
+                                              \override #'(font-size . 3)
+                                              \raise #9 \with-dimensions-from \null
                                               \concat {
                                                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                                                   \hspace #1
@@ -1727,8 +1727,8 @@
                                         - \tweak staff-padding #7
                                         \startTextSpanTwo
                                         ^ \markup {
-                                          \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \raise #7.5 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                           }
@@ -1839,8 +1839,8 @@
                                 \markup { \hcenter-in #14 "Viola" }
                                 c'4.
                                 ^ \markup {
-                                  \override #'(font-size . 5.5)
-                                  \raise #6 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
+                                  \raise #9 \with-dimensions-from \null
                                   \concat {
                                       \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                                       \hspace #1
@@ -1937,8 +1937,8 @@
                                 c'4.
                                 \p
                                 ^ \markup {
-                                  \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \raise #7.5 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                   }
@@ -2085,8 +2085,8 @@
                                     - \tweak staff-padding #7
                                     \startTextSpanTwo
                                     ^ \markup {
-                                      \override #'(font-size . 5.5)
-                                      \raise #6 \with-dimensions-from \null
+                                      \override #'(font-size . 3)
+                                      \raise #9 \with-dimensions-from \null
                                       \concat {
                                           \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                                           \hspace #1
@@ -2783,8 +2783,8 @@
                                 - \tweak staff-padding #7
                                 \startTextSpanTwo
                                 ^ \markup {
-                                  \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \raise #7.5 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                   }

@@ -2,7 +2,7 @@
 \version "2.22.1"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
-\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/abjad.ily"
 \include "/Users/gregoryevans/Scores/polillas/polillas/segments/12/../../build/segment_stylesheet.ily"
 %! abjad.LilyPondFile._get_format_pieces()
 \score
@@ -227,7 +227,7 @@
                                         [
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"130"
                                           }
@@ -607,7 +607,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             <a' e''>16
@@ -931,7 +931,7 @@
                                         - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
                                         - \tweak padding #4
                                         - \tweak staff-padding #2
-                                        - \tweak font-size #6
+                                        - \tweak font-size #3
                                         \bacaStartTextSpanMM
 
                                         \override Staff.Stem.stemlet-length = 0.75
@@ -1386,7 +1386,7 @@
                                             [
                                             ^ \markup {
                                               \raise #6 \with-dimensions-from \null
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"130"
                                               }
@@ -1754,7 +1754,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             r16
@@ -2100,7 +2100,7 @@
                                             - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
                                             - \tweak padding #4
                                             - \tweak staff-padding #2
-                                            - \tweak font-size #6
+                                            - \tweak font-size #3
                                             \bacaStartTextSpanMM
 
                                             r4
@@ -2590,7 +2590,7 @@
                                     [
                                     ^ \markup {
                                       \raise #6 \with-dimensions-from \null
-                                      \override #'(font-size . 5.5)
+                                      \override #'(font-size . 3)
                                       \concat {
                                           \abjad-metronome-mark-markup #2 #0 #1 #"130"
                                       }
@@ -2965,7 +2965,7 @@
                                 - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
                                 - \tweak padding #4
                                 - \tweak staff-padding #2
-                                - \tweak font-size #6
+                                - \tweak font-size #3
                                 \bacaStartTextSpanMM
 
                                 <c g>16
@@ -3302,7 +3302,7 @@
                                 - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
                                 - \tweak padding #4
                                 - \tweak staff-padding #2
-                                - \tweak font-size #6
+                                - \tweak font-size #3
                                 \bacaStartTextSpanMM
 
                                 \override Staff.Stem.stemlet-length = 0.75
@@ -3772,7 +3772,7 @@
                                 \startTextSpan
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"130"
                                   }
@@ -3840,7 +3840,7 @@
                                 - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
                                 - \tweak padding #4
                                 - \tweak staff-padding #2
-                                - \tweak font-size #6
+                                - \tweak font-size #3
                                 \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()
@@ -3892,7 +3892,7 @@
                                 - \baca-metronome-mark-spanner-left-text 2 0 1 "40"
                                 - \tweak padding #4
                                 - \tweak staff-padding #2
-                                - \tweak font-size #6
+                                - \tweak font-size #3
                                 \bacaStartTextSpanMM
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! evans.SegmentMaker.comment_measure_numbers()

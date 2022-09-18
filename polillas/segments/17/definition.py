@@ -37,29 +37,32 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("p"),
             abjad.glissando,
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
         ),
         evans.attach(
             "violin 1 voice",
-            abjad.Markup(r"\markup (I)", direction=abjad.Up),
+            abjad.Markup(r"\markup (I)"),
             baca.selectors.leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(
             "violin 2 voice",
-            abjad.Markup(r"\markup (III)", direction=abjad.Up),
+            abjad.Markup(r"\markup (III)"),
             baca.selectors.leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(
             "viola voice",
-            abjad.Markup(r"\markup (IV)", direction=abjad.Up),
+            abjad.Markup(r"\markup (IV)"),
             baca.selectors.leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(
             "cello voice",
@@ -107,11 +110,11 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             abjad.glissando,
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
@@ -157,11 +160,11 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mf"),
             abjad.glissando,
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
@@ -203,11 +206,11 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(rewrite=True),
             baca.hairpin("p < f"),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
@@ -244,11 +247,11 @@ maker = evans.SegmentMaker(
             polillas.make_tied_notes(rewrite=True),
             baca.hairpin("p < f"),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOn", format_slot="before"),
+                abjad.LilyPondLiteral(r"\harmonicsOn", site="before"),
                 baca.selectors.leaf(0),
             ),
             evans.Attachment(
-                abjad.LilyPondLiteral(r"\harmonicsOff", format_slot="after"),
+                abjad.LilyPondLiteral(r"\harmonicsOff", site="after"),
                 baca.selectors.leaf(-1),
             ),
             # polillas.A_color,
@@ -382,8 +385,28 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
         ),
-        evans.attach(
-            "Global Context",
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_40,
+        #     baca.selectors.leaf(0),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            polillas.mark_40_tall,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_40_tall,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_40,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
             polillas.mark_40,
             baca.selectors.leaf(0),
         ),

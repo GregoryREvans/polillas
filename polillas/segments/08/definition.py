@@ -31,9 +31,7 @@ maker = evans.SegmentMaker(
                 extra_counts=[1],
                 preprocessor=polillas.pure_quarters_preprocessor,
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             abjad.Clef("treble"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -104,9 +102,7 @@ maker = evans.SegmentMaker(
                 extra_counts=[2],
                 preprocessor=polillas.pure_quarters_preprocessor,
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             abjad.Clef("treble"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -177,9 +173,7 @@ maker = evans.SegmentMaker(
                 extra_counts=[3],
                 preprocessor=polillas.pure_quarters_preprocessor,
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             abjad.Clef("alto"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -250,9 +244,7 @@ maker = evans.SegmentMaker(
                 extra_counts=[4],
                 preprocessor=polillas.pure_quarters_preprocessor,
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             abjad.Clef("bass"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -454,41 +446,41 @@ maker = evans.SegmentMaker(
         #     "Global Context",
         #     abjad.Markup(
         #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #         direction=abjad.Up,
         #     ),
         #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(1),
+        #     direction=abjad.UP,
         # ),
         evans.attach(  # parts
             "violin 1 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 2 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "viola voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "cello voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.call(
             "score",

@@ -235,7 +235,7 @@
                                         %! SPANNER_START
                                         \<
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -512,8 +512,8 @@
                                         d''''4
                                         ^ \markup accel.
                                         ~
-                                        ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                        ^ \markup \raise #9 \with-dimensions-from \null {
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -921,7 +921,7 @@
                                         gs'''16
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                           }
@@ -1212,7 +1212,7 @@
                                             \<
                                             [
                                             ^ \markup \raise #6 \with-dimensions-from \null {
-                                              \override #'(font-size . 5.5)
+                                              \override #'(font-size . 3)
                                               \concat {
                                                   \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                               }
@@ -1342,7 +1342,7 @@
                                         c'8
                                         ^ \markup accel.
                                         ^ \markup \raise #6 \with-dimensions-from \null {
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                           }
@@ -1720,7 +1720,7 @@
                                         gqs'''8
                                         ^ \markup {
                                           \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                           }
@@ -2160,7 +2160,7 @@
                                 %! SPANNER_START
                                 \<
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -2403,7 +2403,7 @@
                                 ftqs'''8.
                                 ^ \markup accel.
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -2859,8 +2859,8 @@
 
                                 aqs'''16
                                 ^ \markup {
-                                  \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \raise #9 \with-dimensions-from \null
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                   }
@@ -3234,7 +3234,7 @@
                                 %! SPANNER_START
                                 \<
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -3390,7 +3390,7 @@
                                 ^ \markup accel.
                                 ~
                                 ^ \markup \raise #6 \with-dimensions-from \null {
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"90"
                                   }
@@ -3442,7 +3442,7 @@
                                 ~
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"108"
                                   }

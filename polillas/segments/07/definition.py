@@ -71,7 +71,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=4),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
             # polillas.G_color,
         ),
@@ -81,12 +81,13 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=4),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
+            evans.Attachment(
+                abjad.Markup(r"\markup {on bridge}"),
+                direction=abjad.UP,
             ),
-            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -98,12 +99,13 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=4),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
+            evans.Attachment(
+                abjad.Markup(r"\markup {on bridge}"),
+                direction=abjad.UP,
             ),
-            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -115,7 +117,7 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=4),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
             abjad.Dynamic("p"),
             # polillas.G_color,
@@ -126,12 +128,13 @@ maker = evans.SegmentMaker(
             ],
             polillas.lightning(stage=4),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
+            evans.Attachment(
+                abjad.Markup(r"\markup {on bridge}"),
+                direction=abjad.UP,
             ),
-            abjad.Markup(r"\markup {on bridge}", direction=abjad.Up),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -174,50 +177,70 @@ maker = evans.SegmentMaker(
         #     "Global Context",
         #     abjad.Markup(
         #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #         direction=abjad.Up,
         #     ),
         #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(1),
+        #     direction=abjad.UP,
         # ),
         evans.attach(  # parts
             "violin 1 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 2 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "viola voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "cello voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([13]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score_without_splitting,
             lambda _: abjad.Selection(_).components(abjad.Score),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.met_mod_40_66,
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.met_mod_40_66,
+        #     baca.selectors.leaf(0),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            polillas.met_mod_40_66_tall,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.met_mod_40_66_tall,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.met_mod_40_66_tall,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.met_mod_40_66_tall,
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -225,10 +248,30 @@ maker = evans.SegmentMaker(
             polillas.met_66,
             baca.selectors.leaf(0),
         ),
-        evans.attach(
-            "Global Context",
-            polillas.mark_40,
-            baca.selectors.leaf(9),
+        # evans.attach(
+        #     "Global Context",
+        #     polillas.mark_40,
+        #     baca.selectors.leaf(9),
+        # ),
+        evans.attach(  # parts
+            "violin 1 voice",
+            polillas.mark_40_tall,
+            polillas.select_measures([9], leaf=0),
+        ),
+        evans.attach(  # parts
+            "violin 2 voice",
+            polillas.mark_40_tall,
+            polillas.select_measures([9], leaf=0),
+        ),
+        evans.attach(  # parts
+            "viola voice",
+            polillas.mark_40_tall,
+            polillas.select_measures([9], leaf=0),
+        ),
+        evans.attach(  # parts
+            "cello voice",
+            polillas.mark_40_tall,
+            polillas.select_measures([9], leaf=0),
         ),
         evans.attach(
             "Global Context",

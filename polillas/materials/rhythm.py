@@ -436,7 +436,7 @@ def chilled(
         counts = evans.Sequence(counts_)
         assert len(counts) == 20
         assert sum(input_counts) == len(counts)
-        these_counts = counts.partition_by_counts(input_counts, overhang=abjad.Exact)
+        these_counts = counts.partition_by_counts(input_counts, overhang=abjad.EXACT)
         these_counts = [sum(_) for _ in these_counts]
         if reverse is True:
             these_counts = evans.Sequence(these_counts).reverse()

@@ -165,8 +165,8 @@
                                         %! abjad.glissando(7)
                                         \glissando
                                         ^ \markup {
-                                          \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \raise #7.5 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                           }
@@ -861,8 +861,8 @@
                                         ^ \markup (III)
                                         ~
                                         ^ \markup {
-                                          \raise #6 \with-dimensions-from \null
-                                          \override #'(font-size . 5.5)
+                                          \raise #7.5 \with-dimensions-from \null
+                                          \override #'(font-size . 3)
                                           \concat {
                                               \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                           }
@@ -1270,7 +1270,7 @@
                                 \glissando
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                   }
@@ -1467,7 +1467,7 @@
                                 \startTextSpan
                                 ^ \markup {
                                   \raise #6 \with-dimensions-from \null
-                                  \override #'(font-size . 5.5)
+                                  \override #'(font-size . 3)
                                   \concat {
                                       \abjad-metronome-mark-markup #2 #0 #1 #"40"
                                   }

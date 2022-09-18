@@ -65,11 +65,9 @@ maker = evans.SegmentMaker(
                 preprocessor=polillas.quarters_preprocessor,
             ),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -86,9 +84,7 @@ maker = evans.SegmentMaker(
                 stage=3,
                 preprocessor=polillas.pure_quarters_preprocessor,
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             abjad.Dynamic("f"),
             abjad.Articulation("flageolet"),
             # polillas.A_color,
@@ -157,11 +153,9 @@ maker = evans.SegmentMaker(
                 preprocessor=polillas.quarters_preprocessor,
             ),
             evans.PitchHandler(
-                [str(abjad.StaffPosition(0).to_pitch(abjad.Clef("percussion")))]
+                [str(abjad.Clef("percussion").to_pitch(abjad.StaffPosition(0)))]
             ),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 1", site="absolute_before"),
             abjad.Clef("percussion"),
             polillas.clef_whitespace,
             abjad.Dynamic("p"),
@@ -215,9 +209,7 @@ maker = evans.SegmentMaker(
                 ("cello voice", (24, 26)),
             ],
             polillas.make_tied_notes(rewrite=False),
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 5", format_slot="absolute_before"
-            ),
+            abjad.LilyPondLiteral(r"\staff-line-count 5", site="absolute_before"),
             baca.hairpin("ff > p"),
             baca.text_spanner(
                 r"poco pont. =|",
@@ -276,33 +268,33 @@ maker = evans.SegmentMaker(
             "violin 1 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([23]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 2 voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([23]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "viola voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([23]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "cello voice",
             abjad.Markup(
                 r'\markup \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-                direction=abjad.Up,
             ),
             lambda _: abjad.Selection(_).leaves().group_by_measure().get([23]).leaf(0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 1 voice",
@@ -326,13 +318,14 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "violin 1 voice",
-            polillas.mark_90,
+            polillas.mark_90_tall,
             polillas.select_measures([8], leaf=0),
         ),
         evans.attach(  # parts
             "violin 1 voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup accel."),
             polillas.select_measures([8], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 1 voice",
@@ -346,8 +339,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "violin 2 voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup accel."),
             polillas.select_measures([8], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "violin 2 voice",
@@ -361,12 +355,13 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "viola voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup accel."),
             polillas.select_measures([8], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "viola voice",
-            polillas.mark_108,
+            polillas.mark_108_tall,
             polillas.select_measures([14], leaf=0),
         ),
         evans.attach(  # parts
@@ -376,8 +371,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(  # parts
             "cello voice",
-            abjad.Markup(r"\markup accel.", direction=abjad.Up),
+            abjad.Markup(r"\markup accel."),
             polillas.select_measures([8], leaf=0),
+            direction=abjad.UP,
         ),
         evans.attach(  # parts
             "cello voice",
@@ -532,9 +528,9 @@ maker = evans.SegmentMaker(
         #     "Global Context",
         #     abjad.Markup(
         #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #         direction=abjad.Up,
         #     ),
         #     lambda _: abjad.Selection(_).leaves().group_by_measure().get([23]).leaf(1),
+        #     direction=abjad.UP,
         # ),
         # evans.attach(
         #     "Global Context",
