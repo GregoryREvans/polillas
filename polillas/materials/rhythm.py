@@ -10,51 +10,64 @@ from abjadext import rmakers
 def select_untupleted_leaves(argument):
     result = [_ for _ in argument if not isinstance(_, abjad.Tuplet)]
     raise Exception(result)
-    return abjad.Selection(result)
+    return result
 
 
 def select_outer_ties(argument):
-    result = abjad.Selection(argument).logical_ties().get([0, -1])
-    return result
+    sel_1 = abjad.select.logical_ties(argument)
+    sel_2 = abjad.select.get(sel_1, [0, -1])
+    return sel_2
 
 
 def select_last_tie_leaf(argument):
-    result = abjad.Selection(argument).logical_ties()[:-1]
-    return [abjad.Selection(_).leaf(-1) for _ in result]
-
-
-def select_across_divisions(argument):
-    result = abjad.Selection(argument).tuplets()[:-1]
-    return [abjad.Selection(_).leaf(-1) for _ in result]
-
-
-def select_alternate_divisions(argument):
-    result = abjad.Selection(argument).tuplets().get([0], 2)
-    return [abjad.Selection(_).leaf(-1) for _ in result]
-
-
-def select_alternate_leaves(argument):
-    result = abjad.Selection(argument).logical_ties().get([1], 2)
+    sel_1 = abjad.select.logical_ties(argument)[:-1]
+    result = [abjad.select.leaf(_, -1) for _ in sel_1]
     return result
 
 
+def select_across_divisions(argument):
+    sel_1 = abjad.select.tuplets(argument)[:-1]
+    result = [abjad.select.leaf(_, -1) for _ in sel_1]
+    return result
+
+
+def select_alternate_divisions(argument):
+    sel_1 = abjad.select.tuplets(argument)
+    sel_2 = abjad.select.get(sel_1, [0], 2)
+    result = [abjad.select.leaf(_, -1) for _ in sel_2]
+    return result
+
+
+def select_alternate_leaves(argument):
+    sel_1 = abjad.select.logical_ties(argument)
+    sel_2 = abjad.select.get(sel_1, [1], 2)
+    return sel_2
+
+
 def select_periodic_tuplets(argument):
-    return abjad.Selection(argument).tuplets().get([0], 2)
+    sel_1 = abjad.select.tuplets(argument)
+    sel_2 = abjad.select.get(sel_1, [0], 2)
+    return sel_2
 
 
 def select_periodic_ties_2_4_7_8_of_10(argument):
-    return abjad.Selection(argument).logical_ties().get([2, 4, 7, 8], 10)
+    sel_1 = abjad.select.logical_ties(argument)
+    sel_2 = abjad.select.get(sel_1, [2, 4, 7, 8], 10)
+    return sel_2
 
 
 def select_periodic_ties_2_4_of_8(argument):
-    return abjad.Selection(argument).logical_ties().get([2, 4], 8)
+    sel_1 = abjad.select.logical_ties(argument)
+    sel_2 = abjad.select.get(sel_1, [2, 4], 8)
+    return sel_2
 
 
 def select_all_but_final_leaf(argument):
-    ties = abjad.Selection(argument).logical_ties()
-    final_leaves = abjad.Selection([_[-1] for _ in ties])
-    out = abjad.Selection(final_leaves).leaves().exclude([-1])
-    return out
+    sel_1 = abjad.select.logical_ties(argument)
+    result = [_[-1] for _ in sel_1]
+    sel_2 = abjad.select.leaves(result)
+    sel_3 = abjad.select.exclude(sel_2, [-1])
+    return sel_3
 
 
 ##
@@ -62,7 +75,7 @@ def select_all_but_final_leaf(argument):
 
 silence_maker = rmakers.stack(
     rmakers.NoteRhythmMaker(),
-    rmakers.force_rest(lambda _: abjad.Selection(_).leaves(pitched=True)),
+    rmakers.force_rest(lambda _: abjad.select.leaves(_, pitched=True)),
 )
 
 silence_handler = evans.RhythmHandler(
@@ -105,9 +118,9 @@ def shadows(
         maker = evans.RTMMaker(rtm_strings)
         commands = [
             maker,
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            # rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            # rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -122,9 +135,9 @@ def shadows(
                 4,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -136,9 +149,9 @@ def shadows(
         commands = [
             rmakers.note(),
             rmakers.tie(select_all_but_final_leaf),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -164,7 +177,9 @@ def wings(
     if stage == 1:
 
         def attack_selector(selections):
-            return abjad.Selection(selections).leaves().get(indices, period)
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.get(sel_1, indices, period)
+            return sel_2
 
         commands = [
             rmakers.talea(
@@ -172,11 +187,11 @@ def wings(
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.force_rest(lambda _: abjad.Selection(_)),
+            rmakers.force_rest(lambda _: _),
             rmakers.force_note(attack_selector),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -187,9 +202,9 @@ def wings(
     if stage == 2:
         commands = [
             rmakers.note(),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -201,9 +216,9 @@ def wings(
         commands = [
             rmakers.note(),
             rmakers.tie(select_all_but_final_leaf),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -248,9 +263,9 @@ def flames(
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -265,9 +280,9 @@ def flames(
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -289,9 +304,9 @@ def flames(
                 denominator,
                 extra_counts=extra_counts,
             ),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -333,9 +348,9 @@ def flight(stage=1, preprocessor=None, rewrite=False, rewrite_boundary=None):  #
     if stage == 1:
         commands = [
             rmakers.note(),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -346,9 +361,9 @@ def flight(stage=1, preprocessor=None, rewrite=False, rewrite_boundary=None):  #
     if stage == 2:
         commands = [
             rmakers.talea([-1, 3, -1, 2, -1, 1], 8),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -404,9 +419,9 @@ def chilled(
     if stage == 1:
         commands = [
             rmakers.tuplet([(3, 1)]),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -417,9 +432,9 @@ def chilled(
     if stage == "1 cello":
         commands = [
             rmakers.tuplet([(3, 1), (1,)]),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -442,9 +457,9 @@ def chilled(
             these_counts = evans.Sequence(these_counts).reverse()
         commands = [
             rmakers.talea(these_counts, 16, read_talea_once_only=True),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -456,9 +471,9 @@ def chilled(
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -471,9 +486,9 @@ def chilled(
             rmakers.talea(
                 [6, 2, 24, 8, 4, 6], 16, extra_counts=extra_counts, end_counts=[1]
             ),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -485,9 +500,9 @@ def chilled(
         integers = evans.Sequence([7, 1, 9, 2]).rotate(rotation)
         commands = [
             rmakers.talea(integers, 8),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -513,9 +528,9 @@ def knots(  # F
     if stage == 1:
         commands = [
             rmakers.talea([1], 8),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -524,12 +539,18 @@ def knots(  # F
         handler = evans.RhythmHandler(stack, forget=True)
         return handler
     if stage == 4:
-        attack_selector = (
-            lambda _: abjad.Selection(_).leaves().get(leaf_indices, leaf_period)
-        )
+
+        def selector(_):
+            sel_1 = abjad.select.leaves(_)
+            sel_2 = abjad.select.get(sel_1, leaf_indices, leaf_period)
+            return sel_2
+
+        attack_selector = selector
 
         def division_selector(selections):
-            return abjad.Selection(selections).tuplets().get(division_indices)
+            sel_1 = abjad.select.tuplets(selections)
+            sel_2 = abjad.select.get(sel_1, division_indices)
+            return sel_2
 
         commands = [
             rmakers.talea(
@@ -537,12 +558,12 @@ def knots(  # F
                 16,
                 extra_counts=extra_counts,
             ),
-            rmakers.force_rest(lambda _: abjad.Selection(_)),
+            rmakers.force_rest(lambda _: _),
             rmakers.force_note(attack_selector),
             rmakers.force_rest(division_selector),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -554,9 +575,9 @@ def knots(  # F
         durations = evans.Sequence([1, -1, 1, 1, -1]).rotate(rotation)
         commands = [
             rmakers.talea(durations, 8, extra_counts=[0, 1, 0, 0, 1]),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -593,15 +614,17 @@ def lightning(
     if stage == 1:
 
         def attack_selector(selections):
-            return abjad.Selection(selections).leaves().get(indices, period)
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.get(sel_1, indices, period)
+            return sel_2
 
         commands = [
             rmakers.even_division(denominators, extra_counts=extra_counts),
-            rmakers.force_rest(lambda _: abjad.Selection(_)),
+            rmakers.force_rest(lambda _: _),
             rmakers.force_note(attack_selector),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -612,9 +635,9 @@ def lightning(
     if stage == 2:
         commands = [
             rmakers.talea([2, 3], 8),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -626,9 +649,9 @@ def lightning(
         counts = evans.Sequence([3, 1, 1, 2]).rotate(rotation)
         commands = [
             rmakers.talea(counts, 8),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -639,9 +662,9 @@ def lightning(
     if stage == 4:
         commands = [
             rmakers.talea([3, 1, 1], 8),
-            rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-            rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+            rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+            rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
             rmakers.extract_trivial(),
         ]
         if rewrite is True:
@@ -657,9 +680,9 @@ def make_tied_notes(preprocessor=None, rewrite=False, rewrite_boundary=None):
     commands = [
         rmakers.note(),
         rmakers.tie(select_all_but_final_leaf),
-        rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
-        rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
-        rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+        rmakers.trivialize(lambda _: abjad.select.tuplets(_)),
+        rmakers.rewrite_rest_filled(lambda _: abjad.select.tuplets(_)),
+        rmakers.rewrite_sustained(lambda _: abjad.select.tuplets(_)),
         rmakers.extract_trivial(),
     ]
     if rewrite is True:

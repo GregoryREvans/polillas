@@ -31,7 +31,7 @@ mark_40 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_40_mark)[8:]}",
+        f"      {met_40_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -45,7 +45,7 @@ mark_40_tall = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_40_mark)[8:]}",
+        f"      {met_40_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -63,7 +63,7 @@ mark_60 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_60_mark)[8:]}",
+        f"      {met_60_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -81,7 +81,7 @@ mark_66 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_66_mark)[8:]}",
+        f"      {met_66_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -95,7 +95,7 @@ mark_66_tall = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_66_mark)[8:]}",
+        f"      {met_66_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -137,7 +137,7 @@ mark_72 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_72_mark)[8:]}",
+        f"      {met_72_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -154,7 +154,7 @@ mark_90 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_90_mark)[8:]}",
+        f"      {met_90_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -167,7 +167,7 @@ mark_90_tall = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_90_mark)[8:]}",
+        f"      {met_90_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -181,7 +181,7 @@ mark_90_left = abjad.LilyPondLiteral(
         r"  \halign #5",
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_90_mark)[8:]}",
+        f"      {met_90_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -199,7 +199,7 @@ mark_108 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_108_mark)[8:]}",
+        f"      {met_108_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -213,7 +213,7 @@ mark_108_tall = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_108_mark)[8:]}",
+        f"      {met_108_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -231,7 +231,7 @@ mark_120 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_120_mark)[8:]}",
+        f"      {met_120_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -245,7 +245,7 @@ mark_120_tall = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_120_mark)[8:]}",
+        f"      {met_120_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -263,7 +263,7 @@ mark_130 = abjad.LilyPondLiteral(
         # r"  \override #'(font-size . 5.5)", # score
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
-        f"      {str(met_130_mark)[8:]}",
+        f"      {met_130_mark.string[8:]}",
         r"  }",
         r"}",
     ],
@@ -274,12 +274,12 @@ mark_130 = abjad.LilyPondLiteral(
 
 
 def zero_padding_glissando(selections):
-    for run in abjad.Selection(selections).runs():
-        leaves = abjad.Selection(run).leaves()
+    for run in abjad.select.runs(selections):
+        leaves = abjad.select.leaves(run)
         for leaf in leaves[1:-1]:
-            abjad.tweak(leaf.note_head).Accidental.stencil = False
-            abjad.tweak(leaf.note_head).transparent = True
-            abjad.tweak(leaf.note_head).X_extent = (0, 0)
+            abjad.tweak(leaf.note_head, r"\tweak Accidental.stencil ##f")
+            abjad.tweak(leaf.note_head, r"\tweak transparent ##t")
+            abjad.tweak(leaf.note_head, r"\tweak X-extent #'(0 . 0)")
             if abjad.get.has_indicator(leaf, abjad.Tie):
                 abjad.detach(abjad.Tie(), leaf)
     abjad.glissando(selections[:], zero_padding=True, allow_repeats=True)
@@ -408,12 +408,13 @@ bis_handler = evans.BisbigliandoHandler(
     forget=False,
 )
 
-start_damp = abjad.StartTextSpan(
+start_damp_indicator = abjad.StartTextSpan(
     left_text=abjad.Markup(r"\damp-markup"),
     style="dashed-line-with-hook",
     command=r"\startTextSpanOne",
 )
-abjad.tweak(start_damp).staff_padding = 3.5
+
+start_damp = abjad.bundle(start_damp_indicator, r"- \tweak staff-padding #3.5")
 
 stop_damp = abjad.StopTextSpan(command=r"\stopTextSpanOne")
 
@@ -433,13 +434,13 @@ def sforzandi(selections):
         abjad.attach(abjad.Dynamic("sfz"), tie[0])
 
 
-start_scratch = abjad.StartTextSpan(
+start_scratch_indicator = abjad.StartTextSpan(
     left_text=abjad.Markup(r"poco \hspace #1 gridato"),
     right_text=abjad.Markup("molto gridato"),
     style="solid-line-with-arrow",
     command=r"\startTextSpanTwo",
 )
-abjad.tweak(start_scratch).staff_padding = 7
+start_scratch = abjad.bundle(start_scratch_indicator, r"- \tweak staff-padding #7")
 
 stop_scratch = abjad.StopTextSpan(command=r"\stopTextSpanTwo")
 
@@ -661,14 +662,17 @@ class MAS:
     def __call__(self, selections):
         first_leaf = selections.leaf(0)
         last_leaf = selections.leaves()[-1]
-        start = abjad.StartTextSpan(
+        start_indicator = abjad.StartTextSpan(
             left_text=rf'- \evans-text-spanner-left-text "{self.string}"',
             command=r"\evansStartTextSpanMaterialAnnotation",
             style="dashed-line-with-hook",
             right_padding=-1,
         )
-        abjad.tweak(start).staff_padding = self.staff_padding
-        abjad.tweak(start).color = self.color
+        start = abjad.bundle(
+            start_indicator,
+            rf"- \tweak staff-padding #{self.staff_padding}",
+            rf"- \ tweak color #{self.color}",
+        )
         stop = abjad.StopTextSpan(
             command=r"\evansStopTextSpanMaterialAnnotation",
         )
@@ -828,7 +832,7 @@ def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
         "B": evans.Sequence([(5, 5), (1, 5), (4, 5), (3, 5), (2, 5), (3, 5), (1, 5)]),
     }
     bowing_padding = staff_padding + 2.5
-    return baca.bcps(
+    return baca.bcps(  # WARNING: doble check this
         series_dict[series].rotate(rotation),
         abjad.tweak(staff_padding).staff_padding,
         bow_change_tweaks=(
@@ -840,8 +844,8 @@ def chilled_stage_3_bowing(series="A", rotation=0, staff_padding=2):
 
 def make_proportional_notation(selections):
     for tuplet in abjad.Selection(selections).tuplets():
-        abjad.tweak(tuplet).tuplet_bracket.transparent = True
-        abjad.tweak(tuplet).tuplet_number.transparent = True
+        abjad.tweak(tuplet, r"\tweak TupletBracket.transparent ##t")
+        abjad.tweak(tuplet, r"\tweak TupletNumber.transparent ##t")
 
     for rest in abjad.Selection(selections).leaves(pitched=False):
         transparent_literal = abjad.LilyPondLiteral(
@@ -912,56 +916,75 @@ def select_measures(
     index_list, leaf=None, leaves=None, logical_ties=None, note=None, notes=None
 ):
     if leaf is not None:
-        return (
-            lambda _: abjad.Selection(_)
-            .leaves()
-            .group_by_measure()
-            .get(index_list)
-            .leaf(leaf)
-        )
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            sel_4 = abjad.select.leaf(sel_3, leaf)
+            return sel_4
+
+        return selector
     elif isinstance(leaves, list):
-        return (
-            lambda _: abjad.Selection(_)
-            .leaves()
-            .group_by_measure()
-            .get(index_list)
-            .leaves()
-            .get(leaves)
-        )
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            sel_4 = abjad.select.leaves(sel_3)
+            sel_5 = abjad.select.get(sel_4, leaves)
+            return sel_5
+
+        return selector
     elif leaves is True:
-        return (
-            lambda _: abjad.Selection(_)
-            .leaves()
-            .group_by_measure()
-            .get(index_list)
-            .leaves()
-        )
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            sel_4 = abjad.select.leaves(sel_3)
+            return sel_4
+
+        return selector
     elif logical_ties is True:
-        return (
-            lambda _: abjad.Selection(_)
-            .leaves()
-            .group_by_measure()
-            .get(index_list)
-            .logical_ties()
-        )
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            sel_4 = abjad.select.logical_ties(sel_3)
+            return sel_4
+
+        return selector
     elif note is not None:
-        return (
-            lambda _: abjad.Selection(_)
-            .leaves()
-            .group_by_measure()
-            .get(index_list)
-            .note(note)
-        )
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            sel_4 = abjad.select.note(sel_3, note)
+            return sel_4
+
+        return selector
     elif notes is True:
-        return (
-            lambda _: abjad.Selection(_)
-            .leaves()
-            .group_by_measure()
-            .get(index_list)
-            .notes()
-        )
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            sel_4 = abjad.select.notes(sel_3)
+            return sel_4
+
+        return selector
     else:
-        return lambda _: abjad.Selection(_).leaves().group_by_measure().get(index_list)
+
+        def selector(selections):
+            sel_1 = abjad.select.leaves(selections)
+            sel_2 = abjad.select.group_by_measure(sel_1)
+            sel_3 = abjad.select.get(sel_2, index_list)
+            return sel_3
+
+        return selector
 
 
 hairpins = evans.CyclicList(["<", "<|", "<", "<", "<", "<", "<|", "<"], forget=False)
@@ -1076,7 +1099,7 @@ def triple_swell(selections):
         abjad.attach(abjad.Dynamic("f"), triple[1][0])
         abjad.attach(abjad.StartHairpin(">"), triple[1][0])
         abjad.attach(abjad.Dynamic("mp"), triple[2][-1])
-        span = baca.text_spanner(
+        span = baca.text_spanner(  # WARNING: double check this interface
             "T. => P.",
             (abjad.tweak(5).staff_padding, 0),
             lilypond_id=1,

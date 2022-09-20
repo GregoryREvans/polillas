@@ -5,19 +5,16 @@ info = {
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Score.TimeSignature.stencil = ##f",
             site="before",
             directed=False,
-            tweaks=None,
         ),
     ],
     "Voice 2": [
@@ -25,19 +22,16 @@ info = {
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Score.TimeSignature.stencil = ##f",
             site="before",
             directed=False,
-            tweaks=None,
         ),
     ],
     "Voice 3": [
@@ -45,19 +39,16 @@ info = {
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Score.TimeSignature.stencil = ##f",
             site="before",
             directed=False,
-            tweaks=None,
         ),
     ],
     "Voice 4": [
@@ -65,13 +56,11 @@ info = {
             argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         LilyPondLiteral(
             argument="\\once \\override Rest.transparent = ##t",
             site="before",
             directed=False,
-            tweaks=None,
         ),
         StopTextSpan(command="\\stopTextSpan", leak=False),
         StopTextSpan(command="\\stopTextSpanOne", leak=False),
@@ -79,7 +68,6 @@ info = {
             argument="\\once \\override Score.TimeSignature.stencil = ##f",
             site="before",
             directed=False,
-            tweaks=None,
         ),
     ],
 }

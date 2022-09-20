@@ -8,7 +8,7 @@
 \include "/Users/gregoryevans/evans/lilypond/evans-spanners.ily"
 \include "../../lib.ily"
 \include "evans.ily"
-\include "/Users/gregoryevans/abjad/abjad/_stylesheets/ekmelos-ji-accidental-markups.ily"
+\include "/Users/gregoryevans/abjad/abjad/scm/ekmelos-ji-accidental-markups.ily"
 
 \header {
 	tagline = ##f

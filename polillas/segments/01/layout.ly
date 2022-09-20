@@ -10,8 +10,8 @@
         {
             \autoPageBreaksOff
             \evans-lbsd #20 #'(19 20 20 20)
-            \evans-system-X-offset #1
             \evans-new-spacing-section #1 #38
+            \evans-system-X-offset #1
             s1 * 3/4
             \noBreak
             \evans-new-spacing-section #1 #15
@@ -48,10 +48,10 @@
             \noBreak
             \evans-new-spacing-section #1 #19
             s1 * 5/4
-            \pageBreak
             \break
             \evans-lbsd #20 #'(19 20 20 20)
             \evans-system-X-offset #1
+            \pageBreak
             \evans-new-spacing-section #1 #38
             s1 * 3/2
             \noBreak
@@ -63,8 +63,8 @@
             \noBreak
             \evans-new-spacing-section #1 #19
             s1 * 3/4
-            \pageBreak
             \noBreak
+            \pageBreak
         }
     }
 >>
